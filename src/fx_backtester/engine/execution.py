@@ -34,6 +34,8 @@ def apply_execution_policy(
     else:
         executed_price = requested_price - spread_delta - slippage_delta
 
+    executed_price = round(executed_price, 5)
+
     return FillResult(
         side=side,
         requested_price=requested_price,

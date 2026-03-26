@@ -18,9 +18,10 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - CSV data loader and lightweight quality checks
 - deterministic position sizing and fill semantics
 - structured trade log model
+- minimal deterministic single-position backtest loop over prepared signal bars
 - simple compliance/report artifact builder
 - CLI entrypoint for validating a strategy spec
-- tests for pip sizing/execution semantics plus known-answer scaffolding
+- tests for pip sizing/execution semantics plus exact known-answer ledger coverage
 
 ## What does **not** exist yet
 
@@ -28,7 +29,8 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - no slippage model beyond fixed assumptions
 - no London/session microstructure logic
 - no broker adapters
-- no full backtest loop over bar data
+- no full indicator pipeline from raw OHLC to signals yet
+- no short-side strategy logic yet
 
 ## Quickstart
 
