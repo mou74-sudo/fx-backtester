@@ -13,6 +13,7 @@ from fx_backtester.engine.robustness import RobustnessLiteReport
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 from fx_backtester.formalizer.spec_models import StrategySpec
 from fx_backtester.reports.compliance import build_compliance_summary, build_run_manifest
+from fx_backtester.reviewer.verdict import build_reviewer_artifacts
 
 
 class RunArtifactWriter:
@@ -75,6 +76,13 @@ class RunArtifactWriter:
             "max_drawdown": result.metrics.max_drawdown,
             "robustness_enabled": robustness.enabled if robustness else False,
         }
+        robustness_payload = robustness.model_dump(mode="json") if robustness is not None else None
+        reviewer = build_reviewer_artifacts(
+            summary=summary,
+            metrics=metrics,
+            compliance_summary=compliance,
+            robustness_lite=robustness_payload,
+        )
         files: dict[str, tuple[str, Any]] = {
             "inputs/strategy_spec.json": ("json", spec.model_dump(mode="json")),
             "inputs/manifest.json": ("json", manifest),
@@ -84,9 +92,11 @@ class RunArtifactWriter:
             "traces/signal_trace.json": ("json", [row.model_dump(mode="json") for row in signal_trace]),
             "reports/compliance_summary.json": ("json", compliance),
             "reports/summary.json": ("json", summary),
+            "reports/final_verdict.json": ("json", reviewer.final_verdict),
+            "reports/reviewer_summary.json": ("json", reviewer.reviewer_summary),
         }
         if robustness is not None:
-            files["reports/robustness_lite.json"] = ("json", robustness.model_dump(mode="json"))
+            files["reports/robustness_lite.json"] = ("json", robustness_payload)
 
         for relative_name, (kind, payload) in files.items():
             target = run_dir / relative_name

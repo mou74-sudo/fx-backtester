@@ -74,6 +74,8 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
         "reports/compliance_summary.json",
         "reports/summary.json",
         "reports/robustness_lite.json",
+        "reports/final_verdict.json",
+        "reports/reviewer_summary.json",
     }
     actual_files = {str(path.relative_to(run_dir)) for path in run_dir.rglob("*.json")}
     assert expected_files.issubset(actual_files)
@@ -82,9 +84,14 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     assert any(check["name"] == "signal_execution_alignment_no_leakage" and check["ok"] for check in compliance["checks"])
     assert compliance["metrics"]["session_summary"]
     signal_trace = json.loads((run_dir / "traces" / "signal_trace.json").read_text(encoding="utf-8"))
+    final_verdict = json.loads((run_dir / "reports" / "final_verdict.json").read_text(encoding="utf-8"))
+    reviewer_summary = json.loads((run_dir / "reports" / "reviewer_summary.json").read_text(encoding="utf-8"))
     assert "asia" in signal_trace[0]["sessions"]
     assert "london" in signal_trace[7]["sessions"]
     assert robustness.baseline.trade_count == result.trade_count
+    assert final_verdict["evidence_grade"] in {"B", "C", "D", "F", "A"}
+    assert final_verdict["confidence_level"] in {"low", "medium", "high"}
+    assert reviewer_summary["trade_count"] == result.trade_count
 
 
 
