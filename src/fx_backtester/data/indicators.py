@@ -33,3 +33,31 @@ def compute_wilder_rsi(closes: list[float], period: int) -> list[float | None]:
             result[idx] = round(100 - (100 / (1 + rs)), 4)
 
     return result
+
+
+def compute_wilder_atr(highs: list[float], lows: list[float], closes: list[float], period: int) -> list[float | None]:
+    if period < 2:
+        raise ValueError("ATR period must be at least 2")
+    if not (len(highs) == len(lows) == len(closes)):
+        raise ValueError("highs, lows, and closes must be the same length")
+    if len(closes) < period + 1:
+        return [None] * len(closes)
+
+    true_ranges: list[float] = [0.0]
+    for idx in range(1, len(closes)):
+        tr = max(
+            highs[idx] - lows[idx],
+            abs(highs[idx] - closes[idx - 1]),
+            abs(lows[idx] - closes[idx - 1]),
+        )
+        true_ranges.append(tr)
+
+    result: list[float | None] = [None] * len(closes)
+    atr = sum(true_ranges[1 : period + 1]) / period
+    result[period] = round(atr, 5)
+
+    for idx in range(period + 1, len(closes)):
+        atr = ((atr * (period - 1)) + true_ranges[idx]) / period
+        result[idx] = round(atr, 5)
+
+    return result

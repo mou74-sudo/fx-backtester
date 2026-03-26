@@ -1,11 +1,10 @@
 """Pydantic contracts for strategy and run specifications.
 
-Lean v0.4 expansion:
+Lean v0.9 expansion:
 - explicit trade direction and session restrictions
-- explicit spread/slippage model naming on the execution policy side
-- account currency stays in risk spec
-- minimal stop/take-profit style controls
-- small parameter-variant hooks for robustness-lite runs
+- deterministic time-stop and session-close controls
+- fixed-pip or ATR-based initial stop-loss support
+- take-profit style stays intentionally narrow
 """
 
 from __future__ import annotations
@@ -17,7 +16,8 @@ from pydantic import BaseModel, Field, model_validator
 
 TradeDirection = Literal["long_only", "short_only", "both"]
 SessionName = Literal["asia", "london", "new_york"]
-StopTakeProfitStyle = Literal["fixed_pips", "disabled"]
+StopLossStyle = Literal["fixed_pips", "atr", "disabled"]
+TakeProfitStyle = Literal["fixed_pips", "disabled"]
 
 
 class InstrumentSpec(BaseModel):
@@ -57,7 +57,7 @@ class RobustnessSpec(BaseModel):
 
 
 class RsiMeanReversionRule(BaseModel):
-    """Minimal example rule set for deterministic RSI mean reversion."""
+    """Minimal deterministic RSI mean reversion rule set."""
 
     timeframe: Literal["H1"] = "H1"
     direction: TradeDirection = "long_only"
@@ -67,10 +67,15 @@ class RsiMeanReversionRule(BaseModel):
     short_entry_rsi_gte: float = Field(default=70.0, ge=0, le=100)
     exit_rsi_gte: float = Field(default=55.0, ge=0, le=100)
     short_exit_rsi_lte: float = Field(default=45.0, ge=0, le=100)
-    stop_loss_style: StopTakeProfitStyle = "fixed_pips"
-    stop_loss_pips: float = Field(..., gt=0)
-    take_profit_style: StopTakeProfitStyle = "fixed_pips"
-    take_profit_pips: float = Field(..., gt=0)
+    time_stop_bars: int | None = Field(default=None, ge=1, le=500)
+    exit_on_session_close: bool = False
+    stop_loss_style: StopLossStyle = "fixed_pips"
+    stop_loss_pips: float = Field(default=20.0, gt=0)
+    stop_loss_atr_period: int = Field(default=14, ge=2, le=100)
+    stop_loss_atr_multiplier: float = Field(default=2.0, gt=0, le=20)
+    take_profit_style: TakeProfitStyle = "fixed_pips"
+    take_profit_pips: float = Field(default=30.0, gt=0)
+    trailing_stop_style: Literal["disabled"] = "disabled"
 
     @model_validator(mode="after")
     def validate_threshold_order(self) -> "RsiMeanReversionRule":
@@ -78,6 +83,8 @@ class RsiMeanReversionRule(BaseModel):
             raise ValueError("entry_rsi_lte must be below exit_rsi_gte")
         if self.short_entry_rsi_gte <= self.short_exit_rsi_lte:
             raise ValueError("short_entry_rsi_gte must be above short_exit_rsi_lte")
+        if self.exit_on_session_close and not self.allowed_sessions:
+            raise ValueError("exit_on_session_close requires at least one allowed session")
         return self
 
 

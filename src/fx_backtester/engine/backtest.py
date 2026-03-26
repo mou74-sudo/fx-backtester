@@ -1,4 +1,4 @@
-"""Deterministic backtest loop for v0.4.
+"""Deterministic backtest loop for v0.9.
 
 Still intentionally narrow:
 - single instrument
@@ -6,7 +6,8 @@ Still intentionally narrow:
 - deterministic long and short support
 - explicit spread/slippage assumptions
 - conservative same-candle ambiguity handling
-- optional signal-only stop/TP disable switches
+- optional time-stop and session-close exits
+- fixed-pip or ATR-based initial stop-loss support
 """
 
 from __future__ import annotations
@@ -36,6 +37,7 @@ class SignalBar(BaseModel):
     signal_bar_timestamp: str | None = None
     execution_price: float | None = Field(default=None, gt=0)
     signal_rsi: float | None = None
+    atr: float | None = Field(default=None, gt=0)
     sessions: list[str] = Field(default_factory=list)
 
 
@@ -75,7 +77,7 @@ class _OpenPosition(BaseModel):
     quantity_units: int = Field(..., gt=0)
     evidence_ref: str | None = None
     sessions: list[str] = Field(default_factory=list)
-
+    bars_held: int = 0
 
 
 def _price_delta_to_pnl(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, quantity_units: int) -> float:
@@ -83,11 +85,9 @@ def _price_delta_to_pnl(*, side: Literal["buy", "sell"], entry_price: float, exi
     return round((exit_price - entry_price) * quantity_units * direction, 2)
 
 
-
 def _price_delta_to_pips(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, pip_size: float) -> float:
     direction = 1 if side == "buy" else -1
     return round(((exit_price - entry_price) / pip_size) * direction, 2)
-
 
 
 def _convert_pnl_to_usd(*, pnl: float, account_ccy: str, exit_price: float, base_ccy: str, quote_ccy: str) -> float:
@@ -98,7 +98,6 @@ def _convert_pnl_to_usd(*, pnl: float, account_ccy: str, exit_price: float, base
     if account_ccy == quote_ccy and base_ccy == "USD":
         return round(pnl / exit_price, 2)
     raise NotImplementedError("USD conversion only supports base/quote relationships involving USD")
-
 
 
 def _close_trade(
@@ -152,7 +151,6 @@ def _close_trade(
             pip_size=spec.instrument.pip_size,
         ),
     )
-
 
 
 def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_equity: float) -> BacktestMetrics:
@@ -213,6 +211,21 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     )
 
 
+def _initial_stop_distance_pips(*, bar: SignalBar, spec: StrategySpec) -> float:
+    if spec.rules.stop_loss_style in {"fixed_pips", "disabled"}:
+        return spec.rules.stop_loss_pips
+    if spec.rules.stop_loss_style == "atr":
+        if bar.atr is None:
+            raise ValueError("ATR stop requested but ATR is unavailable on the execution bar")
+        return round((bar.atr * spec.rules.stop_loss_atr_multiplier) / spec.instrument.pip_size, 5)
+    raise ValueError(f"Unsupported stop_loss_style={spec.rules.stop_loss_style}")
+
+
+def _session_exit_due(*, bar: SignalBar, spec: StrategySpec) -> bool:
+    if not spec.rules.exit_on_session_close:
+        return False
+    return not any(session in spec.rules.allowed_sessions for session in bar.sessions)
+
 
 def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: ExecutionPolicy) -> BacktestResult:
     equity = spec.risk.initial_equity
@@ -221,11 +234,39 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
     pip_size = spec.instrument.pip_size
     trade_index = 0
     half_spread_delta = policy.half_spread_pips * pip_size
-    stop_enabled = spec.rules.stop_loss_style == "fixed_pips"
+    stop_enabled = spec.rules.stop_loss_style in {"fixed_pips", "atr"}
     tp_enabled = spec.rules.take_profit_style == "fixed_pips"
 
     for bar in bars:
         if open_position is not None:
+            next_bars_held = open_position.bars_held + 1
+            if spec.rules.time_stop_bars is not None and next_bars_held >= spec.rules.time_stop_bars:
+                exit_fill = apply_execution_policy(
+                    side="sell" if open_position.side == "buy" else "buy",
+                    requested_price=bar.open,
+                    policy=policy,
+                    pip_size=pip_size,
+                )
+                trade = _close_trade(open_position, exit_time=bar.timestamp, exit_price=exit_fill.executed_price, execution_policy_name=spec.execution_policy_name, spec=spec, exit_reason="time_stop")
+                trades.append(trade)
+                equity = round(equity + (trade.pnl or 0.0), 2)
+                open_position = None
+                continue
+
+            if _session_exit_due(bar=bar, spec=spec):
+                exit_fill = apply_execution_policy(
+                    side="sell" if open_position.side == "buy" else "buy",
+                    requested_price=bar.open,
+                    policy=policy,
+                    pip_size=pip_size,
+                )
+                trade = _close_trade(open_position, exit_time=bar.timestamp, exit_price=exit_fill.executed_price, execution_policy_name=spec.execution_policy_name, spec=spec, exit_reason="session_close")
+                trades.append(trade)
+                equity = round(equity + (trade.pnl or 0.0), 2)
+                open_position = None
+                continue
+
+            open_position.bars_held = next_bars_held
             ambiguity = False
             spread_triggered_stop = False
 
@@ -297,21 +338,22 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
             requested_entry_price = bar.execution_price or bar.close
             side: Literal["buy", "sell"] = "buy" if bar.entry_long else "sell"
             entry_fill = apply_execution_policy(side=side, requested_price=requested_entry_price, policy=policy, pip_size=pip_size)
+            stop_distance_pips = _initial_stop_distance_pips(bar=bar, spec=spec)
             quantity_units = size_position_units(
                 equity=equity,
                 risk=spec.risk,
                 instrument=spec.instrument,
-                stop_loss_pips=spec.rules.stop_loss_pips,
+                stop_loss_pips=stop_distance_pips,
                 reference_price=entry_fill.executed_price,
             )
             evidence_ref = None
             if bar.signal_bar_timestamp is not None:
                 evidence_ref = f"signal={bar.signal_bar_timestamp}|execution={bar.timestamp.isoformat()}"
             if side == "buy":
-                stop_loss_price = round(entry_fill.executed_price - (spec.rules.stop_loss_pips * pip_size), 5)
+                stop_loss_price = round(entry_fill.executed_price - (stop_distance_pips * pip_size), 5)
                 take_profit_price = round(entry_fill.executed_price + (spec.rules.take_profit_pips * pip_size), 5)
             else:
-                stop_loss_price = round(entry_fill.executed_price + (spec.rules.stop_loss_pips * pip_size), 5)
+                stop_loss_price = round(entry_fill.executed_price + (stop_distance_pips * pip_size), 5)
                 take_profit_price = round(entry_fill.executed_price - (spec.rules.take_profit_pips * pip_size), 5)
             open_position = _OpenPosition(
                 trade_id=f"{spec.instrument.symbol.lower()}-{trade_index:04d}",

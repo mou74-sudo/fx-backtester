@@ -12,12 +12,12 @@ from fx_backtester.formalizer.spec_models import (
 from fx_backtester.reports.compliance import build_compliance_summary
 
 
-def _build_spec(*, instrument: InstrumentSpec | None = None, risk: RiskSpec | None = None) -> StrategySpec:
+def _build_spec(*, instrument: InstrumentSpec | None = None, risk: RiskSpec | None = None, **rule_overrides: object) -> StrategySpec:
     return StrategySpec(
         strategy_name="known_answer_suite",
         instrument=instrument or InstrumentSpec(),
         risk=risk or RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
-        rules=RsiMeanReversionRule(stop_loss_pips=20, take_profit_pips=30),
+        rules=RsiMeanReversionRule(stop_loss_pips=20, take_profit_pips=30, **rule_overrides),
         window=BacktestWindow(start_date="2024-01-01", end_date="2024-01-03"),
     )
 
@@ -98,6 +98,58 @@ def test_short_side_take_profit_is_supported() -> None:
     assert trade.exit_reason == "take_profit"
     assert trade.exit_price == 1.097
     assert trade.pnl > 0
+
+
+def test_time_stop_exits_on_bar_open_after_configured_hold_count() -> None:
+    spec = _build_spec(time_stop_bars=2)
+    policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+    bars = [
+        SignalBar(timestamp="2024-01-01T00:00:00", open=1.1000, high=1.1002, low=1.0998, close=1.1000, entry_long=True),
+        SignalBar(timestamp="2024-01-01T01:00:00", open=1.1010, high=1.1015, low=1.1005, close=1.1012),
+        SignalBar(timestamp="2024-01-01T02:00:00", open=1.1020, high=1.1030, low=1.1015, close=1.1025),
+    ]
+
+    result = run_backtest(bars=bars, spec=spec, policy=policy)
+    trade = result.trades[0]
+
+    assert trade.exit_reason == "time_stop"
+    assert trade.exit_time.isoformat() == "2024-01-01T02:00:00"
+    assert trade.exit_price == 1.10198
+    assert trade.pnl_pips == 19.6
+
+
+def test_session_close_exit_fires_when_bar_leaves_allowed_session() -> None:
+    spec = _build_spec(allowed_sessions=["london"], exit_on_session_close=True)
+    policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+    bars = [
+        SignalBar(timestamp="2024-01-01T07:00:00", open=1.1000, high=1.1002, low=1.0998, close=1.1000, entry_long=True, sessions=["london"]),
+        SignalBar(timestamp="2024-01-01T08:00:00", open=1.1008, high=1.1012, low=1.1005, close=1.1010, sessions=["london"]),
+        SignalBar(timestamp="2024-01-01T16:00:00", open=1.1015, high=1.1018, low=1.1012, close=1.1016, sessions=[]),
+    ]
+
+    result = run_backtest(bars=bars, spec=spec, policy=policy)
+    trade = result.trades[0]
+
+    assert trade.exit_reason == "session_close"
+    assert trade.exit_time.isoformat() == "2024-01-01T16:00:00"
+    assert trade.exit_price == 1.10148
+
+
+def test_atr_stop_uses_execution_bar_atr_for_initial_stop_distance() -> None:
+    spec = _build_spec(stop_loss_style="atr", stop_loss_atr_period=2, stop_loss_atr_multiplier=2.0, take_profit_style="disabled")
+    policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+    bars = [
+        SignalBar(timestamp="2024-01-01T00:00:00", open=1.1000, high=1.1005, low=1.0995, close=1.1000, entry_long=True, atr=0.0010),
+        SignalBar(timestamp="2024-01-01T01:00:00", open=1.1000, high=1.1001, low=1.0979, close=1.0985, atr=0.0010),
+    ]
+
+    result = run_backtest(bars=bars, spec=spec, policy=policy)
+    trade = result.trades[0]
+
+    assert trade.stop_loss_price == 1.09802
+    assert trade.quantity_units == 50000
+    assert trade.exit_reason == "stop_loss"
+    assert trade.exit_price == 1.098
 
 
 def test_usdjpy_known_answer_uses_jpy_pip_sizing() -> None:

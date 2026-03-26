@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pydantic import BaseModel, Field
 
-from fx_backtester.data.indicators import compute_wilder_rsi
+from fx_backtester.data.indicators import compute_wilder_atr, compute_wilder_rsi
 from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.backtest import SignalBar
 from fx_backtester.formalizer.spec_models import StrategySpec
@@ -14,6 +14,7 @@ class SignalTraceRow(BaseModel):
     signal_bar_close: float = Field(..., gt=0)
     execution_bar_open: float | None = Field(default=None, gt=0)
     rsi: float | None = None
+    atr: float | None = None
     sessions: list[str] = Field(default_factory=list)
     entry_signal: bool = False
     exit_signal: bool = False
@@ -30,17 +31,18 @@ class PreparedSignalData(BaseModel):
     signal_trace: list[SignalTraceRow]
 
 
-
 def _session_allowed(bar: MarketBar, spec: StrategySpec) -> bool:
     if not spec.rules.allowed_sessions:
         return True
     return any(session in spec.rules.allowed_sessions for session in bar.sessions)
 
 
-
 def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpec) -> PreparedSignalData:
     closes = [bar.close for bar in market_bars]
+    highs = [bar.high for bar in market_bars]
+    lows = [bar.low for bar in market_bars]
     rsis = compute_wilder_rsi(closes, spec.rules.rsi_period)
+    atrs = compute_wilder_atr(highs, lows, closes, spec.rules.stop_loss_atr_period)
     prepared_bars: list[SignalBar] = []
     trace: list[SignalTraceRow] = []
 
@@ -50,6 +52,7 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
     pending_exit_short = False
     pending_signal_timestamp: str | None = None
     pending_signal_rsi: float | None = None
+    pending_signal_atr: float | None = None
 
     for idx, bar in enumerate(market_bars):
         signal_bar = SignalBar(
@@ -65,11 +68,13 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
             signal_bar_timestamp=pending_signal_timestamp,
             execution_price=bar.open if (pending_entry_long or pending_exit_long or pending_entry_short or pending_exit_short) else None,
             signal_rsi=pending_signal_rsi,
+            atr=pending_signal_atr,
             sessions=bar.sessions,
         )
         prepared_bars.append(signal_bar)
 
         rsi = rsis[idx]
+        atr = atrs[idx]
         session_allowed = _session_allowed(bar, spec)
         direction = spec.rules.direction
         next_entry_long = rsi is not None and rsi <= spec.rules.entry_rsi_lte and direction in {"long_only", "both"} and session_allowed
@@ -85,6 +90,7 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
                 signal_bar_close=bar.close,
                 execution_bar_open=execution_bar_open,
                 rsi=rsi,
+                atr=atr,
                 sessions=bar.sessions,
                 entry_signal=next_entry_long,
                 exit_signal=next_exit_long,
@@ -97,6 +103,7 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
                     f"signal_bar={bar.timestamp.isoformat()}",
                     f"execution_bar={execution_bar_timestamp}",
                     f"session_allowed={session_allowed}",
+                    f"atr={atr}",
                     "entry/exit evaluated from current close and scheduled onto next bar open",
                 ],
             )
@@ -108,5 +115,6 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
         pending_exit_short = next_exit_short and idx + 1 < len(market_bars)
         pending_signal_timestamp = bar.timestamp.isoformat() if (pending_entry_long or pending_exit_long or pending_entry_short or pending_exit_short) else None
         pending_signal_rsi = rsi if (pending_entry_long or pending_exit_long or pending_entry_short or pending_exit_short) else None
+        pending_signal_atr = atr if (pending_entry_long or pending_exit_long or pending_entry_short or pending_exit_short) else None
 
     return PreparedSignalData(bars=prepared_bars, signal_trace=trace)
