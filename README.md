@@ -11,17 +11,21 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - known-answer tests from day one
 - no live trading and no broker integration
 
-## What exists in v0.1
+## What exists in v0.2-in-progress
 
 - strategy/spec contracts in `formalizer/spec_models.py`
 - explicit execution assumptions in `formalizer/execution_policy.py`
 - CSV data loader and lightweight quality checks
+- UTC-normalized market bars with lean session tagging (`asia`, `london`, `new_york`)
+- RSI calculation from raw OHLC closes
+- no-leakage signal pipeline: signal bar close -> next bar open execution
 - deterministic position sizing and fill semantics
-- structured trade log model
-- minimal deterministic single-position backtest loop over prepared signal bars
-- simple compliance/report artifact builder
-- CLI entrypoint for validating a strategy spec
-- tests for pip sizing/execution semantics plus exact known-answer ledger coverage
+- structured trade log model with evidence refs
+- deterministic single-position backtest loop over prepared signal bars
+- run folder artifact writer under `outputs/`
+- strategy spec / manifest / quality report / signal trace / trades / metrics / compliance summary per run
+- evidence-backed compliance checks
+- tests for pip sizing/execution semantics, exact known-answer ledger coverage, and CSV -> RSI -> execution -> artifact writing
 
 ## What does **not** exist yet
 

@@ -1,11 +1,12 @@
-"""Minimal deterministic backtest loop for v0.1.
+"""Minimal deterministic backtest loop for v0.2.
 
-This is intentionally narrow:
+This remains intentionally narrow:
 - single instrument (EURUSD)
 - one position at a time
 - long-only RSI mean-reversion style entry/exit semantics
 - explicit spread/slippage via ExecutionPolicy
-- deterministic TP/SL handling from bar close/high/low data
+- deterministic TP/SL handling from bar open/high/low/close data
+- optional explicit separation between signal bar and execution bar
 """
 
 from __future__ import annotations
@@ -30,6 +31,10 @@ class SignalBar(BaseModel):
     close: float = Field(..., gt=0)
     entry_long: bool = False
     exit_long: bool = False
+    signal_bar_timestamp: str | None = None
+    execution_price: float | None = Field(default=None, gt=0)
+    signal_rsi: float | None = None
+    sessions: list[str] = Field(default_factory=list)
 
 
 class BacktestResult(BaseModel):
@@ -47,6 +52,7 @@ class _OpenPosition(BaseModel):
     stop_loss_price: float = Field(..., gt=0)
     take_profit_price: float = Field(..., gt=0)
     quantity_units: int = Field(..., gt=0)
+    evidence_ref: str | None = None
 
 
 def _price_delta_to_pnl_usd(*, entry_price: float, exit_price: float, quantity_units: int) -> float:
@@ -63,6 +69,7 @@ def _close_trade(position: _OpenPosition, *, exit_time: datetime, exit_price: fl
         take_profit_price=position.take_profit_price,
         quantity_units=position.quantity_units,
         execution_policy_name=execution_policy_name,
+        evidence_ref=position.evidence_ref,
         exit_time=exit_time,
         exit_price=exit_price,
         pnl_usd=_price_delta_to_pnl_usd(
@@ -112,9 +119,10 @@ def run_backtest(
                 continue
 
             if bar.exit_long:
+                requested_exit_price = bar.execution_price or bar.close
                 exit_fill = apply_execution_policy(
                     side="sell",
-                    requested_price=bar.close,
+                    requested_price=requested_exit_price,
                     policy=policy,
                     pip_size=pip_size,
                 )
@@ -131,9 +139,10 @@ def run_backtest(
 
         if open_position is None and bar.entry_long:
             trade_index += 1
+            requested_entry_price = bar.execution_price or bar.close
             entry_fill = apply_execution_policy(
                 side="buy",
-                requested_price=bar.close,
+                requested_price=requested_entry_price,
                 policy=policy,
                 pip_size=pip_size,
             )
@@ -143,6 +152,9 @@ def run_backtest(
                 instrument=spec.instrument,
                 stop_loss_pips=spec.rules.stop_loss_pips,
             )
+            evidence_ref = None
+            if bar.signal_bar_timestamp is not None:
+                evidence_ref = f"signal={bar.signal_bar_timestamp}|execution={bar.timestamp.isoformat()}"
             open_position = _OpenPosition(
                 trade_id=f"{spec.instrument.symbol.lower()}-{trade_index:04d}",
                 entry_time=bar.timestamp,
@@ -150,6 +162,7 @@ def run_backtest(
                 stop_loss_price=round(entry_fill.executed_price - (spec.rules.stop_loss_pips * pip_size), 5),
                 take_profit_price=round(entry_fill.executed_price + (spec.rules.take_profit_pips * pip_size), 5),
                 quantity_units=quantity_units,
+                evidence_ref=evidence_ref,
             )
 
     return BacktestResult(

@@ -9,6 +9,9 @@ import csv
 from pathlib import Path
 from typing import Any
 
+from fx_backtester.data.models import MarketBar
+from fx_backtester.data.sessions import infer_sessions, normalize_timestamp_to_utc
+
 
 REQUIRED_BAR_COLUMNS = ["timestamp", "open", "high", "low", "close"]
 
@@ -27,3 +30,21 @@ def load_ohlc_csv(path: str | Path) -> list[dict[str, Any]]:
         if missing:
             raise ValueError(f"CSV missing required columns: {missing}")
         return list(reader)
+
+
+def load_market_bars(path: str | Path) -> list[MarketBar]:
+    rows = load_ohlc_csv(path)
+    bars: list[MarketBar] = []
+    for row in rows:
+        timestamp = normalize_timestamp_to_utc(str(row["timestamp"]))
+        bars.append(
+            MarketBar(
+                timestamp=timestamp,
+                open=float(row["open"]),
+                high=float(row["high"]),
+                low=float(row["low"]),
+                close=float(row["close"]),
+                sessions=infer_sessions(timestamp),
+            )
+        )
+    return bars
