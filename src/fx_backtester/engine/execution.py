@@ -1,4 +1,4 @@
-"""Deterministic execution semantics for v0.1 backtests."""
+"""Deterministic execution semantics for v0.4 backtests."""
 
 from __future__ import annotations
 
@@ -17,6 +17,7 @@ class FillResult(BaseModel):
     slippage_pips: float = Field(..., ge=0)
 
 
+
 def apply_execution_policy(
     *,
     side: Literal["buy", "sell"],
@@ -27,7 +28,8 @@ def apply_execution_policy(
     """Apply explicit spread/slippage assumptions to a requested fill price."""
 
     spread_delta = policy.half_spread_pips * pip_size
-    slippage_delta = policy.slippage_pips * pip_size
+    slippage_pips = policy.slippage_pips * (2.0 if policy.slippage_model == "worse_case" else 1.0)
+    slippage_delta = slippage_pips * pip_size
 
     if side == "buy":
         executed_price = requested_price + spread_delta + slippage_delta
@@ -41,5 +43,5 @@ def apply_execution_policy(
         requested_price=requested_price,
         executed_price=executed_price,
         spread_cost_pips=policy.half_spread_pips,
-        slippage_pips=policy.slippage_pips,
+        slippage_pips=slippage_pips,
     )

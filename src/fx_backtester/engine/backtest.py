@@ -1,4 +1,4 @@
-"""Deterministic backtest loop for v0.3.
+"""Deterministic backtest loop for v0.4.
 
 Still intentionally narrow:
 - single instrument
@@ -6,6 +6,7 @@ Still intentionally narrow:
 - deterministic long and short support
 - explicit spread/slippage assumptions
 - conservative same-candle ambiguity handling
+- optional signal-only stop/TP disable switches
 """
 
 from __future__ import annotations
@@ -16,7 +17,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from fx_backtester.engine.execution import apply_execution_policy
-from fx_backtester.engine.sizing import pip_value_per_standard_lot, size_position_units
+from fx_backtester.engine.sizing import size_position_units
 from fx_backtester.engine.trade_log import TradeRecord
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 from fx_backtester.formalizer.spec_models import StrategySpec
@@ -76,14 +77,17 @@ class _OpenPosition(BaseModel):
     sessions: list[str] = Field(default_factory=list)
 
 
+
 def _price_delta_to_pnl(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, quantity_units: int) -> float:
     direction = 1 if side == "buy" else -1
     return round((exit_price - entry_price) * quantity_units * direction, 2)
 
 
+
 def _price_delta_to_pips(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, pip_size: float) -> float:
     direction = 1 if side == "buy" else -1
     return round(((exit_price - entry_price) / pip_size) * direction, 2)
+
 
 
 def _convert_pnl_to_usd(*, pnl: float, account_ccy: str, exit_price: float, base_ccy: str, quote_ccy: str) -> float:
@@ -94,6 +98,7 @@ def _convert_pnl_to_usd(*, pnl: float, account_ccy: str, exit_price: float, base
     if account_ccy == quote_ccy and base_ccy == "USD":
         return round(pnl / exit_price, 2)
     raise NotImplementedError("USD conversion only supports base/quote relationships involving USD")
+
 
 
 def _close_trade(
@@ -147,6 +152,7 @@ def _close_trade(
             pip_size=spec.instrument.pip_size,
         ),
     )
+
 
 
 def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_equity: float) -> BacktestMetrics:
@@ -207,6 +213,7 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     )
 
 
+
 def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: ExecutionPolicy) -> BacktestResult:
     equity = spec.risk.initial_equity
     trades: list[TradeRecord] = []
@@ -214,6 +221,8 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
     pip_size = spec.instrument.pip_size
     trade_index = 0
     half_spread_delta = policy.half_spread_pips * pip_size
+    stop_enabled = spec.rules.stop_loss_style == "fixed_pips"
+    tp_enabled = spec.rules.take_profit_style == "fixed_pips"
 
     for bar in bars:
         if open_position is not None:
@@ -221,8 +230,8 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
             spread_triggered_stop = False
 
             if open_position.side == "buy":
-                stop_reachable = bar.low <= open_position.stop_loss_price + half_spread_delta
-                tp_reachable = bar.high >= open_position.take_profit_price
+                stop_reachable = stop_enabled and bar.low <= open_position.stop_loss_price + half_spread_delta
+                tp_reachable = tp_enabled and bar.high >= open_position.take_profit_price
                 if stop_reachable and bar.low > open_position.stop_loss_price:
                     spread_triggered_stop = True
                 if stop_reachable and tp_reachable:
@@ -252,8 +261,8 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                     open_position = None
                     continue
             else:
-                stop_reachable = bar.high >= open_position.stop_loss_price - half_spread_delta
-                tp_reachable = bar.low <= open_position.take_profit_price
+                stop_reachable = stop_enabled and bar.high >= open_position.stop_loss_price - half_spread_delta
+                tp_reachable = tp_enabled and bar.low <= open_position.take_profit_price
                 if stop_reachable and bar.high < open_position.stop_loss_price:
                     spread_triggered_stop = True
                 if stop_reachable and tp_reachable:
