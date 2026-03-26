@@ -22,10 +22,12 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - deterministic position sizing and fill semantics
 - structured trade log model with evidence refs
 - deterministic single-position backtest loop over prepared signal bars
+- conservative gap / same-candle TP-SL resolution, spread-triggered stop detection, and short-side support
+- richer run metrics: gross/net pips, expectancy, avg win/loss in pips, drawdown depth/duration, ambiguity counts, spread-triggered-stop counts, session summaries
 - run folder artifact writer under `outputs/`
 - strategy spec / manifest / quality report / signal trace / trades / metrics / compliance summary per run
 - evidence-backed compliance checks
-- tests for pip sizing/execution semantics, exact known-answer ledger coverage, and CSV -> RSI -> execution -> artifact writing
+- tests for pip sizing/execution semantics, exact known-answer ledger coverage, JPY pip sizing, non-USD account conversion, short-side trades, DST/session tagging, and CSV -> RSI -> execution -> artifact writing
 
 ## What does **not** exist yet
 

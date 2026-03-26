@@ -1,7 +1,8 @@
 """Pydantic contracts for strategy and run specifications.
 
-These models are deliberately narrow for v0.1. They are the primary contracts
-between formalization, engine logic, and reporting.
+These models stay deliberately lean, but v0.3 broadens instrument/account
+coverage enough to support deterministic known-answer tests for JPY pairs and
+non-quote-currency accounts.
 """
 
 from __future__ import annotations
@@ -15,17 +16,17 @@ from pydantic import BaseModel, Field, model_validator
 class InstrumentSpec(BaseModel):
     """Instrument-level trading conventions for the backtest."""
 
-    symbol: Literal["EURUSD"] = "EURUSD"
-    quote_ccy: Literal["USD"] = "USD"
-    base_ccy: Literal["EUR"] = "EUR"
+    symbol: str = "EURUSD"
+    quote_ccy: str = "USD"
+    base_ccy: str = "EUR"
     pip_size: float = Field(default=0.0001, gt=0)
     lot_size_units: int = Field(default=100_000, gt=0)
 
 
 class RiskSpec(BaseModel):
-    """Simple fixed-fraction risk model for v0.1."""
+    """Simple fixed-fraction risk model for deterministic backtests."""
 
-    account_ccy: Literal["USD"] = "USD"
+    account_ccy: str = "USD"
     initial_equity: float = Field(..., gt=0)
     risk_per_trade_fraction: float = Field(..., gt=0, le=0.05)
     max_open_positions: int = Field(default=1, ge=1, le=1)

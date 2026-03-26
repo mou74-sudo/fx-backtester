@@ -12,8 +12,6 @@ from fx_backtester.formalizer.spec_models import StrategySpec
 
 
 def build_run_manifest(spec: StrategySpec, policy: ExecutionPolicy) -> dict:
-    """Build a small serializable run manifest for audit trails."""
-
     return {
         "strategy_name": spec.strategy_name,
         "instrument": spec.instrument.model_dump(),
@@ -32,11 +30,9 @@ def build_compliance_summary(
     quality_report: DataQualityReport | None = None,
     signal_trace: list[SignalTraceRow] | None = None,
 ) -> dict:
-    """Build a compact deterministic summary for audit/review output."""
-
     total_pnl = round(result.ending_equity - result.starting_equity, 2)
-    wins = sum(1 for trade in result.trades if (trade.pnl_usd or 0.0) > 0)
-    losses = sum(1 for trade in result.trades if (trade.pnl_usd or 0.0) < 0)
+    wins = sum(1 for trade in result.trades if (trade.pnl or 0.0) > 0)
+    losses = sum(1 for trade in result.trades if (trade.pnl or 0.0) < 0)
     signal_trace = signal_trace or []
 
     checks = [
@@ -51,6 +47,7 @@ def build_compliance_summary(
             "evidence": [
                 f"half_spread_pips={policy.half_spread_pips}",
                 f"slippage_pips={policy.slippage_pips}",
+                f"allow_intrabar_tp_sl_resolution={policy.allow_intrabar_tp_sl_resolution}",
             ],
         },
         {
@@ -82,19 +79,21 @@ def build_compliance_summary(
         "summary": {
             "starting_equity": result.starting_equity,
             "ending_equity": result.ending_equity,
-            "net_pnl_usd": total_pnl,
+            "ending_equity_usd": result.ending_equity_usd,
+            "net_pnl": total_pnl,
             "trade_count": result.trade_count,
             "wins": wins,
             "losses": losses,
             "open_trades": 0,
+            "ambiguity_count": result.metrics.ambiguity_count,
+            "spread_triggered_stop_count": result.metrics.spread_triggered_stop_count,
         },
         "checks": checks,
+        "metrics": result.metrics.model_dump(mode="json"),
         "trades": [trade.model_dump(mode="json") for trade in result.trades],
     }
 
 
 def ensure_output_dirs(repo_root: str | Path) -> None:
-    """Create output directories used by later report writers."""
-
     repo_root = Path(repo_root)
     (repo_root / "outputs").mkdir(parents=True, exist_ok=True)

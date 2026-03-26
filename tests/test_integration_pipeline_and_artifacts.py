@@ -75,6 +75,32 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
 
     compliance = json.loads((run_dir / "compliance_summary.json").read_text(encoding="utf-8"))
     assert any(check["name"] == "signal_execution_alignment_no_leakage" and check["ok"] for check in compliance["checks"])
+    assert compliance["metrics"]["session_summary"]
     signal_trace = json.loads((run_dir / "signal_trace.json").read_text(encoding="utf-8"))
     assert "asia" in signal_trace[0]["sessions"]
     assert "london" in signal_trace[7]["sessions"]
+
+
+def test_dst_session_tagging_stays_consistent_across_london_shift() -> None:
+    repo_root = Path(".")
+    csv_path = Path("/tmp/dst-session-check.csv")
+    csv_path.write_text(
+        "timestamp,open,high,low,close\n"
+        "2024-03-31T05:30:00Z,1.1000,1.1002,1.0998,1.1000\n"
+        "2024-03-31T06:30:00Z,1.1000,1.1002,1.0998,1.1000\n",
+        encoding="utf-8",
+    )
+
+    spec = StrategySpec(
+        strategy_name="dst_check",
+        instrument=InstrumentSpec(),
+        risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
+        rules=RsiMeanReversionRule(stop_loss_pips=20, take_profit_pips=30),
+        window=BacktestWindow(start_date="2024-03-31", end_date="2024-03-31"),
+    )
+    policy = ExecutionPolicy()
+
+    _, prepared, _, _ = run_backtest_from_csv(csv_path=csv_path, spec=spec, policy=policy, repo_root=repo_root)
+
+    assert "london" not in prepared.signal_trace[0].sessions
+    assert "london" in prepared.signal_trace[1].sessions

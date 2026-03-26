@@ -41,8 +41,11 @@ class RunArtifactWriter:
         metrics = {
             "starting_equity": result.starting_equity,
             "ending_equity": result.ending_equity,
-            "net_pnl_usd": round(result.ending_equity - result.starting_equity, 2),
+            "ending_equity_usd": result.ending_equity_usd,
+            "net_pnl": round(result.ending_equity - result.starting_equity, 2),
+            "net_pnl_usd": round(result.ending_equity_usd - result.starting_equity, 2) if spec.risk.account_ccy != "USD" else round(result.ending_equity - result.starting_equity, 2),
             "trade_count": result.trade_count,
+            **result.metrics.model_dump(mode="json"),
         }
         quality = {
             "row_count": quality_report.row_count,
