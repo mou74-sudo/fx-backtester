@@ -14,6 +14,7 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 ## What exists in v0.4-in-progress
 
 - strategy/spec contracts in `formalizer/spec_models.py`
+- deterministic natural-language request formalizer in `formalizer/request_formalizer.py`
 - explicit execution assumptions in `formalizer/execution_policy.py`
 - CSV data loader and lightweight quality checks
 - UTC-normalized market bars with lean session tagging (`asia`, `london`, `new_york`)
@@ -49,6 +50,8 @@ source .venv/bin/activate
 pip install -e .[dev]
 pytest
 fx-backtester validate-spec examples/eurusd_rsi_mean_reversion.json
+printf 'Trade EUR/USD on H1 long only. RSI period 5. Entry RSI below 20. Exit RSI above 60. Stop loss 25 pips. Take profit 80 pips. Account currency USD.' > /tmp/strategy_request.txt
+fx-backtester formalize-request /tmp/strategy_request.txt --output-dir outputs/formalization_demo
 ```
 
 ## Repository layout
