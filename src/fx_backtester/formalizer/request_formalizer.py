@@ -24,12 +24,12 @@ _SUPPORTED_PAIR_MAP: dict[str, InstrumentSpec] = {
 }
 
 _UNSUPPORTED_PATTERNS: list[tuple[re.Pattern[str], str, str | None]] = [
-    (re.compile(r"\b(macd|ema|sma|moving average|bollinger|stochastic|vwap)\b", re.I), "Only RSI-based entry and signal-exit rules are implemented right now.", "Use RSI thresholds plus the supported deterministic exit/stop fields."),
-    (re.compile(r"\b(trailing stop|trail stop|break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Advanced trade management is not implemented.", "Use time stop, session-close exit, fixed-pip TP, and fixed-pip or ATR initial stop only."),
-    (re.compile(r"\b(limit order|stop order|pending order|market if touched)\b", re.I), "Order-type selection is not implemented.", "The engine fills deterministically on the next bar open after a signal."),
-    (re.compile(r"\b(optimi[sz]e|optimi[sz]ation|grid search|walk[- ]?forward|monte carlo|genetic|bayesian)\b", re.I), "Optimization/search workflows are outside scope.", "Use robustness.enabled with deterministic spread/slippage/RSI perturbation only."),
-    (re.compile(r"\b(multi[- ]?pair|portfolio|basket|correlation|hedg(e|ing))\b", re.I), "Portfolio or multi-pair logic is not implemented.", "Use one supported USD-linked pair per spec."),
-    (re.compile(r"\b(news|fundamental|sentiment|machine learning|ai model|order book)\b", re.I), "External/discretionary execution logic is not implemented.", "Use deterministic RSI, sessions, risk, and robustness fields only."),
+    (re.compile(r"\b(macd|ema|sma|moving average|bollinger|stochastic|vwap)\b", re.I), "Unsupported signal logic: v1.0 only formalizes RSI-based entries and RSI signal exits.", "Nearest supported path: express the strategy with RSI thresholds plus fixed deterministic stop/exit fields."),
+    (re.compile(r"\b(trailing stop|trail stop|break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Advanced trade management is unsupported in v1.0: trailing, break-even, partials, and scaling are out of scope.", "Nearest supported path: use fixed-pip TP, fixed-pip or ATR initial stop, time stop, and/or session-close exit."),
+    (re.compile(r"\b(limit order|stop order|pending order|market if touched)\b", re.I), "Unsupported execution style: v1.0 does not model order-type selection.", "Nearest supported path: entries and exits fill deterministically on the next bar open after a signal."),
+    (re.compile(r"\b(optimi[sz]e|optimi[sz]ation|grid search|walk[- ]?forward|monte carlo|genetic|bayesian)\b", re.I), "Optimization/search workflows are unsupported in v1.0.", "Nearest supported path: keep one fixed spec and optionally enable deterministic robustness sweeps."),
+    (re.compile(r"\b(multi[- ]?pair|portfolio|basket|correlation|hedg(e|ing))\b", re.I), "Unsupported scope: portfolio, basket, or hedge logic is not implemented.", "Nearest supported path: run one supported USD-linked pair per spec."),
+    (re.compile(r"\b(news|fundamental|sentiment|machine learning|ai model|order book)\b", re.I), "Unsupported discretionary/external logic: v1.0 only supports deterministic rule-based inputs.", "Nearest supported path: use RSI, sessions, fixed risk, and deterministic robustness fields only."),
 ]
 
 
@@ -268,16 +268,16 @@ def _parse_robustness(text: str) -> dict[str, object]:
 def validate_supported_features(spec: StrategySpec) -> list[FormalizationIssue]:
     issues: list[FormalizationIssue] = []
     if spec.instrument.symbol not in _SUPPORTED_PAIR_MAP:
-        issues.append(FormalizationIssue(field="pair", reason=f"Pair {spec.instrument.symbol} is not in the deterministic supported set.", nearest_supported="Use EURUSD or USDJPY."))
+        issues.append(FormalizationIssue(field="pair", reason=f"Unsupported pair: {spec.instrument.symbol} is outside the deterministic v1.0 set.", nearest_supported="Use EURUSD or USDJPY."))
     if spec.rules.timeframe != "H1":
-        issues.append(FormalizationIssue(field="timeframe", reason=f"Timeframe {spec.rules.timeframe} is unsupported.", nearest_supported="Use timeframe=H1."))
+        issues.append(FormalizationIssue(field="timeframe", reason=f"Unsupported timeframe: {spec.rules.timeframe} is outside the v1.0 scope.", nearest_supported="Use timeframe=H1."))
     if spec.risk.account_ccy not in {spec.instrument.base_ccy, spec.instrument.quote_ccy}:
         issues.append(
             FormalizationIssue(
                 field="account_currency",
                 reason=(
-                    f"account_ccy={spec.risk.account_ccy} is unsupported for {spec.instrument.symbol}; "
-                    "deterministic sizing/conversion only supports base/quote account currencies."
+                    f"Unsupported account currency: account_ccy={spec.risk.account_ccy} is outside the deterministic conversion scope for {spec.instrument.symbol}; "
+                    "v1.0 only supports the pair base or quote currency."
                 ),
                 nearest_supported=f"Use {spec.instrument.base_ccy} or {spec.instrument.quote_ccy}.",
             )

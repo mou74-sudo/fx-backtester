@@ -1,0 +1,7 @@
+Trade EUR/USD on H1, long only.
+Use RSI period 5.
+Enter when RSI is below 20 and exit when RSI is above 60.
+Use a 2x ATR(5) initial stop loss and 80 pip take profit.
+Exit after 3 bars.
+Initial equity 15000. Risk 1% per trade. Account currency USD.
+Enable robustness with 1x spread and 2x spread, base slippage and worse slippage, RSI variants 0,1.

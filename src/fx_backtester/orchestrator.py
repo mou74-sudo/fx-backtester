@@ -19,6 +19,7 @@ def run_backtest_from_csv(
     spec: StrategySpec,
     policy: ExecutionPolicy,
     repo_root: str | Path,
+    run_label: str | None = None,
 ) -> tuple[BacktestResult, PreparedSignalData, object, Path, RobustnessLiteReport, BenchmarkReport]:
     raw_rows = [row.copy() for row in load_ohlc_csv(csv_path)]
     quality_report = assess_basic_ohlc_quality(raw_rows)
@@ -37,5 +38,6 @@ def run_backtest_from_csv(
         result=result,
         robustness=robustness,
         benchmarks=benchmarks,
+        run_label=run_label,
     )
     return result, prepared, quality_report, run_dir, robustness, benchmarks

@@ -6,6 +6,7 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
+from fx_backtester.data.indicators import compute_wilder_atr
 from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.backtest import BacktestResult, SignalBar, run_backtest
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
@@ -58,6 +59,7 @@ def _build_synthetic_signal_bars(
     entry_indices: list[int],
     hold_bars: int,
     sides: list[Literal['buy', 'sell']],
+    atr_values: list[float | None],
 ) -> list[SignalBar]:
     entry_map = {idx: sides[pos] for pos, idx in enumerate(entry_indices)}
     exit_map: dict[int, str] = {}
@@ -82,6 +84,7 @@ def _build_synthetic_signal_bars(
                 exit_short=exit_side == 'sell',
                 signal_bar_timestamp=bar.timestamp.isoformat() if entry_side is not None else None,
                 execution_price=bar.open if entry_side is not None or exit_side is not None else None,
+                atr=atr_values[idx],
                 sessions=bar.sessions,
             )
         )
@@ -104,16 +107,29 @@ def build_deterministic_benchmarks(
     if target_trade_count <= 0 or len(market_bars) < 2:
         return BenchmarkReport(enabled=True, baseline_trade_count=target_trade_count, baseline_average_hold_bars=baseline_average_hold_bars)
 
-    max_entry_index = max(0, len(market_bars) - target_hold_bars - 1)
-    if max_entry_index <= 0:
-        entry_indices = [0]
+    min_entry_index = spec.rules.stop_loss_atr_period if spec.rules.stop_loss_style == 'atr' else 0
+    max_entry_index = max(min_entry_index, len(market_bars) - target_hold_bars - 1)
+    if max_entry_index <= min_entry_index:
+        entry_indices = [min_entry_index]
     else:
-        entry_indices = sorted({round((max_entry_index * idx) / max(target_trade_count - 1, 1)) for idx in range(target_trade_count)})
+        entry_indices = sorted({round(min_entry_index + ((max_entry_index - min_entry_index) * idx) / max(target_trade_count - 1, 1)) for idx in range(target_trade_count)})
         while len(entry_indices) < target_trade_count and entry_indices[-1] < max_entry_index:
             entry_indices.append(entry_indices[-1] + 1)
     entry_indices = entry_indices[:target_trade_count]
     sides = _direction_cycle(spec.rules.direction, len(entry_indices))
-    synthetic_bars = _build_synthetic_signal_bars(market_bars=market_bars, entry_indices=entry_indices, hold_bars=target_hold_bars, sides=sides)
+    atr_values = compute_wilder_atr(
+        [bar.high for bar in market_bars],
+        [bar.low for bar in market_bars],
+        [bar.close for bar in market_bars],
+        spec.rules.stop_loss_atr_period,
+    )
+    synthetic_bars = _build_synthetic_signal_bars(
+        market_bars=market_bars,
+        entry_indices=entry_indices,
+        hold_bars=target_hold_bars,
+        sides=sides,
+        atr_values=atr_values,
+    )
     benchmark_result = run_backtest(bars=synthetic_bars, spec=spec, policy=policy)
 
     benchmark_hold_bars = [_trade_hold_bars(trade, index_by_timestamp) for trade in benchmark_result.trades]

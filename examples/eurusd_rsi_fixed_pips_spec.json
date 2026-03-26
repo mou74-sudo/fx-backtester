@@ -1,0 +1,47 @@
+{
+  "strategy_name": "eurusd_rsi_fixed_pips_v1",
+  "instrument": {
+    "symbol": "EURUSD",
+    "quote_ccy": "USD",
+    "base_ccy": "EUR",
+    "pip_size": 0.0001,
+    "lot_size_units": 100000
+  },
+  "risk": {
+    "account_ccy": "USD",
+    "initial_equity": 15000,
+    "risk_per_trade_fraction": 0.01,
+    "max_open_positions": 1
+  },
+  "rules": {
+    "timeframe": "H1",
+    "direction": "long_only",
+    "allowed_sessions": [],
+    "rsi_period": 5,
+    "entry_rsi_lte": 20,
+    "short_entry_rsi_gte": 70,
+    "short_exit_rsi_lte": 45,
+    "exit_rsi_gte": 60,
+    "time_stop_bars": null,
+    "exit_on_session_close": false,
+    "stop_loss_style": "fixed_pips",
+    "stop_loss_pips": 25,
+    "stop_loss_atr_period": 14,
+    "stop_loss_atr_multiplier": 2.0,
+    "take_profit_style": "fixed_pips",
+    "take_profit_pips": 80,
+    "trailing_stop_style": "disabled"
+  },
+  "window": {
+    "start_date": "2024-01-01",
+    "end_date": "2024-12-31"
+  },
+  "execution_policy_name": "default_v0_1",
+  "robustness": {
+    "enabled": true,
+    "spread_multipliers": [1.0, 2.0],
+    "slippage_modes": ["base", "worse"],
+    "rsi_period_variants": [-1, 0, 1]
+  },
+  "notes": "Golden example A: EUR/USD RSI mean reversion with fixed-pip stop and take profit."
+}

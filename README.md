@@ -1,76 +1,200 @@
 # fx-backtester
 
-Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
+Deterministic, audit-friendly FX backtester for a deliberately narrow v1.0 scope.
 
-## Design goals
+## v1.0 supported scope
 
-- EUR/USD first
-- deterministic engine before anything clever
-- evidence-backed artifacts and explicit assumptions
-- Pydantic models as source-of-truth contracts
-- known-answer tests from day one
-- no live trading and no broker integration
+This repository is intentionally frozen around one core workflow:
 
-## What exists in v0.4-in-progress
+- single-pair backtests for `EURUSD` and `USDJPY`
+- one strategy family: RSI mean reversion
+- timeframe: `H1` only
+- directions: `long_only`, `short_only`, or `both`
+- one open position at a time
+- entries/exits scheduled from signal-bar close to next-bar open
+- stop loss styles: `fixed_pips`, `atr`, or `disabled`
+- take profit styles: `fixed_pips` or `disabled`
+- optional deterministic exits: `time_stop_bars`, `exit_on_session_close`
+- optional session filters: `asia`, `london`, `new_york`
+- deterministic robustness-lite sweeps for spread/slippage/RSI-period perturbations
+- deterministic report stack: compliance, summary, reviewer verdict, analysis summary, research memo
 
-- strategy/spec contracts in `formalizer/spec_models.py`
-- deterministic natural-language request formalizer in `formalizer/request_formalizer.py`
-- explicit execution assumptions in `formalizer/execution_policy.py`
-- CSV data loader and lightweight quality checks
-- UTC-normalized market bars with lean session tagging (`asia`, `london`, `new_york`)
-- RSI calculation from raw OHLC closes
-- no-leakage signal pipeline: signal bar close -> next bar open execution
-- deterministic position sizing and fill semantics
-- structured trade log model with evidence refs
-- deterministic single-position backtest loop over prepared signal bars
-- conservative gap / same-candle TP-SL resolution, spread-triggered stop detection, and short-side support
-- richer run metrics: gross/net pips, expectancy, avg win/loss in pips, drawdown depth/duration, ambiguity counts, spread-triggered-stop counts, session summaries
-- lean config/spec extensions for long-only / short-only / both, session restrictions, account currency, spread/slippage model naming, and stop/TP style switches
-- robustness-lite sweeps for spread stress, slippage stress, RSI period perturbation, trade concentration, and session contribution summary
-- deterministic run folder artifact writer under `outputs/` with `inputs/`, `results/`, `traces/`, and `reports/`
-- one summary report plus robustness-lite report artifacts per run
-- read-only analysis/report layer that restates deterministic artifacts into `reports/analysis_summary.json` and `reports/research_memo.md`
-- evidence-backed compliance checks
-- tests for pip sizing/execution semantics, exact known-answer ledger coverage, JPY pip sizing, non-USD account conversion, short-side trades, config/robustness coverage, DST/session tagging, deterministic analysis reporting, and CSV -> RSI -> execution -> artifact writing
+## explicitly unsupported in v1.0
 
-## What does **not** exist yet
+Not hidden, not half-supported:
 
-- no portfolio-level multi-pair logic
-- no probabilistic slippage or market-impact model beyond explicit fixed/worse-case assumptions
-- no London/session microstructure logic
-- no broker adapters
-- no full indicator pipeline from raw OHLC to signals yet
-- no short-side strategy logic yet
+- trailing stops, break-even moves, partial exits, pyramiding, scale-in/out
+- portfolios, baskets, multi-pair logic, hedging
+- non-H1 strategies
+- order-type modelling beyond next-bar-open deterministic fills
+- optimization loops, walk-forward, Monte Carlo, parameter search
+- discretionary/fundamental/ML/news/order-book inputs
+- live trading, brokers, paper trading, autonomous agents
 
-## Quickstart
+If a request asks for one of those, the formalizer should reject it and point to the nearest supported shape.
+
+## install
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -e .[dev]
 pytest
-fx-backtester validate-spec examples/eurusd_rsi_mean_reversion.json
-printf 'Trade EUR/USD on H1 long only. RSI period 5. Entry RSI below 20. Exit RSI above 60. Stop loss 25 pips. Take profit 80 pips. Account currency USD.' > /tmp/strategy_request.txt
-fx-backtester formalize-request /tmp/strategy_request.txt --output-dir outputs/formalization_demo
 ```
 
-## Repository layout
+## happy-path CLI
+
+The intended v1.0 flow is:
+
+1. author a plain-English request
+2. formalize it into a deterministic spec
+3. validate the spec
+4. run the backtest
+5. read the verdict and memo
+
+### request -> formalize
+
+```bash
+fx-backtester formalize-request \
+  examples/eurusd_rsi_fixed_pips_request.txt \
+  --output-dir outputs/demo_formalized
+```
+
+Writes:
 
 ```text
-src/fx_backtester/
-  formalizer/
-  data/
-  engine/
-  reports/
-  cli.py
-examples/
-tests/
-data/
-outputs/
+outputs/demo_formalized/
+  formalized_spec.json
+  formalizer_notes.json
+  strategy_request.txt
 ```
 
-## Determinism notes
+### validate the formalized or example spec
 
-The starter framework keeps execution policy explicit. Fill price, spread handling,
-lot sizing, pip value assumptions, and artifact generation are intended to be easy
-to inspect and hard to hand-wave.
+```bash
+fx-backtester validate-spec examples/eurusd_rsi_fixed_pips_spec.json
+```
+
+### run the full pipeline
+
+```bash
+fx-backtester run-backtest \
+  examples/eurusd_rsi_fixed_pips_spec.json \
+  examples/eurusd_rsi_fixed_pips_data.csv \
+  --repo-root . \
+  --run-label demo_fixed_pips
+```
+
+### restate the verdict from an existing run
+
+```bash
+fx-backtester summarize-run outputs/demo_fixed_pips
+```
+
+## golden examples
+
+Two reproducible example flows are kept in `examples/`.
+
+### A. EUR/USD RSI mean reversion with fixed-pip stop/TP
+
+Files:
+
+```text
+examples/
+  eurusd_rsi_fixed_pips_request.txt
+  eurusd_rsi_fixed_pips_spec.json
+  eurusd_rsi_fixed_pips_data.csv
+```
+
+Run:
+
+```bash
+fx-backtester formalize-request \
+  examples/eurusd_rsi_fixed_pips_request.txt \
+  --output-dir outputs/golden_fixed_pips_formalized
+
+fx-backtester run-backtest \
+  examples/eurusd_rsi_fixed_pips_spec.json \
+  examples/eurusd_rsi_fixed_pips_data.csv \
+  --repo-root . \
+  --run-label golden_fixed_pips
+```
+
+Expected shape:
+
+- one deterministic trade
+- fixed-pip initial stop
+- fixed-pip take profit
+- verdict + memo generated under `outputs/golden_fixed_pips/reports/`
+
+### B. EUR/USD RSI with ATR initial stop + time stop
+
+Files:
+
+```text
+examples/
+  eurusd_rsi_atr_time_stop_request.txt
+  eurusd_rsi_atr_time_stop_spec.json
+  eurusd_rsi_atr_time_stop_data.csv
+```
+
+Run:
+
+```bash
+fx-backtester formalize-request \
+  examples/eurusd_rsi_atr_time_stop_request.txt \
+  --output-dir outputs/golden_atr_time_stop_formalized
+
+fx-backtester run-backtest \
+  examples/eurusd_rsi_atr_time_stop_spec.json \
+  examples/eurusd_rsi_atr_time_stop_data.csv \
+  --repo-root . \
+  --run-label golden_atr_time_stop
+```
+
+Expected shape:
+
+- one deterministic trade
+- ATR-based initial stop
+- exit reason `time_stop`
+- verdict + memo generated under `outputs/golden_atr_time_stop/reports/`
+
+## output tree
+
+Each run writes the same artifact layout.
+
+```text
+outputs/<run_id>/
+  inputs/
+    manifest.json
+    strategy_spec.json
+  results/
+    metrics.json
+    quality_report.json
+    trades.json
+  traces/
+    signal_trace.json
+  reports/
+    analysis_summary.json
+    artifact_index.json
+    benchmarks.json
+    compliance_summary.json
+    final_verdict.json
+    research_memo.md
+    reviewer_summary.json
+    robustness_lite.json
+    summary.json
+```
+
+`reports/summary.json` carries `artifact_schema_version: "v1"` so downstream readers can lock onto a stable report shape.
+
+## design notes
+
+- deterministic before clever
+- artifacts before opinions
+- explicit execution assumptions
+- tests cover contracts, known answers, pipeline wiring, reviewer outputs, and CLI/golden-example smoke paths
+
+## current status
+
+This is a v1.0-ready research tool for the narrow scope listed above. It is not a general-purpose trading platform.
