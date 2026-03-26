@@ -159,6 +159,11 @@ Expected shape:
 - exit reason `time_stop`
 - verdict + memo generated under `outputs/golden_atr_time_stop/reports/`
 
+## release notes
+
+- `CHANGELOG.md` tracks the v1.0 release note entry.
+- `docs/V1_ARTIFACT_CONTRACT.md` freezes the v1 run artifact contract for downstream readers.
+
 ## output tree
 
 Each run writes the same artifact layout.
@@ -186,7 +191,7 @@ outputs/<run_id>/
     summary.json
 ```
 
-`reports/summary.json` carries `artifact_schema_version: "v1"` so downstream readers can lock onto a stable report shape.
+`reports/summary.json` and `reports/artifact_index.json` both carry `artifact_schema_version: "v1"` so downstream readers can lock onto the frozen v1 shape.
 
 ## design notes
 
