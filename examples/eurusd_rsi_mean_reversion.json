@@ -1,0 +1,30 @@
+{
+  "strategy_name": "eurusd_rsi_mean_reversion_v0_1",
+  "instrument": {
+    "symbol": "EURUSD",
+    "quote_ccy": "USD",
+    "base_ccy": "EUR",
+    "pip_size": 0.0001,
+    "lot_size_units": 100000
+  },
+  "risk": {
+    "account_ccy": "USD",
+    "initial_equity": 10000,
+    "risk_per_trade_fraction": 0.01,
+    "max_open_positions": 1
+  },
+  "rules": {
+    "timeframe": "H1",
+    "rsi_period": 14,
+    "entry_rsi_lte": 30,
+    "exit_rsi_gte": 55,
+    "stop_loss_pips": 20,
+    "take_profit_pips": 30
+  },
+  "window": {
+    "start_date": "2024-01-01",
+    "end_date": "2024-06-30"
+  },
+  "execution_policy_name": "default_v0_1",
+  "notes": "Example only. This validates contracts and execution assumptions, not profitability."
+}
