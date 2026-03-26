@@ -1,5 +1,5 @@
 {
-  "strategy_name": "eurusd_rsi_mean_reversion_v0_1",
+  "strategy_name": "eurusd_rsi_mean_reversion_v0_4",
   "instrument": {
     "symbol": "EURUSD",
     "quote_ccy": "USD",
@@ -15,16 +15,28 @@
   },
   "rules": {
     "timeframe": "H1",
+    "direction": "both",
+    "allowed_sessions": ["london", "new_york"],
     "rsi_period": 14,
     "entry_rsi_lte": 30,
+    "short_entry_rsi_gte": 70,
     "exit_rsi_gte": 55,
+    "short_exit_rsi_lte": 45,
+    "stop_loss_style": "fixed_pips",
     "stop_loss_pips": 20,
+    "take_profit_style": "fixed_pips",
     "take_profit_pips": 30
   },
   "window": {
     "start_date": "2024-01-01",
     "end_date": "2024-06-30"
   },
-  "execution_policy_name": "default_v0_1",
-  "notes": "Example only. This validates contracts and execution assumptions, not profitability."
+  "execution_policy_name": "default_v0_4",
+  "robustness": {
+    "enabled": true,
+    "spread_multipliers": [1.0, 1.5, 2.0],
+    "slippage_modes": ["base", "worse"],
+    "rsi_period_variants": [-1, 0, 1]
+  },
+  "notes": "Example only. Validates lean contracts, deterministic execution assumptions, and robustness-lite outputs."
 }

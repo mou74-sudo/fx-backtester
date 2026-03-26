@@ -5,12 +5,14 @@ from pydantic import ValidationError
 
 from fx_backtester.data.loaders import load_ohlc_csv
 from fx_backtester.data.quality import assess_basic_ohlc_quality
-from fx_backtester.formalizer.spec_models import BacktestWindow, RiskSpec, RsiMeanReversionRule
+from fx_backtester.formalizer.spec_models import BacktestWindow, RiskSpec, RobustnessSpec, RsiMeanReversionRule
+
 
 
 def test_risk_spec_rejects_excessive_risk_fraction() -> None:
     with pytest.raises(ValidationError):
         RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.10)
+
 
 
 def test_rule_rejects_inverted_thresholds() -> None:
@@ -23,9 +25,17 @@ def test_rule_rejects_inverted_thresholds() -> None:
         )
 
 
+
 def test_backtest_window_rejects_end_before_start() -> None:
     with pytest.raises(ValidationError):
         BacktestWindow(start_date="2024-02-01", end_date="2024-01-01")
+
+
+
+def test_robustness_spec_rejects_duplicate_rsi_variants() -> None:
+    with pytest.raises(ValidationError):
+        RobustnessSpec(enabled=True, rsi_period_variants=[-1, 0, 0])
+
 
 
 def test_load_ohlc_csv_and_quality_report(tmp_path: Path) -> None:
@@ -45,6 +55,7 @@ def test_load_ohlc_csv_and_quality_report(tmp_path: Path) -> None:
     assert report.missing_required_fields == 0
     assert report.non_monotonic_timestamps == 0
     assert report.notes == []
+
 
 
 def test_quality_report_flags_missing_fields_and_non_monotonic_timestamps() -> None:

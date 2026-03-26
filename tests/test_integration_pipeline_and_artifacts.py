@@ -8,6 +8,7 @@ from fx_backtester.formalizer.spec_models import BacktestWindow, InstrumentSpec,
 from fx_backtester.orchestrator import run_backtest_from_csv
 
 
+
 def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     repo_root = tmp_path / "repo"
     repo_root.mkdir()
@@ -41,7 +42,7 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     )
     policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
 
-    result, prepared, quality_report, run_dir = run_backtest_from_csv(
+    result, prepared, quality_report, run_dir, robustness = run_backtest_from_csv(
         csv_path=csv_path,
         spec=spec,
         policy=policy,
@@ -62,28 +63,37 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     assert trade.exit_time.isoformat() == "2024-01-01T10:00:00+00:00"
     assert trade.evidence_ref == "signal=2024-01-01T05:00:00+00:00|execution=2024-01-01T06:00:00+00:00"
 
+    assert run_dir.name.startswith("run_")
     expected_files = {
-        "strategy_spec.json",
-        "manifest.json",
-        "quality_report.json",
-        "signal_trace.json",
-        "trades.json",
-        "metrics.json",
-        "compliance_summary.json",
+        "inputs/strategy_spec.json",
+        "inputs/manifest.json",
+        "results/quality_report.json",
+        "results/trades.json",
+        "results/metrics.json",
+        "traces/signal_trace.json",
+        "reports/compliance_summary.json",
+        "reports/summary.json",
+        "reports/robustness_lite.json",
     }
-    assert expected_files.issubset({path.name for path in run_dir.iterdir()})
+    actual_files = {str(path.relative_to(run_dir)) for path in run_dir.rglob("*.json")}
+    assert expected_files.issubset(actual_files)
 
-    compliance = json.loads((run_dir / "compliance_summary.json").read_text(encoding="utf-8"))
+    compliance = json.loads((run_dir / "reports" / "compliance_summary.json").read_text(encoding="utf-8"))
     assert any(check["name"] == "signal_execution_alignment_no_leakage" and check["ok"] for check in compliance["checks"])
     assert compliance["metrics"]["session_summary"]
-    signal_trace = json.loads((run_dir / "signal_trace.json").read_text(encoding="utf-8"))
+    signal_trace = json.loads((run_dir / "traces" / "signal_trace.json").read_text(encoding="utf-8"))
     assert "asia" in signal_trace[0]["sessions"]
     assert "london" in signal_trace[7]["sessions"]
+    assert robustness.baseline.trade_count == result.trade_count
 
 
-def test_dst_session_tagging_stays_consistent_across_london_shift() -> None:
-    repo_root = Path(".")
-    csv_path = Path("/tmp/dst-session-check.csv")
+
+def test_dst_session_tagging_stays_consistent_across_london_shift(tmp_path: Path) -> None:
+    repo_root = tmp_path / "repo"
+    repo_root.mkdir()
+    (repo_root / "outputs").mkdir()
+
+    csv_path = tmp_path / "dst-session-check.csv"
     csv_path.write_text(
         "timestamp,open,high,low,close\n"
         "2024-03-31T05:30:00Z,1.1000,1.1002,1.0998,1.1000\n"
@@ -100,7 +110,7 @@ def test_dst_session_tagging_stays_consistent_across_london_shift() -> None:
     )
     policy = ExecutionPolicy()
 
-    _, prepared, _, _ = run_backtest_from_csv(csv_path=csv_path, spec=spec, policy=policy, repo_root=repo_root)
+    _, prepared, _, _, _ = run_backtest_from_csv(csv_path=csv_path, spec=spec, policy=policy, repo_root=repo_root)
 
     assert "london" not in prepared.signal_trace[0].sessions
     assert "london" in prepared.signal_trace[1].sessions

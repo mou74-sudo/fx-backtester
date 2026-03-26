@@ -11,7 +11,7 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - known-answer tests from day one
 - no live trading and no broker integration
 
-## What exists in v0.2-in-progress
+## What exists in v0.4-in-progress
 
 - strategy/spec contracts in `formalizer/spec_models.py`
 - explicit execution assumptions in `formalizer/execution_policy.py`
@@ -24,15 +24,17 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - deterministic single-position backtest loop over prepared signal bars
 - conservative gap / same-candle TP-SL resolution, spread-triggered stop detection, and short-side support
 - richer run metrics: gross/net pips, expectancy, avg win/loss in pips, drawdown depth/duration, ambiguity counts, spread-triggered-stop counts, session summaries
-- run folder artifact writer under `outputs/`
-- strategy spec / manifest / quality report / signal trace / trades / metrics / compliance summary per run
+- lean config/spec extensions for long-only / short-only / both, session restrictions, account currency, spread/slippage model naming, and stop/TP style switches
+- robustness-lite sweeps for spread stress, slippage stress, RSI period perturbation, trade concentration, and session contribution summary
+- deterministic run folder artifact writer under `outputs/` with `inputs/`, `results/`, `traces/`, and `reports/`
+- one summary report plus robustness-lite report artifacts per run
 - evidence-backed compliance checks
-- tests for pip sizing/execution semantics, exact known-answer ledger coverage, JPY pip sizing, non-USD account conversion, short-side trades, DST/session tagging, and CSV -> RSI -> execution -> artifact writing
+- tests for pip sizing/execution semantics, exact known-answer ledger coverage, JPY pip sizing, non-USD account conversion, short-side trades, config/robustness coverage, DST/session tagging, and CSV -> RSI -> execution -> artifact writing
 
 ## What does **not** exist yet
 
 - no portfolio-level multi-pair logic
-- no slippage model beyond fixed assumptions
+- no probabilistic slippage or market-impact model beyond explicit fixed/worse-case assumptions
 - no London/session microstructure logic
 - no broker adapters
 - no full indicator pipeline from raw OHLC to signals yet
