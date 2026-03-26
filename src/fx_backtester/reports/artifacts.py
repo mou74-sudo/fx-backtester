@@ -13,6 +13,7 @@ from fx_backtester.engine.pipeline import SignalTraceRow
 from fx_backtester.engine.robustness import RobustnessLiteReport
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 from fx_backtester.formalizer.spec_models import StrategySpec
+from fx_backtester.reports.analysis import build_analysis_report_from_payloads
 from fx_backtester.reports.compliance import build_compliance_summary, build_run_manifest
 from fx_backtester.reviewer.verdict import build_reviewer_artifacts
 
@@ -106,7 +107,22 @@ class RunArtifactWriter:
         if benchmarks is not None:
             files['reports/benchmarks.json'] = ('json', benchmarks_payload)
 
-        for relative_name, (_, payload) in files.items():
+        analysis = build_analysis_report_from_payloads(
+            {
+                'summary.json': summary,
+                'robustness_lite.json': robustness_payload or {'enabled': False, 'baseline': {}, 'scenarios': []},
+                'benchmarks.json': benchmarks_payload or {'enabled': False, 'scenarios': []},
+                'reviewer_summary.json': reviewer.reviewer_summary,
+                'final_verdict.json': reviewer.final_verdict,
+            }
+        )
+        files['reports/analysis_summary.json'] = ('json', analysis.model_dump(mode='json'))
+        files['reports/research_memo.md'] = ('text', analysis.research_memo_markdown)
+
+        for relative_name, (kind, payload) in files.items():
             target = run_dir / relative_name
-            target.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding='utf-8')
+            if kind == 'json':
+                target.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding='utf-8')
+            else:
+                target.write_text(str(payload), encoding='utf-8')
         return run_dir

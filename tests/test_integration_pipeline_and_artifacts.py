@@ -76,8 +76,10 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
         'reports/benchmarks.json',
         'reports/final_verdict.json',
         'reports/reviewer_summary.json',
+        'reports/analysis_summary.json',
+        'reports/research_memo.md',
     }
-    actual_files = {str(path.relative_to(run_dir)) for path in run_dir.rglob('*.json')}
+    actual_files = {str(path.relative_to(run_dir)) for path in run_dir.rglob('*') if path.is_file()}
     assert expected_files.issubset(actual_files)
 
     compliance = json.loads((run_dir / 'reports' / 'compliance_summary.json').read_text(encoding='utf-8'))
@@ -86,6 +88,8 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     signal_trace = json.loads((run_dir / 'traces' / 'signal_trace.json').read_text(encoding='utf-8'))
     final_verdict = json.loads((run_dir / 'reports' / 'final_verdict.json').read_text(encoding='utf-8'))
     reviewer_summary = json.loads((run_dir / 'reports' / 'reviewer_summary.json').read_text(encoding='utf-8'))
+    analysis_summary = json.loads((run_dir / 'reports' / 'analysis_summary.json').read_text(encoding='utf-8'))
+    research_memo = (run_dir / 'reports' / 'research_memo.md').read_text(encoding='utf-8')
     assert 'asia' in signal_trace[0]['sessions']
     assert 'london' in signal_trace[7]['sessions']
     assert robustness.baseline.trade_count == result.trade_count
@@ -93,6 +97,9 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     assert final_verdict['evidence_grade'] in {'B', 'C', 'D', 'F', 'A'}
     assert final_verdict['confidence_level'] in {'low', 'medium', 'high'}
     assert reviewer_summary['trade_count'] == result.trade_count
+    assert analysis_summary['run_id'] == json.loads((run_dir / 'reports' / 'summary.json').read_text(encoding='utf-8'))['run_id']
+    assert analysis_summary['facts_used']['summary']['trade_count'] == result.trade_count
+    assert str(result.trade_count) in research_memo
 
 
 def test_dst_session_tagging_stays_consistent_across_london_shift(tmp_path: Path) -> None:

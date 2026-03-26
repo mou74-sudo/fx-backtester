@@ -28,8 +28,9 @@ Lean v0.1 scaffold for a deterministic, audit-friendly FX backtester.
 - robustness-lite sweeps for spread stress, slippage stress, RSI period perturbation, trade concentration, and session contribution summary
 - deterministic run folder artifact writer under `outputs/` with `inputs/`, `results/`, `traces/`, and `reports/`
 - one summary report plus robustness-lite report artifacts per run
+- read-only analysis/report layer that restates deterministic artifacts into `reports/analysis_summary.json` and `reports/research_memo.md`
 - evidence-backed compliance checks
-- tests for pip sizing/execution semantics, exact known-answer ledger coverage, JPY pip sizing, non-USD account conversion, short-side trades, config/robustness coverage, DST/session tagging, and CSV -> RSI -> execution -> artifact writing
+- tests for pip sizing/execution semantics, exact known-answer ledger coverage, JPY pip sizing, non-USD account conversion, short-side trades, config/robustness coverage, DST/session tagging, deterministic analysis reporting, and CSV -> RSI -> execution -> artifact writing
 
 ## What does **not** exist yet
 
