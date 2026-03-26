@@ -24,8 +24,8 @@ _SUPPORTED_PAIR_MAP: dict[str, InstrumentSpec] = {
 }
 
 _UNSUPPORTED_PATTERNS: list[tuple[re.Pattern[str], str, str | None]] = [
-    (re.compile(r"\b(macd|ema|sma|moving average|bollinger|stochastic|atr|vwap)\b", re.I), "Only RSI-based rules are implemented right now.", "Use RSI thresholds and fixed-pip stop/take-profit fields."),
-    (re.compile(r"\b(trailing stop|trail stop|break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Advanced trade management is not implemented.", "Use fixed_pips or disabled stop/take-profit controls only."),
+    (re.compile(r"\b(macd|ema|sma|moving average|bollinger|stochastic|vwap)\b", re.I), "Only RSI-based entry and signal-exit rules are implemented right now.", "Use RSI thresholds plus the supported deterministic exit/stop fields."),
+    (re.compile(r"\b(trailing stop|trail stop|break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Advanced trade management is not implemented.", "Use time stop, session-close exit, fixed-pip TP, and fixed-pip or ATR initial stop only."),
     (re.compile(r"\b(limit order|stop order|pending order|market if touched)\b", re.I), "Order-type selection is not implemented.", "The engine fills deterministically on the next bar open after a signal."),
     (re.compile(r"\b(optimi[sz]e|optimi[sz]ation|grid search|walk[- ]?forward|monte carlo|genetic|bayesian)\b", re.I), "Optimization/search workflows are outside scope.", "Use robustness.enabled with deterministic spread/slippage/RSI perturbation only."),
     (re.compile(r"\b(multi[- ]?pair|portfolio|basket|correlation|hedg(e|ing))\b", re.I), "Portfolio or multi-pair logic is not implemented.", "Use one supported USD-linked pair per spec."),
@@ -68,8 +68,12 @@ class FormalizerDefaults:
     short_entry_rsi_gte: float = 70.0
     exit_rsi_gte: float = 55.0
     short_exit_rsi_lte: float = 45.0
+    time_stop_bars: int | None = None
+    exit_on_session_close: bool = False
     stop_loss_style: str = "fixed_pips"
     stop_loss_pips: float = 20.0
+    stop_loss_atr_period: int = 14
+    stop_loss_atr_multiplier: float = 2.0
     take_profit_style: str = "fixed_pips"
     take_profit_pips: float = 30.0
     symbol: str = "EURUSD"
@@ -153,22 +157,88 @@ def _parse_currency(text: str) -> str | None:
     return None
 
 
-def _parse_stop_take_style(text: str, side: str) -> tuple[str | None, float | None]:
-    disabled_pattern = rf"\b(no {side}|disable {side}|{side} disabled|without {side})\b"
+def _parse_time_stop_bars(text: str) -> int | None:
+    for pattern in (
+        r"\btime stop(?: after)?\s*(\d+)\s*bars?\b",
+        r"\bexit after\s*(\d+)\s*bars?\b",
+        r"\bhold(?: for)?\s*(\d+)\s*bars?\b",
+    ):
+        value = _parse_int(text, pattern)
+        if value is not None:
+            return value
+    return None
+
+
+def _parse_session_close_exit(text: str) -> bool:
+    return bool(re.search(r"\b(session close exit|exit on session close|close at session close|forced session[- ]close exit)\b", text, re.I))
+
+
+def _parse_stop_loss(text: str, defaults: FormalizerDefaults) -> dict[str, object]:
+    disabled_pattern = r"\b(no stop loss|disable stop loss|stop loss disabled|without stop loss)\b"
     if re.search(disabled_pattern, text, re.I):
-        return "disabled", 1.0
-    pip_pattern = rf"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:{side}|{side.replace('_', ' ')})\b|\b{side.replace('_', ' ')}\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
+        return {
+            "stop_loss_style": "disabled",
+            "stop_loss_pips": defaults.stop_loss_pips,
+            "stop_loss_atr_period": defaults.stop_loss_atr_period,
+            "stop_loss_atr_multiplier": defaults.stop_loss_atr_multiplier,
+        }
+
+    atr_match = re.search(
+        r"\b(\d+(?:\.\d+)?)\s*(?:x|\*)\s*atr(?:\((\d+)\))?\s*(?:stop(?: loss)?|initial stop|sl)?\b|\batr(?:\((\d+)\))?\s*(?:x|\*)\s*(\d+(?:\.\d+)?)\s*(?:stop(?: loss)?|initial stop|sl)?\b|\b(?:stop(?: loss)?|initial stop|sl)\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*(?:x|\*)\s*atr(?:\((\d+)\))?\b",
+        text,
+        re.I,
+    )
+    if atr_match:
+        multiplier = atr_match.group(1) or atr_match.group(4) or atr_match.group(5)
+        period = atr_match.group(2) or atr_match.group(3) or atr_match.group(6)
+        return {
+            "stop_loss_style": "atr",
+            "stop_loss_pips": defaults.stop_loss_pips,
+            "stop_loss_atr_period": int(period) if period is not None else defaults.stop_loss_atr_period,
+            "stop_loss_atr_multiplier": float(multiplier),
+        }
+
+    pip_pattern = r"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:stop loss)\b|\bstop loss\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
     match = re.search(pip_pattern, text, re.I)
     if match:
         raw = match.group(1) or match.group(2)
-        return "fixed_pips", float(raw)
-    if side == "stop loss":
-        alt = _parse_number(text, r"\bsl\s*(\d+(?:\.\d+)?)\b")
-    else:
-        alt = _parse_number(text, r"\btp\s*(\d+(?:\.\d+)?)\b")
+        return {
+            "stop_loss_style": "fixed_pips",
+            "stop_loss_pips": float(raw),
+            "stop_loss_atr_period": defaults.stop_loss_atr_period,
+            "stop_loss_atr_multiplier": defaults.stop_loss_atr_multiplier,
+        }
+
+    alt = _parse_number(text, r"\bsl\s*(\d+(?:\.\d+)?)\b")
     if alt is not None:
-        return "fixed_pips", alt
-    return None, None
+        return {
+            "stop_loss_style": "fixed_pips",
+            "stop_loss_pips": alt,
+            "stop_loss_atr_period": defaults.stop_loss_atr_period,
+            "stop_loss_atr_multiplier": defaults.stop_loss_atr_multiplier,
+        }
+
+    return {
+        "stop_loss_style": defaults.stop_loss_style,
+        "stop_loss_pips": defaults.stop_loss_pips,
+        "stop_loss_atr_period": defaults.stop_loss_atr_period,
+        "stop_loss_atr_multiplier": defaults.stop_loss_atr_multiplier,
+    }
+
+
+def _parse_take_profit(text: str, defaults: FormalizerDefaults) -> dict[str, object]:
+    disabled_pattern = r"\b(no take profit|disable take profit|take profit disabled|without take profit)\b"
+    if re.search(disabled_pattern, text, re.I):
+        return {"take_profit_style": "disabled", "take_profit_pips": defaults.take_profit_pips}
+    pip_pattern = r"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:take profit)\b|\btake profit\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
+    match = re.search(pip_pattern, text, re.I)
+    if match:
+        raw = match.group(1) or match.group(2)
+        return {"take_profit_style": "fixed_pips", "take_profit_pips": float(raw)}
+    alt = _parse_number(text, r"\btp\s*(\d+(?:\.\d+)?)\b")
+    if alt is not None:
+        return {"take_profit_style": "fixed_pips", "take_profit_pips": alt}
+    return {"take_profit_style": defaults.take_profit_style, "take_profit_pips": defaults.take_profit_pips}
 
 
 def _parse_robustness(text: str) -> dict[str, object]:
@@ -184,7 +254,6 @@ def _parse_robustness(text: str) -> dict[str, object]:
     payload: dict[str, object] = {"enabled": enabled}
     if spread_values:
         payload["spread_multipliers"] = [float(item) for item in spread_values]
-        enabled = True
         payload["enabled"] = True
     if slippage_modes:
         payload["slippage_modes"] = list(dict.fromkeys(slippage_modes))
@@ -199,21 +268,9 @@ def _parse_robustness(text: str) -> dict[str, object]:
 def validate_supported_features(spec: StrategySpec) -> list[FormalizationIssue]:
     issues: list[FormalizationIssue] = []
     if spec.instrument.symbol not in _SUPPORTED_PAIR_MAP:
-        issues.append(
-            FormalizationIssue(
-                field="pair",
-                reason=f"Pair {spec.instrument.symbol} is not in the deterministic supported set.",
-                nearest_supported="Use EURUSD or USDJPY.",
-            )
-        )
+        issues.append(FormalizationIssue(field="pair", reason=f"Pair {spec.instrument.symbol} is not in the deterministic supported set.", nearest_supported="Use EURUSD or USDJPY."))
     if spec.rules.timeframe != "H1":
-        issues.append(
-            FormalizationIssue(
-                field="timeframe",
-                reason=f"Timeframe {spec.rules.timeframe} is unsupported.",
-                nearest_supported="Use timeframe=H1.",
-            )
-        )
+        issues.append(FormalizationIssue(field="timeframe", reason=f"Timeframe {spec.rules.timeframe} is unsupported.", nearest_supported="Use timeframe=H1."))
     if spec.risk.account_ccy not in {spec.instrument.base_ccy, spec.instrument.quote_ccy}:
         issues.append(
             FormalizationIssue(
@@ -225,6 +282,8 @@ def validate_supported_features(spec: StrategySpec) -> list[FormalizationIssue]:
                 nearest_supported=f"Use {spec.instrument.base_ccy} or {spec.instrument.quote_ccy}.",
             )
         )
+    if spec.rules.trailing_stop_style != "disabled":
+        issues.append(FormalizationIssue(field="trailing_stop_style", reason="Trailing stops are not implemented yet.", nearest_supported="Use trailing_stop_style=disabled."))
     return issues
 
 
@@ -244,11 +303,9 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
         pair = defaults.symbol
         assumptions.append(f"No pair explicitly recognized; defaulted to {pair}.")
     recognized_fields["pair"] = pair
+    instrument = _SUPPORTED_PAIR_MAP.get(pair, _SUPPORTED_PAIR_MAP[defaults.symbol])
     if pair not in _SUPPORTED_PAIR_MAP:
         rejected_fields.append(FormalizationIssue(field="pair", reason=f"Pair {pair} is not supported by the deterministic formalizer.", nearest_supported="Use EURUSD or USDJPY."))
-        instrument = _SUPPORTED_PAIR_MAP[defaults.symbol]
-    else:
-        instrument = _SUPPORTED_PAIR_MAP[pair]
 
     timeframe = _parse_timeframe(text)
     if timeframe is None:
@@ -279,18 +336,16 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
         "short_exit_rsi_lte": short_exit_rsi_lte,
     }
 
-    stop_style, stop_pips = _parse_stop_take_style(text, "stop loss")
-    take_style, take_pips = _parse_stop_take_style(text, "take profit")
-    stop_style = stop_style or defaults.stop_loss_style
-    stop_pips = stop_pips or defaults.stop_loss_pips
-    take_style = take_style or defaults.take_profit_style
-    take_pips = take_pips or defaults.take_profit_pips
-    recognized_fields["stop_take_profit"] = {
-        "stop_loss_style": stop_style,
-        "stop_loss_pips": stop_pips,
-        "take_profit_style": take_style,
-        "take_profit_pips": take_pips,
+    time_stop_bars = _parse_time_stop_bars(text) or defaults.time_stop_bars
+    exit_on_session_close = _parse_session_close_exit(text) or defaults.exit_on_session_close
+    recognized_fields["deterministic_exits"] = {
+        "time_stop_bars": time_stop_bars,
+        "exit_on_session_close": exit_on_session_close,
     }
+
+    stop_payload = _parse_stop_loss(text, defaults)
+    take_profit_payload = _parse_take_profit(text, defaults)
+    recognized_fields["stop_take_profit"] = {**stop_payload, **take_profit_payload}
 
     initial_equity = _parse_number(text, r"\b(?:initial equity|starting equity|equity|account size)\s*(?:of|=|is)?\s*\$?(\d+(?:\.\d+)?)\b") or defaults.initial_equity
     risk_fraction = _parse_percent_fraction(text) or defaults.risk_per_trade_fraction
@@ -321,10 +376,14 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
                 exit_rsi_gte=exit_rsi_gte,
                 short_entry_rsi_gte=short_entry_rsi_gte,
                 short_exit_rsi_lte=short_exit_rsi_lte,
-                stop_loss_style=stop_style,
-                stop_loss_pips=stop_pips,
-                take_profit_style=take_style,
-                take_profit_pips=take_pips,
+                time_stop_bars=time_stop_bars,
+                exit_on_session_close=exit_on_session_close,
+                stop_loss_style=str(stop_payload["stop_loss_style"]),
+                stop_loss_pips=float(stop_payload["stop_loss_pips"]),
+                stop_loss_atr_period=int(stop_payload["stop_loss_atr_period"]),
+                stop_loss_atr_multiplier=float(stop_payload["stop_loss_atr_multiplier"]),
+                take_profit_style=str(take_profit_payload["take_profit_style"]),
+                take_profit_pips=float(take_profit_payload["take_profit_pips"]),
             ),
             window=BacktestWindow(start_date=defaults.start_date, end_date=defaults.end_date),
             robustness=RobustnessSpec(**robustness_payload),
@@ -335,9 +394,7 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
             request_text=request_text,
             notes=FormalizerNotes(
                 status="rejected",
-                assumptions=assumptions + [
-                    f"Default backtest window applied: {defaults.start_date} to {defaults.end_date}."
-                ],
+                assumptions=assumptions + [f"Default backtest window applied: {defaults.start_date} to {defaults.end_date}."],
                 recognized_fields=recognized_fields,
                 rejected_fields=rejected_fields,
                 validation_errors=[err["msg"] for err in exc.errors()],

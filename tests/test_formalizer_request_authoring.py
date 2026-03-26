@@ -11,7 +11,8 @@ def test_formalizer_accepts_supported_request_and_writes_artifacts(tmp_path: Pat
         "Trade EUR/USD on H1, long only. "
         "Use RSI period 5. "
         "Entry RSI below 20 and exit RSI above 60. "
-        "Use a 25 pip stop loss and 80 pip take profit. "
+        "Use a 2x ATR(5) stop loss and 80 pip take profit. "
+        "Exit after 3 bars and force a session close exit. "
         "Only trade the London and New York sessions. "
         "Initial equity 15000. Risk 1% per trade. Account currency USD. "
         "Enable robustness with 1x spread and 2x spread, base slippage and worse slippage, "
@@ -29,8 +30,12 @@ def test_formalizer_accepts_supported_request_and_writes_artifacts(tmp_path: Pat
     assert outcome.spec.rules.rsi_period == 5
     assert outcome.spec.rules.entry_rsi_lte == 20
     assert outcome.spec.rules.exit_rsi_gte == 60
-    assert outcome.spec.rules.stop_loss_pips == 25
+    assert outcome.spec.rules.stop_loss_style == "atr"
+    assert outcome.spec.rules.stop_loss_atr_period == 5
+    assert outcome.spec.rules.stop_loss_atr_multiplier == 2.0
     assert outcome.spec.rules.take_profit_pips == 80
+    assert outcome.spec.rules.time_stop_bars == 3
+    assert outcome.spec.rules.exit_on_session_close is True
     assert outcome.spec.risk.initial_equity == 15000
     assert outcome.spec.risk.risk_per_trade_fraction == 0.01
     assert outcome.spec.robustness.enabled is True
@@ -59,7 +64,7 @@ def test_formalizer_rejects_unsupported_request_with_nearest_supported_guidance(
     assert outcome.notes.rejected_fields
     reasons = [item.reason for item in outcome.notes.rejected_fields]
     nearest = [item.nearest_supported for item in outcome.notes.rejected_fields if item.nearest_supported]
-    assert any("RSI-based" in reason for reason in reasons)
+    assert any("RSI-based" in reason or "RSI-based entry" in reason for reason in reasons)
     assert any("Advanced trade management" in reason for reason in reasons)
     assert any("Optimization/search" in reason for reason in reasons)
     assert any("EURUSD or USDJPY" in item for item in nearest)
@@ -79,3 +84,13 @@ def test_formalizer_rejects_supported_pair_when_account_currency_is_not_base_or_
     assert outcome.notes.status == "rejected"
     assert outcome.spec is None
     assert any(item.field == "account_currency" for item in outcome.notes.rejected_fields)
+
+
+def test_formalizer_rejects_session_close_exit_without_explicit_sessions() -> None:
+    request_text = "Trade EURUSD on H1 long only. Exit on session close. Stop loss 20 pips. Take profit 30 pips."
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "rejected"
+    assert outcome.spec is None
+    assert any("exit_on_session_close requires at least one allowed session" in error for error in outcome.notes.validation_errors)
