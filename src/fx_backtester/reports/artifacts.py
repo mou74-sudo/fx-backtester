@@ -105,6 +105,7 @@ class RunArtifactWriter:
                 "reports": [
                     "reports/compliance_summary.json",
                     "reports/summary.json",
+                    "reports/artifact_index.json",
                     "reports/final_verdict.json",
                     "reports/reviewer_summary.json",
                     "reports/analysis_summary.json",
