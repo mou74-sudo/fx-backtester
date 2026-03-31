@@ -251,4 +251,5 @@ outputs/<run_id>/
 
 ## current status
 
-This is a v1.0-ready research tool for the narrow scope listed above. It is not a general-purpose trading platform.
+This is a v1.1-ready research tool for the narrow scope listed above. It is not a general-purpose trading platform.
+ral-purpose trading platform.

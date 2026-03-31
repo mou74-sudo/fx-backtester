@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.1.0 - 2026-03-31
+
+Breakout strategy-family expansion for the intentionally narrow deterministic FX backtesting workflow.
+
+### Included
+
+- added `strategy_type: "breakout"` support with `breakout_lookback_bars` and `breakout_buffer_pips`
+- deterministic breakout signal generation using prior completed bars only and next-bar-open execution
+- natural-language formalization support for breakout requests
+- one breakout example-backed golden flow with request, spec, CSV fixture, verdict, and memo
+- breakout integration, CLI, and formalizer regression coverage while preserving `artifact_schema_version: "v1"`
+
+### Stability notes
+
+- breakout support is first-class in v1.1, but still intentionally narrow: H1 only, single pair, one open position at a time
+- reviewer/grading logic and artifact contract remain unchanged from v1
+
 ## v1.0.0 - 2026-03-26
 
 First stable release for the intentionally narrow deterministic FX backtesting workflow.
