@@ -21,6 +21,28 @@ def _run_cli(*args: str) -> dict:
     return json.loads(completed.stdout)
 
 
+def test_run_label_is_slugified_to_hyphenated_run_id(tmp_path: Path) -> None:
+    repo_root = tmp_path / "repo"
+    repo_root.mkdir()
+    run = _run_cli(
+        "run-backtest",
+        str(EXAMPLES / "eurusd_rsi_fixed_pips_spec.json"),
+        str(EXAMPLES / "eurusd_rsi_fixed_pips_data.csv"),
+        "--repo-root",
+        str(repo_root),
+        "--run-label",
+        "Golden Fixed_Pips V1",
+    )
+
+    run_dir = Path(run["run_dir"])
+    summary = json.loads((run_dir / "reports" / "summary.json").read_text(encoding="utf-8"))
+    artifact_index = json.loads((run_dir / "reports" / "artifact_index.json").read_text(encoding="utf-8"))
+
+    assert run_dir.name == "golden-fixed-pips-v1"
+    assert summary["run_id"] == "golden-fixed-pips-v1"
+    assert artifact_index["run_id"] == "golden-fixed-pips-v1"
+
+
 def test_cli_happy_path_fixed_pips_example(tmp_path: Path) -> None:
     formalized_dir = tmp_path / "formalized_fixed_pips"
     formalize = _run_cli(

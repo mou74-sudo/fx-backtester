@@ -120,12 +120,18 @@ fx-backtester run-backtest \
   --run-label golden_fixed_pips
 ```
 
+Run-label note:
+
+- `--run-label` is slugified into the final `run_id`
+- non-alphanumeric separators collapse to hyphens
+- `golden_fixed_pips` therefore writes to `outputs/golden-fixed-pips/`
+
 Expected shape:
 
 - one deterministic trade
 - fixed-pip initial stop
 - fixed-pip take profit
-- verdict + memo generated under `outputs/golden_fixed_pips/reports/`
+- verdict + memo generated under `outputs/golden-fixed-pips/reports/`
 
 ### B. EUR/USD RSI with ATR initial stop + time stop
 
@@ -152,12 +158,17 @@ fx-backtester run-backtest \
   --run-label golden_atr_time_stop
 ```
 
+Run-label note:
+
+- `golden_atr_time_stop` is slugified to the `run_id` `golden-atr-time-stop`
+- artifacts therefore land under `outputs/golden-atr-time-stop/`
+
 Expected shape:
 
 - one deterministic trade
 - ATR-based initial stop
 - exit reason `time_stop`
-- verdict + memo generated under `outputs/golden_atr_time_stop/reports/`
+- verdict + memo generated under `outputs/golden-atr-time-stop/reports/`
 
 ## release notes
 

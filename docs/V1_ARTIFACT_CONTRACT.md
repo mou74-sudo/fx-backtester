@@ -34,7 +34,18 @@ outputs/<run_id>/
 `<run_id>` is either:
 
 - `run_<UTC timestamp>__<strategy slug>` for timestamped runs, or
-- `<run_label>` when `--run-label` is supplied
+- a slugified form of `<run_label>` when `--run-label` is supplied
+
+For `--run-label` values in v1:
+
+- the label is lower-cased
+- runs of non-alphanumeric characters are collapsed to `-`
+- leading/trailing `-` are trimmed
+
+Examples:
+
+- `ci_smoke_v1` -> `ci-smoke-v1`
+- `golden_fixed_pips` -> `golden-fixed-pips`
 
 ## Required files
 
