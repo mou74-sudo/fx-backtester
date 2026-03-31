@@ -1,0 +1,50 @@
+{
+  "execution_policy_name": "default_v0_2",
+  "instrument": {
+    "base_ccy": "EUR",
+    "lot_size_units": 100000,
+    "pip_size": 0.0001,
+    "quote_ccy": "USD",
+    "symbol": "EURUSD"
+  },
+  "notes": "Deterministic breakout golden example for v1.1.",
+  "risk": {
+    "account_ccy": "USD",
+    "initial_equity": 10000,
+    "max_open_positions": 1,
+    "risk_per_trade_fraction": 0.01
+  },
+  "robustness": {
+    "enabled": false,
+    "rsi_period_variants": [-1, 0, 1],
+    "slippage_modes": ["base", "worse"],
+    "spread_multipliers": [1.0, 1.5, 2.0]
+  },
+  "rules": {
+    "allowed_sessions": [],
+    "breakout_buffer_pips": 2.0,
+    "breakout_lookback_bars": 3,
+    "direction": "both",
+    "entry_rsi_lte": null,
+    "exit_on_session_close": false,
+    "exit_rsi_gte": null,
+    "rsi_period": null,
+    "short_entry_rsi_gte": null,
+    "short_exit_rsi_lte": null,
+    "stop_loss_atr_multiplier": 2.0,
+    "stop_loss_atr_period": 14,
+    "stop_loss_pips": 15.0,
+    "stop_loss_style": "fixed_pips",
+    "strategy_type": "breakout",
+    "take_profit_pips": 30.0,
+    "take_profit_style": "disabled",
+    "time_stop_bars": 2,
+    "timeframe": "H1",
+    "trailing_stop_style": "disabled"
+  },
+  "strategy_name": "eurusd_breakout_v1_1",
+  "window": {
+    "end_date": "2024-01-02",
+    "start_date": "2024-01-01"
+  }
+}

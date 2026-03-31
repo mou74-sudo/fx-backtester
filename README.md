@@ -1,17 +1,18 @@
 # fx-backtester
 
-Deterministic, audit-friendly FX backtester for a deliberately narrow v1.0 scope.
+Deterministic, audit-friendly FX backtester for a deliberately narrow v1.1 scope.
 
-## v1.0 supported scope
+## v1.1 supported scope
 
-This repository is intentionally frozen around one core workflow:
+This repository is intentionally frozen around a narrow deterministic workflow:
 
 - single-pair backtests for `EURUSD` and `USDJPY`
-- one strategy family: RSI mean reversion
+- two strategy families: RSI mean reversion and breakout
 - timeframe: `H1` only
 - directions: `long_only`, `short_only`, or `both`
 - one open position at a time
 - entries/exits scheduled from signal-bar close to next-bar open
+- breakout parameters: `breakout_lookback_bars` and `breakout_buffer_pips`
 - stop loss styles: `fixed_pips`, `atr`, or `disabled`
 - take profit styles: `fixed_pips` or `disabled`
 - optional deterministic exits: `time_stop_bars`, `exit_on_session_close`
@@ -93,7 +94,7 @@ fx-backtester summarize-run outputs/demo_fixed_pips
 
 ## golden examples
 
-Two reproducible example flows are kept in `examples/`.
+Three reproducible example flows are kept in `examples/`.
 
 ### A. EUR/USD RSI mean reversion with fixed-pip stop/TP
 
@@ -169,6 +170,43 @@ Expected shape:
 - ATR-based initial stop
 - exit reason `time_stop`
 - verdict + memo generated under `outputs/golden-atr-time-stop/reports/`
+
+### C. EUR/USD breakout with fixed stop and time stop
+
+Files:
+
+```text
+examples/
+  eurusd_breakout_request.txt
+  eurusd_breakout_spec.json
+  eurusd_breakout_data.csv
+```
+
+Run:
+
+```bash
+fx-backtester formalize-request \
+  examples/eurusd_breakout_request.txt \
+  --output-dir outputs/golden_breakout_formalized
+
+fx-backtester run-backtest \
+  examples/eurusd_breakout_spec.json \
+  examples/eurusd_breakout_data.csv \
+  --repo-root . \
+  --run-label golden_breakout
+```
+
+Run-label note:
+
+- `golden_breakout` is slugified to the `run_id` `golden-breakout`
+- artifacts therefore land under `outputs/golden-breakout/`
+
+Expected shape:
+
+- one deterministic trade
+- breakout signal confirmed from prior completed bars only
+- exit reason `time_stop`
+- verdict + memo generated under `outputs/golden-breakout/reports/`
 
 ## release notes
 

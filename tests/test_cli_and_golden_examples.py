@@ -114,3 +114,48 @@ def test_cli_happy_path_atr_session_close_example(tmp_path: Path) -> None:
     assert summary["artifact_schema_version"] == "v1"
     assert analysis["run_id"] == run_dir.name
     assert analysis["facts_used"]["summary"]["trade_count"] == 1
+
+
+def test_cli_happy_path_breakout_example(tmp_path: Path) -> None:
+    formalized_dir = tmp_path / "formalized_breakout"
+    formalize = _run_cli(
+        "formalize-request",
+        str(EXAMPLES / "eurusd_breakout_request.txt"),
+        "--output-dir",
+        str(formalized_dir),
+    )
+    assert formalize["status"] == "accepted"
+
+    validate = _run_cli("validate-spec", str(EXAMPLES / "eurusd_breakout_spec.json"))
+    assert validate["rules"]["strategy_type"] == "breakout"
+
+    repo_root = tmp_path / "repo"
+    repo_root.mkdir()
+    run = _run_cli(
+        "run-backtest",
+        str(EXAMPLES / "eurusd_breakout_spec.json"),
+        str(EXAMPLES / "eurusd_breakout_data.csv"),
+        "--repo-root",
+        str(repo_root),
+        "--run-label",
+        "golden_breakout",
+    )
+    assert run["trade_count"] == 1
+
+    run_dir = Path(run["run_dir"])
+    trades = json.loads((run_dir / "results" / "trades.json").read_text(encoding="utf-8"))
+    summary = json.loads((run_dir / "reports" / "summary.json").read_text(encoding="utf-8"))
+    verdict = json.loads((run_dir / "reports" / "final_verdict.json").read_text(encoding="utf-8"))
+    analysis = _run_cli("summarize-run", str(run_dir))
+    artifact_index = json.loads((run_dir / "reports" / "artifact_index.json").read_text(encoding="utf-8"))
+    memo = (run_dir / "reports" / "research_memo.md").read_text(encoding="utf-8")
+
+    assert len(trades) == 1
+    assert trades[0]["exit_reason"] == "time_stop"
+    assert summary["artifact_schema_version"] == "v1"
+    assert summary["trade_count"] == 1
+    assert verdict["final_verdict"] in {"invalid", "fail", "weak", "pass", "provisionally_credible", "fragile"}
+    assert analysis["run_id"] == run_dir.name
+    assert analysis["facts_used"]["summary"]["trade_count"] == 1
+    assert "reports/analysis_summary.json" in artifact_index["paths"]["reports"]
+    assert "Research memo" in memo

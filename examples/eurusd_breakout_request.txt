@@ -1,0 +1,5 @@
+Trade EUR/USD on H1 using a breakout strategy in both directions.
+Go long when price closes above the highest high of the last 3 bars by 2 pips.
+Go short when price closes below the lowest low of the last 3 bars by 2 pips.
+Use a 15 pip stop, disable take profit, and a 2-bar time stop.
+Initial equity 10000. Risk 1% per trade. Account currency USD.
