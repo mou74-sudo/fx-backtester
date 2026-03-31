@@ -102,6 +102,95 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     assert str(result.trade_count) in research_memo
 
 
+def test_breakout_pipeline_runs_through_standard_artifacts(tmp_path: Path) -> None:
+    repo_root = tmp_path / 'repo'
+    repo_root.mkdir()
+    (repo_root / 'outputs').mkdir()
+
+    csv_path = tmp_path / 'eurusd-breakout.csv'
+    csv_path.write_text(
+        'timestamp,open,high,low,close\n'
+        '2024-01-01T00:00:00Z,1.1000,1.1005,1.0995,1.1000\n'
+        '2024-01-01T01:00:00Z,1.1000,1.1004,1.0996,1.1001\n'
+        '2024-01-01T02:00:00Z,1.1001,1.1003,1.0997,1.1000\n'
+        '2024-01-01T03:00:00Z,1.1000,1.1006,1.0998,1.1008\n'
+        '2024-01-01T04:00:00Z,1.1008,1.1042,1.1006,1.1038\n'
+        '2024-01-01T05:00:00Z,1.1038,1.1040,1.1032,1.1036\n'
+        '2024-01-01T06:00:00Z,1.1036,1.1039,1.1030,1.1034\n',
+        encoding='utf-8',
+    )
+
+    spec = StrategySpec(
+        strategy_name='integration_breakout',
+        instrument=InstrumentSpec(),
+        risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
+        rules=RsiMeanReversionRule(
+            strategy_type='breakout',
+            direction='long_only',
+            breakout_lookback_bars=3,
+            breakout_buffer_pips=2,
+            stop_loss_pips=15,
+            take_profit_style='disabled',
+            take_profit_pips=30,
+            time_stop_bars=2,
+        ),
+        window=BacktestWindow(start_date='2024-01-01', end_date='2024-01-02'),
+        execution_policy_name='default_v0_2',
+    )
+    policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+
+    result, prepared, quality_report, run_dir, robustness, benchmarks = run_backtest_from_csv(
+        csv_path=csv_path,
+        spec=spec,
+        policy=policy,
+        repo_root=repo_root,
+    )
+
+    assert quality_report.row_count == 7
+    assert any(row.entry_signal for row in prepared.signal_trace)
+    assert all(row.no_leakage_ok for row in prepared.signal_trace)
+    assert result.trade_count == 1
+    assert result.trades[0].exit_reason == 'time_stop'
+    assert result.trades[0].entry_time.isoformat() == '2024-01-01T04:00:00+00:00'
+    assert run_dir.name.startswith('run_')
+
+    expected_files = {
+        'inputs/strategy_spec.json',
+        'inputs/manifest.json',
+        'results/quality_report.json',
+        'results/trades.json',
+        'results/metrics.json',
+        'traces/signal_trace.json',
+        'reports/compliance_summary.json',
+        'reports/summary.json',
+        'reports/robustness_lite.json',
+        'reports/benchmarks.json',
+        'reports/final_verdict.json',
+        'reports/reviewer_summary.json',
+        'reports/analysis_summary.json',
+        'reports/research_memo.md',
+    }
+    actual_files = {str(path.relative_to(run_dir)) for path in run_dir.rglob('*') if path.is_file()}
+    assert expected_files.issubset(actual_files)
+
+    summary = json.loads((run_dir / 'reports' / 'summary.json').read_text(encoding='utf-8'))
+    final_verdict = json.loads((run_dir / 'reports' / 'final_verdict.json').read_text(encoding='utf-8'))
+    reviewer_summary = json.loads((run_dir / 'reports' / 'reviewer_summary.json').read_text(encoding='utf-8'))
+    analysis_summary = json.loads((run_dir / 'reports' / 'analysis_summary.json').read_text(encoding='utf-8'))
+    research_memo = (run_dir / 'reports' / 'research_memo.md').read_text(encoding='utf-8')
+    signal_trace = json.loads((run_dir / 'traces' / 'signal_trace.json').read_text(encoding='utf-8'))
+
+    assert summary['artifact_schema_version'] == 'v1'
+    assert summary['trade_count'] == 1
+    assert final_verdict['final_verdict'] == reviewer_summary['final_verdict']
+    assert analysis_summary['run_id'] == summary['run_id']
+    assert analysis_summary['facts_used']['summary']['trade_count'] == 1
+    assert any('breakout_lookback_bars=3' in item for row in signal_trace for item in row['evidence'])
+    assert 'Trade count' in research_memo
+    assert robustness.baseline.trade_count == result.trade_count
+    assert benchmarks.scenarios
+
+
 def test_dst_session_tagging_stays_consistent_across_london_shift(tmp_path: Path) -> None:
     repo_root = tmp_path / 'repo'
     repo_root.mkdir()
