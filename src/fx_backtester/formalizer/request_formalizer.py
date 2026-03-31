@@ -26,7 +26,7 @@ _SUPPORTED_PAIR_MAP: dict[str, InstrumentSpec] = {
 _UNSUPPORTED_PATTERNS: list[tuple[re.Pattern[str], str, str | None]] = [
     (re.compile(r"\b(macd|ema|sma|moving average|bollinger|stochastic|vwap)\b", re.I), "Unsupported signal logic: v1.0 only formalizes RSI-based entries and RSI signal exits.", "Nearest supported path: express the strategy with RSI thresholds plus fixed deterministic stop/exit fields."),
     (re.compile(r"\b(trailing stop|trail stop|break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Advanced trade management is unsupported in v1.0: trailing, break-even, partials, and scaling are out of scope.", "Nearest supported path: use fixed-pip TP, fixed-pip or ATR initial stop, time stop, and/or session-close exit."),
-    (re.compile(r"\b(limit order|stop order|pending order|market if touched)\b", re.I), "Unsupported execution style: v1.0 does not model order-type selection.", "Nearest supported path: entries and exits fill deterministically on the next bar open after a signal."),
+    (re.compile(r"\b(limit order|stop order|pending order|market if touched|pullback entry|pullback breakout|pullback limit)\b", re.I), "Unsupported execution style: v1.0 does not model order-type selection.", "Nearest supported path: entries and exits fill deterministically on the next bar open after a signal."),
     (re.compile(r"\b(optimi[sz]e|optimi[sz]ation|grid search|walk[- ]?forward|monte carlo|genetic|bayesian)\b", re.I), "Optimization/search workflows are unsupported in v1.0.", "Nearest supported path: keep one fixed spec and optionally enable deterministic robustness sweeps."),
     (re.compile(r"\b(multi[- ]?pair|portfolio|basket|correlation|hedg(e|ing))\b", re.I), "Unsupported scope: portfolio, basket, or hedge logic is not implemented.", "Nearest supported path: run one supported USD-linked pair per spec."),
     (re.compile(r"\b(news|fundamental|sentiment|machine learning|ai model|order book)\b", re.I), "Unsupported discretionary/external logic: v1.0 only supports deterministic rule-based inputs.", "Nearest supported path: use RSI, sessions, fixed risk, and deterministic robustness fields only."),
@@ -63,11 +63,14 @@ class FormalizerDefaults:
     account_ccy: str = "USD"
     timeframe: str = "H1"
     direction: str = "long_only"
+    strategy_type: str = "rsi_mean_reversion"
     rsi_period: int = 14
     entry_rsi_lte: float = 30.0
     short_entry_rsi_gte: float = 70.0
     exit_rsi_gte: float = 55.0
     short_exit_rsi_lte: float = 45.0
+    breakout_lookback_bars: int = 20
+    breakout_buffer_pips: float = 0.0
     time_stop_bars: int | None = None
     exit_on_session_close: bool = False
     stop_loss_style: str = "fixed_pips"
@@ -160,6 +163,7 @@ def _parse_currency(text: str) -> str | None:
 def _parse_time_stop_bars(text: str) -> int | None:
     for pattern in (
         r"\btime stop(?: after)?\s*(\d+)\s*bars?\b",
+        r"\b(\d+)\s*[- ]?bar\s*time stop\b",
         r"\bexit after\s*(\d+)\s*bars?\b",
         r"\bhold(?: for)?\s*(\d+)\s*bars?\b",
     ):
@@ -198,7 +202,7 @@ def _parse_stop_loss(text: str, defaults: FormalizerDefaults) -> dict[str, objec
             "stop_loss_atr_multiplier": float(multiplier),
         }
 
-    pip_pattern = r"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:stop loss)\b|\bstop loss\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
+    pip_pattern = r"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:stop loss|stop)\b|\b(?:stop loss|stop)\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
     match = re.search(pip_pattern, text, re.I)
     if match:
         raw = match.group(1) or match.group(2)
@@ -230,7 +234,7 @@ def _parse_take_profit(text: str, defaults: FormalizerDefaults) -> dict[str, obj
     disabled_pattern = r"\b(no take profit|disable take profit|take profit disabled|without take profit)\b"
     if re.search(disabled_pattern, text, re.I):
         return {"take_profit_style": "disabled", "take_profit_pips": defaults.take_profit_pips}
-    pip_pattern = r"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:take profit)\b|\btake profit\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
+    pip_pattern = r"\b(\d+(?:\.\d+)?)\s*pips?\s*(?:take profit|target)\b|\b(?:take profit|target)\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*pips?\b"
     match = re.search(pip_pattern, text, re.I)
     if match:
         raw = match.group(1) or match.group(2)
@@ -263,6 +267,45 @@ def _parse_robustness(text: str) -> dict[str, object]:
         payload["rsi_period_variants"] = values
         payload["enabled"] = True
     return payload
+
+
+def _is_breakout_request(text: str) -> bool:
+    breakout_patterns = (
+        r"\bbreakout strategy\b",
+        r"\bhighest high of the last\s+\d+\s+bars?\b",
+        r"\blowest low of the last\s+\d+\s+bars?\b",
+        r"\bbreaks? above\b",
+        r"\bbreaks? below\b",
+        r"\bcloses? above the highest high\b",
+        r"\bcloses? below the lowest low\b",
+    )
+    return any(re.search(pattern, text, re.I) for pattern in breakout_patterns)
+
+
+def _parse_breakout_lookback_bars(text: str) -> int | None:
+    patterns = (
+        r"\bhighest high of the last\s+(\d+)\s+bars?\b",
+        r"\blowest low of the last\s+(\d+)\s+bars?\b",
+        r"\blookback\s*(?:of|=|is)?\s*(\d+)\s*bars?\b",
+    )
+    for pattern in patterns:
+        value = _parse_int(text, pattern)
+        if value is not None:
+            return value
+    return None
+
+
+def _parse_breakout_buffer_pips(text: str) -> float | None:
+    patterns = (
+        r"\bby\s*(\d+(?:\.\d+)?)\s*pips?\b",
+        r"\b(\d+(?:\.\d+)?)\s*pip\s+buffer\b",
+        r"\bbuffer\s*(?:of|=|is)?\s*(\d+(?:\.\d+)?)\s*pips?\b",
+    )
+    for pattern in patterns:
+        value = _parse_number(text, pattern)
+        if value is not None:
+            return value
+    return None
 
 
 def validate_supported_features(spec: StrategySpec) -> list[FormalizationIssue]:
@@ -320,8 +363,18 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
         assumptions.append("No direction explicitly recognized; defaulted to long_only.")
     recognized_fields["direction"] = direction
 
+    strategy_type = "breakout" if _is_breakout_request(text) else defaults.strategy_type
+    recognized_fields["strategy_type"] = strategy_type
+
     sessions = _parse_sessions(text)
     recognized_fields["allowed_sessions"] = sessions
+
+    breakout_lookback_bars = _parse_breakout_lookback_bars(text)
+    breakout_buffer_pips = _parse_breakout_buffer_pips(text)
+    recognized_fields["breakout"] = {
+        "breakout_lookback_bars": breakout_lookback_bars,
+        "breakout_buffer_pips": breakout_buffer_pips,
+    }
 
     rsi_period = _parse_int(text, r"\brsi(?: period)?\s*(?:of|=|is)?\s*(\d+)\b") or defaults.rsi_period
     entry_rsi_lte = _parse_number(text, r"\b(?:entry|buy|long entry)\s*rsi\s*(?:<=|below|under|at most)\s*(\d+(?:\.\d+)?)\b") or defaults.entry_rsi_lte
@@ -359,7 +412,8 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
     robustness_payload = _parse_robustness(text)
     recognized_fields["robustness"] = robustness_payload
 
-    strategy_name = f"{defaults.strategy_name_prefix}_{_slugify(pair.lower())}_{_slugify(direction)}"
+    strategy_prefix = "formalized_breakout" if strategy_type == "breakout" else defaults.strategy_name_prefix
+    strategy_name = f"{strategy_prefix}_{_slugify(pair.lower())}_{_slugify(direction)}"
     recognized_fields["strategy_name"] = strategy_name
 
     try:
@@ -368,14 +422,17 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
             instrument=instrument,
             risk=RiskSpec(initial_equity=initial_equity, risk_per_trade_fraction=risk_fraction, account_ccy=account_ccy),
             rules=RsiMeanReversionRule(
+                strategy_type=strategy_type,
                 timeframe=timeframe,
                 direction=direction,
                 allowed_sessions=sessions,
-                rsi_period=rsi_period,
-                entry_rsi_lte=entry_rsi_lte,
-                exit_rsi_gte=exit_rsi_gte,
-                short_entry_rsi_gte=short_entry_rsi_gte,
-                short_exit_rsi_lte=short_exit_rsi_lte,
+                rsi_period=rsi_period if strategy_type == "rsi_mean_reversion" else None,
+                entry_rsi_lte=entry_rsi_lte if strategy_type == "rsi_mean_reversion" else None,
+                exit_rsi_gte=exit_rsi_gte if strategy_type == "rsi_mean_reversion" else None,
+                short_entry_rsi_gte=short_entry_rsi_gte if strategy_type == "rsi_mean_reversion" else None,
+                short_exit_rsi_lte=short_exit_rsi_lte if strategy_type == "rsi_mean_reversion" else None,
+                breakout_lookback_bars=breakout_lookback_bars if strategy_type == "breakout" else None,
+                breakout_buffer_pips=breakout_buffer_pips if strategy_type == "breakout" else None,
                 time_stop_bars=time_stop_bars,
                 exit_on_session_close=exit_on_session_close,
                 stop_loss_style=str(stop_payload["stop_loss_style"]),
