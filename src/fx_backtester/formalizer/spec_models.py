@@ -18,6 +18,7 @@ TradeDirection = Literal["long_only", "short_only", "both"]
 SessionName = Literal["asia", "london", "new_york"]
 StopLossStyle = Literal["fixed_pips", "atr", "disabled"]
 TakeProfitStyle = Literal["fixed_pips", "disabled"]
+StrategyType = Literal["rsi_mean_reversion", "breakout"]
 
 
 class InstrumentSpec(BaseModel):
@@ -57,16 +58,19 @@ class RobustnessSpec(BaseModel):
 
 
 class RsiMeanReversionRule(BaseModel):
-    """Minimal deterministic RSI mean reversion rule set."""
+    """Minimal deterministic rule contract for frozen v1/v1.1 strategies."""
 
+    strategy_type: StrategyType = "rsi_mean_reversion"
     timeframe: Literal["H1"] = "H1"
     direction: TradeDirection = "long_only"
     allowed_sessions: list[SessionName] = Field(default_factory=list)
-    rsi_period: int = Field(default=14, ge=2, le=100)
-    entry_rsi_lte: float = Field(default=30.0, ge=0, le=100)
-    short_entry_rsi_gte: float = Field(default=70.0, ge=0, le=100)
-    exit_rsi_gte: float = Field(default=55.0, ge=0, le=100)
-    short_exit_rsi_lte: float = Field(default=45.0, ge=0, le=100)
+    rsi_period: int | None = Field(default=14, ge=2, le=100)
+    entry_rsi_lte: float | None = Field(default=30.0, ge=0, le=100)
+    short_entry_rsi_gte: float | None = Field(default=70.0, ge=0, le=100)
+    exit_rsi_gte: float | None = Field(default=55.0, ge=0, le=100)
+    short_exit_rsi_lte: float | None = Field(default=45.0, ge=0, le=100)
+    breakout_lookback_bars: int | None = Field(default=None, ge=2, le=500)
+    breakout_buffer_pips: float | None = Field(default=None, ge=0, le=1000)
     time_stop_bars: int | None = Field(default=None, ge=1, le=500)
     exit_on_session_close: bool = False
     stop_loss_style: StopLossStyle = "fixed_pips"
@@ -78,13 +82,38 @@ class RsiMeanReversionRule(BaseModel):
     trailing_stop_style: Literal["disabled"] = "disabled"
 
     @model_validator(mode="after")
-    def validate_threshold_order(self) -> "RsiMeanReversionRule":
-        if self.entry_rsi_lte >= self.exit_rsi_gte:
-            raise ValueError("entry_rsi_lte must be below exit_rsi_gte")
-        if self.short_entry_rsi_gte <= self.short_exit_rsi_lte:
-            raise ValueError("short_entry_rsi_gte must be above short_exit_rsi_lte")
+    def validate_strategy_specific_fields(self) -> "RsiMeanReversionRule":
         if self.exit_on_session_close and not self.allowed_sessions:
             raise ValueError("exit_on_session_close requires at least one allowed session")
+
+        if self.strategy_type == "rsi_mean_reversion":
+            required_rsi_fields = {
+                "rsi_period": self.rsi_period,
+                "entry_rsi_lte": self.entry_rsi_lte,
+                "short_entry_rsi_gte": self.short_entry_rsi_gte,
+                "exit_rsi_gte": self.exit_rsi_gte,
+                "short_exit_rsi_lte": self.short_exit_rsi_lte,
+            }
+            missing = [name for name, value in required_rsi_fields.items() if value is None]
+            if missing:
+                raise ValueError(f"rsi_mean_reversion requires fields: {', '.join(missing)}")
+            if self.entry_rsi_lte >= self.exit_rsi_gte:
+                raise ValueError("entry_rsi_lte must be below exit_rsi_gte")
+            if self.short_entry_rsi_gte <= self.short_exit_rsi_lte:
+                raise ValueError("short_entry_rsi_gte must be above short_exit_rsi_lte")
+
+        if self.strategy_type == "breakout":
+            missing = [
+                name
+                for name, value in {
+                    "breakout_lookback_bars": self.breakout_lookback_bars,
+                    "breakout_buffer_pips": self.breakout_buffer_pips,
+                }.items()
+                if value is None
+            ]
+            if missing:
+                raise ValueError(f"breakout requires fields: {', '.join(missing)}")
+
         return self
 
 

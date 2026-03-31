@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 
 from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.backtest import BacktestResult, run_backtest
-from fx_backtester.engine.pipeline import build_rsi_signal_pipeline
+from fx_backtester.engine.pipeline import build_signal_pipeline
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 from fx_backtester.formalizer.spec_models import StrategySpec
 
@@ -60,32 +60,40 @@ def _trade_concentration(result: BacktestResult) -> dict[str, object]:
 
 def run_robustness_lite(*, market_bars: list[MarketBar], spec: StrategySpec, policy: ExecutionPolicy, baseline_result: BacktestResult | None = None) -> RobustnessLiteReport:
     baseline_result = baseline_result or run_backtest(
-        bars=build_rsi_signal_pipeline(market_bars=market_bars, spec=spec).bars,
+        bars=build_signal_pipeline(market_bars=market_bars, spec=spec).bars,
         spec=spec,
         policy=policy,
     )
-    baseline = _build_scenario_result("baseline", {"spread_multiplier": 1.0, "slippage_mode": policy.slippage_model, "rsi_period": spec.rules.rsi_period}, baseline_result)
+    baseline_variant = {"spread_multiplier": 1.0, "slippage_mode": policy.slippage_model}
+    if spec.rules.strategy_type == "rsi_mean_reversion":
+        baseline_variant["rsi_period"] = spec.rules.rsi_period
+    baseline = _build_scenario_result("baseline", baseline_variant, baseline_result)
 
     scenarios: list[RobustnessScenarioResult] = []
     if spec.robustness.enabled:
         for spread_multiplier in spec.robustness.spread_multipliers:
             for slippage_mode in spec.robustness.slippage_modes:
-                for rsi_offset in spec.robustness.rsi_period_variants:
+                rsi_variants = spec.robustness.rsi_period_variants if spec.rules.strategy_type == "rsi_mean_reversion" else [0]
+                for rsi_offset in rsi_variants:
                     scenario_spec = deepcopy(spec)
                     scenario_policy = deepcopy(policy)
                     scenario_policy.half_spread_pips = round(policy.half_spread_pips * spread_multiplier, 6)
                     scenario_policy.slippage_model = "fixed" if slippage_mode == "base" else "worse_case"
-                    scenario_spec.rules.rsi_period = max(2, spec.rules.rsi_period + rsi_offset)
-                    prepared = build_rsi_signal_pipeline(market_bars=market_bars, spec=scenario_spec)
+                    variant = {
+                        "spread_multiplier": spread_multiplier,
+                        "slippage_mode": slippage_mode,
+                    }
+                    name = f"spread_{spread_multiplier:g}x__slippage_{slippage_mode}"
+                    if scenario_spec.rules.strategy_type == "rsi_mean_reversion":
+                        scenario_spec.rules.rsi_period = max(2, spec.rules.rsi_period + rsi_offset)
+                        variant["rsi_period"] = scenario_spec.rules.rsi_period
+                        name = f"{name}__rsi_{scenario_spec.rules.rsi_period}"
+                    prepared = build_signal_pipeline(market_bars=market_bars, spec=scenario_spec)
                     result = run_backtest(bars=prepared.bars, spec=scenario_spec, policy=scenario_policy)
                     scenarios.append(
                         _build_scenario_result(
-                            name=f"spread_{spread_multiplier:g}x__slippage_{slippage_mode}__rsi_{scenario_spec.rules.rsi_period}",
-                            variant={
-                                "spread_multiplier": spread_multiplier,
-                                "slippage_mode": slippage_mode,
-                                "rsi_period": scenario_spec.rules.rsi_period,
-                            },
+                            name=name,
+                            variant=variant,
                             result=result,
                         )
                     )
