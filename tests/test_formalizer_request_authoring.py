@@ -164,3 +164,203 @@ def test_formalizer_rejects_breakout_request_with_order_book_and_news_confirmati
     assert outcome.notes.status == "rejected"
     assert outcome.spec is None
     assert any("Unsupported discretionary/external logic" in item.reason for item in outcome.notes.rejected_fields)
+
+
+# ── Issue #4: RSI phrasing expansion ─────────────────────────────────────────
+
+
+# A1: RSI(N) parenthesised period + "enter/exit when RSI is below/above N"
+def test_a1_rsi_parenthesized_period_and_enter_exit_when_phrasing() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. "
+        "Use RSI(14). Enter when RSI is below 30. Exit when RSI is above 55. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.rsi_period == 14
+    assert outcome.spec.rules.entry_rsi_lte == 30.0
+    assert outcome.spec.rules.exit_rsi_gte == 55.0
+
+
+# A2: "when RSI is below N, go long" / "when RSI is above N, exit long"
+def test_a2_when_rsi_is_below_go_long_phrasing() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "When RSI is below 28, go long. When RSI is above 60, exit long. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.entry_rsi_lte == 28.0
+    assert outcome.spec.rules.exit_rsi_gte == 60.0
+
+
+# A3: "RSI falls below N" / "RSI rises above N" directional verb phrasings
+def test_a3_rsi_falls_below_and_rises_above_phrasing() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter long if RSI falls below 25. Exit if RSI rises above 60. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.entry_rsi_lte == 25.0
+    assert outcome.spec.rules.exit_rsi_gte == 60.0
+
+
+# A4: "N-period RSI" period-prefix syntax
+def test_a4_n_period_rsi_prefix_syntax() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. "
+        "Use a 9-period RSI. Enter when RSI is below 30. Exit when RSI is above 55. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.rsi_period == 9
+
+
+# A6: "RSI reading under/over N" phrasings
+def test_a6_rsi_reading_under_over_phrasing() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "RSI reading under 30 triggers a long entry. RSI reading over 55 closes the long. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.entry_rsi_lte == 30.0
+    assert outcome.spec.rules.exit_rsi_gte == 55.0
+
+
+# R1: RSI with MACD confirmation → rejected for unsupported signal
+def test_r1_rsi_macd_combo_rejected() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI(14) below 30 to enter, "
+        "but confirm with MACD crossover. Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "rejected"
+    assert outcome.spec is None
+    assert any("RSI-based" in item.reason or "Unsupported signal" in item.reason for item in outcome.notes.rejected_fields)
+
+
+# R2: RSI with optimization request → rejected
+def test_r2_rsi_with_optimization_rejected() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter when RSI is below 30. Optimize the RSI period and entry threshold. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "rejected"
+    assert outcome.spec is None
+    assert any("Optimization" in item.reason for item in outcome.notes.rejected_fields)
+
+
+# R3: RSI with trailing stop → rejected
+def test_r3_rsi_with_trailing_stop_rejected() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter when RSI is below 30. Use a trailing stop of 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "rejected"
+    assert outcome.spec is None
+    assert any("Advanced trade management" in item.reason for item in outcome.notes.rejected_fields)
+
+
+# R4: RSI with multi-pair scope → rejected
+def test_r4_rsi_with_multi_pair_rejected() -> None:
+    request_text = (
+        "Run a multi-pair RSI strategy on EUR/USD and GBP/USD on H1. "
+        "RSI period 14. Enter when RSI is below 30. Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "rejected"
+    assert outcome.spec is None
+    assert any(
+        "portfolio" in item.reason.lower() or "basket" in item.reason.lower() or "multi" in item.reason.lower()
+        for item in outcome.notes.rejected_fields
+    )
+
+
+# M1: Long-only with falls/rises phrasing; short defaults must not be overridden
+def test_m1_long_only_custom_thresholds_short_defaults_unchanged() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter long when RSI falls below 28. Exit when RSI rises above 62. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.entry_rsi_lte == 28.0
+    assert outcome.spec.rules.exit_rsi_gte == 62.0
+    # short thresholds must remain at defaults — no side inference
+    assert outcome.spec.rules.short_entry_rsi_gte == 70.0
+    assert outcome.spec.rules.short_exit_rsi_lte == 45.0
+
+
+# M2: Both-direction with explicit "go long/go short" RSI phrasings
+def test_m2_both_directions_explicit_go_long_go_short_rsi_thresholds() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long and short. RSI period 14. "
+        "Go long when RSI is below 30. Go short when RSI is above 72. "
+        "Exit long when RSI is above 55. Exit short when RSI is below 45. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.entry_rsi_lte == 30.0
+    assert outcome.spec.rules.short_entry_rsi_gte == 72.0
+    assert outcome.spec.rules.exit_rsi_gte == 55.0
+    assert outcome.spec.rules.short_exit_rsi_lte == 45.0
+
+
+# M3: RSI phrasing combined with robustness sweep; both parsed without conflict
+def test_m3_rsi_phrasing_with_robustness_sweep_no_conflict() -> None:
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter when RSI is below 30. Exit when RSI is above 55. "
+        "Enable robustness with 1x spread and 2x spread. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.entry_rsi_lte == 30.0
+    assert outcome.spec.rules.exit_rsi_gte == 55.0
+    assert outcome.spec.robustness.enabled is True
+    assert outcome.spec.robustness.spread_multipliers == [1.0, 2.0]

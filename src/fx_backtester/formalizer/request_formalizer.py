@@ -308,6 +308,77 @@ def _parse_breakout_buffer_pips(text: str) -> float | None:
     return None
 
 
+# ── Issue #4: expanded RSI phrasing extractors ────────────────────────────────
+
+def _parse_rsi_period_expanded(text: str) -> int | None:
+    """Additional RSI period phrasings: RSI(N), N-period RSI."""
+    match = re.search(r"\brsi\((\d+)\)", text, re.I)
+    if match:
+        return int(match.group(1))
+    match = re.search(r"\b(\d+)[- ]?period\s+rsi\b", text, re.I)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def _parse_entry_rsi_lte_expanded(text: str) -> float | None:
+    """Expanded long-entry RSI threshold patterns (explicit directional keywords only)."""
+    patterns = [
+        # "enter [long] when/if RSI [is] [falls/drops] below/under N"
+        r"\benter\s+(?:long\s+)?(?:when|if)\s+rsi\s+(?:is\s+)?(?:falls?\s+|drops?\s+)?(?:below|under)\s+(\d+(?:\.\d+)?)\b",
+        # "go long when/if RSI [is] [falls/drops] below/under N"
+        r"\bgo\s+long\s+(?:when|if)\s+rsi\s+(?:is\s+)?(?:falls?\s+|drops?\s+)?(?:below|under)\s+(\d+(?:\.\d+)?)\b",
+        # "when RSI is below N, go long"
+        r"\bwhen\s+rsi\s+is\s+(?:below|under)\s+(\d+(?:\.\d+)?)\s*,\s*go\s+long\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            return float(match.group(1))
+    return None
+
+
+def _parse_exit_rsi_gte_expanded(text: str) -> float | None:
+    """Expanded long-exit RSI threshold patterns (explicit exit context only)."""
+    patterns = [
+        # "exit [long] when/if RSI [is] [rises/climbs] above/over N"
+        r"\bexit\s+(?:long\s+)?(?:when|if)\s+rsi\s+(?:is\s+)?(?:rises?\s+|climbs?\s+)?(?:above|over)\s+(\d+(?:\.\d+)?)\b",
+        # "when RSI is above N, exit long"
+        r"\bwhen\s+rsi\s+is\s+(?:above|over)\s+(\d+(?:\.\d+)?)\s*,\s*exit\s+long\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            return float(match.group(1))
+    return None
+
+
+def _parse_short_entry_rsi_gte_expanded(text: str) -> float | None:
+    """Expanded short-entry RSI threshold patterns (explicit short direction only)."""
+    patterns = [
+        # "go short when/if RSI [is] [rises/climbs] above/over N"
+        r"\bgo\s+short\s+(?:when|if)\s+rsi\s+(?:is\s+)?(?:rises?\s+|climbs?\s+)?(?:above|over)\s+(\d+(?:\.\d+)?)\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            return float(match.group(1))
+    return None
+
+
+def _parse_short_exit_rsi_lte_expanded(text: str) -> float | None:
+    """Expanded short-exit RSI threshold patterns (explicit short direction only)."""
+    patterns = [
+        # "exit short when/if RSI [is] [falls/drops] below/under N"
+        r"\bexit\s+short\s+(?:when|if)\s+rsi\s+(?:is\s+)?(?:falls?\s+|drops?\s+)?(?:below|under)\s+(\d+(?:\.\d+)?)\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            return float(match.group(1))
+    return None
+
+
 def validate_supported_features(spec: StrategySpec) -> list[FormalizationIssue]:
     issues: list[FormalizationIssue] = []
     if spec.instrument.symbol not in _SUPPORTED_PAIR_MAP:
@@ -376,11 +447,31 @@ def formalize_strategy_request(request_text: str, defaults: FormalizerDefaults |
         "breakout_buffer_pips": breakout_buffer_pips,
     }
 
-    rsi_period = _parse_int(text, r"\brsi(?: period)?\s*(?:of|=|is)?\s*(\d+)\b") or defaults.rsi_period
-    entry_rsi_lte = _parse_number(text, r"\b(?:entry|buy|long entry)\s*rsi\s*(?:<=|below|under|at most)\s*(\d+(?:\.\d+)?)\b") or defaults.entry_rsi_lte
-    exit_rsi_gte = _parse_number(text, r"\b(?:exit|long exit|close long)\s*rsi\s*(?:>=|above|over|at least)\s*(\d+(?:\.\d+)?)\b") or defaults.exit_rsi_gte
-    short_entry_rsi_gte = _parse_number(text, r"\b(?:short entry|sell entry)\s*rsi\s*(?:>=|above|over|at least)\s*(\d+(?:\.\d+)?)\b") or defaults.short_entry_rsi_gte
-    short_exit_rsi_lte = _parse_number(text, r"\b(?:short exit|cover|close short)\s*rsi\s*(?:<=|below|under|at most)\s*(\d+(?:\.\d+)?)\b") or defaults.short_exit_rsi_lte
+    rsi_period = (
+        _parse_int(text, r"\brsi(?: period)?\s*(?:of|=|is)?\s*(\d+)\b")
+        or _parse_rsi_period_expanded(text)
+        or defaults.rsi_period
+    )
+    entry_rsi_lte = (
+        _parse_number(text, r"\b(?:entry|buy|long entry)\s*rsi\s*(?:<=|below|under|at most)\s*(\d+(?:\.\d+)?)\b")
+        or _parse_entry_rsi_lte_expanded(text)
+        or defaults.entry_rsi_lte
+    )
+    exit_rsi_gte = (
+        _parse_number(text, r"\b(?:exit|long exit|close long)\s*rsi\s*(?:>=|above|over|at least)\s*(\d+(?:\.\d+)?)\b")
+        or _parse_exit_rsi_gte_expanded(text)
+        or defaults.exit_rsi_gte
+    )
+    short_entry_rsi_gte = (
+        _parse_number(text, r"\b(?:short entry|sell entry)\s*rsi\s*(?:>=|above|over|at least)\s*(\d+(?:\.\d+)?)\b")
+        or _parse_short_entry_rsi_gte_expanded(text)
+        or defaults.short_entry_rsi_gte
+    )
+    short_exit_rsi_lte = (
+        _parse_number(text, r"\b(?:short exit|cover|close short)\s*rsi\s*(?:<=|below|under|at most)\s*(\d+(?:\.\d+)?)\b")
+        or _parse_short_exit_rsi_lte_expanded(text)
+        or defaults.short_exit_rsi_lte
+    )
     recognized_fields["rsi"] = {
         "rsi_period": rsi_period,
         "entry_rsi_lte": entry_rsi_lte,
