@@ -364,3 +364,68 @@ def test_m3_rsi_phrasing_with_robustness_sweep_no_conflict() -> None:
     assert outcome.spec.rules.exit_rsi_gte == 55.0
     assert outcome.spec.robustness.enabled is True
     assert outcome.spec.robustness.spread_multipliers == [1.0, 2.0]
+
+
+# ── Direction co-presence detection ──────────────────────────────────────────
+
+
+def test_direction_buy_sell_breakout_resolves_to_both() -> None:
+    """'Buy if ... Sell if ...' co-presence → direction=both."""
+    request_text = (
+        "Trade EURUSD on H1 using a breakout strategy. "
+        "Buy if price breaks above the highest high of the last 20 bars by 2 pips. "
+        "Sell if it breaks below the lowest low of the last 20 bars by 2 pips. "
+        "Use a 12-bar time stop. Stop loss 15 pips. Take profit 30 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.direction == "both"
+
+
+def test_direction_go_long_go_short_breakout_resolves_to_both() -> None:
+    """'Go long when ... Go short when ...' co-presence → direction=both."""
+    request_text = (
+        "Trade EURUSD on H1 using a breakout strategy. "
+        "Go long when price closes above the highest high of the last 20 bars by 2 pips. "
+        "Go short when price closes below the lowest low of the last 20 bars by 2 pips. "
+        "Stop loss 15 pips. Take profit 30 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.direction == "both"
+
+
+def test_direction_rsi_long_only_explicit_not_widened_to_both() -> None:
+    """Explicit 'long only' is never overridden to both by entry keywords."""
+    request_text = (
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter long when RSI falls below 30. Exit when RSI rises above 55. "
+        "Stop loss 20 pips. Take profit 40 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.direction == "long_only"
+
+
+def test_direction_single_side_entry_keyword_does_not_infer_both() -> None:
+    """Only one side's entry keyword present → must not become both."""
+    request_text = (
+        "Trade EURUSD on H1. RSI period 14. "
+        "Enter long when RSI falls below 30. Exit when RSI rises above 55. "
+        "Stop loss 15 pips. Take profit 30 pips."
+    )
+
+    outcome = formalize_strategy_request(request_text)
+
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.direction == "long_only"  # defaulted; no short-entry keyword present

@@ -110,13 +110,26 @@ def _parse_timeframe(text: str) -> str | None:
     return {"1H": "H1", "H1": "H1", "4H": "H4", "1D": "D1"}.get(raw, raw)
 
 
+_EXPLICIT_LONG_ENTRY = re.compile(
+    r"\b(buy\s+(?:if|when)|go\s+long|enter\s+long)\b", re.I
+)
+_EXPLICIT_SHORT_ENTRY = re.compile(
+    r"\b(sell\s+(?:if|when)|go\s+short|enter\s+short)\b", re.I
+)
+
+
 def _parse_direction(text: str) -> str | None:
+    # Explicit aggregate phrases take priority.
     if re.search(r"\b(long and short|both directions|both sides|two[- ]?sided)\b", text, re.I):
         return "both"
     if re.search(r"\bshort only\b", text, re.I):
         return "short_only"
     if re.search(r"\blong only\b", text, re.I):
         return "long_only"
+    # Co-presence of an explicit long-entry keyword AND an explicit short-entry
+    # keyword signals a two-sided request without requiring a summary phrase.
+    if _EXPLICIT_LONG_ENTRY.search(text) and _EXPLICIT_SHORT_ENTRY.search(text):
+        return "both"
     return None
 
 
