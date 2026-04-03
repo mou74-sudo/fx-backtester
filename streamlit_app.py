@@ -362,7 +362,7 @@ elif page == "🔬 Backtest":
             yaxis=dict(gridcolor="rgba(255,255,255,0.1)"),
             height=300,
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key="wf_auto_folds")
 
         # Trade table
         with st.expander("Trade log"):
@@ -413,7 +413,7 @@ elif page == "🔄 Walk-Forward":
                     go.Bar(name="Out-of-sample", x=labels, y=oos_pips, marker_color="#ff8855"),
                 ])
                 fig.update_layout(barmode="group", title="IS vs OOS Pips per Fold")
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, use_container_width=True, key="wf_manual_folds")
             st.markdown("---")
             st.caption("Re-run manually below to test different settings.")
         except Exception:
@@ -483,7 +483,7 @@ elif page == "🔄 Walk-Forward":
                 yaxis=dict(gridcolor="rgba(255,255,255,0.1)", title="Net pips"),
                 legend=dict(orientation="h", y=1.1),
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, use_container_width=True, key="backtest_equity")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -605,7 +605,7 @@ elif page == "📍 Key Levels":
                         plot_bgcolor="rgba(0,0,0,0)",
                         yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
                     )
-                    st.plotly_chart(fig, use_container_width=True)
+                    st.plotly_chart(fig, use_container_width=True, key="levels_bar")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -661,7 +661,7 @@ elif page == "📊 MAE / MFE":
             xaxis=dict(title="MAE (pips — adverse)", gridcolor="rgba(255,255,255,0.1)"),
             yaxis=dict(title="MFE (pips — favorable)", gridcolor="rgba(255,255,255,0.1)"),
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key="mae_mfe_scatter")
         st.caption("Ideal: winners cluster bottom-right (low MAE, high MFE). Losers should cluster bottom-left.")
 
 
@@ -881,13 +881,13 @@ elif page == "📈 History":
             fig = px.line(df, x="Run", y="Net Pips", markers=True,
                           title="Strategy Net Pips — Each Automated Run")
             fig.update_layout(xaxis_tickangle=-45)
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, use_container_width=True, key="history_pips")
 
             st.subheader("Ending Equity Over Time")
             fig2 = px.line(df, x="Run", y="Ending Equity", markers=True,
                            title="Account Equity — Each Automated Run")
             fig2.update_layout(xaxis_tickangle=-45)
-            st.plotly_chart(fig2, use_container_width=True)
+            st.plotly_chart(fig2, use_container_width=True, key="history_equity")
 
         st.caption(f"Total runs stored: {len(records)}")
 
