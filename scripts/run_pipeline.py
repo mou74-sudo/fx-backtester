@@ -1,6 +1,7 @@
 """
 Automated pipeline: fetch → backtest → walk-forward → scan-levels.
 Writes all results to results/ so Streamlit picks them up automatically.
+Each run also saves a timestamped snapshot to results/history/.
 """
 
 from __future__ import annotations
@@ -8,7 +9,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, UTC
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -102,16 +103,46 @@ def main() -> None:
         "--output-dir", str(RESULTS / "level_study"),
     ])
 
-    # 6. Write a pipeline summary stamp
+    # 6. Collect backtest metrics for history
+    summary_json = next(
+        (ROOT / "outputs").glob("*/reports/summary.json"), None
+    )
+    backtest_metrics: dict = {}
+    if summary_json and summary_json.exists():
+        try:
+            backtest_metrics = json.loads(summary_json.read_text())
+        except Exception:
+            pass
+
+    wf_json = RESULTS / "walk_forward" / "walk_forward.json"
+    wf_metrics: dict = {}
+    if wf_json.exists():
+        try:
+            wf_metrics = json.loads(wf_json.read_text())
+        except Exception:
+            pass
+
+    run_ts = datetime.now(UTC).strftime("%Y-%m-%dT%H%M")
+
+    # 7. Write latest pipeline summary
     summary = {
+        "run_timestamp": run_ts,
         "run_date": date.today().isoformat(),
         "data_start": start.isoformat(),
         "data_end": end.isoformat(),
         "lookback_days": lookback,
-        "data_csv": str(DATA_CSV),
-        "spec": str(LIVE_SPEC),
+        "backtest": backtest_metrics,
+        "walk_forward_verdict": wf_metrics.get("verdict"),
+        "oos_net_pips": wf_metrics.get("oos_total_net_pips"),
+        "oos_win_rate": wf_metrics.get("oos_avg_win_rate"),
     }
     (RESULTS / "pipeline_summary.json").write_text(json.dumps(summary, indent=2))
+
+    # 8. Append to history — one file per run, kept forever
+    history_dir = RESULTS / "history"
+    history_dir.mkdir(exist_ok=True)
+    (history_dir / f"{run_ts}.json").write_text(json.dumps(summary, indent=2))
+    print(f"\nHistory snapshot saved: results/history/{run_ts}.json")
     print("\nPipeline complete. Results written to results/")
 
 

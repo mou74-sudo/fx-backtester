@@ -43,7 +43,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Navigation ────────────────────────────────────────────────────────────────
-PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward", "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search", "📖 How to Use"]
+PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward", "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search", "📈 History", "📖 How to Use"]
 page = st.sidebar.radio("Navigate", PAGES, label_visibility="collapsed")
 st.sidebar.markdown("---")
 st.sidebar.caption("FX Backtester · v1.3")
@@ -697,6 +697,58 @@ Find the best strategy settings by testing every combination you specify.
                             st.error("OOS unprofitable — these params may be curve-fitted. Try fewer parameters or more data.")
                     except Exception as e:
                         st.error(f"OOS validation failed: {e}")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# HISTORY
+# ══════════════════════════════════════════════════════════════════════════════
+elif page == "📈 History":
+    st.title("📈 Run History")
+    st.caption("Every automated pipeline run is saved here — track performance trends over time.")
+
+    history_dir = Path("results/history")
+    if not history_dir.exists() or not list(history_dir.glob("*.json")):
+        st.info("No history yet. The pipeline saves a snapshot here after every run.")
+    else:
+        import pandas as pd
+
+        records = []
+        for f in sorted(history_dir.glob("*.json")):
+            try:
+                d = json.loads(f.read_text())
+                bt = d.get("backtest", {})
+                records.append({
+                    "Run": d.get("run_timestamp", f.stem),
+                    "Date": d.get("run_date", ""),
+                    "Trades": bt.get("trade_count", 0),
+                    "Net Pips": bt.get("net_pips", 0),
+                    "Net P&L $": bt.get("net_pnl", 0),
+                    "Ending Equity": bt.get("ending_equity", 0),
+                    "Max DD %": bt.get("max_drawdown_pct", 0),
+                    "WF Verdict": d.get("walk_forward_verdict", "—"),
+                    "OOS Pips": d.get("oos_net_pips", 0),
+                    "OOS Win Rate": d.get("oos_win_rate", 0),
+                })
+            except Exception:
+                continue
+
+        df = pd.DataFrame(records)
+        st.dataframe(df, use_container_width=True)
+
+        if len(df) > 1:
+            st.subheader("Net Pips Over Time")
+            fig = px.line(df, x="Run", y="Net Pips", markers=True,
+                          title="Strategy Net Pips — Each Automated Run")
+            fig.update_layout(xaxis_tickangle=-45)
+            st.plotly_chart(fig, use_container_width=True)
+
+            st.subheader("Ending Equity Over Time")
+            fig2 = px.line(df, x="Run", y="Ending Equity", markers=True,
+                           title="Account Equity — Each Automated Run")
+            fig2.update_layout(xaxis_tickangle=-45)
+            st.plotly_chart(fig2, use_container_width=True)
+
+        st.caption(f"Total runs stored: {len(records)}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
