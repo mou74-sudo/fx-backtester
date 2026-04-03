@@ -74,7 +74,54 @@ def main() -> None:
     scan.add_argument("--min-touches", type=int, default=2, help="Minimum touches to include a level in the report (default: 2)")
     scan.add_argument("--output-dir", type=Path, default=Path("outputs/level_study"), help="Directory for level_study.json and level_study.md")
 
+    wf = subparsers.add_parser(
+        "walk-forward-test",
+        help="Run rolling walk-forward validation on a strategy spec + OHLC CSV",
+    )
+    wf.add_argument("spec", type=Path, help="Path to a strategy spec JSON file")
+    wf.add_argument("csv", type=Path, help="Path to an OHLC CSV file")
+    wf.add_argument("--folds", type=int, default=5, help="Number of sequential folds (default: 5)")
+    wf.add_argument("--in-sample-pct", type=float, default=0.7,
+                    help="Fraction of each fold used for in-sample period (default: 0.7)")
+    wf.add_argument("--min-bars-per-half", type=int, default=50,
+                    help="Min bars required in each IS or OOS half — folds below this are skipped (default: 50)")
+    wf.add_argument("--output-dir", type=Path, default=Path("outputs/walk_forward"),
+                    help="Directory for walk_forward.json and walk_forward.md (default: outputs/walk_forward)")
+
     args = parser.parse_args()
+
+    if args.command == "walk-forward-test":
+        from fx_backtester.analysis.walk_forward import run_walk_forward, write_walk_forward_artifacts
+        from fx_backtester.data.loaders import load_market_bars
+
+        raw = json.loads(args.spec.read_text(encoding="utf-8"))
+        spec = StrategySpec.model_validate(raw)
+        bars = load_market_bars(args.csv)
+        print(f"Loaded {len(bars)} bars from {args.csv}")
+        print(f"Running {args.folds}-fold walk-forward ({args.in_sample_pct:.0%} IS / "
+              f"{1 - args.in_sample_pct:.0%} OOS per fold)…")
+
+        report = run_walk_forward(
+            bars,
+            spec,
+            default_execution_policy(),
+            n_folds=args.folds,
+            in_sample_pct=args.in_sample_pct,
+            min_bars_per_half=args.min_bars_per_half,
+        )
+        out = write_walk_forward_artifacts(report, args.output_dir)
+        _write_json_stdout({
+            "verdict": report.verdict,
+            "folds_evaluated": len(report.folds),
+            "folds_profitable": report.validated_folds,
+            "oos_total_net_pips": report.oos_total_net_pips,
+            "oos_total_trades": report.oos_total_trades,
+            "oos_avg_win_rate": report.oos_avg_win_rate,
+            "output_dir": str(out),
+            "json_report": str(out / "walk_forward.json"),
+            "markdown_report": str(out / "walk_forward.md"),
+        })
+        return
 
     if args.command == "scan-levels":
         from fx_backtester.analysis.key_levels import (

@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.3.0 - 2026-04-03
+
+Walk-forward validation — tests whether a strategy holds up on unseen data.
+
+### Included
+
+- **Walk-forward validation engine** (`src/fx_backtester/analysis/walk_forward.py`) — divides bar history into N sequential folds, runs the backtest engine independently on the in-sample and out-of-sample half of each fold, and produces a per-fold and aggregate report; verdict logic classifies results as `validated`, `inconclusive`, or `failed`
+- **CLI `walk-forward-test` subcommand** — `fx-backtester walk-forward-test spec.json data.csv --folds 5 --in-sample-pct 0.7 --output-dir outputs/walk_forward`; writes `walk_forward.json` and `walk_forward.md`
+- **Verdict logic** — `validated` requires ≥60 % of OOS folds profitable AND total OOS net pips > 0; `inconclusive` requires ≥40 % profitable OR total pips > 0; otherwise `failed`
+- **`min_bars_per_half` guard** — folds with fewer than N bars in either half are silently skipped to avoid signal-starved windows
+
+### Test additions
+
+- 30 walk-forward tests covering fold slicing, IS/OOS bar counts, timestamp ordering, non-overlap, min_bars guard, metric extraction, verdict logic (all three outcomes), input validation, markdown/JSON report generation, and artifact writing
+- **157 / 157 tests green**
+
+### Stability notes
+
+- Walk-forward runs the same fixed spec across all folds — no parameter optimisation is performed; it tests consistency, not optimisation
+- Artifact schema and existing run artifact contract unchanged
+
 ## v1.2.0 - 2026-04-03
 
 Real-data integration layer and formalizer phrasing expansion.
