@@ -50,7 +50,77 @@ def main() -> None:
     fetch.add_argument("--output", type=Path, required=True, help="Output CSV path")
     fetch.add_argument("--cache-dir", type=Path, default=Path("data/cache"), help="Local bi5 cache directory (default: data/cache)")
 
+    scan = subparsers.add_parser(
+        "scan-levels",
+        help="Detect key levels in an OHLC CSV and report how price reacts at each one",
+    )
+    scan.add_argument("--data", type=Path, required=True, help="OHLC CSV produced by fetch-data or run-backtest")
+    scan.add_argument("--instrument", default="EURUSD", help="Instrument label for the report (default: EURUSD)")
+    scan.add_argument("--pip-size", type=float, default=0.0001, help="Pip size (default: 0.0001 for 5-decimal pairs)")
+    scan.add_argument(
+        "--level-type", nargs="+",
+        choices=["round_numbers", "swing_highs", "swing_lows"],
+        default=["round_numbers", "swing_highs", "swing_lows"],
+        help="Level types to detect (default: all three)",
+    )
+    scan.add_argument("--levels", nargs="+", type=float, default=None, metavar="PRICE",
+                      help="One or more manual price levels (overrides --level-type)")
+    scan.add_argument("--zone-pips", type=float, default=5.0, help="Zone half-width in pips (default: 5)")
+    scan.add_argument("--round-pips", type=int, default=50, help="Round-number spacing in pips (default: 50)")
+    scan.add_argument("--swing-lookback", type=int, default=5, help="Bars each side for swing detection (default: 5)")
+    scan.add_argument("--forward-bars", type=int, default=20, help="Bars to look forward after each touch (default: 20)")
+    scan.add_argument("--reversal-threshold", type=float, default=15.0, help="Min pips for 'reversed' outcome (default: 15)")
+    scan.add_argument("--breakout-threshold", type=float, default=15.0, help="Min pips for 'broke_through' outcome (default: 15)")
+    scan.add_argument("--min-touches", type=int, default=2, help="Minimum touches to include a level in the report (default: 2)")
+    scan.add_argument("--output-dir", type=Path, default=Path("outputs/level_study"), help="Directory for level_study.json and level_study.md")
+
     args = parser.parse_args()
+
+    if args.command == "scan-levels":
+        from fx_backtester.analysis.key_levels import (
+            KeyLevel,
+            detect_round_number_levels,
+            detect_swing_high_levels,
+            detect_swing_low_levels,
+            run_level_study,
+        )
+        from fx_backtester.analysis.level_report import write_level_study_artifacts
+        from fx_backtester.data.loaders import load_market_bars
+
+        bars = load_market_bars(args.data)
+        print(f"Loaded {len(bars)} bars from {args.data}")
+
+        if args.levels:
+            levels = [KeyLevel(price=p, label=f"manual_{p:.5f}", level_type="manual") for p in args.levels]
+        else:
+            levels = []
+            if "round_numbers" in args.level_type:
+                levels += detect_round_number_levels(bars, pip_size=args.pip_size, round_pips=args.round_pips)
+            if "swing_highs" in args.level_type:
+                levels += detect_swing_high_levels(bars, lookback=args.swing_lookback)
+            if "swing_lows" in args.level_type:
+                levels += detect_swing_low_levels(bars, lookback=args.swing_lookback)
+
+        print(f"Detected {len(levels)} candidate levels — scanning reactions…")
+        report = run_level_study(
+            bars, levels,
+            instrument=args.instrument,
+            pip_size=args.pip_size,
+            zone_pips=args.zone_pips,
+            forward_bars=args.forward_bars,
+            reversal_threshold_pips=args.reversal_threshold,
+            breakout_threshold_pips=args.breakout_threshold,
+            min_touches=args.min_touches,
+        )
+        out = write_level_study_artifacts(report, args.output_dir)
+        _write_json_stdout({
+            "levels_studied": report.levels_studied,
+            "total_touches": report.total_touches,
+            "output_dir": str(out),
+            "markdown_report": str(out / "level_study.md"),
+            "json_report": str(out / "level_study.json"),
+        })
+        return
 
     if args.command == "validate-spec":
         raw = json.loads(args.path.read_text(encoding="utf-8"))
