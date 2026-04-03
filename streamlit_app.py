@@ -501,20 +501,47 @@ elif page == "📍 Key Levels":
             levels_data = _ls_data.get("levels", [])
             if levels_data:
                 st.info("Showing auto-pipeline results. Scan manually below to customise.")
-                st.metric("Levels studied", len(levels_data))
-                import pandas as pd
-                rows = []
-                for lv in levels_data:
-                    rows.append({
-                        "Type": lv.get("level_type", ""),
-                        "Price": lv.get("price", 0),
-                        "Touches": lv.get("touch_count", 0),
-                        "Reversed": lv.get("reversed_count", 0),
-                        "Broke Through": lv.get("broke_through_count", 0),
-                        "Consolidated": lv.get("consolidated_count", 0),
-                        "Avg Fwd Pips": round(lv.get("avg_forward_pips", 0), 1),
-                    })
-                st.dataframe(pd.DataFrame(rows), use_container_width=True)
+                c1, c2 = st.columns(2)
+                c1.metric("Levels studied", _ls_data.get("levels_studied", len(levels_data)))
+                c2.metric("Total touches",  _ls_data.get("total_touches", "—"))
+                st.markdown("---")
+                _auto_type_labels = {
+                    "prev_day_high": "Previous Day High", "prev_day_low": "Previous Day Low",
+                    "prev_week_high": "Previous Week High", "prev_week_low": "Previous Week Low",
+                    "session_high": "Session High", "session_low": "Session Low",
+                    "round_number": "Round Number", "swing_high": "Swing High", "swing_low": "Swing Low",
+                }
+                for ai, lv in enumerate(levels_data[:30]):
+                    ltype = _auto_type_labels.get(lv.get("level_type", ""), lv.get("level_type", ""))
+                    price = lv.get("price", 0)
+                    tc    = lv.get("touch_count", 0)
+                    rc    = lv.get("reversal_count", 0)
+                    bc    = lv.get("breakout_count", 0)
+                    cc    = lv.get("consolidation_count", 0)
+                    rr    = f"{lv.get('reversal_rate', 0):.0%}"
+                    br    = f"{lv.get('breakout_rate', 0):.0%}"
+                    afp   = lv.get("avg_forward_pips", {})
+                    horizons = sorted(afp.keys(), key=int) if isinstance(afp, dict) else []
+                    pip_line = "  ·  ".join(f"{h}b: **{afp[h]:+.1f} pips**" for h in horizons) if horizons else ""
+                    with st.expander(f"{ltype} @ {price:.5f} — {tc} touches"):
+                        st.markdown(
+                            f"Touched **{tc}×** | "
+                            f"Reversed {rc} ({rr})  ·  Broke through {bc} ({br})  ·  Consolidated {cc}"
+                        )
+                        if pip_line:
+                            st.markdown(f"Avg move after touch → {pip_line}")
+                        if horizons:
+                            pips = [afp[h] for h in horizons]
+                            fig = go.Figure(go.Bar(
+                                x=[f"{h}b" for h in horizons], y=pips,
+                                marker_color=["#00d4aa" if p > 0 else "#ff4455" for p in pips],
+                            ))
+                            fig.update_layout(
+                                height=200, margin=dict(l=0,r=0,t=10,b=0),
+                                paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                                yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
+                            )
+                            st.plotly_chart(fig, use_container_width=True, key=f"auto_levels_bar_{ai}")
                 st.markdown("---")
         except Exception:
             pass
@@ -582,19 +609,50 @@ elif page == "📍 Key Levels":
     if "level_report" in st.session_state:
         report = st.session_state["level_report"]
         st.markdown("---")
-        st.metric("Levels studied", report.levels_studied)
-        st.metric("Total touches",  report.total_touches)
 
-        for s in report.summaries[:20]:  # top 20 by touch count
-            with st.expander(f"**{s.level.label}** @ {s.level.price:.5f} — {s.touch_count} touches"):
-                c1, c2, c3 = st.columns(3)
-                c1.metric("Reversed",     f"{s.reversal_count} ({s.reversal_rate:.0%})")
-                c2.metric("Broke through",f"{s.breakout_count} ({s.breakout_rate:.0%})")
-                c3.metric("Consolidated", s.consolidation_count)
+        c1, c2 = st.columns(2)
+        c1.metric("Levels studied", report.levels_studied)
+        c2.metric("Total touches",  report.total_touches)
+
+        st.markdown("---")
+
+        _type_labels = {
+            "prev_day_high":  "Previous Day High",
+            "prev_day_low":   "Previous Day Low",
+            "prev_week_high": "Previous Week High",
+            "prev_week_low":  "Previous Week Low",
+            "session_high":   "Session High",
+            "session_low":    "Session Low",
+            "round_number":   "Round Number",
+            "swing_high":     "Swing High",
+            "swing_low":      "Swing Low",
+        }
+
+        for i, s in enumerate(report.summaries[:30]):
+            ltype = _type_labels.get(s.level.level_type, s.level.level_type)
+            # Build Brodie-style summary line
+            rev_pct  = f"{s.reversal_rate:.0%}"
+            brk_pct  = f"{s.breakout_rate:.0%}"
+            summary_line = (
+                f"**{ltype}** @ {s.level.price:.5f} — touched **{s.touch_count}× ** | "
+                f"Reversed {s.reversal_count} ({rev_pct})  ·  "
+                f"Broke through {s.breakout_count} ({brk_pct})  ·  "
+                f"Consolidated {s.consolidation_count}"
+            )
+
+            # Avg pip moves at each horizon
+            horizons = sorted(s.avg_forward_pips.keys()) if s.avg_forward_pips else []
+            pip_line = "  ·  ".join(
+                f"{h}b: **{s.avg_forward_pips[h]:+.1f} pips**" for h in horizons
+            ) if horizons else ""
+
+            with st.expander(f"{ltype} @ {s.level.price:.5f} — {s.touch_count} touches"):
+                st.markdown(summary_line)
+                if pip_line:
+                    st.markdown(f"Avg move after touch → {pip_line}")
 
                 if s.avg_forward_pips:
-                    horizons = sorted(s.avg_forward_pips.keys())
-                    pips     = [s.avg_forward_pips[h] for h in horizons]
+                    pips = [s.avg_forward_pips[h] for h in horizons]
                     fig = go.Figure(go.Bar(
                         x=[f"{h}b" for h in horizons], y=pips,
                         marker_color=["#00d4aa" if p > 0 else "#ff4455" for p in pips],
@@ -605,7 +663,7 @@ elif page == "📍 Key Levels":
                         plot_bgcolor="rgba(0,0,0,0)",
                         yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
                     )
-                    st.plotly_chart(fig, use_container_width=True, key="levels_bar")
+                    st.plotly_chart(fig, use_container_width=True, key=f"levels_bar_{i}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
