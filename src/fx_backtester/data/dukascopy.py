@@ -59,22 +59,24 @@ def cache_path(cache_dir: Path, instrument: str, year: int, month: int, day: int
 
 # ── Network fetch ─────────────────────────────────────────────────────────────
 
-def fetch_raw(url: str, *, retries: int = 3, backoff: float = 2.0) -> bytes:
+def fetch_raw(url: str, *, retries: int = 5, backoff: float = 3.0, timeout: int = 30) -> bytes:
     """HTTP GET with exponential retry. Returns empty bytes on 404 (weekend/holiday)."""
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(url, timeout=15) as resp:
+            with urllib.request.urlopen(url, timeout=timeout) as resp:
                 return resp.read()
         except urllib.error.HTTPError as exc:
             if exc.code == 404:
                 return b""          # no data for this day — normal for weekends
             if attempt < retries - 1:
-                time.sleep(backoff ** attempt)
+                sleep = backoff ** attempt
+                time.sleep(sleep)
                 continue
             raise
-        except (urllib.error.URLError, TimeoutError):
+        except (urllib.error.URLError, TimeoutError, OSError):
             if attempt < retries - 1:
-                time.sleep(backoff ** attempt)
+                sleep = backoff ** attempt
+                time.sleep(sleep)
                 continue
             raise
     return b""  # unreachable but satisfies type checker
@@ -171,7 +173,13 @@ def load_dukascopy_h1(
             source = "cache"
         else:
             url = day_url(instrument, current.year, current.month, current.day)
-            raw = fetch_raw(url)
+            try:
+                raw = fetch_raw(url)
+            except Exception as exc:
+                # Network error after all retries — skip this day and continue
+                print(f"  {current}  SKIP     (network error: {exc})")
+                current += timedelta(days=1)
+                continue
             local_path.parent.mkdir(parents=True, exist_ok=True)
             local_path.write_bytes(raw)   # persist even empty bytes (weekend = 0b)
             source = "network"

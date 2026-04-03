@@ -55,15 +55,23 @@ def main() -> None:
     # 1. Build spec with today's date range
     build_live_spec(lookback)
 
-    # 2. Fetch fresh H1 data
-    run([
-        "fx-backtester", "fetch-data",
-        "--instrument", "EURUSD",
-        "--start", start.isoformat(),
-        "--end", end.isoformat(),
-        "--output", str(DATA_CSV),
-        "--cache-dir", str(ROOT / "data" / "cache"),
-    ])
+    # 2. Fetch fresh H1 data (failures per day are skipped, not fatal)
+    try:
+        run([
+            "fx-backtester", "fetch-data",
+            "--instrument", "EURUSD",
+            "--start", start.isoformat(),
+            "--end", end.isoformat(),
+            "--output", str(DATA_CSV),
+            "--cache-dir", str(ROOT / "data" / "cache"),
+        ])
+    except SystemExit:
+        print("WARNING: data fetch failed — aborting pipeline run.")
+        sys.exit(1)
+
+    if not DATA_CSV.exists() or DATA_CSV.stat().st_size < 100:
+        print("WARNING: data file is empty or missing — aborting pipeline run.")
+        sys.exit(1)
 
     # 3. Run backtest
     run([
