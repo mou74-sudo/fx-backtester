@@ -46,24 +46,64 @@ st.markdown("""
 PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward", "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search", "📈 History", "📖 How to Use"]
 page = st.sidebar.radio("Navigate", PAGES, label_visibility="collapsed")
 st.sidebar.markdown("---")
-st.sidebar.caption("FX Backtester · v1.3")
 
-# ── Auto-load pipeline results if available ───────────────────────────────────
+# ── Data source selector ──────────────────────────────────────────────────────
 _RESULTS = Path("results")
 _LATEST_CSV = _RESULTS / "latest_eurusd_h1.csv"
 _PIPELINE_SUMMARY = _RESULTS / "pipeline_summary.json"
+_HISTORY_DIR = _RESULTS / "history"
 
-if "csv_bytes" not in st.session_state and _LATEST_CSV.exists():
-    st.session_state["csv_bytes"] = _LATEST_CSV.read_bytes()
-    st.session_state["csv_name"] = "latest_eurusd_h1.csv"
-    st.session_state["_auto_loaded"] = True
+# Build dropdown options
+_source_options = []
+if _LATEST_CSV.exists():
+    _source_options.append("📡 Latest pipeline run")
+if _HISTORY_DIR.exists():
+    for _f in sorted(_HISTORY_DIR.glob("*.json"), reverse=True)[:20]:
+        _source_options.append(f"🕐 {_f.stem}")
+_source_options.append("📂 Upload my own data")
 
+_data_source = st.sidebar.selectbox(
+    "Data source",
+    _source_options,
+    index=0 if _source_options else 0,
+)
+st.sidebar.markdown("---")
+st.sidebar.caption("FX Backtester · v1.3")
+
+# ── Load data based on selection ──────────────────────────────────────────────
 _pipeline_summary: dict = {}
-if _PIPELINE_SUMMARY.exists():
-    try:
-        _pipeline_summary = json.loads(_PIPELINE_SUMMARY.read_text())
-    except Exception:
-        pass
+
+if _data_source == "📡 Latest pipeline run":
+    if _LATEST_CSV.exists():
+        st.session_state["csv_bytes"] = _LATEST_CSV.read_bytes()
+        st.session_state["csv_name"] = "latest_eurusd_h1.csv"
+        st.session_state["_auto_loaded"] = True
+        st.session_state.pop("_manual_upload", None)
+    if _PIPELINE_SUMMARY.exists():
+        try:
+            _pipeline_summary = json.loads(_PIPELINE_SUMMARY.read_text())
+        except Exception:
+            pass
+
+elif _data_source.startswith("🕐 "):
+    _run_id = _data_source[2:].strip()
+    _hist_json = _HISTORY_DIR / f"{_run_id}.json"
+    if _hist_json.exists():
+        try:
+            _pipeline_summary = json.loads(_hist_json.read_text())
+        except Exception:
+            pass
+    # Load the CSV that was current at that time (use latest as best proxy)
+    if _LATEST_CSV.exists():
+        st.session_state["csv_bytes"] = _LATEST_CSV.read_bytes()
+        st.session_state["csv_name"] = f"{_run_id}.csv"
+        st.session_state["_auto_loaded"] = True
+
+elif _data_source == "📂 Upload my own data":
+    st.session_state["_manual_upload"] = True
+    # Clear auto-loaded data so tabs don't show stale pipeline results
+    for _k in ["_auto_loaded"]:
+        st.session_state.pop(_k, None)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -116,9 +156,25 @@ if page == "🏠 Home":
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "📥 Get Data":
     st.title("📥 Get Data")
-    st.markdown("Upload an OHLC CSV file. Required columns: `timestamp, open, high, low, close`")
 
-    uploaded = st.file_uploader("Choose a CSV file", type=["csv"])
+    if _data_source != "📂 Upload my own data":
+        st.info(f"Currently using: **{_data_source}** — switch to **📂 Upload my own data** in the sidebar to upload a file.")
+        if "csv_bytes" in st.session_state:
+            import pandas as pd
+            try:
+                _df_prev = pd.read_csv(io.BytesIO(st.session_state["csv_bytes"]))
+                c1, c2, c3 = st.columns(3)
+                c1.metric("Bars", f"{len(_df_prev):,}")
+                c2.metric("From", str(_df_prev['timestamp'].iloc[0])[:10])
+                c3.metric("To",   str(_df_prev['timestamp'].iloc[-1])[:10])
+                st.dataframe(_df_prev.head(5), use_container_width=True)
+            except Exception:
+                pass
+    else:
+        st.markdown("Upload an OHLC CSV file. Required columns: `timestamp, open, high, low, close`")
+
+    uploaded = st.file_uploader("Choose a CSV file", type=["csv"],
+                                 disabled=(_data_source != "📂 Upload my own data"))
     if uploaded:
         import pandas as pd
         try:
