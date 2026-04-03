@@ -1,6 +1,8 @@
 {
   "run_date": "2026-04-03",
-  "data_source": "example_data",
-  "note": "Dukascopy live fetch not available in this environment \u2014 using bundled example data",
-  "data_csv": "results/latest_eurusd_h1.csv"
+  "data_start": "2025-10-04",
+  "data_end": "2026-04-02",
+  "lookback_days": 180,
+  "data_csv": "/home/claw/services/fx-backtester-auto/results/latest_eurusd_h1.csv",
+  "spec": "/home/claw/services/fx-backtester-auto/results/live_spec.json"
 }
