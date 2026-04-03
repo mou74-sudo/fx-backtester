@@ -48,6 +48,23 @@ page = st.sidebar.radio("Navigate", PAGES, label_visibility="collapsed")
 st.sidebar.markdown("---")
 st.sidebar.caption("FX Backtester · v1.3")
 
+# ── Auto-load pipeline results if available ───────────────────────────────────
+_RESULTS = Path("results")
+_LATEST_CSV = _RESULTS / "latest_eurusd_h1.csv"
+_PIPELINE_SUMMARY = _RESULTS / "pipeline_summary.json"
+
+if "csv_bytes" not in st.session_state and _LATEST_CSV.exists():
+    st.session_state["csv_bytes"] = _LATEST_CSV.read_bytes()
+    st.session_state["csv_name"] = "latest_eurusd_h1.csv"
+    st.session_state["_auto_loaded"] = True
+
+_pipeline_summary: dict = {}
+if _PIPELINE_SUMMARY.exists():
+    try:
+        _pipeline_summary = json.loads(_PIPELINE_SUMMARY.read_text())
+    except Exception:
+        pass
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # HOME
@@ -80,7 +97,18 @@ if page == "🏠 Home":
 
 ---
 """)
-    st.info("Tap the **☰** menu (top left) to switch between tabs on mobile.")
+    if _pipeline_summary:
+        run_ts = _pipeline_summary.get("run_timestamp", _pipeline_summary.get("run_date", ""))
+        bt = _pipeline_summary.get("backtest", {})
+        st.success(f"**Live pipeline data loaded** — last run: {run_ts}")
+        if bt:
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("Trades", bt.get("trade_count", "—"))
+            c2.metric("Net Pips", f"{bt.get('net_pips', 0):+.1f}")
+            c3.metric("Net P&L", f"${bt.get('net_pnl', 0):+,.0f}")
+            c4.metric("WF Verdict", _pipeline_summary.get("walk_forward_verdict", "—"))
+    else:
+        st.info("Tap the **☰** menu (top left) to switch between tabs on mobile.")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -303,12 +331,43 @@ elif page == "🔄 Walk-Forward":
     st.title("🔄 Walk-Forward Validation")
     st.markdown("Tests whether the strategy holds up on data it hasn't seen before.")
 
+    # Show pre-computed pipeline results if available
+    _wf_json = _RESULTS / "walk_forward" / "walk_forward.json"
+    if _wf_json.exists() and "wf_report" not in st.session_state:
+        try:
+            _wf_data = json.loads(_wf_json.read_text())
+            st.info(f"Showing auto-pipeline results. Run a backtest manually to override.")
+            verdict = _wf_data.get("verdict", "—")
+            colour = {"validated": "🟢", "inconclusive": "🟡", "failed": "🔴"}
+            v_col = colour.get(verdict, "⚪")
+            st.subheader(f"Verdict: {v_col} {verdict.upper()}")
+            folds = _wf_data.get("folds", [])
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("Folds evaluated",  len(folds))
+            c2.metric("Profitable folds", _wf_data.get("validated_folds", 0))
+            c3.metric("OOS net pips",     f"{_wf_data.get('oos_total_net_pips', 0):+.1f}")
+            c4.metric("OOS win rate",     f"{_wf_data.get('oos_avg_win_rate', 0):.0%}")
+            if folds:
+                import plotly.express as px
+                labels  = [f"Fold {f.get('fold_index', i)}" for i, f in enumerate(folds)]
+                is_pips  = [f.get("in_sample", {}).get("net_pips", 0) for f in folds]
+                oos_pips = [f.get("out_of_sample", {}).get("net_pips", 0) for f in folds]
+                fig = go.Figure(data=[
+                    go.Bar(name="In-sample",     x=labels, y=is_pips,  marker_color="#5588ff"),
+                    go.Bar(name="Out-of-sample", x=labels, y=oos_pips, marker_color="#ff8855"),
+                ])
+                fig.update_layout(barmode="group", title="IS vs OOS Pips per Fold")
+                st.plotly_chart(fig, use_container_width=True)
+            st.markdown("---")
+            st.caption("Re-run manually below to test different settings.")
+        except Exception:
+            pass
+
     if "csv_bytes" not in st.session_state:
         st.warning("Upload data first in the **📥 Get Data** tab, then run a backtest.")
         st.stop()
-    if "spec" not in st.session_state:
-        st.warning("Run a backtest first so the strategy spec is available.")
-        st.stop()
+    if "spec" not in st.session_state and "wf_report" not in st.session_state:
+        st.info("Run a backtest first to test custom walk-forward settings.")
 
     n_folds     = st.slider("Number of folds", 2, 10, 5)
     is_pct      = st.slider("In-sample %", 50, 90, 70)
@@ -377,6 +436,32 @@ elif page == "🔄 Walk-Forward":
 elif page == "📍 Key Levels":
     st.title("📍 Key Level Reactions")
     st.markdown("See how price behaves when it touches a key level.")
+
+    # Show pre-computed pipeline results if available
+    _ls_json = _RESULTS / "level_study" / "level_study.json"
+    if _ls_json.exists():
+        try:
+            _ls_data = json.loads(_ls_json.read_text())
+            levels_data = _ls_data.get("levels", [])
+            if levels_data:
+                st.info("Showing auto-pipeline results. Scan manually below to customise.")
+                st.metric("Levels studied", len(levels_data))
+                import pandas as pd
+                rows = []
+                for lv in levels_data:
+                    rows.append({
+                        "Type": lv.get("level_type", ""),
+                        "Price": lv.get("price", 0),
+                        "Touches": lv.get("touch_count", 0),
+                        "Reversed": lv.get("reversed_count", 0),
+                        "Broke Through": lv.get("broke_through_count", 0),
+                        "Consolidated": lv.get("consolidated_count", 0),
+                        "Avg Fwd Pips": round(lv.get("avg_forward_pips", 0), 1),
+                    })
+                st.dataframe(pd.DataFrame(rows), use_container_width=True)
+                st.markdown("---")
+        except Exception:
+            pass
 
     if "csv_bytes" not in st.session_state:
         st.warning("Upload data first in the **📥 Get Data** tab.")
