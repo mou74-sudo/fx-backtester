@@ -32,7 +32,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           # Install core deps only (skip streamlit/plotly — not needed for pipeline)
-          pip install pydantic>=2.6 requests
+          pip install "pydantic>=2.6" "yfinance>=0.2"
           pip install -e . --no-deps
           pip install pytest
 

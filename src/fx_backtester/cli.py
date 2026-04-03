@@ -244,16 +244,15 @@ def main() -> None:
         return
 
     if args.command == "fetch-data":
-        from fx_backtester.data.dukascopy import bars_to_csv, load_dukascopy_h1
+        from fx_backtester.data.yfinance_loader import bars_to_csv, load_yfinance_h1
 
         start_date = date.fromisoformat(args.start)
         end_date = date.fromisoformat(args.end)
-        print(f"Fetching {args.instrument} H1 BID  {start_date} → {end_date} …")
-        bars = load_dukascopy_h1(
+        print(f"Fetching {args.instrument} H1  {start_date} → {end_date} via yfinance …")
+        bars = load_yfinance_h1(
             instrument=args.instrument,
             start=start_date,
             end=end_date,
-            cache_dir=args.cache_dir,
             verbose=True,
         )
         bars_to_csv(bars, args.output)
@@ -263,7 +262,6 @@ def main() -> None:
             "end": end_date.isoformat(),
             "bar_count": len(bars),
             "output_csv": str(args.output),
-            "cache_dir": str(args.cache_dir),
         })
         return
 

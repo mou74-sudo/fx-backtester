@@ -6,12 +6,8 @@ Writes all results to results/ so Streamlit picks them up automatically.
 from __future__ import annotations
 
 import json
-import lzma
-import struct
 import subprocess
 import sys
-import urllib.error
-import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -49,44 +45,12 @@ def last_weekday(d: date) -> date:
     return d
 
 
-def probe_latest_available(instrument: str = "EURUSD", max_lookback: int = 30) -> date:
-    """Probe Dukascopy backwards to find the most recent date with real data.
-
-    Starts from yesterday and steps back up to max_lookback days.
-    Returns the most recent date that returned valid bars, or a safe
-    fallback 14 days ago if nothing found.
-    """
-    _BASE = "https://datafeed.dukascopy.com/datafeed"
-    _FMT = ">IIIIIf"
-    _SZ = struct.calcsize(_FMT)
-
-    candidate = last_weekday(date.today() - timedelta(days=1))
-    for _ in range(max_lookback):
-        y, m, d = candidate.year, candidate.month, candidate.day
-        url = f"{_BASE}/{instrument}/{y}/{m - 1:02d}/{d:02d}/BID_candles_hour_1.bi5"
-        try:
-            with urllib.request.urlopen(url, timeout=20) as resp:
-                raw = resp.read()
-            if raw:
-                data = lzma.decompress(raw)
-                if len(data) >= _SZ:
-                    print(f"Latest available Dukascopy date: {candidate}")
-                    return candidate
-        except Exception:
-            pass
-        candidate = last_weekday(candidate - timedelta(days=1))
-
-    # Fallback: 14 days ago (conservative but safe)
-    fallback = last_weekday(date.today() - timedelta(days=14))
-    print(f"Probe found no data — using fallback end date: {fallback}")
-    return fallback
 
 
 def main() -> None:
     lookback = int(sys.argv[1]) if len(sys.argv) > 1 else 180
-    # Probe Dukascopy to find the actual latest available date
-    print("Probing Dukascopy for latest available date…")
-    end = probe_latest_available()
+    # yfinance always has data up to yesterday — use yesterday as end
+    end = last_weekday(date.today() - timedelta(days=1))
     start = end - timedelta(days=lookback)
 
     # 1. Build spec with probed date range
