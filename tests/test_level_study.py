@@ -20,7 +20,13 @@ import pytest
 from fx_backtester.analysis.key_levels import (
     KeyLevel,
     LevelReactionSummary,
+    detect_prev_day_high_levels,
+    detect_prev_day_low_levels,
+    detect_prev_week_high_levels,
+    detect_prev_week_low_levels,
     detect_round_number_levels,
+    detect_session_high_levels,
+    detect_session_low_levels,
     detect_swing_high_levels,
     detect_swing_low_levels,
     run_level_study,
@@ -371,3 +377,181 @@ def test_write_level_study_artifacts_creates_files(tmp_path: Path) -> None:
     out = write_level_study_artifacts(report, tmp_path / "study")
     assert (out / "level_study.json").exists()
     assert (out / "level_study.md").exists()
+
+
+# ── Previous day high / low ───────────────────────────────────────────────────
+
+def _day_bars(day: int, high: float, low: float, sessions: list[str] | None = None) -> list[MarketBar]:
+    """Return 3 H1 bars on a given day (Jan day, 2024)."""
+    base = datetime(2024, 1, day, 10, 0, tzinfo=UTC)
+    mid = (high + low) / 2
+    return [
+        MarketBar(timestamp=base,                      open=mid, high=high, low=low,  close=mid, sessions=sessions or []),
+        MarketBar(timestamp=base + timedelta(hours=1), open=mid, high=high, low=low,  close=mid, sessions=sessions or []),
+        MarketBar(timestamp=base + timedelta(hours=2), open=mid, high=high, low=low,  close=mid, sessions=sessions or []),
+    ]
+
+
+def test_prev_day_high_one_level_per_day() -> None:
+    bars = _day_bars(1, 1.1050, 1.0990) + _day_bars(2, 1.1080, 1.1010) + _day_bars(3, 1.1070, 1.1000)
+    levels = detect_prev_day_high_levels(bars)
+    assert len(levels) == 3
+    assert all(l.level_type == "prev_day_high" for l in levels)
+
+
+def test_prev_day_high_correct_prices() -> None:
+    bars = _day_bars(1, 1.1050, 1.0990) + _day_bars(2, 1.1080, 1.1010)
+    levels = detect_prev_day_high_levels(bars)
+    prices = [l.price for l in levels]
+    assert 1.1050 in prices
+    assert 1.1080 in prices
+
+
+def test_prev_day_low_one_level_per_day() -> None:
+    bars = _day_bars(1, 1.1050, 1.0990) + _day_bars(2, 1.1080, 1.1010)
+    levels = detect_prev_day_low_levels(bars)
+    assert len(levels) == 2
+    assert all(l.level_type == "prev_day_low" for l in levels)
+
+
+def test_prev_day_low_correct_prices() -> None:
+    bars = _day_bars(1, 1.1050, 1.0990) + _day_bars(2, 1.1080, 1.1010)
+    levels = detect_prev_day_low_levels(bars)
+    prices = [l.price for l in levels]
+    assert 1.0990 in prices
+    assert 1.1010 in prices
+
+
+def test_prev_day_high_labels_contain_date() -> None:
+    bars = _day_bars(5, 1.1050, 1.0990)
+    levels = detect_prev_day_high_levels(bars)
+    assert any("2024-01-05" in l.label for l in levels)
+
+
+def test_prev_day_high_empty_bars() -> None:
+    assert detect_prev_day_high_levels([]) == []
+
+
+def test_prev_day_low_empty_bars() -> None:
+    assert detect_prev_day_low_levels([]) == []
+
+
+# ── Previous week high / low ──────────────────────────────────────────────────
+
+def _week_bar(week_offset_days: int, high: float, low: float) -> MarketBar:
+    """Bar in the week starting 2024-01-01 (week 1) + offset."""
+    ts = datetime(2024, 1, 1, 12, 0, tzinfo=UTC) + timedelta(days=week_offset_days)
+    mid = (high + low) / 2
+    return MarketBar(timestamp=ts, open=mid, high=high, low=low, close=mid, sessions=[])
+
+
+def test_prev_week_high_one_level_per_week() -> None:
+    bars = [_week_bar(0, 1.1050, 1.0990), _week_bar(7, 1.1080, 1.1010), _week_bar(14, 1.1070, 1.1000)]
+    levels = detect_prev_week_high_levels(bars)
+    assert len(levels) == 3
+    assert all(l.level_type == "prev_week_high" for l in levels)
+
+
+def test_prev_week_low_one_level_per_week() -> None:
+    bars = [_week_bar(0, 1.1050, 1.0990), _week_bar(7, 1.1080, 1.1010)]
+    levels = detect_prev_week_low_levels(bars)
+    assert len(levels) == 2
+    assert all(l.level_type == "prev_week_low" for l in levels)
+
+
+def test_prev_week_high_multiple_bars_same_week_takes_max() -> None:
+    bars = [
+        _week_bar(0, 1.1050, 1.0990),  # Mon
+        _week_bar(1, 1.1090, 1.1000),  # Tue — higher high
+        _week_bar(2, 1.1040, 1.0980),  # Wed
+    ]
+    levels = detect_prev_week_high_levels(bars)
+    assert len(levels) == 1
+    assert levels[0].price == 1.1090
+
+
+def test_prev_week_low_multiple_bars_same_week_takes_min() -> None:
+    bars = [
+        _week_bar(0, 1.1050, 1.0990),
+        _week_bar(1, 1.1090, 1.0950),  # lower low
+        _week_bar(2, 1.1040, 1.0980),
+    ]
+    levels = detect_prev_week_low_levels(bars)
+    assert len(levels) == 1
+    assert levels[0].price == 1.0950
+
+
+def test_prev_week_high_labels_contain_week() -> None:
+    bars = [_week_bar(0, 1.1050, 1.0990)]
+    levels = detect_prev_week_high_levels(bars)
+    assert any("_w" in l.label for l in levels)
+
+
+# ── Session high / low ────────────────────────────────────────────────────────
+
+def test_session_high_only_london_bars() -> None:
+    bars = (
+        _day_bars(1, 1.1060, 1.1010, sessions=["london"]) +
+        _day_bars(2, 1.1080, 1.1020, sessions=["new_york"]) +   # different session
+        _day_bars(3, 1.1070, 1.1000, sessions=["london"])
+    )
+    levels = detect_session_high_levels(bars, session="london")
+    assert len(levels) == 2   # only days 1 and 3 have london bars
+    assert all(l.level_type == "session_high" for l in levels)
+    assert all("london_high" in l.label for l in levels)
+
+
+def test_session_low_only_london_bars() -> None:
+    bars = (
+        _day_bars(1, 1.1060, 1.1010, sessions=["london"]) +
+        _day_bars(2, 1.1080, 1.1020, sessions=["new_york"]) +
+        _day_bars(3, 1.1070, 1.1000, sessions=["london"])
+    )
+    levels = detect_session_low_levels(bars, session="london")
+    assert len(levels) == 2
+    assert all(l.level_type == "session_low" for l in levels)
+
+
+def test_session_high_new_york() -> None:
+    bars = (
+        _day_bars(1, 1.1090, 1.1010, sessions=["new_york"]) +
+        _day_bars(2, 1.1050, 1.1000, sessions=["london"])
+    )
+    levels = detect_session_high_levels(bars, session="new_york")
+    assert len(levels) == 1
+    assert levels[0].price == 1.1090
+    assert "new_york_high" in levels[0].label
+
+
+def test_session_high_correct_max_per_day() -> None:
+    base = datetime(2024, 1, 10, 9, 0, tzinfo=UTC)
+    bars = [
+        MarketBar(timestamp=base,                      open=1.105, high=1.1070, low=1.1040, close=1.105, sessions=["london"]),
+        MarketBar(timestamp=base + timedelta(hours=1), open=1.105, high=1.1090, low=1.1050, close=1.105, sessions=["london"]),
+        MarketBar(timestamp=base + timedelta(hours=2), open=1.105, high=1.1060, low=1.1030, close=1.105, sessions=["london"]),
+    ]
+    levels = detect_session_high_levels(bars, session="london")
+    assert len(levels) == 1
+    assert levels[0].price == 1.1090
+
+
+def test_session_low_correct_min_per_day() -> None:
+    base = datetime(2024, 1, 10, 9, 0, tzinfo=UTC)
+    bars = [
+        MarketBar(timestamp=base,                      open=1.105, high=1.1070, low=1.1040, close=1.105, sessions=["london"]),
+        MarketBar(timestamp=base + timedelta(hours=1), open=1.105, high=1.1090, low=1.1020, close=1.105, sessions=["london"]),
+        MarketBar(timestamp=base + timedelta(hours=2), open=1.105, high=1.1060, low=1.1030, close=1.105, sessions=["london"]),
+    ]
+    levels = detect_session_low_levels(bars, session="london")
+    assert len(levels) == 1
+    assert levels[0].price == 1.1020
+
+
+def test_session_high_no_matching_session_returns_empty() -> None:
+    bars = _day_bars(1, 1.1050, 1.0990, sessions=["new_york"])
+    levels = detect_session_high_levels(bars, session="london")
+    assert levels == []
+
+
+def test_session_low_empty_bars() -> None:
+    assert detect_session_low_levels([], session="london") == []

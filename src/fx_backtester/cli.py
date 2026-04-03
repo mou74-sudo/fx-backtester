@@ -59,10 +59,17 @@ def main() -> None:
     scan.add_argument("--pip-size", type=float, default=0.0001, help="Pip size (default: 0.0001 for 5-decimal pairs)")
     scan.add_argument(
         "--level-type", nargs="+",
-        choices=["round_numbers", "swing_highs", "swing_lows"],
-        default=["round_numbers", "swing_highs", "swing_lows"],
-        help="Level types to detect (default: all three)",
+        choices=[
+            "round_numbers", "swing_highs", "swing_lows",
+            "prev_day_highs", "prev_day_lows",
+            "prev_week_highs", "prev_week_lows",
+            "session_highs", "session_lows",
+        ],
+        default=["prev_day_highs", "prev_day_lows", "session_highs", "session_lows"],
+        help="Level types to detect (default: prev_day_highs prev_day_lows session_highs session_lows)",
     )
+    scan.add_argument("--session", default="london", choices=["london", "new_york", "asia"],
+                      help="Session to use for session_highs/session_lows (default: london)")
     scan.add_argument("--levels", nargs="+", type=float, default=None, metavar="PRICE",
                       help="One or more manual price levels (overrides --level-type)")
     scan.add_argument("--zone-pips", type=float, default=5.0, help="Zone half-width in pips (default: 5)")
@@ -126,7 +133,13 @@ def main() -> None:
     if args.command == "scan-levels":
         from fx_backtester.analysis.key_levels import (
             KeyLevel,
+            detect_prev_day_high_levels,
+            detect_prev_day_low_levels,
+            detect_prev_week_high_levels,
+            detect_prev_week_low_levels,
             detect_round_number_levels,
+            detect_session_high_levels,
+            detect_session_low_levels,
             detect_swing_high_levels,
             detect_swing_low_levels,
             run_level_study,
@@ -141,12 +154,24 @@ def main() -> None:
             levels = [KeyLevel(price=p, label=f"manual_{p:.5f}", level_type="manual") for p in args.levels]
         else:
             levels = []
-            if "round_numbers" in args.level_type:
+            if "round_numbers"    in args.level_type:
                 levels += detect_round_number_levels(bars, pip_size=args.pip_size, round_pips=args.round_pips)
-            if "swing_highs" in args.level_type:
+            if "swing_highs"      in args.level_type:
                 levels += detect_swing_high_levels(bars, lookback=args.swing_lookback)
-            if "swing_lows" in args.level_type:
+            if "swing_lows"       in args.level_type:
                 levels += detect_swing_low_levels(bars, lookback=args.swing_lookback)
+            if "prev_day_highs"   in args.level_type:
+                levels += detect_prev_day_high_levels(bars)
+            if "prev_day_lows"    in args.level_type:
+                levels += detect_prev_day_low_levels(bars)
+            if "prev_week_highs"  in args.level_type:
+                levels += detect_prev_week_high_levels(bars)
+            if "prev_week_lows"   in args.level_type:
+                levels += detect_prev_week_low_levels(bars)
+            if "session_highs"    in args.level_type:
+                levels += detect_session_high_levels(bars, session=args.session)
+            if "session_lows"     in args.level_type:
+                levels += detect_session_low_levels(bars, session=args.session)
 
         print(f"Detected {len(levels)} candidate levels — scanning reactions…")
         report = run_level_study(

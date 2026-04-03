@@ -32,6 +32,7 @@ From the touch bar's close, pip moves are recorded at each horizon in
 
 from __future__ import annotations
 
+from collections import defaultdict
 from datetime import datetime
 from typing import Literal
 
@@ -46,7 +47,18 @@ from fx_backtester.data.models import MarketBar
 class KeyLevel(BaseModel):
     price: float
     label: str
-    level_type: Literal["round_number", "swing_high", "swing_low", "manual"]
+    level_type: Literal[
+        "round_number",
+        "swing_high",
+        "swing_low",
+        "manual",
+        "prev_day_high",
+        "prev_day_low",
+        "prev_week_high",
+        "prev_week_low",
+        "session_high",
+        "session_low",
+    ]
 
 
 class LevelTouch(BaseModel):
@@ -177,6 +189,117 @@ def detect_swing_low_levels(
                 level_type="swing_low",
             ))
     return levels
+
+
+def detect_prev_day_high_levels(bars: list[MarketBar]) -> list[KeyLevel]:
+    """Return one KeyLevel per calendar day at that day's session high.
+
+    Useful for studying how price reacts when it revisits a previous day's high.
+    """
+    daily_high: dict[object, float] = defaultdict(float)
+    for bar in bars:
+        d = bar.timestamp.date()
+        if bar.high > daily_high[d]:
+            daily_high[d] = bar.high
+    return [
+        KeyLevel(price=round(high, 5), label=f"pdh_{d}", level_type="prev_day_high")
+        for d, high in sorted(daily_high.items())
+    ]
+
+
+def detect_prev_day_low_levels(bars: list[MarketBar]) -> list[KeyLevel]:
+    """Return one KeyLevel per calendar day at that day's session low."""
+    daily_low: dict[object, float] = {}
+    for bar in bars:
+        d = bar.timestamp.date()
+        if d not in daily_low or bar.low < daily_low[d]:
+            daily_low[d] = bar.low
+    return [
+        KeyLevel(price=round(low, 5), label=f"pdl_{d}", level_type="prev_day_low")
+        for d, low in sorted(daily_low.items())
+    ]
+
+
+def detect_prev_week_high_levels(bars: list[MarketBar]) -> list[KeyLevel]:
+    """Return one KeyLevel per ISO calendar week at that week's high."""
+    weekly_high: dict[tuple[int, int], float] = defaultdict(float)
+    for bar in bars:
+        iso = bar.timestamp.isocalendar()
+        key = (iso[0], iso[1])   # (year, week_number)
+        if bar.high > weekly_high[key]:
+            weekly_high[key] = bar.high
+    return [
+        KeyLevel(
+            price=round(high, 5),
+            label=f"pwh_{year}_w{week:02d}",
+            level_type="prev_week_high",
+        )
+        for (year, week), high in sorted(weekly_high.items())
+    ]
+
+
+def detect_prev_week_low_levels(bars: list[MarketBar]) -> list[KeyLevel]:
+    """Return one KeyLevel per ISO calendar week at that week's low."""
+    weekly_low: dict[tuple[int, int], float] = {}
+    for bar in bars:
+        iso = bar.timestamp.isocalendar()
+        key = (iso[0], iso[1])
+        if key not in weekly_low or bar.low < weekly_low[key]:
+            weekly_low[key] = bar.low
+    return [
+        KeyLevel(
+            price=round(low, 5),
+            label=f"pwl_{year}_w{week:02d}",
+            level_type="prev_week_low",
+        )
+        for (year, week), low in sorted(weekly_low.items())
+    ]
+
+
+def detect_session_high_levels(
+    bars: list[MarketBar],
+    session: str = "london",
+) -> list[KeyLevel]:
+    """Return one KeyLevel per (date, session) pair at that session's high.
+
+    ``session`` must match a value in ``MarketBar.sessions``
+    e.g. ``"london"``, ``"new_york"``, ``"asia"``.
+    """
+    session_high: dict[object, float] = defaultdict(float)
+    for bar in bars:
+        if session in bar.sessions:
+            d = bar.timestamp.date()
+            if bar.high > session_high[d]:
+                session_high[d] = bar.high
+    return [
+        KeyLevel(
+            price=round(high, 5),
+            label=f"{session}_high_{d}",
+            level_type="session_high",
+        )
+        for d, high in sorted(session_high.items())
+    ]
+
+
+def detect_session_low_levels(
+    bars: list[MarketBar],
+    session: str = "london",
+) -> list[KeyLevel]:
+    """Return one KeyLevel per (date, session) pair at that session's low."""
+    session_low: dict[object, float] = {}
+    for bar in bars:
+        if session in bar.sessions:
+            d = bar.timestamp.date()
+            if d not in session_low or bar.low < session_low[d]:
+                session_low[d] = bar.low
+    return [
+        KeyLevel(
+            price=round(low, 5),
+            label=f"{session}_low_{d}",
+            level_type="session_low",
+        )
+        for d, low in sorted(session_low.items())
+    ]
 
 
 # ── Touch scanner ─────────────────────────────────────────────────────────────
