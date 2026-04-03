@@ -52,8 +52,8 @@ class BacktestMetrics(BaseModel):
     average_loss_pips: float
     ambiguity_count: int
     spread_triggered_stop_count: int
-    max_drawdown: float
-    max_drawdown_pct: float
+    max_drawdown: float                 # peak-to-trough in account currency units
+    max_drawdown_pct: float             # plain percent, e.g. 5.51 means 5.51% — NOT a 0-1 fraction
     max_drawdown_duration_trades: int
     session_summary: dict[str, dict[str, float | int]]
 

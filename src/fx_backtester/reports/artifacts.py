@@ -84,6 +84,7 @@ class RunArtifactWriter:
             "net_pips": result.metrics.net_pips,
             "ending_equity": result.ending_equity,
             "max_drawdown": result.metrics.max_drawdown,
+            "max_drawdown_pct": result.metrics.max_drawdown_pct,  # plain percent, e.g. 5.51 = 5.51%
             "robustness_enabled": robustness.enabled if robustness else False,
         }
         robustness_payload = robustness.model_dump(mode="json") if robustness is not None else None

@@ -257,6 +257,93 @@ def test_bars_to_csv_produces_correct_columns(tmp_path: Path) -> None:
     assert abs(float(rows[0]["high"]) - 1.09500) < 1e-5
 
 
+# ── End-to-end: fetch → CSV → backtest ───────────────────────────────────────
+
+
+def test_end_to_end_fetch_csv_backtest(tmp_path: Path) -> None:
+    """Full pipeline: mocked fetch_raw → load_dukascopy_h1 → bars_to_csv → run_backtest_from_csv.
+
+    This test exercises the complete real-data integration path without touching
+    the network.  fetch_raw is patched to return deterministic synthetic bi5 bytes
+    for every requested day.  Everything downstream — normalization, CSV write,
+    CSV read, signal pipeline, backtest engine — runs exactly as it would on live
+    Dukascopy data.
+    """
+    import unittest.mock as mock
+    from pathlib import Path as P
+
+    from fx_backtester.formalizer.execution_policy import default_execution_policy
+    from fx_backtester.formalizer.request_formalizer import formalize_strategy_request
+    from fx_backtester.orchestrator import run_backtest_from_csv
+
+    # --- build two weeks of synthetic H1 bars (Mon-Fri only) ------------------
+    # 10 weekdays × 20 bars/day → 200 bars; enough for RSI(14) warmup + trades
+    start_day = date(2024, 1, 8)   # Monday
+    end_day   = date(2024, 1, 19)  # Friday of week 2
+
+    def fake_bi5_for_day(d: date) -> bytes:
+        """Return a deterministic compressed bi5 day file for a given date."""
+        base_price = 1.09000 + (d.toordinal() % 7) * 0.00100
+        candles = b"".join(
+            _pack_candle(
+                h * 3_600_000,
+                int((base_price + h * 0.0001) * DIVIDER_EUR),
+                int((base_price + h * 0.0001 + 0.0005) * DIVIDER_EUR),
+                int((base_price + h * 0.0001 - 0.0005) * DIVIDER_EUR),
+                int((base_price + h * 0.0001 + 0.0001) * DIVIDER_EUR),
+            )
+            for h in range(20)
+        )
+        return _compress(candles)
+
+    def patched_fetch_raw(url: str, **_: object) -> bytes:
+        # URL: .../EURUSD/2024/00/08/BID_candles_hour_1.bi5
+        # parts[-4]=year, parts[-3]=month_0, parts[-2]=day, parts[-1]=filename
+        parts = url.split("/")
+        year, month_0, day_s = int(parts[-4]), int(parts[-3]), int(parts[-2])
+        d = date(year, month_0 + 1, day_s)
+        if d.weekday() >= 5:
+            return b""   # weekend — no data
+        return fake_bi5_for_day(d)
+
+    cache_dir = tmp_path / "cache"
+    csv_out   = tmp_path / "eurusd.csv"
+
+    with mock.patch("fx_backtester.data.dukascopy.fetch_raw", side_effect=patched_fetch_raw):
+        bars = load_dukascopy_h1("EURUSD", start_day, end_day, cache_dir)
+
+    assert len(bars) > 0
+    assert all(isinstance(b, MarketBar) for b in bars)
+
+    bars_to_csv(bars, csv_out)
+    assert csv_out.exists()
+
+    # --- run full backtest pipeline on the CSV --------------------------------
+    outcome = formalize_strategy_request(
+        "Trade EURUSD on H1, long only. RSI period 14. "
+        "Enter when RSI is below 30. Exit when RSI is above 55. "
+        "Stop loss 20 pips. Take profit 40 pips. Risk 1% per trade. Account currency USD."
+    )
+    assert outcome.notes.status == "accepted"
+
+    result, prepared, quality, run_dir, robustness, _ = run_backtest_from_csv(
+        csv_path=csv_out,
+        spec=outcome.spec,
+        policy=default_execution_policy(),
+        repo_root=tmp_path,
+    )
+
+    # Pipeline completed without error — structural assertions only.
+    assert quality.missing_required_fields == 0
+    assert quality.non_monotonic_timestamps == 0
+    assert len(prepared.bars) == len(bars)
+    assert result.ending_equity > 0
+    assert result.trade_count >= 0
+    # Drawdown pct is plain percent (0-100 range), never a 0-1 fraction.
+    assert 0.0 <= result.metrics.max_drawdown_pct < 100.0
+    assert run_dir.exists()
+
+
 def test_bars_to_csv_roundtrip_through_load_market_bars(tmp_path: Path) -> None:
     """CSV written by bars_to_csv must be parseable by the existing load_market_bars."""
     from fx_backtester.data.loaders import load_market_bars

@@ -184,6 +184,40 @@ def test_non_usd_account_conversion_is_applied_to_usd_equity_report() -> None:
     assert result.ending_equity_usd == 12245.1
 
 
+def test_max_drawdown_pct_is_plain_percent_not_fraction() -> None:
+    """max_drawdown_pct is stored as a plain percent value (e.g. 1.01 means 1.01%).
+
+    Correct display : f"{value:.2f}%"
+    WRONG display   : f"{value:.1%}"  — Python's :.1% multiplies by 100 → "101.0%"
+    """
+    spec = _build_spec()
+    policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+    bars = [
+        SignalBar(timestamp="2024-01-01T00:00:00", open=1.1000, high=1.1004, low=1.0997, close=1.1000, entry_long=True, sessions=["asia"]),
+        SignalBar(timestamp="2024-01-01T01:00:00", open=1.1000, high=1.1035, low=1.0998, close=1.1030),
+        SignalBar(timestamp="2024-01-01T02:00:00", open=1.1028, high=1.1030, low=1.1020, close=1.1025, entry_long=True, sessions=["london"]),
+        SignalBar(timestamp="2024-01-01T03:00:00", open=1.1025, high=1.1030, low=1.1004, close=1.1006),
+        SignalBar(timestamp="2024-01-01T04:00:00", open=1.1010, high=1.1013, low=1.1009, close=1.1010, entry_long=True, sessions=["new_york"]),
+        SignalBar(timestamp="2024-01-01T05:00:00", open=1.1010, high=1.1022, low=1.1008, close=1.1020, exit_long=True),
+    ]
+
+    result = run_backtest(bars=bars, spec=spec, policy=policy)
+    pct = result.metrics.max_drawdown_pct
+
+    # Must be in 0–100 range (plain percent), never a 0–1 fraction.
+    assert 0 < pct < 100, (
+        f"max_drawdown_pct={pct!r} appears to be a fraction (0-1 range). "
+        "It must be stored as plain percent, e.g. 1.01 for 1.01%. "
+        "Use f\"{pct:.2f}%\" to display it — never f\"{pct:.1%}\"."
+    )
+    # Corresponds to a drawdown of 102.5 from a peak of 10149.
+    # 102.5 / 10149 * 100 ≈ 1.01 %
+    assert abs(pct - 1.01) < 0.02
+
+    # Format proof: the string representation must not balloon to triple digits.
+    assert f"{pct:.2f}%" == "1.01%"
+
+
 def test_compliance_summary_matches_backtest_result() -> None:
     spec = _build_spec()
     policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)

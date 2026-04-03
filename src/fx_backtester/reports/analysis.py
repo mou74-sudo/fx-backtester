@@ -211,6 +211,7 @@ def _build_research_memo(*, summary: dict[str, Any], reviewer_summary: dict[str,
     net_pips = float(summary.get('net_pips', 0.0) or 0.0)
     ending_equity = float(summary.get('ending_equity', 0.0) or 0.0)
     max_drawdown = float(summary.get('max_drawdown', 0.0) or 0.0)
+    max_drawdown_pct = float(summary.get('max_drawdown_pct', 0.0) or 0.0)   # plain %, e.g. 5.51
     dominant_session = reviewer_summary.get('dominant_session') or 'n/a'
     dominant_session_share = float(reviewer_summary.get('dominant_session_share', 0.0) or 0.0)
 
@@ -229,7 +230,7 @@ def _build_research_memo(*, summary: dict[str, Any], reviewer_summary: dict[str,
         f"- Net PnL: `{net_pnl:.2f}`\n"
         f"- Net pips: `{net_pips:.2f}`\n"
         f"- Ending equity: `{ending_equity:.2f}`\n"
-        f"- Max drawdown: `{max_drawdown:.2f}`\n"
+        f"- Max drawdown: `{max_drawdown:.2f}` ({max_drawdown_pct:.2f}%)\n"
         f"- Dominant tagged session: `{dominant_session}` ({dominant_session_share:.0%})\n\n"
         f"## Interpretation\n"
         f"This memo is a read-only interpretation layer. It does not change the deterministic verdict, benchmarks, or grading outputs. It restates the existing artifacts in plain English and points back to their evidence refs.\n\n"
