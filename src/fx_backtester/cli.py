@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from datetime import date
 from pathlib import Path
 
 from fx_backtester.formalizer.execution_policy import default_execution_policy
@@ -38,6 +39,16 @@ def main() -> None:
 
     summarize = subparsers.add_parser("summarize-run", help="Read report artifacts from a run directory and restate the deterministic verdict")
     summarize.add_argument("run_dir", type=Path, help="Run directory created under outputs/")
+
+    fetch = subparsers.add_parser(
+        "fetch-data",
+        help="Download H1 BID bars from Dukascopy and write a CSV ready for run-backtest",
+    )
+    fetch.add_argument("--instrument", choices=["EURUSD", "USDJPY"], required=True)
+    fetch.add_argument("--start", required=True, metavar="YYYY-MM-DD", help="First date to include (UTC)")
+    fetch.add_argument("--end", required=True, metavar="YYYY-MM-DD", help="Last date to include (UTC)")
+    fetch.add_argument("--output", type=Path, required=True, help="Output CSV path")
+    fetch.add_argument("--cache-dir", type=Path, default=Path("data/cache"), help="Local bi5 cache directory (default: data/cache)")
 
     args = parser.parse_args()
 
@@ -88,6 +99,30 @@ def main() -> None:
     if args.command == "summarize-run":
         report = build_analysis_report(args.run_dir / "reports")
         _write_json_stdout(report.model_dump(mode="json"))
+        return
+
+    if args.command == "fetch-data":
+        from fx_backtester.data.dukascopy import bars_to_csv, load_dukascopy_h1
+
+        start_date = date.fromisoformat(args.start)
+        end_date = date.fromisoformat(args.end)
+        print(f"Fetching {args.instrument} H1 BID  {start_date} → {end_date} …")
+        bars = load_dukascopy_h1(
+            instrument=args.instrument,
+            start=start_date,
+            end=end_date,
+            cache_dir=args.cache_dir,
+            verbose=True,
+        )
+        bars_to_csv(bars, args.output)
+        _write_json_stdout({
+            "instrument": args.instrument,
+            "start": start_date.isoformat(),
+            "end": end_date.isoformat(),
+            "bar_count": len(bars),
+            "output_csv": str(args.output),
+            "cache_dir": str(args.cache_dir),
+        })
         return
 
 
