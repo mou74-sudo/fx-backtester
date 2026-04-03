@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from fx_backtester.analysis.mae_mfe import MaeMfeReport, compute_mae_mfe
 from fx_backtester.data.loaders import load_market_bars, load_ohlc_csv
 from fx_backtester.data.quality import assess_basic_ohlc_quality
 from fx_backtester.engine.backtest import BacktestResult, run_backtest
@@ -20,12 +21,19 @@ def run_backtest_from_csv(
     policy: ExecutionPolicy,
     repo_root: str | Path,
     run_label: str | None = None,
-) -> tuple[BacktestResult, PreparedSignalData, object, Path, RobustnessLiteReport, BenchmarkReport]:
+) -> tuple[BacktestResult, PreparedSignalData, object, Path, RobustnessLiteReport, BenchmarkReport, MaeMfeReport]:
     raw_rows = [row.copy() for row in load_ohlc_csv(csv_path)]
     quality_report = assess_basic_ohlc_quality(raw_rows)
     market_bars = load_market_bars(csv_path)
     prepared = build_signal_pipeline(market_bars=market_bars, spec=spec)
     result = run_backtest(bars=prepared.bars, spec=spec, policy=policy)
+    mae_mfe = compute_mae_mfe(
+        result.trades,
+        prepared.bars,
+        pip_size=spec.instrument.pip_size,
+        stop_loss_pips=spec.rules.stop_loss_pips,
+        take_profit_pips=spec.rules.take_profit_pips,
+    )
     robustness = run_robustness_lite(market_bars=market_bars, spec=spec, policy=policy, baseline_result=result)
     benchmarks = build_deterministic_benchmarks(market_bars=market_bars, baseline_result=result, spec=spec, policy=policy)
     writer = RunArtifactWriter(repo_root)
@@ -38,6 +46,7 @@ def run_backtest_from_csv(
         result=result,
         robustness=robustness,
         benchmarks=benchmarks,
+        mae_mfe=mae_mfe,
         run_label=run_label,
     )
-    return result, prepared, quality_report, run_dir, robustness, benchmarks
+    return result, prepared, quality_report, run_dir, robustness, benchmarks, mae_mfe
