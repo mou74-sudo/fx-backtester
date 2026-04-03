@@ -30,7 +30,7 @@ def run(cmd: list[str]) -> None:
 def build_live_spec(lookback_days: int = 180) -> None:
     """Copy the template spec and update dates to cover the last N days."""
     raw = json.loads(SPEC_TEMPLATE.read_text())
-    end = date.today()
+    end = last_weekday(date.today() - timedelta(days=2))
     start = end - timedelta(days=lookback_days)
     raw["window"]["start_date"] = start.isoformat()
     raw["window"]["end_date"] = end.isoformat()
@@ -39,9 +39,17 @@ def build_live_spec(lookback_days: int = 180) -> None:
     print(f"Live spec: {start} → {end}")
 
 
+def last_weekday(d: date) -> date:
+    """Step back until we land on Mon-Fri (Dukascopy has no weekend data)."""
+    while d.weekday() >= 5:  # 5=Sat, 6=Sun
+        d -= timedelta(days=1)
+    return d
+
+
 def main() -> None:
     lookback = int(sys.argv[1]) if len(sys.argv) > 1 else 180
-    end = date.today()
+    # Use 2 days ago as end — Dukascopy is typically 1-2 days behind
+    end = last_weekday(date.today() - timedelta(days=2))
     start = end - timedelta(days=lookback)
 
     # 1. Build spec with today's date range
