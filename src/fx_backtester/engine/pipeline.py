@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pydantic import BaseModel, Field
 
-from fx_backtester.data.indicators import compute_wilder_atr, compute_wilder_rsi
+from fx_backtester.data.indicators import build_d1_trend_map, compute_wilder_atr, compute_wilder_rsi
 from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.backtest import SignalBar
 from fx_backtester.formalizer.spec_models import StrategySpec
@@ -23,6 +23,7 @@ class SignalTraceRow(BaseModel):
     executable_on_next_bar: bool = False
     no_leakage_ok: bool = True
     session_allowed: bool = True
+    daily_trend: str | None = None   # "up" | "down" | None (filter inactive or warmup)
     evidence: list[str] = Field(default_factory=list)
 
 
@@ -88,6 +89,7 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
     lows = [bar.low for bar in market_bars]
     rsis = compute_wilder_rsi(closes, spec.rules.rsi_period or 14)
     atrs = compute_wilder_atr(highs, lows, closes, spec.rules.stop_loss_atr_period)
+    d1_map = build_d1_trend_map(market_bars, spec.rules.daily_sma_period) if spec.rules.require_daily_trend else {}
     prepared_bars: list[SignalBar] = []
     trace: list[SignalTraceRow] = []
     state = _empty_state()
@@ -99,10 +101,15 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
         atr = atrs[idx]
         session_allowed = _session_allowed(bar, spec)
         direction = spec.rules.direction
-        next_entry_long = rsi is not None and rsi <= spec.rules.entry_rsi_lte and direction in {"long_only", "both"} and session_allowed
-        next_exit_long = rsi is not None and rsi >= spec.rules.exit_rsi_gte and direction in {"long_only", "both"}
-        next_entry_short = rsi is not None and rsi >= spec.rules.short_entry_rsi_gte and direction in {"short_only", "both"} and session_allowed
-        next_exit_short = rsi is not None and rsi <= spec.rules.short_exit_rsi_lte and direction in {"short_only", "both"}
+
+        d1_trend = d1_map.get(bar.timestamp.date()) if spec.rules.require_daily_trend else None
+        d1_long_ok  = (not spec.rules.require_daily_trend) or d1_trend == "up"
+        d1_short_ok = (not spec.rules.require_daily_trend) or d1_trend == "down"
+
+        next_entry_long  = rsi is not None and rsi <= spec.rules.entry_rsi_lte       and direction in {"long_only", "both"}  and session_allowed and d1_long_ok
+        next_exit_long   = rsi is not None and rsi >= spec.rules.exit_rsi_gte         and direction in {"long_only", "both"}
+        next_entry_short = rsi is not None and rsi >= spec.rules.short_entry_rsi_gte  and direction in {"short_only", "both"} and session_allowed and d1_short_ok
+        next_exit_short  = rsi is not None and rsi <= spec.rules.short_exit_rsi_lte   and direction in {"short_only", "both"}
         execution_bar_timestamp = market_bars[idx + 1].timestamp.isoformat() if idx + 1 < len(market_bars) else None
         execution_bar_open = market_bars[idx + 1].open if idx + 1 < len(market_bars) else None
         trace.append(
@@ -121,11 +128,13 @@ def build_rsi_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
                 executable_on_next_bar=idx + 1 < len(market_bars),
                 no_leakage_ok=(execution_bar_timestamp is None or execution_bar_timestamp > bar.timestamp.isoformat()),
                 session_allowed=session_allowed,
+                daily_trend=d1_trend,
                 evidence=[
                     f"signal_bar={bar.timestamp.isoformat()}",
                     f"execution_bar={execution_bar_timestamp}",
                     f"session_allowed={session_allowed}",
                     f"atr={atr}",
+                    f"daily_trend={d1_trend}",
                     "entry/exit evaluated from current close and scheduled onto next bar open",
                 ],
             )
@@ -152,6 +161,7 @@ def build_breakout_signal_pipeline(*, market_bars: list[MarketBar], spec: Strate
     highs = [bar.high for bar in market_bars]
     lows = [bar.low for bar in market_bars]
     atrs = compute_wilder_atr(highs, lows, closes, spec.rules.stop_loss_atr_period)
+    d1_map = build_d1_trend_map(market_bars, spec.rules.daily_sma_period) if spec.rules.require_daily_trend else {}
     prepared_bars: list[SignalBar] = []
     trace: list[SignalTraceRow] = []
     state = _empty_state()
@@ -166,17 +176,24 @@ def build_breakout_signal_pipeline(*, market_bars: list[MarketBar], spec: Strate
         session_allowed = _session_allowed(bar, spec)
         prior_high = max(highs[idx - lookback:idx]) if idx >= lookback else None
         prior_low = min(lows[idx - lookback:idx]) if idx >= lookback else None
+
+        d1_trend = d1_map.get(bar.timestamp.date()) if spec.rules.require_daily_trend else None
+        d1_long_ok  = (not spec.rules.require_daily_trend) or d1_trend == "up"
+        d1_short_ok = (not spec.rules.require_daily_trend) or d1_trend == "down"
+
         next_entry_long = (
             prior_high is not None
             and bar.close > prior_high + buffer_price
             and direction in {"long_only", "both"}
             and session_allowed
+            and d1_long_ok
         )
         next_entry_short = (
             prior_low is not None
             and bar.close < prior_low - buffer_price
             and direction in {"short_only", "both"}
             and session_allowed
+            and d1_short_ok
         )
         next_exit_long = False
         next_exit_short = False
@@ -198,11 +215,13 @@ def build_breakout_signal_pipeline(*, market_bars: list[MarketBar], spec: Strate
                 executable_on_next_bar=idx + 1 < len(market_bars),
                 no_leakage_ok=(execution_bar_timestamp is None or execution_bar_timestamp > bar.timestamp.isoformat()),
                 session_allowed=session_allowed,
+                daily_trend=d1_trend,
                 evidence=[
                     f"signal_bar={bar.timestamp.isoformat()}",
                     f"execution_bar={execution_bar_timestamp}",
                     f"session_allowed={session_allowed}",
                     f"atr={atr}",
+                    f"daily_trend={d1_trend}",
                     f"breakout_lookback_bars={lookback}",
                     f"breakout_buffer_pips={spec.rules.breakout_buffer_pips}",
                     f"prior_high={prior_high}",

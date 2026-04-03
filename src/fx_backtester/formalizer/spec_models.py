@@ -80,6 +80,8 @@ class RsiMeanReversionRule(BaseModel):
     take_profit_style: TakeProfitStyle = "fixed_pips"
     take_profit_pips: float = Field(default=30.0, gt=0)
     trailing_stop_style: Literal["disabled"] = "disabled"
+    require_daily_trend: bool = False
+    daily_sma_period: int = Field(default=20, ge=2, le=200)
 
     @model_validator(mode="after")
     def validate_strategy_specific_fields(self) -> "RsiMeanReversionRule":
