@@ -1,0 +1,123 @@
+{
+  "bar_count": 12,
+  "instrument": "EURUSD",
+  "pip_size": 0.0001,
+  "price_range_high": 1.1006,
+  "price_range_low": 1.0948,
+  "summaries": [
+    {
+      "avg_forward_pips": {
+        "1": -4.5,
+        "10": 15.0,
+        "20": 0.0,
+        "5": -28.0
+      },
+      "breakout_count": 0,
+      "consolidation_count": 1,
+      "forward_bars": 20,
+      "from_above_count": 0,
+      "from_above_reversal_count": 0,
+      "from_below_count": 2,
+      "from_below_reversal_count": 1,
+      "level": {
+        "label": "pdh_2024-01-01",
+        "level_type": "prev_day_high",
+        "price": 1.1006
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": -10.0,
+            "10": 15.0,
+            "5": -28.0
+          },
+          "max_adverse_pips": 16.0,
+          "max_favorable_pips": 42.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 1,
+            "level_price": 1.1006,
+            "timestamp": "2024-01-01T01:00:00Z",
+            "touch_close": 1.099
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1.0
+          },
+          "max_adverse_pips": 2.0,
+          "max_favorable_pips": 3.0,
+          "outcome": "consolidated",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 10,
+            "level_price": 1.1006,
+            "timestamp": "2024-01-01T10:00:00Z",
+            "touch_close": 1.1004
+          }
+        }
+      ],
+      "reversal_count": 1,
+      "touch_count": 2,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
+        "1": -4.5,
+        "10": 15.0,
+        "20": 0.0,
+        "5": -28.0
+      },
+      "breakout_count": 0,
+      "consolidation_count": 1,
+      "forward_bars": 20,
+      "from_above_count": 0,
+      "from_above_reversal_count": 0,
+      "from_below_count": 2,
+      "from_below_reversal_count": 1,
+      "level": {
+        "label": "london_high_2024-01-01",
+        "level_type": "session_high",
+        "price": 1.1006
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": -10.0,
+            "10": 15.0,
+            "5": -28.0
+          },
+          "max_adverse_pips": 16.0,
+          "max_favorable_pips": 42.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 1,
+            "level_price": 1.1006,
+            "timestamp": "2024-01-01T01:00:00Z",
+            "touch_close": 1.099
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1.0
+          },
+          "max_adverse_pips": 2.0,
+          "max_favorable_pips": 3.0,
+          "outcome": "consolidated",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 10,
+            "level_price": 1.1006,
+            "timestamp": "2024-01-01T10:00:00Z",
+            "touch_close": 1.1004
+          }
+        }
+      ],
+      "reversal_count": 1,
+      "touch_count": 2,
+      "zone_pips": 5.0
+    }
+  ]
+}

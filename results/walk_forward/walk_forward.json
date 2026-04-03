@@ -1,0 +1,8 @@
+{
+  "folds": [],
+  "in_sample_pct": 0.7,
+  "instrument": "EURUSD",
+  "n_folds": 5,
+  "strategy_name": "eurusd_rsi_fixed_pips_v1",
+  "total_bar_count": 12
+}
