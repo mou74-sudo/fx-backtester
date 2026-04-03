@@ -6,6 +6,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from fx_backtester.analysis.mae_mfe import MaeMfeReport
 from fx_backtester.data.quality import DataQualityReport
 from fx_backtester.engine.backtest import BacktestResult
 from fx_backtester.engine.benchmark import BenchmarkReport
@@ -47,6 +48,7 @@ class RunArtifactWriter:
         result: BacktestResult,
         robustness: RobustnessLiteReport | None = None,
         benchmarks: BenchmarkReport | None = None,
+        mae_mfe: MaeMfeReport | None = None,
         run_label: str | None = None,
     ) -> Path:
         run_dir = self.create_run_dir(strategy_name, run_label=run_label)
@@ -118,6 +120,8 @@ class RunArtifactWriter:
             artifact_index["paths"]["reports"].append("reports/robustness_lite.json")
         if benchmarks is not None:
             artifact_index["paths"]["reports"].append("reports/benchmarks.json")
+        if mae_mfe is not None:
+            artifact_index["paths"]["results"].append("results/mae_mfe.json")
 
         files: dict[str, tuple[str, Any]] = {
             "inputs/strategy_spec.json": ("json", spec.model_dump(mode="json")),
@@ -136,6 +140,8 @@ class RunArtifactWriter:
             files["reports/robustness_lite.json"] = ("json", robustness_payload)
         if benchmarks is not None:
             files["reports/benchmarks.json"] = ("json", benchmarks_payload)
+        if mae_mfe is not None:
+            files["results/mae_mfe.json"] = ("json", mae_mfe.model_dump(mode="json"))
 
         analysis = build_analysis_report_from_payloads(
             {

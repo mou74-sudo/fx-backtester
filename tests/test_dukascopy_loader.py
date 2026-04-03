@@ -326,7 +326,7 @@ def test_end_to_end_fetch_csv_backtest(tmp_path: Path) -> None:
     )
     assert outcome.notes.status == "accepted"
 
-    result, prepared, quality, run_dir, robustness, _ = run_backtest_from_csv(
+    result, prepared, quality, run_dir, robustness, _, _ = run_backtest_from_csv(
         csv_path=csv_out,
         spec=outcome.spec,
         policy=default_execution_policy(),

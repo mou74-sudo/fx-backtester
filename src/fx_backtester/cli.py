@@ -219,7 +219,7 @@ def main() -> None:
     if args.command == "run-backtest":
         raw = json.loads(args.spec.read_text(encoding="utf-8"))
         spec = StrategySpec.model_validate(raw)
-        result, _, _, run_dir, _, _ = run_backtest_from_csv(
+        result, _, _, run_dir, _, _, _ = run_backtest_from_csv(
             csv_path=args.csv,
             spec=spec,
             policy=default_execution_policy(),

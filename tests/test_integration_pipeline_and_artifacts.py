@@ -41,7 +41,7 @@ def test_csv_to_rsi_to_execution_to_artifacts(tmp_path: Path) -> None:
     )
     policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
 
-    result, prepared, quality_report, run_dir, robustness, benchmarks = run_backtest_from_csv(
+    result, prepared, quality_report, run_dir, robustness, benchmarks, _ = run_backtest_from_csv(
         csv_path=csv_path,
         spec=spec,
         policy=policy,
@@ -139,7 +139,7 @@ def test_breakout_pipeline_runs_through_standard_artifacts(tmp_path: Path) -> No
     )
     policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
 
-    result, prepared, quality_report, run_dir, robustness, benchmarks = run_backtest_from_csv(
+    result, prepared, quality_report, run_dir, robustness, benchmarks, _ = run_backtest_from_csv(
         csv_path=csv_path,
         spec=spec,
         policy=policy,
@@ -213,7 +213,7 @@ def test_dst_session_tagging_stays_consistent_across_london_shift(tmp_path: Path
     )
     policy = ExecutionPolicy()
 
-    _, prepared, _, _, _, _ = run_backtest_from_csv(csv_path=csv_path, spec=spec, policy=policy, repo_root=repo_root)
+    _, prepared, _, _, _, _, _ = run_backtest_from_csv(csv_path=csv_path, spec=spec, policy=policy, repo_root=repo_root)
 
     assert 'london' not in prepared.signal_trace[0].sessions
     assert 'london' in prepared.signal_trace[1].sessions

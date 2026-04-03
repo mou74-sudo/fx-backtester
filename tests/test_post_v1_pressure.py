@@ -129,7 +129,7 @@ def _formalize_to_artifacts(request_text: str, tmp_path: Path, name: str):
 
 def _run_formalized_spec(spec_path: Path, repo_root: Path, run_label: str):
     spec = StrategySpec.model_validate_json(spec_path.read_text(encoding="utf-8"))
-    result, _, _, run_dir, _, _ = run_backtest_from_csv(
+    result, _, _, run_dir, _, _, _ = run_backtest_from_csv(
         csv_path=FIXED_PIPS_DATA,
         spec=spec,
         policy=default_execution_policy(),
