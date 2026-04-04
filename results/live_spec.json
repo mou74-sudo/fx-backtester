@@ -1,5 +1,5 @@
 {
-  "strategy_name": "auto_eurusd_rsi_2026-04-02",
+  "strategy_name": "auto_eurusd_rsi_2026-04-03",
   "instrument": {
     "symbol": "EURUSD",
     "quote_ccy": "USD",
@@ -33,8 +33,8 @@
     "trailing_stop_style": "disabled"
   },
   "window": {
-    "start_date": "2025-10-04",
-    "end_date": "2026-04-02"
+    "start_date": "2025-10-05",
+    "end_date": "2026-04-03"
   },
   "execution_policy_name": "default_v0_1",
   "robustness": {
