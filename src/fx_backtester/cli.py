@@ -44,7 +44,7 @@ def main() -> None:
         "fetch-data",
         help="Download H1 BID bars from Dukascopy and write a CSV ready for run-backtest",
     )
-    fetch.add_argument("--instrument", choices=["EURUSD", "USDJPY"], required=True)
+    fetch.add_argument("--instrument", choices=["EURUSD", "USDJPY", "NQ", "ES"], required=True)
     fetch.add_argument("--start", required=True, metavar="YYYY-MM-DD", help="First date to include (UTC)")
     fetch.add_argument("--end", required=True, metavar="YYYY-MM-DD", help="Last date to include (UTC)")
     fetch.add_argument("--output", type=Path, required=True, help="Output CSV path")

@@ -1,11 +1,13 @@
 """yfinance H1 data loader — drop-in replacement for the Dukascopy fetcher.
 
-Downloads H1 OHLC bars for forex pairs via Yahoo Finance (no API key needed).
+Downloads H1 OHLC bars for forex pairs and futures via Yahoo Finance (no API key needed).
 Works from any server with internet access.
 
-Supported tickers:
-    EURUSD  →  EURUSD=X
-    USDJPY  →  USDJPY=X
+Supported instruments:
+    EURUSD  →  EURUSD=X   (EUR/USD Forex)
+    USDJPY  →  USDJPY=X   (USD/JPY Forex)
+    NQ      →  NQ=F        (Nasdaq 100 Futures)
+    ES      →  ES=F        (S&P 500 Futures)
 
 yfinance H1 history limit: ~730 days from today.
 """
@@ -20,10 +22,26 @@ from fx_backtester.data.models import MarketBar
 from fx_backtester.data.sessions import infer_sessions
 
 
-_TICKERS: dict[str, str] = {
-    "EURUSD": "EURUSD=X",
-    "USDJPY": "USDJPY=X",
+# instrument code → (yfinance ticker, display name, pip/point size)
+_INSTRUMENTS: dict[str, tuple[str, str, float]] = {
+    "EURUSD": ("EURUSD=X", "EUR/USD Forex",          0.0001),
+    "USDJPY": ("USDJPY=X", "USD/JPY Forex",           0.01),
+    "NQ":     ("NQ=F",     "Nasdaq 100 Futures",       0.25),
+    "ES":     ("ES=F",     "S&P 500 Futures",           0.25),
 }
+
+# Keep backward-compat alias
+_TICKERS: dict[str, str] = {k: v[0] for k, v in _INSTRUMENTS.items()}
+
+
+def instrument_display_name(instrument: str) -> str:
+    """Return the human-readable name for an instrument code."""
+    return _INSTRUMENTS.get(instrument, (None, instrument, None))[1]
+
+
+def instrument_pip_size(instrument: str) -> float:
+    """Return the pip/point size for an instrument."""
+    return _INSTRUMENTS.get(instrument, (None, None, 0.0001))[2]
 
 
 def load_yfinance_h1(

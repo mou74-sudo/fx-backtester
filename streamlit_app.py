@@ -182,53 +182,85 @@ if page == "🏠 Home":
 elif page == "📥 Get Data":
     st.title("📥 Get Data")
 
-    if _data_source != "📂 Upload my own data":
-        st.info(f"Currently using: **{_data_source}** — switch to **📂 Upload my own data** in the sidebar to upload a file.")
+    # ── Instrument selector ────────────────────────────────────────────────
+    _INSTRUMENT_OPTIONS = {
+        "📈 Nasdaq 100 Futures (NQ)": "NQ",
+        "📊 S&P 500 Futures (ES)":    "ES",
+        "💱 EUR/USD Forex":            "EURUSD",
+        "💱 USD/JPY Forex":            "USDJPY",
+        "📂 Upload my own CSV":        "UPLOAD",
+    }
+    _instr_label = st.selectbox("Select instrument", list(_INSTRUMENT_OPTIONS.keys()))
+    _instr_code  = _INSTRUMENT_OPTIONS[_instr_label]
+
+    if _instr_code != "UPLOAD":
+        _lookback = st.slider("Lookback (days)", 30, 730, 180)
+        if st.button(f"⬇ Fetch {_instr_label}", type="primary"):
+            with st.spinner(f"Fetching {_instr_label} H1 data…"):
+                try:
+                    sys.path.insert(0, str(Path(__file__).parent / "src"))
+                    from fx_backtester.data.yfinance_loader import (
+                        load_yfinance_h1, bars_to_csv, instrument_display_name, instrument_pip_size
+                    )
+                    from datetime import date, timedelta
+                    import tempfile, pandas as pd
+
+                    _end   = date.today() - timedelta(days=1)
+                    _start = _end - timedelta(days=_lookback)
+                    _bars  = load_yfinance_h1(_instr_code, _start, _end, verbose=False)
+
+                    if not _bars:
+                        st.error("No data returned. Try a shorter lookback period.")
+                    else:
+                        with tempfile.NamedTemporaryFile(suffix=".csv", delete=False) as _tf:
+                            bars_to_csv(_bars, Path(_tf.name))
+                            _csv_bytes = Path(_tf.name).read_bytes()
+
+                        st.session_state["csv_bytes"]   = _csv_bytes
+                        st.session_state["csv_name"]    = f"{_instr_code}_h1.csv"
+                        st.session_state["instrument"]  = _instr_code
+                        st.session_state["pip_size"]    = instrument_pip_size(_instr_code)
+                        st.session_state["_auto_loaded"] = False
+
+                        import pandas as pd
+                        _df = pd.read_csv(io.BytesIO(_csv_bytes))
+                        st.success(f"✅ Loaded **{len(_bars):,} bars** of {instrument_display_name(_instr_code)}")
+                        c1, c2, c3 = st.columns(3)
+                        c1.metric("Bars",  f"{len(_bars):,}")
+                        c2.metric("From",  str(_df['timestamp'].iloc[0])[:10])
+                        c3.metric("To",    str(_df['timestamp'].iloc[-1])[:10])
+                        st.dataframe(_df.head(5), use_container_width=True)
+                except Exception as e:
+                    st.error(f"Fetch failed: {e}")
+
+        # Show current loaded data info
         if "csv_bytes" in st.session_state:
-            import pandas as pd
-            try:
-                _df_prev = pd.read_csv(io.BytesIO(st.session_state["csv_bytes"]))
-                c1, c2, c3 = st.columns(3)
-                c1.metric("Bars", f"{len(_df_prev):,}")
-                c2.metric("From", str(_df_prev['timestamp'].iloc[0])[:10])
-                c3.metric("To",   str(_df_prev['timestamp'].iloc[-1])[:10])
-                st.dataframe(_df_prev.head(5), use_container_width=True)
-            except Exception:
-                pass
+            _instr_name = st.session_state.get("instrument", "")
+            if _instr_name:
+                st.info(f"Currently loaded: **{_instr_name}** — go to 🔬 Backtest to run analysis")
+
     else:
         st.markdown("Upload an OHLC CSV file. Required columns: `timestamp, open, high, low, close`")
-
-    uploaded = st.file_uploader("Choose a CSV file", type=["csv"],
-                                 disabled=(_data_source != "📂 Upload my own data"))
-    if uploaded:
-        import pandas as pd
-        try:
-            df = pd.read_csv(uploaded)
-            required = {"timestamp", "open", "high", "low", "close"}
-            missing = required - set(df.columns)
-            if missing:
-                st.error(f"Missing columns: {missing}")
-            else:
-                st.success(f"Loaded {len(df):,} bars")
-                st.session_state["csv_bytes"] = uploaded.getvalue()
-                st.session_state["csv_name"] = uploaded.name
-
-                col1, col2, col3 = st.columns(3)
-                col1.metric("Bars", f"{len(df):,}")
-                col2.metric("From", str(df['timestamp'].iloc[0])[:10])
-                col3.metric("To",   str(df['timestamp'].iloc[-1])[:10])
-
-                st.dataframe(df.head(5), use_container_width=True)
-        except Exception as e:
-            st.error(f"Could not read file: {e}")
-    else:
-        st.markdown("""
-**Don't have a CSV?** You can download free EURUSD H1 data from:
-- [Dukascopy History Center](https://www.dukascopy.com/trading-tools/widgets/tools/historical_data_feed/)
-- [HistData.com](https://www.histdata.com/download-free-forex-historical-data/)
-
-The CSV must have columns: `timestamp, open, high, low, close`
-""")
+        uploaded = st.file_uploader("Choose a CSV file", type=["csv"])
+        if uploaded:
+            import pandas as pd
+            try:
+                df = pd.read_csv(uploaded)
+                required = {"timestamp", "open", "high", "low", "close"}
+                missing = required - set(df.columns)
+                if missing:
+                    st.error(f"Missing columns: {missing}")
+                else:
+                    st.success(f"Loaded {len(df):,} bars")
+                    st.session_state["csv_bytes"] = uploaded.getvalue()
+                    st.session_state["csv_name"]  = uploaded.name
+                    col1, col2, col3 = st.columns(3)
+                    col1.metric("Bars", f"{len(df):,}")
+                    col2.metric("From", str(df['timestamp'].iloc[0])[:10])
+                    col3.metric("To",   str(df['timestamp'].iloc[-1])[:10])
+                    st.dataframe(df.head(5), use_container_width=True)
+            except Exception as e:
+                st.error(f"Could not read file: {e}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
