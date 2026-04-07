@@ -47,26 +47,45 @@ PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward", "�
 page = st.sidebar.radio("Navigate", PAGES, label_visibility="collapsed")
 st.sidebar.markdown("---")
 
-# ── Data source selector ──────────────────────────────────────────────────────
-_RESULTS = Path("results")
-_LATEST_CSV = _RESULTS / "latest_eurusd_h1.csv"
-_PIPELINE_SUMMARY = _RESULTS / "pipeline_summary.json"
-_HISTORY_DIR = _RESULTS / "history"
+# ── Paths ─────────────────────────────────────────────────────────────────────
+_RESULTS     = Path("results")
+_AUTO_ROOT   = _RESULTS / "auto"
+_MANUAL_ROOT = _RESULTS / "manual"
 
-# Build dropdown options
+# ── Mode: AI pipeline vs My Analysis ─────────────────────────────────────────
+st.sidebar.markdown("**Mode**")
+_mode = st.sidebar.radio(
+    "mode",
+    ["🤖 AI Pipeline", "👤 My Analysis"],
+    label_visibility="collapsed",
+)
+st.sidebar.markdown("---")
+
+# ── Instrument selector ───────────────────────────────────────────────────────
+_instrument = st.sidebar.selectbox(
+    "Instrument",
+    ["📈 Nasdaq 100 (NQ)", "📊 S&P 500 (ES)"],
+)
+_instr_code = "NQ" if "NQ" in _instrument else "ES"
+
+st.sidebar.markdown("---")
+
+# ── History picker (AI mode only) ─────────────────────────────────────────────
 _source_options = []
-if _LATEST_CSV.exists():
-    _source_options.append("📡 Latest pipeline run")
-if _HISTORY_DIR.exists():
-    for _f in sorted(_HISTORY_DIR.glob("*.json"), reverse=True)[:20]:
+_auto_instr_dir = _AUTO_ROOT / _instr_code
+if (_auto_instr_dir / "pipeline_summary.json").exists():
+    _source_options.append("📡 Latest run")
+_hist_dir = _auto_instr_dir / "history"
+if _hist_dir.exists():
+    for _f in sorted(_hist_dir.glob("*.json"), reverse=True)[:20]:
         _source_options.append(f"🕐 {_f.stem}")
 _source_options.append("📂 Upload my own data")
 
-_data_source = st.sidebar.selectbox(
-    "Data source",
-    _source_options,
-    index=0 if _source_options else 0,
-)
+if _mode == "🤖 AI Pipeline":
+    _data_source = st.sidebar.selectbox("Run to view", _source_options) if _source_options else "📂 Upload my own data"
+else:
+    _data_source = "📂 Upload my own data"
+
 st.sidebar.markdown("---")
 st.sidebar.caption("FX Backtester · v1.3")
 
@@ -74,57 +93,44 @@ st.sidebar.caption("FX Backtester · v1.3")
 _pipeline_summary: dict = {}
 
 
-def _format_ts(value: str | None) -> str:
-    if not value:
-        return "—"
-    try:
-        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        return dt.astimezone(UTC).strftime("%Y-%m-%d %H:%M UTC")
-    except Exception:
-        return str(value)
+# ── Load pipeline summary based on mode + instrument + selected run ───────────
+_pipeline_summary: dict = {}
+_is_ai_mode  = (_mode == "🤖 AI Pipeline")
+_is_my_mode  = (_mode == "👤 My Analysis")
+_active_dir  = _auto_instr_dir  # results/auto/NQ or results/auto/ES
 
-
-def _last_updated_text() -> str:
-    candidates = []
-    for path in (_PIPELINE_SUMMARY, _LATEST_CSV):
-        if path.exists():
-            candidates.append(datetime.fromtimestamp(path.stat().st_mtime, tz=UTC))
-    if not candidates:
-        return "—"
-    return max(candidates).strftime("%Y-%m-%d %H:%M UTC")
-
-
-if _data_source == "📡 Latest pipeline run":
-    if _LATEST_CSV.exists():
-        st.session_state["csv_bytes"] = _LATEST_CSV.read_bytes()
-        st.session_state["csv_name"] = "latest_eurusd_h1.csv"
+if _is_ai_mode and _data_source == "📡 Latest run":
+    _csv_path = _active_dir / "latest_data.csv"
+    if _csv_path.exists():
+        st.session_state["csv_bytes"]    = _csv_path.read_bytes()
+        st.session_state["csv_name"]     = f"{_instr_code}_latest.csv"
+        st.session_state["instrument"]   = _instr_code
         st.session_state["_auto_loaded"] = True
-        st.session_state.pop("_manual_upload", None)
-    if _PIPELINE_SUMMARY.exists():
+    _ps = _active_dir / "pipeline_summary.json"
+    if _ps.exists():
         try:
-            _pipeline_summary = json.loads(_PIPELINE_SUMMARY.read_text())
+            _pipeline_summary = json.loads(_ps.read_text())
         except Exception:
             pass
 
-elif _data_source.startswith("🕐 "):
-    _run_id = _data_source[2:].strip()
-    _hist_json = _HISTORY_DIR / f"{_run_id}.json"
-    if _hist_json.exists():
+elif _is_ai_mode and _data_source.startswith("🕐 "):
+    _run_id   = _data_source[2:].strip()
+    _hj       = _active_dir / "history" / f"{_run_id}.json"
+    if _hj.exists():
         try:
-            _pipeline_summary = json.loads(_hist_json.read_text())
+            _pipeline_summary = json.loads(_hj.read_text())
         except Exception:
             pass
-    # Load the CSV that was current at that time (use latest as best proxy)
-    if _LATEST_CSV.exists():
-        st.session_state["csv_bytes"] = _LATEST_CSV.read_bytes()
-        st.session_state["csv_name"] = f"{_run_id}.csv"
+    _csv_path = _active_dir / "latest_data.csv"
+    if _csv_path.exists():
+        st.session_state["csv_bytes"]    = _csv_path.read_bytes()
+        st.session_state["csv_name"]     = f"{_instr_code}_{_run_id}.csv"
+        st.session_state["instrument"]   = _instr_code
         st.session_state["_auto_loaded"] = True
 
 elif _data_source == "📂 Upload my own data":
     st.session_state["_manual_upload"] = True
-    # Clear auto-loaded data so tabs don't show stale pipeline results
-    for _k in ["_auto_loaded"]:
-        st.session_state.pop(_k, None)
+    st.session_state.pop("_auto_loaded", None)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -158,20 +164,21 @@ if page == "🏠 Home":
 
 ---
 """)
-    if _pipeline_summary:
-        run_ts = _pipeline_summary.get("run_timestamp", _pipeline_summary.get("run_date", ""))
-        data_end = _pipeline_summary.get("end_date") or _pipeline_summary.get("end") or _pipeline_summary.get("data_end") or _pipeline_summary.get("latest_data_date")
-        bt = _pipeline_summary.get("backtest", {})
-        st.success(f"**Live pipeline data loaded**")
-        m1, m2 = st.columns(2)
-        m1.metric("Data as of", str(data_end or "—"))
-        m2.metric("Last updated", _format_ts(run_ts) if run_ts else _last_updated_text())
+    if _is_ai_mode and _pipeline_summary:
+        run_ts   = _pipeline_summary.get("run_timestamp", _pipeline_summary.get("run_date", ""))
+        bt       = _pipeline_summary.get("backtest", {})
+        levels   = _pipeline_summary.get("key_levels_used", [])
+        st.info(f"🤖 **AI Pipeline** — **{_instr_code}** — last run: {run_ts}")
         if bt:
             c1, c2, c3, c4 = st.columns(4)
-            c1.metric("Trades", bt.get("trade_count", "—"))
-            c2.metric("Net Pips", f"{bt.get('net_pips', 0):+.1f}")
-            c3.metric("Net P&L", f"${bt.get('net_pnl', 0):+,.0f}")
+            c1.metric("Trades",     bt.get("trade_count", "—"))
+            c2.metric("Net Pips",   f"{bt.get('net_pips', 0):+.1f}")
+            c3.metric("Net P&L",    f"${bt.get('net_pnl', 0):+,.0f}")
             c4.metric("WF Verdict", _pipeline_summary.get("walk_forward_verdict", "—"))
+        if levels:
+            st.caption(f"Key levels scanned: {', '.join(levels)}")
+    elif _is_my_mode:
+        st.success("👤 **My Analysis** — your runs are saved separately and never mixed with AI results.")
     else:
         st.info("Tap the **☰** menu (top left) to switch between tabs on mobile.")
 

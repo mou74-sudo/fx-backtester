@@ -36,14 +36,17 @@ jobs:
           pip install -e . --no-deps
           pip install pytest
 
-      - name: Run full pipeline (fetch → backtest → walk-forward → scan-levels)
-        run: python scripts/run_pipeline.py 180
+      - name: Run pipeline — NQ (Nasdaq 100)
+        run: python scripts/run_pipeline.py 180 NQ
+
+      - name: Run pipeline — ES (S&P 500)
+        run: python scripts/run_pipeline.py 180 ES
 
       - name: Commit results back to repo
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f results/
+          git add -f results/auto/
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

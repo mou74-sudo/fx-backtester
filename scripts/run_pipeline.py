@@ -1,7 +1,15 @@
 """
 Automated pipeline: fetch → backtest → walk-forward → scan-levels.
-Writes all results to results/ so Streamlit picks them up automatically.
-Each run also saves a timestamped snapshot to results/history/.
+
+Runs for one instrument at a time. Call twice (NQ then ES) from cron.
+
+Usage:
+    python scripts/run_pipeline.py 180 NQ
+    python scripts/run_pipeline.py 180 ES
+
+Results saved to:
+    results/auto/NQ/   ← AI pipeline, never mix with manual
+    results/auto/ES/
 """
 
 from __future__ import annotations
@@ -9,105 +17,108 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
-from datetime import date, datetime, timedelta, UTC
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RESULTS = ROOT / "results"
-RESULTS.mkdir(exist_ok=True)
+
+# Key levels the pipeline always scans — saved in summary for transparency
+AUTO_LEVEL_TYPES = [
+    "prev_day_highs", "prev_day_lows",
+    "prev_week_highs", "prev_week_lows",
+    "session_highs", "session_lows",
+]
 
 SPEC_TEMPLATE = ROOT / "examples" / "eurusd_rsi_fixed_pips_spec.json"
-DATA_CSV = RESULTS / "latest_eurusd_h1.csv"
-LIVE_SPEC = RESULTS / "live_spec.json"
 
 
 def run(cmd: list[str]) -> None:
     print(f"\n>>> {' '.join(cmd)}")
-    result = subprocess.run(cmd, check=True)
-    if result.returncode != 0:
-        sys.exit(result.returncode)
-
-
-def build_live_spec(end: date, lookback_days: int = 180) -> None:
-    """Copy the template spec and update dates to cover the last N days."""
-    raw = json.loads(SPEC_TEMPLATE.read_text())
-    start = end - timedelta(days=lookback_days)
-    raw["window"]["start_date"] = start.isoformat()
-    raw["window"]["end_date"] = end.isoformat()
-    raw["strategy_name"] = f"auto_eurusd_rsi_{end.isoformat()}"
-    LIVE_SPEC.write_text(json.dumps(raw, indent=2))
-    print(f"Live spec: {start} → {end}")
+    subprocess.run(cmd, check=True)
 
 
 def last_weekday(d: date) -> date:
-    """Step back until we land on Mon-Fri (Dukascopy has no weekend data)."""
-    while d.weekday() >= 5:  # 5=Sat, 6=Sun
+    while d.weekday() >= 5:
         d -= timedelta(days=1)
     return d
 
 
+def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> None:
+    raw = json.loads(SPEC_TEMPLATE.read_text())
+    raw["window"]["start_date"] = start.isoformat()
+    raw["window"]["end_date"]   = end.isoformat()
+    raw["strategy_name"]        = f"auto_{instrument.lower()}_{end.isoformat()}"
+    # Adjust pip size for futures
+    if instrument in ("NQ", "ES"):
+        raw["instrument"]["pip_size"] = 0.25
+        raw["instrument"]["symbol"]   = instrument
+    out_path.write_text(json.dumps(raw, indent=2))
 
 
-def main() -> None:
-    lookback    = int(sys.argv[1]) if len(sys.argv) > 1 else 180
-    instrument  = sys.argv[2]      if len(sys.argv) > 2 else "NQ"
-    # yfinance always has data up to yesterday — use yesterday as end
-    end = last_weekday(date.today() - timedelta(days=1))
+def run_instrument(instrument: str, lookback: int) -> None:
+    out_dir = ROOT / "results" / "auto" / instrument
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "walk_forward").mkdir(exist_ok=True)
+    (out_dir / "level_study").mkdir(exist_ok=True)
+    (out_dir / "history").mkdir(exist_ok=True)
+
+    data_csv  = out_dir / "latest_data.csv"
+    live_spec = out_dir / "live_spec.json"
+
+    end   = last_weekday(date.today() - timedelta(days=1))
     start = end - timedelta(days=lookback)
 
-    # 1. Build spec with probed date range
-    build_live_spec(end, lookback)
+    print(f"\n{'='*50}")
+    print(f"Running pipeline: {instrument}  {start} → {end}")
+    print(f"{'='*50}")
 
-    # 2. Fetch fresh H1 data (failures per day are skipped, not fatal)
+    # 1. Build spec
+    build_live_spec(live_spec, instrument, start, end)
+
+    # 2. Fetch data
     try:
         run([
             "fx-backtester", "fetch-data",
             "--instrument", instrument,
             "--start", start.isoformat(),
-            "--end", end.isoformat(),
-            "--output", str(DATA_CSV),
+            "--end",   end.isoformat(),
+            "--output", str(data_csv),
             "--cache-dir", str(ROOT / "data" / "cache"),
         ])
-    except SystemExit:
-        print("WARNING: data fetch failed — aborting pipeline run.")
-        sys.exit(1)
+    except subprocess.CalledProcessError:
+        print(f"WARNING: fetch failed for {instrument} — skipping.")
+        return
 
-    if not DATA_CSV.exists() or DATA_CSV.stat().st_size < 100:
-        print("WARNING: data file is empty or missing — aborting pipeline run.")
-        sys.exit(1)
+    if not data_csv.exists() or data_csv.stat().st_size < 100:
+        print(f"WARNING: empty CSV for {instrument} — skipping.")
+        return
 
-    # 3. Run backtest
+    # 3. Backtest
     run([
         "fx-backtester", "run-backtest",
-        str(LIVE_SPEC),
-        str(DATA_CSV),
+        str(live_spec), str(data_csv),
         "--repo-root", str(ROOT),
     ])
 
-    # 4. Walk-forward validation
+    # 4. Walk-forward
     run([
         "fx-backtester", "walk-forward-test",
-        str(LIVE_SPEC),
-        str(DATA_CSV),
+        str(live_spec), str(data_csv),
         "--folds", "5",
-        "--output-dir", str(RESULTS / "walk_forward"),
+        "--output-dir", str(out_dir / "walk_forward"),
     ])
 
-    # 5. Scan key levels
+    # 5. Key levels — record exactly which types were used
     run([
         "fx-backtester", "scan-levels",
-        "--data", str(DATA_CSV),
+        "--data", str(data_csv),
         "--instrument", instrument,
-        "--level-type", "prev_day_highs", "prev_day_lows",
-                        "prev_week_highs", "prev_week_lows",
-                        "session_highs", "session_lows",
-        "--output-dir", str(RESULTS / "level_study"),
+        "--level-type", *AUTO_LEVEL_TYPES,
+        "--output-dir", str(out_dir / "level_study"),
     ])
 
-    # 6. Collect backtest metrics for history
-    summary_json = next(
-        (ROOT / "outputs").glob("*/reports/summary.json"), None
-    )
+    # 6. Collect metrics
+    summary_json = next((ROOT / "outputs").glob("*/reports/summary.json"), None)
     backtest_metrics: dict = {}
     if summary_json and summary_json.exists():
         try:
@@ -115,7 +126,7 @@ def main() -> None:
         except Exception:
             pass
 
-    wf_json = RESULTS / "walk_forward" / "walk_forward.json"
+    wf_json = out_dir / "walk_forward" / "walk_forward.json"
     wf_metrics: dict = {}
     if wf_json.exists():
         try:
@@ -125,26 +136,36 @@ def main() -> None:
 
     run_ts = datetime.now(UTC).strftime("%Y-%m-%dT%H%M")
 
-    # 7. Write latest pipeline summary
     summary = {
-        "run_timestamp": run_ts,
-        "run_date": date.today().isoformat(),
-        "data_start": start.isoformat(),
-        "data_end": end.isoformat(),
-        "lookback_days": lookback,
-        "backtest": backtest_metrics,
+        "source":               "ai_pipeline",        # never "manual"
+        "instrument":           instrument,
+        "run_timestamp":        run_ts,
+        "run_date":             date.today().isoformat(),
+        "data_start":           start.isoformat(),
+        "data_end":             end.isoformat(),
+        "lookback_days":        lookback,
+        "key_levels_used":      AUTO_LEVEL_TYPES,      # transparent record
+        "backtest":             backtest_metrics,
         "walk_forward_verdict": wf_metrics.get("verdict"),
-        "oos_net_pips": wf_metrics.get("oos_total_net_pips"),
-        "oos_win_rate": wf_metrics.get("oos_avg_win_rate"),
+        "oos_net_pips":         wf_metrics.get("oos_total_net_pips"),
+        "oos_win_rate":         wf_metrics.get("oos_avg_win_rate"),
     }
-    (RESULTS / "pipeline_summary.json").write_text(json.dumps(summary, indent=2))
 
-    # 8. Append to history — one file per run, kept forever
-    history_dir = RESULTS / "history"
-    history_dir.mkdir(exist_ok=True)
-    (history_dir / f"{run_ts}.json").write_text(json.dumps(summary, indent=2))
-    print(f"\nHistory snapshot saved: results/history/{run_ts}.json")
-    print("\nPipeline complete. Results written to results/")
+    (out_dir / "pipeline_summary.json").write_text(json.dumps(summary, indent=2))
+    (out_dir / "history" / f"{run_ts}.json").write_text(json.dumps(summary, indent=2))
+    print(f"\n✓ {instrument} complete → results/auto/{instrument}/")
+
+
+def main() -> None:
+    lookback   = int(sys.argv[1]) if len(sys.argv) > 1 else 180
+    instrument = sys.argv[2].upper() if len(sys.argv) > 2 else None
+
+    if instrument:
+        run_instrument(instrument, lookback)
+    else:
+        # Default: run both
+        run_instrument("NQ", lookback)
+        run_instrument("ES", lookback)
 
 
 if __name__ == "__main__":
