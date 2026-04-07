@@ -1,12 +1,12 @@
 # Walk-Forward Validation: auto_eurusd_rsi_2026-04-06
 
-**Instrument:** EURUSD  |  **Total bars:** 3035  |  **Folds:** 5 of 5 evaluated  |  **IS split:** 70% / 30%
+**Instrument:** EURUSD  |  **Total bars:** 3036  |  **Folds:** 5 of 5 evaluated  |  **IS split:** 70% / 30%
 
 ## Verdict: VALIDATED
 
 > ≥60 % of out-of-sample folds were profitable and total OOS net pips > 0.  The strategy shows consistent edge across multiple unseen market regimes.
 
-**OOS summary** — 4/5 folds profitable  |  Total OOS net pips: **+96.2**  |  Avg OOS win rate: **74%**  |  Total OOS trades: **22**
+**OOS summary** — 4/5 folds profitable  |  Total OOS net pips: **+80.4**  |  Avg OOS win rate: **74%**  |  Total OOS trades: **21**
 
 ---
 
@@ -52,10 +52,10 @@
 
 ## Fold 5  —  OOS: profitable
 
-- **In-sample:** 2026-03-02 → 2026-03-26  (425 bars)
+- **In-sample:** 2026-03-02 → 2026-03-26  (426 bars)
 - **Out-of-sample:** 2026-03-26 → 2026-04-06  (182 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
 | In-sample     |     17 |    +138.2 |     53% |     +8.13 |     2.01% |
-| Out-of-sample |      8 |     +45.5 |     75% |     +5.69 |     1.59% |
+| Out-of-sample |      7 |     +29.7 |     71% |     +4.24 |     1.59% |

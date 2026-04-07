@@ -114,26 +114,26 @@
         "trade_count": 17,
         "win_rate": 0.5294
       },
-      "in_sample_bar_count": 425,
-      "in_sample_end": "2026-03-26T05:00:00+00:00",
+      "in_sample_bar_count": 426,
+      "in_sample_end": "2026-03-26T06:00:00+00:00",
       "in_sample_start": "2026-03-02T08:00:00+00:00",
       "oos_profitable": true,
       "out_of_sample": {
-        "ending_equity": 15271.71,
-        "expectancy_pips": 5.69,
+        "ending_equity": 15175.8,
+        "expectancy_pips": 4.24,
         "max_drawdown_pct": 1.59,
-        "net_pips": 45.5,
-        "trade_count": 8,
-        "win_rate": 0.75
+        "net_pips": 29.7,
+        "trade_count": 7,
+        "win_rate": 0.7143
       },
       "out_of_sample_bar_count": 182,
-      "out_of_sample_end": "2026-04-06T21:00:00+00:00",
-      "out_of_sample_start": "2026-03-26T06:00:00+00:00"
+      "out_of_sample_end": "2026-04-06T22:00:00+00:00",
+      "out_of_sample_start": "2026-03-26T07:00:00+00:00"
     }
   ],
   "in_sample_pct": 0.7,
   "instrument": "EURUSD",
   "n_folds": 5,
   "strategy_name": "auto_eurusd_rsi_2026-04-06",
-  "total_bar_count": 3035
+  "total_bar_count": 3036
 }

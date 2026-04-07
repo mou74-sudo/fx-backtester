@@ -1,5 +1,5 @@
 {
-  "bar_count": 3035,
+  "bar_count": 3036,
   "instrument": "EURUSD",
   "pip_size": 0.0001,
   "price_range_high": 1.20846,
@@ -208851,6 +208851,979 @@
     },
     {
       "avg_forward_pips": {
+        "1": 3.2,
+        "10": 2.7,
+        "20": 7.4,
+        "5": 3.7
+      },
+      "breakout_count": 22,
+      "consolidation_count": 1,
+      "forward_bars": 20,
+      "from_above_count": 30,
+      "from_above_reversal_count": 18,
+      "from_below_count": 23,
+      "from_below_reversal_count": 12,
+      "level": {
+        "label": "pdh_2025-11-06",
+        "level_type": "prev_day_high",
+        "price": 1.15553
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": 0.0,
+            "10": 6.7,
+            "20": 5.3,
+            "5": 8.0
+          },
+          "max_adverse_pips": 12.0,
+          "max_favorable_pips": 30.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 40,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-09T15:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": 12.0,
+            "20": 36.2,
+            "5": 2.6
+          },
+          "max_adverse_pips": 9.4,
+          "max_favorable_pips": 63.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 46,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-09T21:00:00Z",
+            "touch_close": 1.15701
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 9.4,
+            "10": -9.4,
+            "20": 47.0,
+            "5": 22.8
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 53.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 96,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T00:00:00Z",
+            "touch_close": 1.15647
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": 60.4,
+            "20": 72.5,
+            "5": 8.0
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 76.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 103,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T07:00:00Z",
+            "touch_close": 1.15527
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 18.8,
+            "10": 28.2,
+            "20": 60.6,
+            "5": 29.6
+          },
+          "max_adverse_pips": 5.4,
+          "max_favorable_pips": 70.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 109,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T13:00:00Z",
+            "touch_close": 1.15781
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 22.8,
+            "10": 13.4,
+            "20": 16.1,
+            "5": 10.7
+          },
+          "max_adverse_pips": 6.7,
+          "max_favorable_pips": 32.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 393,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-30T12:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 5.4,
+            "10": -41.3,
+            "20": -30.7,
+            "5": -10.7
+          },
+          "max_adverse_pips": 44.0,
+          "max_favorable_pips": 12.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 412,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-31T07:00:00Z",
+            "touch_close": 1.15687
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.7,
+            "10": -14.7,
+            "20": -25.3,
+            "5": -17.3
+          },
+          "max_adverse_pips": 33.2,
+          "max_favorable_pips": 2.6,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 418,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-31T13:00:00Z",
+            "touch_close": 1.15447
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.7,
+            "10": -10.7,
+            "20": 28.1,
+            "5": 1.3
+          },
+          "max_adverse_pips": 30.8,
+          "max_favorable_pips": 16.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 517,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-06T18:00:00Z",
+            "touch_close": 1.155
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.6,
+            "10": 10.7,
+            "20": 24.1,
+            "5": -5.3
+          },
+          "max_adverse_pips": 49.6,
+          "max_favorable_pips": 9.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 523,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T00:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": 13.4,
+            "20": 17.4,
+            "5": 21.4
+          },
+          "max_adverse_pips": 38.9,
+          "max_favorable_pips": 8.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 533,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T10:00:00Z",
+            "touch_close": 1.1554
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 4.0,
+            "10": -6.7,
+            "20": -16.1,
+            "5": -2.7
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 22.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 542,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T19:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.7,
+            "10": 12.0,
+            "20": 0.0,
+            "5": 10.7
+          },
+          "max_adverse_pips": 16.0,
+          "max_favorable_pips": 25.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 548,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T02:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 5.3,
+            "10": -6.7,
+            "20": -4.0,
+            "5": -20.1
+          },
+          "max_adverse_pips": 22.7,
+          "max_favorable_pips": 13.4,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 557,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T11:00:00Z",
+            "touch_close": 1.15674
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": -4.0,
+            "20": 42.9,
+            "5": -2.7
+          },
+          "max_adverse_pips": 45.6,
+          "max_favorable_pips": 12.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 563,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T17:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.1,
+            "10": 12.0,
+            "20": 28.1,
+            "5": 1.3
+          },
+          "max_adverse_pips": 8.1,
+          "max_favorable_pips": 49.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 569,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T23:00:00Z",
+            "touch_close": 1.15594
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.1,
+            "10": 41.6,
+            "20": 28.2,
+            "5": 21.5
+          },
+          "max_adverse_pips": 1.3,
+          "max_favorable_pips": 53.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 576,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-11T06:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -9.4,
+            "10": -21.4,
+            "20": -29.4,
+            "5": -36.0
+          },
+          "max_adverse_pips": 45.3,
+          "max_favorable_pips": 1.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 727,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-19T14:00:00Z",
+            "touch_close": 1.15594
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": 0.0,
+            "20": -15.9,
+            "5": 2.7
+          },
+          "max_adverse_pips": 17.3,
+          "max_favorable_pips": 21.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 751,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-20T14:00:00Z",
+            "touch_close": 1.1538
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.3,
+            "10": -33.2,
+            "20": -18.6,
+            "5": -15.9
+          },
+          "max_adverse_pips": 12.0,
+          "max_favorable_pips": 49.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 768,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-21T07:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -21.3,
+            "20": -16.0,
+            "5": -27.9
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 34.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 796,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-24T12:00:00Z",
+            "touch_close": 1.155
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.7,
+            "10": 25.4,
+            "20": 26.8,
+            "5": 38.8
+          },
+          "max_adverse_pips": 52.3,
+          "max_favorable_pips": 1.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 820,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-25T12:00:00Z",
+            "touch_close": 1.15473
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 26.8,
+            "10": 49.7,
+            "20": 25.5,
+            "5": 41.6
+          },
+          "max_adverse_pips": 4.0,
+          "max_favorable_pips": 61.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 845,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-26T13:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.1,
+            "10": 43.0,
+            "20": 51.1,
+            "5": 48.4
+          },
+          "max_adverse_pips": 1.3,
+          "max_favorable_pips": 56.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 890,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-28T10:00:00Z",
+            "touch_close": 1.1562
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 32.2,
+            "10": 20.1,
+            "20": 61.9,
+            "5": 44.4
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 80.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2459,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-03T15:00:00Z",
+            "touch_close": 1.15768
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": 63.2,
+            "20": 0.0,
+            "5": 41.6
+          },
+          "max_adverse_pips": 46.5,
+          "max_favorable_pips": 67.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2528,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-06T12:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -21.4,
+            "10": 24.1,
+            "20": 52.5,
+            "5": -6.7
+          },
+          "max_adverse_pips": 76.8,
+          "max_favorable_pips": 50.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2544,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-09T05:00:00Z",
+            "touch_close": 1.15714
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.7,
+            "10": 76.7,
+            "20": 101.1,
+            "5": 28.1
+          },
+          "max_adverse_pips": 12.1,
+          "max_favorable_pips": 102.5,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2550,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-09T11:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -4.0,
+            "20": -38.6,
+            "5": -12.0
+          },
+          "max_adverse_pips": 39.9,
+          "max_favorable_pips": 14.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2609,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-11T22:00:00Z",
+            "touch_close": 1.1554
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": -26.6,
+            "20": -34.5,
+            "5": 8.1
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 39.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2617,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-12T06:00:00Z",
+            "touch_close": 1.15513
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -12.0,
+            "10": -19.9,
+            "20": -93.8,
+            "5": -17.3
+          },
+          "max_adverse_pips": 105.6,
+          "max_favorable_pips": 10.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2623,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-12T12:00:00Z",
+            "touch_close": 1.1542
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.0,
+            "10": 2.7,
+            "20": -21.3,
+            "5": 0.0
+          },
+          "max_adverse_pips": 14.7,
+          "max_favorable_pips": 45.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2699,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-17T18:00:00Z",
+            "touch_close": 1.1542
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -16.0,
+            "10": -31.9,
+            "20": -59.7,
+            "5": 4.0
+          },
+          "max_adverse_pips": 10.7,
+          "max_favorable_pips": 93.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2711,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-18T06:00:00Z",
+            "touch_close": 1.1546
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 6.6,
+            "10": -51.5,
+            "20": -56.7,
+            "5": 7.9
+          },
+          "max_adverse_pips": 18.5,
+          "max_favorable_pips": 64.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2717,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-18T12:00:00Z",
+            "touch_close": 1.15115
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 21.4,
+            "10": -2.7,
+            "20": -17.4,
+            "5": 17.4
+          },
+          "max_adverse_pips": 55.0,
+          "max_favorable_pips": 24.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2746,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-19T17:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.3,
+            "10": -14.7,
+            "20": -4.0,
+            "5": 12.0
+          },
+          "max_adverse_pips": 33.3,
+          "max_favorable_pips": 22.8,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2756,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T03:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 10.7,
+            "10": 8.0,
+            "20": -22.7,
+            "5": -13.4
+          },
+          "max_adverse_pips": 28.0,
+          "max_favorable_pips": 30.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2762,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T09:00:00Z",
+            "touch_close": 1.15527
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.7,
+            "10": 2.7,
+            "20": 55.0,
+            "5": 26.8
+          },
+          "max_adverse_pips": 75.2,
+          "max_favorable_pips": 58.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2768,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T15:00:00Z",
+            "touch_close": 1.15473
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": -59.7,
+            "20": 68.4,
+            "5": -10.7
+          },
+          "max_adverse_pips": 59.7,
+          "max_favorable_pips": 94.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2775,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-23T00:00:00Z",
+            "touch_close": 1.15487
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 56.4,
+            "10": 61.8,
+            "20": 53.7,
+            "5": 36.2
+          },
+          "max_adverse_pips": 84.8,
+          "max_favorable_pips": 6.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2786,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-23T11:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 10.7,
+            "10": -9.4,
+            "20": -33.4,
+            "5": -9.4
+          },
+          "max_adverse_pips": 44.0,
+          "max_favorable_pips": 13.4,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2839,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-25T16:00:00Z",
+            "touch_close": 1.15714
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1.3,
+            "10": 0.0,
+            "20": -26.7,
+            "5": 8.0
+          },
+          "max_adverse_pips": 36.0,
+          "max_favorable_pips": 12.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2845,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-25T22:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -13.4,
+            "10": -30.8,
+            "20": -28.1,
+            "5": -42.7
+          },
+          "max_adverse_pips": 46.7,
+          "max_favorable_pips": -2.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2853,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T06:00:00Z",
+            "touch_close": 1.15701
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 4.0,
+            "10": -9.3,
+            "20": -23.9,
+            "5": -9.3
+          },
+          "max_adverse_pips": 14.7,
+          "max_favorable_pips": 27.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2860,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T13:00:00Z",
+            "touch_close": 1.1546
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 9.3,
+            "10": 9.3,
+            "20": -5.3,
+            "5": 14.6
+          },
+          "max_adverse_pips": 21.3,
+          "max_favorable_pips": 23.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2867,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T20:00:00Z",
+            "touch_close": 1.15287
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": 29.4,
+            "20": 63.0,
+            "5": 14.7
+          },
+          "max_adverse_pips": 76.5,
+          "max_favorable_pips": 0.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2934,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-31T16:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.8,
+            "10": 38.9,
+            "20": 22.8,
+            "5": 2.7
+          },
+          "max_adverse_pips": 2.6,
+          "max_favorable_pips": 68.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2940,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-31T22:00:00Z",
+            "touch_close": 1.1562
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.0,
+            "10": -33.2,
+            "20": -9.3,
+            "5": -16.0
+          },
+          "max_adverse_pips": 42.5,
+          "max_favorable_pips": 8.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2967,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-02T01:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.6,
+            "10": -13.3,
+            "20": -6.6,
+            "5": -17.3
+          },
+          "max_adverse_pips": 5.4,
+          "max_favorable_pips": 22.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2980,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-02T14:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": -26.6,
+            "20": 18.7,
+            "5": -24.0
+          },
+          "max_adverse_pips": 22.7,
+          "max_favorable_pips": 38.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3000,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-03T10:00:00Z",
+            "touch_close": 1.15487
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -22.7,
+            "5": -10.7
+          },
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 29.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3020,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T07:00:00Z",
+            "touch_close": 1.15674
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -17.4,
+            "5": -14.7
+          },
+          "max_adverse_pips": 25.4,
+          "max_favorable_pips": 9.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 3026,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T13:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 0.0
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 0.0,
+          "outcome": "consolidated",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3034,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T21:00:00Z",
+            "touch_close": 1.1546
+          }
+        }
+      ],
+      "reversal_count": 30,
+      "touch_count": 53,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
         "1": -3.0,
         "10": -2.1,
         "20": -4.9,
@@ -209825,6 +210798,979 @@
         }
       ],
       "reversal_count": 27,
+      "touch_count": 53,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
+        "1": 3.2,
+        "10": 2.7,
+        "20": 7.4,
+        "5": 3.7
+      },
+      "breakout_count": 22,
+      "consolidation_count": 1,
+      "forward_bars": 20,
+      "from_above_count": 30,
+      "from_above_reversal_count": 18,
+      "from_below_count": 23,
+      "from_below_reversal_count": 12,
+      "level": {
+        "label": "pdh_2025-11-21",
+        "level_type": "prev_day_high",
+        "price": 1.15553
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": 0.0,
+            "10": 6.7,
+            "20": 5.3,
+            "5": 8.0
+          },
+          "max_adverse_pips": 12.0,
+          "max_favorable_pips": 30.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 40,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-09T15:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": 12.0,
+            "20": 36.2,
+            "5": 2.6
+          },
+          "max_adverse_pips": 9.4,
+          "max_favorable_pips": 63.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 46,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-09T21:00:00Z",
+            "touch_close": 1.15701
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 9.4,
+            "10": -9.4,
+            "20": 47.0,
+            "5": 22.8
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 53.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 96,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T00:00:00Z",
+            "touch_close": 1.15647
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": 60.4,
+            "20": 72.5,
+            "5": 8.0
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 76.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 103,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T07:00:00Z",
+            "touch_close": 1.15527
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 18.8,
+            "10": 28.2,
+            "20": 60.6,
+            "5": 29.6
+          },
+          "max_adverse_pips": 5.4,
+          "max_favorable_pips": 70.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 109,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T13:00:00Z",
+            "touch_close": 1.15781
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 22.8,
+            "10": 13.4,
+            "20": 16.1,
+            "5": 10.7
+          },
+          "max_adverse_pips": 6.7,
+          "max_favorable_pips": 32.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 393,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-30T12:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 5.4,
+            "10": -41.3,
+            "20": -30.7,
+            "5": -10.7
+          },
+          "max_adverse_pips": 44.0,
+          "max_favorable_pips": 12.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 412,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-31T07:00:00Z",
+            "touch_close": 1.15687
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.7,
+            "10": -14.7,
+            "20": -25.3,
+            "5": -17.3
+          },
+          "max_adverse_pips": 33.2,
+          "max_favorable_pips": 2.6,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 418,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-31T13:00:00Z",
+            "touch_close": 1.15447
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.7,
+            "10": -10.7,
+            "20": 28.1,
+            "5": 1.3
+          },
+          "max_adverse_pips": 30.8,
+          "max_favorable_pips": 16.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 517,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-06T18:00:00Z",
+            "touch_close": 1.155
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.6,
+            "10": 10.7,
+            "20": 24.1,
+            "5": -5.3
+          },
+          "max_adverse_pips": 49.6,
+          "max_favorable_pips": 9.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 523,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T00:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": 13.4,
+            "20": 17.4,
+            "5": 21.4
+          },
+          "max_adverse_pips": 38.9,
+          "max_favorable_pips": 8.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 533,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T10:00:00Z",
+            "touch_close": 1.1554
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 4.0,
+            "10": -6.7,
+            "20": -16.1,
+            "5": -2.7
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 22.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 542,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T19:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.7,
+            "10": 12.0,
+            "20": 0.0,
+            "5": 10.7
+          },
+          "max_adverse_pips": 16.0,
+          "max_favorable_pips": 25.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 548,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T02:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 5.3,
+            "10": -6.7,
+            "20": -4.0,
+            "5": -20.1
+          },
+          "max_adverse_pips": 22.7,
+          "max_favorable_pips": 13.4,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 557,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T11:00:00Z",
+            "touch_close": 1.15674
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": -4.0,
+            "20": 42.9,
+            "5": -2.7
+          },
+          "max_adverse_pips": 45.6,
+          "max_favorable_pips": 12.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 563,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T17:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.1,
+            "10": 12.0,
+            "20": 28.1,
+            "5": 1.3
+          },
+          "max_adverse_pips": 8.1,
+          "max_favorable_pips": 49.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 569,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T23:00:00Z",
+            "touch_close": 1.15594
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.1,
+            "10": 41.6,
+            "20": 28.2,
+            "5": 21.5
+          },
+          "max_adverse_pips": 1.3,
+          "max_favorable_pips": 53.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 576,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-11T06:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -9.4,
+            "10": -21.4,
+            "20": -29.4,
+            "5": -36.0
+          },
+          "max_adverse_pips": 45.3,
+          "max_favorable_pips": 1.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 727,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-19T14:00:00Z",
+            "touch_close": 1.15594
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": 0.0,
+            "20": -15.9,
+            "5": 2.7
+          },
+          "max_adverse_pips": 17.3,
+          "max_favorable_pips": 21.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 751,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-20T14:00:00Z",
+            "touch_close": 1.1538
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.3,
+            "10": -33.2,
+            "20": -18.6,
+            "5": -15.9
+          },
+          "max_adverse_pips": 12.0,
+          "max_favorable_pips": 49.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 768,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-21T07:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -21.3,
+            "20": -16.0,
+            "5": -27.9
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 34.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 796,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-24T12:00:00Z",
+            "touch_close": 1.155
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.7,
+            "10": 25.4,
+            "20": 26.8,
+            "5": 38.8
+          },
+          "max_adverse_pips": 52.3,
+          "max_favorable_pips": 1.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 820,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-25T12:00:00Z",
+            "touch_close": 1.15473
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 26.8,
+            "10": 49.7,
+            "20": 25.5,
+            "5": 41.6
+          },
+          "max_adverse_pips": 4.0,
+          "max_favorable_pips": 61.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 845,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-26T13:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.1,
+            "10": 43.0,
+            "20": 51.1,
+            "5": 48.4
+          },
+          "max_adverse_pips": 1.3,
+          "max_favorable_pips": 56.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 890,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-28T10:00:00Z",
+            "touch_close": 1.1562
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 32.2,
+            "10": 20.1,
+            "20": 61.9,
+            "5": 44.4
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 80.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2459,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-03T15:00:00Z",
+            "touch_close": 1.15768
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": 63.2,
+            "20": 0.0,
+            "5": 41.6
+          },
+          "max_adverse_pips": 46.5,
+          "max_favorable_pips": 67.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2528,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-06T12:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -21.4,
+            "10": 24.1,
+            "20": 52.5,
+            "5": -6.7
+          },
+          "max_adverse_pips": 76.8,
+          "max_favorable_pips": 50.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2544,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-09T05:00:00Z",
+            "touch_close": 1.15714
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.7,
+            "10": 76.7,
+            "20": 101.1,
+            "5": 28.1
+          },
+          "max_adverse_pips": 12.1,
+          "max_favorable_pips": 102.5,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2550,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-09T11:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -4.0,
+            "20": -38.6,
+            "5": -12.0
+          },
+          "max_adverse_pips": 39.9,
+          "max_favorable_pips": 14.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2609,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-11T22:00:00Z",
+            "touch_close": 1.1554
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": -26.6,
+            "20": -34.5,
+            "5": 8.1
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 39.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2617,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-12T06:00:00Z",
+            "touch_close": 1.15513
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -12.0,
+            "10": -19.9,
+            "20": -93.8,
+            "5": -17.3
+          },
+          "max_adverse_pips": 105.6,
+          "max_favorable_pips": 10.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2623,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-12T12:00:00Z",
+            "touch_close": 1.1542
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.0,
+            "10": 2.7,
+            "20": -21.3,
+            "5": 0.0
+          },
+          "max_adverse_pips": 14.7,
+          "max_favorable_pips": 45.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2699,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-17T18:00:00Z",
+            "touch_close": 1.1542
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -16.0,
+            "10": -31.9,
+            "20": -59.7,
+            "5": 4.0
+          },
+          "max_adverse_pips": 10.7,
+          "max_favorable_pips": 93.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2711,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-18T06:00:00Z",
+            "touch_close": 1.1546
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 6.6,
+            "10": -51.5,
+            "20": -56.7,
+            "5": 7.9
+          },
+          "max_adverse_pips": 18.5,
+          "max_favorable_pips": 64.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2717,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-18T12:00:00Z",
+            "touch_close": 1.15115
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 21.4,
+            "10": -2.7,
+            "20": -17.4,
+            "5": 17.4
+          },
+          "max_adverse_pips": 55.0,
+          "max_favorable_pips": 24.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2746,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-19T17:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.3,
+            "10": -14.7,
+            "20": -4.0,
+            "5": 12.0
+          },
+          "max_adverse_pips": 33.3,
+          "max_favorable_pips": 22.8,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2756,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T03:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 10.7,
+            "10": 8.0,
+            "20": -22.7,
+            "5": -13.4
+          },
+          "max_adverse_pips": 28.0,
+          "max_favorable_pips": 30.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2762,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T09:00:00Z",
+            "touch_close": 1.15527
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.7,
+            "10": 2.7,
+            "20": 55.0,
+            "5": 26.8
+          },
+          "max_adverse_pips": 75.2,
+          "max_favorable_pips": 58.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2768,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T15:00:00Z",
+            "touch_close": 1.15473
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": -59.7,
+            "20": 68.4,
+            "5": -10.7
+          },
+          "max_adverse_pips": 59.7,
+          "max_favorable_pips": 94.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2775,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-23T00:00:00Z",
+            "touch_close": 1.15487
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 56.4,
+            "10": 61.8,
+            "20": 53.7,
+            "5": 36.2
+          },
+          "max_adverse_pips": 84.8,
+          "max_favorable_pips": 6.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2786,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-23T11:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 10.7,
+            "10": -9.4,
+            "20": -33.4,
+            "5": -9.4
+          },
+          "max_adverse_pips": 44.0,
+          "max_favorable_pips": 13.4,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2839,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-25T16:00:00Z",
+            "touch_close": 1.15714
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1.3,
+            "10": 0.0,
+            "20": -26.7,
+            "5": 8.0
+          },
+          "max_adverse_pips": 36.0,
+          "max_favorable_pips": 12.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2845,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-25T22:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -13.4,
+            "10": -30.8,
+            "20": -28.1,
+            "5": -42.7
+          },
+          "max_adverse_pips": 46.7,
+          "max_favorable_pips": -2.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2853,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T06:00:00Z",
+            "touch_close": 1.15701
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 4.0,
+            "10": -9.3,
+            "20": -23.9,
+            "5": -9.3
+          },
+          "max_adverse_pips": 14.7,
+          "max_favorable_pips": 27.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2860,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T13:00:00Z",
+            "touch_close": 1.1546
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 9.3,
+            "10": 9.3,
+            "20": -5.3,
+            "5": 14.6
+          },
+          "max_adverse_pips": 21.3,
+          "max_favorable_pips": 23.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2867,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T20:00:00Z",
+            "touch_close": 1.15287
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": 29.4,
+            "20": 63.0,
+            "5": 14.7
+          },
+          "max_adverse_pips": 76.5,
+          "max_favorable_pips": 0.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2934,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-31T16:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.8,
+            "10": 38.9,
+            "20": 22.8,
+            "5": 2.7
+          },
+          "max_adverse_pips": 2.6,
+          "max_favorable_pips": 68.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2940,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-31T22:00:00Z",
+            "touch_close": 1.1562
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.0,
+            "10": -33.2,
+            "20": -9.3,
+            "5": -16.0
+          },
+          "max_adverse_pips": 42.5,
+          "max_favorable_pips": 8.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2967,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-02T01:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.6,
+            "10": -13.3,
+            "20": -6.6,
+            "5": -17.3
+          },
+          "max_adverse_pips": 5.4,
+          "max_favorable_pips": 22.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2980,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-02T14:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": -26.6,
+            "20": 18.7,
+            "5": -24.0
+          },
+          "max_adverse_pips": 22.7,
+          "max_favorable_pips": 38.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3000,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-03T10:00:00Z",
+            "touch_close": 1.15487
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -22.7,
+            "5": -10.7
+          },
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 29.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3020,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T07:00:00Z",
+            "touch_close": 1.15674
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -17.4,
+            "5": -14.7
+          },
+          "max_adverse_pips": 25.4,
+          "max_favorable_pips": 9.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 3026,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T13:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 0.0
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 0.0,
+          "outcome": "consolidated",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3034,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T21:00:00Z",
+            "touch_close": 1.1546
+          }
+        }
+      ],
+      "reversal_count": 30,
       "touch_count": 53,
       "zone_pips": 5.0
     },
@@ -216674,6 +218620,979 @@
     },
     {
       "avg_forward_pips": {
+        "1": 3.2,
+        "10": 2.7,
+        "20": 7.4,
+        "5": 3.7
+      },
+      "breakout_count": 22,
+      "consolidation_count": 1,
+      "forward_bars": 20,
+      "from_above_count": 30,
+      "from_above_reversal_count": 18,
+      "from_below_count": 23,
+      "from_below_reversal_count": 12,
+      "level": {
+        "label": "london_high_2025-11-21",
+        "level_type": "session_high",
+        "price": 1.15553
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": 0.0,
+            "10": 6.7,
+            "20": 5.3,
+            "5": 8.0
+          },
+          "max_adverse_pips": 12.0,
+          "max_favorable_pips": 30.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 40,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-09T15:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": 12.0,
+            "20": 36.2,
+            "5": 2.6
+          },
+          "max_adverse_pips": 9.4,
+          "max_favorable_pips": 63.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 46,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-09T21:00:00Z",
+            "touch_close": 1.15701
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 9.4,
+            "10": -9.4,
+            "20": 47.0,
+            "5": 22.8
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 53.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 96,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T00:00:00Z",
+            "touch_close": 1.15647
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": 60.4,
+            "20": 72.5,
+            "5": 8.0
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 76.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 103,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T07:00:00Z",
+            "touch_close": 1.15527
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 18.8,
+            "10": 28.2,
+            "20": 60.6,
+            "5": 29.6
+          },
+          "max_adverse_pips": 5.4,
+          "max_favorable_pips": 70.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 109,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-14T13:00:00Z",
+            "touch_close": 1.15781
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 22.8,
+            "10": 13.4,
+            "20": 16.1,
+            "5": 10.7
+          },
+          "max_adverse_pips": 6.7,
+          "max_favorable_pips": 32.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 393,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-30T12:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 5.4,
+            "10": -41.3,
+            "20": -30.7,
+            "5": -10.7
+          },
+          "max_adverse_pips": 44.0,
+          "max_favorable_pips": 12.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 412,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-31T07:00:00Z",
+            "touch_close": 1.15687
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.7,
+            "10": -14.7,
+            "20": -25.3,
+            "5": -17.3
+          },
+          "max_adverse_pips": 33.2,
+          "max_favorable_pips": 2.6,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 418,
+            "level_price": 1.15553,
+            "timestamp": "2025-10-31T13:00:00Z",
+            "touch_close": 1.15447
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.7,
+            "10": -10.7,
+            "20": 28.1,
+            "5": 1.3
+          },
+          "max_adverse_pips": 30.8,
+          "max_favorable_pips": 16.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 517,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-06T18:00:00Z",
+            "touch_close": 1.155
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.6,
+            "10": 10.7,
+            "20": 24.1,
+            "5": -5.3
+          },
+          "max_adverse_pips": 49.6,
+          "max_favorable_pips": 9.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 523,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T00:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": 13.4,
+            "20": 17.4,
+            "5": 21.4
+          },
+          "max_adverse_pips": 38.9,
+          "max_favorable_pips": 8.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 533,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T10:00:00Z",
+            "touch_close": 1.1554
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 4.0,
+            "10": -6.7,
+            "20": -16.1,
+            "5": -2.7
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 22.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 542,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-07T19:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -2.7,
+            "10": 12.0,
+            "20": 0.0,
+            "5": 10.7
+          },
+          "max_adverse_pips": 16.0,
+          "max_favorable_pips": 25.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 548,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T02:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 5.3,
+            "10": -6.7,
+            "20": -4.0,
+            "5": -20.1
+          },
+          "max_adverse_pips": 22.7,
+          "max_favorable_pips": 13.4,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 557,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T11:00:00Z",
+            "touch_close": 1.15674
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": -4.0,
+            "20": 42.9,
+            "5": -2.7
+          },
+          "max_adverse_pips": 45.6,
+          "max_favorable_pips": 12.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 563,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T17:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.1,
+            "10": 12.0,
+            "20": 28.1,
+            "5": 1.3
+          },
+          "max_adverse_pips": 8.1,
+          "max_favorable_pips": 49.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 569,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-10T23:00:00Z",
+            "touch_close": 1.15594
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.1,
+            "10": 41.6,
+            "20": 28.2,
+            "5": 21.5
+          },
+          "max_adverse_pips": 1.3,
+          "max_favorable_pips": 53.7,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 576,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-11T06:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -9.4,
+            "10": -21.4,
+            "20": -29.4,
+            "5": -36.0
+          },
+          "max_adverse_pips": 45.3,
+          "max_favorable_pips": 1.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 727,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-19T14:00:00Z",
+            "touch_close": 1.15594
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": 0.0,
+            "20": -15.9,
+            "5": 2.7
+          },
+          "max_adverse_pips": 17.3,
+          "max_favorable_pips": 21.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 751,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-20T14:00:00Z",
+            "touch_close": 1.1538
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.3,
+            "10": -33.2,
+            "20": -18.6,
+            "5": -15.9
+          },
+          "max_adverse_pips": 12.0,
+          "max_favorable_pips": 49.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 768,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-21T07:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -21.3,
+            "20": -16.0,
+            "5": -27.9
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 34.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 796,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-24T12:00:00Z",
+            "touch_close": 1.155
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.7,
+            "10": 25.4,
+            "20": 26.8,
+            "5": 38.8
+          },
+          "max_adverse_pips": 52.3,
+          "max_favorable_pips": 1.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 820,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-25T12:00:00Z",
+            "touch_close": 1.15473
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 26.8,
+            "10": 49.7,
+            "20": 25.5,
+            "5": 41.6
+          },
+          "max_adverse_pips": 4.0,
+          "max_favorable_pips": 61.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 845,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-26T13:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.1,
+            "10": 43.0,
+            "20": 51.1,
+            "5": 48.4
+          },
+          "max_adverse_pips": 1.3,
+          "max_favorable_pips": 56.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 890,
+            "level_price": 1.15553,
+            "timestamp": "2025-11-28T10:00:00Z",
+            "touch_close": 1.1562
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 32.2,
+            "10": 20.1,
+            "20": 61.9,
+            "5": 44.4
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 80.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2459,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-03T15:00:00Z",
+            "touch_close": 1.15768
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": 63.2,
+            "20": 0.0,
+            "5": 41.6
+          },
+          "max_adverse_pips": 46.5,
+          "max_favorable_pips": 67.2,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2528,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-06T12:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -21.4,
+            "10": 24.1,
+            "20": 52.5,
+            "5": -6.7
+          },
+          "max_adverse_pips": 76.8,
+          "max_favorable_pips": 50.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2544,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-09T05:00:00Z",
+            "touch_close": 1.15714
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.7,
+            "10": 76.7,
+            "20": 101.1,
+            "5": 28.1
+          },
+          "max_adverse_pips": 12.1,
+          "max_favorable_pips": 102.5,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2550,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-09T11:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -4.0,
+            "20": -38.6,
+            "5": -12.0
+          },
+          "max_adverse_pips": 39.9,
+          "max_favorable_pips": 14.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2609,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-11T22:00:00Z",
+            "touch_close": 1.1554
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": -26.6,
+            "20": -34.5,
+            "5": 8.1
+          },
+          "max_adverse_pips": 17.4,
+          "max_favorable_pips": 39.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2617,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-12T06:00:00Z",
+            "touch_close": 1.15513
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -12.0,
+            "10": -19.9,
+            "20": -93.8,
+            "5": -17.3
+          },
+          "max_adverse_pips": 105.6,
+          "max_favorable_pips": 10.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2623,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-12T12:00:00Z",
+            "touch_close": 1.1542
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.0,
+            "10": 2.7,
+            "20": -21.3,
+            "5": 0.0
+          },
+          "max_adverse_pips": 14.7,
+          "max_favorable_pips": 45.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2699,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-17T18:00:00Z",
+            "touch_close": 1.1542
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -16.0,
+            "10": -31.9,
+            "20": -59.7,
+            "5": 4.0
+          },
+          "max_adverse_pips": 10.7,
+          "max_favorable_pips": 93.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2711,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-18T06:00:00Z",
+            "touch_close": 1.1546
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 6.6,
+            "10": -51.5,
+            "20": -56.7,
+            "5": 7.9
+          },
+          "max_adverse_pips": 18.5,
+          "max_favorable_pips": 64.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2717,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-18T12:00:00Z",
+            "touch_close": 1.15115
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 21.4,
+            "10": -2.7,
+            "20": -17.4,
+            "5": 17.4
+          },
+          "max_adverse_pips": 55.0,
+          "max_favorable_pips": 24.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2746,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-19T17:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.3,
+            "10": -14.7,
+            "20": -4.0,
+            "5": 12.0
+          },
+          "max_adverse_pips": 33.3,
+          "max_favorable_pips": 22.8,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2756,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T03:00:00Z",
+            "touch_close": 1.15607
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 10.7,
+            "10": 8.0,
+            "20": -22.7,
+            "5": -13.4
+          },
+          "max_adverse_pips": 28.0,
+          "max_favorable_pips": 30.8,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2762,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T09:00:00Z",
+            "touch_close": 1.15527
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.7,
+            "10": 2.7,
+            "20": 55.0,
+            "5": 26.8
+          },
+          "max_adverse_pips": 75.2,
+          "max_favorable_pips": 58.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2768,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-20T15:00:00Z",
+            "touch_close": 1.15473
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 8.0,
+            "10": -59.7,
+            "20": 68.4,
+            "5": -10.7
+          },
+          "max_adverse_pips": 59.7,
+          "max_favorable_pips": 94.1,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2775,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-23T00:00:00Z",
+            "touch_close": 1.15487
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 56.4,
+            "10": 61.8,
+            "20": 53.7,
+            "5": 36.2
+          },
+          "max_adverse_pips": 84.8,
+          "max_favorable_pips": 6.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2786,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-23T11:00:00Z",
+            "touch_close": 1.1558
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 10.7,
+            "10": -9.4,
+            "20": -33.4,
+            "5": -9.4
+          },
+          "max_adverse_pips": 44.0,
+          "max_favorable_pips": 13.4,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2839,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-25T16:00:00Z",
+            "touch_close": 1.15714
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1.3,
+            "10": 0.0,
+            "20": -26.7,
+            "5": 8.0
+          },
+          "max_adverse_pips": 36.0,
+          "max_favorable_pips": 12.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2845,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-25T22:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -13.4,
+            "10": -30.8,
+            "20": -28.1,
+            "5": -42.7
+          },
+          "max_adverse_pips": 46.7,
+          "max_favorable_pips": -2.7,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2853,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T06:00:00Z",
+            "touch_close": 1.15701
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 4.0,
+            "10": -9.3,
+            "20": -23.9,
+            "5": -9.3
+          },
+          "max_adverse_pips": 14.7,
+          "max_favorable_pips": 27.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2860,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T13:00:00Z",
+            "touch_close": 1.1546
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 9.3,
+            "10": 9.3,
+            "20": -5.3,
+            "5": 14.6
+          },
+          "max_adverse_pips": 21.3,
+          "max_favorable_pips": 23.9,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2867,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-26T20:00:00Z",
+            "touch_close": 1.15287
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 2.7,
+            "10": 29.4,
+            "20": 63.0,
+            "5": 14.7
+          },
+          "max_adverse_pips": 76.5,
+          "max_favorable_pips": 0.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2934,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-31T16:00:00Z",
+            "touch_close": 1.15433
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 14.8,
+            "10": 38.9,
+            "20": 22.8,
+            "5": 2.7
+          },
+          "max_adverse_pips": 2.6,
+          "max_favorable_pips": 68.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2940,
+            "level_price": 1.15553,
+            "timestamp": "2026-03-31T22:00:00Z",
+            "touch_close": 1.1562
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -4.0,
+            "10": -33.2,
+            "20": -9.3,
+            "5": -16.0
+          },
+          "max_adverse_pips": 42.5,
+          "max_favorable_pips": 8.1,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 2967,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-02T01:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -6.6,
+            "10": -13.3,
+            "20": -6.6,
+            "5": -17.3
+          },
+          "max_adverse_pips": 5.4,
+          "max_favorable_pips": 22.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2980,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-02T14:00:00Z",
+            "touch_close": 1.15553
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -1.4,
+            "10": -26.6,
+            "20": 18.7,
+            "5": -24.0
+          },
+          "max_adverse_pips": 22.7,
+          "max_favorable_pips": 38.6,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3000,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-03T10:00:00Z",
+            "touch_close": 1.15487
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -8.0,
+            "10": -22.7,
+            "5": -10.7
+          },
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 29.4,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3020,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T07:00:00Z",
+            "touch_close": 1.15674
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -17.4,
+            "5": -14.7
+          },
+          "max_adverse_pips": 25.4,
+          "max_favorable_pips": 9.3,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_above",
+            "bar_index": 3026,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T13:00:00Z",
+            "touch_close": 1.15634
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 0.0
+          },
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 0.0,
+          "outcome": "consolidated",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 3034,
+            "level_price": 1.15553,
+            "timestamp": "2026-04-06T21:00:00Z",
+            "touch_close": 1.1546
+          }
+        }
+      ],
+      "reversal_count": 30,
+      "touch_count": 53,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
         "1": -2.9,
         "10": -2.5,
         "20": -5.7,
@@ -220587,1922 +223506,6 @@
     },
     {
       "avg_forward_pips": {
-        "1": 3.3,
-        "10": 2.7,
-        "20": 7.4,
-        "5": 3.7
-      },
-      "breakout_count": 22,
-      "consolidation_count": 0,
-      "forward_bars": 20,
-      "from_above_count": 30,
-      "from_above_reversal_count": 18,
-      "from_below_count": 22,
-      "from_below_reversal_count": 12,
-      "level": {
-        "label": "pdh_2025-11-06",
-        "level_type": "prev_day_high",
-        "price": 1.15553
-      },
-      "reactions": [
-        {
-          "forward_pips": {
-            "1": 0.0,
-            "10": 6.7,
-            "20": 5.3,
-            "5": 8.0
-          },
-          "max_adverse_pips": 12.0,
-          "max_favorable_pips": 30.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 40,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-09T15:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": 12.0,
-            "20": 36.2,
-            "5": 2.6
-          },
-          "max_adverse_pips": 9.4,
-          "max_favorable_pips": 63.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 46,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-09T21:00:00Z",
-            "touch_close": 1.15701
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 9.4,
-            "10": -9.4,
-            "20": 47.0,
-            "5": 22.8
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 53.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 96,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T00:00:00Z",
-            "touch_close": 1.15647
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": 60.4,
-            "20": 72.5,
-            "5": 8.0
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 76.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 103,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T07:00:00Z",
-            "touch_close": 1.15527
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 18.8,
-            "10": 28.2,
-            "20": 60.6,
-            "5": 29.6
-          },
-          "max_adverse_pips": 5.4,
-          "max_favorable_pips": 70.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 109,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T13:00:00Z",
-            "touch_close": 1.15781
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 22.8,
-            "10": 13.4,
-            "20": 16.1,
-            "5": 10.7
-          },
-          "max_adverse_pips": 6.7,
-          "max_favorable_pips": 32.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 393,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-30T12:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 5.4,
-            "10": -41.3,
-            "20": -30.7,
-            "5": -10.7
-          },
-          "max_adverse_pips": 44.0,
-          "max_favorable_pips": 12.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 412,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-31T07:00:00Z",
-            "touch_close": 1.15687
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.7,
-            "10": -14.7,
-            "20": -25.3,
-            "5": -17.3
-          },
-          "max_adverse_pips": 33.2,
-          "max_favorable_pips": 2.6,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 418,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-31T13:00:00Z",
-            "touch_close": 1.15447
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.7,
-            "10": -10.7,
-            "20": 28.1,
-            "5": 1.3
-          },
-          "max_adverse_pips": 30.8,
-          "max_favorable_pips": 16.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 517,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-06T18:00:00Z",
-            "touch_close": 1.155
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.6,
-            "10": 10.7,
-            "20": 24.1,
-            "5": -5.3
-          },
-          "max_adverse_pips": 49.6,
-          "max_favorable_pips": 9.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 523,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T00:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": 13.4,
-            "20": 17.4,
-            "5": 21.4
-          },
-          "max_adverse_pips": 38.9,
-          "max_favorable_pips": 8.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 533,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T10:00:00Z",
-            "touch_close": 1.1554
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 4.0,
-            "10": -6.7,
-            "20": -16.1,
-            "5": -2.7
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 22.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 542,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T19:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.7,
-            "10": 12.0,
-            "20": 0.0,
-            "5": 10.7
-          },
-          "max_adverse_pips": 16.0,
-          "max_favorable_pips": 25.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 548,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T02:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 5.3,
-            "10": -6.7,
-            "20": -4.0,
-            "5": -20.1
-          },
-          "max_adverse_pips": 22.7,
-          "max_favorable_pips": 13.4,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 557,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T11:00:00Z",
-            "touch_close": 1.15674
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": -4.0,
-            "20": 42.9,
-            "5": -2.7
-          },
-          "max_adverse_pips": 45.6,
-          "max_favorable_pips": 12.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 563,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T17:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.1,
-            "10": 12.0,
-            "20": 28.1,
-            "5": 1.3
-          },
-          "max_adverse_pips": 8.1,
-          "max_favorable_pips": 49.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 569,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T23:00:00Z",
-            "touch_close": 1.15594
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.1,
-            "10": 41.6,
-            "20": 28.2,
-            "5": 21.5
-          },
-          "max_adverse_pips": 1.3,
-          "max_favorable_pips": 53.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 576,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-11T06:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -9.4,
-            "10": -21.4,
-            "20": -29.4,
-            "5": -36.0
-          },
-          "max_adverse_pips": 45.3,
-          "max_favorable_pips": 1.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 727,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-19T14:00:00Z",
-            "touch_close": 1.15594
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": 0.0,
-            "20": -15.9,
-            "5": 2.7
-          },
-          "max_adverse_pips": 17.3,
-          "max_favorable_pips": 21.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 751,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-20T14:00:00Z",
-            "touch_close": 1.1538
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.3,
-            "10": -33.2,
-            "20": -18.6,
-            "5": -15.9
-          },
-          "max_adverse_pips": 12.0,
-          "max_favorable_pips": 49.0,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 768,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-21T07:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -21.3,
-            "20": -16.0,
-            "5": -27.9
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 34.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 796,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-24T12:00:00Z",
-            "touch_close": 1.155
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.7,
-            "10": 25.4,
-            "20": 26.8,
-            "5": 38.8
-          },
-          "max_adverse_pips": 52.3,
-          "max_favorable_pips": 1.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 820,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-25T12:00:00Z",
-            "touch_close": 1.15473
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 26.8,
-            "10": 49.7,
-            "20": 25.5,
-            "5": 41.6
-          },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 61.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 845,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-26T13:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.1,
-            "10": 43.0,
-            "20": 51.1,
-            "5": 48.4
-          },
-          "max_adverse_pips": 1.3,
-          "max_favorable_pips": 56.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 890,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-28T10:00:00Z",
-            "touch_close": 1.1562
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 32.2,
-            "10": 20.1,
-            "20": 61.9,
-            "5": 44.4
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 80.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2459,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-03T15:00:00Z",
-            "touch_close": 1.15768
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": 63.2,
-            "20": 0.0,
-            "5": 41.6
-          },
-          "max_adverse_pips": 46.5,
-          "max_favorable_pips": 67.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2528,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-06T12:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -21.4,
-            "10": 24.1,
-            "20": 52.5,
-            "5": -6.7
-          },
-          "max_adverse_pips": 76.8,
-          "max_favorable_pips": 50.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2544,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-09T05:00:00Z",
-            "touch_close": 1.15714
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.7,
-            "10": 76.7,
-            "20": 101.1,
-            "5": 28.1
-          },
-          "max_adverse_pips": 12.1,
-          "max_favorable_pips": 102.5,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2550,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-09T11:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -4.0,
-            "20": -38.6,
-            "5": -12.0
-          },
-          "max_adverse_pips": 39.9,
-          "max_favorable_pips": 14.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2609,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-11T22:00:00Z",
-            "touch_close": 1.1554
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": -26.6,
-            "20": -34.5,
-            "5": 8.1
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 39.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2617,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-12T06:00:00Z",
-            "touch_close": 1.15513
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -12.0,
-            "10": -19.9,
-            "20": -93.8,
-            "5": -17.3
-          },
-          "max_adverse_pips": 105.6,
-          "max_favorable_pips": 10.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2623,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-12T12:00:00Z",
-            "touch_close": 1.1542
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.0,
-            "10": 2.7,
-            "20": -21.3,
-            "5": 0.0
-          },
-          "max_adverse_pips": 14.7,
-          "max_favorable_pips": 45.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2699,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-17T18:00:00Z",
-            "touch_close": 1.1542
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -16.0,
-            "10": -31.9,
-            "20": -59.7,
-            "5": 4.0
-          },
-          "max_adverse_pips": 10.7,
-          "max_favorable_pips": 93.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2711,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-18T06:00:00Z",
-            "touch_close": 1.1546
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 6.6,
-            "10": -51.5,
-            "20": -56.7,
-            "5": 7.9
-          },
-          "max_adverse_pips": 18.5,
-          "max_favorable_pips": 64.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2717,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-18T12:00:00Z",
-            "touch_close": 1.15115
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 21.4,
-            "10": -2.7,
-            "20": -17.4,
-            "5": 17.4
-          },
-          "max_adverse_pips": 55.0,
-          "max_favorable_pips": 24.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2746,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-19T17:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.3,
-            "10": -14.7,
-            "20": -4.0,
-            "5": 12.0
-          },
-          "max_adverse_pips": 33.3,
-          "max_favorable_pips": 22.8,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2756,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T03:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 10.7,
-            "10": 8.0,
-            "20": -22.7,
-            "5": -13.4
-          },
-          "max_adverse_pips": 28.0,
-          "max_favorable_pips": 30.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2762,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T09:00:00Z",
-            "touch_close": 1.15527
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.7,
-            "10": 2.7,
-            "20": 55.0,
-            "5": 26.8
-          },
-          "max_adverse_pips": 75.2,
-          "max_favorable_pips": 58.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2768,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T15:00:00Z",
-            "touch_close": 1.15473
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": -59.7,
-            "20": 68.4,
-            "5": -10.7
-          },
-          "max_adverse_pips": 59.7,
-          "max_favorable_pips": 94.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2775,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-23T00:00:00Z",
-            "touch_close": 1.15487
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 56.4,
-            "10": 61.8,
-            "20": 53.7,
-            "5": 36.2
-          },
-          "max_adverse_pips": 84.8,
-          "max_favorable_pips": 6.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2786,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-23T11:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 10.7,
-            "10": -9.4,
-            "20": -33.4,
-            "5": -9.4
-          },
-          "max_adverse_pips": 44.0,
-          "max_favorable_pips": 13.4,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2839,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-25T16:00:00Z",
-            "touch_close": 1.15714
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 1.3,
-            "10": 0.0,
-            "20": -26.7,
-            "5": 8.0
-          },
-          "max_adverse_pips": 36.0,
-          "max_favorable_pips": 12.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2845,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-25T22:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -13.4,
-            "10": -30.8,
-            "20": -28.1,
-            "5": -42.7
-          },
-          "max_adverse_pips": 46.7,
-          "max_favorable_pips": -2.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2853,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T06:00:00Z",
-            "touch_close": 1.15701
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 4.0,
-            "10": -9.3,
-            "20": -23.9,
-            "5": -9.3
-          },
-          "max_adverse_pips": 14.7,
-          "max_favorable_pips": 27.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2860,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T13:00:00Z",
-            "touch_close": 1.1546
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 9.3,
-            "10": 9.3,
-            "20": -5.3,
-            "5": 14.6
-          },
-          "max_adverse_pips": 21.3,
-          "max_favorable_pips": 23.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2867,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T20:00:00Z",
-            "touch_close": 1.15287
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": 29.4,
-            "20": 63.0,
-            "5": 14.7
-          },
-          "max_adverse_pips": 76.5,
-          "max_favorable_pips": 0.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2934,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-31T16:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.8,
-            "10": 38.9,
-            "20": 22.8,
-            "5": 2.7
-          },
-          "max_adverse_pips": 2.6,
-          "max_favorable_pips": 68.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2940,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-31T22:00:00Z",
-            "touch_close": 1.1562
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.0,
-            "10": -33.2,
-            "20": -9.3,
-            "5": -16.0
-          },
-          "max_adverse_pips": 42.5,
-          "max_favorable_pips": 8.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2967,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-02T01:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.6,
-            "10": -13.3,
-            "20": -6.6,
-            "5": -17.3
-          },
-          "max_adverse_pips": 5.4,
-          "max_favorable_pips": 22.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2980,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-02T14:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": -26.6,
-            "20": 18.7,
-            "5": -24.0
-          },
-          "max_adverse_pips": 22.7,
-          "max_favorable_pips": 38.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 3000,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-03T10:00:00Z",
-            "touch_close": 1.15487
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -22.7,
-            "5": -10.7
-          },
-          "max_adverse_pips": 5.3,
-          "max_favorable_pips": 29.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 3020,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-06T07:00:00Z",
-            "touch_close": 1.15674
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -17.4,
-            "5": -14.7
-          },
-          "max_adverse_pips": 25.4,
-          "max_favorable_pips": 9.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 3026,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-06T13:00:00Z",
-            "touch_close": 1.15634
-          }
-        }
-      ],
-      "reversal_count": 30,
-      "touch_count": 52,
-      "zone_pips": 5.0
-    },
-    {
-      "avg_forward_pips": {
-        "1": 3.3,
-        "10": 2.7,
-        "20": 7.4,
-        "5": 3.7
-      },
-      "breakout_count": 22,
-      "consolidation_count": 0,
-      "forward_bars": 20,
-      "from_above_count": 30,
-      "from_above_reversal_count": 18,
-      "from_below_count": 22,
-      "from_below_reversal_count": 12,
-      "level": {
-        "label": "pdh_2025-11-21",
-        "level_type": "prev_day_high",
-        "price": 1.15553
-      },
-      "reactions": [
-        {
-          "forward_pips": {
-            "1": 0.0,
-            "10": 6.7,
-            "20": 5.3,
-            "5": 8.0
-          },
-          "max_adverse_pips": 12.0,
-          "max_favorable_pips": 30.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 40,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-09T15:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": 12.0,
-            "20": 36.2,
-            "5": 2.6
-          },
-          "max_adverse_pips": 9.4,
-          "max_favorable_pips": 63.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 46,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-09T21:00:00Z",
-            "touch_close": 1.15701
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 9.4,
-            "10": -9.4,
-            "20": 47.0,
-            "5": 22.8
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 53.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 96,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T00:00:00Z",
-            "touch_close": 1.15647
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": 60.4,
-            "20": 72.5,
-            "5": 8.0
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 76.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 103,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T07:00:00Z",
-            "touch_close": 1.15527
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 18.8,
-            "10": 28.2,
-            "20": 60.6,
-            "5": 29.6
-          },
-          "max_adverse_pips": 5.4,
-          "max_favorable_pips": 70.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 109,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T13:00:00Z",
-            "touch_close": 1.15781
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 22.8,
-            "10": 13.4,
-            "20": 16.1,
-            "5": 10.7
-          },
-          "max_adverse_pips": 6.7,
-          "max_favorable_pips": 32.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 393,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-30T12:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 5.4,
-            "10": -41.3,
-            "20": -30.7,
-            "5": -10.7
-          },
-          "max_adverse_pips": 44.0,
-          "max_favorable_pips": 12.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 412,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-31T07:00:00Z",
-            "touch_close": 1.15687
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.7,
-            "10": -14.7,
-            "20": -25.3,
-            "5": -17.3
-          },
-          "max_adverse_pips": 33.2,
-          "max_favorable_pips": 2.6,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 418,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-31T13:00:00Z",
-            "touch_close": 1.15447
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.7,
-            "10": -10.7,
-            "20": 28.1,
-            "5": 1.3
-          },
-          "max_adverse_pips": 30.8,
-          "max_favorable_pips": 16.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 517,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-06T18:00:00Z",
-            "touch_close": 1.155
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.6,
-            "10": 10.7,
-            "20": 24.1,
-            "5": -5.3
-          },
-          "max_adverse_pips": 49.6,
-          "max_favorable_pips": 9.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 523,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T00:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": 13.4,
-            "20": 17.4,
-            "5": 21.4
-          },
-          "max_adverse_pips": 38.9,
-          "max_favorable_pips": 8.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 533,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T10:00:00Z",
-            "touch_close": 1.1554
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 4.0,
-            "10": -6.7,
-            "20": -16.1,
-            "5": -2.7
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 22.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 542,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T19:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.7,
-            "10": 12.0,
-            "20": 0.0,
-            "5": 10.7
-          },
-          "max_adverse_pips": 16.0,
-          "max_favorable_pips": 25.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 548,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T02:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 5.3,
-            "10": -6.7,
-            "20": -4.0,
-            "5": -20.1
-          },
-          "max_adverse_pips": 22.7,
-          "max_favorable_pips": 13.4,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 557,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T11:00:00Z",
-            "touch_close": 1.15674
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": -4.0,
-            "20": 42.9,
-            "5": -2.7
-          },
-          "max_adverse_pips": 45.6,
-          "max_favorable_pips": 12.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 563,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T17:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.1,
-            "10": 12.0,
-            "20": 28.1,
-            "5": 1.3
-          },
-          "max_adverse_pips": 8.1,
-          "max_favorable_pips": 49.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 569,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T23:00:00Z",
-            "touch_close": 1.15594
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.1,
-            "10": 41.6,
-            "20": 28.2,
-            "5": 21.5
-          },
-          "max_adverse_pips": 1.3,
-          "max_favorable_pips": 53.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 576,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-11T06:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -9.4,
-            "10": -21.4,
-            "20": -29.4,
-            "5": -36.0
-          },
-          "max_adverse_pips": 45.3,
-          "max_favorable_pips": 1.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 727,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-19T14:00:00Z",
-            "touch_close": 1.15594
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": 0.0,
-            "20": -15.9,
-            "5": 2.7
-          },
-          "max_adverse_pips": 17.3,
-          "max_favorable_pips": 21.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 751,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-20T14:00:00Z",
-            "touch_close": 1.1538
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.3,
-            "10": -33.2,
-            "20": -18.6,
-            "5": -15.9
-          },
-          "max_adverse_pips": 12.0,
-          "max_favorable_pips": 49.0,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 768,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-21T07:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -21.3,
-            "20": -16.0,
-            "5": -27.9
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 34.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 796,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-24T12:00:00Z",
-            "touch_close": 1.155
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.7,
-            "10": 25.4,
-            "20": 26.8,
-            "5": 38.8
-          },
-          "max_adverse_pips": 52.3,
-          "max_favorable_pips": 1.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 820,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-25T12:00:00Z",
-            "touch_close": 1.15473
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 26.8,
-            "10": 49.7,
-            "20": 25.5,
-            "5": 41.6
-          },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 61.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 845,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-26T13:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.1,
-            "10": 43.0,
-            "20": 51.1,
-            "5": 48.4
-          },
-          "max_adverse_pips": 1.3,
-          "max_favorable_pips": 56.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 890,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-28T10:00:00Z",
-            "touch_close": 1.1562
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 32.2,
-            "10": 20.1,
-            "20": 61.9,
-            "5": 44.4
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 80.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2459,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-03T15:00:00Z",
-            "touch_close": 1.15768
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": 63.2,
-            "20": 0.0,
-            "5": 41.6
-          },
-          "max_adverse_pips": 46.5,
-          "max_favorable_pips": 67.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2528,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-06T12:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -21.4,
-            "10": 24.1,
-            "20": 52.5,
-            "5": -6.7
-          },
-          "max_adverse_pips": 76.8,
-          "max_favorable_pips": 50.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2544,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-09T05:00:00Z",
-            "touch_close": 1.15714
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.7,
-            "10": 76.7,
-            "20": 101.1,
-            "5": 28.1
-          },
-          "max_adverse_pips": 12.1,
-          "max_favorable_pips": 102.5,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2550,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-09T11:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -4.0,
-            "20": -38.6,
-            "5": -12.0
-          },
-          "max_adverse_pips": 39.9,
-          "max_favorable_pips": 14.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2609,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-11T22:00:00Z",
-            "touch_close": 1.1554
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": -26.6,
-            "20": -34.5,
-            "5": 8.1
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 39.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2617,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-12T06:00:00Z",
-            "touch_close": 1.15513
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -12.0,
-            "10": -19.9,
-            "20": -93.8,
-            "5": -17.3
-          },
-          "max_adverse_pips": 105.6,
-          "max_favorable_pips": 10.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2623,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-12T12:00:00Z",
-            "touch_close": 1.1542
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.0,
-            "10": 2.7,
-            "20": -21.3,
-            "5": 0.0
-          },
-          "max_adverse_pips": 14.7,
-          "max_favorable_pips": 45.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2699,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-17T18:00:00Z",
-            "touch_close": 1.1542
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -16.0,
-            "10": -31.9,
-            "20": -59.7,
-            "5": 4.0
-          },
-          "max_adverse_pips": 10.7,
-          "max_favorable_pips": 93.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2711,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-18T06:00:00Z",
-            "touch_close": 1.1546
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 6.6,
-            "10": -51.5,
-            "20": -56.7,
-            "5": 7.9
-          },
-          "max_adverse_pips": 18.5,
-          "max_favorable_pips": 64.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2717,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-18T12:00:00Z",
-            "touch_close": 1.15115
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 21.4,
-            "10": -2.7,
-            "20": -17.4,
-            "5": 17.4
-          },
-          "max_adverse_pips": 55.0,
-          "max_favorable_pips": 24.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2746,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-19T17:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.3,
-            "10": -14.7,
-            "20": -4.0,
-            "5": 12.0
-          },
-          "max_adverse_pips": 33.3,
-          "max_favorable_pips": 22.8,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2756,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T03:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 10.7,
-            "10": 8.0,
-            "20": -22.7,
-            "5": -13.4
-          },
-          "max_adverse_pips": 28.0,
-          "max_favorable_pips": 30.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2762,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T09:00:00Z",
-            "touch_close": 1.15527
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.7,
-            "10": 2.7,
-            "20": 55.0,
-            "5": 26.8
-          },
-          "max_adverse_pips": 75.2,
-          "max_favorable_pips": 58.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2768,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T15:00:00Z",
-            "touch_close": 1.15473
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": -59.7,
-            "20": 68.4,
-            "5": -10.7
-          },
-          "max_adverse_pips": 59.7,
-          "max_favorable_pips": 94.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2775,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-23T00:00:00Z",
-            "touch_close": 1.15487
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 56.4,
-            "10": 61.8,
-            "20": 53.7,
-            "5": 36.2
-          },
-          "max_adverse_pips": 84.8,
-          "max_favorable_pips": 6.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2786,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-23T11:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 10.7,
-            "10": -9.4,
-            "20": -33.4,
-            "5": -9.4
-          },
-          "max_adverse_pips": 44.0,
-          "max_favorable_pips": 13.4,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2839,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-25T16:00:00Z",
-            "touch_close": 1.15714
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 1.3,
-            "10": 0.0,
-            "20": -26.7,
-            "5": 8.0
-          },
-          "max_adverse_pips": 36.0,
-          "max_favorable_pips": 12.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2845,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-25T22:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -13.4,
-            "10": -30.8,
-            "20": -28.1,
-            "5": -42.7
-          },
-          "max_adverse_pips": 46.7,
-          "max_favorable_pips": -2.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2853,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T06:00:00Z",
-            "touch_close": 1.15701
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 4.0,
-            "10": -9.3,
-            "20": -23.9,
-            "5": -9.3
-          },
-          "max_adverse_pips": 14.7,
-          "max_favorable_pips": 27.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2860,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T13:00:00Z",
-            "touch_close": 1.1546
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 9.3,
-            "10": 9.3,
-            "20": -5.3,
-            "5": 14.6
-          },
-          "max_adverse_pips": 21.3,
-          "max_favorable_pips": 23.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2867,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T20:00:00Z",
-            "touch_close": 1.15287
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": 29.4,
-            "20": 63.0,
-            "5": 14.7
-          },
-          "max_adverse_pips": 76.5,
-          "max_favorable_pips": 0.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2934,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-31T16:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.8,
-            "10": 38.9,
-            "20": 22.8,
-            "5": 2.7
-          },
-          "max_adverse_pips": 2.6,
-          "max_favorable_pips": 68.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2940,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-31T22:00:00Z",
-            "touch_close": 1.1562
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.0,
-            "10": -33.2,
-            "20": -9.3,
-            "5": -16.0
-          },
-          "max_adverse_pips": 42.5,
-          "max_favorable_pips": 8.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2967,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-02T01:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.6,
-            "10": -13.3,
-            "20": -6.6,
-            "5": -17.3
-          },
-          "max_adverse_pips": 5.4,
-          "max_favorable_pips": 22.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2980,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-02T14:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": -26.6,
-            "20": 18.7,
-            "5": -24.0
-          },
-          "max_adverse_pips": 22.7,
-          "max_favorable_pips": 38.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 3000,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-03T10:00:00Z",
-            "touch_close": 1.15487
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -22.7,
-            "5": -10.7
-          },
-          "max_adverse_pips": 5.3,
-          "max_favorable_pips": 29.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 3020,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-06T07:00:00Z",
-            "touch_close": 1.15674
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -17.4,
-            "5": -14.7
-          },
-          "max_adverse_pips": 25.4,
-          "max_favorable_pips": 9.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 3026,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-06T13:00:00Z",
-            "touch_close": 1.15634
-          }
-        }
-      ],
-      "reversal_count": 30,
-      "touch_count": 52,
-      "zone_pips": 5.0
-    },
-    {
-      "avg_forward_pips": {
         "1": 0.8,
         "10": 6.8,
         "20": 7.7,
@@ -225372,964 +226375,6 @@
         }
       ],
       "reversal_count": 26,
-      "touch_count": 52,
-      "zone_pips": 5.0
-    },
-    {
-      "avg_forward_pips": {
-        "1": 3.3,
-        "10": 2.7,
-        "20": 7.4,
-        "5": 3.7
-      },
-      "breakout_count": 22,
-      "consolidation_count": 0,
-      "forward_bars": 20,
-      "from_above_count": 30,
-      "from_above_reversal_count": 18,
-      "from_below_count": 22,
-      "from_below_reversal_count": 12,
-      "level": {
-        "label": "london_high_2025-11-21",
-        "level_type": "session_high",
-        "price": 1.15553
-      },
-      "reactions": [
-        {
-          "forward_pips": {
-            "1": 0.0,
-            "10": 6.7,
-            "20": 5.3,
-            "5": 8.0
-          },
-          "max_adverse_pips": 12.0,
-          "max_favorable_pips": 30.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 40,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-09T15:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": 12.0,
-            "20": 36.2,
-            "5": 2.6
-          },
-          "max_adverse_pips": 9.4,
-          "max_favorable_pips": 63.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 46,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-09T21:00:00Z",
-            "touch_close": 1.15701
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 9.4,
-            "10": -9.4,
-            "20": 47.0,
-            "5": 22.8
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 53.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 96,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T00:00:00Z",
-            "touch_close": 1.15647
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": 60.4,
-            "20": 72.5,
-            "5": 8.0
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 76.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 103,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T07:00:00Z",
-            "touch_close": 1.15527
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 18.8,
-            "10": 28.2,
-            "20": 60.6,
-            "5": 29.6
-          },
-          "max_adverse_pips": 5.4,
-          "max_favorable_pips": 70.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 109,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-14T13:00:00Z",
-            "touch_close": 1.15781
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 22.8,
-            "10": 13.4,
-            "20": 16.1,
-            "5": 10.7
-          },
-          "max_adverse_pips": 6.7,
-          "max_favorable_pips": 32.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 393,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-30T12:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 5.4,
-            "10": -41.3,
-            "20": -30.7,
-            "5": -10.7
-          },
-          "max_adverse_pips": 44.0,
-          "max_favorable_pips": 12.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 412,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-31T07:00:00Z",
-            "touch_close": 1.15687
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.7,
-            "10": -14.7,
-            "20": -25.3,
-            "5": -17.3
-          },
-          "max_adverse_pips": 33.2,
-          "max_favorable_pips": 2.6,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 418,
-            "level_price": 1.15553,
-            "timestamp": "2025-10-31T13:00:00Z",
-            "touch_close": 1.15447
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.7,
-            "10": -10.7,
-            "20": 28.1,
-            "5": 1.3
-          },
-          "max_adverse_pips": 30.8,
-          "max_favorable_pips": 16.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 517,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-06T18:00:00Z",
-            "touch_close": 1.155
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.6,
-            "10": 10.7,
-            "20": 24.1,
-            "5": -5.3
-          },
-          "max_adverse_pips": 49.6,
-          "max_favorable_pips": 9.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 523,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T00:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": 13.4,
-            "20": 17.4,
-            "5": 21.4
-          },
-          "max_adverse_pips": 38.9,
-          "max_favorable_pips": 8.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 533,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T10:00:00Z",
-            "touch_close": 1.1554
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 4.0,
-            "10": -6.7,
-            "20": -16.1,
-            "5": -2.7
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 22.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 542,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-07T19:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -2.7,
-            "10": 12.0,
-            "20": 0.0,
-            "5": 10.7
-          },
-          "max_adverse_pips": 16.0,
-          "max_favorable_pips": 25.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 548,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T02:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 5.3,
-            "10": -6.7,
-            "20": -4.0,
-            "5": -20.1
-          },
-          "max_adverse_pips": 22.7,
-          "max_favorable_pips": 13.4,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 557,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T11:00:00Z",
-            "touch_close": 1.15674
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": -4.0,
-            "20": 42.9,
-            "5": -2.7
-          },
-          "max_adverse_pips": 45.6,
-          "max_favorable_pips": 12.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 563,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T17:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.1,
-            "10": 12.0,
-            "20": 28.1,
-            "5": 1.3
-          },
-          "max_adverse_pips": 8.1,
-          "max_favorable_pips": 49.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 569,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-10T23:00:00Z",
-            "touch_close": 1.15594
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.1,
-            "10": 41.6,
-            "20": 28.2,
-            "5": 21.5
-          },
-          "max_adverse_pips": 1.3,
-          "max_favorable_pips": 53.7,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 576,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-11T06:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -9.4,
-            "10": -21.4,
-            "20": -29.4,
-            "5": -36.0
-          },
-          "max_adverse_pips": 45.3,
-          "max_favorable_pips": 1.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 727,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-19T14:00:00Z",
-            "touch_close": 1.15594
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": 0.0,
-            "20": -15.9,
-            "5": 2.7
-          },
-          "max_adverse_pips": 17.3,
-          "max_favorable_pips": 21.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 751,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-20T14:00:00Z",
-            "touch_close": 1.1538
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.3,
-            "10": -33.2,
-            "20": -18.6,
-            "5": -15.9
-          },
-          "max_adverse_pips": 12.0,
-          "max_favorable_pips": 49.0,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 768,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-21T07:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -21.3,
-            "20": -16.0,
-            "5": -27.9
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 34.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 796,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-24T12:00:00Z",
-            "touch_close": 1.155
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.7,
-            "10": 25.4,
-            "20": 26.8,
-            "5": 38.8
-          },
-          "max_adverse_pips": 52.3,
-          "max_favorable_pips": 1.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 820,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-25T12:00:00Z",
-            "touch_close": 1.15473
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 26.8,
-            "10": 49.7,
-            "20": 25.5,
-            "5": 41.6
-          },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 61.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 845,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-26T13:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.1,
-            "10": 43.0,
-            "20": 51.1,
-            "5": 48.4
-          },
-          "max_adverse_pips": 1.3,
-          "max_favorable_pips": 56.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 890,
-            "level_price": 1.15553,
-            "timestamp": "2025-11-28T10:00:00Z",
-            "touch_close": 1.1562
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 32.2,
-            "10": 20.1,
-            "20": 61.9,
-            "5": 44.4
-          },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 80.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2459,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-03T15:00:00Z",
-            "touch_close": 1.15768
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": 63.2,
-            "20": 0.0,
-            "5": 41.6
-          },
-          "max_adverse_pips": 46.5,
-          "max_favorable_pips": 67.2,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2528,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-06T12:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -21.4,
-            "10": 24.1,
-            "20": 52.5,
-            "5": -6.7
-          },
-          "max_adverse_pips": 76.8,
-          "max_favorable_pips": 50.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2544,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-09T05:00:00Z",
-            "touch_close": 1.15714
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.7,
-            "10": 76.7,
-            "20": 101.1,
-            "5": 28.1
-          },
-          "max_adverse_pips": 12.1,
-          "max_favorable_pips": 102.5,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2550,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-09T11:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -4.0,
-            "20": -38.6,
-            "5": -12.0
-          },
-          "max_adverse_pips": 39.9,
-          "max_favorable_pips": 14.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2609,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-11T22:00:00Z",
-            "touch_close": 1.1554
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": -26.6,
-            "20": -34.5,
-            "5": 8.1
-          },
-          "max_adverse_pips": 17.4,
-          "max_favorable_pips": 39.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2617,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-12T06:00:00Z",
-            "touch_close": 1.15513
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -12.0,
-            "10": -19.9,
-            "20": -93.8,
-            "5": -17.3
-          },
-          "max_adverse_pips": 105.6,
-          "max_favorable_pips": 10.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2623,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-12T12:00:00Z",
-            "touch_close": 1.1542
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.0,
-            "10": 2.7,
-            "20": -21.3,
-            "5": 0.0
-          },
-          "max_adverse_pips": 14.7,
-          "max_favorable_pips": 45.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2699,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-17T18:00:00Z",
-            "touch_close": 1.1542
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -16.0,
-            "10": -31.9,
-            "20": -59.7,
-            "5": 4.0
-          },
-          "max_adverse_pips": 10.7,
-          "max_favorable_pips": 93.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2711,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-18T06:00:00Z",
-            "touch_close": 1.1546
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 6.6,
-            "10": -51.5,
-            "20": -56.7,
-            "5": 7.9
-          },
-          "max_adverse_pips": 18.5,
-          "max_favorable_pips": 64.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2717,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-18T12:00:00Z",
-            "touch_close": 1.15115
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 21.4,
-            "10": -2.7,
-            "20": -17.4,
-            "5": 17.4
-          },
-          "max_adverse_pips": 55.0,
-          "max_favorable_pips": 24.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2746,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-19T17:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.3,
-            "10": -14.7,
-            "20": -4.0,
-            "5": 12.0
-          },
-          "max_adverse_pips": 33.3,
-          "max_favorable_pips": 22.8,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2756,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T03:00:00Z",
-            "touch_close": 1.15607
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 10.7,
-            "10": 8.0,
-            "20": -22.7,
-            "5": -13.4
-          },
-          "max_adverse_pips": 28.0,
-          "max_favorable_pips": 30.8,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2762,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T09:00:00Z",
-            "touch_close": 1.15527
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.7,
-            "10": 2.7,
-            "20": 55.0,
-            "5": 26.8
-          },
-          "max_adverse_pips": 75.2,
-          "max_favorable_pips": 58.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2768,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-20T15:00:00Z",
-            "touch_close": 1.15473
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 8.0,
-            "10": -59.7,
-            "20": 68.4,
-            "5": -10.7
-          },
-          "max_adverse_pips": 59.7,
-          "max_favorable_pips": 94.1,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2775,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-23T00:00:00Z",
-            "touch_close": 1.15487
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 56.4,
-            "10": 61.8,
-            "20": 53.7,
-            "5": 36.2
-          },
-          "max_adverse_pips": 84.8,
-          "max_favorable_pips": 6.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2786,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-23T11:00:00Z",
-            "touch_close": 1.1558
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 10.7,
-            "10": -9.4,
-            "20": -33.4,
-            "5": -9.4
-          },
-          "max_adverse_pips": 44.0,
-          "max_favorable_pips": 13.4,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2839,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-25T16:00:00Z",
-            "touch_close": 1.15714
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 1.3,
-            "10": 0.0,
-            "20": -26.7,
-            "5": 8.0
-          },
-          "max_adverse_pips": 36.0,
-          "max_favorable_pips": 12.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2845,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-25T22:00:00Z",
-            "touch_close": 1.15634
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -13.4,
-            "10": -30.8,
-            "20": -28.1,
-            "5": -42.7
-          },
-          "max_adverse_pips": 46.7,
-          "max_favorable_pips": -2.7,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2853,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T06:00:00Z",
-            "touch_close": 1.15701
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 4.0,
-            "10": -9.3,
-            "20": -23.9,
-            "5": -9.3
-          },
-          "max_adverse_pips": 14.7,
-          "max_favorable_pips": 27.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2860,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T13:00:00Z",
-            "touch_close": 1.1546
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 9.3,
-            "10": 9.3,
-            "20": -5.3,
-            "5": 14.6
-          },
-          "max_adverse_pips": 21.3,
-          "max_favorable_pips": 23.9,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2867,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-26T20:00:00Z",
-            "touch_close": 1.15287
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 2.7,
-            "10": 29.4,
-            "20": 63.0,
-            "5": 14.7
-          },
-          "max_adverse_pips": 76.5,
-          "max_favorable_pips": 0.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2934,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-31T16:00:00Z",
-            "touch_close": 1.15433
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 14.8,
-            "10": 38.9,
-            "20": 22.8,
-            "5": 2.7
-          },
-          "max_adverse_pips": 2.6,
-          "max_favorable_pips": 68.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2940,
-            "level_price": 1.15553,
-            "timestamp": "2026-03-31T22:00:00Z",
-            "touch_close": 1.1562
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -4.0,
-            "10": -33.2,
-            "20": -9.3,
-            "5": -16.0
-          },
-          "max_adverse_pips": 42.5,
-          "max_favorable_pips": 8.1,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 2967,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-02T01:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -6.6,
-            "10": -13.3,
-            "20": -6.6,
-            "5": -17.3
-          },
-          "max_adverse_pips": 5.4,
-          "max_favorable_pips": 22.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2980,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-02T14:00:00Z",
-            "touch_close": 1.15553
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -1.4,
-            "10": -26.6,
-            "20": 18.7,
-            "5": -24.0
-          },
-          "max_adverse_pips": 22.7,
-          "max_favorable_pips": 38.6,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 3000,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-03T10:00:00Z",
-            "touch_close": 1.15487
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -8.0,
-            "10": -22.7,
-            "5": -10.7
-          },
-          "max_adverse_pips": 5.3,
-          "max_favorable_pips": 29.4,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 3020,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-06T07:00:00Z",
-            "touch_close": 1.15674
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -17.4,
-            "5": -14.7
-          },
-          "max_adverse_pips": 25.4,
-          "max_favorable_pips": 9.3,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_above",
-            "bar_index": 3026,
-            "level_price": 1.15553,
-            "timestamp": "2026-04-06T13:00:00Z",
-            "touch_close": 1.15634
-          }
-        }
-      ],
-      "reversal_count": 30,
       "touch_count": 52,
       "zone_pips": 5.0
     },
@@ -236742,10 +236787,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 0.0,
+          "max_adverse_pips": 6.6,
+          "max_favorable_pips": 2.7,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -237661,10 +237706,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 0.0,
+          "max_adverse_pips": 6.6,
+          "max_favorable_pips": 2.7,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -238580,10 +238625,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 0.0,
+          "max_adverse_pips": 6.6,
+          "max_favorable_pips": 2.7,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -239499,10 +239544,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 0.0,
+          "max_adverse_pips": 6.6,
+          "max_favorable_pips": 2.7,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -240402,9 +240447,10 @@
         },
         {
           "forward_pips": {
-            "1": 4.0
+            "1": 4.0,
+            "5": 1.3
           },
-          "max_adverse_pips": 1.4,
+          "max_adverse_pips": 2.7,
           "max_favorable_pips": 10.6,
           "outcome": "consolidated",
           "touch": {
@@ -243119,9 +243165,10 @@
         },
         {
           "forward_pips": {
-            "1": 4.0
+            "1": 4.0,
+            "5": 1.3
           },
-          "max_adverse_pips": 1.4,
+          "max_adverse_pips": 2.7,
           "max_favorable_pips": 10.6,
           "outcome": "consolidated",
           "touch": {
@@ -246683,8 +246730,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -246703,7 +246750,7 @@
       "avg_forward_pips": {
         "1": 1.4,
         "10": 5.1,
-        "20": 3.7,
+        "20": 4.1,
         "5": 4.7
       },
       "breakout_count": 22,
@@ -247569,6 +247616,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -247589,7 +247637,7 @@
     },
     {
       "avg_forward_pips": {
-        "1": 1.1,
+        "1": 1.0,
         "10": -1.3,
         "20": -0.3,
         "5": 1.7
@@ -248452,10 +248500,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 0.0,
+          "max_adverse_pips": 6.6,
+          "max_favorable_pips": 2.7,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -248474,7 +248522,7 @@
       "avg_forward_pips": {
         "1": 1.4,
         "10": 5.1,
-        "20": 3.7,
+        "20": 4.1,
         "5": 4.7
       },
       "breakout_count": 22,
@@ -249340,6 +249388,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -250247,7 +250296,7 @@
     {
       "avg_forward_pips": {
         "1": 2.2,
-        "10": 1.7,
+        "10": 1.4,
         "20": -0.2,
         "5": 3.0
       },
@@ -251094,6 +251143,7 @@
         {
           "forward_pips": {
             "1": 6.7,
+            "10": -10.7,
             "5": -12.0
           },
           "max_adverse_pips": 18.7,
@@ -251111,8 +251161,8 @@
           "forward_pips": {
             "1": -2.7
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 6.7,
+          "max_favorable_pips": 2.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -251129,7 +251179,7 @@
     },
     {
       "avg_forward_pips": {
-        "1": 1.1,
+        "1": 1.0,
         "10": -1.3,
         "20": -0.3,
         "5": 1.7
@@ -251992,10 +252042,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 0.0,
+          "max_adverse_pips": 6.6,
+          "max_favorable_pips": 2.7,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -252014,7 +252064,7 @@
       "avg_forward_pips": {
         "1": 1.4,
         "10": 5.1,
-        "20": 3.7,
+        "20": 4.1,
         "5": 4.7
       },
       "breakout_count": 22,
@@ -252880,6 +252930,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -256423,8 +256474,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -258192,8 +258243,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -259075,8 +259126,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -259981,7 +260032,7 @@
       "avg_forward_pips": {
         "1": 1.4,
         "10": 5.1,
-        "20": 3.7,
+        "20": 4.1,
         "5": 4.7
       },
       "breakout_count": 22,
@@ -260847,6 +260898,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -261712,10 +261764,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 0.0,
-          "max_favorable_pips": 4.0,
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 6.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -262579,8 +262631,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -263444,8 +263496,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -264309,8 +264361,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -265174,8 +265226,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -266039,8 +266091,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -266902,10 +266954,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 0.0,
-          "max_favorable_pips": 4.0,
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 6.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -267769,8 +267821,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -268634,8 +268686,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -269499,8 +269551,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -270362,10 +270414,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 0.0,
-          "max_favorable_pips": 4.0,
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 6.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -271227,10 +271279,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 0.0,
-          "max_favorable_pips": 4.0,
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 6.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -272094,8 +272146,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -272959,8 +273011,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -273822,10 +273874,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 0.0,
-          "max_favorable_pips": 4.0,
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 6.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -274689,8 +274741,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -275554,8 +275606,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -275574,7 +275626,7 @@
       "avg_forward_pips": {
         "1": 1.2,
         "10": 4.2,
-        "20": 3.1,
+        "20": 3.5,
         "5": 4.0
       },
       "breakout_count": 23,
@@ -276422,6 +276474,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -277287,10 +277340,10 @@
         },
         {
           "forward_pips": {
-            "1": 2.6
+            "1": 1.3
           },
-          "max_adverse_pips": 0.0,
-          "max_favorable_pips": 4.0,
+          "max_adverse_pips": 2.7,
+          "max_favorable_pips": 6.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -278154,8 +278207,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -279019,8 +279072,8 @@
           "forward_pips": {
             "1": -1.3
           },
-          "max_adverse_pips": 2.7,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 5.3,
+          "max_favorable_pips": 4.0,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_below",
@@ -279039,7 +279092,7 @@
       "avg_forward_pips": {
         "1": 1.2,
         "10": 4.2,
-        "20": 3.1,
+        "20": 3.5,
         "5": 4.0
       },
       "breakout_count": 23,
@@ -279887,6 +279940,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -279909,7 +279963,7 @@
       "avg_forward_pips": {
         "1": 0.4,
         "10": 4.7,
-        "20": 1.2,
+        "20": 1.6,
         "5": 2.9
       },
       "breakout_count": 22,
@@ -280739,6 +280793,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -280760,7 +280815,7 @@
     {
       "avg_forward_pips": {
         "1": 1.7,
-        "10": 0.3,
+        "10": 0.0,
         "20": -2.8,
         "5": 2.4
       },
@@ -281571,6 +281626,7 @@
         {
           "forward_pips": {
             "1": 6.7,
+            "10": -10.7,
             "5": -12.0
           },
           "max_adverse_pips": 18.7,
@@ -281588,8 +281644,8 @@
           "forward_pips": {
             "1": -2.7
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 6.7,
+          "max_favorable_pips": 2.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -281608,7 +281664,7 @@
       "avg_forward_pips": {
         "1": 0.4,
         "10": 4.7,
-        "20": 1.2,
+        "20": 1.6,
         "5": 2.9
       },
       "breakout_count": 22,
@@ -282438,6 +282494,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -282459,7 +282516,7 @@
     {
       "avg_forward_pips": {
         "1": 1.7,
-        "10": 0.3,
+        "10": 0.0,
         "20": -2.8,
         "5": 2.4
       },
@@ -283270,6 +283327,7 @@
         {
           "forward_pips": {
             "1": 6.7,
+            "10": -10.7,
             "5": -12.0
           },
           "max_adverse_pips": 18.7,
@@ -283287,8 +283345,8 @@
           "forward_pips": {
             "1": -2.7
           },
-          "max_adverse_pips": 4.0,
-          "max_favorable_pips": 1.3,
+          "max_adverse_pips": 6.7,
+          "max_favorable_pips": 2.6,
           "outcome": "consolidated",
           "touch": {
             "approach": "from_above",
@@ -283307,7 +283365,7 @@
       "avg_forward_pips": {
         "1": 0.4,
         "10": 4.7,
-        "20": 1.2,
+        "20": 1.6,
         "5": 2.9
       },
       "breakout_count": 22,
@@ -284137,6 +284195,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -286663,7 +286722,7 @@
       "avg_forward_pips": {
         "1": 1.6,
         "10": 4.2,
-        "20": 6.8,
+        "20": 7.1,
         "5": 4.3
       },
       "breakout_count": 22,
@@ -287475,6 +287534,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -288332,7 +288392,7 @@
       "avg_forward_pips": {
         "1": 1.6,
         "10": 4.2,
-        "20": 6.8,
+        "20": 7.1,
         "5": 4.3
       },
       "breakout_count": 22,
@@ -289144,6 +289204,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -292506,7 +292567,7 @@
       "avg_forward_pips": {
         "1": 1.6,
         "10": 4.2,
-        "20": 6.8,
+        "20": 7.1,
         "5": 4.3
       },
       "breakout_count": 22,
@@ -293318,6 +293379,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -293340,7 +293402,7 @@
       "avg_forward_pips": {
         "1": 1.6,
         "10": 4.2,
-        "20": 6.8,
+        "20": 7.1,
         "5": 4.3
       },
       "breakout_count": 22,
@@ -294152,6 +294214,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -295772,7 +295835,7 @@
       "avg_forward_pips": {
         "1": 0.3,
         "10": 3.9,
-        "20": 0.0,
+        "20": 0.5,
         "5": 2.4
       },
       "breakout_count": 21,
@@ -296548,6 +296611,7 @@
           "forward_pips": {
             "1": -2.6,
             "10": 32.0,
+            "20": 21.3,
             "5": 42.7
           },
           "max_adverse_pips": 48.0,
@@ -354126,7 +354190,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": 62.6,
@@ -360316,7 +360380,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": 62.6,
@@ -366326,7 +366390,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": -2.7,
@@ -366927,7 +366991,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": -2.7,
@@ -373538,7 +373602,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": -2.7,
@@ -374139,7 +374203,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": -2.7,
@@ -415323,7 +415387,7 @@
       "avg_forward_pips": {
         "1": 2.3,
         "10": 9.9,
-        "20": 10.6,
+        "20": 10.5,
         "5": 10.0
       },
       "breakout_count": 12,
@@ -415739,7 +415803,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": -2.7,
@@ -415762,7 +415826,7 @@
       "avg_forward_pips": {
         "1": 2.3,
         "10": 9.9,
-        "20": 10.6,
+        "20": 10.5,
         "5": 10.0
       },
       "breakout_count": 12,
@@ -416178,7 +416242,7 @@
           "forward_pips": {
             "1": 14.6,
             "10": 38.6,
-            "20": 37.2,
+            "20": 35.9,
             "5": 26.6
           },
           "max_adverse_pips": -2.7,
