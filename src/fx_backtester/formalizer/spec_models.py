@@ -18,7 +18,7 @@ TradeDirection = Literal["long_only", "short_only", "both"]
 SessionName = Literal["asia", "london", "new_york"]
 StopLossStyle = Literal["fixed_pips", "atr", "disabled"]
 TakeProfitStyle = Literal["fixed_pips", "disabled"]
-StrategyType = Literal["rsi_mean_reversion", "breakout"]
+StrategyType = Literal["rsi_mean_reversion", "breakout", "ema_crossover", "vwap_reversion", "orb", "bollinger_band"]
 
 
 class InstrumentSpec(BaseModel):
@@ -83,6 +83,21 @@ class RsiMeanReversionRule(BaseModel):
     require_daily_trend: bool = False
     daily_sma_period: int = Field(default=20, ge=2, le=200)
 
+    # EMA crossover fields
+    ema_fast_period: int | None = Field(default=9, ge=2, le=200)
+    ema_slow_period: int | None = Field(default=21, ge=2, le=500)
+
+    # VWAP reversion fields
+    vwap_deviation_pct: float | None = Field(default=0.3, ge=0.01, le=5.0)
+
+    # Opening Range Breakout fields
+    orb_session: str = "new_york"
+    orb_range_bars: int = Field(default=1, ge=1, le=6)
+
+    # Bollinger Band fields
+    bb_period: int | None = Field(default=20, ge=5, le=200)
+    bb_std_dev: float | None = Field(default=2.0, ge=0.5, le=4.0)
+
     @model_validator(mode="after")
     def validate_strategy_specific_fields(self) -> "RsiMeanReversionRule":
         if self.exit_on_session_close and not self.allowed_sessions:
@@ -115,6 +130,37 @@ class RsiMeanReversionRule(BaseModel):
             ]
             if missing:
                 raise ValueError(f"breakout requires fields: {', '.join(missing)}")
+
+        if self.strategy_type == "ema_crossover":
+            missing = [
+                name
+                for name, value in {
+                    "ema_fast_period": self.ema_fast_period,
+                    "ema_slow_period": self.ema_slow_period,
+                }.items()
+                if value is None
+            ]
+            if missing:
+                raise ValueError(f"ema_crossover requires fields: {', '.join(missing)}")
+            if self.ema_fast_period is not None and self.ema_slow_period is not None:
+                if self.ema_fast_period >= self.ema_slow_period:
+                    raise ValueError("ema_fast_period must be less than ema_slow_period")
+
+        if self.strategy_type == "vwap_reversion":
+            if self.vwap_deviation_pct is None:
+                raise ValueError("vwap_reversion requires vwap_deviation_pct")
+
+        if self.strategy_type == "bollinger_band":
+            missing = [
+                name
+                for name, value in {
+                    "bb_period": self.bb_period,
+                    "bb_std_dev": self.bb_std_dev,
+                }.items()
+                if value is None
+            ]
+            if missing:
+                raise ValueError(f"bollinger_band requires fields: {', '.join(missing)}")
 
         return self
 

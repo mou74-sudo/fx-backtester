@@ -666,7 +666,16 @@ elif page == "🔬 Backtest":
     # ── Strategy config ────────────────────────────────────────────────────
     st.subheader("Strategy settings")
 
-    strategy_type = st.selectbox("Strategy type", ["RSI Mean Reversion", "Breakout"])
+    _STRATEGY_OPTIONS = [
+        "RSI Mean Reversion",
+        "EMA Crossover",
+        "VWAP Mean Reversion",
+        "Opening Range Breakout",
+        "Bollinger Band",
+        "Breakout",
+    ]
+    strategy_type = st.selectbox("Strategy type", _STRATEGY_OPTIONS,
+                                 help="Choose a signal generation strategy")
     direction = st.selectbox("Trade direction", ["Long only", "Short only", "Both"])
     direction_map = {"Long only": "long_only", "Short only": "short_only", "Both": "both"}
 
@@ -680,13 +689,37 @@ elif page == "🔬 Backtest":
                            help="Only take longs when daily close > 20-day SMA, shorts when below")
 
     if strategy_type == "RSI Mean Reversion":
-        st.markdown("**RSI settings**")
+        st.markdown("**RSI settings** — buy oversold, sell overbought based on RSI momentum reversals")
         c1, c2, c3 = st.columns(3)
         rsi_period  = c1.number_input("RSI period", 2, 100, 14)
-        rsi_os      = c2.number_input("Oversold (entry long)", 1, 49, 30)
-        rsi_ob      = c3.number_input("Overbought (entry short)", 51, 99, 70)
-    else:
-        st.markdown("**Breakout settings**")
+        rsi_os      = c2.number_input("Oversold threshold (long entry)", 1, 49, 30)
+        rsi_ob      = c3.number_input("Overbought threshold (short entry)", 51, 99, 70)
+
+    elif strategy_type == "EMA Crossover":
+        st.markdown("**EMA Crossover settings** — enter when fast EMA crosses above/below slow EMA")
+        c1, c2 = st.columns(2)
+        ema_fast = c1.number_input("Fast EMA period", 2, 100, 9)
+        ema_slow = c2.number_input("Slow EMA period", 5, 500, 21)
+
+    elif strategy_type == "VWAP Mean Reversion":
+        st.markdown("**VWAP Mean Reversion settings** — fade extremes when price deviates from intraday VWAP")
+        vwap_dev = st.slider("VWAP deviation threshold (%)", 0.05, 3.0, 0.3, 0.05,
+                             help="Enter when price deviates this % from VWAP; exit when it returns")
+
+    elif strategy_type == "Opening Range Breakout":
+        st.markdown("**Opening Range Breakout settings** — trade breakouts beyond the first N bars of the session")
+        c1, c2 = st.columns(2)
+        orb_session   = c1.selectbox("Session", ["new_york", "london", "asia"], index=0)
+        orb_range_bars = c2.number_input("Opening range bars", 1, 6, 1)
+
+    elif strategy_type == "Bollinger Band":
+        st.markdown("**Bollinger Band settings** — mean revert from band extremes back to the middle")
+        c1, c2 = st.columns(2)
+        bb_period  = c1.number_input("BB period", 5, 200, 20)
+        bb_std_dev = c2.slider("BB std deviations", 0.5, 4.0, 2.0, 0.5)
+
+    else:  # Breakout
+        st.markdown("**Breakout settings** — enter on N-bar high/low breakout with pip buffer")
         c1, c2 = st.columns(2)
         bo_lookback = c1.number_input("Lookback bars", 2, 200, 20)
         bo_buffer   = c2.number_input("Buffer (pips)", 0, 50, 2)
@@ -718,28 +751,55 @@ elif page == "🔬 Backtest":
                 start_d = bars[0].timestamp.date()
                 end_d   = bars[-1].timestamp.date()
 
+                _common = dict(
+                    direction=direction_map[direction],
+                    stop_loss_pips=float(stop_pips),
+                    take_profit_pips=float(tp_pips),
+                    require_daily_trend=d1_filter,
+                )
                 if strategy_type == "RSI Mean Reversion":
                     rules = RsiMeanReversionRule(
                         strategy_type="rsi_mean_reversion",
-                        direction=direction_map[direction],
                         rsi_period=rsi_period,
                         entry_rsi_lte=float(rsi_os),
                         short_entry_rsi_gte=float(rsi_ob),
                         exit_rsi_gte=float(rsi_ob - 15),
                         short_exit_rsi_lte=float(rsi_os + 15),
-                        stop_loss_pips=float(stop_pips),
-                        take_profit_pips=float(tp_pips),
-                        require_daily_trend=d1_filter,
+                        **_common,
                     )
-                else:
+                elif strategy_type == "EMA Crossover":
+                    rules = RsiMeanReversionRule(
+                        strategy_type="ema_crossover",
+                        ema_fast_period=int(ema_fast),
+                        ema_slow_period=int(ema_slow),
+                        **_common,
+                    )
+                elif strategy_type == "VWAP Mean Reversion":
+                    rules = RsiMeanReversionRule(
+                        strategy_type="vwap_reversion",
+                        vwap_deviation_pct=float(vwap_dev),
+                        **_common,
+                    )
+                elif strategy_type == "Opening Range Breakout":
+                    rules = RsiMeanReversionRule(
+                        strategy_type="orb",
+                        orb_session=orb_session,
+                        orb_range_bars=int(orb_range_bars),
+                        **_common,
+                    )
+                elif strategy_type == "Bollinger Band":
+                    rules = RsiMeanReversionRule(
+                        strategy_type="bollinger_band",
+                        bb_period=int(bb_period),
+                        bb_std_dev=float(bb_std_dev),
+                        **_common,
+                    )
+                else:  # Breakout
                     rules = RsiMeanReversionRule(
                         strategy_type="breakout",
-                        direction=direction_map[direction],
                         breakout_lookback_bars=int(bo_lookback),
                         breakout_buffer_pips=float(bo_buffer),
-                        stop_loss_pips=float(stop_pips),
-                        take_profit_pips=float(tp_pips),
-                        require_daily_trend=d1_filter,
+                        **_common,
                     )
 
                 spec = StrategySpec(

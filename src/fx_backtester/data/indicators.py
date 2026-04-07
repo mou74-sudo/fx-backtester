@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from datetime import date
 from typing import TYPE_CHECKING
 
@@ -17,6 +18,66 @@ def compute_simple_sma(values: list[float], period: int) -> list[float | None]:
     result: list[float | None] = [None] * len(values)
     for i in range(period - 1, len(values)):
         result[i] = round(sum(values[i - period + 1 : i + 1]) / period, 5)
+    return result
+
+
+def compute_ema(values: list[float], period: int) -> list[float | None]:
+    """Exponential moving average (standard multiplier = 2/(period+1)).
+
+    Seeded with the simple average of the first ``period`` values.
+    """
+    if period < 2:
+        raise ValueError("EMA period must be at least 2")
+    result: list[float | None] = [None] * len(values)
+    if len(values) < period:
+        return result
+    k = 2.0 / (period + 1)
+    ema = sum(values[:period]) / period
+    result[period - 1] = round(ema, 5)
+    for i in range(period, len(values)):
+        ema = values[i] * k + ema * (1 - k)
+        result[i] = round(ema, 5)
+    return result
+
+
+def compute_bollinger_bands(
+    values: list[float], period: int, num_std: float
+) -> tuple[list[float | None], list[float | None], list[float | None]]:
+    """Return (upper, middle, lower) Bollinger Band series."""
+    middle = compute_simple_sma(values, period)
+    upper: list[float | None] = [None] * len(values)
+    lower: list[float | None] = [None] * len(values)
+    for i in range(period - 1, len(values)):
+        window = values[i - period + 1 : i + 1]
+        mean = middle[i]
+        if mean is None:
+            continue
+        std = math.sqrt(sum((x - mean) ** 2 for x in window) / period)
+        upper[i] = round(mean + num_std * std, 5)
+        lower[i] = round(mean - num_std * std, 5)
+    return upper, middle, lower
+
+
+def compute_vwap_daily(bars: list[MarketBar]) -> list[float | None]:
+    """Intraday VWAP approximated via cumulative typical-price mean (no volume needed).
+
+    Resets at the start of each calendar day.
+    """
+    result: list[float | None] = [None] * len(bars)
+    cum_tp = 0.0
+    n = 0
+    current_day: date | None = None
+
+    for i, bar in enumerate(bars):
+        day = bar.timestamp.date()
+        if day != current_day:
+            cum_tp = 0.0
+            n = 0
+            current_day = day
+        tp = (bar.high + bar.low + bar.close) / 3.0
+        cum_tp += tp
+        n += 1
+        result[i] = round(cum_tp / n, 5)
     return result
 
 
@@ -39,7 +100,6 @@ def build_d1_trend_map(
     if not bars:
         return {}
 
-    # Step 1 — derive daily close: last H1 bar of each calendar date.
     daily_close_by_date: dict[date, float] = {}
     for bar in bars:
         d = bar.timestamp.date()
@@ -48,10 +108,8 @@ def build_d1_trend_map(
     sorted_dates = sorted(daily_close_by_date.keys())
     closes_list = [daily_close_by_date[d] for d in sorted_dates]
 
-    # Step 2 — compute SMA on daily closes.
     smas = compute_simple_sma(closes_list, sma_period)
 
-    # Step 3 — build trend-at-end-of-each-day.
     trend_at_date: dict[date, str | None] = {}
     for i, d in enumerate(sorted_dates):
         sma = smas[i]
@@ -60,8 +118,6 @@ def build_d1_trend_map(
         else:
             trend_at_date[d] = "up" if daily_close_by_date[d] > sma else "down"
 
-    # Step 4 — for H1 bars on date D, serve the trend from the previous
-    # completed date (rolling forward one day to avoid look-ahead).
     h1_trend_map: dict[date, str | None] = {}
     prev_trend: str | None = None
     for d in sorted_dates:
