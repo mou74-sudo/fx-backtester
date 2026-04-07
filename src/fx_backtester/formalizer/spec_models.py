@@ -15,7 +15,7 @@ from typing import Literal
 from pydantic import BaseModel, Field, model_validator
 
 TradeDirection = Literal["long_only", "short_only", "both"]
-SessionName = Literal["asia", "london", "new_york"]
+SessionName = Literal["asia", "london", "new_york", "rth", "eth"]
 StopLossStyle = Literal["fixed_pips", "atr", "disabled"]
 TakeProfitStyle = Literal["fixed_pips", "disabled"]
 StrategyType = Literal["rsi_mean_reversion", "breakout", "ema_crossover", "vwap_reversion", "orb", "bollinger_band"]
@@ -61,7 +61,7 @@ class RsiMeanReversionRule(BaseModel):
     """Minimal deterministic rule contract for frozen v1/v1.1 strategies."""
 
     strategy_type: StrategyType = "rsi_mean_reversion"
-    timeframe: Literal["H1"] = "H1"
+    timeframe: Literal["5m", "15m", "30m", "H1", "4H", "D1"] = "H1"
     direction: TradeDirection = "long_only"
     allowed_sessions: list[SessionName] = Field(default_factory=list)
     rsi_period: int | None = Field(default=14, ge=2, le=100)
@@ -79,7 +79,9 @@ class RsiMeanReversionRule(BaseModel):
     stop_loss_atr_multiplier: float = Field(default=2.0, gt=0, le=20)
     take_profit_style: TakeProfitStyle = "fixed_pips"
     take_profit_pips: float = Field(default=30.0, gt=0)
-    trailing_stop_style: Literal["disabled"] = "disabled"
+    trailing_stop_style: Literal["disabled", "atr", "fixed_pips"] = "disabled"
+    trailing_stop_atr_multiplier: float = Field(default=1.5, gt=0, le=10)
+    trailing_stop_pips: float = Field(default=20.0, gt=0)
     require_daily_trend: bool = False
     daily_sma_period: int = Field(default=20, ge=2, le=200)
 
@@ -91,7 +93,7 @@ class RsiMeanReversionRule(BaseModel):
     vwap_deviation_pct: float | None = Field(default=0.3, ge=0.01, le=5.0)
 
     # Opening Range Breakout fields
-    orb_session: str = "new_york"
+    orb_session: SessionName = "rth"
     orb_range_bars: int = Field(default=1, ge=1, le=6)
 
     # Bollinger Band fields

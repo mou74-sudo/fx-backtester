@@ -589,19 +589,29 @@ elif page == "📥 Get Data":
     _fetch_instr = _INSTRUMENT_OPTIONS[_fetch_label]
 
     if _fetch_instr != "UPLOAD":
-        _lookback = st.slider("Lookback (days)", 30, 730, 180)
+        _TF_OPTIONS = {
+            "5 min  (max 60 days)":  ("5m",  60),
+            "15 min (max 60 days)":  ("15m", 60),
+            "30 min (max 60 days)":  ("30m", 60),
+            "1 hour (max 730 days)": ("1h",  730),
+            "4 hour (max 730 days)": ("4h",  730),
+            "Daily  (max 10 years)": ("1d",  3650),
+        }
+        _tf_label  = st.selectbox("Timeframe", list(_TF_OPTIONS.keys()), index=3)
+        _tf_code, _tf_max_days = _TF_OPTIONS[_tf_label]
+        _lookback  = st.slider("Lookback (days)", 10, _tf_max_days, min(180, _tf_max_days))
         if st.button(f"⬇ Fetch {_fetch_label}", type="primary"):
-            with st.spinner(f"Fetching {_fetch_label} H1 data…"):
+            with st.spinner(f"Fetching {_fetch_label} {_tf_label} data…"):
                 try:
                     sys.path.insert(0, str(Path(__file__).parent / "src"))
                     from fx_backtester.data.yfinance_loader import (
-                        load_yfinance_h1, bars_to_csv, instrument_display_name, instrument_pip_size
+                        load_yfinance_bars, bars_to_csv, instrument_display_name, instrument_pip_size
                     )
                     import pandas as pd
 
                     _end   = date.today() - timedelta(days=1)
                     _start = _end - timedelta(days=_lookback)
-                    _bars  = load_yfinance_h1(_fetch_instr, _start, _end, verbose=False)
+                    _bars  = load_yfinance_bars(_fetch_instr, _start, _end, interval=_tf_code, verbose=False)
 
                     if not _bars:
                         st.error("No data returned. Try a shorter lookback period.")
@@ -611,8 +621,9 @@ elif page == "📥 Get Data":
                             _csv_bytes = Path(_tf.name).read_bytes()
 
                         st.session_state["csv_bytes"]    = _csv_bytes
-                        st.session_state["csv_name"]     = f"{_fetch_instr}_h1.csv"
+                        st.session_state["csv_name"]     = f"{_fetch_instr}_{_tf_code}.csv"
                         st.session_state["instrument"]   = _fetch_instr
+                        st.session_state["timeframe"]    = _tf_code
                         st.session_state["pip_size"]     = instrument_pip_size(_fetch_instr)
                         st.session_state["_auto_loaded"] = False
 
@@ -691,6 +702,14 @@ elif page == "🔬 Backtest":
     d1_filter = st.toggle("Daily trend filter (D1 SMA)", value=False,
                            help="Only take longs when daily close > 20-day SMA, shorts when below")
 
+    _trail_style = st.selectbox("Trailing stop", ["Disabled", "ATR-based", "Fixed pips/points"],
+                                help="Ratchets the stop in your favour as price moves. Overrides the fixed stop once activated.")
+    _trail_map = {"Disabled": "disabled", "ATR-based": "atr", "Fixed pips/points": "fixed_pips"}
+    if _trail_style == "ATR-based":
+        _trail_atr_mult = st.slider("ATR multiplier for trail", 0.5, 5.0, 1.5, 0.25)
+    elif _trail_style == "Fixed pips/points":
+        _trail_pips = st.number_input("Trailing distance (pips/points)", 5, 200, 20)
+
     if strategy_type == "RSI Mean Reversion":
         st.markdown("**RSI settings** — buy oversold, sell overbought based on RSI momentum reversals")
         c1, c2, c3 = st.columns(3)
@@ -711,8 +730,13 @@ elif page == "🔬 Backtest":
 
     elif strategy_type == "Opening Range Breakout":
         st.markdown("**Opening Range Breakout settings** — trade breakouts beyond the first N bars of the session")
+        _orb_instr = st.session_state.get("instrument", "")
+        _orb_sessions = ["rth", "eth"] if _orb_instr in {"NQ", "ES"} else ["new_york", "london", "asia"]
+        _orb_session_labels = {"rth": "RTH (09:30–16:00 ET)", "eth": "ETH / Globex (16:00–09:30 ET)",
+                                "new_york": "New York", "london": "London", "asia": "Asia"}
         c1, c2 = st.columns(2)
-        orb_session   = c1.selectbox("Session", ["new_york", "london", "asia"], index=0)
+        _orb_sel = c1.selectbox("Session", _orb_sessions, format_func=lambda s: _orb_session_labels.get(s, s))
+        orb_session = _orb_sel
         orb_range_bars = c2.number_input("Opening range bars", 1, 6, 1)
 
     elif strategy_type == "Bollinger Band":
@@ -746,7 +770,8 @@ elif page == "🔬 Backtest":
                     f.write(st.session_state["csv_bytes"])
                     tmp_path = f.name
 
-                bars = load_market_bars(tmp_path)
+                _bt_instr_code = st.session_state.get("instrument", "")
+                bars = load_market_bars(tmp_path, instrument=_bt_instr_code)
                 if not bars:
                     st.error("No bars loaded from CSV.")
                     st.stop()
@@ -754,11 +779,19 @@ elif page == "🔬 Backtest":
                 start_d = bars[0].timestamp.date()
                 end_d   = bars[-1].timestamp.date()
 
+                _trail_style_val = _trail_map[_trail_style]
+                _tf_yf = st.session_state.get("timeframe", "1h")
+                _TF_SPEC_MAP = {"5m": "5m", "15m": "15m", "30m": "30m",
+                                "1h": "H1", "4h": "4H", "1d": "D1"}
                 _common = dict(
                     direction=direction_map[direction],
+                    timeframe=_TF_SPEC_MAP.get(_tf_yf, "H1"),
                     stop_loss_pips=float(stop_pips),
                     take_profit_pips=float(tp_pips),
                     require_daily_trend=d1_filter,
+                    trailing_stop_style=_trail_style_val,
+                    trailing_stop_atr_multiplier=float(_trail_atr_mult) if _trail_style == "ATR-based" else 1.5,
+                    trailing_stop_pips=float(_trail_pips) if _trail_style == "Fixed pips/points" else 20.0,
                 )
                 if strategy_type == "RSI Mean Reversion":
                     rules = RsiMeanReversionRule(
@@ -929,6 +962,71 @@ elif page == "🔬 Backtest":
                     "Reason": t.exit_reason or "—",
                 })
             st.dataframe(pd.DataFrame(rows), use_container_width=True)
+
+        # Monte Carlo simulation
+        with st.expander("📊 Monte Carlo simulation"):
+            import random, math as _math
+            _mc_runs = st.slider("Simulations", 200, 2000, 500, 100,
+                                  help="Number of times to randomly shuffle the trade sequence and replay equity")
+            if st.button("▶ Run Monte Carlo", key="run_mc"):
+                _pnl_list = [t.pnl or 0.0 for t in result.trades]
+                _start_eq = result.starting_equity
+                _mc_finals: list[float] = []
+                _mc_max_dds: list[float] = []
+                _rng = random.Random(42)
+                for _ in range(_mc_runs):
+                    shuffled = _pnl_list[:]
+                    _rng.shuffle(shuffled)
+                    eq, peak, max_dd = _start_eq, _start_eq, 0.0
+                    for p in shuffled:
+                        eq += p
+                        if eq > peak:
+                            peak = eq
+                        dd = peak - eq
+                        if dd > max_dd:
+                            max_dd = dd
+                    _mc_finals.append(eq)
+                    _mc_max_dds.append(max_dd)
+
+                _mc_finals.sort()
+                _mc_max_dds.sort()
+                n = len(_mc_finals)
+                p5  = _mc_finals[int(n * 0.05)]
+                p50 = _mc_finals[int(n * 0.50)]
+                p95 = _mc_finals[int(n * 0.95)]
+                dd_p50 = _mc_max_dds[int(n * 0.50)]
+                dd_p95 = _mc_max_dds[int(n * 0.95)]
+
+                mc1, mc2, mc3 = st.columns(3)
+                mc1.metric("5th pct final equity",  f"${p5:,.0f}", delta=f"${p5-_start_eq:+,.0f}")
+                mc2.metric("Median final equity",   f"${p50:,.0f}", delta=f"${p50-_start_eq:+,.0f}")
+                mc3.metric("95th pct final equity", f"${p95:,.0f}", delta=f"${p95-_start_eq:+,.0f}")
+                mc1.metric("Median max drawdown",   f"${dd_p50:,.0f}")
+                mc2.metric("95th pct max drawdown", f"${dd_p95:,.0f}")
+                mc3.metric("% runs profitable",     f"{sum(1 for f in _mc_finals if f > _start_eq)/n:.0%}")
+
+                # Histogram of final equity
+                fig_mc = go.Figure()
+                fig_mc.add_trace(go.Histogram(
+                    x=_mc_finals, nbinsx=50,
+                    marker_color="#5588ff", opacity=0.8, name="Final equity",
+                ))
+                fig_mc.add_vline(x=_start_eq, line_dash="dash", line_color="#ff4455",
+                                  annotation_text="Start equity")
+                fig_mc.add_vline(x=p50, line_dash="dot", line_color="#00c49a",
+                                  annotation_text="Median")
+                fig_mc.update_layout(**_cl(
+                    height=260, margin=dict(l=0, r=0, t=30, b=0),
+                    xaxis=dict(title="Final equity ($)"),
+                    yaxis=dict(title="Frequency"),
+                    title=f"Monte Carlo — {_mc_runs:,} shuffled simulations",
+                ))
+                st.plotly_chart(fig_mc, use_container_width=True, key="mc_histogram")
+                st.caption(
+                    "Each bar = one simulation with trades in random order. "
+                    "Wide spread = returns are order-dependent (lucky streak risk). "
+                    "Tight cluster = strategy edge is consistent."
+                )
 
 
 # ══════════════════════════════════════════════════════════════════════════════

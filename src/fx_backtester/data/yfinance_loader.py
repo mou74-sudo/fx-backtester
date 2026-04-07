@@ -19,7 +19,7 @@ from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 
 from fx_backtester.data.models import MarketBar
-from fx_backtester.data.sessions import infer_sessions
+from fx_backtester.data.sessions import infer_sessions_for_instrument
 
 
 # instrument code → (yfinance ticker, display name, pip/point size)
@@ -44,48 +44,58 @@ def instrument_pip_size(instrument: str) -> float:
     return _INSTRUMENTS.get(instrument, (None, None, 0.0001))[2]
 
 
-def load_yfinance_h1(
+# yfinance interval codes and their display names
+_INTERVALS: dict[str, str] = {
+    "5m":  "5 minute",
+    "15m": "15 minute",
+    "30m": "30 minute",
+    "1h":  "1 hour",
+    "4h":  "4 hour",
+    "1d":  "Daily",
+}
+
+# yfinance max lookback per interval (approximate, in days)
+_INTERVAL_MAX_DAYS: dict[str, int] = {
+    "5m": 60, "15m": 60, "30m": 60,
+    "1h": 730, "4h": 730, "1d": 3650,
+}
+
+
+def load_yfinance_bars(
     instrument: str,
     start: date,
     end: date,
+    interval: str = "1h",
     *,
     verbose: bool = False,
 ) -> list[MarketBar]:
-    """Download H1 bars from Yahoo Finance for a date range.
+    """Download OHLC bars from Yahoo Finance for any supported interval.
 
     Args:
-        instrument: ``"EURUSD"`` or ``"USDJPY"``
+        instrument: e.g. ``"NQ"``, ``"ES"``, ``"EURUSD"``
         start:      First calendar day to include.
         end:        Last calendar day to include (inclusive).
-        verbose:    Print row count to stdout when True.
-
-    Returns:
-        ``list[MarketBar]`` sorted ascending by timestamp.
-
-    Raises:
-        ValueError: Unsupported instrument or yfinance not installed.
+        interval:   yfinance interval string: ``"5m"``, ``"15m"``, ``"1h"``, ``"1d"`` etc.
+        verbose:    Print row count when True.
     """
     try:
         import yfinance as yf
     except ImportError as exc:
-        raise ImportError(
-            "yfinance is required: pip install yfinance"
-        ) from exc
+        raise ImportError("yfinance is required: pip install yfinance") from exc
 
     if instrument not in _TICKERS:
-        raise ValueError(
-            f"Unsupported instrument '{instrument}'. Supported: {sorted(_TICKERS)}"
-        )
+        raise ValueError(f"Unsupported instrument '{instrument}'. Supported: {sorted(_TICKERS)}")
+    if interval not in _INTERVALS:
+        raise ValueError(f"Unsupported interval '{interval}'. Supported: {sorted(_INTERVALS)}")
 
     ticker = _TICKERS[instrument]
-    # yfinance end date is exclusive, so add one day
     yf_end = end + timedelta(days=1)
 
     df = yf.download(
         ticker,
         start=start.isoformat(),
         end=yf_end.isoformat(),
-        interval="1h",
+        interval=interval,
         auto_adjust=True,
         progress=False,
     )
@@ -101,7 +111,6 @@ def load_yfinance_h1(
 
     bars: list[MarketBar] = []
     for ts, row in df.iterrows():
-        # Ensure UTC-aware datetime
         if hasattr(ts, "tzinfo") and ts.tzinfo is not None:
             dt = ts.to_pydatetime().astimezone(UTC)
         else:
@@ -121,13 +130,19 @@ def load_yfinance_h1(
             high=h,
             low=l,
             close=max(c, l),
-            sessions=infer_sessions(dt),
+            sessions=infer_sessions_for_instrument(dt, instrument),
         ))
 
     bars.sort(key=lambda b: b.timestamp)
     if verbose:
-        print(f"yfinance: {len(bars)} bars for {ticker} {start} → {end}")
+        print(f"yfinance: {len(bars)} {interval} bars for {ticker} {start} → {end}")
     return bars
+
+
+# Keep H1-specific alias for backward compatibility
+def load_yfinance_h1(instrument: str, start: date, end: date, *, verbose: bool = False) -> list[MarketBar]:
+    """Backward-compatible H1 loader. Prefer load_yfinance_bars(..., interval='1h')."""
+    return load_yfinance_bars(instrument, start, end, interval="1h", verbose=verbose)
 
 
 def bars_to_csv(bars: list[MarketBar], path: Path) -> None:

@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from fx_backtester.data.models import MarketBar
-from fx_backtester.data.sessions import infer_sessions, normalize_timestamp_to_utc
+from fx_backtester.data.sessions import infer_sessions_for_instrument, normalize_timestamp_to_utc
 
 
 REQUIRED_BAR_COLUMNS = ["timestamp", "open", "high", "low", "close"]
@@ -32,7 +32,12 @@ def load_ohlc_csv(path: str | Path) -> list[dict[str, Any]]:
         return list(reader)
 
 
-def load_market_bars(path: str | Path) -> list[MarketBar]:
+def load_market_bars(path: str | Path, instrument: str = "") -> list[MarketBar]:
+    """Load OHLC bars from CSV.
+
+    Pass ``instrument="NQ"`` or ``"ES"`` to get CME RTH/ETH session tags
+    instead of the default FX session tags.
+    """
     rows = load_ohlc_csv(path)
     bars: list[MarketBar] = []
     for row in rows:
@@ -44,7 +49,7 @@ def load_market_bars(path: str | Path) -> list[MarketBar]:
                 high=float(row["high"]),
                 low=float(row["low"]),
                 close=float(row["close"]),
-                sessions=infer_sessions(timestamp),
+                sessions=infer_sessions_for_instrument(timestamp, instrument),
             )
         )
     return bars

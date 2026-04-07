@@ -82,6 +82,7 @@ class _OpenPosition(BaseModel):
     evidence_ref: str | None = None
     sessions: list[str] = Field(default_factory=list)
     bars_held: int = 0
+    trail_activated: bool = False   # True once price has moved in favour enough to start trailing
 
 
 def _price_delta_to_pnl(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, quantity_units: int) -> float:
@@ -260,6 +261,32 @@ def _session_exit_due(*, bar: SignalBar, spec: StrategySpec) -> bool:
     return not any(session in spec.rules.allowed_sessions for session in bar.sessions)
 
 
+def _update_trailing_stop(position: _OpenPosition, bar: "SignalBar", spec: StrategySpec, pip_size: float) -> None:
+    """Ratchet trailing stop in place — modifies position.stop_loss_price."""
+    style = spec.rules.trailing_stop_style
+    if style == "disabled":
+        return
+
+    if style == "atr":
+        atr = bar.atr
+        if atr is None:
+            return
+        trail_distance = atr * spec.rules.trailing_stop_atr_multiplier
+    else:  # fixed_pips
+        trail_distance = spec.rules.trailing_stop_pips * pip_size
+
+    if position.side == "buy":
+        new_stop = round(bar.close - trail_distance, 5)
+        if new_stop > position.stop_loss_price:
+            position.stop_loss_price = new_stop
+            position.trail_activated = True
+    else:
+        new_stop = round(bar.close + trail_distance, 5)
+        if new_stop < position.stop_loss_price:
+            position.stop_loss_price = new_stop
+            position.trail_activated = True
+
+
 def _calc_commission(position: _OpenPosition, policy: ExecutionPolicy, lot_size_units: int) -> float:
     """Round-trip commission in account currency."""
     if policy.commission_per_contract <= 0:
@@ -311,6 +338,7 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                 continue
 
             open_position.bars_held = next_bars_held
+            _update_trailing_stop(open_position, bar, spec, pip_size)
             ambiguity = False
             spread_triggered_stop = False
 
