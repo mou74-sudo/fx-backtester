@@ -141,27 +141,49 @@ def run_instrument(instrument: str, lookback: int) -> None:
 
     wf_json = out_dir / "walk_forward" / "walk_forward.json"
     wf_metrics: dict = {}
+    wf_verdict      = None
+    wf_oos_pips     = None
+    wf_oos_wr       = None
+    wf_validated    = None
+    wf_total_folds  = None
     if wf_json.exists():
         try:
             wf_metrics = json.loads(wf_json.read_text())
+            folds = wf_metrics.get("folds", [])
+            if folds:
+                oos_pips   = [f["out_of_sample"]["net_pips"] for f in folds]
+                oos_wrs    = [f["out_of_sample"]["win_rate"]  for f in folds]
+                oos_prof   = sum(1 for f in folds if f.get("oos_profitable"))
+                wf_oos_pips    = round(sum(oos_pips), 2)
+                wf_oos_wr      = round(sum(oos_wrs) / len(oos_wrs), 4)
+                wf_validated   = oos_prof
+                wf_total_folds = len(folds)
+                pct = oos_prof / len(folds)
+                wf_verdict = (
+                    "validated"   if pct >= 0.6 and wf_oos_pips > 0 else
+                    "failed"      if wf_oos_pips < 0 else
+                    "inconclusive"
+                )
         except Exception:
             pass
 
     run_ts = datetime.now(UTC).strftime("%Y-%m-%dT%H%M")
 
     summary = {
-        "source":               "ai_pipeline",        # never "manual"
+        "source":               "ai_pipeline",
         "instrument":           instrument,
         "run_timestamp":        run_ts,
         "run_date":             date.today().isoformat(),
         "data_start":           start.isoformat(),
         "data_end":             end.isoformat(),
         "lookback_days":        lookback,
-        "key_levels_used":      AUTO_LEVEL_TYPES,      # transparent record
+        "key_levels_used":      AUTO_LEVEL_TYPES,
         "backtest":             backtest_metrics,
-        "walk_forward_verdict": wf_metrics.get("verdict"),
-        "oos_net_pips":         wf_metrics.get("oos_total_net_pips"),
-        "oos_win_rate":         wf_metrics.get("oos_avg_win_rate"),
+        "walk_forward_verdict": wf_verdict,
+        "wf_validated_folds":   wf_validated,
+        "wf_total_folds":       wf_total_folds,
+        "oos_net_pips":         wf_oos_pips,
+        "oos_win_rate":         wf_oos_wr,
     }
 
     (out_dir / "pipeline_summary.json").write_text(json.dumps(summary, indent=2))
