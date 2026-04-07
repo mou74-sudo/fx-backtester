@@ -20,11 +20,13 @@ def compute_simple_sma(values: list[float], period: int) -> list[float | None]:
     return result
 
 
-def build_d1_trend_map(
+def build_d1_typical_price_ma_map(
     bars: list[MarketBar],
     sma_period: int = 20,
 ) -> dict[date, str | None]:
-    """Build a no-look-ahead D1 trend lookup for H1 bars.
+    """Build a no-look-ahead D1 trend lookup for H1 bars using typical price.
+
+    Typical price = (High + Low + Close) / 3 for the last H1 bar of each day.
 
     For each calendar date present in ``bars``, returns the trend that should
     be applied to H1 bars on that date.  The trend is derived from the
@@ -32,24 +34,24 @@ def build_d1_trend_map(
     day leaks into the signal.
 
     Return values per date:
-      ``"up"``   — previous day's D1 close was above its ``sma_period``-day SMA
-      ``"down"`` — previous day's D1 close was below its SMA
+      ``"up"``   — previous day's typical price was above its ``sma_period``-day SMA
+      ``"down"`` — previous day's typical price was below its SMA
       ``None``   — insufficient history (SMA warmup not complete, or first day)
     """
     if not bars:
         return {}
 
-    # Step 1 — derive daily close: last H1 bar of each calendar date.
-    daily_close_by_date: dict[date, float] = {}
+    # Step 1 — derive daily typical price: last H1 bar of each calendar date.
+    daily_tp_by_date: dict[date, float] = {}
     for bar in bars:
         d = bar.timestamp.date()
-        daily_close_by_date[d] = bar.close  # last bar of the day wins
+        daily_tp_by_date[d] = round((bar.high + bar.low + bar.close) / 3, 5)
 
-    sorted_dates = sorted(daily_close_by_date.keys())
-    closes_list = [daily_close_by_date[d] for d in sorted_dates]
+    sorted_dates = sorted(daily_tp_by_date.keys())
+    tp_list = [daily_tp_by_date[d] for d in sorted_dates]
 
-    # Step 2 — compute SMA on daily closes.
-    smas = compute_simple_sma(closes_list, sma_period)
+    # Step 2 — compute SMA on daily typical prices.
+    smas = compute_simple_sma(tp_list, sma_period)
 
     # Step 3 — build trend-at-end-of-each-day.
     trend_at_date: dict[date, str | None] = {}
@@ -58,7 +60,7 @@ def build_d1_trend_map(
         if sma is None:
             trend_at_date[d] = None
         else:
-            trend_at_date[d] = "up" if daily_close_by_date[d] > sma else "down"
+            trend_at_date[d] = "up" if daily_tp_by_date[d] > sma else "down"
 
     # Step 4 — for H1 bars on date D, serve the trend from the previous
     # completed date (rolling forward one day to avoid look-ahead).
@@ -69,6 +71,10 @@ def build_d1_trend_map(
         prev_trend = trend_at_date[d]  # advance for tomorrow
 
     return h1_trend_map
+
+
+# Backwards-compatible alias — prefer build_d1_typical_price_ma_map for new code.
+build_d1_trend_map = build_d1_typical_price_ma_map
 
 
 def compute_wilder_rsi(closes: list[float], period: int) -> list[float | None]:

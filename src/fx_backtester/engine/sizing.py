@@ -1,4 +1,4 @@
-"""Deterministic FX position sizing helpers."""
+"""Deterministic position sizing helpers for FX and futures."""
 
 from __future__ import annotations
 
@@ -13,11 +13,13 @@ def pip_value_per_standard_lot(
     account_ccy: str,
     reference_price: float,
 ) -> float:
-    """Return pip value in account currency for one standard lot.
+    """Return pip/tick value in account currency for one standard FX lot.
 
     Supported deterministically for:
     - account_ccy == quote_ccy
     - account_ccy == base_ccy via quote/base conversion at reference_price
+
+    For futures use point_value_per_contract() instead.
     """
 
     if reference_price <= 0:
@@ -38,6 +40,22 @@ def pip_value_usd_per_standard_lot(instrument: InstrumentSpec, *, reference_pric
     return pip_value_per_standard_lot(instrument, account_ccy="USD", reference_price=reference_price)
 
 
+def point_value_per_contract(instrument: InstrumentSpec) -> float:
+    """Return USD value of a 1-point move per futures contract.
+
+    NQ: 20.0 USD/point  |  ES: 50.0 USD/point
+    Raises for non-futures instruments.
+    """
+    if instrument.instrument_type != "futures":
+        raise ValueError(
+            f"point_value_per_contract() called on non-futures instrument {instrument.symbol!r}. "
+            "Use pip_value_per_standard_lot() for FX."
+        )
+    if instrument.point_value <= 0:
+        raise ValueError(f"instrument.point_value must be > 0 for futures {instrument.symbol!r}")
+    return instrument.point_value
+
+
 def size_position_units(
     equity: float,
     risk: RiskSpec,
@@ -45,16 +63,27 @@ def size_position_units(
     stop_loss_pips: float,
     reference_price: float,
 ) -> int:
-    """Size a position in units using fixed-fraction risk.
+    """Size a position in units (FX) or contracts (futures) using fixed-fraction risk.
 
-    Rounded down to whole units for determinism.
-    Equity/account currency must match risk.account_ccy.
+    For FX: stop_loss_pips is in pips; returns units.
+    For futures: stop_loss_pips is in points; returns number of contracts.
+    Rounded down to whole units/contracts for determinism.
     """
 
     if stop_loss_pips <= 0:
         raise ValueError("stop_loss_pips must be positive")
 
     risk_amount = equity * risk.risk_per_trade_fraction
+
+    if instrument.instrument_type == "futures":
+        # Futures: loss per contract = stop_loss_points * point_value_usd
+        loss_per_contract = stop_loss_pips * point_value_per_contract(instrument)
+        if loss_per_contract <= 0:
+            return 0
+        contracts = floor(risk_amount / loss_per_contract)
+        return max(contracts, 0)
+
+    # FX path (unchanged)
     pip_value_per_lot = pip_value_per_standard_lot(
         instrument,
         account_ccy=risk.account_ccy,

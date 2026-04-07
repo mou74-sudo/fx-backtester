@@ -15,20 +15,53 @@ from typing import Literal
 from pydantic import BaseModel, Field, model_validator
 
 TradeDirection = Literal["long_only", "short_only", "both"]
-SessionName = Literal["asia", "london", "new_york"]
+SessionName = Literal["asia", "london", "new_york", "rth"]
 StopLossStyle = Literal["fixed_pips", "atr", "disabled"]
 TakeProfitStyle = Literal["fixed_pips", "disabled"]
 StrategyType = Literal["rsi_mean_reversion", "breakout"]
+InstrumentType = Literal["fx", "futures"]
 
 
 class InstrumentSpec(BaseModel):
-    """Instrument-level trading conventions for the backtest."""
+    """Instrument-level trading conventions for the backtest.
+
+    FX fields: pip_size, lot_size_units
+    Futures fields: point_value, tick_size, commission_per_contract_usd
+    """
 
     symbol: str = "EURUSD"
+    instrument_type: InstrumentType = "fx"
     quote_ccy: str = "USD"
     base_ccy: str = "EUR"
+
+    # FX: pip size (e.g. 0.0001 for EURUSD). Futures: treat as tick_size alias.
     pip_size: float = Field(default=0.0001, gt=0)
+    # FX: units per standard lot (100_000). Futures: set to 1 (unused).
     lot_size_units: int = Field(default=100_000, gt=0)
+
+    # Futures only — USD value of one full point move per contract.
+    # NQ (E-mini Nasdaq-100): 20.0  |  ES (E-mini S&P 500): 50.0
+    # Leave at 0.0 for FX instruments.
+    point_value: float = Field(default=0.0, ge=0)
+
+    # Futures only — minimum price increment in points (e.g. 0.25 for NQ/ES).
+    # Spread and stop distances are expressed in ticks; pnl reported in points.
+    tick_size: float = Field(default=0.0, ge=0)
+
+    # Futures only — round-trip commission per contract in USD (e.g. 4.50 for NQ/ES).
+    commission_per_contract_usd: float = Field(default=0.0, ge=0)
+
+    @model_validator(mode="after")
+    def validate_futures_fields(self) -> "InstrumentSpec":
+        if self.instrument_type == "futures":
+            if self.point_value <= 0:
+                raise ValueError("futures instruments require point_value > 0 (e.g. NQ=20, ES=50)")
+            if self.tick_size <= 0:
+                raise ValueError("futures instruments require tick_size > 0 (e.g. 0.25 for NQ/ES)")
+            # pip_size for futures should equal tick_size for consistent spread math
+            if self.pip_size != self.tick_size:
+                object.__setattr__(self, "pip_size", self.tick_size)
+        return self
 
 
 class RiskSpec(BaseModel):

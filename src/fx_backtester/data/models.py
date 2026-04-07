@@ -13,4 +13,4 @@ class MarketBar(BaseModel):
     low: float = Field(..., gt=0)
     close: float = Field(..., gt=0)
     timezone_normalized_to_utc: bool = True
-    sessions: list[Literal["asia", "london", "new_york"]] = Field(default_factory=list)
+    sessions: list[Literal["asia", "london", "new_york", "rth"]] = Field(default_factory=list)

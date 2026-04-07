@@ -16,6 +16,7 @@ class TradeRecord(BaseModel):
     entry_price: float = Field(..., gt=0)
     stop_loss_price: float = Field(..., gt=0)
     take_profit_price: float = Field(..., gt=0)
+    # FX: units. Futures: contracts. Same field, instrument-appropriate label.
     quantity_units: int = Field(..., gt=0)
     execution_policy_name: str
     evidence_ref: str | None = None
@@ -28,4 +29,7 @@ class TradeRecord(BaseModel):
     pnl: float | None = None
     pnl_ccy: str | None = None
     pnl_usd: float | None = None
+    # FX: pips. Futures: points. Field name kept for schema stability.
     pnl_pips: float | None = None
+    # Round-trip commission charged at close in USD (futures only, 0.0 for FX).
+    commission_usd: float = 0.0

@@ -41,6 +41,11 @@ class SignalBar(BaseModel):
     sessions: list[str] = Field(default_factory=list)
 
 
+class EquityPoint(BaseModel):
+    timestamp: str  # ISO format
+    equity: float
+
+
 class BacktestMetrics(BaseModel):
     gross_profit: float
     gross_loss: float
@@ -50,6 +55,12 @@ class BacktestMetrics(BaseModel):
     expectancy_pips: float
     average_win_pips: float
     average_loss_pips: float
+    # --- new quality metrics ---
+    profit_factor: float | None  # gross_profit / abs(gross_loss); None if no losses
+    sharpe_ratio: float | None   # annualised trade-return Sharpe; None if < 2 trades
+    sortino_ratio: float | None  # annualised trade-return Sortino; None if no down-side
+    total_commission_usd: float  # sum of all commissions paid
+    # ----------------------------
     ambiguity_count: int
     spread_triggered_stop_count: int
     max_drawdown: float
@@ -65,6 +76,7 @@ class BacktestResult(BaseModel):
     trade_count: int = Field(..., ge=0)
     trades: list[TradeRecord]
     metrics: BacktestMetrics
+    equity_curve: list[EquityPoint] = Field(default_factory=list)
 
 
 class _OpenPosition(BaseModel):
@@ -80,12 +92,29 @@ class _OpenPosition(BaseModel):
     bars_held: int = 0
 
 
-def _price_delta_to_pnl(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, quantity_units: int) -> float:
+def _price_delta_to_pnl(
+    *,
+    side: Literal["buy", "sell"],
+    entry_price: float,
+    exit_price: float,
+    quantity_units: int,
+    instrument: "StrategySpec | None" = None,
+    point_value: float = 0.0,
+) -> float:
+    """Compute gross PnL before commission.
+
+    FX: (exit - entry) * units * direction  [units = lot-sized position]
+    Futures: (exit - entry) * point_value * contracts * direction
+    """
     direction = 1 if side == "buy" else -1
+    if point_value > 0:
+        # Futures path
+        return round((exit_price - entry_price) * point_value * quantity_units * direction, 2)
     return round((exit_price - entry_price) * quantity_units * direction, 2)
 
 
 def _price_delta_to_pips(*, side: Literal["buy", "sell"], entry_price: float, exit_price: float, pip_size: float) -> float:
+    """Distance in pips (FX) or points (futures). pip_size == tick_size for futures."""
     direction = 1 if side == "buy" else -1
     return round(((exit_price - entry_price) / pip_size) * direction, 2)
 
@@ -111,14 +140,26 @@ def _close_trade(
     spread_triggered_stop: bool = False,
     exit_reason: str,
 ) -> TradeRecord:
-    pnl = _price_delta_to_pnl(
+    is_futures = spec.instrument.instrument_type == "futures"
+    point_value = spec.instrument.point_value if is_futures else 0.0
+
+    gross_pnl = _price_delta_to_pnl(
         side=position.side,
         entry_price=position.entry_price,
         exit_price=exit_price,
         quantity_units=position.quantity_units,
+        point_value=point_value,
     )
+
+    # Round-trip commission per contract (futures only)
+    commission_usd = 0.0
+    if is_futures:
+        commission_usd = round(spec.instrument.commission_per_contract_usd * position.quantity_units, 2)
+
+    net_pnl = round(gross_pnl - commission_usd, 2)
+
     pnl_usd = _convert_pnl_to_usd(
-        pnl=pnl,
+        pnl=net_pnl,
         account_ccy=spec.risk.account_ccy,
         exit_price=exit_price,
         base_ccy=spec.instrument.base_ccy,
@@ -141,19 +182,23 @@ def _close_trade(
         exit_reason=exit_reason,
         exit_time=exit_time,
         exit_price=exit_price,
-        pnl=pnl,
+        pnl=net_pnl,
         pnl_ccy=spec.risk.account_ccy,
         pnl_usd=pnl_usd,
+        # FX: pips. Futures: points. pip_size == tick_size for futures.
         pnl_pips=_price_delta_to_pips(
             side=position.side,
             entry_price=position.entry_price,
             exit_price=exit_price,
             pip_size=spec.instrument.pip_size,
         ),
+        commission_usd=commission_usd,
     )
 
 
 def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_equity: float) -> BacktestMetrics:
+    import math
+
     gross_profit = round(sum((trade.pnl or 0.0) for trade in trades if (trade.pnl or 0.0) > 0), 2)
     gross_loss = round(sum((trade.pnl or 0.0) for trade in trades if (trade.pnl or 0.0) < 0), 2)
     gross_pips_won = round(sum((trade.pnl_pips or 0.0) for trade in trades if (trade.pnl_pips or 0.0) > 0), 2)
@@ -165,6 +210,30 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     average_loss_pips = round(sum(losses) / len(losses), 2) if losses else 0.0
     ambiguity_count = sum(1 for trade in trades if trade.ambiguity_detected)
     spread_triggered_stop_count = sum(1 for trade in trades if trade.spread_triggered_stop)
+    total_commission_usd = round(sum(trade.commission_usd for trade in trades), 2)
+
+    # Profit factor
+    profit_factor: float | None = None
+    if gross_loss < 0:
+        profit_factor = round(gross_profit / abs(gross_loss), 4)
+
+    # Trade-level returns for Sharpe / Sortino
+    # Use pnl_usd / starting_equity as a simple per-trade return proxy.
+    sharpe_ratio: float | None = None
+    sortino_ratio: float | None = None
+    if len(trades) >= 2:
+        returns = [(trade.pnl_usd or 0.0) / starting_equity for trade in trades]
+        mean_r = sum(returns) / len(returns)
+        variance = sum((r - mean_r) ** 2 for r in returns) / len(returns)
+        std_r = math.sqrt(variance) if variance > 0 else 0.0
+        downside_variance = sum((r - mean_r) ** 2 for r in returns if r < mean_r) / len(returns)
+        downside_std = math.sqrt(downside_variance) if downside_variance > 0 else 0.0
+        # Annualise assuming ~252 trading days, scale by sqrt(252)
+        ann_factor = math.sqrt(252)
+        if std_r > 0:
+            sharpe_ratio = round((mean_r / std_r) * ann_factor, 4)
+        if downside_std > 0:
+            sortino_ratio = round((mean_r / downside_std) * ann_factor, 4)
 
     equity = starting_equity
     peak = equity
@@ -202,6 +271,10 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         expectancy_pips=expectancy_pips,
         average_win_pips=average_win_pips,
         average_loss_pips=average_loss_pips,
+        profit_factor=profit_factor,
+        sharpe_ratio=sharpe_ratio,
+        sortino_ratio=sortino_ratio,
+        total_commission_usd=total_commission_usd,
         ambiguity_count=ambiguity_count,
         spread_triggered_stop_count=spread_triggered_stop_count,
         max_drawdown=round(max_drawdown, 2),
@@ -367,6 +440,39 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                 sessions=bar.sessions,
             )
 
+    # Close any open position that survives to end of data
+    if open_position is not None and bars:
+        last_bar = bars[-1]
+        exit_fill = apply_execution_policy(
+            side="sell" if open_position.side == "buy" else "buy",
+            requested_price=last_bar.close,
+            policy=policy,
+            pip_size=pip_size,
+        )
+        trade = _close_trade(
+            open_position,
+            exit_time=last_bar.timestamp,
+            exit_price=exit_fill.executed_price,
+            execution_policy_name=spec.execution_policy_name,
+            spec=spec,
+            exit_reason="end_of_data",
+        )
+        trades.append(trade)
+        equity = round(equity + (trade.pnl or 0.0), 2)
+        open_position = None
+
+    # Build equity curve: one point per closed trade
+    equity_curve: list[EquityPoint] = []
+    running_equity = spec.risk.initial_equity
+    for trade in trades:
+        running_equity = round(running_equity + (trade.pnl or 0.0), 2)
+        equity_curve.append(
+            EquityPoint(
+                timestamp=trade.exit_time.isoformat() if trade.exit_time else "",
+                equity=running_equity,
+            )
+        )
+
     ending_equity = round(equity, 2)
     ending_equity_usd = _convert_pnl_to_usd(
         pnl=ending_equity,
@@ -382,4 +488,5 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
         trade_count=len(trades),
         trades=trades,
         metrics=_build_metrics(trades=trades, starting_equity=spec.risk.initial_equity, ending_equity=ending_equity),
+        equity_curve=equity_curve,
     )

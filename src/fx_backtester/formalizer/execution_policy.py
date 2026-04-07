@@ -19,12 +19,14 @@ class ExecutionPolicy(BaseModel):
     allow_intrabar_tp_sl_resolution: bool = False
     spread_model: Literal["fixed"] = "fixed"
     slippage_model: Literal["fixed", "worse_case"] = "fixed"
+    # FX: typical interbank half-spread is 0.1–0.5 pips.
+    # Futures: set to 0.0 (commission is charged per-contract via InstrumentSpec.commission_per_contract_usd).
     half_spread_pips: float = Field(default=0.1, ge=0)
-    commission_per_million_usd: float = Field(default=0.0, ge=0)
     slippage_pips: float = Field(default=0.0, ge=0)
     notes: str = (
         "Signals are filled deterministically at bar close with fixed spread and "
-        "optional slippage assumptions. No probabilistic queueing or live routing."
+        "optional slippage assumptions. No probabilistic queueing or live routing. "
+        "For futures, set half_spread_pips=0 and configure commission via InstrumentSpec."
     )
 
 
