@@ -45,7 +45,7 @@ from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.backtest import run_backtest
 from fx_backtester.engine.pipeline import build_signal_pipeline
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
-from fx_backtester.formalizer.spec_models import RsiMeanReversionRule, StrategySpec
+from fx_backtester.formalizer.spec_models import StrategyRuleAdapter, StrategySpec
 
 
 # ── Result models ─────────────────────────────────────────────────────────────
@@ -95,7 +95,7 @@ def _apply_params(spec: StrategySpec, params: dict[str, Any]) -> StrategySpec:
     """Return a copy of spec with rule fields overridden by params."""
     rule_dict = spec.rules.model_dump()
     rule_dict.update(params)
-    new_rules = RsiMeanReversionRule.model_validate(rule_dict)
+    new_rules = StrategyRuleAdapter.validate_python(rule_dict)
     return spec.model_copy(update={"rules": new_rules})
 
 

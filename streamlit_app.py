@@ -761,8 +761,9 @@ elif page == "🔬 Backtest":
                 from fx_backtester.engine.pipeline import build_signal_pipeline
                 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
                 from fx_backtester.formalizer.spec_models import (
-                    BacktestWindow, InstrumentSpec, RiskSpec,
-                    RsiMeanReversionRule, StrategySpec,
+                    BacktestWindow, BollingerBandRule, BreakoutRule,
+                    EmaCrossoverRule, InstrumentSpec, OrbRule, RiskSpec,
+                    RsiMeanReversionRule, StrategySpec, VwapReversionRule,
                 )
                 from fx_backtester.analysis.mae_mfe import compute_mae_mfe
 
@@ -795,7 +796,6 @@ elif page == "🔬 Backtest":
                 )
                 if strategy_type == "RSI Mean Reversion":
                     rules = RsiMeanReversionRule(
-                        strategy_type="rsi_mean_reversion",
                         rsi_period=rsi_period,
                         entry_rsi_lte=float(rsi_os),
                         short_entry_rsi_gte=float(rsi_ob),
@@ -804,35 +804,30 @@ elif page == "🔬 Backtest":
                         **_common,
                     )
                 elif strategy_type == "EMA Crossover":
-                    rules = RsiMeanReversionRule(
-                        strategy_type="ema_crossover",
+                    rules = EmaCrossoverRule(
                         ema_fast_period=int(ema_fast),
                         ema_slow_period=int(ema_slow),
                         **_common,
                     )
                 elif strategy_type == "Typical Price MA Reversion":
-                    rules = RsiMeanReversionRule(
-                        strategy_type="vwap_reversion",
+                    rules = VwapReversionRule(
                         vwap_deviation_pct=float(vwap_dev),
                         **_common,
                     )
                 elif strategy_type == "Opening Range Breakout":
-                    rules = RsiMeanReversionRule(
-                        strategy_type="orb",
+                    rules = OrbRule(
                         orb_session=orb_session,
                         orb_range_bars=int(orb_range_bars),
                         **_common,
                     )
                 elif strategy_type == "Bollinger Band":
-                    rules = RsiMeanReversionRule(
-                        strategy_type="bollinger_band",
+                    rules = BollingerBandRule(
                         bb_period=int(bb_period),
                         bb_std_dev=float(bb_std_dev),
                         **_common,
                     )
                 else:  # Breakout
-                    rules = RsiMeanReversionRule(
-                        strategy_type="breakout",
+                    rules = BreakoutRule(
                         breakout_lookback_bars=int(bo_lookback),
                         breakout_buffer_pips=float(bo_buffer),
                         **_common,
