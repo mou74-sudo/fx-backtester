@@ -20,39 +20,227 @@ from pathlib import Path
 import plotly.graph_objects as go
 import streamlit as st
 
-# ── Page config (must be first Streamlit call) ────────────────────────────────
+# ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="FX Backtester",
-    page_icon="📈",
-    layout="centered",   # centered works better on mobile
-    initial_sidebar_state="collapsed",
+    page_title="NQ/ES Trader",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
 
 # ── CSS ───────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-/* Buttons */
-.stButton > button { min-height: 2.5rem; font-size: 1rem; width: 100%; border-radius: 8px; }
-/* Metric cards */
-[data-testid="metric-container"] {
-    background: #1a1a2e;
-    border: 1px solid #2d2d4e;
-    border-radius: 10px;
-    padding: 10px 14px;
+/* ── Layout ── */
+.main .block-container { max-width: 1080px; padding: 1.5rem 2rem 3rem; margin: 0 auto; }
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background: #12151e;
+    border-right: 1px solid #1f2235;
 }
-/* Section headers */
-h3 { margin-top: 1.5rem !important; }
-/* Cleaner expanders */
-details > summary { font-weight: 600; }
-/* Mobile */
-@media (max-width: 600px) {
-    .block-container { padding: 0.5rem 0.5rem 0; }
+[data-testid="stSidebar"] hr { border-color: #1f2235 !important; margin: 0.6rem 0 !important; }
+[data-testid="stSidebarNav"] { display: none; }
+
+/* ── Sidebar nav items ── */
+[data-testid="stSidebar"] .stRadio > div { gap: 2px; }
+[data-testid="stSidebar"] .stRadio label {
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+[data-testid="stSidebar"] .stRadio label:hover { background: #1e2235; }
+
+/* ── Typography ── */
+h1 {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.4px !important;
+    margin-bottom: 0.25rem !important;
+}
+h2 { font-size: 1.3rem !important; font-weight: 600 !important; }
+h3 {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #9095b0 !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* ── Metric cards ── */
+[data-testid="metric-container"] {
+    background: #15182200;
+    background: linear-gradient(160deg, #1c1f2e 0%, #181b29 100%);
+    border: 1px solid #252840;
+    border-radius: 12px;
+    padding: 14px 18px 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+[data-testid="stMetricLabel"] {
+    font-size: 0.72rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #7a7f9a !important;
+    font-weight: 600 !important;
+}
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #f0f2ff !important;
+    line-height: 1.2 !important;
+}
+[data-testid="stMetricDelta"] { font-size: 0.78rem !important; }
+
+/* ── Primary buttons ── */
+.stButton > button {
+    min-height: 2.4rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 9px;
+    letter-spacing: 0.2px;
+    transition: all 0.15s ease;
+}
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #00c49a 0%, #0099cc 100%) !important;
+    border: none !important;
+    color: #fff !important;
+}
+.stButton > button[kind="primary"]:hover {
+    opacity: 0.92;
+    box-shadow: 0 4px 16px rgba(0,196,154,0.35);
+    transform: translateY(-1px);
+}
+.stButton > button[kind="secondary"] {
+    background: #1c1f2e !important;
+    border: 1px solid #2a2d40 !important;
+    color: #c8cae0 !important;
+}
+
+/* ── Tabs ── */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2px;
+    background: #181b29;
+    border-radius: 12px;
+    padding: 5px;
+    border: 1px solid #252840;
+}
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px;
+    padding: 7px 18px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #7a7f9a;
+    background: transparent;
+    border: none;
+}
+.stTabs [aria-selected="true"] {
+    background: #252840 !important;
+    color: #f0f2ff !important;
+    font-weight: 600 !important;
+}
+
+/* ── Expanders ── */
+details {
+    border: 1px solid #252840 !important;
+    border-radius: 12px !important;
+    background: #181b29 !important;
+    overflow: hidden;
+}
+details > summary {
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 11px 16px;
+    cursor: pointer;
+    color: #c8cae0;
+}
+details > summary:hover { background: #1e2235; }
+
+/* ── Alert boxes ── */
+.stAlert {
+    border-radius: 10px !important;
+    border-left-width: 3px !important;
+    font-size: 0.88rem !important;
+}
+
+/* ── Dataframes ── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #252840;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ── Inputs / selects ── */
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input {
+    background: #181b29 !important;
+    border: 1px solid #252840 !important;
+    border-radius: 8px !important;
+    color: #f0f2ff !important;
+    font-size: 0.9rem !important;
+}
+.stSelectbox > div > div {
+    background: #181b29 !important;
+    border: 1px solid #252840 !important;
+    border-radius: 8px !important;
+}
+
+/* ── Dividers ── */
+hr { border-color: #1f2235 !important; margin: 1.5rem 0 !important; }
+
+/* ── Captions ── */
+.stCaption { color: #6b7090 !important; font-size: 0.8rem !important; }
+
+/* ── File uploader ── */
+[data-testid="stFileUploader"] {
+    border: 1px dashed #2a2d40 !important;
+    border-radius: 10px !important;
+    background: #181b29 !important;
+}
+
+/* ── Plotly chart containers ── */
+[data-testid="stPlotlyChart"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    .main .block-container { padding: 0.75rem 0.75rem 2rem; }
+    h1 { font-size: 1.35rem !important; }
+    h3 { font-size: 0.85rem !important; }
 }
 </style>
 """, unsafe_allow_html=True)
 
+# ── Sidebar brand header ───────────────────────────────────────────────────────
+st.sidebar.markdown("""
+<div style="padding:1.1rem 0.5rem 0.8rem; text-align:center; border-bottom:1px solid #1f2235; margin-bottom:0.5rem;">
+    <div style="font-size:1.4rem; font-weight:800; color:#00c49a; letter-spacing:-0.5px;">📊 NQ/ES Trader</div>
+    <div style="font-size:0.7rem; color:#6b7090; margin-top:3px; letter-spacing:0.5px; text-transform:uppercase;">AI-Powered Analytics</div>
+</div>
+""", unsafe_allow_html=True)
+
+# ── Shared chart theme ────────────────────────────────────────────────────────
+_CHART = dict(
+    **_CHART,
+    font=dict(family="Inter, sans-serif", color="#c8cae0", size=12),
+    xaxis=dict(gridcolor="rgba(255,255,255,0.05)", tickfont=dict(size=11), linecolor="#252840"),
+    yaxis=dict(gridcolor="rgba(255,255,255,0.05)", tickfont=dict(size=11), linecolor="#252840"),
+    margin=dict(l=0, r=0, t=28, b=0),
+    legend=dict(bgcolor="rgba(0,0,0,0)", font=dict(size=11)),
+    hoverlabel=dict(bgcolor="#1c1f2e", font_size=12, bordercolor="#252840"),
+)
+
 # ── Navigation ────────────────────────────────────────────────────────────────
-PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward", "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search", "📈 History", "📒 Trade Journal", "📖 How to Use"]
+PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward",
+         "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search",
+         "📈 History", "📒 Trade Journal", "📖 How to Use"]
 page = st.sidebar.radio("Navigate", PAGES, label_visibility="collapsed")
 st.sidebar.markdown("---")
 
@@ -61,8 +249,8 @@ _RESULTS     = Path("results")
 _AUTO_ROOT   = _RESULTS / "auto"
 _MANUAL_ROOT = _RESULTS / "manual"
 
-# ── Mode: AI pipeline vs My Analysis ─────────────────────────────────────────
-st.sidebar.markdown("**Mode**")
+# ── Mode toggle ───────────────────────────────────────────────────────────────
+st.sidebar.markdown("<div style='font-size:0.72rem;text-transform:uppercase;letter-spacing:0.8px;color:#6b7090;padding:2px 0 4px;font-weight:600;'>Mode</div>", unsafe_allow_html=True)
 _mode = st.sidebar.radio(
     "mode",
     ["🤖 AI Pipeline", "👤 My Analysis"],
@@ -71,15 +259,16 @@ _mode = st.sidebar.radio(
 st.sidebar.markdown("---")
 
 # ── Instrument selector ───────────────────────────────────────────────────────
+st.sidebar.markdown("<div style='font-size:0.72rem;text-transform:uppercase;letter-spacing:0.8px;color:#6b7090;padding:2px 0 4px;font-weight:600;'>Instrument</div>", unsafe_allow_html=True)
 _instrument = st.sidebar.selectbox(
     "Instrument",
     ["📈 Nasdaq 100 (NQ)", "📊 S&P 500 (ES)"],
+    label_visibility="collapsed",
 )
 _instr_code = "NQ" if "NQ" in _instrument else "ES"
-
 st.sidebar.markdown("---")
 
-# ── History picker (AI mode only) ─────────────────────────────────────────────
+# ── History picker ─────────────────────────────────────────────────────────────
 _source_options = []
 _auto_instr_dir = _AUTO_ROOT / _instr_code
 if (_auto_instr_dir / "pipeline_summary.json").exists():
@@ -91,12 +280,13 @@ if _hist_dir.exists():
 _source_options.append("📂 Upload my own data")
 
 if _mode == "🤖 AI Pipeline":
-    _data_source = st.sidebar.selectbox("Run to view", _source_options) if _source_options else "📂 Upload my own data"
+    st.sidebar.markdown("<div style='font-size:0.72rem;text-transform:uppercase;letter-spacing:0.8px;color:#6b7090;padding:2px 0 4px;font-weight:600;'>Run</div>", unsafe_allow_html=True)
+    _data_source = st.sidebar.selectbox("Run to view", _source_options, label_visibility="collapsed") if _source_options else "📂 Upload my own data"
 else:
     _data_source = "📂 Upload my own data"
 
 st.sidebar.markdown("---")
-st.sidebar.caption("FX Backtester · v1.3")
+st.sidebar.markdown("<div style='font-size:0.7rem;color:#40435a;text-align:center;padding:4px 0;'>v2.0 · NQ/ES Trader</div>", unsafe_allow_html=True)
 
 # ── Load pipeline summary based on mode + instrument + selected run ───────────
 _pipeline_summary: dict = {}
@@ -297,12 +487,12 @@ if page == "🏠 Home":
                 go.Bar(name="Trained on (in-sample)",   x=labels, y=is_pips,
                        marker_color="#5588ff", opacity=0.7),
                 go.Bar(name="Tested on (out-of-sample)", x=labels, y=oos_pips,
-                       marker_color=["#00d4aa" if p > 0 else "#ff4455" for p in oos_pips]),
+                       marker_color=["#00c49a" if p > 0 else "#ff4455" for p in oos_pips]),
             ])
             fig_wf.update_layout(
                 barmode="group", height=280,
                 margin=dict(l=0, r=0, t=30, b=0),
-                paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                **_CHART,
                 yaxis=dict(title="Points", gridcolor="rgba(255,255,255,0.1)"),
                 legend=dict(orientation="h", y=1.15),
                 title="Blue = trained on it  |  Green/Red = tested on data it had never seen",
@@ -607,14 +797,13 @@ elif page == "🔬 Backtest":
         fig = go.Figure()
         fig.add_trace(go.Scatter(
             y=equity_vals, mode="lines",
-            line=dict(color="#00d4aa", width=2),
+            line=dict(color="#00c49a", width=2),
             fill="tozeroy", fillcolor="rgba(0,212,170,0.1)",
             name="Equity",
         ))
         fig.update_layout(
             margin=dict(l=0, r=0, t=20, b=0),
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
+            **_CHART,
             xaxis=dict(showgrid=False),
             yaxis=dict(gridcolor="rgba(255,255,255,0.1)"),
             height=300,
@@ -730,13 +919,12 @@ elif page == "🔄 Walk-Forward":
             fig = go.Figure(data=[
                 go.Bar(name="In-sample",     x=labels, y=is_pips,  marker_color="#5588ff"),
                 go.Bar(name="Out-of-sample", x=labels, y=oos_pips,
-                       marker_color=["#00d4aa" if p > 0 else "#ff4455" for p in oos_pips]),
+                       marker_color=["#00c49a" if p > 0 else "#ff4455" for p in oos_pips]),
             ])
             fig.update_layout(
                 barmode="group", height=300,
                 margin=dict(l=0, r=0, t=20, b=0),
-                paper_bgcolor="rgba(0,0,0,0)",
-                plot_bgcolor="rgba(0,0,0,0)",
+                **_CHART,
                 yaxis=dict(gridcolor="rgba(255,255,255,0.1)", title="Net pips"),
                 legend=dict(orientation="h", y=1.1),
             )
@@ -791,11 +979,11 @@ elif page == "📍 Key Levels":
                             pips = [afp[h] for h in horizons]
                             fig = go.Figure(go.Bar(
                                 x=[f"{h}b" for h in horizons], y=pips,
-                                marker_color=["#00d4aa" if p > 0 else "#ff4455" for p in pips],
+                                marker_color=["#00c49a" if p > 0 else "#ff4455" for p in pips],
                             ))
                             fig.update_layout(
                                 height=200, margin=dict(l=0,r=0,t=10,b=0),
-                                paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                                **_CHART,
                                 yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
                             )
                             st.plotly_chart(fig, use_container_width=True, key=f"auto_levels_bar_{ai}")
@@ -913,12 +1101,11 @@ elif page == "📍 Key Levels":
                     pips = [s.avg_forward_pips[h] for h in horizons]
                     fig = go.Figure(go.Bar(
                         x=[f"{h}b" for h in horizons], y=pips,
-                        marker_color=["#00d4aa" if p > 0 else "#ff4455" for p in pips],
+                        marker_color=["#00c49a" if p > 0 else "#ff4455" for p in pips],
                     ))
                     fig.update_layout(
                         height=200, margin=dict(l=0,r=0,t=10,b=0),
-                        paper_bgcolor="rgba(0,0,0,0)",
-                        plot_bgcolor="rgba(0,0,0,0)",
+                        **_CHART,
                         yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
                     )
                     st.plotly_chart(fig, use_container_width=True, key=f"levels_bar_{i}")
@@ -963,7 +1150,7 @@ elif page == "📊 MAE / MFE":
         st.markdown("**MAE vs MFE per trade** (green = winner, red = loser)")
         mae_vals = [e.mae_pips for e in r.excursions]
         mfe_vals = [e.mfe_pips for e in r.excursions]
-        colours  = ["#00d4aa" if e.is_winner else "#ff4455" for e in r.excursions]
+        colours  = ["#00c49a" if e.is_winner else "#ff4455" for e in r.excursions]
         labels   = [f"{e.trade_id} ({e.pnl_pips:+.1f} pips)" for e in r.excursions]
         fig = go.Figure(go.Scatter(
             x=mae_vals, y=mfe_vals, mode="markers",
@@ -972,8 +1159,7 @@ elif page == "📊 MAE / MFE":
         ))
         fig.update_layout(
             height=350, margin=dict(l=0,r=0,t=20,b=0),
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
+            **_CHART,
             xaxis=dict(title="MAE (pips — adverse)", gridcolor="rgba(255,255,255,0.1)"),
             yaxis=dict(title="MFE (pips — favorable)", gridcolor="rgba(255,255,255,0.1)"),
         )
@@ -1204,9 +1390,8 @@ elif page == "📈 History":
             if len(df) > 1:
                 fig = px.line(df, x="Run", y="Net Pips", markers=True,
                               title=f"{instr} — Net Pips Per Run",
-                              color_discrete_sequence=["#00d4aa"])
-                fig.update_layout(xaxis_tickangle=-45, paper_bgcolor="rgba(0,0,0,0)",
-                                  plot_bgcolor="rgba(0,0,0,0)",
+                              color_discrete_sequence=["#00c49a"])
+                fig.update_layout(xaxis_tickangle=-45, **_CHART,
                                   yaxis=dict(gridcolor="rgba(255,255,255,0.1)"))
                 st.plotly_chart(fig, use_container_width=True, key=f"history_pips_{instr}")
 
@@ -1754,10 +1939,10 @@ elif page == "📒 Trade Journal":
             _eq["cum_pnl"] = _eq["pnl_usd"].cumsum()
             _eq["trade_n"] = range(1, len(_eq)+1)
             fig_eq = px.area(_eq, x="trade_n", y="cum_pnl",
-                             color_discrete_sequence=["#00d4aa"],
+                             color_discrete_sequence=["#00c49a"],
                              labels={"trade_n": "Trade #", "cum_pnl": "Cumulative P&L ($)"},
                              title="Cumulative P&L")
-            fig_eq.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+            fig_eq.update_layout(**_CHART,
                                   yaxis=dict(gridcolor="rgba(255,255,255,0.1)"))
             fig_eq.add_hline(y=0, line_dash="dot", line_color="rgba(255,255,255,0.3)")
             st.plotly_chart(fig_eq, use_container_width=True, key="journal_equity")
@@ -1770,7 +1955,7 @@ elif page == "📒 Trade Journal":
                                      labels={"r_multiple": "R-Multiple"},
                                      title="Distribution of R-multiples (1R = risk per trade)")
                 fig_r.add_vline(x=0, line_dash="dash", line_color="white")
-                fig_r.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+                fig_r.update_layout(**_CHART)
                 st.plotly_chart(fig_r, use_container_width=True, key="journal_r_dist")
 
             # ── By session ────────────────────────────────────────────────
@@ -1783,15 +1968,15 @@ elif page == "📒 Trade Journal":
             ).reset_index()
             c1, c2 = st.columns(2)
             fig_s1 = px.bar(_sess, x="session", y="Total_PnL",
-                            color="Total_PnL", color_continuous_scale=["#ff4455","#00d4aa"],
+                            color="Total_PnL", color_continuous_scale=["#ff4455","#00c49a"],
                             title="Total P&L by Session")
-            fig_s1.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_s1.update_layout(**_CHART)
             c1.plotly_chart(fig_s1, use_container_width=True, key="journal_session_pnl")
 
             fig_s2 = px.bar(_sess, x="session", y="Win_Rate",
-                            color="Win_Rate", color_continuous_scale=["#ff4455","#00d4aa"],
+                            color="Win_Rate", color_continuous_scale=["#ff4455","#00c49a"],
                             title="Win Rate by Session")
-            fig_s2.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_s2.update_layout(**_CHART)
             c2.plotly_chart(fig_s2, use_container_width=True, key="journal_session_wr")
 
             # ── By day of week ────────────────────────────────────────────
@@ -1804,15 +1989,15 @@ elif page == "📒 Trade Journal":
             ).reindex(_dow_order).reset_index()
             c1, c2 = st.columns(2)
             fig_d1 = px.bar(_dow, x="dow", y="Total_PnL",
-                            color="Total_PnL", color_continuous_scale=["#ff4455","#00d4aa"],
+                            color="Total_PnL", color_continuous_scale=["#ff4455","#00c49a"],
                             title="Total P&L by Day")
-            fig_d1.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_d1.update_layout(**_CHART)
             c1.plotly_chart(fig_d1, use_container_width=True, key="journal_dow_pnl")
 
             fig_d2 = px.bar(_dow, x="dow", y="Win_Rate",
-                            color="Win_Rate", color_continuous_scale=["#ff4455","#00d4aa"],
+                            color="Win_Rate", color_continuous_scale=["#ff4455","#00c49a"],
                             title="Win Rate by Day")
-            fig_d2.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_d2.update_layout(**_CHART)
             c2.plotly_chart(fig_d2, use_container_width=True, key="journal_dow_wr")
 
             # ── By setup ──────────────────────────────────────────────────
@@ -1831,9 +2016,9 @@ elif page == "📒 Trade Journal":
                          })
 
             fig_setup = px.bar(_setup, x="setup", y="Total_PnL",
-                               color="Total_PnL", color_continuous_scale=["#ff4455","#00d4aa"],
+                               color="Total_PnL", color_continuous_scale=["#ff4455","#00c49a"],
                                title="P&L by Setup Type")
-            fig_setup.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+            fig_setup.update_layout(**_CHART,
                                      xaxis_tickangle=-30)
             st.plotly_chart(fig_setup, use_container_width=True, key="journal_setup_pnl")
 
@@ -1854,9 +2039,9 @@ elif page == "📒 Trade Journal":
                              "Win_Rate":    st.column_config.NumberColumn("Win Rate",    format="%.0%"),
                          })
             fig_mon = px.bar(_monthly, x="month", y="Total_PnL",
-                             color="Total_PnL", color_continuous_scale=["#ff4455","#00d4aa"],
+                             color="Total_PnL", color_continuous_scale=["#ff4455","#00c49a"],
                              title="Monthly P&L")
-            fig_mon.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_mon.update_layout(**_CHART)
             st.plotly_chart(fig_mon, use_container_width=True, key="journal_monthly_pnl")
 
             # ── Mindset analysis ──────────────────────────────────────────
@@ -1867,9 +2052,9 @@ elif page == "📒 Trade Journal":
                 Win_Rate=("result", lambda x: (x=="Win").mean()),
             ).sort_values("Win_Rate", ascending=False).reset_index()
             fig_mind = px.bar(_mind, x="emotion", y="Win_Rate",
-                              color="Win_Rate", color_continuous_scale=["#ff4455","#00d4aa"],
+                              color="Win_Rate", color_continuous_scale=["#ff4455","#00c49a"],
                               title="Win Rate by Mindset")
-            fig_mind.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_mind.update_layout(**_CHART)
             st.plotly_chart(fig_mind, use_container_width=True, key="journal_mindset")
 
             # ── Trade grade analysis ──────────────────────────────────────
@@ -1882,15 +2067,15 @@ elif page == "📒 Trade Journal":
             ).reset_index()
             c1, c2 = st.columns(2)
             fig_g1 = px.bar(_grade, x="grade", y="Win_Rate",
-                            color="Win_Rate", color_continuous_scale=["#ff4455","#00d4aa"],
+                            color="Win_Rate", color_continuous_scale=["#ff4455","#00c49a"],
                             title="Win Rate by Grade")
-            fig_g1.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_g1.update_layout(**_CHART)
             c1.plotly_chart(fig_g1, use_container_width=True, key="journal_grade_wr")
 
             fig_g2 = px.bar(_grade, x="grade", y="Avg_PnL",
-                            color="Avg_PnL", color_continuous_scale=["#ff4455","#00d4aa"],
+                            color="Avg_PnL", color_continuous_scale=["#ff4455","#00c49a"],
                             title="Avg P&L by Grade")
-            fig_g2.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
+            fig_g2.update_layout(**_CHART)
             c2.plotly_chart(fig_g2, use_container_width=True, key="journal_grade_pnl")
 
             # ── Win/loss streaks ──────────────────────────────────────────
