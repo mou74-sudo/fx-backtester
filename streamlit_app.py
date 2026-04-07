@@ -228,7 +228,8 @@ st.sidebar.markdown("""
 
 # ── Shared chart theme ────────────────────────────────────────────────────────
 _CHART = dict(
-    **_CHART,
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
     font=dict(family="Inter, sans-serif", color="#c8cae0", size=12),
     xaxis=dict(gridcolor="rgba(255,255,255,0.05)", tickfont=dict(size=11), linecolor="#252840"),
     yaxis=dict(gridcolor="rgba(255,255,255,0.05)", tickfont=dict(size=11), linecolor="#252840"),
