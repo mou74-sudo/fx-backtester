@@ -126,8 +126,26 @@ def _run_on_slice(
     bars: list[MarketBar],
     spec: StrategySpec,
     policy: ExecutionPolicy,
+    *,
+    warmup_prefix: list[MarketBar] | None = None,
 ) -> BacktestResult:
-    """Run the full signal pipeline + backtest on an arbitrary slice of bars."""
+    """Run the full signal pipeline + backtest on an arbitrary slice of bars.
+
+    Parameters
+    ----------
+    warmup_prefix:
+        Optional bars that precede ``bars`` and are used solely to warm up
+        indicators (RSI, ATR, EMA, etc.).  Signals and trades are only
+        produced for ``bars`` — the prefix never contributes to the backtest
+        result.  Providing this avoids the first N indicator-warmup bars of
+        each OOS slice being signal-dead.
+    """
+    if warmup_prefix:
+        combined = warmup_prefix + bars
+        prepared = build_signal_pipeline(market_bars=combined, spec=spec)
+        # Trim back to only the OOS portion for the actual backtest.
+        oos_signal_bars = prepared.bars[len(warmup_prefix):]
+        return run_backtest(bars=oos_signal_bars, spec=spec, policy=policy)
     prepared = build_signal_pipeline(market_bars=bars, spec=spec)
     return run_backtest(bars=prepared.bars, spec=spec, policy=policy)
 
@@ -190,7 +208,13 @@ def run_walk_forward(
             continue
 
         is_result = _run_on_slice(is_bars, spec, policy)
-        oos_result = _run_on_slice(oos_bars, spec, policy)
+        # Pass the IS tail as a warmup prefix so OOS indicators are fully
+        # initialised from bar 1 rather than wasting the first N warmup bars.
+        _warmup_n = min(len(is_bars), 100)  # cap at 100 bars — enough for any indicator
+        oos_result = _run_on_slice(
+            oos_bars, spec, policy,
+            warmup_prefix=is_bars[-_warmup_n:],
+        )
 
         folds.append(WalkForwardFold(
             fold_index=i + 1,

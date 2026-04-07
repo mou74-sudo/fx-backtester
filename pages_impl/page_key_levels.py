@@ -97,11 +97,14 @@ def render(_instr_code: str, _active_dir: Path) -> None:
                 from fx_backtester.data.loaders import load_market_bars
                 import tempfile
 
+                import os
                 with tempfile.NamedTemporaryFile(suffix=".csv", delete=False) as f:
                     f.write(st.session_state["csv_bytes"])
                     tmp_path = f.name
-
-                bars   = load_market_bars(tmp_path)
+                try:
+                    bars = load_market_bars(tmp_path)
+                finally:
+                    os.unlink(tmp_path)
                 levels = []
                 if "Previous day highs"  in level_types: levels += detect_prev_day_high_levels(bars)
                 if "Previous day lows"   in level_types: levels += detect_prev_day_low_levels(bars)

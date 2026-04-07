@@ -48,8 +48,10 @@ _FUTURES_PARAMS = {
     # NQ: $20/pt × 0.25 pt/pip  →  lot_size_units=20  →  pip_value=$5/pip per "lot"
     # ES: $50/pt × 0.25 pt/pip  →  lot_size_units=50  →  pip_value=$12.50/pip per "lot"
     # stop/tp in "pips" (1 pip = 0.25 NQ/ES points)
-    "NQ": {"pip_size": 0.25, "lot_size_units": 20,  "stop_loss_pips": 100, "take_profit_pips": 300},
-    "ES": {"pip_size": 0.25, "lot_size_units": 50,  "stop_loss_pips": 80,  "take_profit_pips": 240},
+    # NQ stop 200 pips = 50 NQ points (~0.25% at 20000) — realistic intraday stop
+    # ES stop 160 pips = 40 ES points (~0.20% at 5000) — realistic intraday stop
+    "NQ": {"pip_size": 0.25, "lot_size_units": 20,  "stop_loss_pips": 200, "take_profit_pips": 600},
+    "ES": {"pip_size": 0.25, "lot_size_units": 50,  "stop_loss_pips": 160, "take_profit_pips": 480},
 }
 
 def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> None:
@@ -59,12 +61,13 @@ def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> 
     raw["strategy_name"]        = f"auto_{instrument.lower()}_{end.isoformat()}"
     if instrument in _FUTURES_PARAMS:
         fp = _FUTURES_PARAMS[instrument]
-        raw["instrument"]["symbol"]        = instrument
-        raw["instrument"]["pip_size"]      = fp["pip_size"]
-        raw["instrument"]["lot_size_units"]= fp["lot_size_units"]
-        raw["risk"]["initial_equity"]      = 50_000   # realistic futures account size
-        raw["rules"]["stop_loss_pips"]     = fp["stop_loss_pips"]
-        raw["rules"]["take_profit_pips"]   = fp["take_profit_pips"]
+        raw["instrument"]["symbol"]         = instrument
+        raw["instrument"]["pip_size"]       = fp["pip_size"]
+        raw["instrument"]["lot_size_units"] = fp["lot_size_units"]
+        raw["instrument"]["min_lot_step"]   = 1.0   # futures trade in whole contracts only
+        raw["risk"]["initial_equity"]       = 50_000   # realistic futures account size
+        raw["rules"]["stop_loss_pips"]      = fp["stop_loss_pips"]
+        raw["rules"]["take_profit_pips"]    = fp["take_profit_pips"]
     out_path.write_text(json.dumps(raw, indent=2))
 
 
@@ -145,7 +148,6 @@ def run_instrument(instrument: str, lookback: int) -> None:
             pass
 
     wf_json = out_dir / "walk_forward" / "walk_forward.json"
-    wf_metrics: dict = {}
     wf_verdict      = None
     wf_oos_pips     = None
     wf_oos_wr       = None
@@ -153,22 +155,14 @@ def run_instrument(instrument: str, lookback: int) -> None:
     wf_total_folds  = None
     if wf_json.exists():
         try:
-            wf_metrics = json.loads(wf_json.read_text())
-            folds = wf_metrics.get("folds", [])
-            if folds:
-                oos_pips   = [f["out_of_sample"]["net_pips"] for f in folds]
-                oos_wrs    = [f["out_of_sample"]["win_rate"]  for f in folds]
-                oos_prof   = sum(1 for f in folds if f.get("oos_profitable"))
-                wf_oos_pips    = round(sum(oos_pips), 2)
-                wf_oos_wr      = round(sum(oos_wrs) / len(oos_wrs), 4)
-                wf_validated   = oos_prof
-                wf_total_folds = len(folds)
-                pct = oos_prof / len(folds)
-                wf_verdict = (
-                    "validated"   if pct >= 0.6 and wf_oos_pips > 0 else
-                    "failed"      if wf_oos_pips < 0 else
-                    "inconclusive"
-                )
+            # Deserialise via the canonical model so the verdict logic stays in one place.
+            from fx_backtester.analysis.walk_forward import WalkForwardReport
+            wf_report = WalkForwardReport.model_validate_json(wf_json.read_text())
+            wf_verdict      = wf_report.verdict
+            wf_oos_pips     = wf_report.oos_total_net_pips
+            wf_oos_wr       = wf_report.oos_avg_win_rate
+            wf_validated    = wf_report.validated_folds
+            wf_total_folds  = len(wf_report.folds)
         except Exception:
             pass
 

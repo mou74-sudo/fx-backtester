@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Literal
 
 from pydantic import BaseModel, Field
+
+# All valid session tag values — FX sessions + CME futures sessions (rth/eth).
+# Kept as plain str to avoid Pydantic strict-mode failures when deserialising
+# bars that were tagged by infer_futures_sessions().
+_SESSION_TAG = str
 
 
 class MarketBar(BaseModel):
@@ -13,4 +17,4 @@ class MarketBar(BaseModel):
     low: float = Field(..., gt=0)
     close: float = Field(..., gt=0)
     timezone_normalized_to_utc: bool = True
-    sessions: list[Literal["asia", "london", "new_york"]] = Field(default_factory=list)
+    sessions: list[_SESSION_TAG] = Field(default_factory=list)

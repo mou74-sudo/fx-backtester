@@ -1,10 +1,21 @@
-"""Deterministic FX position sizing helpers."""
+"""Deterministic FX/futures position sizing helpers."""
 
 from __future__ import annotations
 
 from math import floor
 
 from fx_backtester.formalizer.spec_models import InstrumentSpec, RiskSpec
+
+
+def _snap_lots(lots: float, min_lot_step: float) -> float:
+    """Floor lots to the nearest min_lot_step increment.
+
+    For futures (min_lot_step=1.0): 1.7 → 1.0, 2.9 → 2.0.
+    For FX (min_lot_step=0.0): pass through unchanged.
+    """
+    if min_lot_step <= 0:
+        return lots
+    return floor(lots / min_lot_step) * min_lot_step
 
 
 def pip_value_per_standard_lot(
@@ -64,5 +75,8 @@ def size_position_units(
     lots = risk_amount / loss_per_standard_lot
     if risk.max_lots is not None:
         lots = min(lots, risk.max_lots)
+    # Snap to minimum lot step before converting to units.
+    # For futures (min_lot_step=1.0) this ensures whole-contract sizing only.
+    lots = _snap_lots(lots, instrument.min_lot_step)
     units = floor(lots * instrument.lot_size_units)
     return max(units, 0)

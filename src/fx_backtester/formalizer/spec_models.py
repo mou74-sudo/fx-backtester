@@ -22,6 +22,15 @@ class InstrumentSpec(BaseModel):
     base_ccy: str = "EUR"
     pip_size: float = Field(default=0.0001, gt=0)
     lot_size_units: int = Field(default=100_000, gt=0)
+    min_lot_step: float = Field(
+        default=0.0,
+        ge=0,
+        description=(
+            "Minimum tradeable lot increment. "
+            "Set to 1.0 for futures (NQ/ES trade in whole contracts only). "
+            "Set to 0.0 (default) to disable snapping (FX micro/mini lots)."
+        ),
+    )
 
 
 class RiskSpec(BaseModel):

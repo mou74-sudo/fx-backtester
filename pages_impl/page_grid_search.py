@@ -92,7 +92,11 @@ Find the best strategy settings by testing every combination you specify.
                 from fx_backtester.analysis.grid_search import run_grid_search
                 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 
-                policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+                # Reuse the execution policy from the backtest page so spread/commission
+                # match the instrument (NQ/ES use half_spread=1.0, commission=$9).
+                policy = st.session_state.get("policy") or ExecutionPolicy(
+                    half_spread_pips=0.2, slippage_pips=0.0
+                )
                 gs_report = run_grid_search(
                     is_bars, param_grid, spec, policy,
                     sort_by=sort_by,
@@ -146,7 +150,9 @@ Find the best strategy settings by testing every combination you specify.
                         from fx_backtester.engine.pipeline import build_signal_pipeline
                         from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 
-                        policy  = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+                        policy = st.session_state.get("policy") or ExecutionPolicy(
+                            half_spread_pips=0.2, slippage_pips=0.0
+                        )
                         oos_spec = _apply_params(spec, best.params)
                         oos_prep = build_signal_pipeline(market_bars=st.session_state["gs_oos_bars"], spec=oos_spec)
                         oos_res  = run_backtest(bars=oos_prep.bars, spec=oos_spec, policy=policy)

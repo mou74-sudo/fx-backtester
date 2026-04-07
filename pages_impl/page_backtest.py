@@ -202,11 +202,12 @@ def render() -> None:
                         symbol=_loaded_instr,
                         pip_size=_fi["pip_size"],
                         lot_size_units=_fi["lot_size_units"],
+                        min_lot_step=1.0,  # futures trade in whole contracts only
                     )
                     _half_spread = _fi["half_spread"]
                     _commission  = _fi["commission"]
                 else:
-                    _instr_spec  = InstrumentSpec()   # EURUSD defaults
+                    _instr_spec  = InstrumentSpec()   # EURUSD defaults (min_lot_step=0)
                     _half_spread = 0.2
                     _commission  = 0.0
 
@@ -224,9 +225,10 @@ def render() -> None:
                 )
                 prepared = build_signal_pipeline(market_bars=bars, spec=spec)
                 result   = run_backtest(bars=prepared.bars, spec=spec, policy=policy)
-                _bt_pip_size = st.session_state.get("pip_size", 0.25)
+                # Use pip size from the constructed spec, not session state, to avoid
+                # defaulting to 0.25 (futures) for FX pairs where pip_size=0.0001.
                 mae_mfe  = compute_mae_mfe(result.trades, prepared.bars,
-                                           pip_size=_bt_pip_size,
+                                           pip_size=_instr_spec.pip_size,
                                            stop_loss_pips=stop_pips,
                                            take_profit_pips=tp_pips)
 
@@ -234,6 +236,7 @@ def render() -> None:
                 st.session_state["mae_mfe"] = mae_mfe
                 st.session_state["spec"]    = spec
                 st.session_state["bars"]    = bars
+                st.session_state["policy"]  = policy  # used by grid search and walk-forward
             except Exception as e:
                 st.error(f"Backtest failed: {e}")
                 st.stop()

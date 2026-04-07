@@ -536,13 +536,16 @@ def build_bollinger_band_signal_pipeline(*, market_bars: list[MarketBar], spec: 
 
         at_lower = lower is not None and bar.close <= lower
         at_upper = upper is not None and bar.close >= upper
-        at_middle_from_below = middle is not None and lower is not None and bar.close >= middle
-        at_middle_from_above = middle is not None and upper is not None and bar.close <= middle
+        # Exit longs when price mean-reverts back to the upper band (not middle) — gives the
+        # trade room to run and prevents immediate whipsaw exits on 1-2 bar bounces.
+        # Exit shorts when price mean-reverts back to the lower band for the same reason.
+        exit_long_target  = upper is not None and bar.close >= upper
+        exit_short_target = lower is not None and bar.close <= lower
 
         next_entry_long  = at_lower and direction in {"long_only", "both"}  and session_allowed and d1_long_ok
-        next_exit_long   = at_middle_from_below and direction in {"long_only", "both"}
+        next_exit_long   = exit_long_target  and direction in {"long_only", "both"}
         next_entry_short = at_upper and direction in {"short_only", "both"} and session_allowed and d1_short_ok
-        next_exit_short  = at_middle_from_above and direction in {"short_only", "both"}
+        next_exit_short  = exit_short_target and direction in {"short_only", "both"}
 
         execution_bar_timestamp = market_bars[idx + 1].timestamp.isoformat() if idx + 1 < len(market_bars) else None
         execution_bar_open = market_bars[idx + 1].open if idx + 1 < len(market_bars) else None

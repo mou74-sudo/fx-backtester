@@ -97,12 +97,26 @@ def _price_delta_to_pips(*, side: Literal["buy", "sell"], entry_price: float, ex
 
 
 def _convert_pnl_to_usd(*, pnl: float, account_ccy: str, exit_price: float, base_ccy: str, quote_ccy: str) -> float:
+    """Convert P&L from account currency to USD.
+
+    P&L for a forex pair is always denominated in the quote currency
+    (price_delta * units = quote-currency amount).
+
+    account_ccy == "USD"                     → already USD, return as-is
+    account_ccy == quote_ccy, base == "USD"  → P&L in quote; 1 quote = 1/price USD → divide
+    account_ccy == base_ccy,  quote == "USD" → P&L in USD already (quote is USD) → return as-is
+    """
     if account_ccy == "USD":
         return round(pnl, 2)
-    if account_ccy == base_ccy and quote_ccy == "USD":
-        return round(pnl * exit_price, 2)
+    # P&L is in quote currency; if quote==USD we're done
+    if quote_ccy == "USD":
+        return round(pnl, 2)
+    # P&L in quote currency, account in quote (e.g. JPY account, USDJPY) — convert JPY→USD
     if account_ccy == quote_ccy and base_ccy == "USD":
         return round(pnl / exit_price, 2)
+    # P&L in quote currency (USD), account in base (e.g. EUR account, EURUSD) — already USD
+    if account_ccy == base_ccy and quote_ccy == "USD":
+        return round(pnl, 2)
     raise NotImplementedError("USD conversion only supports base/quote relationships involving USD")
 
 
@@ -253,8 +267,15 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     )
 
 
-def _initial_stop_distance_pips(*, bar: SignalBar, spec: StrategySpec) -> float:
-    if spec.rules.stop_loss_style in {"fixed_pips", "disabled"}:
+def _initial_stop_distance_pips(*, bar: SignalBar, spec: StrategySpec) -> float | None:
+    """Return the stop distance in pips, or None when stops are disabled.
+
+    Returns None instead of a phantom distance when stop_loss_style=='disabled'
+    so that callers can skip fixed-fraction position sizing entirely.
+    """
+    if spec.rules.stop_loss_style == "disabled":
+        return None
+    if spec.rules.stop_loss_style == "fixed_pips":
         return spec.rules.stop_loss_pips
     if spec.rules.stop_loss_style == "atr":
         if bar.atr is None:
@@ -284,12 +305,14 @@ def _update_trailing_stop(position: _OpenPosition, bar: "SignalBar", spec: Strat
         trail_distance = spec.rules.trailing_stop_pips * pip_size
 
     if position.side == "buy":
-        new_stop = round(bar.close - trail_distance, 5)
+        # Trail from bar high — the most favourable intrabar price for a long
+        new_stop = round(bar.high - trail_distance, 5)
         if new_stop > position.stop_loss_price:
             position.stop_loss_price = new_stop
             position.trail_activated = True
     else:
-        new_stop = round(bar.close + trail_distance, 5)
+        # Trail from bar low — the most favourable intrabar price for a short
+        new_stop = round(bar.low + trail_distance, 5)
         if new_stop < position.stop_loss_price:
             position.stop_loss_price = new_stop
             position.trail_activated = True
@@ -431,13 +454,20 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
             side: Literal["buy", "sell"] = "buy" if bar.entry_long else "sell"
             entry_fill = apply_execution_policy(side=side, requested_price=requested_entry_price, policy=policy, pip_size=pip_size)
             stop_distance_pips = _initial_stop_distance_pips(bar=bar, spec=spec)
-            quantity_units = size_position_units(
-                equity=equity,
-                risk=spec.risk,
-                instrument=spec.instrument,
-                stop_loss_pips=stop_distance_pips,
-                reference_price=entry_fill.executed_price,
-            )
+            if stop_distance_pips is None:
+                # Stop disabled — size as a flat 1-lot (1 contract for futures).
+                # Fixed-fraction sizing is meaningless without a defined risk distance.
+                from fx_backtester.engine.sizing import _snap_lots
+                _flat_lots = _snap_lots(1.0, spec.instrument.min_lot_step) or 1.0
+                quantity_units = int(_flat_lots * spec.instrument.lot_size_units)
+            else:
+                quantity_units = size_position_units(
+                    equity=equity,
+                    risk=spec.risk,
+                    instrument=spec.instrument,
+                    stop_loss_pips=stop_distance_pips,
+                    reference_price=entry_fill.executed_price,
+                )
             if quantity_units == 0:
                 continue  # insufficient equity to open position; skip signal
             evidence_ref = None

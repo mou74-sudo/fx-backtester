@@ -65,7 +65,11 @@ def render(_instr_code: str, _active_dir: Path) -> None:
 
                 bars = st.session_state["bars"]
                 spec = st.session_state["spec"]
-                policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+                # Reuse the execution policy from the backtest page so spread/commission
+                # match the instrument (NQ/ES use half_spread=1.0, commission=$9).
+                policy = st.session_state.get("policy") or ExecutionPolicy(
+                    half_spread_pips=0.2, slippage_pips=0.0
+                )
                 report = run_walk_forward(
                     bars, spec, policy,
                     n_folds=n_folds,
