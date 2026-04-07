@@ -1322,16 +1322,256 @@ elif page == "📒 Trade Journal":
 
     # ── TAB 2: IMPORT TRADOVATE ───────────────────────────────────────────────
     with tab2:
-        st.subheader("Import from Tradovate")
-        st.markdown("""
-Export your trades from Tradovate and upload the CSV here — all trades are added to your journal automatically.
+        import requests as _requests
+        from collections import deque as _deque
 
-**How to export from Tradovate:**
-1. Log in to Tradovate → go to **Account** → **History**
-2. Set your date range and click **Export** (top right)
-3. Save the CSV file and upload it below
-""")
-        tv_file = st.file_uploader("Upload Tradovate CSV export", type=["csv"], key="tradovate_upload")
+        _TV_URLS = {
+            "Live account": "https://live.tradovateapi.com/v1",
+            "Demo account": "https://demo.tradovateapi.com/v1",
+        }
+
+        def _tv_auth(base, user, pwd):
+            r = _requests.post(f"{base}/auth/accesstokenrequest", json={
+                "name": user, "password": pwd,
+                "appId": "FX Backtester", "appVersion": "1.0",
+                "cid": 0, "sec": "",
+            }, timeout=15)
+            r.raise_for_status()
+            d = r.json()
+            if "errorText" in d:
+                raise ValueError(d["errorText"])
+            return d["accessToken"], d.get("userId")
+
+        def _tv_get(base, token, path):
+            r = _requests.get(f"{base}/{path}",
+                              headers={"Authorization": f"Bearer {token}"},
+                              timeout=15)
+            r.raise_for_status()
+            return r.json()
+
+        def _resolve_instrument(name: str) -> str:
+            n = (name or "").upper()
+            if "MNQ" in n: return "MNQ"
+            if "NQ"  in n: return "NQ"
+            if "MES" in n: return "MES"
+            if "ES"  in n: return "ES"
+            return n[:2]
+
+        def _fifo_match(fills: list[dict], contract_map: dict) -> list[dict]:
+            """Pair fills into round-trip trades using FIFO matching."""
+            from collections import defaultdict
+            queues: dict = defaultdict(lambda: {"Buy": _deque(), "Sell": _deque()})
+            closed: list[dict] = []
+
+            for f in sorted(fills, key=lambda x: x.get("timestamp", "")):
+                cid    = f.get("contractId")
+                name   = contract_map.get(cid, str(cid))
+                instr  = _resolve_instrument(name)
+                action = f.get("action", "")        # "Buy" or "Sell"
+                qty    = int(f.get("qty", 1))
+                price  = float(f.get("price", 0))
+                ts     = f.get("timestamp", "")
+                mult   = 20 if "NQ" in instr else 50
+
+                opp = "Sell" if action == "Buy" else "Buy"
+                q   = queues[cid][opp]
+
+                remaining = qty
+                while remaining > 0 and q:
+                    open_f = q[0]
+                    matched = min(remaining, open_f["qty"])
+                    open_f["qty"] -= matched
+                    remaining     -= matched
+                    if open_f["qty"] == 0:
+                        q.popleft()
+
+                    entry_p  = open_f["price"] if action == "Sell" else price
+                    exit_p   = price           if action == "Sell" else open_f["price"]
+                    side     = "Long"          if action == "Sell" else "Short"
+                    pts      = (exit_p - entry_p) if side == "Long" else (entry_p - exit_p)
+                    pnl_usd  = round(pts * mult * matched, 2)
+                    entry_ts = open_f["ts"]    if action == "Sell" else ts
+                    exit_ts  = ts              if action == "Sell" else open_f["ts"]
+
+                    try:
+                        _edt = _pd.to_datetime(entry_ts)
+                    except Exception:
+                        _edt = _pd.Timestamp.now()
+                    closed.append({
+                        "id":          str(uuid.uuid4())[:8],
+                        "date":        _edt.date().isoformat(),
+                        "time":        _edt.strftime("%H:%M"),
+                        "instrument":  instr,
+                        "side":        side,
+                        "size":        matched,
+                        "entry":       entry_p,
+                        "exit":        exit_p,
+                        "stop_loss":   0.0,
+                        "take_profit": 0.0,
+                        "pnl_usd":     pnl_usd,
+                        "pnl_points":  round(pts, 2),
+                        "r_multiple":  None,
+                        "result":      "Win" if pnl_usd > 0 else ("Loss" if pnl_usd < 0 else "BE"),
+                        "setup":       "Imported",
+                        "session":     "New York",
+                        "emotion":     "Confident",
+                        "grade":       "A Setup",
+                        "notes":       f"Auto-imported from Tradovate — {name}",
+                        "source":      "tradovate_api",
+                    })
+
+                # leftover goes into the open queue
+                if remaining > 0:
+                    queues[cid][action].append({
+                        "qty": remaining, "price": price, "ts": ts
+                    })
+
+            return closed
+
+        # ── UI ──────────────────────────────────────────────────────────
+        st.subheader("🔗 Connect Tradovate")
+        st.markdown(
+            "Enter your Tradovate login once. Your credentials are **never stored** — "
+            "they're used only to get a short-lived token from Tradovate's servers, "
+            "then discarded immediately."
+        )
+        st.info("🔒 Credentials live in your browser session only. Closing the tab clears them.")
+
+        with st.form("tv_connect_form"):
+            c1, c2 = st.columns(2)
+            _tv_user = c1.text_input("Tradovate username / email")
+            _tv_pass = c2.text_input("Password", type="password")
+            c1, c2 = st.columns(2)
+            _tv_env  = c1.selectbox("Account type", list(_TV_URLS.keys()))
+            _tv_days = c2.number_input("Sync last N days", 1, 365, 90)
+            _tv_submit = st.form_submit_button("🔗 Connect & Sync Trades", type="primary", use_container_width=True)
+
+        if _tv_submit:
+            if not _tv_user or not _tv_pass:
+                st.warning("Enter your Tradovate username and password.")
+            else:
+                _base = _TV_URLS[_tv_env]
+                with st.spinner("Connecting to Tradovate…"):
+                    try:
+                        import pandas as _pd
+                        _token, _uid = _tv_auth(_base, _tv_user, _tv_pass)
+                        st.success("✅ Connected to Tradovate.")
+
+                        with st.spinner("Fetching accounts…"):
+                            _accounts = _tv_get(_base, _token, "account/list") or []
+
+                        with st.spinner(f"Fetching fills for last {_tv_days} days…"):
+                            _fills_raw = _tv_get(_base, _token, "fill/list") or []
+                            _contracts_raw = _tv_get(_base, _token, "contract/list") or []
+
+                        # Build contract id → name map
+                        _cmap = {c["id"]: c.get("name","") for c in _contracts_raw}
+
+                        # Filter to date range
+                        _since = (_pd.Timestamp.now(tz="UTC") - _pd.Timedelta(days=int(_tv_days)))
+                        _fills = []
+                        for f in _fills_raw:
+                            try:
+                                _ts = _pd.to_datetime(f.get("timestamp",""), utc=True)
+                                if _ts >= _since:
+                                    _fills.append(f)
+                            except Exception:
+                                _fills.append(f)
+
+                        st.info(f"Found **{len(_fills)} fills** across {len(_accounts)} account(s).")
+
+                        if _fills:
+                            _matched = _fifo_match(_fills, _cmap)
+                            st.info(f"Matched into **{len(_matched)} round-trip trades**.")
+
+                            if _matched:
+                                _preview_df = _pd.DataFrame(_matched)[
+                                    ["date","time","instrument","side","size","entry","exit","pnl_usd","pnl_points","result"]
+                                ]
+                                st.dataframe(_preview_df, use_container_width=True)
+
+                                # Deduplicate against existing trades
+                                _existing_keys = {
+                                    (t.get("date"), t.get("time"), t.get("instrument"),
+                                     t.get("entry"), t.get("exit"), t.get("size"))
+                                    for t in trades
+                                }
+                                _new = [
+                                    t for t in _matched
+                                    if (t["date"], t["time"], t["instrument"],
+                                        t["entry"], t["exit"], t["size"]) not in _existing_keys
+                                ]
+                                st.success(
+                                    f"**{len(_new)} new trades** to import "
+                                    f"({len(_matched) - len(_new)} already in journal)."
+                                )
+                                if _new and st.button("⬇ Import All New Trades", type="primary"):
+                                    trades.extend(_new)
+                                    _save_trades(trades)
+                                    st.success(f"✅ Imported {len(_new)} trades. Go to 📋 Trade Log to add your notes.")
+                                    st.rerun()
+                        else:
+                            st.info("No fills found in this date range. Try a longer period.")
+
+                    except ValueError as e:
+                        st.error(f"Login failed: {e}")
+                        st.caption("Check your username and password, and make sure you selected the right account type (Live vs Demo).")
+                    except _requests.exceptions.HTTPError as e:
+                        st.error(f"Tradovate API error: {e}")
+                    except _requests.exceptions.ConnectionError:
+                        st.error("Could not reach Tradovate's servers. Check your internet connection.")
+                    except Exception as e:
+                        st.error(f"Unexpected error: {e}")
+
+        st.markdown("---")
+        st.caption("Alternatively, upload a CSV export from Tradovate → Account → History.")
+        tv_file = st.file_uploader("Upload Tradovate CSV (optional fallback)", type=["csv"], key="tradovate_upload")
+        if tv_file:
+            try:
+                import pandas as _pd
+                tv_df = _pd.read_csv(tv_file)
+                _col_map = {c.lower().replace(" ","").replace("_",""): c for c in tv_df.columns}
+                def _fc(*cands):
+                    for c in cands:
+                        if c in _col_map: return _col_map[c]
+                _cc = _fc("contractname","symbol","contract","instrument")
+                _cs = _fc("side","buysell","action","direction")
+                _cq = _fc("qty","quantity","size","contracts")
+                _cp = _fc("price","fillprice","avgprice","executionprice")
+                _cd = _fc("datetime","timestamp","time","date","filltime","tradetime")
+                _cn = _fc("realizedpnl","pnl","realizedpl","profit","gainloss")
+                missing = [n for n,c in [("contract",_cc),("side",_cs),("qty",_cq),("price",_cp),("datetime",_cd)] if c is None]
+                if missing:
+                    st.warning(f"Couldn't find columns: {', '.join(missing)}")
+                else:
+                    closed = tv_df[tv_df[_cn].notna() & (tv_df[_cn] != 0)] if _cn else tv_df
+                    st.info(f"Found **{len(closed)} trades** in CSV.")
+                    if st.button("⬇ Import CSV", type="secondary"):
+                        imported = 0
+                        for _, row in closed.iterrows():
+                            try:
+                                instr = _resolve_instrument(str(row[_cc]))
+                                side  = "Long" if str(row[_cs]).lower() in ("buy","b","long","bot") else "Short"
+                                qty   = int(float(row[_cq]))
+                                price = float(row[_cp])
+                                rdt   = _pd.to_datetime(row[_cd])
+                                pnl   = float(row[_cn]) if _cn else 0.0
+                                mult  = 20 if instr == "NQ" else 50
+                                pts   = pnl / (mult * qty) if qty > 0 else 0.0
+                                trades.append({"id": str(uuid.uuid4())[:8], "date": rdt.date().isoformat(),
+                                    "time": rdt.strftime("%H:%M"), "instrument": instr, "side": side, "size": qty,
+                                    "entry": price, "exit": round(price + pts if side=="Long" else price - pts, 2),
+                                    "stop_loss": 0.0, "take_profit": 0.0, "pnl_usd": pnl, "pnl_points": round(pts,2),
+                                    "r_multiple": None, "result": "Win" if pnl>0 else ("Loss" if pnl<0 else "BE"),
+                                    "setup": "Imported", "session": "New York", "emotion": "Confident",
+                                    "grade": "A Setup", "notes": f"CSV import — {row[_cc]}", "source": "tradovate_csv"})
+                                imported += 1
+                            except Exception: pass
+                        _save_trades(trades)
+                        st.success(f"✅ Imported {imported} trades.")
+                        st.rerun()
+            except Exception as e:
+                st.error(f"Could not read file: {e}")
         if tv_file:
             try:
                 import pandas as pd
