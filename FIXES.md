@@ -86,6 +86,35 @@ Reviewer: Claude Opus 4.6 (two passes)
 
 ---
 
+## Pass 3 — Correctness Bugs
+
+| # | Severity | File | Issue | Status |
+|---|----------|------|-------|--------|
+| T1 | 🔴 Critical | `engine/backtest.py` | Crash from NB3 fix — `stop_distance_pips` is `None` when stop disabled but lines 477-480 still multiply `stop_distance_pips * pip_size` unconditionally. `None * float` → `TypeError`. | ✅ FIXED |
+| T5 | 🟡 Medium | `engine/backtest.py` | `BacktestResult.ending_equity_usd: gt=0` crashes on account blowup — should be `ge=0`. | ✅ FIXED |
+| T10 | 🟢 Low | `pages_impl/page_backtest.py` | Monte Carlo percentile indexing uses `int(n * pct)` truncation — off-by-one at boundary; `int(n * 0.95)` gives index 95 in 100-item list (96th value). Should use `(n-1)` basis. | ✅ FIXED |
+
+## Pass 3 — Financial / Trading Correctness
+
+| # | Severity | File | Issue | Status |
+|---|----------|------|-------|--------|
+| T2 | 🟠 High | `engine/pipeline.py` | Bollinger `direction="both"` churn — after NB4 fix, `exit_long_target = at_upper` and `next_entry_short = at_upper` are same expression; every long exit immediately triggers a short entry on the same bar. | ✅ FIXED (direction="both" exits at middle band) |
+| T6 | 🟡 Medium | `pages_impl/page_backtest.py` | Futures `InstrumentSpec` inherits `base_ccy="EUR"`, `quote_ccy="USD"` defaults — NQ/ES are USD/USD instruments. | ✅ FIXED |
+| T7 | 🟡 Medium | `scripts/run_pipeline.py` | Same as T6 — `build_live_spec()` never sets `base_ccy`/`quote_ccy` for futures. | ✅ FIXED |
+| T8 | 🟢 Low | `engine/pipeline.py` | ORB pipeline only emits exit signals inside the ORB session — positions entered near session close ride overnight unmanaged if no time_stop is set. | ✅ FIXED (added docstring warning + out-of-session exit signal) |
+
+## Pass 3 — Design Flaws
+
+| # | Severity | File | Issue | Status |
+|---|----------|------|-------|--------|
+| T3 | 🔴 High | `analysis/walk_forward.py` | `WalkForwardReport` `@property` fields not serialised — Pydantic `model_dump()` skips plain Python properties. Dashboard reads zeros/dashes for every pre-computed result. | ✅ FIXED (`@computed_field`) |
+| T4 | 🟡 Medium | `engine/pipeline.py` | Breakout trace hardcodes `exit_signal=False` / `short_exit_signal=False` — exits computed but not propagated to `SignalTraceRow`. | ✅ FIXED |
+| T9 | 🟢 Low | `engine/robustness.py` | Robustness module silently no-ops parameter sweeps for non-RSI strategies — no feedback to user that strategy-param variation didn't run. | ✅ FIXED (added `strategy_params_varied` field to report) |
+
+**Pass 3 total: 10 issues — 10 fixed ✅**
+
+---
+
 ## Pass 2 Priority Order
 
 1. **NF1+NF2** — Fractional contracts (all futures P&L numbers are fiction)
@@ -108,5 +137,6 @@ Reviewer: Claude Opus 4.6 (two passes)
 
 - Pass 1: 21 issues — 17 ✅ fixed, 4 📝 noted
 - Pass 2: 15 issues — 14 ✅ fixed, 1 📝 noted
-- **Grand total: 36 issues — 31 fixed, 5 noted/backlog, 0 remaining**
+- Pass 3: 10 issues — 10 ✅ fixed
+- **Grand total: 46 issues — 41 fixed, 5 noted/backlog, 0 remaining**
 

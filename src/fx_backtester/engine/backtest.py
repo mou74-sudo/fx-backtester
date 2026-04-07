@@ -65,8 +65,8 @@ class BacktestMetrics(BaseModel):
 
 class BacktestResult(BaseModel):
     starting_equity: float = Field(..., gt=0)
-    ending_equity: float = Field(..., gt=0)
-    ending_equity_usd: float = Field(..., gt=0)
+    ending_equity: float = Field(..., ge=0)   # ge=0: account can be blown to zero
+    ending_equity_usd: float = Field(..., ge=0)
     trade_count: int = Field(..., ge=0)
     trades: list[TradeRecord]
     metrics: BacktestMetrics
@@ -474,10 +474,21 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
             if bar.signal_bar_timestamp is not None:
                 evidence_ref = f"signal={bar.signal_bar_timestamp}|execution={bar.timestamp.isoformat()}"
             if side == "buy":
-                stop_loss_price = round(entry_fill.executed_price - (stop_distance_pips * pip_size), 5)
+                # When stop is disabled (stop_distance_pips is None), place the stop_loss_price at a
+                # near-zero sentinel that can never trigger (stop_enabled=False gates the SL check).
+                # Using 1e-5 also lets a trailing stop immediately ratchet up from the first bar
+                # if trailing is enabled alongside a disabled initial stop.
+                stop_loss_price = (
+                    round(entry_fill.executed_price - (stop_distance_pips * pip_size), 5)
+                    if stop_distance_pips is not None else 1e-5
+                )
                 take_profit_price = round(entry_fill.executed_price + (spec.rules.take_profit_pips * pip_size), 5)
             else:
-                stop_loss_price = round(entry_fill.executed_price + (stop_distance_pips * pip_size), 5)
+                # Sentinel for shorts: far above market so the SL never triggers.
+                stop_loss_price = (
+                    round(entry_fill.executed_price + (stop_distance_pips * pip_size), 5)
+                    if stop_distance_pips is not None else entry_fill.executed_price * 1_000.0
+                )
                 take_profit_price = round(entry_fill.executed_price - (spec.rules.take_profit_pips * pip_size), 5)
             open_position = _OpenPosition(
                 trade_id=f"{spec.instrument.symbol.lower()}-{trade_index:04d}",

@@ -64,7 +64,9 @@ def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> 
         raw["instrument"]["symbol"]         = instrument
         raw["instrument"]["pip_size"]       = fp["pip_size"]
         raw["instrument"]["lot_size_units"] = fp["lot_size_units"]
-        raw["instrument"]["min_lot_step"]   = 1.0   # futures trade in whole contracts only
+        raw["instrument"]["min_lot_step"]   = 1.0     # futures trade in whole contracts only
+        raw["instrument"]["base_ccy"]       = "USD"   # NQ/ES are USD-denominated
+        raw["instrument"]["quote_ccy"]      = "USD"
         raw["risk"]["initial_equity"]       = 50_000   # realistic futures account size
         raw["rules"]["stop_loss_pips"]      = fp["stop_loss_pips"]
         raw["rules"]["take_profit_pips"]    = fp["take_profit_pips"]

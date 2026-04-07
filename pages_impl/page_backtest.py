@@ -203,6 +203,8 @@ def render() -> None:
                         pip_size=_fi["pip_size"],
                         lot_size_units=_fi["lot_size_units"],
                         min_lot_step=1.0,  # futures trade in whole contracts only
+                        base_ccy="USD",    # NQ/ES are USD-denominated; no cross-rate conversion
+                        quote_ccy="USD",
                     )
                     _half_spread = _fi["half_spread"]
                     _commission  = _fi["commission"]
@@ -356,11 +358,16 @@ def render() -> None:
                 _mc_finals.sort()
                 _mc_max_dds.sort()
                 n = len(_mc_finals)
-                p5  = _mc_finals[int(n * 0.05)]
-                p50 = _mc_finals[int(n * 0.50)]
-                p95 = _mc_finals[int(n * 0.95)]
-                dd_p50 = _mc_max_dds[int(n * 0.50)]
-                dd_p95 = _mc_max_dds[int(n * 0.95)]
+                # Use (n-1) basis for nearest-rank percentile to avoid off-by-one:
+                # int(n * 0.95) with n=100 gives index 95 (96th value), but the
+                # 95th-percentile value is at index 94 (0-indexed, i.e. (n-1)*0.95).
+                def _pct_idx(pct: float) -> int:
+                    return max(0, min(int(round((n - 1) * pct)), n - 1))
+                p5  = _mc_finals[_pct_idx(0.05)]
+                p50 = _mc_finals[_pct_idx(0.50)]
+                p95 = _mc_finals[_pct_idx(0.95)]
+                dd_p50 = _mc_max_dds[_pct_idx(0.50)]
+                dd_p95 = _mc_max_dds[_pct_idx(0.95)]
 
                 mc1, mc2, mc3 = st.columns(3)
                 mc1.metric("5th pct final equity",  f"${p5:,.0f}", delta=f"${p5-_start_eq:+,.0f}")

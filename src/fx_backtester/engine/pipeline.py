@@ -218,9 +218,9 @@ def build_breakout_signal_pipeline(*, market_bars: list[MarketBar], spec: Strate
                 atr=atr,
                 sessions=bar.sessions,
                 entry_signal=next_entry_long,
-                exit_signal=False,
+                exit_signal=next_exit_long,
                 short_entry_signal=next_entry_short,
-                short_exit_signal=False,
+                short_exit_signal=next_exit_short,
                 executable_on_next_bar=idx + 1 < len(market_bars),
                 no_leakage_ok=(execution_bar_timestamp is None or execution_bar_timestamp > bar.timestamp.isoformat()),
                 session_allowed=session_allowed,
@@ -407,7 +407,21 @@ def build_vwap_reversion_signal_pipeline(*, market_bars: list[MarketBar], spec: 
 
 
 def build_orb_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpec) -> PreparedSignalData:
-    """Opening Range Breakout: enter on breakout of first N bars of the session."""
+    """Opening Range Breakout: enter on breakout of first N bars of the session.
+
+    Exit signals (price falls back inside the ORB) are only produced during the
+    ORB session itself.  Outside-session bars emit no exit signal — the position
+    then relies on SL, TP, time_stop, or ``exit_on_session_close`` for management.
+    If you run ORB without a time_stop and without ``exit_on_session_close``, a
+    trade entered near the end of the session can ride unmanaged overnight.
+    Recommendation: always set ``time_stop_bars`` or ``exit_on_session_close=true``
+    when using the ORB strategy type.
+
+    Outside-session fallback: when no ORB exit is available (bar not in ORB session),
+    this pipeline emits an exit signal when price crosses back through the ORB level
+    in the opposite direction, ensuring the position is not held indefinitely on a
+    failed breakout even if SL is disabled.
+    """
     from datetime import date as _date
 
     closes = [bar.close for bar in market_bars]
@@ -444,6 +458,9 @@ def build_orb_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
         next_entry_short = False
         next_exit_short  = False
 
+        orb_h = day_orb_high.get(day)
+        orb_l = day_orb_low.get(day)
+
         if in_orb_session:
             if day not in day_bar_count:
                 day_bar_count[day] = 0
@@ -457,15 +474,21 @@ def build_orb_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
                 else:
                     day_orb_high[day] = max(day_orb_high[day], bar.high)
                     day_orb_low[day] = min(day_orb_low[day], bar.low)
-            else:
                 orb_h = day_orb_high.get(day)
                 orb_l = day_orb_low.get(day)
+            else:
                 if orb_h is not None and orb_l is not None:
                     next_entry_long  = bar.close > orb_h and direction in {"long_only", "both"}  and session_allowed and d1_long_ok
                     next_entry_short = bar.close < orb_l and direction in {"short_only", "both"} and session_allowed and d1_short_ok
                     # Exit when price falls back inside the opening range
                     next_exit_long   = bar.close < orb_h and direction in {"long_only", "both"}
                     next_exit_short  = bar.close > orb_l and direction in {"short_only", "both"}
+        else:
+            # Outside the ORB session — no entries, but emit fallback exits so a
+            # failed breakout held overnight can still be closed by signal.
+            if orb_h is not None and orb_l is not None:
+                next_exit_long  = bar.close < orb_h and direction in {"long_only", "both"}
+                next_exit_short = bar.close > orb_l and direction in {"short_only", "both"}
 
         execution_bar_timestamp = market_bars[idx + 1].timestamp.isoformat() if idx + 1 < len(market_bars) else None
         execution_bar_open = market_bars[idx + 1].open if idx + 1 < len(market_bars) else None
@@ -536,11 +559,22 @@ def build_bollinger_band_signal_pipeline(*, market_bars: list[MarketBar], spec: 
 
         at_lower = lower is not None and bar.close <= lower
         at_upper = upper is not None and bar.close >= upper
-        # Exit longs when price mean-reverts back to the upper band (not middle) — gives the
-        # trade room to run and prevents immediate whipsaw exits on 1-2 bar bounces.
-        # Exit shorts when price mean-reverts back to the lower band for the same reason.
-        exit_long_target  = upper is not None and bar.close >= upper
-        exit_short_target = lower is not None and bar.close <= lower
+        # Exit targets differ by direction mode to avoid immediate flip-trade churn:
+        #
+        #   single-direction (long_only / short_only):
+        #     Exit at the opposite band — gives the trade room to run to its full target.
+        #
+        #   both-direction (mean-reversion channel):
+        #     Exit at the middle band — separates the exit signal from the opposite entry
+        #     signal (which fires at the extreme band).  Without this separation, a long
+        #     exits and a short enters on the exact same bar, creating zero-bar flip trades
+        #     that inflate trade count and commission costs.
+        if direction == "both":
+            exit_long_target  = middle is not None and bar.close >= middle
+            exit_short_target = middle is not None and bar.close <= middle
+        else:
+            exit_long_target  = upper is not None and bar.close >= upper
+            exit_short_target = lower is not None and bar.close <= lower
 
         next_entry_long  = at_lower and direction in {"long_only", "both"}  and session_allowed and d1_long_ok
         next_exit_long   = exit_long_target  and direction in {"long_only", "both"}

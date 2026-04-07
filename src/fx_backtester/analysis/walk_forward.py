@@ -22,7 +22,7 @@ import json
 from pathlib import Path
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, computed_field
 
 from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.backtest import BacktestResult, run_backtest
@@ -88,24 +88,30 @@ class WalkForwardReport(BaseModel):
     in_sample_pct: float
     folds: list[WalkForwardFold]
 
-    # Aggregate OOS metrics (computed properties, not stored)
+    # Aggregate OOS metrics — stored as computed_field so model_dump()/JSON serialisation
+    # includes them (plain @property is invisible to Pydantic's serialiser).
+    @computed_field  # type: ignore[misc]
     @property
     def validated_folds(self) -> int:
         return sum(1 for f in self.folds if f.oos_profitable)
 
+    @computed_field  # type: ignore[misc]
     @property
     def oos_total_trades(self) -> int:
         return sum(f.out_of_sample.trade_count for f in self.folds)
 
+    @computed_field  # type: ignore[misc]
     @property
     def oos_total_net_pips(self) -> float:
         return round(sum(f.out_of_sample.net_pips for f in self.folds), 1)
 
+    @computed_field  # type: ignore[misc]
     @property
     def oos_avg_win_rate(self) -> float:
         rates = [f.out_of_sample.win_rate for f in self.folds if f.out_of_sample.trade_count > 0]
         return round(sum(rates) / len(rates), 4) if rates else 0.0
 
+    @computed_field  # type: ignore[misc]
     @property
     def verdict(self) -> Literal["validated", "inconclusive", "failed"]:
         if not self.folds:

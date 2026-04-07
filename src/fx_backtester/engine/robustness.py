@@ -27,6 +27,12 @@ class RobustnessLiteReport(BaseModel):
     scenarios: list[RobustnessScenarioResult]
     trade_concentration: dict[str, object]
     session_contribution_summary: dict[str, dict[str, float | int]]
+    # Describes which parameters were actually swept.  For non-RSI strategies,
+    # only spread/slippage is varied — strategy-specific params (BB period, EMA
+    # period, etc.) are not varied because the module only supports RSI period
+    # sweeps.  Surfaced here so callers can warn the user instead of silently
+    # presenting incomplete robustness results.
+    strategy_params_varied: list[str] = []
 
 
 
@@ -98,10 +104,15 @@ def run_robustness_lite(*, market_bars: list[MarketBar], spec: StrategySpec, pol
                         )
                     )
 
+    strategy_params_varied: list[str] = ["spread_multiplier", "slippage_mode"]
+    if spec.rules.strategy_type == "rsi_mean_reversion" and len(spec.robustness.rsi_period_variants) > 1:
+        strategy_params_varied.append("rsi_period")
+
     return RobustnessLiteReport(
         enabled=spec.robustness.enabled,
         baseline=baseline,
         scenarios=scenarios,
         trade_concentration=_trade_concentration(baseline_result),
         session_contribution_summary=baseline_result.metrics.session_summary,
+        strategy_params_varied=strategy_params_varied,
     )
