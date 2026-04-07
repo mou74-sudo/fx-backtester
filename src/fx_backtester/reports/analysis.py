@@ -167,7 +167,7 @@ def _collect_next_tests(final_verdict: dict[str, Any]) -> list[SuggestedNextTest
     if not suggestions:
         suggestions.append(
             SuggestedNextTest(
-                priority=0,
+                priority=1,
                 name='Add out-of-sample confirmation',
                 why='The current deterministic artifacts do not expose an obvious failure mode; validate the same rules on a separate period before increasing confidence.',
                 evidence_refs=['reports/summary.json', 'reports/final_verdict.json'],
