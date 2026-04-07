@@ -14,7 +14,7 @@ import io
 import json
 import sys
 import tempfile
-from datetime import date, timedelta
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 
 import plotly.graph_objects as go
@@ -72,6 +72,27 @@ st.sidebar.caption("FX Backtester · v1.3")
 
 # ── Load data based on selection ──────────────────────────────────────────────
 _pipeline_summary: dict = {}
+
+
+def _format_ts(value: str | None) -> str:
+    if not value:
+        return "—"
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return dt.astimezone(UTC).strftime("%Y-%m-%d %H:%M UTC")
+    except Exception:
+        return str(value)
+
+
+def _last_updated_text() -> str:
+    candidates = []
+    for path in (_PIPELINE_SUMMARY, _LATEST_CSV):
+        if path.exists():
+            candidates.append(datetime.fromtimestamp(path.stat().st_mtime, tz=UTC))
+    if not candidates:
+        return "—"
+    return max(candidates).strftime("%Y-%m-%d %H:%M UTC")
+
 
 if _data_source == "📡 Latest pipeline run":
     if _LATEST_CSV.exists():
@@ -139,8 +160,12 @@ if page == "🏠 Home":
 """)
     if _pipeline_summary:
         run_ts = _pipeline_summary.get("run_timestamp", _pipeline_summary.get("run_date", ""))
+        data_end = _pipeline_summary.get("end_date") or _pipeline_summary.get("end") or _pipeline_summary.get("data_end") or _pipeline_summary.get("latest_data_date")
         bt = _pipeline_summary.get("backtest", {})
-        st.success(f"**Live pipeline data loaded** — last run: {run_ts}")
+        st.success(f"**Live pipeline data loaded**")
+        m1, m2 = st.columns(2)
+        m1.metric("Data as of", str(data_end or "—"))
+        m2.metric("Last updated", _format_ts(run_ts) if run_ts else _last_updated_text())
         if bt:
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Trades", bt.get("trade_count", "—"))
