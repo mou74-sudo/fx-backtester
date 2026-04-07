@@ -238,6 +238,10 @@ _CHART = dict(
     hoverlabel=dict(bgcolor="#1c1f2e", font_size=12, bordercolor="#252840"),
 )
 
+def _cl(**kw) -> dict:
+    """Merge _CHART with overrides — avoids duplicate-kwarg TypeError."""
+    return {**_CHART, **kw}
+
 # ── Navigation ────────────────────────────────────────────────────────────────
 PAGES = ["🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward",
          "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search",
@@ -490,14 +494,13 @@ if page == "🏠 Home":
                 go.Bar(name="Tested on (out-of-sample)", x=labels, y=oos_pips,
                        marker_color=["#00c49a" if p > 0 else "#ff4455" for p in oos_pips]),
             ])
-            fig_wf.update_layout(
+            fig_wf.update_layout(**_cl(
                 barmode="group", height=280,
                 margin=dict(l=0, r=0, t=30, b=0),
-                **_CHART,
                 yaxis=dict(title="Points", gridcolor="rgba(255,255,255,0.1)"),
                 legend=dict(orientation="h", y=1.15),
-                title="Blue = trained on it  |  Green/Red = tested on data it had never seen",
-            )
+                title="Blue = trained on it  |  Green/Red = tested on unseen data",
+            ))
             st.plotly_chart(fig_wf, use_container_width=True, key="home_wf_chart")
         st.markdown("---")
 
@@ -900,13 +903,12 @@ elif page == "🔬 Backtest":
             fill="tozeroy", fillcolor="rgba(0,212,170,0.1)",
             name="Equity",
         ))
-        fig.update_layout(
+        fig.update_layout(**_cl(
             margin=dict(l=0, r=0, t=20, b=0),
-            **_CHART,
             xaxis=dict(showgrid=False),
             yaxis=dict(gridcolor="rgba(255,255,255,0.1)"),
             height=300,
-        )
+        ))
         st.plotly_chart(fig, use_container_width=True, key="backtest_equity_curve")
 
         # Trade table
@@ -1024,13 +1026,12 @@ elif page == "🔄 Walk-Forward":
                 go.Bar(name="Out-of-sample", x=labels, y=oos_pips,
                        marker_color=["#00c49a" if p > 0 else "#ff4455" for p in oos_pips]),
             ])
-            fig.update_layout(
+            fig.update_layout(**_cl(
                 barmode="group", height=300,
                 margin=dict(l=0, r=0, t=20, b=0),
-                **_CHART,
                 yaxis=dict(gridcolor="rgba(255,255,255,0.1)", title="Net pips"),
                 legend=dict(orientation="h", y=1.1),
-            )
+            ))
             st.plotly_chart(fig, use_container_width=True, key="wf_manual_fold_bars")
 
 
@@ -1084,11 +1085,10 @@ elif page == "📍 Key Levels":
                                 x=[f"{h}b" for h in horizons], y=pips,
                                 marker_color=["#00c49a" if p > 0 else "#ff4455" for p in pips],
                             ))
-                            fig.update_layout(
+                            fig.update_layout(**_cl(
                                 height=200, margin=dict(l=0,r=0,t=10,b=0),
-                                **_CHART,
                                 yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
-                            )
+                            ))
                             st.plotly_chart(fig, use_container_width=True, key=f"auto_levels_bar_{ai}")
                 st.markdown("---")
         except Exception:
@@ -1206,11 +1206,10 @@ elif page == "📍 Key Levels":
                         x=[f"{h}b" for h in horizons], y=pips,
                         marker_color=["#00c49a" if p > 0 else "#ff4455" for p in pips],
                     ))
-                    fig.update_layout(
+                    fig.update_layout(**_cl(
                         height=200, margin=dict(l=0,r=0,t=10,b=0),
-                        **_CHART,
                         yaxis=dict(title="Avg pips", gridcolor="rgba(255,255,255,0.1)"),
-                    )
+                    ))
                     st.plotly_chart(fig, use_container_width=True, key=f"levels_bar_{i}")
 
 
@@ -1260,12 +1259,11 @@ elif page == "📊 MAE / MFE":
             marker=dict(color=colours, size=8, opacity=0.8),
             text=labels, hoverinfo="text+x+y",
         ))
-        fig.update_layout(
+        fig.update_layout(**_cl(
             height=350, margin=dict(l=0,r=0,t=20,b=0),
-            **_CHART,
             xaxis=dict(title="MAE (pips — adverse)", gridcolor="rgba(255,255,255,0.1)"),
             yaxis=dict(title="MFE (pips — favorable)", gridcolor="rgba(255,255,255,0.1)"),
-        )
+        ))
         st.plotly_chart(fig, use_container_width=True, key="mae_mfe_scatter")
         st.caption("Ideal: winners cluster bottom-right (low MAE, high MFE). Losers should cluster bottom-left.")
 
@@ -1494,8 +1492,10 @@ elif page == "📈 History":
                 fig = px.line(df, x="Run", y="Net Pips", markers=True,
                               title=f"{instr} — Net Pips Per Run",
                               color_discrete_sequence=["#00c49a"])
-                fig.update_layout(xaxis_tickangle=-45, **_CHART,
-                                  yaxis=dict(gridcolor="rgba(255,255,255,0.1)"))
+                fig.update_layout(**_cl(
+                    xaxis_tickangle=-45,
+                    yaxis=dict(gridcolor="rgba(255,255,255,0.1)"),
+                ))
                 st.plotly_chart(fig, use_container_width=True, key=f"history_pips_{instr}")
 
             st.caption(f"Total runs stored: {len(records)}")
@@ -2045,8 +2045,7 @@ elif page == "📒 Trade Journal":
                              color_discrete_sequence=["#00c49a"],
                              labels={"trade_n": "Trade #", "cum_pnl": "Cumulative P&L ($)"},
                              title="Cumulative P&L")
-            fig_eq.update_layout(**_CHART,
-                                  yaxis=dict(gridcolor="rgba(255,255,255,0.1)"))
+            fig_eq.update_layout(**_cl(yaxis=dict(gridcolor="rgba(255,255,255,0.1)")))
             fig_eq.add_hline(y=0, line_dash="dot", line_color="rgba(255,255,255,0.3)")
             st.plotly_chart(fig_eq, use_container_width=True, key="journal_equity")
 
@@ -2121,8 +2120,7 @@ elif page == "📒 Trade Journal":
             fig_setup = px.bar(_setup, x="setup", y="Total_PnL",
                                color="Total_PnL", color_continuous_scale=["#ff4455","#00c49a"],
                                title="P&L by Setup Type")
-            fig_setup.update_layout(**_CHART,
-                                     xaxis_tickangle=-30)
+            fig_setup.update_layout(**_cl(xaxis_tickangle=-30))
             st.plotly_chart(fig_setup, use_container_width=True, key="journal_setup_pnl")
 
             # ── Monthly breakdown ─────────────────────────────────────────
