@@ -1,0 +1,32 @@
+{
+  "source": "ai_pipeline",
+  "instrument": "NQ",
+  "run_timestamp": "2026-04-07T1854",
+  "run_date": "2026-04-07",
+  "data_start": "2025-10-08",
+  "data_end": "2026-04-06",
+  "lookback_days": 180,
+  "key_levels_used": [
+    "prev_day_highs",
+    "prev_day_lows",
+    "prev_week_highs",
+    "prev_week_lows",
+    "session_highs",
+    "session_lows"
+  ],
+  "backtest": {
+    "artifact_schema_version": "v1",
+    "ending_equity": 16566.78,
+    "max_drawdown": 944.67,
+    "max_drawdown_pct": 5.8747,
+    "net_pips": 259.4,
+    "net_pnl": 1566.78,
+    "robustness_enabled": true,
+    "run_id": "run_20260403T202431Z__auto-eurusd-rsi-2026-04-02",
+    "strategy_name": "auto_eurusd_rsi_2026-04-02",
+    "trade_count": 83
+  },
+  "walk_forward_verdict": null,
+  "oos_net_pips": null,
+  "oos_win_rate": null
+}
