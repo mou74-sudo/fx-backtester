@@ -49,7 +49,8 @@ def last_weekday(d: date) -> date:
 
 
 def main() -> None:
-    lookback = int(sys.argv[1]) if len(sys.argv) > 1 else 180
+    lookback    = int(sys.argv[1]) if len(sys.argv) > 1 else 180
+    instrument  = sys.argv[2]      if len(sys.argv) > 2 else "NQ"
     # yfinance always has data up to yesterday — use yesterday as end
     end = last_weekday(date.today() - timedelta(days=1))
     start = end - timedelta(days=lookback)
@@ -61,7 +62,7 @@ def main() -> None:
     try:
         run([
             "fx-backtester", "fetch-data",
-            "--instrument", "EURUSD",
+            "--instrument", instrument,
             "--start", start.isoformat(),
             "--end", end.isoformat(),
             "--output", str(DATA_CSV),
@@ -96,7 +97,7 @@ def main() -> None:
     run([
         "fx-backtester", "scan-levels",
         "--data", str(DATA_CSV),
-        "--instrument", "EURUSD",
+        "--instrument", instrument,
         "--level-type", "prev_day_highs", "prev_day_lows",
                         "prev_week_highs", "prev_week_lows",
                         "session_highs", "session_lows",

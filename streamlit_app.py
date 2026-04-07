@@ -186,8 +186,6 @@ elif page == "📥 Get Data":
     _INSTRUMENT_OPTIONS = {
         "📈 Nasdaq 100 Futures (NQ)": "NQ",
         "📊 S&P 500 Futures (ES)":    "ES",
-        "💱 EUR/USD Forex":            "EURUSD",
-        "💱 USD/JPY Forex":            "USDJPY",
         "📂 Upload my own CSV":        "UPLOAD",
     }
     _instr_label = st.selectbox("Select instrument", list(_INSTRUMENT_OPTIONS.keys()))
