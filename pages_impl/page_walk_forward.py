@@ -55,9 +55,11 @@ def render(_instr_code: str, _active_dir: Path) -> None:
     min_bars    = st.number_input("Min bars per half", 20, 500, 50)
 
     if st.button("▶ Run Walk-Forward", type="primary"):
+        if "bars" not in st.session_state or "spec" not in st.session_state:
+            st.warning("Run a backtest first in the **🔬 Backtest** tab to load bars and strategy spec.")
+            st.stop()
         with st.spinner("Running walk-forward validation…"):
             try:
-                sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
                 from fx_backtester.analysis.walk_forward import run_walk_forward
                 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 

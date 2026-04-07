@@ -195,23 +195,5 @@ def load_dukascopy_h1(
     return bars
 
 
-# ── CSV export (handoff to run-backtest) ──────────────────────────────────────
-
-def bars_to_csv(bars: list[MarketBar], path: Path) -> None:
-    """Write a MarketBar list to the CSV format expected by run-backtest.
-
-    Columns: timestamp, open, high, low, close
-    Timestamps are written in ISO 8601 UTC format.
-    """
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.writer(fh)
-        writer.writerow(["timestamp", "open", "high", "low", "close"])
-        for bar in bars:
-            writer.writerow([
-                bar.timestamp.isoformat(),
-                f"{bar.open:.5f}",
-                f"{bar.high:.5f}",
-                f"{bar.low:.5f}",
-                f"{bar.close:.5f}",
-            ])
+# ── CSV export — re-exported from loaders for backward compatibility ──────────
+from fx_backtester.data.loaders import bars_to_csv as bars_to_csv  # noqa: F401, E402

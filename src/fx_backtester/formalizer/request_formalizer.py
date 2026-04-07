@@ -26,12 +26,13 @@ _SUPPORTED_PAIR_MAP: dict[str, InstrumentSpec] = {
 }
 
 _UNSUPPORTED_PATTERNS: list[tuple[re.Pattern[str], str, str | None]] = [
-    (re.compile(r"\b(macd|ema|sma|moving average|bollinger|stochastic|vwap)\b", re.I), "Unsupported signal logic: v1.0 only formalizes RSI-based entries and RSI signal exits.", "Nearest supported path: express the strategy with RSI thresholds plus fixed deterministic stop/exit fields."),
-    (re.compile(r"\b(trailing stop|trail stop|break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Advanced trade management is unsupported in v1.0: trailing, break-even, partials, and scaling are out of scope.", "Nearest supported path: use fixed-pip TP, fixed-pip or ATR initial stop, time stop, and/or session-close exit."),
-    (re.compile(r"\b(limit order|stop order|pending order|market if touched|pullback entry|pullback breakout|pullback limit)\b", re.I), "Unsupported execution style: v1.0 does not model order-type selection.", "Nearest supported path: entries and exits fill deterministically on the next bar open after a signal."),
-    (re.compile(r"\b(optimi[sz]e|optimi[sz]ation|grid search|walk[- ]?forward|monte carlo|genetic|bayesian)\b", re.I), "Optimization/search workflows are unsupported in v1.0.", "Nearest supported path: keep one fixed spec and optionally enable deterministic robustness sweeps."),
-    (re.compile(r"\b(multi[- ]?pair|portfolio|basket|correlation|hedg(e|ing))\b", re.I), "Unsupported scope: portfolio, basket, or hedge logic is not implemented.", "Nearest supported path: run one supported USD-linked pair per spec."),
-    (re.compile(r"\b(news|fundamental|sentiment|machine learning|ai model|order book)\b", re.I), "Unsupported discretionary/external logic: v1.0 only supports deterministic rule-based inputs.", "Nearest supported path: use RSI, sessions, fixed risk, and deterministic robustness fields only."),
+    # Note: ema, bollinger, vwap, orb, and trailing stops are all now supported — do not add them here.
+    (re.compile(r"\b(macd|stochastic)\b", re.I), "MACD and Stochastic are not yet implemented.", "Nearest supported path: use RSI mean-reversion, EMA crossover, Bollinger bands, VWAP, ORB, or Breakout."),
+    (re.compile(r"\b(break[- ]?even|breakeven|partial take profit|scale out|scale-in|pyramid)\b", re.I), "Break-even, partials, and scaling are not supported.", "Nearest supported path: use fixed-pip TP, trailing stop (atr or fixed_pips), time stop, and/or session-close exit."),
+    (re.compile(r"\b(limit order|stop order|pending order|market if touched|pullback entry|pullback breakout|pullback limit)\b", re.I), "Unsupported execution style: entries fill deterministically on the next bar open after a signal.", None),
+    (re.compile(r"\b(optimi[sz]e|optimi[sz]ation|grid search|walk[- ]?forward|monte carlo|genetic|bayesian)\b", re.I), "Optimization/search workflows are unsupported in the formalizer.", "Nearest supported path: keep one fixed spec and optionally enable deterministic robustness sweeps."),
+    (re.compile(r"\b(multi[- ]?pair|portfolio|basket|correlation|hedg(e|ing))\b", re.I), "Portfolio, basket, or hedge logic is not implemented.", "Nearest supported path: run one supported pair per spec."),
+    (re.compile(r"\b(news|fundamental|sentiment|machine learning|ai model|order book)\b", re.I), "Discretionary/external logic is not supported.", "Nearest supported path: use deterministic rule-based strategies only."),
 ]
 
 
@@ -411,8 +412,6 @@ def validate_supported_features(spec: StrategySpec) -> list[FormalizationIssue]:
                 nearest_supported=f"Use {spec.instrument.base_ccy} or {spec.instrument.quote_ccy}.",
             )
         )
-    if spec.rules.trailing_stop_style != "disabled":
-        issues.append(FormalizationIssue(field="trailing_stop_style", reason="Trailing stops are not implemented yet.", nearest_supported="Use trailing_stop_style=disabled."))
     return issues
 
 

@@ -89,7 +89,6 @@ Find the best strategy settings by testing every combination you specify.
     if st.button("▶ Run Grid Search", type="primary", disabled=len(param_grid) == 0):
         with st.spinner(f"Testing {n_combos} combinations…"):
             try:
-                sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
                 from fx_backtester.analysis.grid_search import run_grid_search
                 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 
@@ -142,7 +141,6 @@ Find the best strategy settings by testing every combination you specify.
             if st.button("▶ Validate on out-of-sample", type="secondary"):
                 with st.spinner("Running OOS validation…"):
                     try:
-                        sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
                         from fx_backtester.analysis.grid_search import _apply_params
                         from fx_backtester.engine.backtest import run_backtest
                         from fx_backtester.engine.pipeline import build_signal_pipeline

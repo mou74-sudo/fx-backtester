@@ -131,7 +131,12 @@ def run_instrument(instrument: str, lookback: int) -> None:
     ])
 
     # 6. Collect metrics
-    summary_json = next((ROOT / "outputs").glob("*/reports/summary.json"), None)
+    # Sort by mtime so we always pick up the run we just produced, not an older one.
+    _candidates = sorted(
+        (ROOT / "outputs").glob("*/reports/summary.json"),
+        key=lambda p: p.stat().st_mtime,
+    )
+    summary_json = _candidates[-1] if _candidates else None
     backtest_metrics: dict = {}
     if summary_json and summary_json.exists():
         try:

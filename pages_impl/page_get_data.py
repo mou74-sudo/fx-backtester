@@ -36,7 +36,6 @@ def render() -> None:
         if st.button(f"⬇ Fetch {_fetch_label}", type="primary"):
             with st.spinner(f"Fetching {_fetch_label} {_tf_label} data…"):
                 try:
-                    sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
                     from fx_backtester.data.yfinance_loader import (
                         load_yfinance_bars, bars_to_csv, instrument_display_name, instrument_pip_size
                     )
@@ -78,9 +77,13 @@ def render() -> None:
 
     else:
         st.markdown("Upload an OHLC CSV file. Required columns: `timestamp, open, high, low, close`")
-        uploaded = st.file_uploader("Choose a CSV file", type=["csv"])
+        _MAX_CSV_MB = 50
+        uploaded = st.file_uploader(f"Choose a CSV file (max {_MAX_CSV_MB} MB)", type=["csv"])
         if uploaded:
             import pandas as pd
+            if uploaded.size > _MAX_CSV_MB * 1024 * 1024:
+                st.error(f"File too large ({uploaded.size / 1024 / 1024:.1f} MB). Maximum is {_MAX_CSV_MB} MB.")
+                st.stop()
             try:
                 df = pd.read_csv(uploaded)
                 required = {"timestamp", "open", "high", "low", "close"}

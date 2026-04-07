@@ -29,6 +29,7 @@ class RiskSpec(BaseModel):
     initial_equity: float = Field(..., gt=0)
     risk_per_trade_fraction: float = Field(..., gt=0, le=0.05)
     max_open_positions: int = Field(default=1, ge=1, le=1)
+    max_lots: float | None = Field(default=None, gt=0, description="Hard cap on position size in lots. Prevents runaway sizing on large accounts with tight stops.")
 
 
 class RobustnessSpec(BaseModel):

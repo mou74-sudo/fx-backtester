@@ -87,7 +87,6 @@ def render(_instr_code: str, _active_dir: Path) -> None:
     if st.button("▶ Scan Levels", type="primary"):
         with st.spinner("Scanning…"):
             try:
-                sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
                 from fx_backtester.analysis.key_levels import (
                     detect_prev_day_high_levels, detect_prev_day_low_levels,
                     detect_prev_week_high_levels, detect_prev_week_low_levels,

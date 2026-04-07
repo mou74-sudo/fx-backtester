@@ -109,7 +109,6 @@ def render() -> None:
     if st.button("▶ Run Backtest", type="primary"):
         with st.spinner("Running backtest…"):
             try:
-                sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
                 from fx_backtester.data.loaders import load_market_bars
                 from fx_backtester.engine.backtest import run_backtest
                 from fx_backtester.engine.pipeline import build_signal_pipeline
@@ -121,12 +120,15 @@ def render() -> None:
                 )
                 from fx_backtester.analysis.mae_mfe import compute_mae_mfe
 
+                import os
                 with tempfile.NamedTemporaryFile(suffix=".csv", delete=False) as f:
                     f.write(st.session_state["csv_bytes"])
                     tmp_path = f.name
-
-                _bt_instr_code = st.session_state.get("instrument", "")
-                bars = load_market_bars(tmp_path, instrument=_bt_instr_code)
+                try:
+                    _bt_instr_code = st.session_state.get("instrument", "")
+                    bars = load_market_bars(tmp_path, instrument=_bt_instr_code)
+                finally:
+                    os.unlink(tmp_path)
                 if not bars:
                     st.error("No bars loaded from CSV.")
                     st.stop()
@@ -188,9 +190,11 @@ def render() -> None:
                     )
 
                 _loaded_instr = st.session_state.get("instrument", "")
+                # commission = round-trip per contract (entry + exit legs combined).
+                # Most retail brokers (NinjaTrader, Tradovate) charge ~$4.50/side = $9.00 round-trip.
                 _FUTURES_INSTR = {
-                    "NQ": {"pip_size": 0.25, "lot_size_units": 20, "half_spread": 1.0, "commission": 4.50},
-                    "ES": {"pip_size": 0.25, "lot_size_units": 50, "half_spread": 1.0, "commission": 4.50},
+                    "NQ": {"pip_size": 0.25, "lot_size_units": 20, "half_spread": 1.0, "commission": 9.00},
+                    "ES": {"pip_size": 0.25, "lot_size_units": 50, "half_spread": 1.0, "commission": 9.00},
                 }
                 if _loaded_instr in _FUTURES_INSTR:
                     _fi = _FUTURES_INSTR[_loaded_instr]
@@ -263,13 +267,21 @@ def render() -> None:
         c4.metric("Avg loss",       f"{m.average_loss_pips:.1f} {_pts_label}")
 
         c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Profit factor", f"{m.profit_factor:.2f}" if m.profit_factor else "—")
+        _pf_display = "∞" if m.profit_factor == float("inf") else (f"{m.profit_factor:.2f}" if m.profit_factor else "—")
+        c1.metric("Profit factor", _pf_display)
         c2.metric("Sharpe (ann.)", f"{m.sharpe_ratio:.2f}" if m.sharpe_ratio is not None else "—")
         c3.metric("Sortino (ann.)", f"{m.sortino_ratio:.2f}" if m.sortino_ratio is not None else "—")
         c4.metric("Commission",    f"${total_comm:,.0f}" if _is_futures else "—")
 
         if _is_futures and total_comm > 0:
             st.caption(f"Commissions deducted: ${total_comm:,.2f} total (${total_comm/max(result.trade_count,1):.2f}/trade avg)")
+
+        if _is_futures:
+            st.warning(
+                "⚠️ **Gap risk not modelled.** This backtest assumes perfect fills at the open price. "
+                "NQ/ES can gap 50+ points at the CME settlement break (16:00–18:00 ET) and on Monday opens. "
+                "Real stop-loss fills may be worse than shown when a gap occurs."
+            )
 
         # Equity curve with date axis
         st.markdown("**Equity curve**")

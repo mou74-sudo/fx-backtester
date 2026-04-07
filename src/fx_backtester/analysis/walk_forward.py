@@ -141,7 +141,13 @@ def run_walk_forward(
     in_sample_pct: float = 0.7,
     min_bars_per_half: int = 50,
 ) -> WalkForwardReport:
-    """Run rolling walk-forward validation across ``n_folds`` sequential windows.
+    """Run sequential (non-overlapping) walk-forward validation across ``n_folds`` windows.
+
+    The bar history is split into ``n_folds`` non-overlapping sequential windows.
+    Each window is then divided into an in-sample (IS) and out-of-sample (OOS) half.
+    The strategy is evaluated on each OOS half with the same fixed spec — no
+    optimisation is performed.  This is a sequential split, not a rolling/anchored
+    window — fold boundaries are equally spaced across the full history.
 
     Parameters
     ----------

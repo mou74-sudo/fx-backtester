@@ -32,6 +32,27 @@ def load_ohlc_csv(path: str | Path) -> list[dict[str, Any]]:
         return list(reader)
 
 
+def bars_to_csv(bars: list[MarketBar], path: Path) -> None:
+    """Write a MarketBar list to CSV (canonical single implementation).
+
+    Columns: timestamp, open, high, low, close
+    Timestamps are written in ISO 8601 UTC format.
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh)
+        writer.writerow(["timestamp", "open", "high", "low", "close"])
+        for bar in bars:
+            writer.writerow([
+                bar.timestamp.isoformat(),
+                f"{bar.open:.5f}",
+                f"{bar.high:.5f}",
+                f"{bar.low:.5f}",
+                f"{bar.close:.5f}",
+            ])
+
+
 def load_market_bars(path: str | Path, instrument: str = "") -> list[MarketBar]:
     """Load OHLC bars from CSV.
 

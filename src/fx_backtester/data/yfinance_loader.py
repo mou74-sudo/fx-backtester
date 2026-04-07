@@ -145,17 +145,5 @@ def load_yfinance_h1(instrument: str, start: date, end: date, *, verbose: bool =
     return load_yfinance_bars(instrument, start, end, interval="1h", verbose=verbose)
 
 
-def bars_to_csv(bars: list[MarketBar], path: Path) -> None:
-    """Write MarketBar list to CSV (same format as dukascopy.bars_to_csv)."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.writer(fh)
-        writer.writerow(["timestamp", "open", "high", "low", "close"])
-        for bar in bars:
-            writer.writerow([
-                bar.timestamp.isoformat(),
-                f"{bar.open:.5f}",
-                f"{bar.high:.5f}",
-                f"{bar.low:.5f}",
-                f"{bar.close:.5f}",
-            ])
+# Re-exported from loaders for backward compatibility
+from fx_backtester.data.loaders import bars_to_csv as bars_to_csv  # noqa: F401, E402

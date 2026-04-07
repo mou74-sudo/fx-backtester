@@ -62,5 +62,7 @@ def size_position_units(
     )
     loss_per_standard_lot = stop_loss_pips * pip_value_per_lot
     lots = risk_amount / loss_per_standard_lot
+    if risk.max_lots is not None:
+        lots = min(lots, risk.max_lots)
     units = floor(lots * instrument.lot_size_units)
     return max(units, 0)

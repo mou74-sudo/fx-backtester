@@ -51,14 +51,15 @@ class BacktestMetrics(BaseModel):
     expectancy_pips: float
     average_win_pips: float
     average_loss_pips: float
-    profit_factor: float                # gross_profit / |gross_loss|; 0 if no losses
-    sharpe_ratio: float | None          # annualised Sharpe on per-trade P&L (assumes ~252 trading days, ~4 trades/day)
-    sortino_ratio: float | None         # annualised Sortino (downside deviation only)
+    profit_factor: float                # gross_profit / |gross_loss|; inf if no losses, 0 if no profitable trades
+    sharpe_ratio: float | None          # annualised Sharpe on per-trade P&L (calendar-time annualised)
+    sortino_ratio: float | None         # annualised Sortino (semi-deviation below mean)
     ambiguity_count: int
     spread_triggered_stop_count: int
     max_drawdown: float                 # peak-to-trough in account currency units
     max_drawdown_pct: float             # plain percent, e.g. 5.51 means 5.51% — NOT a 0-1 fraction
-    max_drawdown_duration_trades: int
+    max_drawdown_duration_trades: int   # duration (trades) of the deepest drawdown
+    longest_drawdown_duration_trades: int  # duration (trades) of the longest drawdown
     session_summary: dict[str, dict[str, float | int]]
 
 
@@ -171,12 +172,11 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     expectancy_pips = round(sum((trade.pnl_pips or 0.0) for trade in trades) / len(trades), 2) if trades else 0.0
     average_win_pips = round(sum(wins) / len(wins), 2) if wins else 0.0
     average_loss_pips = round(sum(losses) / len(losses), 2) if losses else 0.0
-    profit_factor = round(gross_profit / abs(gross_loss), 2) if gross_loss < 0 else 0.0
+    profit_factor = round(gross_profit / abs(gross_loss), 2) if gross_loss < 0 else (float("inf") if gross_profit > 0 else 0.0)
     ambiguity_count = sum(1 for trade in trades if trade.ambiguity_detected)
     spread_triggered_stop_count = sum(1 for trade in trades if trade.spread_triggered_stop)
 
-    # Sharpe / Sortino — annualised, assuming H1 bars → ~4 trades/day estimate
-    # We annualise using sqrt(252 * trades_per_day) scaling on per-trade returns
+    # Sharpe / Sortino — annualised using actual calendar span of the sample
     sharpe_ratio: float | None = None
     sortino_ratio: float | None = None
     if len(trades) >= 5:
@@ -185,16 +185,20 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         mean_pnl = sum(pnl_series) / n
         variance = sum((x - mean_pnl) ** 2 for x in pnl_series) / n
         std_pnl = math.sqrt(variance)
+        # Annualise from actual calendar time between first entry and last exit
+        _first = trades[0].entry_time
+        _last  = trades[-1].exit_time or trades[-1].entry_time
+        _days  = max((_last - _first).days, 1)
+        trades_per_year = n / (_days / 365.25)
+        ann_factor = math.sqrt(trades_per_year)
         if std_pnl > 0:
-            # Annualise: assume ~1000 trades/year as a reasonable H1 futures baseline
-            ann_factor = math.sqrt(1000 / n) if n > 0 else 1.0
             sharpe_ratio = round((mean_pnl / std_pnl) * ann_factor, 2)
-        downside = [x for x in pnl_series if x < 0]
+        # Sortino: semi-deviation of returns below the mean (target = mean_pnl)
+        downside = [x for x in pnl_series if x < mean_pnl]
         if downside:
-            downside_variance = sum(x ** 2 for x in downside) / n
+            downside_variance = sum((x - mean_pnl) ** 2 for x in downside) / n
             downside_std = math.sqrt(downside_variance)
             if downside_std > 0:
-                ann_factor = math.sqrt(1000 / n) if n > 0 else 1.0
                 sortino_ratio = round((mean_pnl / downside_std) * ann_factor, 2)
 
     equity = starting_equity
@@ -202,7 +206,8 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     peak_trade_index = 0
     max_drawdown = 0.0
     max_drawdown_pct = 0.0
-    max_drawdown_duration_trades = 0
+    max_drawdown_duration_trades = 0    # duration of the DEEPEST drawdown
+    longest_drawdown_duration_trades = 0  # duration of the LONGEST drawdown
     for idx, trade in enumerate(trades, start=1):
         equity = round(equity + (trade.pnl or 0.0), 2)
         if equity > peak:
@@ -211,6 +216,8 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         drawdown = round(peak - equity, 2)
         drawdown_pct = round((drawdown / peak) * 100, 4) if peak else 0.0
         duration = idx - peak_trade_index
+        if duration > longest_drawdown_duration_trades:
+            longest_drawdown_duration_trades = duration
         if drawdown > max_drawdown:
             max_drawdown = drawdown
             max_drawdown_pct = drawdown_pct
@@ -241,6 +248,7 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         max_drawdown=round(max_drawdown, 2),
         max_drawdown_pct=max_drawdown_pct,
         max_drawdown_duration_trades=max_drawdown_duration_trades,
+        longest_drawdown_duration_trades=longest_drawdown_duration_trades,
         session_summary=session_summary,
     )
 
@@ -338,13 +346,13 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                 continue
 
             open_position.bars_held = next_bars_held
-            _update_trailing_stop(open_position, bar, spec, pip_size)
             ambiguity = False
             spread_triggered_stop = False
 
             if open_position.side == "buy":
                 stop_reachable = stop_enabled and bar.low <= open_position.stop_loss_price + half_spread_delta
-                tp_reachable = tp_enabled and bar.high >= open_position.take_profit_price
+                # TP for long: we sell at bid; bar.high is bid high — must clear TP + spread to fill at TP
+                tp_reachable = tp_enabled and bar.high >= open_position.take_profit_price + half_spread_delta
                 if stop_reachable and bar.low > open_position.stop_loss_price:
                     spread_triggered_stop = True
                 if stop_reachable and tp_reachable:
@@ -378,7 +386,8 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                     continue
             else:
                 stop_reachable = stop_enabled and bar.high >= open_position.stop_loss_price - half_spread_delta
-                tp_reachable = tp_enabled and bar.low <= open_position.take_profit_price
+                # TP for short: we buy at ask; bar.low is bid low — must clear TP - spread to fill at TP
+                tp_reachable = tp_enabled and bar.low <= open_position.take_profit_price - half_spread_delta
                 if stop_reachable and bar.high < open_position.stop_loss_price:
                     spread_triggered_stop = True
                 if stop_reachable and tp_reachable:
@@ -410,6 +419,11 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                     equity = round(equity + (trade.pnl or 0.0), 2)
                     open_position = None
                     continue
+
+            # Update trailing stop AFTER all exit checks — avoids look-ahead bias
+            # (stop must not be ratcheted on the same bar it would trigger)
+            if open_position is not None:
+                _update_trailing_stop(open_position, bar, spec, pip_size)
 
         if open_position is None and (bar.entry_long or bar.entry_short) and equity > 0:
             trade_index += 1
