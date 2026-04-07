@@ -28,14 +28,23 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# ── Minimal mobile-friendly CSS ───────────────────────────────────────────────
+# ── CSS ───────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-/* Larger touch targets on mobile */
-.stButton > button { min-height: 2.5rem; font-size: 1rem; width: 100%; }
+/* Buttons */
+.stButton > button { min-height: 2.5rem; font-size: 1rem; width: 100%; border-radius: 8px; }
 /* Metric cards */
-[data-testid="metric-container"] { background: #1e1e2e; border-radius: 8px; padding: 8px; }
-/* Remove excessive padding on small screens */
+[data-testid="metric-container"] {
+    background: #1a1a2e;
+    border: 1px solid #2d2d4e;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+/* Section headers */
+h3 { margin-top: 1.5rem !important; }
+/* Cleaner expanders */
+details > summary { font-weight: 600; }
+/* Mobile */
 @media (max-width: 600px) {
     .block-container { padding: 0.5rem 0.5rem 0; }
 }
@@ -89,10 +98,6 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.caption("FX Backtester · v1.3")
 
-# ── Load data based on selection ──────────────────────────────────────────────
-_pipeline_summary: dict = {}
-
-
 # ── Load pipeline summary based on mode + instrument + selected run ───────────
 _pipeline_summary: dict = {}
 _is_ai_mode  = (_mode == "🤖 AI Pipeline")
@@ -137,9 +142,9 @@ elif _data_source == "📂 Upload my own data":
 # HOME
 # ══════════════════════════════════════════════════════════════════════════════
 if page == "🏠 Home":
-    st.title("📈 FX Backtester")
+    st.title("📈 NQ / ES Backtester")
     st.markdown("""
-**Test forex trading strategies on real historical data — no coding required.**
+**Analyse Nasdaq 100 and S&P 500 futures strategies on real historical data.**
 
 ---
 
@@ -147,20 +152,22 @@ if page == "🏠 Home":
 
 | Tab | What it does |
 |-----|-------------|
-| 📥 **Get Data** | Upload an OHLC CSV file |
+| 📥 **Get Data** | Fetch NQ or ES H1 bars, or upload your own CSV |
 | 🔬 **Backtest** | Run a strategy and see the equity curve |
 | 🔄 **Walk-Forward** | Check if the strategy holds up on unseen data |
 | 📍 **Key Levels** | See how price reacts at daily/weekly/session highs & lows |
 | 📊 **MAE / MFE** | Check if your stops and take-profits are correctly sized |
+| 📒 **Trade Journal** | Log your manual trades and track performance |
 
 ---
 
 ### Quick start
 
-1. Go to **📥 Get Data** and upload a CSV (timestamp, open, high, low, close)
-2. Go to **🔬 Backtest** → configure your strategy → tap **Run Backtest**
-3. Check **📊 MAE / MFE** to see if stops are too tight or too wide
-4. Run **🔄 Walk-Forward** to verify the edge is real
+1. Use the **sidebar** to pick **🤖 AI Pipeline** (auto results) or **👤 My Analysis** (manual)
+2. Select your instrument — **NQ** (Nasdaq 100) or **ES** (S&P 500)
+3. Go to **📥 Get Data** to fetch data or upload a CSV
+4. Go to **🔬 Backtest** → configure your strategy → tap **Run Backtest**
+5. Check **📊 MAE / MFE** → then **🔄 Walk-Forward** to verify the edge
 
 ---
 """)
@@ -195,24 +202,23 @@ elif page == "📥 Get Data":
         "📊 S&P 500 Futures (ES)":    "ES",
         "📂 Upload my own CSV":        "UPLOAD",
     }
-    _instr_label = st.selectbox("Select instrument", list(_INSTRUMENT_OPTIONS.keys()))
-    _instr_code  = _INSTRUMENT_OPTIONS[_instr_label]
+    _fetch_label = st.selectbox("Select instrument", list(_INSTRUMENT_OPTIONS.keys()))
+    _fetch_instr = _INSTRUMENT_OPTIONS[_fetch_label]
 
-    if _instr_code != "UPLOAD":
+    if _fetch_instr != "UPLOAD":
         _lookback = st.slider("Lookback (days)", 30, 730, 180)
-        if st.button(f"⬇ Fetch {_instr_label}", type="primary"):
-            with st.spinner(f"Fetching {_instr_label} H1 data…"):
+        if st.button(f"⬇ Fetch {_fetch_label}", type="primary"):
+            with st.spinner(f"Fetching {_fetch_label} H1 data…"):
                 try:
                     sys.path.insert(0, str(Path(__file__).parent / "src"))
                     from fx_backtester.data.yfinance_loader import (
                         load_yfinance_h1, bars_to_csv, instrument_display_name, instrument_pip_size
                     )
-                    from datetime import date, timedelta
-                    import tempfile, pandas as pd
+                    import pandas as pd
 
                     _end   = date.today() - timedelta(days=1)
                     _start = _end - timedelta(days=_lookback)
-                    _bars  = load_yfinance_h1(_instr_code, _start, _end, verbose=False)
+                    _bars  = load_yfinance_h1(_fetch_instr, _start, _end, verbose=False)
 
                     if not _bars:
                         st.error("No data returned. Try a shorter lookback period.")
@@ -221,15 +227,14 @@ elif page == "📥 Get Data":
                             bars_to_csv(_bars, Path(_tf.name))
                             _csv_bytes = Path(_tf.name).read_bytes()
 
-                        st.session_state["csv_bytes"]   = _csv_bytes
-                        st.session_state["csv_name"]    = f"{_instr_code}_h1.csv"
-                        st.session_state["instrument"]  = _instr_code
-                        st.session_state["pip_size"]    = instrument_pip_size(_instr_code)
+                        st.session_state["csv_bytes"]    = _csv_bytes
+                        st.session_state["csv_name"]     = f"{_fetch_instr}_h1.csv"
+                        st.session_state["instrument"]   = _fetch_instr
+                        st.session_state["pip_size"]     = instrument_pip_size(_fetch_instr)
                         st.session_state["_auto_loaded"] = False
 
-                        import pandas as pd
                         _df = pd.read_csv(io.BytesIO(_csv_bytes))
-                        st.success(f"✅ Loaded **{len(_bars):,} bars** of {instrument_display_name(_instr_code)}")
+                        st.success(f"✅ Loaded **{len(_bars):,} bars** of {instrument_display_name(_fetch_instr)}")
                         c1, c2, c3 = st.columns(3)
                         c1.metric("Bars",  f"{len(_bars):,}")
                         c2.metric("From",  str(_df['timestamp'].iloc[0])[:10])
@@ -240,9 +245,9 @@ elif page == "📥 Get Data":
 
         # Show current loaded data info
         if "csv_bytes" in st.session_state:
-            _instr_name = st.session_state.get("instrument", "")
-            if _instr_name:
-                st.info(f"Currently loaded: **{_instr_name}** — go to 🔬 Backtest to run analysis")
+            _loaded_instr = st.session_state.get("instrument", "")
+            if _loaded_instr:
+                st.info(f"Currently loaded: **{_loaded_instr}** — go to 🔬 Backtest to run analysis")
 
     else:
         st.markdown("Upload an OHLC CSV file. Required columns: `timestamp, open, high, low, close`")
@@ -367,8 +372,9 @@ elif page == "🔬 Backtest":
                 policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
                 prepared = build_signal_pipeline(market_bars=bars, spec=spec)
                 result   = run_backtest(bars=prepared.bars, spec=spec, policy=policy)
+                _bt_pip_size = st.session_state.get("pip_size", 0.25)
                 mae_mfe  = compute_mae_mfe(result.trades, prepared.bars,
-                                           pip_size=0.0001,
+                                           pip_size=_bt_pip_size,
                                            stop_loss_pips=stop_pips,
                                            take_profit_pips=tp_pips)
 
@@ -424,7 +430,7 @@ elif page == "🔬 Backtest":
             yaxis=dict(gridcolor="rgba(255,255,255,0.1)"),
             height=300,
         )
-        st.plotly_chart(fig, use_container_width=True, key="wf_auto_folds")
+        st.plotly_chart(fig, use_container_width=True, key="backtest_equity_curve")
 
         # Trade table
         with st.expander("Trade log"):
@@ -450,11 +456,11 @@ elif page == "🔄 Walk-Forward":
     st.markdown("Tests whether the strategy holds up on data it hasn't seen before.")
 
     # Show pre-computed pipeline results if available
-    _wf_json = _RESULTS / "walk_forward" / "walk_forward.json"
+    _wf_json = _active_dir / "walk_forward" / "walk_forward.json"
     if _wf_json.exists() and "wf_report" not in st.session_state:
         try:
             _wf_data = json.loads(_wf_json.read_text())
-            st.info(f"Showing auto-pipeline results. Run a backtest manually to override.")
+            st.info(f"Showing **{_instr_code}** pipeline results. Run a backtest manually to override.")
             verdict = _wf_data.get("verdict", "—")
             colour = {"validated": "🟢", "inconclusive": "🟡", "failed": "🔴"}
             v_col = colour.get(verdict, "⚪")
@@ -545,7 +551,7 @@ elif page == "🔄 Walk-Forward":
                 yaxis=dict(gridcolor="rgba(255,255,255,0.1)", title="Net pips"),
                 legend=dict(orientation="h", y=1.1),
             )
-            st.plotly_chart(fig, use_container_width=True, key="backtest_equity")
+            st.plotly_chart(fig, use_container_width=True, key="wf_manual_fold_bars")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -556,13 +562,13 @@ elif page == "📍 Key Levels":
     st.markdown("See how price behaves when it touches a key level.")
 
     # Show pre-computed pipeline results if available
-    _ls_json = _RESULTS / "level_study" / "level_study.json"
+    _ls_json = _active_dir / "level_study" / "level_study.json"
     if _ls_json.exists():
         try:
             _ls_data = json.loads(_ls_json.read_text())
             levels_data = _ls_data.get("levels", [])
             if levels_data:
-                st.info("Showing auto-pipeline results. Scan manually below to customise.")
+                st.info(f"Showing **{_instr_code}** pipeline results. Scan manually below to customise.")
                 c1, c2 = st.columns(2)
                 c1.metric("Levels studied", _ls_data.get("levels_studied", len(levels_data)))
                 c2.metric("Total touches",  _ls_data.get("total_touches", "—"))
@@ -657,8 +663,9 @@ elif page == "📍 Key Levels":
                 if "Swing highs"         in level_types: levels += detect_swing_high_levels(bars)
                 if "Swing lows"          in level_types: levels += detect_swing_low_levels(bars)
 
+                _scan_pip_size = 0.25 if _instr_code in ("NQ", "ES") else 0.0001
                 report = run_level_study(
-                    bars, levels, instrument="EURUSD", pip_size=0.0001,
+                    bars, levels, instrument=_instr_code, pip_size=_scan_pip_size,
                     zone_pips=float(zone), forward_bars=int(fwd_bars),
                     reversal_threshold_pips=float(rev_thr),
                     breakout_threshold_pips=float(bo_thr),
@@ -964,52 +971,60 @@ Find the best strategy settings by testing every combination you specify.
 # HISTORY
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "📈 History":
+    import pandas as pd
+    import plotly.express as px
+
     st.title("📈 Run History")
     st.caption("Every automated pipeline run is saved here — track performance trends over time.")
 
-    history_dir = Path("results/history")
-    if not history_dir.exists() or not list(history_dir.glob("*.json")):
-        st.info("No history yet. The pipeline saves a snapshot here after every run.")
-    else:
-        import pandas as pd
+    _hist_tab_nq, _hist_tab_es = st.tabs(["📈 Nasdaq 100 (NQ)", "📊 S&P 500 (ES)"])
 
-        records = []
-        for f in sorted(history_dir.glob("*.json")):
-            try:
-                d = json.loads(f.read_text())
-                bt = d.get("backtest", {})
-                records.append({
-                    "Run": d.get("run_timestamp", f.stem),
-                    "Date": d.get("run_date", ""),
-                    "Trades": bt.get("trade_count", 0),
-                    "Net Pips": bt.get("net_pips", 0),
-                    "Net P&L $": bt.get("net_pnl", 0),
-                    "Ending Equity": bt.get("ending_equity", 0),
-                    "Max DD %": bt.get("max_drawdown_pct", 0),
-                    "WF Verdict": d.get("walk_forward_verdict", "—"),
-                    "OOS Pips": d.get("oos_net_pips", 0),
-                    "OOS Win Rate": d.get("oos_win_rate", 0),
-                })
-            except Exception:
-                continue
+    def _render_history(instr: str, tab):
+        hist_dir = _AUTO_ROOT / instr / "history"
+        with tab:
+            if not hist_dir.exists() or not list(hist_dir.glob("*.json")):
+                st.info(f"No {instr} history yet. The pipeline saves a snapshot after every run.")
+                return
+            records = []
+            for f in sorted(hist_dir.glob("*.json")):
+                try:
+                    d = json.loads(f.read_text())
+                    bt = d.get("backtest", {})
+                    records.append({
+                        "Run": d.get("run_timestamp", f.stem),
+                        "Date": d.get("run_date", ""),
+                        "Trades": bt.get("trade_count", 0),
+                        "Net Pips": bt.get("net_pips", 0),
+                        "Net P&L $": bt.get("net_pnl", 0),
+                        "Max DD %": bt.get("max_drawdown_pct", 0),
+                        "WF Verdict": d.get("walk_forward_verdict", "—"),
+                        "OOS Pips": d.get("oos_net_pips", 0),
+                        "OOS Win Rate": d.get("oos_win_rate", 0),
+                        "Key Levels": ", ".join(d.get("key_levels_used", [])),
+                    })
+                except Exception:
+                    continue
 
-        df = pd.DataFrame(records)
-        st.dataframe(df, use_container_width=True)
+            df = pd.DataFrame(records)
+            st.dataframe(df, use_container_width=True,
+                         column_config={
+                             "Net P&L $": st.column_config.NumberColumn(format="$%.0f"),
+                             "OOS Win Rate": st.column_config.NumberColumn(format="%.0%"),
+                         })
 
-        if len(df) > 1:
-            st.subheader("Net Pips Over Time")
-            fig = px.line(df, x="Run", y="Net Pips", markers=True,
-                          title="Strategy Net Pips — Each Automated Run")
-            fig.update_layout(xaxis_tickangle=-45)
-            st.plotly_chart(fig, use_container_width=True, key="history_pips")
+            if len(df) > 1:
+                fig = px.line(df, x="Run", y="Net Pips", markers=True,
+                              title=f"{instr} — Net Pips Per Run",
+                              color_discrete_sequence=["#00d4aa"])
+                fig.update_layout(xaxis_tickangle=-45, paper_bgcolor="rgba(0,0,0,0)",
+                                  plot_bgcolor="rgba(0,0,0,0)",
+                                  yaxis=dict(gridcolor="rgba(255,255,255,0.1)"))
+                st.plotly_chart(fig, use_container_width=True, key=f"history_pips_{instr}")
 
-            st.subheader("Ending Equity Over Time")
-            fig2 = px.line(df, x="Run", y="Ending Equity", markers=True,
-                           title="Account Equity — Each Automated Run")
-            fig2.update_layout(xaxis_tickangle=-45)
-            st.plotly_chart(fig2, use_container_width=True, key="history_equity")
+            st.caption(f"Total runs stored: {len(records)}")
 
-        st.caption(f"Total runs stored: {len(records)}")
+    _render_history("NQ", _hist_tab_nq)
+    _render_history("ES", _hist_tab_es)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1379,17 +1394,19 @@ exactly how that strategy would have performed — and whether it's likely to ke
 
 ## Step 1 — Get your data (📥 Get Data tab)
 
-You need a CSV file of historical EURUSD prices with these columns:
+The easiest option is to **fetch data directly** — no CSV needed:
 
+1. Go to **📥 Get Data**
+2. Select **Nasdaq 100 (NQ)** or **S&P 500 (ES)**
+3. Choose your lookback window (e.g. 180 days)
+4. Click **Fetch** — data downloads automatically via Yahoo Finance
+
+Alternatively you can upload your own OHLC CSV with these columns:
 ```
 timestamp, open, high, low, close
 ```
 
-**Where to get free data:**
-- **HistData.com** → Free Forex Historical Data → EUR/USD → ASCII (CSV) format
-- **Dukascopy** → History Center → download EURUSD H1 (hourly bars)
-
-Once you have the file, go to **📥 Get Data** and drag it in. You'll see a preview confirming it loaded correctly.
+The **🤖 AI Pipeline** also fetches and analyses data automatically every 7 hours — check the **🏠 Home** tab to see the latest results.
 
 ---
 
@@ -1479,8 +1496,8 @@ This tab doesn't backtest a strategy — instead it answers:
 > Touches: 31 | Reversed: 19 (61%) | Broke through: 12 (39%)
 > Average move 5 bars after touch: -8.3 pips
 
-This means: when EURUSD hits the previous day high, it rejects 61% of the time,
-and when it rejects, price drops an average of 8.3 pips over the next 5 candles.
+This means: when NQ hits the previous day high, it rejects 61% of the time,
+and when it rejects, price drops an average of 8.3 points over the next 5 candles.
 That's useful information for where to set your entry and take-profit.
 
 ---
@@ -1505,7 +1522,7 @@ That's useful information for where to set your entry and take-profit.
 
 | Tab | One sentence |
 |-----|-------------|
-| 📥 Get Data | Upload your price history CSV |
+| 📥 Get Data | Fetch NQ/ES data or upload your own CSV |
 | 🔬 Backtest | Run your strategy and see the equity curve |
 | 📊 MAE/MFE | Check if stops and TPs are correctly sized |
 | 🔍 Grid Search | Find the best settings for your strategy |
