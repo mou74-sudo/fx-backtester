@@ -21,6 +21,7 @@ class ExecutionPolicy(BaseModel):
     slippage_model: Literal["fixed", "worse_case"] = "fixed"
     half_spread_pips: float = Field(default=0.1, ge=0)
     commission_per_million_usd: float = Field(default=0.0, ge=0)
+    commission_per_contract: float = Field(default=0.0, ge=0)   # flat USD per contract per round-trip
     slippage_pips: float = Field(default=0.0, ge=0)
     notes: str = (
         "Signals are filled deterministically at bar close with fixed spread and "

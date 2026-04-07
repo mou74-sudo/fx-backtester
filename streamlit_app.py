@@ -669,7 +669,7 @@ elif page == "🔬 Backtest":
     _STRATEGY_OPTIONS = [
         "RSI Mean Reversion",
         "EMA Crossover",
-        "VWAP Mean Reversion",
+        "Typical Price MA Reversion",
         "Opening Range Breakout",
         "Bollinger Band",
         "Breakout",
@@ -701,10 +701,10 @@ elif page == "🔬 Backtest":
         ema_fast = c1.number_input("Fast EMA period", 2, 100, 9)
         ema_slow = c2.number_input("Slow EMA period", 5, 500, 21)
 
-    elif strategy_type == "VWAP Mean Reversion":
-        st.markdown("**VWAP Mean Reversion settings** — fade extremes when price deviates from intraday VWAP")
-        vwap_dev = st.slider("VWAP deviation threshold (%)", 0.05, 3.0, 0.3, 0.05,
-                             help="Enter when price deviates this % from VWAP; exit when it returns")
+    elif strategy_type == "Typical Price MA Reversion":
+        st.markdown("**Typical Price MA Reversion** — fade extremes when price deviates from intraday typical price average ((H+L+C)/3)")
+        vwap_dev = st.slider("Deviation threshold (%)", 0.05, 3.0, 0.3, 0.05,
+                             help="Enter when price deviates this % from the intraday mean; exit when it returns")
 
     elif strategy_type == "Opening Range Breakout":
         st.markdown("**Opening Range Breakout settings** — trade breakouts beyond the first N bars of the session")
@@ -774,7 +774,7 @@ elif page == "🔬 Backtest":
                         ema_slow_period=int(ema_slow),
                         **_common,
                     )
-                elif strategy_type == "VWAP Mean Reversion":
+                elif strategy_type == "Typical Price MA Reversion":
                     rules = RsiMeanReversionRule(
                         strategy_type="vwap_reversion",
                         vwap_deviation_pct=float(vwap_dev),
@@ -802,14 +802,37 @@ elif page == "🔬 Backtest":
                         **_common,
                     )
 
+                _loaded_instr = st.session_state.get("instrument", "")
+                _FUTURES_INSTR = {
+                    "NQ": {"pip_size": 0.25, "lot_size_units": 20, "half_spread": 1.0, "commission": 4.50},
+                    "ES": {"pip_size": 0.25, "lot_size_units": 50, "half_spread": 1.0, "commission": 4.50},
+                }
+                if _loaded_instr in _FUTURES_INSTR:
+                    _fi = _FUTURES_INSTR[_loaded_instr]
+                    _instr_spec = InstrumentSpec(
+                        symbol=_loaded_instr,
+                        pip_size=_fi["pip_size"],
+                        lot_size_units=_fi["lot_size_units"],
+                    )
+                    _half_spread = _fi["half_spread"]
+                    _commission  = _fi["commission"]
+                else:
+                    _instr_spec  = InstrumentSpec()   # EURUSD defaults
+                    _half_spread = 0.2
+                    _commission  = 0.0
+
                 spec = StrategySpec(
                     strategy_name="dashboard_run",
-                    instrument=InstrumentSpec(),
+                    instrument=_instr_spec,
                     risk=RiskSpec(initial_equity=equity, risk_per_trade_fraction=risk_pct),
                     rules=rules,
                     window=BacktestWindow(start_date=start_d, end_date=end_d),
                 )
-                policy = ExecutionPolicy(half_spread_pips=0.2, slippage_pips=0.0)
+                policy = ExecutionPolicy(
+                    half_spread_pips=_half_spread,
+                    slippage_pips=0.0,
+                    commission_per_contract=_commission,
+                )
                 prepared = build_signal_pipeline(market_bars=bars, spec=spec)
                 result   = run_backtest(bars=prepared.bars, spec=spec, policy=policy)
                 _bt_pip_size = st.session_state.get("pip_size", 0.25)
@@ -831,13 +854,17 @@ elif page == "🔬 Backtest":
         result = st.session_state["result"]
         m = result.metrics
         net_pnl = round(result.ending_equity - result.starting_equity, 2)
+        _res_instr = st.session_state.get("instrument", "")
+        _is_futures = _res_instr in {"NQ", "ES"}
+        _pts_label = "points" if _is_futures else "pips"
+        total_comm = sum(t.commission for t in result.trades)
 
         st.markdown("---")
         st.subheader("Results")
 
         c1, c2, c3, c4 = st.columns(4)
         c1.metric("Trades",    result.trade_count)
-        c2.metric("Net pips",  f"{m.net_pips:+.1f}")
+        c2.metric(f"Net {_pts_label}",  f"{m.net_pips:+.1f}")
         c3.metric("Net P&L",   f"${net_pnl:+,.0f}")
         c4.metric("Max DD",    f"{m.max_drawdown_pct:.1f}%")
 
@@ -846,18 +873,29 @@ elif page == "🔬 Backtest":
         wins   = sum(1 for t in closed if (t.pnl_pips or 0) > 0)
         wr     = wins / len(closed) if closed else 0
         c1.metric("Win rate",       f"{wr:.0%}")
-        c2.metric("Expectancy",     f"{m.expectancy_pips:+.1f} pips")
-        c3.metric("Avg win",        f"{m.average_win_pips:.1f} pips")
-        c4.metric("Avg loss",       f"{m.average_loss_pips:.1f} pips")
+        c2.metric("Expectancy",     f"{m.expectancy_pips:+.1f} {_pts_label}")
+        c3.metric("Avg win",        f"{m.average_win_pips:.1f} {_pts_label}")
+        c4.metric("Avg loss",       f"{m.average_loss_pips:.1f} {_pts_label}")
 
-        # Equity curve
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Profit factor", f"{m.profit_factor:.2f}" if m.profit_factor else "—")
+        c2.metric("Sharpe (ann.)", f"{m.sharpe_ratio:.2f}" if m.sharpe_ratio is not None else "—")
+        c3.metric("Sortino (ann.)", f"{m.sortino_ratio:.2f}" if m.sortino_ratio is not None else "—")
+        c4.metric("Commission",    f"${total_comm:,.0f}" if _is_futures else "—")
+
+        if _is_futures and total_comm > 0:
+            st.caption(f"Commissions deducted: ${total_comm:,.2f} total (${total_comm/max(result.trade_count,1):.2f}/trade avg)")
+
+        # Equity curve with date axis
         st.markdown("**Equity curve**")
         equity_vals = [result.starting_equity]
+        eq_dates    = [result.trades[0].entry_time if result.trades else None]
         for t in result.trades:
             equity_vals.append(round(equity_vals[-1] + (t.pnl or 0), 2))
+            eq_dates.append(t.exit_time or t.entry_time)
         fig = go.Figure()
         fig.add_trace(go.Scatter(
-            y=equity_vals, mode="lines",
+            x=eq_dates, y=equity_vals, mode="lines",
             line=dict(color="#00c49a", width=2),
             fill="tozeroy", fillcolor="rgba(0,212,170,0.1)",
             name="Equity",
@@ -876,12 +914,16 @@ elif page == "🔬 Backtest":
             import pandas as pd
             rows = []
             for t in result.trades:
+                _qty_label = f"{t.quantity_units // max(st.session_state.get('spec', spec).instrument.lot_size_units, 1)} ct" if _is_futures else str(t.quantity_units)
                 rows.append({
                     "ID": t.trade_id,
                     "Side": t.side,
+                    "Size": _qty_label,
                     "Entry": t.entry_time.strftime("%Y-%m-%d %H:%M") if t.entry_time else "",
                     "Exit":  t.exit_time.strftime("%Y-%m-%d %H:%M") if t.exit_time else "open",
-                    "Pips":  f"{t.pnl_pips:+.1f}" if t.pnl_pips is not None else "—",
+                    _pts_label.capitalize(): f"{t.pnl_pips:+.1f}" if t.pnl_pips is not None else "—",
+                    "P&L ($)": f"${t.pnl:+,.0f}" if t.pnl is not None else "—",
+                    "Commission": f"${t.commission:.2f}" if t.commission else "—",
                     "Reason": t.exit_reason or "—",
                 })
             st.dataframe(pd.DataFrame(rows), use_container_width=True)

@@ -29,3 +29,4 @@ class TradeRecord(BaseModel):
     pnl_ccy: str | None = None
     pnl_usd: float | None = None
     pnl_pips: float | None = None
+    commission: float = 0.0   # round-trip commission in account currency

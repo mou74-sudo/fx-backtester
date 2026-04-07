@@ -58,10 +58,12 @@ def compute_bollinger_bands(
     return upper, middle, lower
 
 
-def compute_vwap_daily(bars: list[MarketBar]) -> list[float | None]:
-    """Intraday VWAP approximated via cumulative typical-price mean (no volume needed).
+def compute_typical_price_ma(bars: list[MarketBar]) -> list[float | None]:
+    """Cumulative intraday typical price average: sum((H+L+C)/3) / n.
 
-    Resets at the start of each calendar day.
+    Resets at the start of each calendar day. This is NOT true VWAP (which
+    requires volume data). Use this as a volume-free approximation of intraday
+    mean price only.
     """
     result: list[float | None] = [None] * len(bars)
     cum_tp = 0.0

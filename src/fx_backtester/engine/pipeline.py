@@ -6,7 +6,7 @@ from fx_backtester.data.indicators import (
     build_d1_trend_map,
     compute_bollinger_bands,
     compute_ema,
-    compute_vwap_daily,
+    compute_typical_price_ma,
     compute_wilder_atr,
     compute_wilder_rsi,
 )
@@ -202,8 +202,10 @@ def build_breakout_signal_pipeline(*, market_bars: list[MarketBar], spec: Strate
             and session_allowed
             and d1_short_ok
         )
-        next_exit_long = False
-        next_exit_short = False
+        # Exit long when price falls back below prior high (breakout failed)
+        next_exit_long  = prior_high is not None and bar.close < prior_high and direction in {"long_only", "both"}
+        # Exit short when price rises back above prior low
+        next_exit_short = prior_low  is not None and bar.close > prior_low  and direction in {"short_only", "both"}
         execution_bar_timestamp = market_bars[idx + 1].timestamp.isoformat() if idx + 1 < len(market_bars) else None
         execution_bar_open = market_bars[idx + 1].open if idx + 1 < len(market_bars) else None
         trace.append(
@@ -337,7 +339,7 @@ def build_vwap_reversion_signal_pipeline(*, market_bars: list[MarketBar], spec: 
     highs = [bar.high for bar in market_bars]
     lows = [bar.low for bar in market_bars]
     atrs = compute_wilder_atr(highs, lows, closes, spec.rules.stop_loss_atr_period)
-    vwaps = compute_vwap_daily(market_bars)
+    vwaps = compute_typical_price_ma(market_bars)
     d1_map = build_d1_trend_map(market_bars, spec.rules.daily_sma_period) if spec.rules.require_daily_trend else {}
     deviation_threshold = (spec.rules.vwap_deviation_pct or 0.3) / 100.0
     prepared_bars: list[SignalBar] = []
@@ -461,6 +463,9 @@ def build_orb_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
                 if orb_h is not None and orb_l is not None:
                     next_entry_long  = bar.close > orb_h and direction in {"long_only", "both"}  and session_allowed and d1_long_ok
                     next_entry_short = bar.close < orb_l and direction in {"short_only", "both"} and session_allowed and d1_short_ok
+                    # Exit when price falls back inside the opening range
+                    next_exit_long   = bar.close < orb_h and direction in {"long_only", "both"}
+                    next_exit_short  = bar.close > orb_l and direction in {"short_only", "both"}
 
         execution_bar_timestamp = market_bars[idx + 1].timestamp.isoformat() if idx + 1 < len(market_bars) else None
         execution_bar_open = market_bars[idx + 1].open if idx + 1 < len(market_bars) else None
@@ -474,9 +479,9 @@ def build_orb_signal_pipeline(*, market_bars: list[MarketBar], spec: StrategySpe
                 atr=atr,
                 sessions=bar.sessions,
                 entry_signal=next_entry_long,
-                exit_signal=False,
+                exit_signal=next_exit_long,
                 short_entry_signal=next_entry_short,
-                short_exit_signal=False,
+                short_exit_signal=next_exit_short,
                 executable_on_next_bar=idx + 1 < len(market_bars),
                 no_leakage_ok=(execution_bar_timestamp is None or execution_bar_timestamp > bar.timestamp.isoformat()),
                 session_allowed=session_allowed,
