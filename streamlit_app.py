@@ -172,22 +172,103 @@ if page == "🏠 Home":
 ---
 """)
     if _is_ai_mode and _pipeline_summary:
-        run_ts   = _pipeline_summary.get("run_timestamp", _pipeline_summary.get("run_date", ""))
-        bt       = _pipeline_summary.get("backtest", {})
-        levels   = _pipeline_summary.get("key_levels_used", [])
-        st.info(f"🤖 **AI Pipeline** — **{_instr_code}** — last run: {run_ts}")
-        if bt:
+        run_ts  = _pipeline_summary.get("run_timestamp", _pipeline_summary.get("run_date", ""))
+        bt      = _pipeline_summary.get("backtest", {})
+        wf      = _pipeline_summary.get("walk_forward_verdict", "—")
+        levels  = _pipeline_summary.get("key_levels_used", [])
+        oos_pip = _pipeline_summary.get("oos_net_pips", None)
+        oos_wr  = _pipeline_summary.get("oos_win_rate", None)
+
+        # ── Header banner ─────────────────────────────────────────────────
+        _instr_full = "Nasdaq 100 (NQ)" if _instr_code == "NQ" else "S&P 500 (ES)"
+        st.markdown(f"## 🤖 AI Analysis — {_instr_full}")
+        st.caption(f"Last automated run: {run_ts}")
+        st.markdown("---")
+
+        # ── Core metrics ──────────────────────────────────────────────────
+        st.markdown("### Strategy Performance")
+        st.caption("How the automated strategy performed over the tested period.")
+        c1, c2, c3, c4 = st.columns(4)
+        trades_n   = bt.get("trade_count", 0)
+        net_pnl    = bt.get("net_pnl", 0)
+        net_pips   = bt.get("net_pips", 0)
+        max_dd     = bt.get("max_drawdown_pct", 0)
+        win_rate   = bt.get("win_rate", None)
+
+        c1.metric("Total Trades",  trades_n,
+                  help="Number of completed trades in the backtest period")
+        c2.metric("Net P&L",       f"${net_pnl:+,.0f}",
+                  delta=f"{'▲' if net_pnl >= 0 else '▼'} {'profit' if net_pnl >= 0 else 'loss'}",
+                  help="Dollar profit/loss on a $50,000 simulated account")
+        c3.metric("Net Points",    f"{net_pips:+.1f}",
+                  help="Total points (1 pip = 0.25 pts) made or lost across all trades")
+        c4.metric("Max Drawdown",  f"{max_dd:.1f}%",
+                  help="Largest peak-to-trough drop during the test — lower is better")
+
+        if win_rate is not None:
             c1, c2, c3, c4 = st.columns(4)
-            c1.metric("Trades",     bt.get("trade_count", "—"))
-            c2.metric("Net Pips",   f"{bt.get('net_pips', 0):+.1f}")
-            c3.metric("Net P&L",    f"${bt.get('net_pnl', 0):+,.0f}")
-            c4.metric("WF Verdict", _pipeline_summary.get("walk_forward_verdict", "—"))
+            c1.metric("Win Rate",  f"{win_rate:.0%}",
+                      help="% of trades that were profitable")
+            exp = bt.get("expectancy_pips", None)
+            if exp is not None:
+                c2.metric("Expectancy", f"{exp:+.1f} pts/trade",
+                          help="Average points per trade — positive means edge exists")
+            avg_w = bt.get("average_win_pips", None)
+            avg_l = bt.get("average_loss_pips", None)
+            if avg_w and avg_l:
+                c3.metric("Avg Win",  f"{avg_w:.1f} pts")
+                c4.metric("Avg Loss", f"{avg_l:.1f} pts")
+
+        st.markdown("---")
+
+        # ── Walk-forward verdict ───────────────────────────────────────────
+        st.markdown("### Edge Validation")
+        st.caption("Walk-forward splits the data into time windows to check if the strategy works consistently — not just by luck.")
+        _wf_colours = {"validated": ("🟢", "success"), "inconclusive": ("🟡", "warning"), "failed": ("🔴", "error")}
+        _wf_icon, _wf_fn = _wf_colours.get(wf, ("⚪", "info"))
+        _wf_explain = {
+            "validated":   "The strategy was profitable across multiple independent time windows. The edge looks real.",
+            "inconclusive":"Mixed results across time windows — strategy shows promise but needs more data or refinement.",
+            "failed":      "The strategy did not hold up on unseen data. Not recommended for live trading yet.",
+        }
+        getattr(st, _wf_fn)(f"{_wf_icon} **Walk-Forward: {wf.upper()}** — {_wf_explain.get(wf, '')}")
+
+        if oos_pip is not None or oos_wr is not None:
+            c1, c2 = st.columns(2)
+            if oos_pip is not None:
+                c1.metric("Out-of-Sample Points", f"{oos_pip:+.1f}",
+                          help="Points made on data the strategy never saw during optimisation")
+            if oos_wr is not None:
+                c2.metric("Out-of-Sample Win Rate", f"{oos_wr:.0%}")
+
+        st.markdown("---")
+
+        # ── Key levels used ───────────────────────────────────────────────
         if levels:
-            st.caption(f"Key levels scanned: {', '.join(levels)}")
+            st.markdown("### Key Levels Scanned")
+            st.caption("These are the price levels the AI tested for reaction patterns this run.")
+            _level_names = {
+                "prev_day_highs":  "Previous Day Highs",
+                "prev_day_lows":   "Previous Day Lows",
+                "prev_week_highs": "Previous Week Highs",
+                "prev_week_lows":  "Previous Week Lows",
+                "session_highs":   "Session Highs",
+                "session_lows":    "Session Lows",
+            }
+            cols = st.columns(min(len(levels), 3))
+            for i, lv in enumerate(levels):
+                cols[i % len(cols)].success(f"✓ {_level_names.get(lv, lv)}")
+
+        st.markdown("---")
+        st.caption("Switch to a different tab (top navigation) to dig deeper into the results. Use the sidebar to view historical runs or switch to 👤 My Analysis.")
+
+    elif _is_ai_mode and not _pipeline_summary:
+        st.info(f"No AI pipeline results found for **{_instr_code}** yet. The bot runs automatically every 7 hours, or you can trigger it manually.")
     elif _is_my_mode:
-        st.success("👤 **My Analysis** — your runs are saved separately and never mixed with AI results.")
+        st.success("👤 **My Analysis** — your manual runs are saved separately and never mixed with AI results.")
+        st.markdown("Go to **📥 Get Data** to load data, then **🔬 Backtest** to run your own analysis.")
     else:
-        st.info("Tap the **☰** menu (top left) to switch between tabs on mobile.")
+        st.info("Use the sidebar to select a mode and instrument.")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1058,7 +1139,7 @@ elif page == "📒 Trade Journal":
 
     trades = _load_trades()
 
-    tab1, tab2, tab3 = st.tabs(["➕ Log Trade", "📋 Trade Log", "📊 Analytics"])
+    tab1, tab2, tab3, tab4 = st.tabs(["➕ Log Trade", "📤 Import Tradovate", "📋 Trade Log", "📊 Analytics"])
 
     # ── TAB 1: LOG TRADE ──────────────────────────────────────────────────────
     with tab1:
@@ -1131,8 +1212,121 @@ elif page == "📒 Trade Journal":
         elif submitted:
             st.warning("Enter valid entry and exit prices.")
 
-    # ── TAB 2: TRADE LOG ──────────────────────────────────────────────────────
+    # ── TAB 2: IMPORT TRADOVATE ───────────────────────────────────────────────
     with tab2:
+        st.subheader("Import from Tradovate")
+        st.markdown("""
+Export your trades from Tradovate and upload the CSV here — all trades are added to your journal automatically.
+
+**How to export from Tradovate:**
+1. Log in to Tradovate → go to **Account** → **History**
+2. Set your date range and click **Export** (top right)
+3. Save the CSV file and upload it below
+""")
+        tv_file = st.file_uploader("Upload Tradovate CSV export", type=["csv"], key="tradovate_upload")
+        if tv_file:
+            try:
+                import pandas as pd
+                tv_df = pd.read_csv(tv_file)
+                st.markdown("**Preview (first 5 rows):**")
+                st.dataframe(tv_df.head(), use_container_width=True)
+                st.markdown("**Columns detected:** " + ", ".join(f"`{c}`" for c in tv_df.columns))
+
+                # Tradovate column mapping — handles common export formats
+                # Common Tradovate columns: AccountId, ContractName, Side (Buy/Sell),
+                # Qty, Price, DateTime, Commission, RealizedPnL
+                _col_map = {c.lower().replace(" ", "").replace("_", ""): c for c in tv_df.columns}
+
+                def _find_col(*candidates):
+                    for c in candidates:
+                        if c in _col_map:
+                            return _col_map[c]
+                    return None
+
+                _col_contract = _find_col("contractname", "symbol", "contract", "instrument")
+                _col_side     = _find_col("side", "buysell", "action", "direction")
+                _col_qty      = _find_col("qty", "quantity", "size", "contracts")
+                _col_price    = _find_col("price", "fillprice", "avgprice", "executionprice")
+                _col_dt       = _find_col("datetime", "timestamp", "time", "date", "filltime", "tradetime")
+                _col_pnl      = _find_col("realizedpnl", "pnl", "realizedpl", "profit", "gainloss")
+
+                missing = [n for n, c in [("contract", _col_contract), ("side", _col_side),
+                                           ("qty", _col_qty), ("price", _col_price), ("datetime", _col_dt)]
+                           if c is None]
+                if missing:
+                    st.warning(f"Could not find columns for: **{', '.join(missing)}**. "
+                               f"Make sure you exported the full trade history (not just positions).")
+                else:
+                    # Tradovate exports fills — we need to pair Buy+Sell fills into round trips
+                    # Simple approach: treat each row as a closed trade if PnL column exists,
+                    # otherwise require paired fills
+                    if _col_pnl:
+                        # Filter to closing fills only (where PnL is populated)
+                        closed = tv_df[tv_df[_col_pnl].notna()].copy()
+                        closed = closed[closed[_col_pnl] != 0]
+                    else:
+                        closed = tv_df.copy()
+
+                    st.info(f"Found **{len(closed)} trades** ready to import.")
+
+                    if st.button("⬇ Import All Trades", type="primary"):
+                        imported = 0
+                        skipped  = 0
+                        for _, row in closed.iterrows():
+                            try:
+                                contract = str(row[_col_contract])
+                                instr    = "NQ" if "NQ" in contract.upper() else ("ES" if "ES" in contract.upper() else contract[:2].upper())
+                                raw_side = str(row[_col_side]).strip().lower()
+                                side     = "Long" if raw_side in ("buy", "b", "long", "bot") else "Short"
+                                qty      = int(float(row[_col_qty]))
+                                price    = float(row[_col_price])
+                                raw_dt   = pd.to_datetime(row[_col_dt])
+                                pnl_usd  = float(row[_col_pnl]) if _col_pnl else 0.0
+                                # Back-calculate exit price from PnL
+                                mult     = 20 if instr == "NQ" else 50
+                                if pnl_usd != 0 and qty > 0:
+                                    pts  = pnl_usd / (mult * qty)
+                                    entry_approx = price
+                                    exit_approx  = round(price + pts if side == "Long" else price - pts, 2)
+                                else:
+                                    entry_approx = price
+                                    exit_approx  = price
+                                new_trade = {
+                                    "id":          str(uuid.uuid4())[:8],
+                                    "date":        raw_dt.date().isoformat(),
+                                    "time":        raw_dt.strftime("%H:%M"),
+                                    "instrument":  instr,
+                                    "side":        side,
+                                    "size":        qty,
+                                    "entry":       entry_approx,
+                                    "exit":        exit_approx,
+                                    "stop_loss":   0.0,
+                                    "take_profit": 0.0,
+                                    "pnl_usd":     pnl_usd,
+                                    "pnl_points":  round(pnl_usd / (mult * qty), 2) if qty > 0 else 0.0,
+                                    "r_multiple":  None,
+                                    "result":      "Win" if pnl_usd > 0 else ("Loss" if pnl_usd < 0 else "BE"),
+                                    "setup":       "Imported",
+                                    "session":     "New York",
+                                    "emotion":     "Confident",
+                                    "grade":       "A Setup",
+                                    "notes":       f"Imported from Tradovate — {contract}",
+                                    "source":      "tradovate",
+                                }
+                                trades.append(new_trade)
+                                imported += 1
+                            except Exception:
+                                skipped += 1
+                        _save_trades(trades)
+                        st.success(f"✅ Imported **{imported} trades** ({skipped} skipped). Go to 📋 Trade Log to review.")
+                        if imported > 0:
+                            st.rerun()
+            except Exception as e:
+                st.error(f"Could not read file: {e}")
+                st.markdown("Make sure you're uploading the CSV export from Tradovate → Account → History.")
+
+    # ── TAB 3: TRADE LOG ──────────────────────────────────────────────────────
+    with tab3:
         st.subheader("Trade Log")
 
         if not trades:
@@ -1173,8 +1367,8 @@ elif page == "📒 Trade Journal":
                     st.success("Deleted.")
                     st.rerun()
 
-    # ── TAB 3: ANALYTICS ──────────────────────────────────────────────────────
-    with tab3:
+    # ── TAB 4: ANALYTICS ──────────────────────────────────────────────────────
+    with tab4:
         if not trades:
             st.info("Log some trades first to see analytics.")
         else:
