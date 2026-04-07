@@ -43,15 +43,28 @@ def last_weekday(d: date) -> date:
     return d
 
 
+_FUTURES_PARAMS = {
+    # lot_size_units = contract $ multiplier per point.
+    # NQ: $20/pt × 0.25 pt/pip  →  lot_size_units=20  →  pip_value=$5/pip per "lot"
+    # ES: $50/pt × 0.25 pt/pip  →  lot_size_units=50  →  pip_value=$12.50/pip per "lot"
+    # stop/tp in "pips" (1 pip = 0.25 NQ/ES points)
+    "NQ": {"pip_size": 0.25, "lot_size_units": 20,  "stop_loss_pips": 100, "take_profit_pips": 300},
+    "ES": {"pip_size": 0.25, "lot_size_units": 50,  "stop_loss_pips": 80,  "take_profit_pips": 240},
+}
+
 def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> None:
     raw = json.loads(SPEC_TEMPLATE.read_text())
     raw["window"]["start_date"] = start.isoformat()
     raw["window"]["end_date"]   = end.isoformat()
     raw["strategy_name"]        = f"auto_{instrument.lower()}_{end.isoformat()}"
-    # Adjust pip size for futures
-    if instrument in ("NQ", "ES"):
-        raw["instrument"]["pip_size"] = 0.25
-        raw["instrument"]["symbol"]   = instrument
+    if instrument in _FUTURES_PARAMS:
+        fp = _FUTURES_PARAMS[instrument]
+        raw["instrument"]["symbol"]        = instrument
+        raw["instrument"]["pip_size"]      = fp["pip_size"]
+        raw["instrument"]["lot_size_units"]= fp["lot_size_units"]
+        raw["risk"]["initial_equity"]      = 50_000   # realistic futures account size
+        raw["rules"]["stop_loss_pips"]     = fp["stop_loss_pips"]
+        raw["rules"]["take_profit_pips"]   = fp["take_profit_pips"]
     out_path.write_text(json.dumps(raw, indent=2))
 
 

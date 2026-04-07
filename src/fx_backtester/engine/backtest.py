@@ -333,7 +333,7 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                     open_position = None
                     continue
 
-        if open_position is None and (bar.entry_long or bar.entry_short):
+        if open_position is None and (bar.entry_long or bar.entry_short) and equity > 0:
             trade_index += 1
             requested_entry_price = bar.execution_price or bar.close
             side: Literal["buy", "sell"] = "buy" if bar.entry_long else "sell"
@@ -346,6 +346,8 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
                 stop_loss_pips=stop_distance_pips,
                 reference_price=entry_fill.executed_price,
             )
+            if quantity_units == 0:
+                continue  # insufficient equity to open position; skip signal
             evidence_ref = None
             if bar.signal_bar_timestamp is not None:
                 evidence_ref = f"signal={bar.signal_bar_timestamp}|execution={bar.timestamp.isoformat()}"
