@@ -268,24 +268,12 @@ if _mode == "🤖 AI Pipeline":
     st.sidebar.markdown("<div style='font-size:0.72rem;text-transform:uppercase;letter-spacing:0.8px;color:#6b7090;padding:2px 0 4px;font-weight:600;'>Run</div>", unsafe_allow_html=True)
     _data_source = st.sidebar.selectbox("Run to view", _source_options, label_visibility="collapsed") if _source_options else "📂 Upload my own data"
 
-    # ── Refresh button ────────────────────────────────────────────────────────
+    # ── Reboot button ─────────────────────────────────────────────────────────
     st.sidebar.markdown("---")
-    st.sidebar.markdown("<div style='font-size:0.72rem;text-transform:uppercase;letter-spacing:0.8px;color:#6b7090;padding:2px 0 4px;font-weight:600;'>Pipeline</div>", unsafe_allow_html=True)
-    if st.sidebar.button(f"🔄 Refresh {_instr_code} Data", type="primary", use_container_width=True,
-                         help=f"Fetch fresh data and re-run the full AI pipeline for {_instr_code}"):
-        import subprocess, sys
-        _pl_script = Path(__file__).parent / "scripts" / "run_pipeline.py"
-        with st.spinner(f"Running pipeline for {_instr_code} — this takes ~1 min…"):
-            _proc = subprocess.run(
-                [sys.executable, str(_pl_script), "180", _instr_code],
-                capture_output=True, text=True,
-            )
-        if _proc.returncode == 0:
-            st.sidebar.success(f"✓ {_instr_code} pipeline complete — reloading…")
-            st.rerun()
-        else:
-            st.sidebar.error("Pipeline failed.")
-            st.sidebar.code(_proc.stderr[-800:] or _proc.stdout[-800:], language="text")
+    if st.sidebar.button("🔄 Reload App", use_container_width=True,
+                         help="Clear the app and reload the latest results from the scheduled run"):
+        st.session_state.clear()
+        st.rerun()
 else:
     _data_source = "📂 Upload my own data"
 
