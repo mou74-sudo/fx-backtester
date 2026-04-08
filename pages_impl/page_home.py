@@ -68,7 +68,11 @@ def render(
         _tp_pts   = round(_rules.get("take_profit_pips", 0) * 0.25, 2)
 
         st.markdown(f"## 🤖 AI Pipeline Report — {_instr_full}")
-        st.caption(f"Run: {run_ts}  ·  Data: {ps.get('data_start','')} → {ps.get('data_end','')}  ·  Lookback: {ps.get('lookback_days',180)} days")
+        top1, top2, top3 = st.columns(3)
+        top1.metric("Last updated", str(run_ts or "—"))
+        top2.metric("Data as of", str(ps.get('data_end', '—')))
+        top3.metric("Lookback", f"{ps.get('lookback_days', 180)} days")
+        st.caption(f"Window: {ps.get('data_start','')} → {ps.get('data_end','')}")
         st.markdown("---")
 
         # ════════════════════════════════════
