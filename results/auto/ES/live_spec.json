@@ -1,11 +1,12 @@
 {
-  "strategy_name": "auto_es_2026-04-06",
+  "strategy_name": "auto_es_2026-04-07",
   "instrument": {
     "symbol": "ES",
     "quote_ccy": "USD",
-    "base_ccy": "EUR",
+    "base_ccy": "USD",
     "pip_size": 0.25,
-    "lot_size_units": 50
+    "lot_size_units": 50,
+    "min_lot_step": 1.0
   },
   "risk": {
     "account_ccy": "USD",
@@ -14,27 +15,28 @@
     "max_open_positions": 1
   },
   "rules": {
+    "strategy_type": "rsi_mean_reversion",
     "timeframe": "H1",
-    "direction": "long_only",
+    "direction": "both",
     "allowed_sessions": [],
     "rsi_period": 5,
-    "entry_rsi_lte": 20,
+    "entry_rsi_lte": 30,
     "short_entry_rsi_gte": 70,
     "short_exit_rsi_lte": 45,
-    "exit_rsi_gte": 60,
+    "exit_rsi_gte": 55,
     "time_stop_bars": null,
     "exit_on_session_close": false,
     "stop_loss_style": "fixed_pips",
-    "stop_loss_pips": 80,
+    "stop_loss_pips": 160,
     "stop_loss_atr_period": 14,
     "stop_loss_atr_multiplier": 2.0,
     "take_profit_style": "fixed_pips",
-    "take_profit_pips": 240,
+    "take_profit_pips": 480,
     "trailing_stop_style": "disabled"
   },
   "window": {
-    "start_date": "2025-10-08",
-    "end_date": "2026-04-06"
+    "start_date": "2025-10-09",
+    "end_date": "2026-04-07"
   },
   "execution_policy_name": "default_v0_1",
   "robustness": {
@@ -53,5 +55,5 @@
       1
     ]
   },
-  "notes": "Golden example A: EUR/USD RSI mean reversion with fixed-pip stop and take profit."
+  "notes": "Auto-generated ES RSI futures template with bidirectional entries and futures sizing."
 }

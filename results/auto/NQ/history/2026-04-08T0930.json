@@ -1,7 +1,7 @@
 {
   "source": "ai_pipeline",
-  "instrument": "ES",
-  "run_timestamp": "2026-04-08T0935",
+  "instrument": "NQ",
+  "run_timestamp": "2026-04-08T0930",
   "run_date": "2026-04-08",
   "data_start": "2025-10-09",
   "data_end": "2026-04-07",
@@ -22,8 +22,8 @@
     "net_pips": 0.0,
     "net_pnl": 0.0,
     "robustness_enabled": true,
-    "run_id": "run_20260408T093502Z__auto-es-2026-04-07",
-    "strategy_name": "auto_es_2026-04-07",
+    "run_id": "run_20260408T093034Z__auto-nq-2026-04-07",
+    "strategy_name": "auto_nq_2026-04-07",
     "trade_count": 0
   },
   "walk_forward_verdict": "failed",
