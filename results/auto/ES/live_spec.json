@@ -10,7 +10,7 @@
   },
   "risk": {
     "account_ccy": "USD",
-    "initial_equity": 50000,
+    "initial_equity": 100000,
     "risk_per_trade_fraction": 0.01,
     "max_open_positions": 1
   },
@@ -19,19 +19,19 @@
     "timeframe": "H1",
     "direction": "both",
     "allowed_sessions": [],
-    "rsi_period": 5,
-    "entry_rsi_lte": 30,
-    "short_entry_rsi_gte": 70,
-    "short_exit_rsi_lte": 45,
-    "exit_rsi_gte": 55,
+    "rsi_period": 14,
+    "entry_rsi_lte": 35,
+    "short_entry_rsi_gte": 65,
+    "short_exit_rsi_lte": 50,
+    "exit_rsi_gte": 50,
     "time_stop_bars": null,
     "exit_on_session_close": false,
     "stop_loss_style": "fixed_pips",
-    "stop_loss_pips": 160,
+    "stop_loss_pips": 80,
     "stop_loss_atr_period": 14,
     "stop_loss_atr_multiplier": 2.0,
     "take_profit_style": "fixed_pips",
-    "take_profit_pips": 480,
+    "take_profit_pips": 160,
     "trailing_stop_style": "disabled"
   },
   "window": {
@@ -55,5 +55,5 @@
       1
     ]
   },
-  "notes": "Auto-generated ES RSI futures template with bidirectional entries and futures sizing."
+  "notes": "Auto-generated ES RSI futures template \u2014 bidirectional, futures sizing."
 }
