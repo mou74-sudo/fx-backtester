@@ -62,15 +62,15 @@ def _build_synthetic_signal_bars(
     atr_values: list[float | None],
 ) -> list[SignalBar]:
     entry_map = {idx: sides[pos] for pos, idx in enumerate(entry_indices)}
-    exit_map: dict[int, str] = {}
+    exit_map: dict[int, set[str]] = {}
     for idx, side in zip(entry_indices, sides, strict=True):
         exit_idx = min(len(market_bars) - 1, idx + hold_bars)
-        exit_map[exit_idx] = side
+        exit_map.setdefault(exit_idx, set()).add(side)
 
     synthetic: list[SignalBar] = []
     for idx, bar in enumerate(market_bars):
         entry_side = entry_map.get(idx)
-        exit_side = exit_map.get(idx)
+        exit_sides = exit_map.get(idx)
         synthetic.append(
             SignalBar(
                 timestamp=bar.timestamp,
@@ -80,10 +80,10 @@ def _build_synthetic_signal_bars(
                 close=bar.close,
                 entry_long=entry_side == 'buy',
                 entry_short=entry_side == 'sell',
-                exit_long=exit_side == 'buy',
-                exit_short=exit_side == 'sell',
+                exit_long=exit_sides is not None and 'buy' in exit_sides,
+                exit_short=exit_sides is not None and 'sell' in exit_sides,
                 signal_bar_timestamp=bar.timestamp.isoformat() if entry_side is not None else None,
-                execution_price=bar.open if entry_side is not None or exit_side is not None else None,
+                execution_price=bar.open if entry_side is not None or exit_sides is not None else None,
                 atr=atr_values[idx],
                 sessions=bar.sessions,
             )

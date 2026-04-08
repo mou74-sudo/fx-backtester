@@ -104,6 +104,7 @@ Find the best strategy settings by testing every combination you specify.
                 )
                 st.session_state["gs_report"] = gs_report
                 st.session_state["gs_oos_bars"] = oos_bars
+                st.session_state["gs_is_bars"] = is_bars
             except Exception as e:
                 st.error(f"Grid search failed: {e}")
 
@@ -154,8 +155,13 @@ Find the best strategy settings by testing every combination you specify.
                             half_spread_pips=0.2, slippage_pips=0.0
                         )
                         oos_spec = _apply_params(spec, best.params)
-                        oos_prep = build_signal_pipeline(market_bars=st.session_state["gs_oos_bars"], spec=oos_spec)
-                        oos_res  = run_backtest(bars=oos_prep.bars, spec=oos_spec, policy=policy)
+                        # Prepend IS tail as warmup so indicators are fully initialised
+                        # at the start of the OOS window (same fix as walk-forward).
+                        _gs_is = st.session_state.get("gs_is_bars", [])
+                        _warmup_n = min(len(_gs_is), 100)
+                        _combined = _gs_is[-_warmup_n:] + st.session_state["gs_oos_bars"]
+                        oos_prep = build_signal_pipeline(market_bars=_combined, spec=oos_spec)
+                        oos_res  = run_backtest(bars=oos_prep.bars[_warmup_n:], spec=oos_spec, policy=policy)
 
                         closed   = [t for t in oos_res.trades if t.pnl_pips is not None]
                         wins     = sum(1 for t in closed if (t.pnl_pips or 0) > 0)

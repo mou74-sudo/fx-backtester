@@ -155,8 +155,8 @@ def render() -> None:
                         rsi_period=rsi_period,
                         entry_rsi_lte=float(rsi_os),
                         short_entry_rsi_gte=float(rsi_ob),
-                        exit_rsi_gte=float(rsi_ob - 15),
-                        short_exit_rsi_lte=float(rsi_os + 15),
+                        exit_rsi_gte=float(max(rsi_os + 1, rsi_ob - 15)),
+                        short_exit_rsi_lte=float(min(rsi_ob - 1, rsi_os + 15)),
                         **_common,
                     )
                 elif strategy_type == "EMA Crossover":
@@ -272,7 +272,7 @@ def render() -> None:
         c4.metric("Avg loss",       f"{m.average_loss_pips:.1f} {_pts_label}")
 
         c1, c2, c3, c4 = st.columns(4)
-        _pf_display = "∞" if m.profit_factor == float("inf") else (f"{m.profit_factor:.2f}" if m.profit_factor else "—")
+        _pf_display = "∞" if m.profit_factor == float("inf") else f"{m.profit_factor:.2f}"
         c1.metric("Profit factor", _pf_display)
         c2.metric("Sharpe (ann.)", f"{m.sharpe_ratio:.2f}" if m.sharpe_ratio is not None else "—")
         c3.metric("Sortino (ann.)", f"{m.sortino_ratio:.2f}" if m.sortino_ratio is not None else "—")

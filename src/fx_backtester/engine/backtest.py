@@ -197,12 +197,12 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         pnl_series = [trade.pnl or 0.0 for trade in trades]
         n = len(pnl_series)
         mean_pnl = sum(pnl_series) / n
-        variance = sum((x - mean_pnl) ** 2 for x in pnl_series) / n
+        variance = sum((x - mean_pnl) ** 2 for x in pnl_series) / (n - 1)
         std_pnl = math.sqrt(variance)
         # Annualise from actual calendar time between first entry and last exit
         _first = trades[0].entry_time
         _last  = trades[-1].exit_time or trades[-1].entry_time
-        _days  = max((_last - _first).days, 1)
+        _days  = max((_last - _first).total_seconds() / 86400, 1 / 24)
         trades_per_year = n / (_days / 365.25)
         ann_factor = math.sqrt(trades_per_year)
         if std_pnl > 0:
