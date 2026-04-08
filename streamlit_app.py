@@ -224,7 +224,7 @@ st.sidebar.markdown("""
 # ── Navigation ────────────────────────────────────────────────────────────────
 PAGES = [
     "🏠 Home", "📥 Get Data", "🔬 Backtest", "🔄 Walk-Forward",
-    "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search",
+    "📍 Key Levels", "📊 MAE / MFE", "🔍 Grid Search", "🧠 Bayesian Optimiser",
     "📈 History", "📒 Trade Journal", "📖 How to Use",
 ]
 page = st.sidebar.radio("Navigate", PAGES, label_visibility="collapsed")
@@ -348,6 +348,10 @@ elif page == "📊 MAE / MFE":
 
 elif page == "🔍 Grid Search":
     from pages_impl.page_grid_search import render as _render
+    _render()
+
+elif page == "🧠 Bayesian Optimiser":
+    from pages_impl.page_bayesian import render as _render
     _render()
 
 elif page == "📈 History":
