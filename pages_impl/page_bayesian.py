@@ -11,10 +11,62 @@ def render() -> None:
     st.title("🧠 Bayesian Optimiser")
     st.markdown("""
 Find the best strategy parameters using **smart search** — not brute force.
-
-> Instead of testing every combination, it learns from each result and focuses on
-> the regions that look promising. **~100 trials beats a 600-combination grid search.**
 """)
+
+    with st.expander("📖 What does this do? (plain English)", expanded=False):
+        st.markdown("""
+### The problem with normal grid search
+
+Imagine you're trying to find the best RSI setting between 20 and 40.
+Grid search picks fixed values — 20, 25, 30, 35, 40 — and tries all of them.
+It might miss that **RSI = 32** is actually the sweet spot, because it never tested it.
+
+With 4 parameters × 5 values each, that's already **625 combinations** to test.
+Most of them are wasted runs in regions you already know aren't good.
+
+---
+
+### How the Bayesian Optimiser works
+
+Think of it like a **smart detective** instead of a soldier checking every house on the street.
+
+**Trial 1:** Tries RSI=38, Stop=180 → scores 0.4 *(not great)*
+**Trial 2:** Tries RSI=24, Stop=140 → scores 1.2 *(better!)*
+**Trial 3:** *"Trial 2 looked good — let me try nearby"* → RSI=26, Stop=135 → scores 1.5
+**Trial 4:** *"Getting warmer"* → RSI=25, Stop=130 → scores 1.8
+**...keeps narrowing in...**
+**Trial 100:** RSI=27, Stop=128 → scores 2.1 ✅ **Best found**
+
+It never wasted time testing RSI=38 again once it knew that region was poor.
+Same 100 runs — but focused where it matters.
+
+---
+
+### What the score means
+
+After each trial, the result gets a **score**:
+
+> **Score = Sharpe ratio + (net points ÷ 1000) − (max drawdown % ÷ 100)**
+
+In plain English:
+- ✅ **Good Sharpe** (consistent profits vs volatility) → score goes up
+- ✅ **More net points** → score goes up a little
+- ❌ **Big drawdown** (account drops a lot at some point) → score goes down
+
+**Example:**
+A strategy with Sharpe = 1.8, net points = +250, max drawdown = 8% scores:
+`1.8 + (250/1000) − (8/100) = 1.8 + 0.25 − 0.08 = **1.97**`
+
+The optimiser finds the parameters that make this number as high as possible.
+
+---
+
+### The golden rule
+
+Always validate on **out-of-sample data** (data the optimiser never saw).
+A great in-sample score that collapses out-of-sample means the params are
+curve-fitted to the past — not a real edge.
+        """)
 
     if "csv_bytes" not in st.session_state:
         st.warning("Upload data first in the **📥 Get Data** tab.")
