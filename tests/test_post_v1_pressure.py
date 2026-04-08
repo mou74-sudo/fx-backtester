@@ -20,9 +20,8 @@ UNSUPPORTED_REQUESTS = [
     pytest.param(
         "Trade GBP/USD on H4 with MACD confirmation, a trailing stop, and optimization. Account currency CHF.",
         {
-            "Unsupported signal logic: v1.0 only formalizes RSI-based entries and RSI signal exits.",
-            "Advanced trade management is unsupported in v1.0: trailing, break-even, partials, and scaling are out of scope.",
-            "Optimization/search workflows are unsupported in v1.0.",
+            "MACD and Stochastic are not yet implemented.",
+            "Optimization/search workflows are unsupported in the formalizer.",
             "Pair GBPUSD is not supported by the deterministic formalizer.",
             "Only H1 is implemented, not H4.",
         },
@@ -30,28 +29,27 @@ UNSUPPORTED_REQUESTS = [
     ),
     pytest.param(
         "Run a multi-pair EURUSD and USDJPY portfolio basket with hedging and correlation filter on H1.",
-        {"Unsupported scope: portfolio, basket, or hedge logic is not implemented."},
+        {"Portfolio, basket, or hedge logic is not implemented."},
         id="portfolio_hedging",
     ),
     pytest.param(
         "Trade EURUSD on H1 using RSI plus news sentiment with limit orders and order book confirmation.",
-        {"Unsupported discretionary/external logic: v1.0 only supports deterministic rule-based inputs."},
+        {"Discretionary/external logic is not supported."},
         id="order_type_news",
     ),
     pytest.param(
         "Trade USDJPY on H1 with Bollinger Bands, walk-forward optimisation, and break-even stop logic.",
         {
-            "Unsupported signal logic: v1.0 only formalizes RSI-based entries and RSI signal exits.",
-            "Advanced trade management is unsupported in v1.0: trailing, break-even, partials, and scaling are out of scope.",
-            "Optimization/search workflows are unsupported in v1.0.",
+            "Break-even, partials, and scaling are not supported.",
+            "Optimization/search workflows are unsupported in the formalizer.",
         },
         id="bollinger_walkforward",
     ),
     pytest.param(
         "Trade EURUSD on D1 using a machine learning model, Monte Carlo validation, and trailing stops.",
         {
-            "Optimization/search workflows are unsupported in v1.0.",
-            "Unsupported discretionary/external logic: v1.0 only supports deterministic rule-based inputs.",
+            "Optimization/search workflows are unsupported in the formalizer.",
+            "Discretionary/external logic is not supported.",
             "Only H1 is implemented, not D1.",
         },
         id="ml_montecarlo",

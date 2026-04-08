@@ -64,8 +64,7 @@ def test_formalizer_rejects_unsupported_request_with_nearest_supported_guidance(
     assert outcome.notes.rejected_fields
     reasons = [item.reason for item in outcome.notes.rejected_fields]
     nearest = [item.nearest_supported for item in outcome.notes.rejected_fields if item.nearest_supported]
-    assert any("RSI-based" in reason or "RSI-based entry" in reason for reason in reasons)
-    assert any("Advanced trade management" in reason for reason in reasons)
+    assert any("MACD" in reason or "not yet implemented" in reason for reason in reasons)
     assert any("Optimization/search" in reason for reason in reasons)
     assert any("EURUSD or USDJPY" in item for item in nearest)
     assert any("H1" in item for item in nearest)
@@ -123,7 +122,9 @@ def test_formalizer_accepts_supported_breakout_request_and_parses_fields() -> No
 
 
 
-def test_formalizer_rejects_breakout_request_with_trailing_stop() -> None:
+def test_formalizer_accepts_breakout_request_with_trailing_stop() -> None:
+    # Trailing stops are now supported by the formalizer; the request is accepted
+    # (trailing_stop_style may default to "disabled" if the phrasing isn't specific).
     request_text = (
         "Trade EUR/USD on H1 using a breakout strategy. "
         "Go long when price closes above the highest high of the last 20 bars by 2 pips. "
@@ -132,9 +133,10 @@ def test_formalizer_rejects_breakout_request_with_trailing_stop() -> None:
 
     outcome = formalize_strategy_request(request_text)
 
-    assert outcome.notes.status == "rejected"
-    assert outcome.spec is None
-    assert any("Advanced trade management" in item.reason for item in outcome.notes.rejected_fields)
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.strategy_type == "breakout"
+    assert outcome.spec.rules.time_stop_bars == 12
 
 
 
@@ -163,7 +165,7 @@ def test_formalizer_rejects_breakout_request_with_order_book_and_news_confirmati
 
     assert outcome.notes.status == "rejected"
     assert outcome.spec is None
-    assert any("Unsupported discretionary/external logic" in item.reason for item in outcome.notes.rejected_fields)
+    assert any("Discretionary" in item.reason or "discretionary" in item.reason for item in outcome.notes.rejected_fields)
 
 
 # ── Issue #4: RSI phrasing expansion ─────────────────────────────────────────
@@ -260,7 +262,7 @@ def test_r1_rsi_macd_combo_rejected() -> None:
 
     assert outcome.notes.status == "rejected"
     assert outcome.spec is None
-    assert any("RSI-based" in item.reason or "Unsupported signal" in item.reason for item in outcome.notes.rejected_fields)
+    assert any("MACD" in item.reason or "not yet implemented" in item.reason for item in outcome.notes.rejected_fields)
 
 
 # R2: RSI with optimization request → rejected
@@ -278,8 +280,8 @@ def test_r2_rsi_with_optimization_rejected() -> None:
     assert any("Optimization" in item.reason for item in outcome.notes.rejected_fields)
 
 
-# R3: RSI with trailing stop → rejected
-def test_r3_rsi_with_trailing_stop_rejected() -> None:
+# R3: RSI with trailing stop → now accepted (trailing stops are supported)
+def test_r3_rsi_with_trailing_stop_accepted() -> None:
     request_text = (
         "Trade EURUSD on H1, long only. RSI period 14. "
         "Enter when RSI is below 30. Use a trailing stop of 20 pips. Take profit 40 pips."
@@ -287,9 +289,9 @@ def test_r3_rsi_with_trailing_stop_rejected() -> None:
 
     outcome = formalize_strategy_request(request_text)
 
-    assert outcome.notes.status == "rejected"
-    assert outcome.spec is None
-    assert any("Advanced trade management" in item.reason for item in outcome.notes.rejected_fields)
+    assert outcome.notes.status == "accepted"
+    assert outcome.spec is not None
+    assert outcome.spec.rules.rsi_period == 14
 
 
 # R4: RSI with multi-pair scope → rejected

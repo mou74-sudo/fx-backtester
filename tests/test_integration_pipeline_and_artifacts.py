@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
-from fx_backtester.formalizer.spec_models import BacktestWindow, InstrumentSpec, RiskSpec, RsiMeanReversionRule, StrategySpec
+from fx_backtester.formalizer.spec_models import BacktestWindow, BreakoutRule, InstrumentSpec, RiskSpec, RsiMeanReversionRule, StrategySpec
 from fx_backtester.orchestrator import run_backtest_from_csv
 
 
@@ -124,8 +124,7 @@ def test_breakout_pipeline_runs_through_standard_artifacts(tmp_path: Path) -> No
         strategy_name='integration_breakout',
         instrument=InstrumentSpec(),
         risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
-        rules=RsiMeanReversionRule(
-            strategy_type='breakout',
+        rules=BreakoutRule(
             direction='long_only',
             breakout_lookback_bars=3,
             breakout_buffer_pips=2,

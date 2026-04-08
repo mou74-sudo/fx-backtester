@@ -5,7 +5,7 @@ from pydantic import ValidationError
 
 from fx_backtester.data.loaders import load_ohlc_csv
 from fx_backtester.data.quality import assess_basic_ohlc_quality
-from fx_backtester.formalizer.spec_models import BacktestWindow, InstrumentSpec, RiskSpec, RobustnessSpec, RsiMeanReversionRule, StrategySpec
+from fx_backtester.formalizer.spec_models import BacktestWindow, BreakoutRule, InstrumentSpec, RiskSpec, RobustnessSpec, RsiMeanReversionRule, StrategySpec
 
 
 
@@ -73,14 +73,17 @@ def test_quality_report_flags_missing_fields_and_non_monotonic_timestamps() -> N
 
 
 def test_breakout_rule_requires_strategy_specific_fields() -> None:
+    # Passing "breakout" to RsiMeanReversionRule (the RSI class) must fail — wrong literal
     with pytest.raises(ValidationError):
-        RsiMeanReversionRule(strategy_type="breakout", stop_loss_pips=20, take_profit_pips=30)
+        RsiMeanReversionRule(strategy_type="breakout", stop_loss_pips=20, take_profit_pips=30)  # type: ignore[arg-type]
+    # BreakoutRule itself is valid with just required base fields (breakout fields have defaults)
+    rule = BreakoutRule(stop_loss_pips=20, take_profit_pips=30)
+    assert rule.strategy_type == "breakout"
 
 
 
 def test_breakout_rule_accepts_minimal_supported_fields() -> None:
-    rule = RsiMeanReversionRule(
-        strategy_type="breakout",
+    rule = BreakoutRule(
         direction="both",
         breakout_lookback_bars=20,
         breakout_buffer_pips=2,
@@ -100,8 +103,7 @@ def test_strategy_spec_accepts_breakout_rule_contract() -> None:
         strategy_name="eurusd_breakout_contract",
         instrument=InstrumentSpec(),
         risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
-        rules=RsiMeanReversionRule(
-            strategy_type="breakout",
+        rules=BreakoutRule(
             direction="both",
             breakout_lookback_bars=20,
             breakout_buffer_pips=2,

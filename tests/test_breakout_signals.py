@@ -2,12 +2,11 @@ from __future__ import annotations
 
 from fx_backtester.data.models import MarketBar
 from fx_backtester.engine.pipeline import build_breakout_signal_pipeline
-from fx_backtester.formalizer.spec_models import BacktestWindow, InstrumentSpec, RiskSpec, RsiMeanReversionRule, StrategySpec
+from fx_backtester.formalizer.spec_models import BacktestWindow, BreakoutRule, InstrumentSpec, RiskSpec, StrategySpec
 
 
 def _build_breakout_spec(**rule_overrides: object) -> StrategySpec:
     rule_payload = {
-        "strategy_type": "breakout",
         "breakout_lookback_bars": 3,
         "breakout_buffer_pips": 2,
         "stop_loss_pips": 15,
@@ -19,7 +18,7 @@ def _build_breakout_spec(**rule_overrides: object) -> StrategySpec:
         strategy_name="breakout_signal_suite",
         instrument=InstrumentSpec(),
         risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
-        rules=RsiMeanReversionRule(**rule_payload),
+        rules=BreakoutRule(**rule_payload),
         window=BacktestWindow(start_date="2024-01-01", end_date="2024-01-02"),
     )
 

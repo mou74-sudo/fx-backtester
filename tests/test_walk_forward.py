@@ -85,8 +85,8 @@ def _spec(rsi_period: int = 14) -> StrategySpec:
         risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
         rules=RsiMeanReversionRule(
             rsi_period=rsi_period,
-            rsi_oversold=30,
-            rsi_overbought=70,
+            entry_rsi_lte=30,
+            short_entry_rsi_gte=70,
             stop_loss_pips=20,
             take_profit_pips=30,
         ),

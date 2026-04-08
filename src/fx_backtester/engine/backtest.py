@@ -334,7 +334,15 @@ def run_backtest(*, bars: list[SignalBar], spec: StrategySpec, policy: Execution
     lot_size_units = spec.instrument.lot_size_units
     trade_index = 0
     half_spread_delta = policy.half_spread_pips * pip_size
-    stop_enabled = spec.rules.stop_loss_style in {"fixed_pips", "atr"}
+    # stop_enabled gates the SL exit check.  It must be True when a trailing stop is
+    # active (even if the initial stop_loss_style is "disabled") so that the ratcheted
+    # trailing-stop price can actually trigger an exit.  Without this, a user who sets
+    # stop_loss_style="disabled" + trailing_stop_style="atr" gets zero stop protection —
+    # the trailing stop ratchets but the exit check is never reached.
+    stop_enabled = (
+        spec.rules.stop_loss_style in {"fixed_pips", "atr"}
+        or spec.rules.trailing_stop_style != "disabled"
+    )
     tp_enabled = spec.rules.take_profit_style == "fixed_pips"
 
     for bar in bars:

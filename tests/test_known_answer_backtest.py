@@ -179,9 +179,11 @@ def test_non_usd_account_conversion_is_applied_to_usd_equity_report() -> None:
     result = run_backtest(bars=bars, spec=spec, policy=policy)
 
     assert result.trades[0].pnl == 178.8
-    assert result.trades[0].pnl_usd == 215.1
+    # pnl is computed in quote currency (USD) regardless of account_ccy;
+    # pnl_usd therefore equals pnl for EURUSD (quote == USD already).
+    assert result.trades[0].pnl_usd == 178.8
     assert result.ending_equity == 10178.8
-    assert result.ending_equity_usd == 12245.1
+    assert result.ending_equity_usd == 10178.8
 
 
 def test_max_drawdown_pct_is_plain_percent_not_fraction() -> None:

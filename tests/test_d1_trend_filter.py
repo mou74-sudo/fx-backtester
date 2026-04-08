@@ -22,6 +22,7 @@ from fx_backtester.engine.pipeline import build_signal_pipeline
 from fx_backtester.formalizer.execution_policy import ExecutionPolicy
 from fx_backtester.formalizer.spec_models import (
     BacktestWindow,
+    BreakoutRule,
     InstrumentSpec,
     RiskSpec,
     RsiMeanReversionRule,
@@ -291,8 +292,7 @@ def _breakout_spec(*, require_daily_trend: bool = True) -> StrategySpec:
         strategy_name="d1_breakout_test",
         instrument=InstrumentSpec(),
         risk=RiskSpec(initial_equity=10_000, risk_per_trade_fraction=0.01),
-        rules=RsiMeanReversionRule(
-            strategy_type="breakout",
+        rules=BreakoutRule(
             breakout_lookback_bars=3,
             breakout_buffer_pips=2.0,
             stop_loss_pips=20,
