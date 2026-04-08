@@ -52,11 +52,14 @@ _FUTURES_PARAMS = {
     # ES stop 160 pips = 40 ES points (~0.20% at 5000) — realistic intraday stop
     # RSI: H1 index futures rarely touch 20/80 — use 35/65 so signals actually fire.
     # Exit at neutral RSI=50 (mean reversion complete). rsi_period=14 is standard.
+    # Sizing check (must satisfy: risk_amount / loss_per_lot >= 1.0):
+    #   NQ: 100k * 1% = $1,000 risk; 200 pips * $5/pip = $1,000/lot → 1 contract ✓
+    #   ES: 100k * 1% = $1,000 risk;  80 pips * $12.50/pip = $1,000/lot → 1 contract ✓
     "NQ": {
         "pip_size": 0.25,
         "lot_size_units": 20,
-        "stop_loss_pips": 200,
-        "take_profit_pips": 400,   # 2:1 R:R — realistic for mean reversion
+        "stop_loss_pips": 200,       # 50 NQ points (~0.25% at 20,000)
+        "take_profit_pips": 400,     # 2:1 R:R — 100 NQ points
         "direction": "both",
         "rsi_period": 14,
         "entry_rsi_lte": 35,
@@ -67,8 +70,8 @@ _FUTURES_PARAMS = {
     "ES": {
         "pip_size": 0.25,
         "lot_size_units": 50,
-        "stop_loss_pips": 160,
-        "take_profit_pips": 320,   # 2:1 R:R
+        "stop_loss_pips": 80,        # 20 ES points (~0.40% at 5,000) — tighter to fit sizing
+        "take_profit_pips": 160,     # 2:1 R:R — 40 ES points
         "direction": "both",
         "rsi_period": 14,
         "entry_rsi_lte": 35,
@@ -91,7 +94,7 @@ def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> 
         raw["instrument"]["min_lot_step"]   = 1.0     # futures trade in whole contracts only
         raw["instrument"]["base_ccy"]       = "USD"   # NQ/ES are USD-denominated
         raw["instrument"]["quote_ccy"]      = "USD"
-        raw["risk"]["initial_equity"]       = 50_000   # realistic futures account size
+        raw["risk"]["initial_equity"]       = 100_000  # min capital for 1 NQ/ES contract at 1% risk
         raw["rules"]["stop_loss_pips"]      = fp["stop_loss_pips"]
         raw["rules"]["take_profit_pips"]    = fp["take_profit_pips"]
         raw["rules"]["direction"]           = fp["direction"]
