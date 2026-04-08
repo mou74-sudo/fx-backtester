@@ -47,11 +47,29 @@ _FUTURES_PARAMS = {
     # lot_size_units = contract $ multiplier per point.
     # NQ: $20/pt × 0.25 pt/pip  →  lot_size_units=20  →  pip_value=$5/pip per "lot"
     # ES: $50/pt × 0.25 pt/pip  →  lot_size_units=50  →  pip_value=$12.50/pip per "lot"
-    # stop/tp in "pips" (1 pip = 0.25 NQ/ES points)
-    # NQ stop 200 pips = 50 NQ points (~0.25% at 20000) — realistic intraday stop
-    # ES stop 160 pips = 40 ES points (~0.20% at 5000) — realistic intraday stop
-    "NQ": {"pip_size": 0.25, "lot_size_units": 20,  "stop_loss_pips": 200, "take_profit_pips": 600},
-    "ES": {"pip_size": 0.25, "lot_size_units": 50,  "stop_loss_pips": 160, "take_profit_pips": 480},
+    # Futures use a looser, bidirectional RSI template than EURUSD.
+    "NQ": {
+        "pip_size": 0.25,
+        "lot_size_units": 20,
+        "stop_loss_pips": 200,
+        "take_profit_pips": 600,
+        "direction": "both",
+        "entry_rsi_lte": 30,
+        "short_entry_rsi_gte": 70,
+        "exit_rsi_gte": 55,
+        "short_exit_rsi_lte": 45,
+    },
+    "ES": {
+        "pip_size": 0.25,
+        "lot_size_units": 50,
+        "stop_loss_pips": 160,
+        "take_profit_pips": 480,
+        "direction": "both",
+        "entry_rsi_lte": 30,
+        "short_entry_rsi_gte": 70,
+        "exit_rsi_gte": 55,
+        "short_exit_rsi_lte": 45,
+    },
 }
 
 def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> None:
@@ -68,8 +86,14 @@ def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> 
         raw["instrument"]["base_ccy"]       = "USD"   # NQ/ES are USD-denominated
         raw["instrument"]["quote_ccy"]      = "USD"
         raw["risk"]["initial_equity"]       = 50_000   # realistic futures account size
+        raw["rules"]["direction"]           = fp["direction"]
+        raw["rules"]["entry_rsi_lte"]       = fp["entry_rsi_lte"]
+        raw["rules"]["short_entry_rsi_gte"] = fp["short_entry_rsi_gte"]
+        raw["rules"]["exit_rsi_gte"]        = fp["exit_rsi_gte"]
+        raw["rules"]["short_exit_rsi_lte"]  = fp["short_exit_rsi_lte"]
         raw["rules"]["stop_loss_pips"]      = fp["stop_loss_pips"]
         raw["rules"]["take_profit_pips"]    = fp["take_profit_pips"]
+        raw["notes"] = f"Auto-generated {instrument} RSI futures template with bidirectional entries and futures sizing."
     out_path.write_text(json.dumps(raw, indent=2))
 
 

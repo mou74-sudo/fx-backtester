@@ -17,13 +17,13 @@
   "rules": {
     "strategy_type": "rsi_mean_reversion",
     "timeframe": "H1",
-    "direction": "long_only",
+    "direction": "both",
     "allowed_sessions": [],
     "rsi_period": 5,
-    "entry_rsi_lte": 20,
+    "entry_rsi_lte": 30,
     "short_entry_rsi_gte": 70,
     "short_exit_rsi_lte": 45,
-    "exit_rsi_gte": 60,
+    "exit_rsi_gte": 55,
     "time_stop_bars": null,
     "exit_on_session_close": false,
     "stop_loss_style": "fixed_pips",
@@ -55,5 +55,5 @@
       1
     ]
   },
-  "notes": "Golden example A: EUR/USD RSI mean reversion with fixed-pip stop and take profit."
+  "notes": "Auto-generated NQ RSI futures template with bidirectional entries and futures sizing."
 }
