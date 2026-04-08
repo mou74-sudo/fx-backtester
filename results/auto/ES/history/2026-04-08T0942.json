@@ -1,7 +1,7 @@
 {
   "source": "ai_pipeline",
   "instrument": "ES",
-  "run_timestamp": "2026-04-08T0946",
+  "run_timestamp": "2026-04-08T0942",
   "run_date": "2026-04-08",
   "data_start": "2025-10-09",
   "data_end": "2026-04-07",
@@ -16,19 +16,19 @@
   ],
   "backtest": {
     "artifact_schema_version": "v1",
-    "ending_equity": 98998.75,
-    "max_drawdown": 1001.25,
-    "max_drawdown_pct": 1.0012,
-    "net_pips": -80.1,
-    "net_pnl": -1001.25,
+    "ending_equity": 50000.0,
+    "max_drawdown": 0.0,
+    "max_drawdown_pct": 0.0,
+    "net_pips": 0.0,
+    "net_pnl": 0.0,
     "robustness_enabled": true,
-    "run_id": "run_20260408T094651Z__auto-es-2026-04-07",
+    "run_id": "run_20260408T094206Z__auto-es-2026-04-07",
     "strategy_name": "auto_es_2026-04-07",
-    "trade_count": 1
+    "trade_count": 0
   },
-  "walk_forward_verdict": "inconclusive",
-  "wf_validated_folds": 1,
+  "walk_forward_verdict": "failed",
+  "wf_validated_folds": 0,
   "wf_total_folds": 5,
-  "oos_net_pips": 232.4,
-  "oos_win_rate": 0.3
+  "oos_net_pips": 0.0,
+  "oos_win_rate": 0.0
 }
