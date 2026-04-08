@@ -169,12 +169,13 @@ def render(
                 go.Bar(name="Tested on (out-of-sample)", x=labels, y=oos_pips,
                        marker_color=["#00c49a" if p > 0 else "#ff4455" for p in oos_pips]),
             ])
+            st.caption("Blue = trained on it · Green/Red = tested on unseen data")
             fig_wf.update_layout(**_cl(
-                barmode="group", height=280,
-                margin=dict(l=0, r=0, t=30, b=0),
+                barmode="group", height=320,
+                margin=dict(l=0, r=0, t=10, b=70),
                 yaxis=dict(title="Points", gridcolor="rgba(255,255,255,0.1)"),
-                legend=dict(orientation="h", y=1.15),
-                title="Blue = trained on it  |  Green/Red = tested on unseen data",
+                legend=dict(orientation="h", yanchor="top", y=-0.18, x=0, xanchor="left"),
+                title=None,
             ))
             st.plotly_chart(fig_wf, use_container_width=True, key="home_wf_chart")
         st.markdown("---")
