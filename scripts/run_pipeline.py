@@ -50,8 +50,19 @@ _FUTURES_PARAMS = {
     # stop/tp in "pips" (1 pip = 0.25 NQ/ES points)
     # NQ stop 200 pips = 50 NQ points (~0.25% at 20000) — realistic intraday stop
     # ES stop 160 pips = 40 ES points (~0.20% at 5000) — realistic intraday stop
-    "NQ": {"pip_size": 0.25, "lot_size_units": 20,  "stop_loss_pips": 200, "take_profit_pips": 600},
-    "ES": {"pip_size": 0.25, "lot_size_units": 50,  "stop_loss_pips": 160, "take_profit_pips": 480},
+    "NQ": {"pip_size": 0.25, "lot_size_units": 20,  "stop_loss_pips": 200, "take_profit_pips": 400},
+    "ES": {"pip_size": 0.25, "lot_size_units": 50,  "stop_loss_pips": 160, "take_profit_pips": 320},
+}
+
+# RSI thresholds suited to H1 index futures.
+# NQ/ES rarely touch RSI 20/80 on H1 — use wider bands (35/65) so signals fire.
+# Exit at the RSI midpoint (50) for mean reversion.
+_FUTURES_RSI = {
+    "rsi_period":          14,
+    "entry_rsi_lte":       35,   # oversold — go long
+    "short_entry_rsi_gte": 65,   # overbought — go short
+    "exit_rsi_gte":        50,   # exit long when RSI returns to neutral
+    "short_exit_rsi_lte":  50,   # exit short when RSI returns to neutral
 }
 
 def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> None:
@@ -70,6 +81,9 @@ def build_live_spec(out_path: Path, instrument: str, start: date, end: date) -> 
         raw["risk"]["initial_equity"]       = 50_000   # realistic futures account size
         raw["rules"]["stop_loss_pips"]      = fp["stop_loss_pips"]
         raw["rules"]["take_profit_pips"]    = fp["take_profit_pips"]
+        raw["rules"]["direction"]           = "both"  # index futures — trade both sides
+        for k, v in _FUTURES_RSI.items():
+            raw["rules"][k] = v
     out_path.write_text(json.dumps(raw, indent=2))
 
 
