@@ -207,10 +207,10 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         ann_factor = math.sqrt(trades_per_year)
         if std_pnl > 0:
             sharpe_ratio = round((mean_pnl / std_pnl) * ann_factor, 2)
-        # Sortino: semi-deviation of returns below the mean (target = mean_pnl)
-        downside = [x for x in pnl_series if x < mean_pnl]
+        # Sortino: semi-deviation of returns below zero (target = 0, conventional MAR)
+        downside = [x for x in pnl_series if x < 0]
         if downside:
-            downside_variance = sum((x - mean_pnl) ** 2 for x in downside) / n
+            downside_variance = sum(x ** 2 for x in downside) / n
             downside_std = math.sqrt(downside_variance)
             if downside_std > 0:
                 sortino_ratio = round((mean_pnl / downside_std) * ann_factor, 2)
@@ -220,8 +220,10 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
     peak_trade_index = 0
     max_drawdown = 0.0
     max_drawdown_pct = 0.0
-    max_drawdown_duration_trades = 0    # duration of the DEEPEST drawdown
+    max_drawdown_duration_trades = 0    # peak-to-recovery duration of the deepest drawdown
     longest_drawdown_duration_trades = 0  # duration of the LONGEST drawdown
+    _max_dd_peak_idx = 0          # trade index of the peak preceding the max drawdown
+    _max_dd_peak_equity = starting_equity  # equity at that peak
     for idx, trade in enumerate(trades, start=1):
         equity = round(equity + (trade.pnl or 0.0), 2)
         if equity > peak:
@@ -235,7 +237,20 @@ def _build_metrics(*, trades: list[TradeRecord], starting_equity: float, ending_
         if drawdown > max_drawdown:
             max_drawdown = drawdown
             max_drawdown_pct = drawdown_pct
-            max_drawdown_duration_trades = duration
+            _max_dd_peak_idx = peak_trade_index
+            _max_dd_peak_equity = peak
+    # Compute full peak-to-recovery duration for the deepest drawdown.
+    # Scan forward from the peak that preceded the max DD to find the first
+    # trade at which equity recovers to that peak level (or end-of-data).
+    if max_drawdown > 0:
+        _eq = starting_equity
+        _recovery_idx = len(trades)  # default: no recovery by end of data
+        for _i, _t in enumerate(trades, start=1):
+            _eq = round(_eq + (_t.pnl or 0.0), 2)
+            if _i > _max_dd_peak_idx and _eq >= _max_dd_peak_equity:
+                _recovery_idx = _i
+                break
+        max_drawdown_duration_trades = _recovery_idx - _max_dd_peak_idx
 
     session_summary: dict[str, dict[str, float | int]] = {}
     for trade in trades:

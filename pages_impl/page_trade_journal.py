@@ -28,7 +28,8 @@ def render(_RESULTS: Path) -> None:
         _JOURNAL_PATH.write_text(json.dumps(trades, indent=2))
 
     def _calc_pnl(side, entry, exit_p, size, instrument):
-        point = 20 if instrument == "NQ" else 50
+        _multipliers = {"NQ": 20, "ES": 50, "MNQ": 2, "MES": 5}
+        point = _multipliers.get(instrument, 50)
         points = (exit_p - entry) if side == "Long" else (entry - exit_p)
         return round(points * point * size, 2), round(points, 2)
 
@@ -172,13 +173,16 @@ def render(_RESULTS: Path) -> None:
                     if open_f["qty"] == 0:
                         q.popleft()
 
-                    entry_p  = open_f["price"] if action == "Sell" else price
-                    exit_p   = price           if action == "Sell" else open_f["price"]
-                    side     = "Long"          if action == "Sell" else "Short"
+                    # open_f is always the opening fill; current fill is always the exit.
+                    # For longs: open_f = earlier Buy, current action = Sell.
+                    # For shorts: open_f = earlier Sell, current action = Buy.
+                    entry_p  = open_f["price"]
+                    exit_p   = price
+                    side     = "Long" if action == "Sell" else "Short"
                     pts      = (exit_p - entry_p) if side == "Long" else (entry_p - exit_p)
                     pnl_usd  = round(pts * mult * matched, 2)
-                    entry_ts = open_f["ts"]    if action == "Sell" else ts
-                    exit_ts  = ts              if action == "Sell" else open_f["ts"]
+                    entry_ts = open_f["ts"]
+                    exit_ts  = ts
 
                     try:
                         _edt = pd.to_datetime(entry_ts)

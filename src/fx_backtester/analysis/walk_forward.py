@@ -116,7 +116,9 @@ class WalkForwardReport(BaseModel):
     def verdict(self) -> Literal["validated", "inconclusive", "failed"]:
         if not self.folds:
             return "failed"
-        rate = self.validated_folds / len(self.folds)
+        # Use n_folds (requested) not len(folds) (evaluated): skipped folds must
+        # count against the pass rate or the verdict is artificially inflated.
+        rate = self.validated_folds / self.n_folds
         total_pips = self.oos_total_net_pips
         if rate >= 0.6 and total_pips > 0:
             return "validated"

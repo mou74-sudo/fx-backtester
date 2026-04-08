@@ -120,10 +120,10 @@ def parse_bi5(raw_compressed: bytes, divider: float, day: date) -> list[MarketBa
         bars.append(
             MarketBar(
                 timestamp=timestamp,
-                open=max(o, l),   # clamp to valid range (rare floating-point edge)
+                open=min(max(o, l), h),   # clamp to [low, high] (rare floating-point edge)
                 high=h,
                 low=l,
-                close=max(c, l),
+                close=min(max(c, l), h),
                 sessions=infer_sessions(timestamp),
             )
         )

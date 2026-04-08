@@ -133,7 +133,6 @@ def _excursion_for_trade(
     pnl = round(trade.pnl_pips, 1)
     is_winner = pnl > 0
     efficiency = round(pnl / mfe_pips, 3) if mfe_pips > 0 else (1.0 if is_winner else 0.0)
-    efficiency = max(-1.0, min(1.0, efficiency))
     mae_ratio  = round(mae_pips / stop_loss_pips, 3) if stop_loss_pips > 0 else 0.0
 
     return TradeExcursion(

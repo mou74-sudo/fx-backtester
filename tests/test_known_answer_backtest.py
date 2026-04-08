@@ -45,7 +45,7 @@ def test_known_answer_backtest_produces_exact_trade_ledger_and_metrics() -> None
     assert result.metrics.gross_loss == -102.5
     assert result.metrics.net_pips == 19.2
     assert result.metrics.max_drawdown == 102.5
-    assert result.metrics.max_drawdown_duration_trades == 1
+    assert result.metrics.max_drawdown_duration_trades == 2  # peak → loss → recovery (full span)
     assert result.metrics.session_summary["asia"]["trade_count"] == 1
 
 
