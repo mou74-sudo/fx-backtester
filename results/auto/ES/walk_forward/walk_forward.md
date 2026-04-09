@@ -1,4 +1,4 @@
-# Walk-Forward Validation: auto_es_2026-04-07
+# Walk-Forward Validation: auto_es_2026-04-08
 
 **Instrument:** ES  |  **Total bars:** 2792  |  **Folds:** 5 of 5 evaluated  |  **IS split:** 70% / 30%
 
@@ -6,56 +6,56 @@
 
 > Results are mixed.  The strategy works in some regimes but not others.  Consider narrowing the entry filter or extending the data window.
 
-**OOS summary** — 1/5 folds profitable  |  Total OOS net pips: **+232.4**  |  Avg OOS win rate: **30%**  |  Total OOS trades: **13**
+**OOS summary** — 2/5 folds profitable  |  Total OOS net pips: **+701.0**  |  Avg OOS win rate: **29%**  |  Total OOS trades: **26**
 
 ---
 
 ## Fold 1  —  OOS: unprofitable
 
-- **In-sample:** 2025-10-09 → 2025-11-03  (391 bars)
-- **Out-of-sample:** 2025-11-03 → 2025-11-12  (167 bars)
+- **In-sample:** 2025-10-10 → 2025-11-04  (391 bars)
+- **Out-of-sample:** 2025-11-04 → 2025-11-13  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      1 |     -80.1 |      0% |    -80.10 |     1.00% |
+| In-sample     |      1 |    -163.2 |      0% |   -163.20 |     2.04% |
 | Out-of-sample |      1 |     -80.1 |      0% |    -80.10 |     1.00% |
 
 ## Fold 2  —  OOS: profitable
 
-- **In-sample:** 2025-11-12 → 2025-12-09  (391 bars)
-- **Out-of-sample:** 2025-12-09 → 2025-12-18  (167 bars)
-
-| Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
-|---------------|--------|----------|----------|------------|----------|
-| In-sample     |      1 |     -94.2 |      0% |    -94.20 |     1.18% |
-| Out-of-sample |      6 |    +442.3 |     67% |    +73.72 |     0.98% |
-
-## Fold 3  —  OOS: unprofitable
-
-- **In-sample:** 2025-12-18 → 2026-01-15  (391 bars)
-- **Out-of-sample:** 2026-01-15 → 2026-01-27  (167 bars)
+- **In-sample:** 2025-11-13 → 2025-12-10  (391 bars)
+- **Out-of-sample:** 2025-12-10 → 2025-12-19  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
 | In-sample     |      1 |     -80.1 |      0% |    -80.10 |     1.00% |
-| Out-of-sample |      2 |     -26.3 |     50% |    -13.15 |     0.99% |
+| Out-of-sample |      6 |    +442.3 |     67% |    +73.72 |     0.98% |
+
+## Fold 3  —  OOS: unprofitable
+
+- **In-sample:** 2025-12-19 → 2026-01-16  (391 bars)
+- **Out-of-sample:** 2026-01-16 → 2026-01-28  (167 bars)
+
+| Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
+|---------------|--------|----------|----------|------------|----------|
+| In-sample     |      1 |     -80.1 |      0% |    -80.10 |     1.00% |
+| Out-of-sample |      1 |     -80.1 |      0% |    -80.10 |     1.00% |
 
 ## Fold 4  —  OOS: unprofitable
 
-- **In-sample:** 2026-01-27 → 2026-02-20  (391 bars)
-- **Out-of-sample:** 2026-02-20 → 2026-03-04  (167 bars)
+- **In-sample:** 2026-01-28 → 2026-02-23  (391 bars)
+- **Out-of-sample:** 2026-02-23 → 2026-03-05  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      2 |    -119.4 |     50% |    -59.70 |     2.74% |
+| In-sample     |      1 |    -222.2 |      0% |   -222.20 |     2.78% |
 | Out-of-sample |      3 |     -23.4 |     33% |     -7.80 |     1.97% |
 
-## Fold 5  —  OOS: unprofitable
+## Fold 5  —  OOS: profitable
 
-- **In-sample:** 2026-03-04 → 2026-03-27  (392 bars)
-- **Out-of-sample:** 2026-03-27 → 2026-04-08  (168 bars)
+- **In-sample:** 2026-03-05 → 2026-03-30  (392 bars)
+- **Out-of-sample:** 2026-03-30 → 2026-04-09  (168 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      3 |    -189.4 |     67% |    -63.13 |     6.12% |
-| Out-of-sample |      1 |     -80.1 |      0% |    -80.10 |     1.00% |
+| In-sample     |      2 |    -349.3 |     50% |   -174.65 |     6.24% |
+| Out-of-sample |     15 |    +442.3 |     47% |    +29.49 |     5.67% |
