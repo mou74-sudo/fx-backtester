@@ -202,6 +202,18 @@ def run_walk_forward(
     fold_size = total // n_folds
     folds: list[WalkForwardFold] = []
 
+    # Warmup size: enough bars to initialise the daily SMA fully.
+    # Each fold window is ~total/n_folds bars which may be shorter than the
+    # indicator warmup period (SMA20 on H1 needs ~460+ bars for NQ/ES futures
+    # that trade 23 h/day).  We therefore source warmup bars from the *global*
+    # bar history that precedes each fold/OOS window — drawing on prior folds —
+    # rather than restricting warmup to IS bars within the current fold.
+    if getattr(spec.rules, "require_daily_trend", False):
+        _daily_sma = getattr(spec.rules, "daily_sma_period", 20)
+        _warmup_n = _daily_sma * 25   # e.g. 500 bars for SMA20 on NQ/ES H1
+    else:
+        _warmup_n = 100
+
     for i in range(n_folds):
         fold_start = i * fold_size
         fold_end = (i + 1) * fold_size if i < n_folds - 1 else total
@@ -215,21 +227,20 @@ def run_walk_forward(
         if len(is_bars) < min_bars_per_half or len(oos_bars) < min_bars_per_half:
             continue
 
-        is_result = _run_on_slice(is_bars, spec, policy)
-        # Pass IS bars as warmup so OOS indicators are fully initialised.
-        # The daily trend filter (SMA20) needs N complete trading days of prior
-        # data — roughly N*25 H1 bars.  100 bars (~6 days) is not enough for
-        # SMA20 (needs ~315 bars).  When the trend filter is active use all IS
-        # bars as warmup; otherwise cap at 100 for speed.
-        if getattr(spec.rules, "require_daily_trend", False):
-            _daily_sma = getattr(spec.rules, "daily_sma_period", 20)
-            _warmup_n = min(len(is_bars), _daily_sma * 25)
-        else:
-            _warmup_n = min(len(is_bars), 100)
-        oos_result = _run_on_slice(
-            oos_bars, spec, policy,
-            warmup_prefix=is_bars[-_warmup_n:],
+        # IS warmup: bars from the global history that precede this fold.
+        _is_warmup: list[MarketBar] | None = (
+            bars[max(0, fold_start - _warmup_n) : fold_start] or None
         )
+        is_result = _run_on_slice(is_bars, spec, policy, warmup_prefix=_is_warmup)
+
+        # OOS warmup: bars from the global history that precede the OOS window.
+        # This naturally includes IS bars and any pre-fold history, ensuring the
+        # daily SMA is fully warmed up even in early folds.
+        _oos_abs_start = fold_start + is_end
+        _oos_warmup: list[MarketBar] | None = (
+            bars[max(0, _oos_abs_start - _warmup_n) : _oos_abs_start] or None
+        )
+        oos_result = _run_on_slice(oos_bars, spec, policy, warmup_prefix=_oos_warmup)
 
         folds.append(WalkForwardFold(
             fold_index=i + 1,
