@@ -75,6 +75,10 @@ class RunArtifactWriter:
             quality_report=quality_report,
             signal_trace=signal_trace,
         )
+        _closed = [t for t in result.trades if t.pnl_pips is not None]
+        _wins   = sum(1 for t in _closed if (t.pnl_pips or 0.0) > 0)
+        _win_rate = round(_wins / len(_closed), 4) if _closed else 0.0
+
         summary = {
             "artifact_schema_version": _ARTIFACT_SCHEMA_VERSION,
             "run_id": run_dir.name,
@@ -86,6 +90,13 @@ class RunArtifactWriter:
             "max_drawdown": result.metrics.max_drawdown,
             "max_drawdown_pct": result.metrics.max_drawdown_pct,  # plain percent, e.g. 5.51 = 5.51%
             "robustness_enabled": robustness.enabled if robustness else False,
+            # ── Extended display fields for dashboard ──────────────────────────
+            "win_rate": _win_rate,
+            "expectancy_pips": result.metrics.expectancy_pips,
+            "average_win_pips": result.metrics.average_win_pips,
+            "average_loss_pips": result.metrics.average_loss_pips,
+            "sharpe_ratio": result.metrics.sharpe_ratio,
+            "profit_factor": result.metrics.profit_factor,
         }
         robustness_payload = robustness.model_dump(mode="json") if robustness is not None else None
         benchmarks_payload = benchmarks.model_dump(mode="json") if benchmarks is not None else None
