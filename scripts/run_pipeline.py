@@ -58,30 +58,33 @@ _FUTURES_PARAMS = {
     "NQ": {
         "pip_size": 0.25,
         "lot_size_units": 20,
-        "stop_loss_pips": 85,        # 21.25 NQ points — tight stop, let runners run
-        "take_profit_pips": 753,     # 188.25 NQ points — high R:R ~8.9:1
+        "stop_loss_pips": 94,        # 23.5 NQ points
+        "take_profit_pips": 864,     # 216 NQ points — R:R ~9.2:1
         "direction": "both",
-        "rsi_period": 16,
-        "entry_rsi_lte": 24,         # only truly oversold RSI triggers longs
-        "short_entry_rsi_gte": 57,   # NQ bullish bias; shorts need less extreme RSI
+        "rsi_period": 11,
+        "entry_rsi_lte": 35,         # oversold long entry
+        "short_entry_rsi_gte": 77,   # overbought short entry
         "exit_rsi_gte": 50,
         "short_exit_rsi_lte": 50,
-        # Trend filter: halves max DD (42% → 21%) and improves Sharpe (1.25 → 1.86).
-        # Only takes longs when NQ is above its 20-day SMA (uptrend), shorts when below.
+        # Trend filter: only longs when NQ above 20-day SMA, shorts when below.
+        # Bayesian-optimised (Optuna TPE, 150 trials) on 70% IS of 365-day dataset
+        # (Apr 2025 – Dec 2025).  Best score: 19.60, Sharpe: 3.63, max DD: 17.5%.
         "require_daily_trend": True,
         "daily_sma_period": 20,
     },
     "ES": {
         "pip_size": 0.25,
         "lot_size_units": 50,
-        "stop_loss_pips": 49,        # 12.25 ES points — tight stop
-        "take_profit_pips": 344,     # 86 ES points — R:R ~7:1
+        "stop_loss_pips": 74,        # 18.5 ES points
+        "take_profit_pips": 245,     # 61.25 ES points — R:R ~3.3:1
         "direction": "both",
-        "rsi_period": 21,
-        "entry_rsi_lte": 29,         # oversold entry threshold
-        "short_entry_rsi_gte": 65,   # overbought short entry
+        "rsi_period": 7,
+        "entry_rsi_lte": 40,         # oversold long entry
+        "short_entry_rsi_gte": 80,   # overbought short entry
         "exit_rsi_gte": 50,
         "short_exit_rsi_lte": 50,
+        # Bayesian-optimised (Optuna TPE, 150 trials) on 70% IS of 365-day dataset.
+        # Best score: 5.06, Sharpe: 2.37, win rate: 59%, max DD: 7.0%.
         "require_daily_trend": True,
         "daily_sma_period": 20,
     },
