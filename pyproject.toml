@@ -18,9 +18,16 @@ dependencies = [
 dev = [
   "pytest>=8.0",
 ]
+reel-generator = [
+  "anthropic>=0.40",
+  "requests>=2.31",
+  "pytrends>=4.9",
+  "pyyaml>=6.0",
+]
 
 [project.scripts]
 fx-backtester = "fx_backtester.cli:main"
+reel-gen = "reel_generator.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
