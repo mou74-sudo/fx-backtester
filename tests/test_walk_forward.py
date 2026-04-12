@@ -203,9 +203,19 @@ def _make_report(
     *,
     folds_profitable: int,
     total_folds: int,
-    total_oos_net_pips: float,
+    total_oos_net_pips: float,  # kept for call-site clarity; sign must be achievable with fixed pips
 ) -> WalkForwardReport:
-    """Build a minimal WalkForwardReport to test verdict logic directly."""
+    """Build a minimal WalkForwardReport to test verdict logic directly.
+
+    Profitable folds always get +10.0 OOS pips; unprofitable always get -5.0.
+    ``oos_profitable`` is set to match the pip sign — the two fields are always
+    consistent (a fold cannot be profitable with negative pips or vice versa).
+    ``total_oos_net_pips`` is accepted for readability at call sites but is not
+    used in the computation; callers should verify their expectations hold with
+    the fixed +10 / -5 per-fold values.
+    """
+    _ = total_oos_net_pips  # documented above — not used in body
+
     def _metrics(net_pips: float) -> FoldMetrics:
         return FoldMetrics(
             trade_count=5,
@@ -217,15 +227,11 @@ def _make_report(
         )
 
     folds: list[WalkForwardFold] = []
-    profitable_left = folds_profitable
     for i in range(total_folds):
-        if profitable_left > 0:
-            oos_pips = total_oos_net_pips / total_folds + 1
-            profitable = True
-            profitable_left -= 1
-        else:
-            oos_pips = -5.0
-            profitable = False
+        profitable = i < folds_profitable
+        # Fixed values: profitable → +10 pips; unprofitable → -5 pips.
+        # This guarantees oos_profitable is always consistent with net_pips sign.
+        oos_pips = 10.0 if profitable else -5.0
         folds.append(WalkForwardFold(
             fold_index=i + 1,
             in_sample_bar_count=140,
@@ -304,6 +310,48 @@ def test_verdict_failed_when_no_folds() -> None:
         folds=[],
     )
     assert report.verdict == "failed"
+
+
+def test_verdict_uses_n_folds_denominator_when_folds_skipped() -> None:
+    """Skipped folds must count against the pass rate.
+
+    If n_folds=5 but only 2 folds had enough bars to evaluate (both profitable),
+    the pass rate is 2/5=0.4, giving "inconclusive" — not 2/2=1.0 ("validated").
+    A wrong implementation using len(folds) instead of n_folds would return
+    "validated" here.
+    """
+    def _m(pips: float) -> FoldMetrics:
+        return FoldMetrics(trade_count=5, net_pips=pips, win_rate=0.6,
+                           expectancy_pips=3.0, max_drawdown_pct=2.0, ending_equity=10_050.0)
+
+    folds = [
+        WalkForwardFold(
+            fold_index=i + 1,
+            in_sample_bar_count=140,
+            in_sample_start="2024-01-01T00:00:00",
+            in_sample_end="2024-06-01T00:00:00",
+            in_sample=_m(10.0),
+            out_of_sample_bar_count=60,
+            out_of_sample_start="2024-06-02T00:00:00",
+            out_of_sample_end="2024-08-01T00:00:00",
+            out_of_sample=_m(10.0),
+            oos_profitable=True,
+        )
+        for i in range(2)  # only 2 folds evaluated; 3 were skipped (too few bars)
+    ]
+    report = WalkForwardReport(
+        instrument="EURUSD",
+        strategy_name="test",
+        total_bar_count=1000,
+        n_folds=5,          # 5 were requested
+        in_sample_pct=0.7,
+        folds=folds,        # but only 2 evaluated
+    )
+    assert report.validated_folds == 2
+    assert len(report.folds) == 2
+    # Correct: 2 / n_folds(5) = 0.4 → inconclusive (rate >= 0.4 or pips > 0)
+    # Wrong:   2 / len(folds)(2) = 1.0 → validated
+    assert report.verdict == "inconclusive"
 
 
 def test_validated_folds_count() -> None:
