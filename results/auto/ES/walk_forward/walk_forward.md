@@ -27,7 +27,7 @@
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      0 |      +0.0 |      0% |     +0.00 |     0.00% |
+| In-sample     |      4 |    +180.5 |     25% |    +45.12 |     1.96% |
 | Out-of-sample |      0 |      +0.0 |      0% |     +0.00 |     0.00% |
 
 ## Fold 3  —  OOS: profitable
@@ -37,7 +37,7 @@
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      1 |     -49.1 |      0% |    -49.10 |     0.61% |
+| In-sample     |      2 |    +111.7 |     50% |    +55.85 |     0.60% |
 | Out-of-sample |      1 |    +343.9 |    100% |   +343.90 |     0.00% |
 
 ## Fold 4  —  OOS: profitable
@@ -47,7 +47,7 @@
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      0 |      +0.0 |      0% |     +0.00 |     0.00% |
+| In-sample     |      2 |    -116.3 |      0% |    -58.15 |     1.45% |
 | Out-of-sample |      3 |    +245.7 |     33% |    +81.90 |     1.23% |
 
 ## Fold 5  —  OOS: profitable
@@ -57,5 +57,5 @@
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      0 |      +0.0 |      0% |     +0.00 |     0.00% |
+| In-sample     |      1 |    +263.8 |    100% |   +263.80 |     0.00% |
 | Out-of-sample |      5 |    +142.4 |     20% |    +28.48 |     2.52% |
