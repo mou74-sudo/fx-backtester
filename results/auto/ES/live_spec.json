@@ -1,5 +1,5 @@
 {
-  "strategy_name": "auto_es_2026-04-09",
+  "strategy_name": "auto_es_2026-04-10",
   "instrument": {
     "symbol": "ES",
     "quote_ccy": "USD",
@@ -19,24 +19,24 @@
     "timeframe": "H1",
     "direction": "both",
     "allowed_sessions": [],
-    "rsi_period": 14,
-    "entry_rsi_lte": 35,
+    "rsi_period": 21,
+    "entry_rsi_lte": 29,
     "short_entry_rsi_gte": 65,
     "short_exit_rsi_lte": 50,
     "exit_rsi_gte": 50,
     "time_stop_bars": null,
     "exit_on_session_close": false,
     "stop_loss_style": "fixed_pips",
-    "stop_loss_pips": 80,
+    "stop_loss_pips": 49,
     "stop_loss_atr_period": 14,
     "stop_loss_atr_multiplier": 2.0,
     "take_profit_style": "fixed_pips",
-    "take_profit_pips": 160,
+    "take_profit_pips": 344,
     "trailing_stop_style": "disabled"
   },
   "window": {
-    "start_date": "2025-10-11",
-    "end_date": "2026-04-09"
+    "start_date": "2025-10-12",
+    "end_date": "2026-04-10"
   },
   "execution_policy_name": "default_v0_1",
   "robustness": {
