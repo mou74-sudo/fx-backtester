@@ -32,7 +32,9 @@
     "stop_loss_atr_multiplier": 2.0,
     "take_profit_style": "fixed_pips",
     "take_profit_pips": 344,
-    "trailing_stop_style": "disabled"
+    "trailing_stop_style": "disabled",
+    "require_daily_trend": true,
+    "daily_sma_period": 20
   },
   "window": {
     "start_date": "2025-10-12",
