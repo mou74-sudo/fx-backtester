@@ -1,7 +1,7 @@
 {
   "source": "ai_pipeline",
   "instrument": "ES",
-  "run_timestamp": "2026-04-10T1955",
+  "run_timestamp": "2026-04-10T1325",
   "run_date": "2026-04-10",
   "data_start": "2025-10-11",
   "data_end": "2026-04-09",
@@ -22,7 +22,7 @@
     "net_pips": -80.1,
     "net_pnl": -1001.25,
     "robustness_enabled": true,
-    "run_id": "run_20260410T195508Z__auto-es-2026-04-09",
+    "run_id": "run_20260410T132509Z__auto-es-2026-04-09",
     "strategy_name": "auto_es_2026-04-09",
     "trade_count": 1
   },

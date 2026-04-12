@@ -1,5 +1,5 @@
 {
-  "strategy_name": "auto_nq_2026-04-07",
+  "strategy_name": "auto_nq_2026-04-09",
   "instrument": {
     "symbol": "NQ",
     "quote_ccy": "USD",
@@ -35,8 +35,8 @@
     "trailing_stop_style": "disabled"
   },
   "window": {
-    "start_date": "2025-10-09",
-    "end_date": "2026-04-07"
+    "start_date": "2025-10-11",
+    "end_date": "2026-04-09"
   },
   "execution_policy_name": "default_v0_1",
   "robustness": {

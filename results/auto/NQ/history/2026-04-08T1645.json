@@ -1,0 +1,34 @@
+{
+  "source": "ai_pipeline",
+  "instrument": "NQ",
+  "run_timestamp": "2026-04-08T1645",
+  "run_date": "2026-04-08",
+  "data_start": "2025-10-09",
+  "data_end": "2026-04-07",
+  "lookback_days": 180,
+  "key_levels_used": [
+    "prev_day_highs",
+    "prev_day_lows",
+    "prev_week_highs",
+    "prev_week_lows",
+    "session_highs",
+    "session_lows"
+  ],
+  "backtest": {
+    "artifact_schema_version": "v1",
+    "ending_equity": 98658.5,
+    "max_drawdown": 3341.0,
+    "max_drawdown_pct": 3.2755,
+    "net_pips": -268.3,
+    "net_pnl": -1341.5,
+    "robustness_enabled": true,
+    "run_id": "run_20260408T164504Z__auto-nq-2026-04-07",
+    "strategy_name": "auto_nq_2026-04-07",
+    "trade_count": 2
+  },
+  "walk_forward_verdict": "failed",
+  "wf_validated_folds": 0,
+  "wf_total_folds": 5,
+  "oos_net_pips": -607.3,
+  "oos_win_rate": 0.1467
+}
