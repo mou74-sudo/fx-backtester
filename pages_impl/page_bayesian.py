@@ -120,6 +120,21 @@ curve-fitted to the past — not a real edge.
                     high=min(90, ob_hi),
                 )
 
+    elif strategy_type == "breakout":
+        if st.checkbox("Lookback bars (breakout window)", value=True):
+            c1, c2 = st.columns(2)
+            lb_lo = c1.number_input("Lookback min", 2, 200, 5)
+            lb_hi = c2.number_input("Lookback max", 2, 200, 80)
+            if lb_lo < lb_hi:
+                spaces["breakout_lookback_bars"] = ParamSpace(kind="int", low=int(lb_lo), high=int(lb_hi))
+
+        if st.checkbox("Buffer pips (noise filter)", value=True):
+            c1, c2 = st.columns(2)
+            buf_lo = c1.number_input("Buffer min", 0, 20, 0)
+            buf_hi = c2.number_input("Buffer max", 1, 20, 8)
+            if buf_lo < buf_hi:
+                spaces["breakout_buffer_pips"] = ParamSpace(kind="float", low=float(buf_lo), high=float(buf_hi))
+
     if st.checkbox("Stop loss (pips / points)", value=True):
         c1, c2 = st.columns(2)
         sl_lo = c1.number_input("Stop min", 10, 500, 80)
