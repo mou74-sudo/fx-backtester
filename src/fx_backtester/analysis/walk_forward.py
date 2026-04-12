@@ -216,9 +216,16 @@ def run_walk_forward(
             continue
 
         is_result = _run_on_slice(is_bars, spec, policy)
-        # Pass the IS tail as a warmup prefix so OOS indicators are fully
-        # initialised from bar 1 rather than wasting the first N warmup bars.
-        _warmup_n = min(len(is_bars), 100)  # cap at 100 bars — enough for any indicator
+        # Pass IS bars as warmup so OOS indicators are fully initialised.
+        # The daily trend filter (SMA20) needs N complete trading days of prior
+        # data — roughly N*25 H1 bars.  100 bars (~6 days) is not enough for
+        # SMA20 (needs ~315 bars).  When the trend filter is active use all IS
+        # bars as warmup; otherwise cap at 100 for speed.
+        if getattr(spec.rules, "require_daily_trend", False):
+            _daily_sma = getattr(spec.rules, "daily_sma_period", 20)
+            _warmup_n = min(len(is_bars), _daily_sma * 25)
+        else:
+            _warmup_n = min(len(is_bars), 100)
         oos_result = _run_on_slice(
             oos_bars, spec, policy,
             warmup_prefix=is_bars[-_warmup_n:],
