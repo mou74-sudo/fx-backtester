@@ -37,7 +37,7 @@
     "daily_sma_period": 20
   },
   "window": {
-    "start_date": "2025-04-10",
+    "start_date": "2025-10-12",
     "end_date": "2026-04-10"
   },
   "execution_policy_name": "default_v0_1",
