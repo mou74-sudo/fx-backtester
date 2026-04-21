@@ -1,59 +1,59 @@
-# Walk-Forward Validation: auto_nq_2026-04-17
+# Walk-Forward Validation: auto_nq_2026-04-20
 
-**Instrument:** NQ  |  **Total bars:** 2817  |  **Folds:** 5 of 5 evaluated  |  **IS split:** 70% / 30%
+**Instrument:** NQ  |  **Total bars:** 2792  |  **Folds:** 5 of 5 evaluated  |  **IS split:** 70% / 30%
 
-## Verdict: INCONCLUSIVE
+## Verdict: VALIDATED
 
-> Results are mixed.  The strategy works in some regimes but not others.  Consider narrowing the entry filter or extending the data window.
+> ≥60 % of out-of-sample folds were profitable and total OOS net pips > 0.  The strategy shows consistent edge across multiple unseen market regimes.
 
-**OOS summary** — 2/5 folds profitable  |  Total OOS net pips: **+579.4**  |  Avg OOS win rate: **47%**  |  Total OOS trades: **25**
+**OOS summary** — 3/5 folds profitable  |  Total OOS net pips: **+2941.1**  |  Avg OOS win rate: **55%**  |  Total OOS trades: **26**
 
 ---
 
 ## Fold 1  —  OOS: unprofitable
 
-- **In-sample:** 2025-10-19 → 2025-11-12  (394 bars)
-- **Out-of-sample:** 2025-11-12 → 2025-11-21  (169 bars)
+- **In-sample:** 2025-10-22 → 2025-11-14  (391 bars)
+- **Out-of-sample:** 2025-11-14 → 2025-11-25  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      1 |    +417.8 |    100% |   +417.80 |     0.00% |
+| In-sample     |      0 |      +0.0 |      0% |     +0.00 |     0.00% |
 | Out-of-sample |      0 |      +0.0 |      0% |     +0.00 |     0.00% |
 
-## Fold 2  —  OOS: unprofitable
+## Fold 2  —  OOS: profitable
 
-- **In-sample:** 2025-11-21 → 2025-12-18  (394 bars)
-- **Out-of-sample:** 2025-12-18 → 2025-12-31  (169 bars)
+- **In-sample:** 2025-11-25 → 2025-12-21  (391 bars)
+- **Out-of-sample:** 2025-12-22 → 2026-01-05  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
 | In-sample     |     16 |   +4289.8 |     50% |   +268.11 |     3.26% |
-| Out-of-sample |      8 |    -352.3 |     25% |    -44.04 |     6.20% |
+| Out-of-sample |     11 |    +863.2 |     36% |    +78.47 |     7.11% |
 
 ## Fold 3  —  OOS: profitable
 
-- **In-sample:** 2025-12-31 → 2026-01-27  (394 bars)
-- **Out-of-sample:** 2026-01-27 → 2026-02-06  (169 bars)
+- **In-sample:** 2026-01-05 → 2026-01-29  (391 bars)
+- **Out-of-sample:** 2026-01-29 → 2026-02-09  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |     12 |   +1709.1 |     42% |   +142.42 |     7.57% |
-| Out-of-sample |      8 |    +501.8 |     38% |    +62.72 |    11.51% |
+| In-sample     |      9 |    +493.6 |     33% |    +54.84 |     8.43% |
+| Out-of-sample |      9 |   +1365.7 |     44% |   +151.74 |    11.51% |
 
 ## Fold 4  —  OOS: unprofitable
 
-- **In-sample:** 2026-02-06 → 2026-03-04  (394 bars)
-- **Out-of-sample:** 2026-03-04 → 2026-03-13  (169 bars)
+- **In-sample:** 2026-02-09 → 2026-03-05  (391 bars)
+- **Out-of-sample:** 2026-03-05 → 2026-03-16  (167 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
-| In-sample     |      9 |     -27.3 |     22% |     -3.03 |    12.02% |
-| Out-of-sample |      8 |    -434.0 |     25% |    -54.25 |    15.72% |
+| In-sample     |     11 |   -1173.5 |      9% |   -106.68 |    10.41% |
+| Out-of-sample |      5 |    -151.7 |     40% |    -30.34 |    15.34% |
 
 ## Fold 5  —  OOS: profitable
 
-- **In-sample:** 2026-03-13 → 2026-04-08  (396 bars)
-- **Out-of-sample:** 2026-04-08 → 2026-04-17  (169 bars)
+- **In-sample:** 2026-03-17 → 2026-04-09  (392 bars)
+- **Out-of-sample:** 2026-04-09 → 2026-04-21  (168 bars)
 
 | Period        | Trades | Net pips | Win rate | Expectancy | Max DD   |
 |---------------|--------|----------|----------|------------|----------|
