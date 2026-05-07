@@ -1,30 +1,30 @@
 # Key Level Reaction Study: NQ
 
-**Bars analysed:** 2786  |  **Price range:** 22961.50000 – 28422.00000  |  **Levels with ≥2 touches:** 597  |  **Total touches:** 20003
+**Bars analysed:** 2785  |  **Price range:** 22961.50000 – 28800.00000  |  **Levels with ≥2 touches:** 596  |  **Total touches:** 19581
 
 ### Level 25685.25000  [prev_day_high]  `pdh_2025-12-03`
-Touches: **68**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    36 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    32 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    36 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    30 |   45% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -145735.3p |
-|      +5        | -77941.2p |
-|      +10       | -267169.1p |
-|      +20       | -513235.3p |
+|      +1        | -112840.9p |
+|      +5        | -73636.4p |
+|      +10       | -176287.9p |
+|      +20       | -421363.6p |
 
 **By approach direction**
 
-- **From above** (support test): 35 touches · 43% reversed
+- **From above** (support test): 33 touches · 45% reversed
 - **From below** (resistance test): 33 touches · 64% reversed
 
 **Touch log** (most recent 10)
@@ -43,28 +43,28 @@ Touches: **68**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25689.00000  [prev_day_high]  `pdh_2026-01-19`
-Touches: **67**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    37 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    30 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    37 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    28 |   43% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -178283.6p |
-|      +5        | -98134.3p |
-|      +10       | -277462.7p |
-|      +20       | -560149.3p |
+|      +1        | -145884.6p |
+|      +5        | -94384.6p |
+|      +10       | -185500.0p |
+|      +20       | -468307.7p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 44% reversed
+- **From above** (support test): 32 touches · 47% reversed
 - **From below** (resistance test): 33 touches · 67% reversed
 
 **Touch log** (most recent 10)
@@ -83,28 +83,28 @@ Touches: **67**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25677.75000  [session_high]  `london_high_2025-12-03`
-Touches: **67**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    33 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    34 |   51% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    33 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    32 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -145746.3p |
-|      +5        | -64291.0p |
-|      +10       | -303619.4p |
-|      +20       | -490970.1p |
+|      +1        | -112346.2p |
+|      +5        | -59500.0p |
+|      +10       | -212461.5p |
+|      +20       | -397000.0p |
 
 **By approach direction**
 
-- **From above** (support test): 36 touches · 39% reversed
+- **From above** (support test): 34 touches · 41% reversed
 - **From below** (resistance test): 31 touches · 61% reversed
 
 **Touch log** (most recent 10)
@@ -123,28 +123,28 @@ Touches: **67**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25682.75000  [session_high]  `london_high_2025-12-12`
-Touches: **67**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    34 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    33 |   49% | ██████████░░░░░░░░░░ |
+| Reversed       |    34 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    31 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -150186.6p |
-|      +5        | -81082.1p |
-|      +10       | -318694.0p |
-|      +20       | -549067.2p |
+|      +1        | -116923.1p |
+|      +5        | -76807.7p |
+|      +10       | -228000.0p |
+|      +20       | -456884.6p |
 
 **By approach direction**
 
-- **From above** (support test): 36 touches · 42% reversed
+- **From above** (support test): 34 touches · 44% reversed
 - **From below** (resistance test): 31 touches · 61% reversed
 
 **Touch log** (most recent 10)
@@ -163,28 +163,28 @@ Touches: **67**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25690.25000  [session_high]  `london_high_2025-11-11`
-Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    35 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    31 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    35 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    29 |   45% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -177651.5p |
-|      +5        | -112954.5p |
-|      +10       | -313447.0p |
-|      +20       | -580340.9p |
+|      +1        | -144726.6p |
+|      +5        | -109609.4p |
+|      +10       | -221171.9p |
+|      +20       | -487695.3p |
 
 **By approach direction**
 
-- **From above** (support test): 32 touches · 41% reversed
+- **From above** (support test): 30 touches · 43% reversed
 - **From below** (resistance test): 34 touches · 65% reversed
 
 **Touch log** (most recent 10)
@@ -203,28 +203,28 @@ Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25690.50000  [session_high]  `london_high_2026-01-05`
-Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    34 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    32 |   48% | ██████████░░░░░░░░░░ |
+| Reversed       |    34 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    30 |   47% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -177651.5p |
-|      +5        | -112954.5p |
-|      +10       | -313447.0p |
-|      +20       | -580340.9p |
+|      +1        | -144726.6p |
+|      +5        | -109609.4p |
+|      +10       | -221171.9p |
+|      +20       | -487695.3p |
 
 **By approach direction**
 
-- **From above** (support test): 31 touches · 39% reversed
+- **From above** (support test): 29 touches · 41% reversed
 - **From below** (resistance test): 35 touches · 63% reversed
 
 **Touch log** (most recent 10)
@@ -243,28 +243,28 @@ Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25674.25000  [session_low]  `london_low_2025-12-30`
-Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    36 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    30 |   45% | █████████░░░░░░░░░░░ |
+| Reversed       |    36 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    28 |   44% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -159962.1p |
-|      +5        | -67197.0p |
-|      +10       | -310492.4p |
-|      +20       | -433409.1p |
+|      +1        | -126484.4p |
+|      +5        | -62421.9p |
+|      +10       | -218125.0p |
+|      +20       | -336171.9p |
 
 **By approach direction**
 
-- **From above** (support test): 36 touches · 44% reversed
+- **From above** (support test): 34 touches · 47% reversed
 - **From below** (resistance test): 30 touches · 67% reversed
 
 **Touch log** (most recent 10)
@@ -283,28 +283,28 @@ Touches: **66**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25670.00000  [prev_day_high]  `pdh_2025-12-02`
-Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    37 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    28 |   43% | █████████░░░░░░░░░░░ |
+| Reversed       |    37 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    26 |   41% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -83923.1p |
-|      +5        | +8461.5p |
-|      +10       | -171230.8p |
-|      +20       | -347269.2p |
+|      +1        | -57341.3p |
+|      +5        | +4881.0p |
+|      +10       | -97261.9p |
+|      +20       | -244444.4p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 50% reversed
+- **From above** (support test): 32 touches · 53% reversed
 - **From below** (resistance test): 31 touches · 65% reversed
 
 **Touch log** (most recent 10)
@@ -323,28 +323,28 @@ Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 09:00 | from_below  | broke_through | +182500.0p | +4197500.0p | -125000.0p | +1677500.0p | +3630000.0p | +3497500.0p |
 
 ### Level 25675.00000  [prev_day_high]  `pdh_2025-12-21`
-Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    32 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    33 |   51% | ██████████░░░░░░░░░░ |
+| Reversed       |    32 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    31 |   49% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -156846.2p |
-|      +5        | -64000.0p |
-|      +10       | -307961.5p |
-|      +20       | -474692.3p |
+|      +1        | -122738.1p |
+|      +5        | -59047.6p |
+|      +10       | -214047.6p |
+|      +20       | -377222.2p |
 
 **By approach direction**
 
-- **From above** (support test): 35 touches · 37% reversed
+- **From above** (support test): 33 touches · 39% reversed
 - **From below** (resistance test): 30 touches · 63% reversed
 
 **Touch log** (most recent 10)
@@ -363,28 +363,28 @@ Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25675.00000  [prev_week_high]  `pwh_2025_w51`
-Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    32 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    33 |   51% | ██████████░░░░░░░░░░ |
+| Reversed       |    32 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    31 |   49% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -156846.2p |
-|      +5        | -64000.0p |
-|      +10       | -307961.5p |
-|      +20       | -474692.3p |
+|      +1        | -122738.1p |
+|      +5        | -59047.6p |
+|      +10       | -214047.6p |
+|      +20       | -377222.2p |
 
 **By approach direction**
 
-- **From above** (support test): 35 touches · 37% reversed
+- **From above** (support test): 33 touches · 39% reversed
 - **From below** (resistance test): 30 touches · 63% reversed
 
 **Touch log** (most recent 10)
@@ -403,28 +403,28 @@ Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 11:00 | from_below  | broke_through | +150000.0p | +3912500.0p | +95000.0p | +2472500.0p | +3290000.0p | +3652500.0p |
 
 ### Level 25670.00000  [session_high]  `london_high_2025-12-02`
-Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    37 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    28 |   43% | █████████░░░░░░░░░░░ |
+| Reversed       |    37 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    26 |   41% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -83923.1p |
-|      +5        | +8461.5p |
-|      +10       | -171230.8p |
-|      +20       | -347269.2p |
+|      +1        | -57341.3p |
+|      +5        | +4881.0p |
+|      +10       | -97261.9p |
+|      +20       | -244444.4p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 50% reversed
+- **From above** (support test): 32 touches · 53% reversed
 - **From below** (resistance test): 31 touches · 65% reversed
 
 **Touch log** (most recent 10)
@@ -443,28 +443,28 @@ Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 09:00 | from_below  | broke_through | +182500.0p | +4197500.0p | -125000.0p | +1677500.0p | +3630000.0p | +3497500.0p |
 
 ### Level 25673.75000  [session_low]  `london_low_2026-01-15`
-Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    36 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    29 |   45% | █████████░░░░░░░░░░░ |
+| Reversed       |    36 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    27 |   43% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -160576.9p |
-|      +5        | -72730.8p |
-|      +10       | -285692.3p |
-|      +20       | -415500.0p |
+|      +1        | -126587.3p |
+|      +5        | -68055.6p |
+|      +10       | -191071.4p |
+|      +20       | -316150.8p |
 
 **By approach direction**
 
-- **From above** (support test): 35 touches · 46% reversed
+- **From above** (support test): 33 touches · 48% reversed
 - **From below** (resistance test): 30 touches · 67% reversed
 
 **Touch log** (most recent 10)
@@ -483,28 +483,28 @@ Touches: **65**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 09:00 | from_below  | broke_through | +182500.0p | +4197500.0p | -125000.0p | +1677500.0p | +3630000.0p | +3497500.0p |
 
 ### Level 25653.50000  [prev_day_high]  `pdh_2026-01-21`
-Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **62**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    33 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    31 |   48% | ██████████░░░░░░░░░░ |
+| Reversed       |    33 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    29 |   47% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -96601.6p |
-|      +5        | +86406.2p |
-|      +10       | -45351.6p |
-|      +20       | -156992.2p |
+|      +1        | -70000.0p |
+|      +5        | +85282.3p |
+|      +10       | +33871.0p |
+|      +20       | -46371.0p |
 
 **By approach direction**
 
-- **From above** (support test): 35 touches · 46% reversed
+- **From above** (support test): 33 touches · 48% reversed
 - **From below** (resistance test): 29 touches · 59% reversed
 
 **Touch log** (most recent 10)
@@ -523,28 +523,28 @@ Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
 
 ### Level 25666.50000  [session_high]  `london_high_2025-11-10`
-Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **62**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    34 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    30 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    34 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    28 |   45% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -62226.6p |
-|      +5        | +59726.6p |
-|      +10       | -100312.5p |
-|      +20       | -262539.1p |
+|      +1        | -34516.1p |
+|      +5        | +57741.9p |
+|      +10       | -22862.9p |
+|      +20       | -155322.6p |
 
 **By approach direction**
 
-- **From above** (support test): 36 touches · 47% reversed
+- **From above** (support test): 34 touches · 50% reversed
 - **From below** (resistance test): 28 touches · 61% reversed
 
 **Touch log** (most recent 10)
@@ -563,28 +563,28 @@ Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 09:00 | from_below  | broke_through | +182500.0p | +4197500.0p | -125000.0p | +1677500.0p | +3630000.0p | +3497500.0p |
 
 ### Level 25649.75000  [session_low]  `london_low_2025-12-08`
-Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **62**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    31 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    33 |   52% | ██████████░░░░░░░░░░ |
+| Reversed       |    31 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |    31 |   50% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -1875.0p |
-|      +5        | +134570.3p |
-|      +10       | -4335.9p |
-|      +20       | -212070.3p |
+|      +1        | +27782.3p |
+|      +5        | +135000.0p |
+|      +10       | +76209.7p |
+|      +20       | -103225.8p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 44% reversed
+- **From above** (support test): 32 touches · 47% reversed
 - **From below** (resistance test): 30 touches · 53% reversed
 
 **Touch log** (most recent 10)
@@ -603,28 +603,28 @@ Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
 
 ### Level 25656.75000  [session_low]  `london_low_2025-12-29`
-Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **62**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    32 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    32 |   50% | ██████████░░░░░░░░░░ |
+| Reversed       |    32 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    30 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -81367.2p |
-|      +5        | +72734.4p |
-|      +10       | -84335.9p |
-|      +20       | -188398.4p |
+|      +1        | -54274.2p |
+|      +5        | +71169.4p |
+|      +10       | -6371.0p |
+|      +20       | -78790.3p |
 
 **By approach direction**
 
-- **From above** (support test): 35 touches · 43% reversed
+- **From above** (support test): 33 touches · 45% reversed
 - **From below** (resistance test): 29 touches · 59% reversed
 
 **Touch log** (most recent 10)
@@ -643,28 +643,28 @@ Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
 
 ### Level 25649.75000  [session_low]  `london_low_2026-01-30`
-Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **62**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    31 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    33 |   52% | ██████████░░░░░░░░░░ |
+| Reversed       |    31 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |    31 |   50% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -1875.0p |
-|      +5        | +134570.3p |
-|      +10       | -4335.9p |
-|      +20       | -212070.3p |
+|      +1        | +27782.3p |
+|      +5        | +135000.0p |
+|      +10       | +76209.7p |
+|      +20       | -103225.8p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 44% reversed
+- **From above** (support test): 32 touches · 47% reversed
 - **From below** (resistance test): 30 touches · 53% reversed
 
 **Touch log** (most recent 10)
@@ -683,28 +683,28 @@ Touches: **64**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
 
 ### Level 25648.00000  [prev_day_low]  `pdl_2025-12-29`
-Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **61**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    31 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    32 |   51% | ██████████░░░░░░░░░░ |
+| Reversed       |    31 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    30 |   49% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -73254.0p |
-|      +5        | +79484.1p |
-|      +10       | -49960.3p |
-|      +20       | -167619.0p |
+|      +1        | -45450.8p |
+|      +5        | +78114.8p |
+|      +10       | +30409.8p |
+|      +20       | -55532.8p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 44% reversed
+- **From above** (support test): 32 touches · 47% reversed
 - **From below** (resistance test): 29 touches · 55% reversed
 
 **Touch log** (most recent 10)
@@ -721,166 +721,6 @@ Touches: **63**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
-
-### Level 25704.25000  [prev_day_high]  `pdh_2025-12-12`
-Touches: **61**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    33 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    28 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -65123.0p |
-|      +5        | -80737.7p |
-|      +10       | -342827.9p |
-|      +20       | -547745.9p |
-
-**By approach direction**
-
-- **From above** (support test): 29 touches · 41% reversed
-- **From below** (resistance test): 32 touches · 66% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 07:00 | from_below  | broke_through | +1180000.0p | +3027500.0p | +275000.0p | -120000.0p | +1912500.0p | +2900000.0p |
-| 2026-01-26 13:00 | from_below  | broke_through | +120000.0p | +3120000.0p | +1210000.0p | +1825000.0p | +1825000.0p | +2895000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
-
-### Level 25708.00000  [prev_day_high]  `pdh_2026-01-05`
-Touches: **61**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    30 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    31 |   51% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -62704.9p |
-|      +5        | -88565.6p |
-|      +10       | -205450.8p |
-|      +20       | -454344.3p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 35% reversed
-- **From below** (resistance test): 35 touches · 60% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 07:00 | from_below  | broke_through | +1180000.0p | +3027500.0p | +275000.0p | -120000.0p | +1912500.0p | +2900000.0p |
-| 2026-01-26 13:00 | from_below  | broke_through | +120000.0p | +3120000.0p | +1210000.0p | +1825000.0p | +1825000.0p | +2895000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
-
-### Level 25643.75000  [prev_day_low]  `pdl_2025-12-30`
-Touches: **61**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    29 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    32 |   52% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -75163.9p |
-|      +5        | +107336.1p |
-|      +10       | +27623.0p |
-|      +20       | -45327.9p |
-
-**By approach direction**
-
-- **From above** (support test): 33 touches · 45% reversed
-- **From below** (resistance test): 28 touches · 50% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 20:00 | from_below  | broke_through | +1227500.0p | +1827500.0p | -330000.0p | +57500.0p | +287500.0p | +307500.0p |
-| 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
-
-### Level 25701.00000  [session_high]  `london_high_2025-12-11`
-Touches: **61**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    35 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    26 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -163360.7p |
-|      +5        | -78606.6p |
-|      +10       | -296557.4p |
-|      +20       | -578811.5p |
-
-**By approach direction**
-
-- **From above** (support test): 28 touches · 50% reversed
-- **From below** (resistance test): 33 touches · 64% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 06:00 | from_below  | broke_through | +860000.0p | +3115000.0p | +320000.0p | +25000.0p | +2382500.0p | +3075000.0p |
-| 2026-01-26 12:00 | from_below  | broke_through | +300000.0p | +3402500.0p | +282500.0p | +2032500.0p | +2025000.0p | +2857500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 25035.00000  [prev_day_high]  `pdh_2026-03-16`
 Touches: **60**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -962,46 +802,6 @@ Touches: **60**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 11:00 | from_below  | broke_through | +695000.0p | +2737500.0p | -12500.0p | +1665000.0p | +1767500.0p | +1795000.0p |
 | 2026-04-13 00:00 | from_below  | broke_through | +55000.0p | +5442500.0p | +280000.0p | +247500.0p | +1017500.0p | +5305000.0p |
 
-### Level 25712.50000  [session_high]  `london_high_2025-12-09`
-Touches: **60**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    34 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    26 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -100250.0p |
-|      +5        | -102041.7p |
-|      +10       | -275583.3p |
-|      +20       | -521666.7p |
-
-**By approach direction**
-
-- **From above** (support test): 24 touches · 42% reversed
-- **From below** (resistance test): 36 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_above  | reversed      | +2057500.0p | +342500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
-
 ### Level 25033.25000  [session_low]  `london_low_2025-12-15`
 Touches: **60**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -1042,45 +842,165 @@ Touches: **60**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 11:00 | from_below  | broke_through | +695000.0p | +2737500.0p | -12500.0p | +1665000.0p | +1767500.0p | +1795000.0p |
 | 2026-04-13 00:00 | from_below  | broke_through | +55000.0p | +5442500.0p | +280000.0p | +247500.0p | +1017500.0p | +5305000.0p |
 
-### Level 25632.75000  [prev_day_low]  `pdl_2026-01-12`
+### Level 25704.25000  [prev_day_high]  `pdh_2025-12-12`
 Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    30 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    29 |   49% | ██████████░░░░░░░░░░ |
+| Reversed       |    32 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    27 |   46% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +5635.6p |
-|      +5        | +164406.8p |
-|      +10       | +240381.4p |
-|      +20       | +213940.7p |
+|      +1        | -25593.2p |
+|      +5        | -76016.9p |
+|      +10       | -243728.8p |
+|      +20       | -446144.1p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 53% reversed
-- **From below** (resistance test): 25 touches · 48% reversed
+- **From above** (support test): 28 touches · 43% reversed
+- **From below** (resistance test): 31 touches · 65% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 07:00 | from_below  | broke_through | +1180000.0p | +3027500.0p | +275000.0p | -120000.0p | +1912500.0p | +2900000.0p |
+| 2026-01-26 13:00 | from_below  | broke_through | +120000.0p | +3120000.0p | +1210000.0p | +1825000.0p | +1825000.0p | +2895000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
+
+### Level 25708.00000  [prev_day_high]  `pdh_2026-01-05`
+Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    29 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    30 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -23093.2p |
+|      +5        | -84110.2p |
+|      +10       | -101694.9p |
+|      +20       | -349576.3p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 36% reversed
+- **From below** (resistance test): 34 touches · 59% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 07:00 | from_below  | broke_through | +1180000.0p | +3027500.0p | +275000.0p | -120000.0p | +1912500.0p | +2900000.0p |
+| 2026-01-26 13:00 | from_below  | broke_through | +120000.0p | +3120000.0p | +1210000.0p | +1825000.0p | +1825000.0p | +2895000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
+
+### Level 25643.75000  [prev_day_low]  `pdl_2025-12-30`
+Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    29 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    30 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -46483.1p |
+|      +5        | +106864.4p |
+|      +10       | +113347.5p |
+|      +20       | +74703.4p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 48% reversed
+- **From below** (resistance test): 28 touches · 50% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-22 20:00 | from_below  | broke_through | +1227500.0p | +1827500.0p | -330000.0p | +57500.0p | +287500.0p | +307500.0p |
 | 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
 | 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
 | 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
 | 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+| 2026-04-14 08:00 | from_below  | broke_through | +425000.0p | +3955000.0p | -242500.0p | +597500.0p | +2552500.0p | +3160000.0p |
+
+### Level 25701.00000  [session_high]  `london_high_2025-12-11`
+Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    34 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    25 |   42% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -127161.0p |
+|      +5        | -73813.6p |
+|      +10       | -195889.8p |
+|      +20       | -478262.7p |
+
+**By approach direction**
+
+- **From above** (support test): 27 touches · 52% reversed
+- **From below** (resistance test): 32 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 06:00 | from_below  | broke_through | +860000.0p | +3115000.0p | +320000.0p | +25000.0p | +2382500.0p | +3075000.0p |
+| 2026-01-26 12:00 | from_below  | broke_through | +300000.0p | +3402500.0p | +282500.0p | +2032500.0p | +2025000.0p | +2857500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 25031.00000  [session_high]  `london_high_2026-02-24`
 Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -1121,46 +1041,6 @@ Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 05:00 | from_below  | broke_through | +755000.0p | +2700000.0p | +105000.0p | -440000.0p | +1605000.0p | +2445000.0p |
 | 2026-04-09 11:00 | from_below  | broke_through | +695000.0p | +2737500.0p | -12500.0p | +1665000.0p | +1767500.0p | +1795000.0p |
 | 2026-04-13 00:00 | from_below  | broke_through | +55000.0p | +5442500.0p | +280000.0p | +247500.0p | +1017500.0p | +5305000.0p |
-
-### Level 25632.75000  [session_low]  `london_low_2026-01-12`
-Touches: **59**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    30 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    29 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +5635.6p |
-|      +5        | +164406.8p |
-|      +10       | +240381.4p |
-|      +20       | +213940.7p |
-
-**By approach direction**
-
-- **From above** (support test): 34 touches · 53% reversed
-- **From below** (resistance test): 25 touches · 48% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 24993.50000  [prev_day_high]  `pdh_2025-11-24`
 Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -1242,46 +1122,6 @@ Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 14:00 | from_above  | reversed      | +2625000.0p | +252500.0p | +1477500.0p | +2075000.0p | +2437500.0p | +2275000.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
 
-### Level 25632.25000  [prev_day_low]  `pdl_2025-12-21`
-Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    29 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    29 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        |  -732.8p |
-|      +5        | +152931.0p |
-|      +10       | +189698.3p |
-|      +20       | +176077.6p |
-
-**By approach direction**
-
-- **From above** (support test): 33 touches · 52% reversed
-- **From below** (resistance test): 25 touches · 48% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
 ### Level 24955.50000  [prev_day_low]  `pdl_2026-02-09`
 Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -1321,6 +1161,46 @@ Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-08 14:00 | from_above  | reversed      | +1645000.0p | +497500.0p | +855000.0p | +867500.0p | +297500.0p | +370000.0p |
 | 2026-04-09 08:00 | from_above  | reversed      | +3310000.0p | +122500.0p | +435000.0p | +605000.0p | +2070000.0p | +2902500.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
+
+### Level 25712.50000  [session_high]  `london_high_2025-12-09`
+Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    33 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    25 |   43% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -61250.0p |
+|      +5        | -97974.1p |
+|      +10       | -172456.9p |
+|      +20       | -417413.8p |
+
+**By approach direction**
+
+- **From above** (support test): 23 touches · 43% reversed
+- **From below** (resistance test): 35 touches · 66% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_above  | reversed      | +2057500.0p | +342500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 24984.00000  [session_high]  `london_high_2026-02-06`
 Touches: **58**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -1522,46 +1402,6 @@ Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 08:00 | from_above  | reversed      | +3310000.0p | +122500.0p | +435000.0p | +605000.0p | +2070000.0p | +2902500.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
 
-### Level 25716.75000  [prev_day_high]  `pdh_2025-12-31`
-Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    34 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    23 |   40% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -54035.1p |
-|      +5        | -104912.3p |
-|      +10       | -213464.9p |
-|      +20       | -476535.1p |
-
-**By approach direction**
-
-- **From above** (support test): 21 touches · 48% reversed
-- **From below** (resistance test): 36 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
-
 ### Level 25054.00000  [prev_day_high]  `pdh_2026-02-19`
 Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -1682,30 +1522,30 @@ Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 12:00 | from_below  | broke_through | +682500.0p | +2750000.0p | +45000.0p | +1980000.0p | +1952500.0p | +2302500.0p |
 | 2026-04-13 01:00 | from_below  | broke_through | +335000.0p | +5162500.0p | -57500.0p | +325000.0p | +62500.0p | +5110000.0p |
 
-### Level 25628.00000  [prev_day_low]  `pdl_2025-12-22`
+### Level 25632.75000  [prev_day_low]  `pdl_2026-01-12`
 Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    29 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    28 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    30 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    27 |   47% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +84517.5p |
-|      +5        | +178114.0p |
-|      +10       | +237807.0p |
-|      +20       | +348947.4p |
+|      +1        | +33026.3p |
+|      +5        | +172807.0p |
+|      +10       | +342324.6p |
+|      +20       | +346535.1p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 56% reversed
-- **From below** (resistance test): 23 touches · 43% reversed
+- **From above** (support test): 32 touches · 56% reversed
+- **From below** (resistance test): 25 touches · 48% reversed
 
 **Touch log** (most recent 10)
 
@@ -1922,46 +1762,6 @@ Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 14:00 | from_above  | reversed      | +2625000.0p | +252500.0p | +1477500.0p | +2075000.0p | +2437500.0p | +2275000.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
 
-### Level 25716.75000  [session_high]  `london_high_2025-12-31`
-Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    34 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    23 |   40% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -54035.1p |
-|      +5        | -104912.3p |
-|      +10       | -213464.9p |
-|      +20       | -476535.1p |
-
-**By approach direction**
-
-- **From above** (support test): 21 touches · 48% reversed
-- **From below** (resistance test): 36 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
-
 ### Level 25054.00000  [session_high]  `london_high_2026-02-19`
 Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -2082,30 +1882,30 @@ Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 08:00 | from_above  | reversed      | +3310000.0p | +122500.0p | +435000.0p | +605000.0p | +2070000.0p | +2902500.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
 
-### Level 25628.00000  [session_low]  `london_low_2025-12-22`
+### Level 25632.75000  [session_low]  `london_low_2026-01-12`
 Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    29 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    28 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    30 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    27 |   47% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +84517.5p |
-|      +5        | +178114.0p |
-|      +10       | +237807.0p |
-|      +20       | +348947.4p |
+|      +1        | +33026.3p |
+|      +5        | +172807.0p |
+|      +10       | +342324.6p |
+|      +20       | +346535.1p |
 
 **By approach direction**
 
-- **From above** (support test): 34 touches · 56% reversed
-- **From below** (resistance test): 23 touches · 43% reversed
+- **From above** (support test): 32 touches · 56% reversed
+- **From below** (resistance test): 25 touches · 48% reversed
 
 **Touch log** (most recent 10)
 
@@ -2161,6 +1961,46 @@ Touches: **57**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 05:00 | from_below  | broke_through | +755000.0p | +2700000.0p | +105000.0p | -440000.0p | +1605000.0p | +2445000.0p |
 | 2026-04-09 11:00 | from_below  | broke_through | +695000.0p | +2737500.0p | -12500.0p | +1665000.0p | +1767500.0p | +1795000.0p |
 | 2026-04-13 00:00 | from_below  | broke_through | +55000.0p | +5442500.0p | +280000.0p | +247500.0p | +1017500.0p | +5305000.0p |
+
+### Level 25716.75000  [prev_day_high]  `pdh_2025-12-31`
+Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    33 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    23 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -59419.6p |
+|      +5        | -68526.8p |
+|      +10       | -159598.2p |
+|      +20       | -414464.3p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 48% reversed
+- **From below** (resistance test): 35 touches · 66% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 24995.50000  [prev_day_high]  `pdh_2026-02-13`
 Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -2322,6 +2162,126 @@ Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 13:00 | from_below  | broke_through | +727500.0p | +2705000.0p | +80000.0p | +1465000.0p | +2375000.0p | +2380000.0p |
 | 2026-04-13 01:00 | from_below  | broke_through | +335000.0p | +5162500.0p | -57500.0p | +325000.0p | +62500.0p | +5110000.0p |
 
+### Level 25632.25000  [prev_day_low]  `pdl_2025-12-21`
+Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    29 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    27 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +26919.6p |
+|      +5        | +161071.4p |
+|      +10       | +291651.8p |
+|      +20       | +309687.5p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 55% reversed
+- **From below** (resistance test): 25 touches · 48% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+
+### Level 25628.00000  [prev_day_low]  `pdl_2025-12-22`
+Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    29 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    27 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +123526.8p |
+|      +5        | +200714.3p |
+|      +10       | +276160.7p |
+|      +20       | +407633.9p |
+
+**By approach direction**
+
+- **From above** (support test): 33 touches · 58% reversed
+- **From below** (resistance test): 23 touches · 43% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+
+### Level 25716.75000  [session_high]  `london_high_2025-12-31`
+Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    33 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    23 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -59419.6p |
+|      +5        | -68526.8p |
+|      +10       | -159598.2p |
+|      +20       | -414464.3p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 48% reversed
+- **From below** (resistance test): 35 touches · 66% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
+
 ### Level 24954.00000  [session_high]  `london_high_2026-03-16`
 Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -2361,6 +2321,46 @@ Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-08 14:00 | from_above  | reversed      | +1645000.0p | +497500.0p | +855000.0p | +867500.0p | +297500.0p | +370000.0p |
 | 2026-04-09 08:00 | from_above  | reversed      | +3310000.0p | +122500.0p | +435000.0p | +605000.0p | +2070000.0p | +2902500.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
+
+### Level 25628.00000  [session_low]  `london_low_2025-12-22`
+Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    29 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    27 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +123526.8p |
+|      +5        | +200714.3p |
+|      +10       | +276160.7p |
+|      +20       | +407633.9p |
+
+**By approach direction**
+
+- **From above** (support test): 33 touches · 58% reversed
+- **From below** (resistance test): 23 touches · 43% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 08:00 | from_above  | reversed      | +2450000.0p | +1375000.0p | -425000.0p | -300000.0p | +1247500.0p | +732500.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 25073.50000  [session_low]  `london_low_2026-04-13`
 Touches: **56**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -2521,46 +2521,6 @@ Touches: **55**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 13:00 | from_below  | broke_through | +727500.0p | +2705000.0p | +80000.0p | +1465000.0p | +2375000.0p | +2380000.0p |
 | 2026-04-13 01:00 | from_below  | broke_through | +335000.0p | +5162500.0p | -57500.0p | +325000.0p | +62500.0p | +5110000.0p |
 | 2026-04-13 11:00 | from_above  | reversed      | +5757500.0p | +157500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
-
-### Level 25619.25000  [prev_day_high]  `pdh_2026-04-13`
-Touches: **55**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    28 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    27 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -35727.3p |
-|      +5        | +191409.1p |
-|      +10       | +297454.5p |
-|      +20       | +450227.3p |
-
-**By approach direction**
-
-- **From above** (support test): 32 touches · 53% reversed
-- **From below** (resistance test): 23 touches · 48% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 25002.50000  [prev_day_low]  `pdl_2025-11-13`
 Touches: **55**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -3042,6 +3002,46 @@ Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-08 14:00 | from_above  | reversed      | +1645000.0p | +497500.0p | +855000.0p | +867500.0p | +297500.0p | +370000.0p |
 | 2026-04-12 23:00 | from_above  | reversed      | +5662500.0p | +340000.0p | +710000.0p | +970000.0p | +1320000.0p | +5537500.0p |
 
+### Level 25619.25000  [prev_day_high]  `pdh_2026-04-13`
+Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    28 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    26 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +2500.0p |
+|      +5        | +215092.6p |
+|      +10       | +338333.3p |
+|      +20       | +512963.0p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 55% reversed
+- **From below** (resistance test): 23 touches · 48% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 01:00 | from_below  | broke_through | +675000.0p | +2870000.0p | -402500.0p | +185000.0p | +210000.0p | +2117500.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+
 ### Level 24901.25000  [prev_day_low]  `pdl_2025-12-18`
 Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -3081,46 +3081,6 @@ Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 12:00 | from_above  | broke_through | +1170000.0p | +3812500.0p | +905000.0p | -12500.0p | -2645000.0p | -2540000.0p |
 | 2026-03-18 18:00 | from_below  | reversed      | +4170000.0p | +577500.0p | -922500.0p | -1242500.0p | -1460000.0p | -2687500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
-
-### Level 25615.50000  [prev_day_low]  `pdl_2026-01-09`
-Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    28 |   52% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -29444.4p |
-|      +5        | +217777.8p |
-|      +10       | +305138.9p |
-|      +20       | +483518.5p |
-
-**By approach direction**
-
-- **From above** (support test): 33 touches · 52% reversed
-- **From below** (resistance test): 21 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 24926.50000  [prev_day_low]  `pdl_2026-04-08`
 Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -3322,46 +3282,6 @@ Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 10:00 | from_below  | broke_through | +240000.0p | +3192500.0p | +455000.0p | +2045000.0p | +2602500.0p | +2575000.0p |
 | 2026-04-13 00:00 | from_below  | broke_through | +55000.0p | +5442500.0p | +280000.0p | +247500.0p | +1017500.0p | +5305000.0p |
 
-### Level 25615.50000  [session_low]  `london_low_2026-01-09`
-Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    28 |   52% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -29444.4p |
-|      +5        | +217777.8p |
-|      +10       | +305138.9p |
-|      +20       | +483518.5p |
-
-**By approach direction**
-
-- **From above** (support test): 33 touches · 52% reversed
-- **From below** (resistance test): 21 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
 ### Level 25006.50000  [session_low]  `london_low_2026-02-12`
 Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -3441,46 +3361,6 @@ Touches: **54**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-07 23:00 | from_below  | broke_through | +1242500.0p | +2062500.0p | +295000.0p | +745000.0p | +1492500.0p | +290000.0p |
 | 2026-04-08 14:00 | from_above  | reversed      | +1645000.0p | +497500.0p | +855000.0p | +867500.0p | +297500.0p | +370000.0p |
 | 2026-04-12 23:00 | from_above  | reversed      | +5662500.0p | +340000.0p | +710000.0p | +970000.0p | +1320000.0p | +5537500.0p |
-
-### Level 25721.50000  [prev_day_high]  `pdh_2025-11-13`
-Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    28 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    25 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -3632.1p |
-|      +5        | -91650.9p |
-|      +10       | -220943.4p |
-|      +20       | -335188.7p |
-
-**By approach direction**
-
-- **From above** (support test): 21 touches · 43% reversed
-- **From below** (resistance test): 32 touches · 59% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 25110.75000  [prev_day_high]  `pdh_2025-11-19`
 Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -3602,45 +3482,45 @@ Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 10:00 | from_below  | broke_through | +240000.0p | +3192500.0p | +455000.0p | +2045000.0p | +2602500.0p | +2575000.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
 
-### Level 25723.50000  [prev_day_low]  `pdl_2025-12-07`
+### Level 25615.50000  [prev_day_low]  `pdl_2026-01-09`
 Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    28 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    25 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    26 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    27 |   51% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -28066.0p |
-|      +5        | -125990.6p |
-|      +10       | -198584.9p |
-|      +20       | -244434.0p |
+|      +1        | +9622.6p |
+|      +5        | +242405.7p |
+|      +10       | +346934.0p |
+|      +20       | +548066.0p |
 
 **By approach direction**
 
-- **From above** (support test): 22 touches · 45% reversed
-- **From below** (resistance test): 31 touches · 58% reversed
+- **From above** (support test): 32 touches · 53% reversed
+- **From below** (resistance test): 21 touches · 43% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 24936.50000  [prev_day_low]  `pdl_2026-02-22`
 Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -3681,46 +3561,6 @@ Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-07 23:00 | from_below  | broke_through | +1242500.0p | +2062500.0p | +295000.0p | +745000.0p | +1492500.0p | +290000.0p |
 | 2026-04-08 14:00 | from_above  | reversed      | +1645000.0p | +497500.0p | +855000.0p | +867500.0p | +297500.0p | +370000.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
-
-### Level 25721.25000  [session_high]  `london_high_2025-11-13`
-Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    28 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    25 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +7311.3p |
-|      +5        | -61698.1p |
-|      +10       | -205707.5p |
-|      +20       | -321462.3p |
-
-**By approach direction**
-
-- **From above** (support test): 21 touches · 43% reversed
-- **From below** (resistance test): 32 touches · 59% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 24928.50000  [session_high]  `london_high_2026-02-13`
 Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -3801,6 +3641,46 @@ Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 13:00 | from_below  | broke_through | +727500.0p | +2705000.0p | +80000.0p | +1465000.0p | +2375000.0p | +2380000.0p |
 | 2026-04-13 06:00 | from_below  | broke_through | +420000.0p | +5037500.0p | -140000.0p | -262500.0p | +2952500.0p | +4692500.0p |
 | 2026-04-13 12:00 | from_below  | broke_through | +122500.0p | +5052500.0p | +1382500.0p | +2352500.0p | +4165000.0p | +4695000.0p |
+
+### Level 25615.50000  [session_low]  `london_low_2026-01-09`
+Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    27 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +9622.6p |
+|      +5        | +242405.7p |
+|      +10       | +346934.0p |
+|      +20       | +548066.0p |
+
+**By approach direction**
+
+- **From above** (support test): 32 touches · 53% reversed
+- **From below** (resistance test): 21 touches · 43% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 25108.00000  [session_low]  `london_low_2026-02-04`
 Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -3922,45 +3802,85 @@ Touches: **53**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-08 14:00 | from_above  | reversed      | +1645000.0p | +497500.0p | +855000.0p | +867500.0p | +297500.0p | +370000.0p |
 | 2026-04-12 22:00 | from_above  | reversed      | +4982500.0p | +342500.0p | +277500.0p | +1057500.0p | +1415000.0p | +4890000.0p |
 
-### Level 25200.00000  [prev_day_high]  `pdh_2025-12-14`
+### Level 25721.50000  [prev_day_high]  `pdh_2025-11-13`
 Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    26 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    26 |   50% | ██████████░░░░░░░░░░ |
+| Reversed       |    27 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -23317.3p |
-|      +5        | -228653.8p |
-|      +10       | -383221.2p |
-|      +20       | -282451.9p |
+|      +1        | -8461.5p |
+|      +5        | -52211.5p |
+|      +10       | -163076.9p |
+|      +20       | -265625.0p |
 
 **By approach direction**
 
-- **From above** (support test): 27 touches · 48% reversed
-- **From below** (resistance test): 25 touches · 52% reversed
+- **From above** (support test): 21 touches · 43% reversed
+- **From below** (resistance test): 31 touches · 58% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
+
+### Level 25723.50000  [prev_day_low]  `pdl_2025-12-07`
+Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    27 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -33365.4p |
+|      +5        | -87211.5p |
+|      +10       | -140288.5p |
+|      +20       | -173125.0p |
+
+**By approach direction**
+
+- **From above** (support test): 22 touches · 45% reversed
+- **From below** (resistance test): 30 touches · 57% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
 
 ### Level 24828.00000  [prev_day_low]  `pdl_2025-12-16`
 Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -4002,86 +3922,6 @@ Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25608.25000  [prev_day_low]  `pdl_2025-12-23`
-Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   46% | █████████░░░░░░░░░░░ |
-| Broke through  |    28 |   54% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -26153.8p |
-|      +5        | +211009.6p |
-|      +10       | +341730.8p |
-|      +20       | +577307.7p |
-
-**By approach direction**
-
-- **From above** (support test): 33 touches · 52% reversed
-- **From below** (resistance test): 19 touches · 37% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
-### Level 25727.00000  [prev_day_low]  `pdl_2026-01-07`
-Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    27 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   48% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -74182.7p |
-|      +5        | -213076.9p |
-|      +10       | -266538.5p |
-|      +20       | -331442.3p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 47% reversed
-- **From below** (resistance test): 33 touches · 55% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
 ### Level 24783.50000  [prev_day_low]  `pdl_2026-02-04`
 Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -4121,46 +3961,6 @@ Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-17 09:00 | from_below  | broke_through | +507500.0p | +3662500.0p | -100000.0p | +2315000.0p | +1662500.0p | +3375000.0p |
 | 2026-03-18 18:00 | from_above  | broke_through | +577500.0p | +4170000.0p | -922500.0p | -1242500.0p | -1460000.0p | -2687500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
-
-### Level 25198.25000  [prev_day_low]  `pdl_2026-02-10`
-Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    26 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -23317.3p |
-|      +5        | -228653.8p |
-|      +10       | -383221.2p |
-|      +20       | -282451.9p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 48% reversed
-- **From below** (resistance test): 25 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24830.00000  [prev_day_low]  `pdl_2026-03-10`
 Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -4202,85 +4002,45 @@ Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25608.25000  [prev_week_low]  `pwl_2025_w52`
+### Level 25721.25000  [session_high]  `london_high_2025-11-13`
 Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    24 |   46% | █████████░░░░░░░░░░░ |
-| Broke through  |    28 |   54% | ███████████░░░░░░░░░ |
+| Reversed       |    27 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -26153.8p |
-|      +5        | +211009.6p |
-|      +10       | +341730.8p |
-|      +20       | +577307.7p |
+|      +1        | +2692.3p |
+|      +5        | -21682.7p |
+|      +10       | -147548.1p |
+|      +20       | -251634.6p |
 
 **By approach direction**
 
-- **From above** (support test): 33 touches · 52% reversed
-- **From below** (resistance test): 19 touches · 37% reversed
+- **From above** (support test): 21 touches · 43% reversed
+- **From below** (resistance test): 31 touches · 58% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
-### Level 25198.25000  [session_high]  `london_high_2026-03-18`
-Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    26 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -23317.3p |
-|      +5        | -228653.8p |
-|      +10       | -383221.2p |
-|      +20       | -282451.9p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 48% reversed
-- **From below** (resistance test): 25 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 12:00 | from_below  | broke_through | +245000.0p | +3817500.0p | +460000.0p | +2817500.0p | +3420000.0p | +3020000.0p |
 
 ### Level 25118.50000  [session_low]  `london_low_2025-11-26`
 Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -4361,166 +4121,6 @@ Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-17 09:00 | from_below  | broke_through | +507500.0p | +3662500.0p | -100000.0p | +2315000.0p | +1662500.0p | +3375000.0p |
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
-
-### Level 25608.25000  [session_low]  `london_low_2025-12-23`
-Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   46% | █████████░░░░░░░░░░░ |
-| Broke through  |    28 |   54% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -26153.8p |
-|      +5        | +211009.6p |
-|      +10       | +341730.8p |
-|      +20       | +577307.7p |
-
-**By approach direction**
-
-- **From above** (support test): 33 touches · 52% reversed
-- **From below** (resistance test): 19 touches · 37% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
-### Level 25727.00000  [session_low]  `london_low_2026-01-07`
-Touches: **52**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    27 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   48% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -74182.7p |
-|      +5        | -213076.9p |
-|      +10       | -266538.5p |
-|      +20       | -331442.3p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 47% reversed
-- **From below** (resistance test): 33 touches · 55% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
-### Level 25600.25000  [prev_day_high]  `pdh_2025-12-19`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -32696.1p |
-|      +5        | +245735.3p |
-|      +10       | +392598.0p |
-|      +20       | +582990.2p |
-
-**By approach direction**
-
-- **From above** (support test): 32 touches · 59% reversed
-- **From below** (resistance test): 19 touches · 37% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
-### Level 25169.00000  [prev_day_high]  `pdh_2026-02-05`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    27 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    24 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -70294.1p |
-|      +5        | -208235.3p |
-|      +10       | -489803.9p |
-|      +20       | -873725.5p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 25 touches · 60% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
-| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
-| 2026-03-18 05:00 | from_below  | reversed      | +6062500.0p | +420000.0p | +132500.0p | -70000.0p | -2692500.0p | -4727500.0p |
-| 2026-03-18 11:00 | from_below  | reversed      | +6075000.0p | +60000.0p | -2317500.0p | -2680000.0p | -5195000.0p | -5670000.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
 ### Level 24872.50000  [prev_day_high]  `pdh_2026-02-16`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -4642,46 +4242,6 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-13 06:00 | from_below  | broke_through | +420000.0p | +5037500.0p | -140000.0p | -262500.0p | +2952500.0p | +4692500.0p |
 | 2026-04-13 12:00 | from_below  | broke_through | +122500.0p | +5052500.0p | +1382500.0p | +2352500.0p | +4165000.0p | +4695000.0p |
 
-### Level 25197.75000  [prev_day_low]  `pdl_2025-11-06`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    26 |   51% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -35735.3p |
-|      +5        | -244460.8p |
-|      +10       | -403088.2p |
-|      +20       | -298431.4p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 25 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
 ### Level 25118.00000  [prev_day_low]  `pdl_2025-12-12`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -4721,6 +4281,86 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 06:00 | from_below  | broke_through | +420000.0p | +5037500.0p | -140000.0p | -262500.0p | +2952500.0p | +4692500.0p |
 | 2026-04-13 12:00 | from_below  | broke_through | +122500.0p | +5052500.0p | +1382500.0p | +2352500.0p | +4165000.0p | +4695000.0p |
+
+### Level 25608.25000  [prev_day_low]  `pdl_2025-12-23`
+Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    24 |   47% | █████████░░░░░░░░░░░ |
+| Broke through  |    27 |   53% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +14509.8p |
+|      +5        | +236470.6p |
+|      +10       | +385882.4p |
+|      +20       | +646225.5p |
+
+**By approach direction**
+
+- **From above** (support test): 32 touches · 53% reversed
+- **From below** (resistance test): 19 touches · 37% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+
+### Level 25727.00000  [prev_day_low]  `pdl_2026-01-07`
+Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -80490.2p |
+|      +5        | -175245.1p |
+|      +10       | -208431.4p |
+|      +20       | -260441.2p |
+
+**By approach direction**
+
+- **From above** (support test): 19 touches · 47% reversed
+- **From below** (resistance test): 32 touches · 53% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
 
 ### Level 24793.25000  [prev_day_low]  `pdl_2026-02-15`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -4842,46 +4482,6 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 18:00 | from_above  | broke_through | +577500.0p | +4170000.0p | -922500.0p | -1242500.0p | -1460000.0p | -2687500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25202.75000  [prev_day_low]  `pdl_2026-04-10`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    26 |   51% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +61323.5p |
-|      +5        | -185196.1p |
-|      +10       | -273627.5p |
-|      +20       | -396666.7p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 25 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
 ### Level 25118.00000  [prev_week_low]  `pwl_2025_w50`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -4922,87 +4522,7 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-13 06:00 | from_below  | broke_through | +420000.0p | +5037500.0p | -140000.0p | -262500.0p | +2952500.0p | +4692500.0p |
 | 2026-04-13 12:00 | from_below  | broke_through | +122500.0p | +5052500.0p | +1382500.0p | +2352500.0p | +4165000.0p | +4695000.0p |
 
-### Level 25280.25000  [session_high]  `london_high_2025-11-26`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   45% | █████████░░░░░░░░░░░ |
-| Broke through  |    28 |   55% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -59264.7p |
-|      +5        | -308333.3p |
-|      +10       | -349558.8p |
-|      +20       | -616274.5p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 41% reversed
-- **From below** (resistance test): 24 touches · 50% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_above  | broke_through | +1107500.0p | +5032500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
-| 2026-04-10 10:00 | from_below  | reversed      | +3492500.0p | +1217500.0p | -25000.0p | -67500.0p | +100000.0p | -1697500.0p |
-| 2026-04-10 16:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +75000.0p | -3082500.0p | -2025000.0p | +425000.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25600.25000  [session_high]  `london_high_2025-12-19`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -32696.1p |
-|      +5        | +245735.3p |
-|      +10       | +392598.0p |
-|      +20       | +582990.2p |
-
-**By approach direction**
-
-- **From above** (support test): 32 touches · 59% reversed
-- **From below** (resistance test): 19 touches · 37% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
-| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
-
-### Level 25209.75000  [session_high]  `london_high_2026-03-05`
+### Level 25608.25000  [prev_week_low]  `pwl_2025_w52`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -5017,30 +4537,30 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +38872.5p |
-|      +5        | -150343.1p |
-|      +10       | -208872.5p |
-|      +20       | -274558.8p |
+|      +1        | +14509.8p |
+|      +5        | +236470.6p |
+|      +10       | +385882.4p |
+|      +20       | +646225.5p |
 
 **By approach direction**
 
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 25 touches · 48% reversed
+- **From above** (support test): 32 touches · 53% reversed
+- **From below** (resistance test): 19 touches · 37% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 24805.25000  [session_high]  `london_high_2026-03-13`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -5122,46 +4642,6 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-13 06:00 | from_below  | broke_through | +420000.0p | +5037500.0p | -140000.0p | -262500.0p | +2952500.0p | +4692500.0p |
 | 2026-04-13 12:00 | from_below  | broke_through | +122500.0p | +5052500.0p | +1382500.0p | +2352500.0p | +4165000.0p | +4695000.0p |
 
-### Level 25209.25000  [session_low]  `london_low_2025-12-01`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   53% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +48137.3p |
-|      +5        | -168774.5p |
-|      +10       | -198529.4p |
-|      +20       | -269117.6p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 25 touches · 48% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
 ### Level 24807.50000  [session_low]  `london_low_2025-12-17`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -5201,6 +4681,86 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-17 07:00 | from_below  | broke_through | +325000.0p | +3762500.0p | -25000.0p | +1605000.0p | +2622500.0p | +3672500.0p |
 | 2026-03-18 17:00 | from_above  | broke_through | +365000.0p | +5532500.0p | -1362500.0p | -2632500.0p | -2502500.0p | -3910000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
+
+### Level 25608.25000  [session_low]  `london_low_2025-12-23`
+Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    24 |   47% | █████████░░░░░░░░░░░ |
+| Broke through  |    27 |   53% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +14509.8p |
+|      +5        | +236470.6p |
+|      +10       | +385882.4p |
+|      +20       | +646225.5p |
+
+**By approach direction**
+
+- **From above** (support test): 32 touches · 53% reversed
+- **From below** (resistance test): 19 touches · 37% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_below  | broke_through | +2270000.0p | +5422500.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+
+### Level 25727.00000  [session_low]  `london_low_2026-01-07`
+Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -80490.2p |
+|      +5        | -175245.1p |
+|      +10       | -208431.4p |
+|      +20       | -260441.2p |
+
+**By approach direction**
+
+- **From above** (support test): 19 touches · 47% reversed
+- **From below** (resistance test): 32 touches · 53% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
 
 ### Level 24782.00000  [session_low]  `london_low_2026-02-27`
 Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -5242,29 +4802,29 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 18:00 | from_above  | broke_through | +577500.0p | +4170000.0p | -922500.0p | -1242500.0p | -1460000.0p | -2687500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25202.75000  [session_low]  `london_low_2026-04-10`
-Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25200.00000  [prev_day_high]  `pdh_2025-12-14`
+Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    25 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    26 |   51% | ██████████░░░░░░░░░░ |
+| Reversed       |    26 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +61323.5p |
-|      +5        | -185196.1p |
-|      +10       | -273627.5p |
-|      +20       | -396666.7p |
+|      +1        | -38650.0p |
+|      +5        | -234050.0p |
+|      +10       | -330700.0p |
+|      +20       | -283700.0p |
 
 **By approach direction**
 
-- **From above** (support test): 26 touches · 46% reversed
+- **From above** (support test): 25 touches · 52% reversed
 - **From below** (resistance test): 25 touches · 52% reversed
 
 **Touch log** (most recent 10)
@@ -5276,11 +4836,91 @@ Touches: **51**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
 | 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
 | 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
 | 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
 | 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
 | 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25600.25000  [prev_day_high]  `pdh_2025-12-19`
+Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +8650.0p |
+|      +5        | +272400.0p |
+|      +10       | +438650.0p |
+|      +20       | +653400.0p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 61% reversed
+- **From below** (resistance test): 19 touches · 37% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
+
+### Level 25169.00000  [prev_day_high]  `pdh_2026-02-05`
+Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    27 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    23 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -87500.0p |
+|      +5        | -213800.0p |
+|      +10       | -454600.0p |
+|      +20       | -926300.0p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 48% reversed
+- **From below** (resistance test): 25 touches · 60% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-18 05:00 | from_below  | reversed      | +6062500.0p | +420000.0p | +132500.0p | -70000.0p | -2692500.0p | -4727500.0p |
+| 2026-03-18 11:00 | from_below  | reversed      | +6075000.0p | +60000.0p | -2317500.0p | -2680000.0p | -5195000.0p | -5670000.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
 ### Level 24889.75000  [prev_day_high]  `pdh_2026-02-17`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -5362,127 +5002,7 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25210.50000  [prev_day_high]  `pdh_2026-03-18`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   46% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   54% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +47650.0p |
-|      +5        | -146550.0p |
-|      +10       | -210900.0p |
-|      +20       | -230700.0p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 24 touches · 46% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25269.75000  [prev_day_high]  `pdh_2026-04-09`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   38% | ████████░░░░░░░░░░░░ |
-| Broke through  |    31 |   62% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +51200.0p |
-|      +5        | -100250.0p |
-|      +10       | -406600.0p |
-|      +20       | -574200.0p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 35% reversed
-- **From below** (resistance test): 24 touches · 42% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 01:00 | from_below  | reversed      | +5795000.0p | +1187500.0p | -75000.0p | +187500.0p | +655000.0p | -4790000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-09 19:00 | from_below  | broke_through | +557500.0p | +1442500.0p | -40000.0p | +362500.0p | -205000.0p | +157500.0p |
-| 2026-04-10 02:00 | from_above  | broke_through | +1200000.0p | +3510000.0p | +185000.0p | -310000.0p | +315000.0p | -2890000.0p |
-| 2026-04-10 09:00 | from_below  | reversed      | +3370000.0p | +1340000.0p | +122500.0p | +935000.0p | +252500.0p | -1435000.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25269.00000  [prev_day_low]  `pdl_2025-11-10`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   38% | ████████░░░░░░░░░░░░ |
-| Broke through  |    31 |   62% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +51200.0p |
-|      +5        | -100250.0p |
-|      +10       | -406600.0p |
-|      +20       | -574200.0p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 35% reversed
-- **From below** (resistance test): 24 touches · 42% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 01:00 | from_below  | reversed      | +5795000.0p | +1187500.0p | -75000.0p | +187500.0p | +655000.0p | -4790000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-09 19:00 | from_below  | broke_through | +557500.0p | +1442500.0p | -40000.0p | +362500.0p | -205000.0p | +157500.0p |
-| 2026-04-10 02:00 | from_above  | broke_through | +1200000.0p | +3510000.0p | +185000.0p | -310000.0p | +315000.0p | -2890000.0p |
-| 2026-04-10 09:00 | from_below  | reversed      | +3370000.0p | +1340000.0p | +122500.0p | +935000.0p | +252500.0p | -1435000.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25193.25000  [prev_day_low]  `pdl_2025-12-01`
+### Level 25198.25000  [prev_day_low]  `pdl_2026-02-10`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -5497,15 +5017,15 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -17950.0p |
-|      +5        | -221600.0p |
-|      +10       | -349800.0p |
-|      +20       | -207450.0p |
+|      +1        | -38650.0p |
+|      +5        | -234050.0p |
+|      +10       | -330700.0p |
+|      +20       | -283700.0p |
 
 **By approach direction**
 
-- **From above** (support test): 26 touches · 50% reversed
-- **From below** (resistance test): 24 touches · 54% reversed
+- **From above** (support test): 25 touches · 52% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
 
 **Touch log** (most recent 10)
 
@@ -5516,51 +5036,11 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
 | 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
 | 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
 | 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
-
-### Level 25591.50000  [prev_day_low]  `pdl_2026-01-16`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    27 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    23 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -19050.0p |
-|      +5        | +253400.0p |
-|      +10       | +326850.0p |
-|      +20       | +573200.0p |
-
-**By approach direction**
-
-- **From above** (support test): 34 touches · 62% reversed
-- **From below** (resistance test): 16 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24861.75000  [prev_day_low]  `pdl_2026-02-26`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -5602,86 +5082,6 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25210.50000  [prev_week_high]  `pwh_2026_w12`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   46% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   54% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +47650.0p |
-|      +5        | -146550.0p |
-|      +10       | -210900.0p |
-|      +20       | -230700.0p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 24 touches · 46% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25193.25000  [prev_week_low]  `pwl_2025_w49`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    24 |   48% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -17950.0p |
-|      +5        | -221600.0p |
-|      +10       | -349800.0p |
-|      +20       | -207450.0p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 50% reversed
-- **From below** (resistance test): 24 touches · 54% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
-
 ### Level 24859.50000  [session_high]  `london_high_2025-11-18`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -5721,6 +5121,46 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-17 11:00 | from_below  | broke_through | +20000.0p | +3957500.0p | +1180000.0p | +1807500.0p | +1920000.0p | +3570000.0p |
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
+
+### Level 25600.25000  [session_high]  `london_high_2025-12-19`
+Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +8650.0p |
+|      +5        | +272400.0p |
+|      +10       | +438650.0p |
+|      +20       | +653400.0p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 61% reversed
+- **From below** (resistance test): 19 touches · 37% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 23:00 | from_below  | broke_through | +252500.0p | +4180000.0p | +50000.0p | +85000.0p | +530000.0p | +4160000.0p |
+| 2026-04-14 07:00 | from_below  | broke_through | +82500.0p | +4245000.0p | +445000.0p | +582500.0p | +3400000.0p | +3960000.0p |
 
 ### Level 25123.75000  [session_high]  `london_high_2026-02-05`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -5802,6 +5242,46 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
+### Level 25198.25000  [session_high]  `london_high_2026-03-18`
+Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   48% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -38650.0p |
+|      +5        | -234050.0p |
+|      +10       | -330700.0p |
+|      +20       | -283700.0p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 52% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
 ### Level 24823.00000  [session_low]  `london_low_2025-11-07`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -5841,126 +5321,6 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-17 09:00 | from_below  | broke_through | +507500.0p | +3662500.0p | -100000.0p | +2315000.0p | +1662500.0p | +3375000.0p |
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
-
-### Level 25197.00000  [session_low]  `london_low_2025-11-13`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -35050.0p |
-|      +5        | -244200.0p |
-|      +10       | -388300.0p |
-|      +20       | -259250.0p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 48% reversed
-- **From below** (resistance test): 25 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25273.75000  [session_low]  `london_low_2025-12-19`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   40% | ████████░░░░░░░░░░░░ |
-| Broke through  |    30 |   60% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +98350.0p |
-|      +5        | -139400.0p |
-|      +10       | -337550.0p |
-|      +20       | -449650.0p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 38% reversed
-- **From below** (resistance test): 24 touches · 42% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 18:00 | from_below  | reversed      | +2947500.0p | +1185000.0p | +77500.0p | -360000.0p | +357500.0p | -2910000.0p |
-| 2026-02-12 01:00 | from_below  | reversed      | +5795000.0p | +1187500.0p | -75000.0p | +187500.0p | +655000.0p | -4790000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 09:00 | from_below  | reversed      | +3370000.0p | +1340000.0p | +122500.0p | +935000.0p | +252500.0p | -1435000.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25591.50000  [session_low]  `london_low_2026-01-16`
-Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    27 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    23 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -19050.0p |
-|      +5        | +253400.0p |
-|      +10       | +326850.0p |
-|      +20       | +573200.0p |
-
-**By approach direction**
-
-- **From above** (support test): 34 touches · 62% reversed
-- **From below** (resistance test): 16 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
 
 ### Level 24861.75000  [session_low]  `london_low_2026-02-26`
 Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -6122,86 +5482,6 @@ Touches: **50**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25732.50000  [prev_day_high]  `pdh_2025-12-04`
-Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    24 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -44030.6p |
-|      +5        | -106734.7p |
-|      +10       | -189489.8p |
-|      +20       | -190969.4p |
-
-**By approach direction**
-
-- **From above** (support test): 22 touches · 36% reversed
-- **From below** (resistance test): 27 touches · 63% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
-### Level 25180.00000  [prev_day_high]  `pdh_2026-03-11`
-Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    27 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    22 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -21326.5p |
-|      +5        | -198724.5p |
-|      +10       | -287806.1p |
-|      +20       | -436071.4p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 48% reversed
-- **From below** (resistance test): 24 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
-| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
-
 ### Level 24763.00000  [prev_day_high]  `pdh_2026-03-23`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -6242,7 +5522,7 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25166.25000  [prev_day_low]  `pdl_2025-11-09`
+### Level 25193.25000  [prev_day_low]  `pdl_2025-12-01`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -6257,112 +5537,32 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +19642.9p |
-|      +5        | -156122.4p |
-|      +10       | -365918.4p |
-|      +20       | -833826.5p |
+|      +1        | -34438.8p |
+|      +5        | -227551.0p |
+|      +10       | -311020.4p |
+|      +20       | -247500.0p |
 
 **By approach direction**
 
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 23 touches · 61% reversed
+- **From above** (support test): 25 touches · 52% reversed
+- **From below** (resistance test): 24 touches · 54% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
 | 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
-| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
-| 2026-03-18 05:00 | from_below  | reversed      | +6062500.0p | +420000.0p | +132500.0p | -70000.0p | -2692500.0p | -4727500.0p |
-| 2026-03-18 11:00 | from_below  | reversed      | +6075000.0p | +60000.0p | -2317500.0p | -2680000.0p | -5195000.0p | -5670000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
 | 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
 | 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
-### Level 25211.25000  [prev_day_low]  `pdl_2025-12-19`
-Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    22 |   45% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   55% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +51224.5p |
-|      +5        | -91377.6p |
-|      +10       | -121020.4p |
-|      +20       | -110255.1p |
-
-**By approach direction**
-
-- **From above** (support test): 26 touches · 46% reversed
-- **From below** (resistance test): 23 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25265.25000  [prev_day_low]  `pdl_2026-01-02`
-Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   39% | ████████░░░░░░░░░░░░ |
-| Broke through  |    30 |   61% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -30816.3p |
-|      +5        | -171989.8p |
-|      +10       | -528367.3p |
-|      +20       | -524489.8p |
-
-**By approach direction**
-
-- **From above** (support test): 28 touches · 36% reversed
-- **From below** (resistance test): 21 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 06:00 | from_below  | reversed      | +3062500.0p | +1647500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 12:00 | from_above  | broke_through | +885000.0p | +3825000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 18:00 | from_above  | broke_through | +1000000.0p | +3387500.0p | +235000.0p | -2057500.0p | -1810000.0p | +487500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25180.25000  [prev_day_low]  `pdl_2026-02-02`
+### Level 25591.50000  [prev_day_low]  `pdl_2026-01-16`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -6377,30 +5577,70 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +56683.7p |
-|      +5        | -126734.7p |
-|      +10       | -94132.7p |
-|      +20       | -253928.6p |
+|      +1        | +23418.4p |
+|      +5        | +280765.3p |
+|      +10       | +372500.0p |
+|      +20       | +644846.9p |
 
 **By approach direction**
 
-- **From above** (support test): 26 touches · 50% reversed
-- **From below** (resistance test): 23 touches · 61% reversed
+- **From above** (support test): 33 touches · 64% reversed
+- **From below** (resistance test): 16 touches · 38% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-04 17:00 | from_below  | reversed      | +2060000.0p | +812500.0p | +240000.0p | +30000.0p | -702500.0p | +172500.0p |
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
+
+### Level 25202.75000  [prev_day_low]  `pdl_2026-04-10`
+Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    24 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +40816.3p |
+|      +5        | -222142.9p |
+|      +10       | -275765.3p |
+|      +20       | -365306.1p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
 | 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
 | 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24763.00000  [prev_week_high]  `pwh_2026_w13`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -6442,84 +5682,44 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25265.25000  [prev_week_low]  `pwl_2026_w01`
+### Level 25193.25000  [prev_week_low]  `pwl_2025_w49`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   39% | ████████░░░░░░░░░░░░ |
-| Broke through  |    30 |   61% | ████████████░░░░░░░░ |
+| Reversed       |    26 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    23 |   47% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -30816.3p |
-|      +5        | -171989.8p |
-|      +10       | -528367.3p |
-|      +20       | -524489.8p |
+|      +1        | -34438.8p |
+|      +5        | -227551.0p |
+|      +10       | -311020.4p |
+|      +20       | -247500.0p |
 
 **By approach direction**
 
-- **From above** (support test): 28 touches · 36% reversed
-- **From below** (resistance test): 21 touches · 43% reversed
+- **From above** (support test): 25 touches · 52% reversed
+- **From below** (resistance test): 24 touches · 54% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 06:00 | from_below  | reversed      | +3062500.0p | +1647500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 12:00 | from_above  | broke_through | +885000.0p | +3825000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 18:00 | from_above  | broke_through | +1000000.0p | +3387500.0p | +235000.0p | -2057500.0p | -1810000.0p | +487500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25179.00000  [session_high]  `london_high_2025-11-14`
-Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    24 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -6836.7p |
-|      +5        | -200051.0p |
-|      +10       | -234438.8p |
-|      +20       | -415765.3p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 44% reversed
-- **From below** (resistance test): 24 touches · 58% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
 | 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
-| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
 | 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
 | 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
 | 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
 ### Level 24817.25000  [session_high]  `london_high_2025-11-24`
@@ -6562,45 +5762,45 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 14:00 | from_above  | broke_through | +495000.0p | +3822500.0p | +170000.0p | -2307500.0p | -2422500.0p | -3365000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25732.50000  [session_high]  `london_high_2025-12-04`
+### Level 25280.25000  [session_high]  `london_high_2025-11-26`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    25 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    24 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    22 |   45% | █████████░░░░░░░░░░░ |
+| Broke through  |    27 |   55% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -44030.6p |
-|      +5        | -106734.7p |
-|      +10       | -189489.8p |
-|      +20       | -190969.4p |
+|      +1        | -86581.6p |
+|      +5        | -326275.5p |
+|      +10       | -361836.7p |
+|      +20       | -574081.6p |
 
 **By approach direction**
 
-- **From above** (support test): 22 touches · 36% reversed
-- **From below** (resistance test): 27 touches · 63% reversed
+- **From above** (support test): 25 touches · 40% reversed
+- **From below** (resistance test): 24 touches · 50% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+| 2026-02-11 19:00 | from_above  | broke_through | +1107500.0p | +5032500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
+| 2026-04-10 10:00 | from_below  | reversed      | +3492500.0p | +1217500.0p | -25000.0p | -67500.0p | +100000.0p | -1697500.0p |
+| 2026-04-10 16:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +75000.0p | -3082500.0p | -2025000.0p | +425000.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 25148.50000  [session_high]  `london_high_2026-03-04`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -6642,45 +5842,45 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 10:00 | from_below  | broke_through | +832500.0p | +4867500.0p | -675000.0p | +1527500.0p | +4287500.0p | +4612500.0p |
 
-### Level 25180.00000  [session_high]  `london_high_2026-03-11`
+### Level 25209.75000  [session_high]  `london_high_2026-03-05`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    27 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    22 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    23 |   47% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   53% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -21326.5p |
-|      +5        | -198724.5p |
-|      +10       | -287806.1p |
-|      +20       | -436071.4p |
+|      +1        | +17449.0p |
+|      +5        | -185867.3p |
+|      +10       | -208367.3p |
+|      +20       | -238214.3p |
 
 **By approach direction**
 
-- **From above** (support test): 25 touches · 48% reversed
-- **From below** (resistance test): 24 touches · 62% reversed
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 25 touches · 48% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
-| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
 | 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24763.00000  [session_high]  `london_high_2026-03-23`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -6722,7 +5922,47 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25290.75000  [session_low]  `london_low_2025-11-06`
+### Level 25197.00000  [session_low]  `london_low_2025-11-13`
+Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    25 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -51887.8p |
+|      +5        | -250612.2p |
+|      +10       | -350306.1p |
+|      +20       | -300357.1p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 50% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 06:00 | from_below  | reversed      | +2447500.0p | +857500.0p | -295000.0p | +380000.0p | -290000.0p | -1547500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25209.25000  [session_low]  `london_low_2025-12-01`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -6737,30 +5977,70 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -102091.8p |
-|      +5        | -413979.6p |
-|      +10       | -589846.9p |
-|      +20       | -804132.7p |
+|      +1        | +27091.8p |
+|      +5        | -205051.0p |
+|      +10       | -197602.0p |
+|      +20       | -232551.0p |
 
 **By approach direction**
 
-- **From above** (support test): 24 touches · 38% reversed
-- **From below** (resistance test): 25 touches · 56% reversed
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 25 touches · 48% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 05:00 | from_above  | broke_through | +1072500.0p | +4462500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
-| 2026-04-10 11:00 | from_below  | reversed      | +3467500.0p | +1242500.0p | +357500.0p | -42500.0p | -3125000.0p | -1710000.0p |
-| 2026-04-10 19:00 | from_below  | reversed      | +3622500.0p | +1507500.0p | -30000.0p | -2012500.0p | -1687500.0p | +1265000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
 | 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25591.50000  [session_low]  `london_low_2026-01-16`
+Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    27 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    22 |   45% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +23418.4p |
+|      +5        | +280765.3p |
+|      +10       | +372500.0p |
+|      +20       | +644846.9p |
+
+**By approach direction**
+
+- **From above** (support test): 33 touches · 64% reversed
+- **From below** (resistance test): 16 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
 
 ### Level 24763.00000  [session_low]  `london_low_2026-02-19`
 Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -6802,117 +6082,77 @@ Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25293.25000  [prev_day_high]  `pdh_2025-11-14`
-Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25202.75000  [session_low]  `london_low_2026-04-10`
+Touches: **49**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    22 |   46% | █████████░░░░░░░░░░░ |
-| Broke through  |    26 |   54% | ███████████░░░░░░░░░ |
+| Reversed       |    24 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    25 |   51% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -214166.7p |
-|      +5        | -487968.8p |
-|      +10       | -544843.8p |
-|      +20       | -817343.8p |
+|      +1        | +40816.3p |
+|      +5        | -222142.9p |
+|      +10       | -275765.3p |
+|      +20       | -365306.1p |
 
 **By approach direction**
 
-- **From above** (support test): 23 touches · 35% reversed
-- **From below** (resistance test): 25 touches · 56% reversed
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 05:00 | from_above  | broke_through | +1072500.0p | +4462500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
-| 2026-04-10 11:00 | from_below  | reversed      | +3467500.0p | +1242500.0p | +357500.0p | -42500.0p | -3125000.0p | -1710000.0p |
-| 2026-04-10 19:00 | from_below  | reversed      | +3622500.0p | +1507500.0p | -30000.0p | -2012500.0p | -1687500.0p | +1265000.0p |
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_above  | reversed      | +1690000.0p | +212500.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
 | 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
-### Level 25310.00000  [prev_day_high]  `pdh_2025-11-20`
+### Level 25732.50000  [prev_day_high]  `pdh_2025-12-04`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    23 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   52% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    24 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   50% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -308229.2p |
-|      +5        | -442968.8p |
-|      +10       | -615781.2p |
-|      +20       | -847760.4p |
+|      +1        | -50104.2p |
+|      +5        | -64322.9p |
+|      +10       | -126145.8p |
+|      +20       | -112604.2p |
 
 **By approach direction**
 
-- **From above** (support test): 21 touches · 38% reversed
-- **From below** (resistance test): 27 touches · 56% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 02:00 | from_below  | reversed      | +5720000.0p | +1262500.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25735.75000  [prev_day_high]  `pdh_2025-12-09`
-Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   48% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -52760.4p |
-|      +5        | -120989.6p |
-|      +10       | -222916.7p |
-|      +20       | -243281.2p |
-
-**By approach direction**
-
-- **From above** (support test): 20 touches · 35% reversed
-- **From below** (resistance test): 28 touches · 64% reversed
+- **From above** (support test): 22 touches · 36% reversed
+- **From below** (resistance test): 26 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-23 21:00 | from_below  | reversed      | +2750000.0p | +1982500.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
 | 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
 | 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
@@ -7042,6 +6282,206 @@ Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 10:00 | from_below  | broke_through | +832500.0p | +4867500.0p | -675000.0p | +1527500.0p | +4287500.0p | +4612500.0p |
 
+### Level 25180.00000  [prev_day_high]  `pdh_2026-03-11`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    27 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    21 |   44% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -38229.2p |
+|      +5        | -204322.9p |
+|      +10       | -246927.1p |
+|      +20       | -481718.8p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 50% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
+
+### Level 25210.50000  [prev_day_high]  `pdh_2026-03-18`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   46% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   54% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +26145.8p |
+|      +5        | -182656.2p |
+|      +10       | -210468.8p |
+|      +20       | -191770.8p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 24 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25269.75000  [prev_day_high]  `pdh_2026-04-09`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   38% | ████████░░░░░░░░░░░░ |
+| Broke through  |    30 |   62% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +29843.8p |
+|      +5        | -134427.1p |
+|      +10       | -414322.9p |
+|      +20       | -549583.3p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 33% reversed
+- **From below** (resistance test): 24 touches · 42% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 01:00 | from_below  | reversed      | +5795000.0p | +1187500.0p | -75000.0p | +187500.0p | +655000.0p | -4790000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-09 19:00 | from_below  | broke_through | +557500.0p | +1442500.0p | -40000.0p | +362500.0p | -205000.0p | +157500.0p |
+| 2026-04-10 02:00 | from_above  | broke_through | +1200000.0p | +3510000.0p | +185000.0p | -310000.0p | +315000.0p | -2890000.0p |
+| 2026-04-10 09:00 | from_below  | reversed      | +3370000.0p | +1340000.0p | +122500.0p | +935000.0p | +252500.0p | -1435000.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25166.25000  [prev_day_low]  `pdl_2025-11-09`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    22 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +3593.8p |
+|      +5        | -160833.3p |
+|      +10       | -326666.7p |
+|      +20       | -887760.4p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 48% reversed
+- **From below** (resistance test): 23 touches · 61% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-18 05:00 | from_below  | reversed      | +6062500.0p | +420000.0p | +132500.0p | -70000.0p | -2692500.0p | -4727500.0p |
+| 2026-03-18 11:00 | from_below  | reversed      | +6075000.0p | +60000.0p | -2317500.0p | -2680000.0p | -5195000.0p | -5670000.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
+
+### Level 25269.00000  [prev_day_low]  `pdl_2025-11-10`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   38% | ████████░░░░░░░░░░░░ |
+| Broke through  |    30 |   62% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +29843.8p |
+|      +5        | -134427.1p |
+|      +10       | -414322.9p |
+|      +20       | -549583.3p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 33% reversed
+- **From below** (resistance test): 24 touches · 42% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 01:00 | from_below  | reversed      | +5795000.0p | +1187500.0p | -75000.0p | +187500.0p | +655000.0p | -4790000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-09 19:00 | from_below  | broke_through | +557500.0p | +1442500.0p | -40000.0p | +362500.0p | -205000.0p | +157500.0p |
+| 2026-04-10 02:00 | from_above  | broke_through | +1200000.0p | +3510000.0p | +185000.0p | -310000.0p | +315000.0p | -2890000.0p |
+| 2026-04-10 09:00 | from_below  | reversed      | +3370000.0p | +1340000.0p | +122500.0p | +935000.0p | +252500.0p | -1435000.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
 ### Level 25141.25000  [prev_day_low]  `pdl_2025-12-14`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -7082,45 +6522,45 @@ Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 10:00 | from_below  | broke_through | +832500.0p | +4867500.0p | -675000.0p | +1527500.0p | +4287500.0p | +4612500.0p |
 
-### Level 25223.25000  [prev_day_low]  `pdl_2026-02-08`
+### Level 25180.25000  [prev_day_low]  `pdl_2026-02-02`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    21 |   44% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   56% | ███████████░░░░░░░░░ |
+| Reversed       |    27 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    21 |   44% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -28385.4p |
-|      +5        | -230781.2p |
-|      +10       | -105833.3p |
-|      +20       | -175833.3p |
+|      +1        | +41406.2p |
+|      +5        | -130833.3p |
+|      +10       | -49218.8p |
+|      +20       | -295781.2p |
 
 **By approach direction**
 
-- **From above** (support test): 25 touches · 44% reversed
-- **From below** (resistance test): 23 touches · 43% reversed
+- **From above** (support test): 25 touches · 52% reversed
+- **From below** (resistance test): 23 touches · 61% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 17:00 | from_below  | reversed      | +2060000.0p | +812500.0p | +240000.0p | +30000.0p | -702500.0p | +172500.0p |
 | 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 16:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +75000.0p | -3082500.0p | -2025000.0p | +425000.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
 ### Level 24772.50000  [prev_day_low]  `pdl_2026-03-05`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -7202,45 +6642,125 @@ Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 10:00 | from_below  | broke_through | +832500.0p | +4867500.0p | -675000.0p | +1527500.0p | +4287500.0p | +4612500.0p |
 
-### Level 25310.00000  [session_high]  `london_high_2025-11-20`
+### Level 25210.50000  [prev_week_high]  `pwh_2026_w12`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    23 |   48% | ██████████░░░░░░░░░░ |
-| Broke through  |    25 |   52% | ██████████░░░░░░░░░░ |
+| Reversed       |    22 |   46% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   54% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +26145.8p |
+|      +5        | -182656.2p |
+|      +10       | -210468.8p |
+|      +20       | -191770.8p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 24 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25179.00000  [session_high]  `london_high_2025-11-14`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    25 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    23 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -308229.2p |
-|      +5        | -442968.8p |
-|      +10       | -615781.2p |
-|      +20       | -847760.4p |
+|      +1        | -23437.5p |
+|      +5        | -205677.1p |
+|      +10       | -192447.9p |
+|      +20       | -460989.6p |
 
 **By approach direction**
 
-- **From above** (support test): 21 touches · 38% reversed
-- **From below** (resistance test): 27 touches · 56% reversed
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 24 touches · 58% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 02:00 | from_below  | reversed      | +5720000.0p | +1262500.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
+
+### Level 25732.50000  [session_high]  `london_high_2025-12-04`
+Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    24 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |    24 |   50% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -50104.2p |
+|      +5        | -64322.9p |
+|      +10       | -126145.8p |
+|      +20       | -112604.2p |
+
+**By approach direction**
+
+- **From above** (support test): 22 touches · 36% reversed
+- **From below** (resistance test): 26 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_above  | broke_through | +1982500.0p | +2750000.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
 
 ### Level 25127.00000  [session_high]  `london_high_2026-02-20`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -7322,87 +6842,7 @@ Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-18 18:00 | from_above  | broke_through | +577500.0p | +4170000.0p | -922500.0p | -1242500.0p | -1460000.0p | -2687500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25182.00000  [session_high]  `london_high_2026-03-10`
-Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   48% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +51927.1p |
-|      +5        | -98593.8p |
-|      +10       | -122187.5p |
-|      +20       | -229114.6p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 48% reversed
-- **From below** (resistance test): 21 touches · 57% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
-
-### Level 25214.00000  [session_low]  `london_low_2025-12-12`
-Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    21 |   44% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   56% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +6718.8p |
-|      +5        | -151093.8p |
-|      +10       | -197291.7p |
-|      +20       | -154479.2p |
-
-**By approach direction**
-
-- **From above** (support test): 23 touches · 48% reversed
-- **From below** (resistance test): 25 touches · 40% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25582.00000  [session_low]  `london_low_2026-01-26`
+### Level 25180.00000  [session_high]  `london_high_2026-03-11`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -7417,110 +6857,70 @@ Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -6927.1p |
-|      +5        | +285989.6p |
-|      +10       | +400104.2p |
-|      +20       | +769218.8p |
+|      +1        | -38229.2p |
+|      +5        | -204322.9p |
+|      +10       | -246927.1p |
+|      +20       | -481718.8p |
 
 **By approach direction**
 
-- **From above** (support test): 33 touches · 67% reversed
-- **From below** (resistance test): 15 touches · 33% reversed
+- **From above** (support test): 24 touches · 50% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-11 14:00 | from_below  | reversed      | +3695000.0p | +250000.0p | -1302500.0p | -810000.0p | -2755000.0p | -2080000.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 12:00 | from_above  | broke_through | +370000.0p | +2862500.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
-### Level 25233.00000  [session_low]  `london_low_2026-02-02`
+### Level 25273.75000  [session_low]  `london_low_2025-12-19`
 Touches: **48**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    21 |   44% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   56% | ███████████░░░░░░░░░ |
+| Reversed       |    19 |   40% | ████████░░░░░░░░░░░░ |
+| Broke through  |    29 |   60% | ████████████░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -13958.3p |
-|      +5        | -322708.3p |
-|      +10       | -301354.2p |
-|      +20       | -527604.2p |
+|      +1        | +77031.2p |
+|      +5        | -150677.1p |
+|      +10       | -349583.3p |
+|      +20       | -399635.4p |
 
 **By approach direction**
 
-- **From above** (support test): 27 touches · 41% reversed
-- **From below** (resistance test): 21 touches · 48% reversed
+- **From above** (support test): 24 touches · 38% reversed
+- **From below** (resistance test): 24 touches · 42% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 18:00 | from_below  | reversed      | +2947500.0p | +1185000.0p | +77500.0p | -360000.0p | +357500.0p | -2910000.0p |
+| 2026-02-12 01:00 | from_below  | reversed      | +5795000.0p | +1187500.0p | -75000.0p | +187500.0p | +655000.0p | -4790000.0p |
 | 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
 | 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
 | 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-04-08 09:00 | from_below  | reversed      | +2735000.0p | +570000.0p | +45000.0p | -2070000.0p | -1202500.0p | -1610000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 16:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +75000.0p | -3082500.0p | -2025000.0p | +425000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 09:00 | from_below  | reversed      | +3370000.0p | +1340000.0p | +122500.0p | +935000.0p | +252500.0p | -1435000.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
 | 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25188.25000  [prev_day_high]  `pdh_2025-11-16`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +11595.7p |
-|      +5        | -131702.1p |
-|      +10       | -232659.6p |
-|      +20       | -298191.5p |
-
-**By approach direction**
-
-- **From above** (support test): 24 touches · 46% reversed
-- **From below** (resistance test): 23 touches · 57% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
-| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
-| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
-| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
-| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
-| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
-| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
-| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
 ### Level 25135.25000  [prev_day_high]  `pdh_2025-11-25`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -7562,87 +6962,7 @@ Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 10:00 | from_below  | broke_through | +832500.0p | +4867500.0p | -675000.0p | +1527500.0p | +4287500.0p | +4612500.0p |
 
-### Level 25222.00000  [prev_day_high]  `pdh_2026-02-06`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   57% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -14787.2p |
-|      +5        | -103351.1p |
-|      +10       | -66648.9p |
-|      +20       | -158829.8p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 48% reversed
-- **From below** (resistance test): 22 touches · 36% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25294.50000  [prev_day_high]  `pdh_2026-02-08`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    21 |   45% | █████████░░░░░░░░░░░ |
-| Broke through  |    26 |   55% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -256861.7p |
-|      +5        | -489042.6p |
-|      +10       | -603510.6p |
-|      +20       | -875159.6p |
-
-**By approach direction**
-
-- **From above** (support test): 23 touches · 35% reversed
-- **From below** (resistance test): 24 touches · 54% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 05:00 | from_above  | broke_through | +1072500.0p | +4462500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
-| 2026-04-10 11:00 | from_below  | reversed      | +3467500.0p | +1242500.0p | +357500.0p | -42500.0p | -3125000.0p | -1710000.0p |
-| 2026-04-10 19:00 | from_below  | reversed      | +3622500.0p | +1507500.0p | -30000.0p | -2012500.0p | -1687500.0p | +1265000.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25250.00000  [prev_day_high]  `pdh_2026-03-05`
+### Level 25735.75000  [prev_day_high]  `pdh_2025-12-09`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -7657,190 +6977,30 @@ Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -46063.8p |
-|      +5        | -192074.5p |
-|      +10       | -439734.0p |
-|      +20       | -577446.8p |
+|      +1        | -59148.9p |
+|      +5        | -77978.7p |
+|      +10       | -158936.2p |
+|      +20       | -164361.7p |
 
 **By approach direction**
 
-- **From above** (support test): 27 touches · 48% reversed
-- **From below** (resistance test): 20 touches · 55% reversed
+- **From above** (support test): 20 touches · 35% reversed
+- **From below** (resistance test): 27 touches · 63% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25217.50000  [prev_day_high]  `pdh_2026-03-10`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   57% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -57446.8p |
-|      +5        | -212446.8p |
-|      +10       | -249627.7p |
-|      +20       | -177446.8p |
-
-**By approach direction**
-
-- **From above** (support test): 23 touches · 48% reversed
-- **From below** (resistance test): 24 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 19:00 | from_below  | reversed      | +2585000.0p | +610000.0p | -675000.0p | -1180000.0p | -970000.0p | -1465000.0p |
-| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25304.00000  [prev_day_low]  `pdl_2025-11-27`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    24 |   51% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -345585.1p |
-|      +5        | -473351.1p |
-|      +10       | -581595.7p |
-|      +20       | -853936.2p |
-
-**By approach direction**
-
-- **From above** (support test): 21 touches · 38% reversed
-- **From below** (resistance test): 26 touches · 58% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 02:00 | from_below  | reversed      | +5720000.0p | +1262500.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 05:00 | from_below  | reversed      | +4462500.0p | +1072500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25331.00000  [prev_day_low]  `pdl_2025-11-28`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -240478.7p |
-|      +5        | -368617.0p |
-|      +10       | -441861.7p |
-|      +20       | -671542.6p |
-
-**By approach direction**
-
-- **From above** (support test): 17 touches · 35% reversed
-- **From below** (resistance test): 30 touches · 60% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
-| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
-
-### Level 25324.75000  [prev_day_low]  `pdl_2025-12-02`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    22 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    25 |   53% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -160212.8p |
-|      +5        | -296702.1p |
-|      +10       | -368936.2p |
-|      +20       | -551329.8p |
-
-**By approach direction**
-
-- **From above** (support test): 18 touches · 39% reversed
-- **From below** (resistance test): 29 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
-| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-23 21:00 | from_below  | reversed      | +2750000.0p | +1982500.0p | -1792500.0p | -1035000.0p | -107500.0p | +1605000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 07:00 | from_above  | broke_through | +2327500.0p | +4910000.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
 
 ### Level 24756.25000  [prev_day_low]  `pdl_2025-12-17`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -7882,124 +7042,84 @@ Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25219.00000  [prev_day_low]  `pdl_2026-02-03`
+### Level 25211.25000  [prev_day_low]  `pdl_2025-12-19`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   57% | ███████████░░░░░░░░░ |
+| Reversed       |    21 |   45% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   55% | ███████████░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -33244.7p |
-|      +5        | -110000.0p |
-|      +10       | -80638.3p |
-|      +20       | -207340.4p |
+|      +1        | +29414.9p |
+|      +5        | -125904.3p |
+|      +10       | -116755.3p |
+|      +20       | -65372.3p |
 
 **By approach direction**
 
-- **From above** (support test): 25 touches · 48% reversed
-- **From below** (resistance test): 22 touches · 36% reversed
+- **From above** (support test): 24 touches · 46% reversed
+- **From below** (resistance test): 23 touches · 43% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
 | 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
 | 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25250.00000  [prev_week_high]  `pwh_2026_w10`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -46063.8p |
-|      +5        | -192074.5p |
-|      +10       | -439734.0p |
-|      +20       | -577446.8p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 48% reversed
-- **From below** (resistance test): 20 touches · 55% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
-| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25217.50000  [prev_week_high]  `pwh_2026_w11`
-Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
-| Broke through  |    27 |   57% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -57446.8p |
-|      +5        | -212446.8p |
-|      +10       | -249627.7p |
-|      +20       | -177446.8p |
-
-**By approach direction**
-
-- **From above** (support test): 23 touches · 48% reversed
-- **From below** (resistance test): 24 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 19:00 | from_below  | reversed      | +2585000.0p | +610000.0p | -675000.0p | -1180000.0p | -970000.0p | -1465000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
 | 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
 | 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
 | 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
 | 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
 | 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25265.25000  [prev_day_low]  `pdl_2026-01-02`
+Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   38% | ████████░░░░░░░░░░░░ |
+| Broke through  |    29 |   62% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -56117.0p |
+|      +5        | -209946.8p |
+|      +10       | -541436.2p |
+|      +20       | -497234.0p |
+
+**By approach direction**
+
+- **From above** (support test): 26 touches · 35% reversed
+- **From below** (resistance test): 21 touches · 43% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_below  | reversed      | +3062500.0p | +1647500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 12:00 | from_above  | broke_through | +885000.0p | +3825000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 18:00 | from_above  | broke_through | +1000000.0p | +3387500.0p | +235000.0p | -2057500.0p | -1810000.0p | +487500.0p |
 | 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24756.25000  [prev_week_low]  `pwl_2025_w51`
@@ -8042,45 +7162,45 @@ Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25329.00000  [session_high]  `london_high_2026-02-09`
+### Level 25265.25000  [prev_week_low]  `pwl_2026_w01`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    22 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    25 |   53% | ███████████░░░░░░░░░ |
+| Reversed       |    18 |   38% | ████████░░░░░░░░░░░░ |
+| Broke through  |    29 |   62% | ████████████░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -199946.8p |
-|      +5        | -333297.9p |
-|      +10       | -391702.1p |
-|      +20       | -573244.7p |
+|      +1        | -56117.0p |
+|      +5        | -209946.8p |
+|      +10       | -541436.2p |
+|      +20       | -497234.0p |
 
 **By approach direction**
 
-- **From above** (support test): 18 touches · 39% reversed
-- **From below** (resistance test): 29 touches · 52% reversed
+- **From above** (support test): 26 touches · 35% reversed
+- **From below** (resistance test): 21 touches · 43% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
-| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
 | 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 01:00 | from_above  | broke_through | +990000.0p | +4545000.0p | -82500.0p | +112500.0p | +457500.0p | -2882500.0p |
 | 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_below  | reversed      | +3062500.0p | +1647500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 12:00 | from_above  | broke_through | +885000.0p | +3825000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 18:00 | from_above  | broke_through | +1000000.0p | +3387500.0p | +235000.0p | -2057500.0p | -1810000.0p | +487500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 25140.50000  [session_high]  `london_high_2026-03-06`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -8122,87 +7242,127 @@ Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
 | 2026-04-13 10:00 | from_below  | broke_through | +832500.0p | +4867500.0p | -675000.0p | +1527500.0p | +4287500.0p | +4612500.0p |
 
-### Level 25331.00000  [session_low]  `london_low_2025-11-28`
+### Level 25182.00000  [session_high]  `london_high_2026-03-10`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    24 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   49% | ██████████░░░░░░░░░░ |
+| Reversed       |    25 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    22 |   47% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -240478.7p |
-|      +5        | -368617.0p |
-|      +10       | -441861.7p |
-|      +20       | -671542.6p |
+|      +1        | +36223.4p |
+|      +5        | -102180.9p |
+|      +10       | -76914.9p |
+|      +20       | -271329.8p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 35% reversed
-- **From below** (resistance test): 30 touches · 60% reversed
+- **From above** (support test): 26 touches · 50% reversed
+- **From below** (resistance test): 21 touches · 57% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
-| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_above  | broke_through | +590000.0p | +3100000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 15:00 | from_below  | reversed      | +2530000.0p | +687500.0p | +75000.0p | -1382500.0p | -545000.0p | -2035000.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
-### Level 25324.75000  [session_low]  `london_low_2025-12-02`
+### Level 25582.00000  [session_low]  `london_low_2026-01-26`
 Touches: **47**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    22 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    25 |   53% | ███████████░░░░░░░░░ |
+| Reversed       |    27 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    20 |   43% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -160212.8p |
-|      +5        | -296702.1p |
-|      +10       | -368936.2p |
-|      +20       | -551329.8p |
+|      +1        | +37606.4p |
+|      +5        | +315212.8p |
+|      +10       | +449255.3p |
+|      +20       | +848085.1p |
 
 **By approach direction**
 
-- **From above** (support test): 18 touches · 39% reversed
-- **From below** (resistance test): 29 touches · 52% reversed
+- **From above** (support test): 32 touches · 69% reversed
+- **From below** (resistance test): 15 touches · 33% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
-| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-01-23 14:00 | from_below  | reversed      | +2005000.0p | +1820000.0p | +1627500.0p | +842500.0p | -142500.0p | +67500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-26 09:00 | from_above  | reversed      | +4100000.0p | +40000.0p | +330000.0p | +2190000.0p | +2602500.0p | +3830000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
+
+### Level 25293.25000  [prev_day_high]  `pdh_2025-11-14`
+Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   57% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -215923.9p |
+|      +5        | -509619.6p |
+|      +10       | -541684.8p |
+|      +20       | -708858.7p |
+
+**By approach direction**
+
+- **From above** (support test): 23 touches · 35% reversed
+- **From below** (resistance test): 23 touches · 52% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
 | 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
 | 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 05:00 | from_above  | broke_through | +1072500.0p | +4462500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
 | 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
+| 2026-04-10 11:00 | from_below  | reversed      | +3467500.0p | +1242500.0p | +357500.0p | -42500.0p | -3125000.0p | -1710000.0p |
+| 2026-04-10 19:00 | from_below  | reversed      | +3622500.0p | +1507500.0p | -30000.0p | -2012500.0p | -1687500.0p | +1265000.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
-### Level 25339.25000  [prev_day_high]  `pdh_2025-11-27`
+### Level 25188.25000  [prev_day_high]  `pdh_2025-11-16`
 Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -8217,312 +7377,32 @@ Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -178206.5p |
-|      +5        | -300434.8p |
-|      +10       | -470869.6p |
-|      +20       | -689130.4p |
-
-**By approach direction**
-
-- **From above** (support test): 18 touches · 39% reversed
-- **From below** (resistance test): 28 touches · 61% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
-| 2026-02-12 10:00 | from_above  | broke_through | +700000.0p | +7075000.0p | +167500.0p | -3395000.0p | -5870000.0p | -6027500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
-
-### Level 25739.75000  [prev_day_high]  `pdh_2026-01-22`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -71793.5p |
-|      +5        | -138478.3p |
-|      +10       | -229837.0p |
-|      +20       | -467771.7p |
-
-**By approach direction**
-
-- **From above** (support test): 17 touches · 29% reversed
-- **From below** (resistance test): 29 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
-### Level 25217.75000  [prev_day_high]  `pdh_2026-03-04`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   41% | ████████░░░░░░░░░░░░ |
-| Broke through  |    27 |   59% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -28206.5p |
-|      +5        | -183532.6p |
-|      +10       | -237771.7p |
-|      +20       | -158423.9p |
+|      +1        | -5326.1p |
+|      +5        | -136087.0p |
+|      +10       | -188804.3p |
+|      +20       | -342826.1p |
 
 **By approach direction**
 
 - **From above** (support test): 23 touches · 48% reversed
-- **From below** (resistance test): 23 touches · 35% reversed
+- **From below** (resistance test): 23 touches · 57% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-03-04 19:00 | from_below  | reversed      | +2585000.0p | +610000.0p | -675000.0p | -1180000.0p | -970000.0p | -1465000.0p |
-| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
-| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_above  | broke_through | +1387500.0p | +2985000.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-05 09:00 | from_below  | reversed      | +3415000.0p | +957500.0p | -77500.0p | +720000.0p | -2560000.0p | -75000.0p |
+| 2026-03-05 15:00 | from_below  | reversed      | +3100000.0p | +590000.0p | -400000.0p | -340000.0p | -107500.0p | -2467500.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-03-18 06:00 | from_below  | reversed      | +6195000.0p | +165000.0p | -200000.0p | -687500.0p | -3367500.0p | -5127500.0p |
+| 2026-04-08 05:00 | from_below  | reversed      | +2657500.0p | +647500.0p | -210000.0p | +122500.0p | -1137500.0p | -1612500.0p |
+| 2026-04-08 11:00 | from_above  | broke_through | +477500.0p | +2827500.0p | +35000.0p | -670000.0p | -1747500.0p | -2365000.0p |
+| 2026-04-09 15:00 | from_below  | broke_through | +440000.0p | +1970000.0p | +75000.0p | +557500.0p | +840000.0p | +1155000.0p |
+| 2026-04-13 11:00 | from_below  | broke_through | +157500.0p | +5757500.0p | +795000.0p | +3215000.0p | +5047500.0p | +5732500.0p |
 
-### Level 25257.00000  [prev_day_high]  `pdh_2026-04-08`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   41% | ████████░░░░░░░░░░░░ |
-| Broke through  |    27 |   59% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +5978.3p |
-|      +5        | -146902.2p |
-|      +10       | -427010.9p |
-|      +20       | -535000.0p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 37% reversed
-- **From below** (resistance test): 19 touches · 47% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25579.75000  [prev_day_low]  `pdl_2025-12-05`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    20 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +11630.4p |
-|      +5        | +321195.7p |
-|      +10       | +430597.8p |
-|      +20       | +767717.4p |
-
-**By approach direction**
-
-- **From above** (support test): 35 touches · 66% reversed
-- **From below** (resistance test): 11 touches · 27% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 23:00 | from_above  | reversed      | +2280000.0p | +775000.0p | +365000.0p | +845000.0p | -595000.0p | +1302500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
-
-### Level 25739.75000  [session_high]  `london_high_2026-01-22`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    23 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -71793.5p |
-|      +5        | -138478.3p |
-|      +10       | -229837.0p |
-|      +20       | -467771.7p |
-
-**By approach direction**
-
-- **From above** (support test): 17 touches · 29% reversed
-- **From below** (resistance test): 29 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
-### Level 25257.00000  [session_high]  `london_high_2026-04-08`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   41% | ████████░░░░░░░░░░░░ |
-| Broke through  |    27 |   59% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +5978.3p |
-|      +5        | -146902.2p |
-|      +10       | -427010.9p |
-|      +20       | -535000.0p |
-
-**By approach direction**
-
-- **From above** (support test): 27 touches · 37% reversed
-- **From below** (resistance test): 19 touches · 47% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
-| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
-| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
-
-### Level 25579.75000  [session_low]  `london_low_2025-12-05`
-Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    26 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    20 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +11630.4p |
-|      +5        | +321195.7p |
-|      +10       | +430597.8p |
-|      +20       | +767717.4p |
-
-**By approach direction**
-
-- **From above** (support test): 35 touches · 66% reversed
-- **From below** (resistance test): 11 touches · 27% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 23:00 | from_above  | reversed      | +2280000.0p | +775000.0p | +365000.0p | +845000.0p | -595000.0p | +1302500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
-
-### Level 25255.75000  [session_low]  `london_low_2026-02-10`
+### Level 25310.00000  [prev_day_high]  `pdh_2025-11-20`
 Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -8537,29 +7417,189 @@ Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -6576.1p |
-|      +5        | -169456.5p |
-|      +10       | -448641.3p |
-|      +20       | -560054.3p |
+|      +1        | -300163.0p |
+|      +5        | -450380.4p |
+|      +10       | -656576.1p |
+|      +20       | -748206.5p |
 
 **By approach direction**
 
-- **From above** (support test): 27 touches · 41% reversed
-- **From below** (resistance test): 19 touches · 53% reversed
+- **From above** (support test): 21 touches · 38% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 02:00 | from_below  | reversed      | +5720000.0p | +1262500.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25223.25000  [prev_day_low]  `pdl_2026-02-08`
+Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   57% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -54130.4p |
+|      +5        | -272119.6p |
+|      +10       | -100815.2p |
+|      +20       | -132826.1p |
+
+**By approach direction**
+
+- **From above** (support test): 23 touches · 43% reversed
+- **From below** (resistance test): 23 touches · 43% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
 | 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
 | 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
 | 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
-| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
 | 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
-| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-10 16:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +75000.0p | -3082500.0p | -2025000.0p | +425000.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25310.00000  [session_high]  `london_high_2025-11-20`
+Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    21 |   46% | █████████░░░░░░░░░░░ |
+| Broke through  |    25 |   54% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -300163.0p |
+|      +5        | -450380.4p |
+|      +10       | -656576.1p |
+|      +20       | -748206.5p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 38% reversed
+- **From below** (resistance test): 25 touches · 52% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 02:00 | from_below  | reversed      | +5720000.0p | +1262500.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25214.00000  [session_low]  `london_low_2025-12-12`
+Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   57% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -17500.0p |
+|      +5        | -188967.4p |
+|      +10       | -196250.0p |
+|      +20       | -110543.5p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 48% reversed
+- **From below** (resistance test): 25 touches · 40% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 18:00 | from_below  | reversed      | +2622500.0p | +572500.0p | -37500.0p | +155000.0p | -1580000.0p | -1102500.0p |
+| 2026-03-05 01:00 | from_below  | reversed      | +2985000.0p | +1387500.0p | +202500.0p | +210000.0p | +225000.0p | -605000.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25233.00000  [session_low]  `london_low_2026-02-02`
+Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   43% | █████████░░░░░░░░░░░ |
+| Broke through  |    26 |   57% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -39076.1p |
+|      +5        | -368043.5p |
+|      +10       | -304837.0p |
+|      +20       | -499891.3p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 40% reversed
+- **From below** (resistance test): 21 touches · 48% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-04-08 09:00 | from_below  | reversed      | +2735000.0p | +570000.0p | +45000.0p | -2070000.0p | -1202500.0p | -1610000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 16:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +75000.0p | -3082500.0p | -2025000.0p | +425000.0p |
 | 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24752.00000  [session_low]  `london_low_2026-02-18`
@@ -8602,6 +7642,406 @@ Touches: **46**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
+### Level 25739.75000  [prev_day_high]  `pdh_2026-01-22`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    23 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -78888.9p |
+|      +5        | -93944.4p |
+|      +10       | -163166.7p |
+|      +20       | -390333.3p |
+
+**By approach direction**
+
+- **From above** (support test): 17 touches · 29% reversed
+- **From below** (resistance test): 28 touches · 61% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+
+### Level 25222.00000  [prev_day_high]  `pdh_2026-02-06`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   58% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -40500.0p |
+|      +5        | -139944.4p |
+|      +10       | -59777.8p |
+|      +20       | -114111.1p |
+
+**By approach direction**
+
+- **From above** (support test): 23 touches · 48% reversed
+- **From below** (resistance test): 22 touches · 36% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25294.50000  [prev_day_high]  `pdh_2026-02-08`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   58% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -260555.6p |
+|      +5        | -511222.2p |
+|      +10       | -602888.9p |
+|      +20       | -766833.3p |
+
+**By approach direction**
+
+- **From above** (support test): 23 touches · 35% reversed
+- **From below** (resistance test): 22 touches · 50% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 02:00 | from_above  | broke_through | +1262500.0p | +5720000.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 05:00 | from_above  | broke_through | +1072500.0p | +4462500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 01:00 | from_below  | reversed      | +3567500.0p | +1080000.0p | -120000.0p | -567500.0p | -162500.0p | -3287500.0p |
+| 2026-04-10 11:00 | from_below  | reversed      | +3467500.0p | +1242500.0p | +357500.0p | -42500.0p | -3125000.0p | -1710000.0p |
+| 2026-04-10 19:00 | from_below  | reversed      | +3622500.0p | +1507500.0p | -30000.0p | -2012500.0p | -1687500.0p | +1265000.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25250.00000  [prev_day_high]  `pdh_2026-03-05`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    23 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    22 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -73166.7p |
+|      +5        | -232611.1p |
+|      +10       | -449444.4p |
+|      +20       | -551333.3p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 48% reversed
+- **From below** (resistance test): 20 touches · 55% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25217.50000  [prev_day_high]  `pdh_2026-03-10`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   58% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -85055.6p |
+|      +5        | -253888.9p |
+|      +10       | -250888.9p |
+|      +20       | -133555.6p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 48% reversed
+- **From below** (resistance test): 24 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 19:00 | from_below  | reversed      | +2585000.0p | +610000.0p | -675000.0p | -1180000.0p | -970000.0p | -1465000.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25304.00000  [prev_day_low]  `pdl_2025-11-27`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    21 |   47% | █████████░░░░░░░░░░░ |
+| Broke through  |    24 |   53% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -353222.2p |
+|      +5        | -494833.3p |
+|      +10       | -580000.0p |
+|      +20       | -744666.7p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 38% reversed
+- **From below** (resistance test): 24 touches · 54% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 02:00 | from_below  | reversed      | +5720000.0p | +1262500.0p | +165000.0p | +575000.0p | +632500.0p | -4695000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 05:00 | from_below  | reversed      | +4462500.0p | +1072500.0p | +195000.0p | +485000.0p | -3092500.0p | -2762500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25331.00000  [prev_day_low]  `pdl_2025-11-28`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    23 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -230166.7p |
+|      +5        | -368277.8p |
+|      +10       | -457500.0p |
+|      +20       | -621277.8p |
+
+**By approach direction**
+
+- **From above** (support test): 17 touches · 35% reversed
+- **From below** (resistance test): 28 touches · 57% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
+| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25324.75000  [prev_day_low]  `pdl_2025-12-02`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   44% | █████████░░░░░░░░░░░ |
+| Broke through  |    25 |   56% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -146333.3p |
+|      +5        | -293166.7p |
+|      +10       | -381333.3p |
+|      +20       | -495722.2p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 39% reversed
+- **From below** (resistance test): 27 touches · 48% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
+| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25579.75000  [prev_day_low]  `pdl_2025-12-05`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +58555.6p |
+|      +5        | +352500.0p |
+|      +10       | +482611.1p |
+|      +20       | +850055.6p |
+
+**By approach direction**
+
+- **From above** (support test): 34 touches · 68% reversed
+- **From below** (resistance test): 11 touches · 27% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-22 23:00 | from_above  | reversed      | +2280000.0p | +775000.0p | +365000.0p | +845000.0p | -595000.0p | +1302500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
+
+### Level 25219.00000  [prev_day_low]  `pdl_2026-02-03`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   58% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -59777.8p |
+|      +5        | -146888.9p |
+|      +10       | -74388.9p |
+|      +20       | -164777.8p |
+
+**By approach direction**
+
+- **From above** (support test): 23 touches · 48% reversed
+- **From below** (resistance test): 22 touches · 36% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
 ### Level 24749.00000  [prev_day_low]  `pdl_2026-02-19`
 Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -8642,165 +8082,485 @@ Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25572.25000  [prev_day_high]  `pdh_2026-01-25`
-Touches: **43**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25250.00000  [prev_week_high]  `pwh_2026_w10`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    25 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    18 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    23 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    22 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -94127.9p |
-|      +5        | +301744.2p |
-|      +10       | +477325.6p |
-|      +20       | +737209.3p |
+|      +1        | -73166.7p |
+|      +5        | -232611.1p |
+|      +10       | -449444.4p |
+|      +20       | -551333.3p |
 
 **By approach direction**
 
-- **From above** (support test): 32 touches · 69% reversed
+- **From above** (support test): 25 touches · 48% reversed
+- **From below** (resistance test): 20 touches · 55% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-05 00:00 | from_below  | reversed      | +4357500.0p | +92500.0p | -1372500.0p | -1735000.0p | -1020000.0p | -1597500.0p |
+| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25217.50000  [prev_week_high]  `pwh_2026_w11`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   58% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -85055.6p |
+|      +5        | -253888.9p |
+|      +10       | -250888.9p |
+|      +20       | -133555.6p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 48% reversed
+- **From below** (resistance test): 24 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 19:00 | from_below  | reversed      | +2585000.0p | +610000.0p | -675000.0p | -1180000.0p | -970000.0p | -1465000.0p |
+| 2026-03-10 17:00 | from_below  | reversed      | +2745000.0p | +107500.0p | -1402500.0p | -1542500.0p | -795000.0p | -1052500.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25739.75000  [session_high]  `london_high_2026-01-22`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    23 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -78888.9p |
+|      +5        | -93944.4p |
+|      +10       | -163166.7p |
+|      +20       | -390333.3p |
+
+**By approach direction**
+
+- **From above** (support test): 17 touches · 29% reversed
+- **From below** (resistance test): 28 touches · 61% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 08:00 | from_below  | broke_through | +1455000.0p | +2822500.0p | -1092500.0p | -112500.0p | +1712500.0p | +2807500.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 17:00 | from_above  | broke_through | +1200000.0p | +4992500.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+
+### Level 25329.00000  [session_high]  `london_high_2026-02-09`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   44% | █████████░░░░░░░░░░░ |
+| Broke through  |    25 |   56% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -187833.3p |
+|      +5        | -331388.9p |
+|      +10       | -405111.1p |
+|      +20       | -518611.1p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 39% reversed
+- **From below** (resistance test): 27 touches · 48% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
+| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25331.00000  [session_low]  `london_low_2025-11-28`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    23 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -230166.7p |
+|      +5        | -368277.8p |
+|      +10       | -457500.0p |
+|      +20       | -621277.8p |
+
+**By approach direction**
+
+- **From above** (support test): 17 touches · 35% reversed
+- **From below** (resistance test): 28 touches · 57% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
+| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25324.75000  [session_low]  `london_low_2025-12-02`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   44% | █████████░░░░░░░░░░░ |
+| Broke through  |    25 |   56% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -146333.3p |
+|      +5        | -293166.7p |
+|      +10       | -381333.3p |
+|      +20       | -495722.2p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 39% reversed
+- **From below** (resistance test): 27 touches · 48% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
+| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-10 20:00 | from_below  | reversed      | +3592500.0p | +1582500.0p | -3250000.0p | -2040000.0p | -1797500.0p | +1227500.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25579.75000  [session_low]  `london_low_2025-12-05`
+Touches: **45**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    19 |   42% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +58555.6p |
+|      +5        | +352500.0p |
+|      +10       | +482611.1p |
+|      +20       | +850055.6p |
+
+**By approach direction**
+
+- **From above** (support test): 34 touches · 68% reversed
 - **From below** (resistance test): 11 touches · 27% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-22 23:00 | from_above  | reversed      | +2280000.0p | +775000.0p | +365000.0p | +845000.0p | -595000.0p | +1302500.0p |
 | 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-26 00:00 | from_below  | broke_through | +107500.0p | +3545000.0p | +675000.0p | +920000.0p | +692500.0p | +2625000.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
 | 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
 | 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 05:00 | from_above  | reversed      | +4682500.0p | +97500.0p | +105000.0p | +515000.0p | +3015000.0p | +4217500.0p |
+| 2026-04-14 03:00 | from_above  | reversed      | +4507500.0p | +202500.0p | +90000.0p | +777500.0p | +1375000.0p | +4340000.0p |
 
-### Level 25571.75000  [prev_day_high]  `pdh_2026-02-01`
-Touches: **43**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25339.25000  [prev_day_high]  `pdh_2025-11-27`
+Touches: **44**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    25 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    18 |   42% | ████████░░░░░░░░░░░░ |
+| Reversed       |    23 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    21 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -94127.9p |
-|      +5        | +301744.2p |
-|      +10       | +477325.6p |
-|      +20       | +737209.3p |
+|      +1        | -156079.5p |
+|      +5        | -306363.6p |
+|      +10       | -461761.4p |
+|      +20       | -656761.4p |
 
 **By approach direction**
 
-- **From above** (support test): 32 touches · 69% reversed
-- **From below** (resistance test): 11 touches · 27% reversed
+- **From above** (support test): 17 touches · 41% reversed
+- **From below** (resistance test): 27 touches · 59% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 05:00 | from_above  | reversed      | +4682500.0p | +97500.0p | +105000.0p | +515000.0p | +3015000.0p | +4217500.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 04:00 | from_below  | reversed      | +6187500.0p | +912500.0p | +85000.0p | +272500.0p | -1220000.0p | -5415000.0p |
+| 2026-02-12 10:00 | from_above  | broke_through | +700000.0p | +7075000.0p | +167500.0p | -3395000.0p | -5870000.0p | -6027500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 06:00 | from_below  | reversed      | +4657500.0p | +877500.0p | +197500.0p | +345000.0p | -3640000.0p | -3027500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
 
-### Level 25569.00000  [prev_day_low]  `pdl_2026-01-08`
-Touches: **43**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25217.75000  [prev_day_high]  `pdh_2026-03-04`
+Touches: **44**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    24 |   56% | ███████████░░░░░░░░░ |
-| Broke through  |    19 |   44% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    18 |   41% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   59% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -111918.6p |
-|      +5        | +290232.6p |
-|      +10       | +481046.5p |
-|      +20       | +725348.8p |
+|      +1        | -55113.6p |
+|      +5        | -224602.3p |
+|      +10       | -238522.7p |
+|      +20       | -112670.5p |
 
 **By approach direction**
 
-- **From above** (support test): 32 touches · 69% reversed
-- **From below** (resistance test): 11 touches · 18% reversed
+- **From above** (support test): 21 touches · 48% reversed
+- **From below** (resistance test): 23 touches · 35% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
+| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-03-04 19:00 | from_below  | reversed      | +2585000.0p | +610000.0p | -675000.0p | -1180000.0p | -970000.0p | -1465000.0p |
+| 2026-04-08 08:00 | from_below  | reversed      | +2887500.0p | +417500.0p | -152500.0p | -1345000.0p | -2620000.0p | -1867500.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-09 23:00 | from_below  | broke_through | +212500.0p | +1690000.0p | +467500.0p | +452500.0p | +350000.0p | +602500.0p |
+| 2026-04-10 08:00 | from_above  | broke_through | +1835000.0p | +2875000.0p | +495000.0p | +1110000.0p | +512500.0p | -1297500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
-### Level 25569.00000  [session_low]  `london_low_2026-01-08`
-Touches: **43**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25257.00000  [prev_day_high]  `pdh_2026-04-08`
+Touches: **44**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    24 |   56% | ███████████░░░░░░░░░ |
-| Broke through  |    19 |   44% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    18 |   41% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   59% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -111918.6p |
-|      +5        | +290232.6p |
-|      +10       | +481046.5p |
-|      +20       | +725348.8p |
+|      +1        | -19375.0p |
+|      +5        | -186306.8p |
+|      +10       | -436363.6p |
+|      +20       | -506363.6p |
 
 **By approach direction**
 
-- **From above** (support test): 32 touches · 69% reversed
-- **From below** (resistance test): 11 touches · 18% reversed
+- **From above** (support test): 25 touches · 36% reversed
+- **From below** (resistance test): 19 touches · 47% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
-| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
+| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25257.00000  [session_high]  `london_high_2026-04-08`
+Touches: **44**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   41% | ████████░░░░░░░░░░░░ |
+| Broke through  |    26 |   59% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -19375.0p |
+|      +5        | -186306.8p |
+|      +10       | -436363.6p |
+|      +20       | -506363.6p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 36% reversed
+- **From below** (resistance test): 19 touches · 47% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
+
+### Level 25255.75000  [session_low]  `london_low_2026-02-10`
+Touches: **44**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   45% | █████████░░░░░░░░░░░ |
+| Broke through  |    24 |   55% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -32500.0p |
+|      +5        | -209886.4p |
+|      +10       | -458977.3p |
+|      +20       | -532556.8p |
+
+**By approach direction**
+
+- **From above** (support test): 25 touches · 40% reversed
+- **From below** (resistance test): 19 touches · 53% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 23:00 | from_above  | broke_through | +1845000.0p | +4350000.0p | +300000.0p | +932500.0p | +1205000.0p | -3367500.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 14:00 | from_below  | broke_through | +795000.0p | +1507500.0p | -487500.0p | +247500.0p | -277500.0p | +180000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-08 12:00 | from_below  | reversed      | +2862500.0p | +370000.0p | -1320000.0p | -1185000.0p | -1867500.0p | -1965000.0p |
+| 2026-04-09 16:00 | from_below  | broke_through | +515000.0p | +1895000.0p | +302500.0p | +102500.0p | +950000.0p | +1240000.0p |
+| 2026-04-10 00:00 | from_below  | broke_through | +680000.0p | +1222500.0p | +142500.0p | -77500.0p | +5000.0p | +105000.0p |
+| 2026-04-10 06:00 | from_above  | broke_through | +1647500.0p | +3062500.0p | +137500.0p | +405000.0p | +362500.0p | -1662500.0p |
+| 2026-04-10 15:00 | from_above  | broke_through | +735000.0p | +3425000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 13:00 | from_below  | broke_through | +615000.0p | +3670000.0p | +447500.0p | +1382500.0p | +2832500.0p | +3187500.0p |
 
 ### Level 24738.75000  [session_low]  `london_low_2026-02-23`
 Touches: **43**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -8882,7 +8642,7 @@ Touches: **43**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25568.75000  [prev_day_low]  `pdl_2026-01-30`
+### Level 25572.25000  [prev_day_high]  `pdh_2026-01-25`
 Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -8897,15 +8657,95 @@ Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -111488.1p |
-|      +5        | +297440.5p |
-|      +10       | +492559.5p |
-|      +20       | +727261.9p |
+|      +1        | -46369.0p |
+|      +5        | +334821.4p |
+|      +10       | +534166.7p |
+|      +20       | +824702.4p |
 
 **By approach direction**
 
-- **From above** (support test): 32 touches · 72% reversed
-- **From below** (resistance test): 10 touches · 20% reversed
+- **From above** (support test): 31 touches · 71% reversed
+- **From below** (resistance test): 11 touches · 27% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 05:00 | from_above  | reversed      | +4682500.0p | +97500.0p | +105000.0p | +515000.0p | +3015000.0p | +4217500.0p |
+
+### Level 25571.75000  [prev_day_high]  `pdh_2026-02-01`
+Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    25 |   60% | ████████████░░░░░░░░ |
+| Broke through  |    17 |   40% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -46369.0p |
+|      +5        | +334821.4p |
+|      +10       | +534166.7p |
+|      +20       | +824702.4p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 71% reversed
+- **From below** (resistance test): 11 touches · 27% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 05:00 | from_above  | reversed      | +4682500.0p | +97500.0p | +105000.0p | +515000.0p | +3015000.0p | +4217500.0p |
+
+### Level 25569.00000  [prev_day_low]  `pdl_2026-01-08`
+Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    24 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    18 |   43% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -64583.3p |
+|      +5        | +323035.7p |
+|      +10       | +537976.2p |
+|      +20       | +812559.5p |
+
+**By approach direction**
+
+- **From above** (support test): 31 touches · 71% reversed
+- **From below** (resistance test): 11 touches · 18% reversed
 
 **Touch log** (most recent 10)
 
@@ -8962,7 +8802,7 @@ Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25745.75000  [session_high]  `london_high_2025-12-10`
+### Level 25569.00000  [session_low]  `london_low_2026-01-08`
 Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -8977,30 +8817,30 @@ Touches: **42**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -114881.0p |
-|      +5        | -203154.8p |
-|      +10       | -319226.2p |
-|      +20       | -708214.3p |
+|      +1        | -64583.3p |
+|      +5        | +323035.7p |
+|      +10       | +537976.2p |
+|      +20       | +812559.5p |
 
 **By approach direction**
 
-- **From above** (support test): 16 touches · 31% reversed
-- **From below** (resistance test): 26 touches · 73% reversed
+- **From above** (support test): 31 touches · 71% reversed
+- **From below** (resistance test): 11 touches · 18% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
 
 ### Level 24731.75000  [prev_day_low]  `pdl_2025-11-17`
 Touches: **41**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -9042,125 +8882,85 @@ Touches: **41**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25564.75000  [prev_day_low]  `pdl_2025-12-08`
+### Level 25568.75000  [prev_day_low]  `pdl_2026-01-30`
 Touches: **41**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    26 |   63% | █████████████░░░░░░░ |
-| Broke through  |    15 |   37% | ███████░░░░░░░░░░░░░ |
+| Reversed       |    25 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    16 |   39% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -34451.2p |
-|      +5        | +378780.5p |
-|      +10       | +569878.0p |
-|      +20       | +736829.3p |
+|      +1        | -62987.8p |
+|      +5        | +331219.5p |
+|      +10       | +551158.5p |
+|      +20       | +816646.3p |
 
 **By approach direction**
 
-- **From above** (support test): 31 touches · 77% reversed
+- **From above** (support test): 31 touches · 74% reversed
 - **From below** (resistance test): 10 touches · 20% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
 | 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
 | 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-01-30 18:00 | from_above  | broke_through | +1712500.0p | +5607500.0p | -825000.0p | -1355000.0p | -4902500.0p | +995000.0p |
+| 2026-02-02 01:00 | from_above  | reversed      | +5422500.0p | +2270000.0p | -395000.0p | -1752500.0p | +450000.0p | +4660000.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
 | 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
 | 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
 
-### Level 25354.75000  [prev_day_high]  `pdh_2025-11-07`
-Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25745.75000  [session_high]  `london_high_2025-12-10`
+Touches: **41**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    23 |   57% | ████████████░░░░░░░░ |
-| Broke through  |    17 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    23 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    18 |   44% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -331875.0p |
-|      +5        | -532625.0p |
-|      +10       | -749687.5p |
-|      +20       | -851812.5p |
+|      +1        | -123719.5p |
+|      +5        | -155853.7p |
+|      +10       | -248231.7p |
+|      +20       | -629085.4p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 33% reversed
+- **From above** (support test): 16 touches · 31% reversed
 - **From below** (resistance test): 25 touches · 72% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 07:00 | from_below  | reversed      | +6412500.0p | +687500.0p | +25000.0p | +57500.0p | -5257500.0p | -5885000.0p |
-| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
-
-### Level 25357.50000  [prev_day_high]  `pdh_2025-11-09`
-Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    24 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    16 |   40% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -346187.5p |
-|      +5        | -485875.0p |
-|      +10       | -549625.0p |
-|      +20       | -771750.0p |
-
-**By approach direction**
-
-- **From above** (support test): 13 touches · 38% reversed
-- **From below** (resistance test): 27 touches · 70% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 07:00 | from_below  | reversed      | +6412500.0p | +687500.0p | +25000.0p | +57500.0p | -5257500.0p | -5885000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
 
 ### Level 24725.25000  [prev_day_high]  `pdh_2026-03-19`
 Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -9201,6 +9001,46 @@ Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-19 02:00 | from_below  | reversed      | +3690000.0p | +192500.0p | -267500.0p | -1385000.0p | -2490000.0p | -757500.0p |
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
+
+### Level 25564.75000  [prev_day_low]  `pdl_2025-12-08`
+Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    26 |   65% | █████████████░░░░░░░ |
+| Broke through  |    14 |   35% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +17187.5p |
+|      +5        | +415437.5p |
+|      +10       | +631875.0p |
+|      +20       | +828687.5p |
+
+**By approach direction**
+
+- **From above** (support test): 30 touches · 80% reversed
+- **From below** (resistance test): 10 touches · 20% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
 
 ### Level 24721.50000  [prev_day_low]  `pdl_2026-02-12`
 Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -9282,29 +9122,29 @@ Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25354.75000  [session_high]  `london_high_2025-11-07`
-Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25354.75000  [prev_day_high]  `pdh_2025-11-07`
+Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    23 |   57% | ████████████░░░░░░░░ |
-| Broke through  |    17 |   42% | ████████░░░░░░░░░░░░ |
+| Reversed       |    23 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    16 |   41% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -331875.0p |
-|      +5        | -532625.0p |
-|      +10       | -749687.5p |
-|      +20       | -851812.5p |
+|      +1        | -319230.8p |
+|      +5        | -535000.0p |
+|      +10       | -760833.3p |
+|      +20       | -842179.5p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 33% reversed
+- **From above** (support test): 14 touches · 36% reversed
 - **From below** (resistance test): 25 touches · 72% reversed
 
 **Touch log** (most recent 10)
@@ -9322,14 +9162,14 @@ Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
 | 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
 
-### Level 25564.50000  [session_low]  `london_low_2026-04-14`
-Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25357.50000  [prev_day_high]  `pdh_2025-11-09`
+Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    25 |   62% | ████████████░░░░░░░░ |
+| Reversed       |    24 |   62% | ████████████░░░░░░░░ |
 | Broke through  |    15 |   38% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
@@ -9337,150 +9177,30 @@ Touches: **40**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -35125.0p |
-|      +5        | +356437.5p |
-|      +10       | +566375.0p |
-|      +20       | +732250.0p |
+|      +1        | -333910.3p |
+|      +5        | -487051.3p |
+|      +10       | -555641.0p |
+|      +20       | -760064.1p |
 
 **By approach direction**
 
-- **From above** (support test): 30 touches · 77% reversed
-- **From below** (resistance test): 10 touches · 20% reversed
+- **From above** (support test): 12 touches · 42% reversed
+- **From below** (resistance test): 27 touches · 70% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-| 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
-
-### Level 25560.00000  [prev_day_low]  `pdl_2025-12-09`
-Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   64% | █████████████░░░░░░░ |
-| Broke through  |    14 |   36% | ███████░░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -2307.7p |
-|      +5        | +330833.3p |
-|      +10       | +524871.8p |
-|      +20       | +702948.7p |
-
-**By approach direction**
-
-- **From above** (support test): 30 touches · 77% reversed
-- **From below** (resistance test): 9 touches · 22% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-
-### Level 25781.00000  [prev_day_low]  `pdl_2025-12-24`
-Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    21 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -165064.1p |
-|      +5        | -236346.2p |
-|      +10       | -589615.4p |
-|      +20       | -774230.8p |
-
-**By approach direction**
-
-- **From above** (support test): 16 touches · 38% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25562.50000  [prev_day_low]  `pdl_2026-01-15`
-Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   64% | █████████████░░░░░░░ |
-| Broke through  |    14 |   36% | ███████░░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -44551.3p |
-|      +5        | +344551.3p |
-|      +10       | +496474.4p |
-|      +20       | +638653.8p |
-
-**By approach direction**
-
-- **From above** (support test): 30 touches · 77% reversed
-- **From below** (resistance test): 9 touches · 22% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 07:00 | from_below  | reversed      | +6412500.0p | +687500.0p | +25000.0p | +57500.0p | -5257500.0p | -5885000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
 
 ### Level 24728.25000  [prev_day_low]  `pdl_2026-03-17`
 Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -9522,110 +9242,30 @@ Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25560.00000  [prev_day_low]  `pdl_2026-04-14`
+### Level 25357.50000  [prev_week_high]  `pwh_2025_w45`
 Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    25 |   64% | █████████████░░░░░░░ |
-| Broke through  |    14 |   36% | ███████░░░░░░░░░░░░░ |
+| Reversed       |    24 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    15 |   38% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -2307.7p |
-|      +5        | +330833.3p |
-|      +10       | +524871.8p |
-|      +20       | +702948.7p |
+|      +1        | -333910.3p |
+|      +5        | -487051.3p |
+|      +10       | -555641.0p |
+|      +20       | -760064.1p |
 
 **By approach direction**
 
-- **From above** (support test): 30 touches · 77% reversed
-- **From below** (resistance test): 9 touches · 22% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-
-### Level 25560.00000  [session_low]  `london_low_2025-12-09`
-Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    25 |   64% | █████████████░░░░░░░ |
-| Broke through  |    14 |   36% | ███████░░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -2307.7p |
-|      +5        | +330833.3p |
-|      +10       | +524871.8p |
-|      +20       | +702948.7p |
-
-**By approach direction**
-
-- **From above** (support test): 30 touches · 77% reversed
-- **From below** (resistance test): 9 touches · 22% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
-
-### Level 25360.50000  [session_low]  `london_low_2026-01-02`
-Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    21 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -311923.1p |
-|      +5        | -458653.8p |
-|      +10       | -505128.2p |
-|      +20       | -859679.5p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 33% reversed
-- **From below** (resistance test): 24 touches · 67% reversed
+- **From above** (support test): 12 touches · 42% reversed
+- **From below** (resistance test): 27 touches · 70% reversed
 
 **Touch log** (most recent 10)
 
@@ -9633,8 +9273,8 @@ Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
-| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-12 07:00 | from_below  | reversed      | +6412500.0p | +687500.0p | +25000.0p | +57500.0p | -5257500.0p | -5885000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
 | 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
 | 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
 | 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
@@ -9642,125 +9282,85 @@ Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
 | 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
 
-### Level 25768.75000  [prev_day_high]  `pdh_2025-11-11`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25354.75000  [session_high]  `london_high_2025-11-07`
+Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    18 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    20 |   53% | ███████████░░░░░░░░░ |
+| Reversed       |    23 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    16 |   41% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -205526.3p |
-|      +5        | -294802.6p |
-|      +10       | -717894.7p |
-|      +20       | -933552.6p |
+|      +1        | -319230.8p |
+|      +5        | -535000.0p |
+|      +10       | -760833.3p |
+|      +20       | -842179.5p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 20% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
+- **From above** (support test): 14 touches · 36% reversed
+- **From below** (resistance test): 25 touches · 72% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25361.25000  [prev_day_high]  `pdh_2025-11-17`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -301776.3p |
-|      +5        | -535723.7p |
-|      +10       | -587565.8p |
-|      +20       | -807697.4p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 33% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-10 14:00 | from_above  | broke_through | +550000.0p | +2460000.0p | -172500.0p | -977500.0p | -760000.0p | -1832500.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 07:00 | from_below  | reversed      | +6412500.0p | +687500.0p | +25000.0p | +57500.0p | -5257500.0p | -5885000.0p |
+| 2026-02-12 13:00 | from_above  | broke_through | +45000.0p | +7535000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
 | 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
 | 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
 | 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
-| 2026-02-26 13:00 | from_above  | broke_through | +150000.0p | +5220000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
 | 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
 
-### Level 25793.75000  [prev_day_high]  `pdh_2025-12-30`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25564.50000  [session_low]  `london_low_2026-04-14`
+Touches: **39**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    23 |   61% | ████████████░░░░░░░░ |
-| Broke through  |    15 |   39% | ████████░░░░░░░░░░░░ |
+| Reversed       |    25 |   64% | █████████████░░░░░░░ |
+| Broke through  |    14 |   36% | ███████░░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -216184.2p |
-|      +5        | -327828.9p |
-|      +10       | -706513.2p |
-|      +20       | -729473.7p |
+|      +1        | +17820.5p |
+|      +5        | +393461.5p |
+|      +10       | +629871.8p |
+|      +20       | +826346.2p |
 
 **By approach direction**
 
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 26 touches · 69% reversed
+- **From above** (support test): 29 touches · 79% reversed
+- **From below** (resistance test): 10 touches · 20% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-01-30 17:00 | from_below  | reversed      | +4992500.0p | +1200000.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+| 2026-04-14 06:00 | from_above  | reversed      | +4577500.0p | +32500.0p | +332500.0p | +820000.0p | +3292500.0p | +4382500.0p |
 
 ### Level 24709.25000  [prev_day_low]  `pdl_2025-11-07`
 Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -9802,47 +9402,47 @@ Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25383.00000  [prev_day_low]  `pdl_2025-12-11`
+### Level 25560.00000  [prev_day_low]  `pdl_2025-12-09`
 Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    21 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    17 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    25 |   66% | █████████████░░░░░░░ |
+| Broke through  |    13 |   34% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -170789.5p |
-|      +5        | -620526.3p |
-|      +10       | -514934.2p |
-|      +20       | -444407.9p |
+|      +1        | +52894.7p |
+|      +5        | +368157.9p |
+|      +10       | +588947.4p |
+|      +20       | +798750.0p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 40% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
+- **From above** (support test): 29 touches · 79% reversed
+- **From below** (resistance test): 9 touches · 22% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 12:00 | from_below  | reversed      | +7145000.0p | +630000.0p | +390000.0p | -5315000.0p | -5327500.0p | -5827500.0p |
-| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
 
-### Level 25361.25000  [prev_week_high]  `pwh_2025_w47`
+### Level 25781.00000  [prev_day_low]  `pdl_2025-12-24`
 Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -9857,30 +9457,110 @@ Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -301776.3p |
-|      +5        | -535723.7p |
-|      +10       | -587565.8p |
-|      +20       | -807697.4p |
+|      +1        | -165855.3p |
+|      +5        | -126184.2p |
+|      +10       | -481973.7p |
+|      +20       | -671907.9p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 33% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
+- **From above** (support test): 16 touches · 38% reversed
+- **From below** (resistance test): 22 touches · 64% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-10 14:00 | from_above  | broke_through | +550000.0p | +2460000.0p | -172500.0p | -977500.0p | -760000.0p | -1832500.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
-| 2026-02-26 13:00 | from_above  | broke_through | +150000.0p | +5220000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+
+### Level 25562.50000  [prev_day_low]  `pdl_2026-01-15`
+Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    25 |   66% | █████████████░░░░░░░ |
+| Broke through  |    13 |   34% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +9539.5p |
+|      +5        | +382236.8p |
+|      +10       | +559802.6p |
+|      +20       | +732763.2p |
+
+**By approach direction**
+
+- **From above** (support test): 29 touches · 79% reversed
+- **From below** (resistance test): 9 touches · 22% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+
+### Level 25560.00000  [prev_day_low]  `pdl_2026-04-14`
+Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    25 |   66% | █████████████░░░░░░░ |
+| Broke through  |    13 |   34% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +52894.7p |
+|      +5        | +368157.9p |
+|      +10       | +588947.4p |
+|      +20       | +798750.0p |
+
+**By approach direction**
+
+- **From above** (support test): 29 touches · 79% reversed
+- **From below** (resistance test): 9 touches · 22% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
 
 ### Level 24709.25000  [prev_week_low]  `pwl_2025_w45`
 Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -9922,29 +9602,149 @@ Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25361.25000  [session_high]  `london_high_2025-11-17`
+### Level 25560.00000  [session_low]  `london_low_2025-12-09`
 Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    20 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    25 |   66% | █████████████░░░░░░░ |
+| Broke through  |    13 |   34% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +52894.7p |
+|      +5        | +368157.9p |
+|      +10       | +588947.4p |
+|      +20       | +798750.0p |
+
+**By approach direction**
+
+- **From above** (support test): 29 touches · 79% reversed
+- **From below** (resistance test): 9 touches · 22% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 14:00 | from_above  | reversed      | +1535000.0p | +412500.0p | +280000.0p | +617500.0p | +1087500.0p | +287500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 20:00 | from_below  | broke_through | +255000.0p | +3837500.0p | +85000.0p | +110000.0p | +325000.0p | +3725000.0p |
+
+### Level 25360.50000  [session_low]  `london_low_2026-01-02`
+Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    21 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    17 |   45% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -301776.3p |
-|      +5        | -535723.7p |
-|      +10       | -587565.8p |
-|      +20       | -807697.4p |
+|      +1        | -298421.1p |
+|      +5        | -459144.7p |
+|      +10       | -510131.6p |
+|      +20       | -850000.0p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 33% reversed
+- **From above** (support test): 14 touches · 36% reversed
+- **From below** (resistance test): 24 touches · 67% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-11 19:00 | from_below  | reversed      | +5032500.0p | +1107500.0p | -307500.0p | -80000.0p | +107500.0p | -4305000.0p |
+| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25768.75000  [prev_day_high]  `pdh_2025-11-11`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   46% | █████████░░░░░░░░░░░ |
+| Broke through  |    20 |   54% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -209864.9p |
+|      +5        | -181418.9p |
+|      +10       | -604054.1p |
+|      +20       | -843513.5p |
+
+**By approach direction**
+
+- **From above** (support test): 15 touches · 20% reversed
+- **From below** (resistance test): 22 touches · 64% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+
+### Level 25361.25000  [prev_day_high]  `pdh_2025-11-17`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    17 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -287635.1p |
+|      +5        | -538310.8p |
+|      +10       | -594932.4p |
+|      +20       | -796351.4p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 36% reversed
 - **From below** (resistance test): 23 touches · 65% reversed
 
 **Touch log** (most recent 10)
@@ -9962,350 +9762,30 @@ Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25751.25000  [session_high]  `london_high_2025-12-23`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    19 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -175000.0p |
-|      +5        | -303618.4p |
-|      +10       | -452434.2p |
-|      +20       | -768552.6p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 20% reversed
-- **From below** (resistance test): 23 touches · 70% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
-### Level 25774.75000  [session_high]  `london_high_2025-12-30`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -179210.5p |
-|      +5        | -280263.2p |
-|      +10       | -688750.0p |
-|      +20       | -917039.5p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 29% reversed
-- **From below** (resistance test): 24 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25779.00000  [session_high]  `london_high_2026-01-06`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -177763.2p |
-|      +5        | -231052.6p |
-|      +10       | -580723.7p |
-|      +20       | -834276.3p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 33% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25386.00000  [session_high]  `london_high_2026-04-10`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    22 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    16 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -207236.8p |
-|      +5        | -573881.6p |
-|      +10       | -517171.1p |
-|      +20       | -435723.7p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 43% reversed
-- **From below** (resistance test): 24 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_below  | reversed      | +3312500.0p | +177500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25360.75000  [session_high]  `london_high_2026-04-13`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    18 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -312039.5p |
-|      +5        | -468618.4p |
-|      +10       | -521250.0p |
-|      +20       | -769013.2p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 33% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-10 14:00 | from_above  | broke_through | +550000.0p | +2460000.0p | -172500.0p | -977500.0p | -760000.0p | -1832500.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
-| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
-| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
-| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
-| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
-
-### Level 25390.25000  [session_low]  `london_low_2025-12-11`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    22 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    16 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -134802.6p |
-|      +5        | -427763.2p |
-|      +10       | -494868.4p |
-|      +20       | -407105.3p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 47% reversed
-- **From below** (resistance test): 23 touches · 65% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_below  | reversed      | +3312500.0p | +177500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 15:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25784.00000  [session_low]  `london_low_2025-12-24`
-Touches: **38**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    22 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    16 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -136578.9p |
-|      +5        | -242236.8p |
-|      +10       | -601776.3p |
-|      +20       | -775394.7p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 43% reversed
-- **From below** (resistance test): 24 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25376.00000  [prev_day_high]  `pdh_2025-11-26`
+### Level 25793.75000  [prev_day_high]  `pdh_2025-12-30`
 Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    18 |   49% | ██████████░░░░░░░░░░ |
+| Reversed       |    22 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    15 |   41% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -225135.1p |
-|      +5        | -598918.9p |
-|      +10       | -491418.9p |
-|      +20       | -619054.1p |
-
-**By approach direction**
-
-- **From above** (support test): 13 touches · 31% reversed
-- **From below** (resistance test): 24 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 12:00 | from_below  | reversed      | +7145000.0p | +630000.0p | +390000.0p | -5315000.0p | -5327500.0p | -5827500.0p |
-| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25794.75000  [prev_day_high]  `pdh_2025-12-22`
-Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   62% | ████████████░░░░░░░░ |
-| Broke through  |    14 |   38% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -243243.2p |
-|      +5        | -386824.3p |
-|      +10       | -721351.4p |
-|      +20       | -775337.8p |
+|      +1        | -153648.6p |
+|      +5        | -218918.9p |
+|      +10       | -604189.2p |
+|      +20       | -612432.4p |
 
 **By approach direction**
 
 - **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 25 touches · 72% reversed
+- **From below** (resistance test): 25 touches · 68% reversed
 
 **Touch log** (most recent 10)
 
@@ -10322,7 +9802,7 @@ Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
-### Level 25393.00000  [prev_day_high]  `pdh_2026-04-10`
+### Level 25383.00000  [prev_day_low]  `pdl_2025-12-11`
 Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -10337,70 +9817,30 @@ Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -99594.6p |
-|      +5        | -463445.9p |
-|      +10       | -444932.4p |
-|      +20       | -363243.2p |
+|      +1        | -153108.1p |
+|      +5        | -625405.4p |
+|      +10       | -520337.8p |
+|      +20       | -423243.2p |
 
 **By approach direction**
 
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 24 touches · 62% reversed
+- **From above** (support test): 14 touches · 43% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 16:00 | from_below  | reversed      | +1125000.0p | +377500.0p | -357500.0p | -295000.0p | -907500.0p | -182500.0p |
 | 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
 | 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-12 12:00 | from_below  | reversed      | +7145000.0p | +630000.0p | +390000.0p | -5315000.0p | -5327500.0p | -5827500.0p |
 | 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
-| 2026-02-26 09:00 | from_below  | reversed      | +5167500.0p | +367500.0p | -220000.0p | -1855000.0p | -3155000.0p | -3465000.0p |
-| 2026-04-10 15:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25803.25000  [prev_day_low]  `pdl_2026-01-13`
-Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   51% | ██████████░░░░░░░░░░ |
-| Broke through  |    18 |   49% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -217905.4p |
-|      +5        | -397702.7p |
-|      +10       | -767364.9p |
-|      +20       | -1065337.8p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 25% reversed
-- **From below** (resistance test): 25 touches · 64% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 13:00 | from_above  | broke_through | +645000.0p | +7312500.0p | -980000.0p | -1100000.0p | -4430000.0p | -4637500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 07:00 | from_below  | reversed      | +4910000.0p | +2327500.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 13:00 | from_above  | broke_through | +1137500.0p | +6460000.0p | +15000.0p | -852500.0p | -2207500.0p | -4197500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
 ### Level 24708.50000  [prev_day_low]  `pdl_2026-02-18`
 Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -10442,110 +9882,30 @@ Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25393.00000  [prev_week_high]  `pwh_2026_w15`
+### Level 25361.25000  [prev_week_high]  `pwh_2025_w47`
 Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    21 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    16 |   43% | █████████░░░░░░░░░░░ |
+| Reversed       |    20 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    17 |   46% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -99594.6p |
-|      +5        | -463445.9p |
-|      +10       | -444932.4p |
-|      +20       | -363243.2p |
+|      +1        | -287635.1p |
+|      +5        | -538310.8p |
+|      +10       | -594932.4p |
+|      +20       | -796351.4p |
 
 **By approach direction**
 
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 24 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 16:00 | from_below  | reversed      | +1125000.0p | +377500.0p | -357500.0p | -295000.0p | -907500.0p | -182500.0p |
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
-| 2026-02-26 09:00 | from_below  | reversed      | +5167500.0p | +367500.0p | -220000.0p | -1855000.0p | -3155000.0p | -3465000.0p |
-| 2026-04-10 15:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25794.75000  [session_high]  `london_high_2025-12-22`
-Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    23 |   62% | ████████████░░░░░░░░ |
-| Broke through  |    14 |   38% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -243243.2p |
-|      +5        | -386824.3p |
-|      +10       | -721351.4p |
-|      +20       | -775337.8p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 25 touches · 72% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-01-30 17:00 | from_below  | reversed      | +4992500.0p | +1200000.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25361.75000  [session_high]  `london_high_2026-02-25`
-Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   49% | ██████████░░░░░░░░░░ |
-| Broke through  |    19 |   51% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -340743.2p |
-|      +5        | -477162.2p |
-|      +10       | -501621.6p |
-|      +20       | -578581.1p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 29% reversed
-- **From below** (resistance test): 23 touches · 61% reversed
+- **From above** (support test): 14 touches · 36% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
 
 **Touch log** (most recent 10)
 
@@ -10561,6 +9921,166 @@ Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-26 13:00 | from_above  | broke_through | +150000.0p | +5220000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
 | 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25361.25000  [session_high]  `london_high_2025-11-17`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    17 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -287635.1p |
+|      +5        | -538310.8p |
+|      +10       | -594932.4p |
+|      +20       | -796351.4p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 36% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-10 14:00 | from_above  | broke_through | +550000.0p | +2460000.0p | -172500.0p | -977500.0p | -760000.0p | -1832500.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
+| 2026-02-26 13:00 | from_above  | broke_through | +150000.0p | +5220000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25751.25000  [session_high]  `london_high_2025-12-23`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   49% | ██████████░░░░░░░░░░ |
+| Broke through  |    19 |   51% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -178513.5p |
+|      +5        | -190473.0p |
+|      +10       | -331418.9p |
+|      +20       | -674054.1p |
+
+**By approach direction**
+
+- **From above** (support test): 15 touches · 20% reversed
+- **From below** (resistance test): 22 touches · 68% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+
+### Level 25774.75000  [session_high]  `london_high_2025-12-30`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    18 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -182837.8p |
+|      +5        | -166486.5p |
+|      +10       | -574121.6p |
+|      +20       | -826554.1p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 29% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+
+### Level 25779.00000  [session_high]  `london_high_2026-01-06`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    18 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -178918.9p |
+|      +5        | -117770.3p |
+|      +10       | -469932.4p |
+|      +20       | -730810.8p |
+
+**By approach direction**
+
+- **From above** (support test): 15 touches · 33% reversed
+- **From below** (resistance test): 22 touches · 64% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
 ### Level 24616.25000  [session_high]  `london_high_2026-03-20`
 Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -10602,30 +10122,150 @@ Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25760.50000  [prev_day_high]  `pdh_2025-11-10`
-Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25386.00000  [session_high]  `london_high_2026-04-10`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    17 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    19 |   53% | ███████████░░░░░░░░░ |
+| Reversed       |    22 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    15 |   41% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -209375.0p |
-|      +5        | -331180.6p |
-|      +10       | -499444.4p |
-|      +20       | -779583.3p |
+|      +1        | -190540.5p |
+|      +5        | -577500.0p |
+|      +10       | -522635.1p |
+|      +20       | -414324.3p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 20% reversed
-- **From below** (resistance test): 21 touches · 67% reversed
+- **From above** (support test): 13 touches · 46% reversed
+- **From below** (resistance test): 24 touches · 67% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_below  | reversed      | +3312500.0p | +177500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25360.75000  [session_high]  `london_high_2026-04-13`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    17 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -298175.7p |
+|      +5        | -469391.9p |
+|      +10       | -526824.3p |
+|      +20       | -756621.6p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 36% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-10 14:00 | from_above  | broke_through | +550000.0p | +2460000.0p | -172500.0p | -977500.0p | -760000.0p | -1832500.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 14:00 | from_below  | broke_through | +692500.0p | +3462500.0p | -422500.0p | +1860000.0p | +2295000.0p | +3150000.0p |
+
+### Level 25390.25000  [session_low]  `london_low_2025-12-11`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    15 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -116148.6p |
+|      +5        | -427432.4p |
+|      +10       | -499729.7p |
+|      +20       | -384932.4p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 50% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_below  | reversed      | +3312500.0p | +177500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 15:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25784.00000  [session_low]  `london_low_2025-12-24`
+Touches: **37**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    21 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    16 |   43% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -136621.6p |
+|      +5        | -129256.8p |
+|      +10       | -491554.1p |
+|      +20       | -670337.8p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 43% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
 
 **Touch log** (most recent 10)
 
@@ -10637,52 +10277,12 @@ Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
 | 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-01-30 15:00 | from_above  | broke_through | +275000.0p | +6612500.0p | -840000.0p | -1687500.0p | -4737500.0p | -3537500.0p |
 | 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
-### Level 25756.50000  [prev_day_high]  `pdh_2025-12-07`
-Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   47% | █████████░░░░░░░░░░░ |
-| Broke through  |    19 |   53% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -193958.3p |
-|      +5        | -323958.3p |
-|      +10       | -491180.6p |
-|      +20       | -803263.9p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 20% reversed
-- **From below** (resistance test): 21 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
-| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
-| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
-
-### Level 25803.75000  [prev_day_high]  `pdh_2026-01-02`
+### Level 25376.00000  [prev_day_high]  `pdh_2025-11-26`
 Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -10697,30 +10297,110 @@ Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -287569.4p |
-|      +5        | -452222.2p |
-|      +10       | -801527.8p |
-|      +20       | -1105625.0p |
+|      +1        | -208472.2p |
+|      +5        | -603333.3p |
+|      +10       | -496319.4p |
+|      +20       | -602152.8p |
 
 **By approach direction**
 
-- **From above** (support test): 12 touches · 25% reversed
-- **From below** (resistance test): 24 touches · 67% reversed
+- **From above** (support test): 12 touches · 33% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 13:00 | from_above  | broke_through | +645000.0p | +7312500.0p | -980000.0p | -1100000.0p | -4430000.0p | -4637500.0p |
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 12:00 | from_below  | reversed      | +7145000.0p | +630000.0p | +390000.0p | -5315000.0p | -5327500.0p | -5827500.0p |
+| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25794.75000  [prev_day_high]  `pdh_2025-12-22`
+Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    22 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    14 |   39% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -179722.2p |
+|      +5        | -276527.8p |
+|      +10       | -616597.2p |
+|      +20       | -656319.4p |
+
+**By approach direction**
+
+- **From above** (support test): 12 touches · 42% reversed
+- **From below** (resistance test): 24 touches · 71% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
 | 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
 | 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 07:00 | from_below  | reversed      | +4910000.0p | +2327500.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 13:00 | from_above  | broke_through | +1137500.0p | +6460000.0p | +15000.0p | -852500.0p | -2207500.0p | -4197500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
+| 2026-01-30 17:00 | from_below  | reversed      | +4992500.0p | +1200000.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+
+### Level 25393.00000  [prev_day_high]  `pdh_2026-04-10`
+Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    21 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    15 |   42% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -79444.4p |
+|      +5        | -464097.2p |
+|      +10       | -448541.7p |
+|      +20       | -339236.1p |
+
+**By approach direction**
+
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 16:00 | from_below  | reversed      | +1125000.0p | +377500.0p | -357500.0p | -295000.0p | -907500.0p | -182500.0p |
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
+| 2026-02-26 09:00 | from_below  | reversed      | +5167500.0p | +367500.0p | -220000.0p | -1855000.0p | -3155000.0p | -3465000.0p |
+| 2026-04-10 15:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
 ### Level 24626.50000  [prev_day_low]  `pdl_2025-11-14`
 Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -10762,84 +10442,84 @@ Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25375.25000  [prev_day_low]  `pdl_2026-01-19`
+### Level 25803.25000  [prev_day_low]  `pdl_2026-01-13`
 Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    17 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    18 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |    18 |   50% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -249236.1p |
-|      +5        | -634027.8p |
-|      +10       | -525347.2p |
-|      +20       | -530694.4p |
+|      +1        | -153680.6p |
+|      +5        | -287708.3p |
+|      +10       | -663888.9p |
+|      +20       | -954375.0p |
 
 **By approach direction**
 
-- **From above** (support test): 12 touches · 33% reversed
+- **From above** (support test): 12 touches · 25% reversed
 - **From below** (resistance test): 24 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 12:00 | from_below  | reversed      | +7145000.0p | +630000.0p | +390000.0p | -5315000.0p | -5327500.0p | -5827500.0p |
-| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+| 2026-01-16 13:00 | from_above  | broke_through | +645000.0p | +7312500.0p | -980000.0p | -1100000.0p | -4430000.0p | -4637500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
+| 2026-01-30 07:00 | from_below  | reversed      | +4910000.0p | +2327500.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 13:00 | from_above  | broke_through | +1137500.0p | +6460000.0p | +15000.0p | -852500.0p | -2207500.0p | -4197500.0p |
+| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
-### Level 25373.75000  [prev_day_low]  `pdl_2026-02-01`
+### Level 25393.00000  [prev_week_high]  `pwh_2026_w15`
 Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    17 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    21 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    15 |   42% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -277916.7p |
-|      +5        | -571319.4p |
-|      +10       | -532083.3p |
-|      +20       | -544861.1p |
+|      +1        | -79444.4p |
+|      +5        | -464097.2p |
+|      +10       | -448541.7p |
+|      +20       | -339236.1p |
 
 **By approach direction**
 
-- **From above** (support test): 12 touches · 33% reversed
+- **From above** (support test): 12 touches · 50% reversed
 - **From below** (resistance test): 24 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 16:00 | from_below  | reversed      | +1125000.0p | +377500.0p | -357500.0p | -295000.0p | -907500.0p | -182500.0p |
 | 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
 | 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 10:00 | from_below  | reversed      | +7075000.0p | +700000.0p | +167500.0p | -3395000.0p | -5870000.0p | -6027500.0p |
-| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 20:00 | from_below  | reversed      | +5215000.0p | +1115000.0p | +785000.0p | -752500.0p | -360000.0p | -4485000.0p |
+| 2026-02-26 09:00 | from_below  | reversed      | +5167500.0p | +367500.0p | -220000.0p | -1855000.0p | -3155000.0p | -3465000.0p |
+| 2026-04-10 15:00 | from_below  | reversed      | +3425000.0p | +735000.0p | +0.0p | +167500.0p | -1872500.0p | -957500.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
 ### Level 24626.50000  [prev_week_low]  `pwl_2025_w46`
@@ -10882,85 +10562,85 @@ Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25373.75000  [prev_week_low]  `pwl_2026_w05`
+### Level 25794.75000  [session_high]  `london_high_2025-12-22`
 Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    17 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Reversed       |    22 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    14 |   39% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -277916.7p |
-|      +5        | -571319.4p |
-|      +10       | -532083.3p |
-|      +20       | -544861.1p |
+|      +1        | -179722.2p |
+|      +5        | -276527.8p |
+|      +10       | -616597.2p |
+|      +20       | -656319.4p |
 
 **By approach direction**
 
-- **From above** (support test): 12 touches · 33% reversed
-- **From below** (resistance test): 24 touches · 62% reversed
+- **From above** (support test): 12 touches · 42% reversed
+- **From below** (resistance test): 24 touches · 71% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 10:00 | from_below  | reversed      | +7075000.0p | +700000.0p | +167500.0p | -3395000.0p | -5870000.0p | -6027500.0p |
-| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
-| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
-| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
-| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25803.75000  [session_high]  `london_high_2026-01-02`
-Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    17 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -287569.4p |
-|      +5        | -452222.2p |
-|      +10       | -801527.8p |
-|      +20       | -1105625.0p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 25% reversed
-- **From below** (resistance test): 24 touches · 67% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 13:00 | from_above  | broke_through | +645000.0p | +7312500.0p | -980000.0p | -1100000.0p | -4430000.0p | -4637500.0p |
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
 | 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
 | 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
 | 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 07:00 | from_below  | reversed      | +4910000.0p | +2327500.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
-| 2026-01-30 13:00 | from_above  | broke_through | +1137500.0p | +6460000.0p | +15000.0p | -852500.0p | -2207500.0p | -4197500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
+| 2026-01-30 17:00 | from_below  | reversed      | +4992500.0p | +1200000.0p | +615000.0p | -1467500.0p | -3270000.0p | +697500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+
+### Level 25361.75000  [session_high]  `london_high_2026-02-25`
+Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |    18 |   50% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -327291.7p |
+|      +5        | -478194.4p |
+|      +10       | -506805.6p |
+|      +20       | -560555.6p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 31% reversed
+- **From below** (resistance test): 23 touches · 61% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-10 14:00 | from_above  | broke_through | +550000.0p | +2460000.0p | -172500.0p | -977500.0p | -760000.0p | -1832500.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 08:00 | from_below  | reversed      | +6627500.0p | +662500.0p | +22500.0p | +422500.0p | -4480000.0p | -6410000.0p |
+| 2026-02-12 14:00 | from_above  | broke_through | +537500.0p | +5825000.0p | -1962500.0p | -3080000.0p | -4195000.0p | -4852500.0p |
+| 2026-02-25 15:00 | from_below  | broke_through | +305000.0p | +1995000.0p | +212500.0p | +880000.0p | +127500.0p | +787500.0p |
+| 2026-02-25 23:00 | from_above  | broke_through | +980000.0p | +4555000.0p | -15000.0p | -180000.0p | +612500.0p | -2542500.0p |
+| 2026-02-26 07:00 | from_below  | reversed      | +4855000.0p | +680000.0p | +27500.0p | +267500.0p | -4125000.0p | -3257500.0p |
+| 2026-02-26 13:00 | from_above  | broke_through | +150000.0p | +5220000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
 ### Level 24650.25000  [session_high]  `london_high_2026-03-19`
 Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -11042,6 +10722,206 @@ Touches: **36**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
+### Level 25760.50000  [prev_day_high]  `pdh_2025-11-10`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   46% | █████████░░░░░░░░░░░ |
+| Broke through  |    19 |   54% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -214071.4p |
+|      +5        | -212357.1p |
+|      +10       | -372857.1p |
+|      +20       | -680000.0p |
+
+**By approach direction**
+
+- **From above** (support test): 15 touches · 20% reversed
+- **From below** (resistance test): 20 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+
+### Level 25756.50000  [prev_day_high]  `pdh_2025-12-07`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   46% | █████████░░░░░░░░░░░ |
+| Broke through  |    19 |   54% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -198214.3p |
+|      +5        | -204928.6p |
+|      +10       | -364357.1p |
+|      +20       | -704357.1p |
+
+**By approach direction**
+
+- **From above** (support test): 15 touches · 20% reversed
+- **From below** (resistance test): 20 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 14:00 | from_above  | broke_through | +370000.0p | +6332500.0p | -480000.0p | -122500.0p | -4180000.0p | -3297500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 02:00 | from_above  | broke_through | +970000.0p | +4692500.0p | +40000.0p | -1357500.0p | +35000.0p | -3102500.0p |
+| 2026-01-30 08:00 | from_below  | reversed      | +5525000.0p | +1712500.0p | -720000.0p | +575000.0p | -277500.0p | -5180000.0p |
+| 2026-01-30 16:00 | from_above  | broke_through | +382500.0p | +5772500.0p | -780000.0p | -875000.0p | -4787500.0p | -2282500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 13:00 | from_below  | broke_through | +102500.0p | +3357500.0p | +837500.0p | +1955000.0p | +2965000.0p | +2630000.0p |
+
+### Level 25803.75000  [prev_day_high]  `pdh_2026-01-02`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    17 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -223500.0p |
+|      +5        | -340642.9p |
+|      +10       | -696071.4p |
+|      +20       | -992642.9p |
+
+**By approach direction**
+
+- **From above** (support test): 12 touches · 25% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 13:00 | from_above  | broke_through | +645000.0p | +7312500.0p | -980000.0p | -1100000.0p | -4430000.0p | -4637500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
+| 2026-01-30 07:00 | from_below  | reversed      | +4910000.0p | +2327500.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 13:00 | from_above  | broke_through | +1137500.0p | +6460000.0p | +15000.0p | -852500.0p | -2207500.0p | -4197500.0p |
+| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
+
+### Level 25375.25000  [prev_day_low]  `pdl_2026-01-19`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    16 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -232785.7p |
+|      +5        | -639571.4p |
+|      +10       | -531357.1p |
+|      +20       | -510785.7p |
+
+**By approach direction**
+
+- **From above** (support test): 11 touches · 36% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 12:00 | from_below  | reversed      | +7145000.0p | +630000.0p | +390000.0p | -5315000.0p | -5327500.0p | -5827500.0p |
+| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25373.75000  [prev_day_low]  `pdl_2026-02-01`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    16 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -262285.7p |
+|      +5        | -575071.4p |
+|      +10       | -538285.7p |
+|      +20       | -525357.1p |
+
+**By approach direction**
+
+- **From above** (support test): 11 touches · 36% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 10:00 | from_below  | reversed      | +7075000.0p | +700000.0p | +167500.0p | -3395000.0p | -5870000.0p | -6027500.0p |
+| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
 ### Level 24678.50000  [prev_day_low]  `pdl_2026-02-20`
 Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -11121,6 +11001,86 @@ Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-19 02:00 | from_below  | reversed      | +3690000.0p | +192500.0p | -267500.0p | -1385000.0p | -2490000.0p | -757500.0p |
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
+
+### Level 25373.75000  [prev_week_low]  `pwl_2026_w05`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   54% | ███████████░░░░░░░░░ |
+| Broke through  |    16 |   46% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -262285.7p |
+|      +5        | -575071.4p |
+|      +10       | -538285.7p |
+|      +20       | -525357.1p |
+
+**By approach direction**
+
+- **From above** (support test): 11 touches · 36% reversed
+- **From below** (resistance test): 24 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-09 23:00 | from_below  | broke_through | +885000.0p | +1030000.0p | -90000.0p | -7500.0p | +197500.0p | -497500.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_above  | broke_through | +252500.0p | +2287500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 10:00 | from_below  | reversed      | +7075000.0p | +700000.0p | +167500.0p | -3395000.0p | -5870000.0p | -6027500.0p |
+| 2026-02-25 19:00 | from_below  | reversed      | +5070000.0p | +1260000.0p | +145000.0p | -525000.0p | -412500.0p | -4052500.0p |
+| 2026-02-26 08:00 | from_below  | reversed      | +4882500.0p | +652500.0p | +285000.0p | +337500.0p | -3485000.0p | -3105000.0p |
+| 2026-02-26 14:00 | from_above  | broke_through | +177500.0p | +3312500.0p | -1942500.0p | -1300000.0p | -2012500.0p | -2390000.0p |
+| 2026-04-10 12:00 | from_below  | reversed      | +3825000.0p | +885000.0p | +160000.0p | -325000.0p | -3205000.0p | -1885000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25803.75000  [session_high]  `london_high_2026-01-02`
+Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   51% | ██████████░░░░░░░░░░ |
+| Broke through  |    17 |   49% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -223500.0p |
+|      +5        | -340642.9p |
+|      +10       | -696071.4p |
+|      +20       | -992642.9p |
+
+**By approach direction**
+
+- **From above** (support test): 12 touches · 25% reversed
+- **From below** (resistance test): 23 touches · 65% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 13:00 | from_above  | broke_through | +645000.0p | +7312500.0p | -980000.0p | -1100000.0p | -4430000.0p | -4637500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
+| 2026-01-30 07:00 | from_below  | reversed      | +4910000.0p | +2327500.0p | +615000.0p | +1392500.0p | -277500.0p | -3547500.0p |
+| 2026-01-30 13:00 | from_above  | broke_through | +1137500.0p | +6460000.0p | +15000.0p | -852500.0p | -2207500.0p | -4197500.0p |
+| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
 ### Level 24678.50000  [session_low]  `london_low_2026-02-20`
 Touches: **35**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -11362,46 +11322,6 @@ Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25407.25000  [session_high]  `london_high_2025-12-18`
-Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   56% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   44% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -297205.9p |
-|      +5        | -666617.6p |
-|      +10       | -657794.1p |
-|      +20       | -404191.2p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 22 touches · 64% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
-| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
 ### Level 24659.25000  [session_high]  `london_high_2026-03-09`
 Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -11442,29 +11362,69 @@ Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25550.25000  [session_low]  `london_low_2025-12-10`
-Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+### Level 25407.25000  [session_high]  `london_high_2025-12-18`
+Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    20 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    14 |   41% | ████████░░░░░░░░░░░░ |
+| Reversed       |    19 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    14 |   42% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +25441.2p |
-|      +5        | +293823.5p |
-|      +10       | +520000.0p |
-|      +20       | +580073.5p |
+|      +1        | -281212.1p |
+|      +5        | -673484.8p |
+|      +10       | -668181.8p |
+|      +20       | -379242.4p |
 
 **By approach direction**
 
-- **From above** (support test): 25 touches · 72% reversed
+- **From above** (support test): 11 touches · 45% reversed
+- **From below** (resistance test): 22 touches · 64% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
+| 2026-02-10 09:00 | from_below  | reversed      | +1657500.0p | +832500.0p | -87500.0p | +282500.0p | -695000.0p | -932500.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25550.25000  [session_low]  `london_low_2025-12-10`
+Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    13 |   39% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +89848.5p |
+|      +5        | +335681.8p |
+|      +10       | +593636.4p |
+|      +20       | +686666.7p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 75% reversed
 - **From below** (resistance test): 9 touches · 22% reversed
 
 **Touch log** (most recent 10)
@@ -11483,29 +11443,29 @@ Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25809.25000  [session_low]  `london_low_2026-01-13`
-Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    17 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    17 |   50% | ██████████░░░░░░░░░░ |
+| Reversed       |    16 |   48% | ██████████░░░░░░░░░░ |
+| Broke through  |    17 |   52% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -107573.5p |
-|      +5        | -454705.9p |
-|      +10       | -756176.5p |
-|      +20       | -916691.2p |
+|      +1        | -34166.7p |
+|      +5        | -336439.4p |
+|      +10       | -642954.5p |
+|      +20       | -791136.4p |
 
 **By approach direction**
 
 - **From above** (support test): 11 touches · 27% reversed
-- **From below** (resistance test): 23 touches · 61% reversed
+- **From below** (resistance test): 22 touches · 59% reversed
 
 **Touch log** (most recent 10)
 
@@ -11521,366 +11481,6 @@ Touches: **34**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25410.00000  [prev_day_high]  `pdh_2025-12-15`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -241515.2p |
-|      +5        | -596818.2p |
-|      +10       | -505151.5p |
-|      +20       | -466666.7p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 21 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25408.00000  [prev_day_low]  `pdl_2026-01-04`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -294545.5p |
-|      +5        | -650757.6p |
-|      +10       | -650606.1p |
-|      +20       | -383257.6p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 21 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25540.25000  [prev_day_low]  `pdl_2026-01-23`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +8939.4p |
-|      +5        | +364772.7p |
-|      +10       | +450530.3p |
-|      +20       | +596818.2p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 64% reversed
-- **From below** (resistance test): 8 touches · 25% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25544.75000  [prev_day_low]  `pdl_2026-01-26`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +2348.5p |
-|      +5        | +242803.0p |
-|      +10       | +454621.2p |
-|      +20       | +515000.0p |
-
-**By approach direction**
-
-- **From above** (support test): 24 touches · 67% reversed
-- **From below** (resistance test): 9 touches · 22% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25410.00000  [session_high]  `london_high_2025-12-15`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -241515.2p |
-|      +5        | -596818.2p |
-|      +10       | -505151.5p |
-|      +20       | -466666.7p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 21 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25409.00000  [session_high]  `london_high_2025-12-16`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -294545.5p |
-|      +5        | -650757.6p |
-|      +10       | -650606.1p |
-|      +20       | -383257.6p |
-
-**By approach direction**
-
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 21 touches · 62% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25818.00000  [session_high]  `london_high_2026-01-08`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    15 |   45% | █████████░░░░░░░░░░░ |
-| Broke through  |    18 |   55% | ███████████░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -70833.3p |
-|      +5        | -485303.0p |
-|      +10       | -748484.8p |
-|      +20       | -919015.2p |
-
-**By approach direction**
-
-- **From above** (support test): 10 touches · 20% reversed
-- **From below** (resistance test): 23 touches · 57% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 05:00 | from_below  | reversed      | +5510000.0p | +832500.0p | +152500.0p | +472500.0p | -1272500.0p | -5235000.0p |
-| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
-
-### Level 25542.50000  [session_low]  `london_low_2025-12-31`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    14 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +68636.4p |
-|      +5        | +360075.8p |
-|      +10       | +489621.2p |
-|      +20       | +569469.7p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 68% reversed
-- **From below** (resistance test): 8 touches · 25% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25540.25000  [session_low]  `london_low_2026-01-23`
-Touches: **33**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   55% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   45% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | +8939.4p |
-|      +5        | +364772.7p |
-|      +10       | +450530.3p |
-|      +20       | +596818.2p |
-
-**By approach direction**
-
-- **From above** (support test): 25 touches · 64% reversed
-- **From below** (resistance test): 8 touches · 25% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
-| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24596.25000  [prev_day_high]  `pdh_2025-11-21`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -11922,30 +11522,30 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25412.50000  [prev_day_high]  `pdh_2025-12-18`
+### Level 25410.00000  [prev_day_high]  `pdh_2025-12-15`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    17 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    18 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   44% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -226953.1p |
-|      +5        | -592421.9p |
-|      +10       | -420859.4p |
-|      +20       | -502890.6p |
+|      +1        | -223281.2p |
+|      +5        | -601718.8p |
+|      +10       | -511093.8p |
+|      +20       | -442890.6p |
 
 **By approach direction**
 
-- **From above** (support test): 12 touches · 42% reversed
-- **From below** (resistance test): 20 touches · 60% reversed
+- **From above** (support test): 11 touches · 45% reversed
+- **From below** (resistance test): 21 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
@@ -11961,166 +11561,6 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25429.75000  [prev_day_high]  `pdh_2026-01-20`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    13 |   41% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -166484.4p |
-|      +5        | -143750.0p |
-|      +10       | +106328.1p |
-|      +20       | -11171.9p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 60% reversed
-- **From below** (resistance test): 17 touches · 59% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25428.75000  [prev_day_high]  `pdh_2026-02-09`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    13 |   41% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -249218.8p |
-|      +5        | -257031.2p |
-|      +10       | -13671.9p |
-|      +20       | -41015.6p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 57% reversed
-- **From below** (resistance test): 18 touches · 61% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25415.25000  [prev_day_high]  `pdh_2026-02-26`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -234296.9p |
-|      +5        | -532578.1p |
-|      +10       | -361406.2p |
-|      +20       | -455078.1p |
-
-**By approach direction**
-
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 19 touches · 58% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25488.75000  [prev_day_low]  `pdl_2025-11-12`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   62% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   38% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        |   -78.1p |
-|      +5        | +119765.6p |
-|      +10       | +326406.2p |
-|      +20       | +585234.4p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 13 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 16:00 | from_below  | broke_through | +872500.0p | +5105000.0p | +170000.0p | +2802500.0p | +3602500.0p | +5070000.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
-| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24602.00000  [prev_day_low]  `pdl_2025-11-25`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -12162,7 +11602,7 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25421.50000  [prev_day_low]  `pdl_2025-12-03`
+### Level 25408.00000  [prev_day_low]  `pdl_2026-01-04`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12177,149 +11617,109 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -207656.2p |
-|      +5        | -233984.4p |
-|      +10       | +18515.6p |
-|      +20       | -1015.6p |
+|      +1        | -277968.8p |
+|      +5        | -657343.8p |
+|      +10       | -661093.8p |
+|      +20       | -356875.0p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 53% reversed
-- **From below** (resistance test): 17 touches · 59% reversed
+- **From above** (support test): 11 touches · 45% reversed
+- **From below** (resistance test): 21 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
 | 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
 | 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25488.75000  [prev_day_low]  `pdl_2025-12-04`
+### Level 25540.25000  [prev_day_low]  `pdl_2026-01-23`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    20 |   62% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   38% | ████████░░░░░░░░░░░░ |
+| Reversed       |    18 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   44% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        |   -78.1p |
-|      +5        | +119765.6p |
-|      +10       | +326406.2p |
-|      +20       | +585234.4p |
+|      +1        | +74843.8p |
+|      +5        | +410156.2p |
+|      +10       | +524296.9p |
+|      +20       | +707265.6p |
 
 **By approach direction**
 
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 13 touches · 38% reversed
+- **From above** (support test): 24 touches · 67% reversed
+- **From below** (resistance test): 8 touches · 25% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 16:00 | from_below  | broke_through | +872500.0p | +5105000.0p | +170000.0p | +2802500.0p | +3602500.0p | +5070000.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
-| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
-### Level 25429.00000  [prev_day_low]  `pdl_2025-12-31`
+### Level 25544.75000  [prev_day_low]  `pdl_2026-01-26`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    13 |   41% | ████████░░░░░░░░░░░░ |
+| Reversed       |    18 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   44% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -166484.4p |
-|      +5        | -143750.0p |
-|      +10       | +106328.1p |
-|      +20       | -11171.9p |
+|      +1        | +68046.9p |
+|      +5        | +284375.0p |
+|      +10       | +528515.6p |
+|      +20       | +622890.6p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 60% reversed
-- **From below** (resistance test): 17 touches · 59% reversed
+- **From above** (support test): 23 touches · 70% reversed
+- **From below** (resistance test): 9 touches · 22% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25483.75000  [prev_day_low]  `pdl_2026-01-22`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   62% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   38% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -55859.4p |
-|      +5        | +35859.4p |
-|      +10       | +261953.1p |
-|      +20       | +572968.8p |
-
-**By approach direction**
-
-- **From above** (support test): 18 touches · 78% reversed
-- **From below** (resistance test): 14 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 21:00 | from_below  | broke_through | +257500.0p | +2302500.0p | +430000.0p | +800000.0p | +1737500.0p | +1640000.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
-| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24601.00000  [prev_day_low]  `pdl_2026-03-06`
@@ -12362,7 +11762,7 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25422.00000  [session_high]  `london_high_2025-11-28`
+### Level 25410.00000  [session_high]  `london_high_2025-12-15`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12377,55 +11777,15 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -233125.0p |
-|      +5        | -296718.8p |
-|      +10       | +22812.5p |
-|      +20       | +1015.6p |
+|      +1        | -223281.2p |
+|      +5        | -601718.8p |
+|      +10       | -511093.8p |
+|      +20       | -442890.6p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 53% reversed
-- **From below** (resistance test): 17 touches · 59% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25415.25000  [session_high]  `london_high_2026-02-26`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    15 |   47% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -234296.9p |
-|      +5        | -532578.1p |
-|      +10       | -361406.2p |
-|      +20       | -455078.1p |
-
-**By approach direction**
-
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 19 touches · 58% reversed
+- **From above** (support test): 11 touches · 45% reversed
+- **From below** (resistance test): 21 touches · 62% reversed
 
 **Touch log** (most recent 10)
 
@@ -12441,6 +11801,86 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25409.00000  [session_high]  `london_high_2025-12-16`
+Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   44% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -277968.8p |
+|      +5        | -657343.8p |
+|      +10       | -661093.8p |
+|      +20       | -356875.0p |
+
+**By approach direction**
+
+- **From above** (support test): 11 touches · 45% reversed
+- **From below** (resistance test): 21 touches · 62% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25818.00000  [session_high]  `london_high_2026-01-08`
+Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    14 |   44% | █████████░░░░░░░░░░░ |
+| Broke through  |    18 |   56% | ███████████░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +6015.6p |
+|      +5        | -364296.9p |
+|      +10       | -631484.4p |
+|      +20       | -789609.4p |
+
+**By approach direction**
+
+- **From above** (support test): 10 touches · 20% reversed
+- **From below** (resistance test): 22 touches · 55% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 05:00 | from_below  | reversed      | +5510000.0p | +832500.0p | +152500.0p | +472500.0p | -1272500.0p | -5235000.0p |
+| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
+| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
+| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
 ### Level 24507.25000  [session_high]  `london_high_2026-03-24`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -12482,46 +11922,6 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 14:00 | from_below  | reversed      | +3855000.0p | +100000.0p | -1060000.0p | -1122500.0p | -1205000.0p | -3822500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25486.50000  [session_low]  `london_low_2025-11-11`
-Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   62% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   38% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -90390.6p |
-|      +5        | +31093.8p |
-|      +10       | +259843.8p |
-|      +20       | +569531.2p |
-
-**By approach direction**
-
-- **From above** (support test): 18 touches · 78% reversed
-- **From below** (resistance test): 14 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 21:00 | from_below  | broke_through | +257500.0p | +2302500.0p | +430000.0p | +800000.0p | +1737500.0p | +1640000.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
-| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
 ### Level 24602.00000  [session_low]  `london_low_2025-11-25`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -12562,7 +11962,47 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25421.50000  [session_low]  `london_low_2025-12-03`
+### Level 25542.50000  [session_low]  `london_low_2025-12-31`
+Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    13 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +136406.2p |
+|      +5        | +405312.5p |
+|      +10       | +564609.4p |
+|      +20       | +679062.5p |
+
+**By approach direction**
+
+- **From above** (support test): 24 touches · 71% reversed
+- **From below** (resistance test): 8 touches · 25% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25540.25000  [session_low]  `london_low_2026-01-23`
 Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12577,152 +12017,72 @@ Touches: **32**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -207656.2p |
-|      +5        | -233984.4p |
-|      +10       | +18515.6p |
-|      +20       | -1015.6p |
+|      +1        | +74843.8p |
+|      +5        | +410156.2p |
+|      +10       | +524296.9p |
+|      +20       | +707265.6p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 53% reversed
-- **From below** (resistance test): 17 touches · 59% reversed
+- **From above** (support test): 24 touches · 67% reversed
+- **From below** (resistance test): 8 touches · 25% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25490.50000  [prev_day_high]  `pdh_2025-11-28`
-Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   61% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   39% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -26935.5p |
-|      +5        | +254516.1p |
-|      +10       | +350483.9p |
-|      +20       | +712500.0p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 12 touches · 33% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 16:00 | from_below  | broke_through | +872500.0p | +5105000.0p | +170000.0p | +2802500.0p | +3602500.0p | +5070000.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-22 15:00 | from_above  | reversed      | +1255000.0p | +657500.0p | +635000.0p | +570000.0p | +627500.0p | +227500.0p |
+| 2026-01-23 09:00 | from_above  | reversed      | +2875000.0p | +950000.0p | +160000.0p | +1055000.0p | +1897500.0p | +1097500.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-02 14:00 | from_below  | broke_through | +162500.0p | +2785000.0p | +912500.0p | +972500.0p | +2110000.0p | +1962500.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
-### Level 25419.75000  [prev_day_high]  `pdh_2026-02-12`
+### Level 25412.50000  [prev_day_high]  `pdh_2025-12-18`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    16 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    15 |   48% | ██████████░░░░░░░░░░ |
+| Reversed       |    17 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   45% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -290322.6p |
-|      +5        | -476612.9p |
-|      +10       | -258709.7p |
-|      +20       | -382338.7p |
+|      +1        | -207661.3p |
+|      +5        | -597338.7p |
+|      +10       | -424274.2p |
+|      +20       | -479516.1p |
 
 **By approach direction**
 
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 18 touches · 56% reversed
+- **From above** (support test): 11 touches · 45% reversed
+- **From below** (resistance test): 20 touches · 60% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
 | 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
 | 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25494.75000  [prev_day_high]  `pdh_2026-02-25`
-Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   65% | █████████████░░░░░░░ |
-| Broke through  |    11 |   35% | ███████░░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -128387.1p |
-|      +5        | +113064.5p |
-|      +10       | +205806.5p |
-|      +20       | +524274.2p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 12 touches · 42% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25478.50000  [prev_day_low]  `pdl_2025-11-11`
+### Level 25429.75000  [prev_day_high]  `pdh_2026-01-20`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12737,55 +12097,15 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -101290.3p |
-|      +5        | -18709.7p |
-|      +10       | +222419.4p |
-|      +20       | +523467.7p |
+|      +1        | -145241.9p |
+|      +5        | -134193.5p |
+|      +10       | +119919.4p |
+|      +20       | +28064.5p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 76% reversed
-- **From below** (resistance test): 14 touches · 43% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-01-21 21:00 | from_below  | broke_through | +257500.0p | +2302500.0p | +430000.0p | +800000.0p | +1737500.0p | +1640000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
-| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25434.75000  [prev_day_low]  `pdl_2026-01-05`
-Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   58% | ████████████░░░░░░░░ |
-| Broke through  |    13 |   42% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -142661.3p |
-|      +5        | -3790.3p |
-|      +10       | +194838.7p |
-|      +20       | +152016.1p |
-
-**By approach direction**
-
-- **From above** (support test): 15 touches · 60% reversed
-- **From below** (resistance test): 16 touches · 56% reversed
+- **From above** (support test): 14 touches · 64% reversed
+- **From below** (resistance test): 17 touches · 59% reversed
 
 **Touch log** (most recent 10)
 
@@ -12802,7 +12122,47 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25420.75000  [prev_day_low]  `pdl_2026-01-14`
+### Level 25428.75000  [prev_day_high]  `pdh_2026-02-09`
+Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    12 |   39% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -230645.2p |
+|      +5        | -251129.0p |
+|      +10       | -3951.6p |
+|      +20       | -2741.9p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 62% reversed
+- **From below** (resistance test): 18 touches · 61% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25415.25000  [prev_day_high]  `pdh_2026-02-26`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12817,14 +12177,94 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -236451.6p |
-|      +5        | -298064.5p |
-|      +10       | -27580.6p |
-|      +20       | -53145.2p |
+|      +1        | -215241.9p |
+|      +5        | -535564.5p |
+|      +10       | -362903.2p |
+|      +20       | -430161.3p |
 
 **By approach direction**
 
-- **From above** (support test): 14 touches · 50% reversed
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 19 touches · 58% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25488.75000  [prev_day_low]  `pdl_2025-11-12`
+Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   65% | █████████████░░░░░░░ |
+| Broke through  |    11 |   35% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +26532.3p |
+|      +5        | +137822.6p |
+|      +10       | +347096.8p |
+|      +20       | +643709.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 13 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 16:00 | from_below  | broke_through | +872500.0p | +5105000.0p | +170000.0p | +2802500.0p | +3602500.0p | +5070000.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
+| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25421.50000  [prev_day_low]  `pdl_2025-12-03`
+Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    13 |   42% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -187741.9p |
+|      +5        | -227338.7p |
+|      +10       | +29274.2p |
+|      +20       | +38548.4p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 57% reversed
 - **From below** (resistance test): 17 touches · 59% reversed
 
 **Touch log** (most recent 10)
@@ -12841,6 +12281,126 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25488.75000  [prev_day_low]  `pdl_2025-12-04`
+Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   65% | █████████████░░░░░░░ |
+| Broke through  |    11 |   35% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +26532.3p |
+|      +5        | +137822.6p |
+|      +10       | +347096.8p |
+|      +20       | +643709.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 13 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 16:00 | from_below  | broke_through | +872500.0p | +5105000.0p | +170000.0p | +2802500.0p | +3602500.0p | +5070000.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
+| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25429.00000  [prev_day_low]  `pdl_2025-12-31`
+Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    12 |   39% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -145241.9p |
+|      +5        | -134193.5p |
+|      +10       | +119919.4p |
+|      +20       | +28064.5p |
+
+**By approach direction**
+
+- **From above** (support test): 14 touches · 64% reversed
+- **From below** (resistance test): 17 touches · 59% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25483.75000  [prev_day_low]  `pdl_2026-01-22`
+Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   65% | █████████████░░░░░░░ |
+| Broke through  |    11 |   35% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -31048.4p |
+|      +5        | +51209.7p |
+|      +10       | +280564.5p |
+|      +20       | +631048.4p |
+
+**By approach direction**
+
+- **From above** (support test): 17 touches · 82% reversed
+- **From below** (resistance test): 14 touches · 43% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 21:00 | from_below  | broke_through | +257500.0p | +2302500.0p | +430000.0p | +800000.0p | +1737500.0p | +1640000.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
+| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24499.00000  [prev_day_low]  `pdl_2026-03-04`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -12882,47 +12442,7 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 14:00 | from_below  | reversed      | +3855000.0p | +100000.0p | -1060000.0p | -1122500.0p | -1205000.0p | -3822500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25494.75000  [prev_week_high]  `pwh_2026_w09`
-Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    20 |   65% | █████████████░░░░░░░ |
-| Broke through  |    11 |   35% | ███████░░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -128387.1p |
-|      +5        | +113064.5p |
-|      +10       | +205806.5p |
-|      +20       | +524274.2p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 12 touches · 42% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25434.75000  [prev_week_low]  `pwl_2026_w02`
+### Level 25422.00000  [session_high]  `london_high_2025-11-28`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12937,32 +12457,32 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -142661.3p |
-|      +5        | -3790.3p |
-|      +10       | +194838.7p |
-|      +20       | +152016.1p |
+|      +1        | -214032.3p |
+|      +5        | -292096.8p |
+|      +10       | +33709.7p |
+|      +20       | +40645.2p |
 
 **By approach direction**
 
-- **From above** (support test): 15 touches · 60% reversed
-- **From below** (resistance test): 16 touches · 56% reversed
+- **From above** (support test): 14 touches · 57% reversed
+- **From below** (resistance test): 17 touches · 59% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
 | 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25420.75000  [prev_week_low]  `pwl_2026_w03`
+### Level 25415.25000  [session_high]  `london_high_2026-02-26`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -12977,94 +12497,54 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -236451.6p |
-|      +5        | -298064.5p |
-|      +10       | -27580.6p |
-|      +20       | -53145.2p |
+|      +1        | -215241.9p |
+|      +5        | -535564.5p |
+|      +10       | -362903.2p |
+|      +20       | -430161.3p |
 
 **By approach direction**
 
-- **From above** (support test): 14 touches · 50% reversed
-- **From below** (resistance test): 17 touches · 59% reversed
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 19 touches · 58% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
 | 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25417.00000  [session_high]  `london_high_2026-01-20`
-Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    16 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    15 |   48% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -204435.5p |
-|      +5        | -443629.0p |
-|      +10       | -268629.0p |
-|      +20       | -381532.3p |
-
-**By approach direction**
-
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 18 touches · 56% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-09 17:00 | from_below  | reversed      | +995000.0p | +735000.0p | +142500.0p | -110000.0p | -117500.0p | +370000.0p |
 | 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-02-26 13:00 | from_below  | reversed      | +5220000.0p | +150000.0p | -1907500.0p | -3822500.0p | -3977500.0p | -3825000.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25488.00000  [session_high]  `london_high_2026-01-21`
+### Level 25486.50000  [session_low]  `london_low_2025-11-11`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    19 |   61% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   39% | ████████░░░░░░░░░░░░ |
+| Reversed       |    20 |   65% | █████████████░░░░░░░ |
+| Broke through  |    11 |   35% | ███████░░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -106451.6p |
-|      +5        |  -645.2p |
-|      +10       | +221612.9p |
-|      +20       | +530564.5p |
+|      +1        | -66693.5p |
+|      +5        | +46290.3p |
+|      +10       | +278387.1p |
+|      +20       | +627500.0p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 76% reversed
+- **From above** (support test): 17 touches · 82% reversed
 - **From below** (resistance test): 14 touches · 43% reversed
 
 **Touch log** (most recent 10)
@@ -13082,35 +12562,36 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
-### Level 25419.75000  [session_high]  `london_high_2026-02-12`
+### Level 25421.50000  [session_low]  `london_low_2025-12-03`
 Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    16 |   52% | ██████████░░░░░░░░░░ |
-| Broke through  |    15 |   48% | ██████████░░░░░░░░░░ |
+| Reversed       |    18 |   58% | ████████████░░░░░░░░ |
+| Broke through  |    13 |   42% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -290322.6p |
-|      +5        | -476612.9p |
-|      +10       | -258709.7p |
-|      +20       | -382338.7p |
+|      +1        | -187741.9p |
+|      +5        | -227338.7p |
+|      +10       | +29274.2p |
+|      +20       | +38548.4p |
 
 **By approach direction**
 
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 18 touches · 56% reversed
+- **From above** (support test): 14 touches · 57% reversed
+- **From below** (resistance test): 17 touches · 59% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
 | 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
 | 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
@@ -13118,49 +12599,8 @@ Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
 | 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
 | 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
-### Level 25820.25000  [session_high]  `london_high_2026-04-14`
-Touches: **31**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    13 |   42% | ████████░░░░░░░░░░░░ |
-| Broke through  |    18 |   58% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -5080.6p |
-|      +5        | -475725.8p |
-|      +10       | -753548.4p |
-|      +20       | -957741.9p |
-
-**By approach direction**
-
-- **From above** (support test): 10 touches · 20% reversed
-- **From below** (resistance test): 21 touches · 52% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 05:00 | from_below  | reversed      | +5510000.0p | +832500.0p | +152500.0p | +472500.0p | -1272500.0p | -5235000.0p |
-| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
 ### Level 24521.75000  [prev_day_high]  `pdh_2025-11-23`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -13202,7 +12642,7 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 08:00 | from_below  | reversed      | +1912500.0p | +1007500.0p | +147500.0p | -705000.0p | -845000.0p | -1835000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25495.75000  [prev_day_high]  `pdh_2025-12-01`
+### Level 25490.50000  [prev_day_high]  `pdh_2025-11-28`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -13217,29 +12657,29 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -84500.0p |
-|      +5        | +170166.7p |
-|      +10       | +249916.7p |
-|      +20       | +695166.7p |
+|      +1        |  -333.3p |
+|      +5        | +277666.7p |
+|      +10       | +372666.7p |
+|      +20       | +777166.7p |
 
 **By approach direction**
 
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 11 touches · 36% reversed
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 12 touches · 33% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
 | 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-21 16:00 | from_below  | broke_through | +872500.0p | +5105000.0p | +170000.0p | +2802500.0p | +3602500.0p | +5070000.0p |
 | 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
 | 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25860.75000  [prev_day_high]  `pdh_2025-12-08`
@@ -13281,126 +12721,6 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-02 21:00 | from_below  | reversed      | +6277500.0p | +1545000.0p | +750000.0p | +832500.0p | +1045000.0p | -6277500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
-
-### Level 25444.00000  [prev_day_high]  `pdh_2025-12-16`
-Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   40% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -107833.3p |
-|      +5        | +6333.3p |
-|      +10       | +268750.0p |
-|      +20       | +280250.0p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 64% reversed
-- **From below** (resistance test): 16 touches · 56% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
-
-### Level 25508.50000  [prev_day_high]  `pdh_2025-12-17`
-Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    13 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -146250.0p |
-|      +5        | +68250.0p |
-|      +10       | +173833.3p |
-|      +20       | +263750.0p |
-
-**By approach direction**
-
-- **From above** (support test): 20 touches · 65% reversed
-- **From below** (resistance test): 10 touches · 40% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25463.25000  [prev_day_high]  `pdh_2026-01-04`
-Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   40% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -135916.7p |
-|      +5        | +263416.7p |
-|      +10       | +285083.3p |
-|      +20       | +542750.0p |
-
-**By approach direction**
-
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25844.75000  [prev_day_high]  `pdh_2026-01-06`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -13482,43 +12802,83 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25465.25000  [prev_day_high]  `pdh_2026-02-11`
+### Level 25419.75000  [prev_day_high]  `pdh_2026-02-12`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    18 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   40% | ████████░░░░░░░░░░░░ |
+| Reversed       |    16 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   47% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -142000.0p |
-|      +5        | +263166.7p |
-|      +10       | +295750.0p |
-|      +20       | +542666.7p |
+|      +1        | -272500.0p |
+|      +5        | -477833.3p |
+|      +10       | -256833.3p |
+|      +20       | -354166.7p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 18 touches · 56% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25494.75000  [prev_day_high]  `pdh_2026-02-25`
+Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   67% | █████████████░░░░░░░ |
+| Broke through  |    10 |   33% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -105166.7p |
+|      +5        | +131500.0p |
+|      +10       | +223166.7p |
+|      +20       | +582666.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 12 touches · 42% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
@@ -13562,45 +12922,45 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 14:00 | from_below  | reversed      | +3855000.0p | +100000.0p | -1060000.0p | -1122500.0p | -1205000.0p | -3822500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25442.75000  [prev_day_low]  `pdl_2025-11-30`
+### Level 25478.50000  [prev_day_low]  `pdl_2025-11-11`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    18 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   40% | ████████░░░░░░░░░░░░ |
+| Reversed       |    19 |   63% | █████████████░░░░░░░ |
+| Broke through  |    11 |   37% | ███████░░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -107833.3p |
-|      +5        | +6333.3p |
-|      +10       | +268750.0p |
-|      +20       | +280250.0p |
+|      +1        | -77166.7p |
+|      +5        | -4666.7p |
+|      +10       | +240333.3p |
+|      +20       | +581833.3p |
 
 **By approach direction**
 
-- **From above** (support test): 14 touches · 64% reversed
-- **From below** (resistance test): 16 touches · 56% reversed
+- **From above** (support test): 16 touches · 81% reversed
+- **From below** (resistance test): 14 touches · 43% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-21 21:00 | from_below  | broke_through | +257500.0p | +2302500.0p | +430000.0p | +800000.0p | +1737500.0p | +1640000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
+| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25843.00000  [prev_day_low]  `pdl_2025-12-28`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -13642,7 +13002,7 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25463.25000  [prev_day_low]  `pdl_2026-01-25`
+### Level 25434.75000  [prev_day_low]  `pdl_2026-01-05`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -13657,70 +13017,70 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -135916.7p |
-|      +5        | +263416.7p |
-|      +10       | +285083.3p |
-|      +20       | +542750.0p |
+|      +1        | -119916.7p |
+|      +5        | +10750.0p |
+|      +10       | +211833.3p |
+|      +20       | +198000.0p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
+- **From above** (support test): 14 touches · 64% reversed
+- **From below** (resistance test): 16 touches · 56% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25536.00000  [prev_day_low]  `pdl_2026-01-29`
+### Level 25420.75000  [prev_day_low]  `pdl_2026-01-14`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    16 |   53% | ███████████░░░░░░░░░ |
-| Broke through  |    14 |   47% | █████████░░░░░░░░░░░ |
+| Reversed       |    17 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    13 |   43% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +23833.3p |
-|      +5        | +467583.3p |
-|      +10       | +480833.3p |
-|      +20       | +680083.3p |
+|      +1        | -216833.3p |
+|      +5        | -293333.3p |
+|      +10       | -18000.0p |
+|      +20       | -14000.0p |
 
 **By approach direction**
 
-- **From above** (support test): 23 touches · 61% reversed
-- **From below** (resistance test): 7 touches · 29% reversed
+- **From above** (support test): 13 touches · 54% reversed
+- **From below** (resistance test): 17 touches · 59% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
 ### Level 24578.75000  [prev_day_low]  `pdl_2026-02-13`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -13802,7 +13162,47 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 14:00 | from_below  | reversed      | +3855000.0p | +100000.0p | -1060000.0p | -1122500.0p | -1205000.0p | -3822500.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25465.25000  [prev_week_high]  `pwh_2026_w07`
+### Level 25494.75000  [prev_week_high]  `pwh_2026_w09`
+Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    20 |   67% | █████████████░░░░░░░ |
+| Broke through  |    10 |   33% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -105166.7p |
+|      +5        | +131500.0p |
+|      +10       | +223166.7p |
+|      +20       | +582666.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 12 touches · 42% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25434.75000  [prev_week_low]  `pwl_2026_w02`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -13817,30 +13217,70 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -142000.0p |
-|      +5        | +263166.7p |
-|      +10       | +295750.0p |
-|      +20       | +542666.7p |
+|      +1        | -119916.7p |
+|      +5        | +10750.0p |
+|      +10       | +211833.3p |
+|      +20       | +198000.0p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
+- **From above** (support test): 14 touches · 64% reversed
+- **From below** (resistance test): 16 touches · 56% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 00:00 | from_below  | reversed      | +5930000.0p | +1377500.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25420.75000  [prev_week_low]  `pwl_2026_w03`
+Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    13 |   43% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -216833.3p |
+|      +5        | -293333.3p |
+|      +10       | -18000.0p |
+|      +20       | -14000.0p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 54% reversed
+- **From below** (resistance test): 17 touches · 59% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
 ### Level 24578.75000  [prev_week_low]  `pwl_2026_w07`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -13882,46 +13322,6 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25420.00000  [session_high]  `london_high_2025-12-01`
-Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    15 |   50% | ██████████░░░░░░░░░░ |
-| Broke through  |    15 |   50% | ██████████░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -236916.7p |
-|      +5        | -329083.3p |
-|      +10       | -45833.3p |
-|      +20       | -173083.3p |
-
-**By approach direction**
-
-- **From above** (support test): 13 touches · 46% reversed
-- **From below** (resistance test): 17 touches · 53% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
-| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
-
 ### Level 25860.75000  [session_high]  `london_high_2025-12-08`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -13962,87 +13362,7 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25508.50000  [session_high]  `london_high_2025-12-17`
-Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    13 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -146250.0p |
-|      +5        | +68250.0p |
-|      +10       | +173833.3p |
-|      +20       | +263750.0p |
-
-**By approach direction**
-
-- **From above** (support test): 20 touches · 65% reversed
-- **From below** (resistance test): 10 touches · 40% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25465.25000  [session_high]  `london_high_2026-02-11`
-Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    18 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   40% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -142000.0p |
-|      +5        | +263166.7p |
-|      +10       | +295750.0p |
-|      +20       | +542666.7p |
-
-**By approach direction**
-
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25536.00000  [session_low]  `london_low_2026-01-29`
+### Level 25417.00000  [session_high]  `london_high_2026-01-20`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -14057,70 +13377,150 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | +23833.3p |
-|      +5        | +467583.3p |
-|      +10       | +480833.3p |
-|      +20       | +680083.3p |
+|      +1        | -183750.0p |
+|      +5        | -443750.0p |
+|      +10       | -267083.3p |
+|      +20       | -353333.3p |
 
 **By approach direction**
 
-- **From above** (support test): 23 touches · 61% reversed
-- **From below** (resistance test): 7 touches · 29% reversed
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 18 touches · 56% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
 
-### Level 25470.25000  [session_low]  `london_low_2026-02-03`
+### Level 25488.00000  [session_high]  `london_high_2026-01-21`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    18 |   60% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   40% | ████████░░░░░░░░░░░░ |
+| Reversed       |    19 |   63% | █████████████░░░░░░░ |
+| Broke through  |    11 |   37% | ███████░░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -149250.0p |
-|      +5        | -94000.0p |
-|      +10       | +110333.3p |
-|      +20       | +250916.7p |
+|      +1        | -82500.0p |
+|      +5        | +14000.0p |
+|      +10       | +239500.0p |
+|      +20       | +589166.7p |
 
 **By approach direction**
 
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
+- **From above** (support test): 16 touches · 81% reversed
+- **From below** (resistance test): 14 touches · 43% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-21 21:00 | from_below  | broke_through | +257500.0p | +2302500.0p | +430000.0p | +800000.0p | +1737500.0p | +1640000.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-02 11:00 | from_below  | broke_through | +22500.0p | +5755000.0p | +355000.0p | +4412500.0p | +4210000.0p | +5255000.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-03 21:00 | from_below  | reversed      | +6377500.0p | +930000.0p | +67500.0p | +120000.0p | +52500.0p | -4962500.0p |
 | 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
-| 2026-02-04 12:00 | from_above  | broke_through | +122500.0p | +6222500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
+| 2026-02-04 12:00 | from_below  | reversed      | +6222500.0p | +122500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
 | 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25419.75000  [session_high]  `london_high_2026-02-12`
+Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   53% | ███████████░░░░░░░░░ |
+| Broke through  |    14 |   47% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -272500.0p |
+|      +5        | -477833.3p |
+|      +10       | -256833.3p |
+|      +20       | -354166.7p |
+
+**By approach direction**
+
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 18 touches · 56% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-12 13:00 | from_below  | reversed      | +7535000.0p | +45000.0p | -1892500.0p | -4902500.0p | -6645000.0p | -6660000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25820.25000  [session_high]  `london_high_2026-04-14`
+Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    12 |   40% | ████████░░░░░░░░░░░░ |
+| Broke through  |    18 |   60% | ████████████░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +79083.3p |
+|      +5        | -346333.3p |
+|      +10       | -628916.7p |
+|      +20       | -821000.0p |
+
+**By approach direction**
+
+- **From above** (support test): 10 touches · 20% reversed
+- **From below** (resistance test): 20 touches · 50% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-16 05:00 | from_below  | reversed      | +5510000.0p | +832500.0p | +152500.0p | +472500.0p | -1272500.0p | -5235000.0p |
+| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
+| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
+| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
+| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
+| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
+| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
+| 2026-04-14 14:00 | from_below  | broke_through | +435000.0p | +2520000.0p | +697500.0p | +1952500.0p | +2325000.0p | +1922500.0p |
 
 ### Level 24578.75000  [session_low]  `london_low_2026-02-13`
 Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -14162,45 +13562,45 @@ Touches: **30**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25822.25000  [prev_day_high]  `pdh_2025-11-06`
+### Level 25495.75000  [prev_day_high]  `pdh_2025-12-01`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    12 |   41% | ████████░░░░░░░░░░░░ |
-| Broke through  |    17 |   59% | ████████████░░░░░░░░ |
+| Reversed       |    19 |   66% | █████████████░░░░░░░ |
+| Broke through  |    10 |   34% | ███████░░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -15086.2p |
-|      +5        | -536551.7p |
-|      +10       | -783275.9p |
-|      +20       | -1073275.9p |
+|      +1        | -58965.5p |
+|      +5        | +191206.9p |
+|      +10       | +269396.6p |
+|      +20       | +761465.5p |
 
 **By approach direction**
 
-- **From above** (support test): 10 touches · 20% reversed
-- **From below** (resistance test): 19 touches · 53% reversed
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 11 touches · 36% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 06:00 | from_below  | reversed      | +6562500.0p | +680000.0p | +15000.0p | +102500.0p | -1065000.0p | -6220000.0p |
-| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25861.50000  [prev_day_high]  `pdh_2025-12-11`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -14242,6 +13642,126 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
+### Level 25444.00000  [prev_day_high]  `pdh_2025-12-16`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -83103.4p |
+|      +5        | +21724.1p |
+|      +10       | +288879.3p |
+|      +20       | +332241.4p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 69% reversed
+- **From below** (resistance test): 16 touches · 56% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
+
+### Level 25508.50000  [prev_day_high]  `pdh_2025-12-17`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    12 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -122844.8p |
+|      +5        | +85775.9p |
+|      +10       | +190689.7p |
+|      +20       | +315172.4p |
+
+**By approach direction**
+
+- **From above** (support test): 19 touches · 68% reversed
+- **From below** (resistance test): 10 touches · 40% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25463.25000  [prev_day_high]  `pdh_2026-01-04`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -112155.2p |
+|      +5        | +287672.4p |
+|      +10       | +305775.9p |
+|      +20       | +603793.1p |
+
+**By approach direction**
+
+- **From above** (support test): 16 touches · 75% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
 ### Level 25845.75000  [prev_day_high]  `pdh_2026-01-23`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -14282,7 +13802,127 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25528.75000  [prev_day_low]  `pdl_2025-12-10`
+### Level 25465.25000  [prev_day_high]  `pdh_2026-02-11`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -118448.3p |
+|      +5        | +287413.8p |
+|      +10       | +316810.3p |
+|      +20       | +603706.9p |
+
+**By approach direction**
+
+- **From above** (support test): 16 touches · 75% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25442.75000  [prev_day_low]  `pdl_2025-11-30`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -83103.4p |
+|      +5        | +21724.1p |
+|      +10       | +288879.3p |
+|      +20       | +332241.4p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 69% reversed
+- **From below** (resistance test): 16 touches · 56% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
+
+### Level 25463.25000  [prev_day_low]  `pdl_2026-01-25`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -112155.2p |
+|      +5        | +287672.4p |
+|      +10       | +305775.9p |
+|      +20       | +603793.1p |
+
+**By approach direction**
+
+- **From above** (support test): 16 touches · 75% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25536.00000  [prev_day_low]  `pdl_2026-01-29`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -14297,10 +13937,10 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -166120.7p |
-|      +5        | +328103.4p |
-|      +10       | +485948.3p |
-|      +20       | +644396.6p |
+|      +1        | +97069.0p |
+|      +5        | +521206.9p |
+|      +10       | +563275.9p |
+|      +20       | +804827.6p |
 
 **By approach direction**
 
@@ -14311,12 +13951,12 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
 | 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
 | 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
 | 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
 | 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
 | 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
@@ -14362,46 +14002,6 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-23 11:00 | from_below  | broke_through | +1965000.0p | +3000000.0p | +2185000.0p | -212500.0p | +920000.0p | -125000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25822.25000  [prev_week_high]  `pwh_2025_w45`
-Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    12 |   41% | ████████░░░░░░░░░░░░ |
-| Broke through  |    17 |   59% | ████████████░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -15086.2p |
-|      +5        | -536551.7p |
-|      +10       | -783275.9p |
-|      +20       | -1073275.9p |
-
-**By approach direction**
-
-- **From above** (support test): 10 touches · 20% reversed
-- **From below** (resistance test): 19 touches · 53% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 06:00 | from_below  | reversed      | +6562500.0p | +680000.0p | +15000.0p | +102500.0p | -1065000.0p | -6220000.0p |
-| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
-
 ### Level 25845.75000  [prev_week_high]  `pwh_2026_w04`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -14442,45 +14042,125 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25822.25000  [session_high]  `london_high_2025-11-06`
+### Level 25465.25000  [prev_week_high]  `pwh_2026_w07`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    12 |   41% | ████████░░░░░░░░░░░░ |
-| Broke through  |    17 |   59% | ████████████░░░░░░░░ |
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -118448.3p |
+|      +5        | +287413.8p |
+|      +10       | +316810.3p |
+|      +20       | +603706.9p |
+
+**By approach direction**
+
+- **From above** (support test): 16 touches · 75% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25420.00000  [session_high]  `london_high_2025-12-01`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    15 |   52% | ██████████░░░░░░░░░░ |
+| Broke through  |    14 |   48% | ██████████░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -15086.2p |
-|      +5        | -536551.7p |
-|      +10       | -783275.9p |
-|      +20       | -1073275.9p |
+|      +1        | -216637.9p |
+|      +5        | -325258.6p |
+|      +10       | -36551.7p |
+|      +20       | -136724.1p |
 
 **By approach direction**
 
-- **From above** (support test): 10 touches · 20% reversed
-- **From below** (resistance test): 19 touches · 53% reversed
+- **From above** (support test): 12 touches · 50% reversed
+- **From below** (resistance test): 17 touches · 53% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-16 06:00 | from_below  | reversed      | +6562500.0p | +680000.0p | +15000.0p | +102500.0p | -1065000.0p | -6220000.0p |
-| 2026-01-16 12:00 | from_above  | broke_through | +600000.0p | +7357500.0p | -45000.0p | -1710000.0p | -4555000.0p | -5062500.0p |
-| 2026-01-23 15:00 | from_below  | reversed      | +3632500.0p | +192500.0p | -375000.0p | -920000.0p | -2172500.0p | -1385000.0p |
-| 2026-01-26 14:00 | from_below  | broke_through | +342500.0p | +2057500.0p | +440000.0p | +412500.0p | +847500.0p | +1947500.0p |
-| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
-| 2026-01-30 01:00 | from_above  | broke_through | +877500.0p | +2835000.0p | -92500.0p | -1007500.0p | +187500.0p | -1822500.0p |
-| 2026-01-30 11:00 | from_below  | reversed      | +6907500.0p | +690000.0p | -245000.0p | -1135000.0p | -2010000.0p | -4692500.0p |
-| 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
-| 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
-| 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 08:00 | from_below  | broke_through | +460000.0p | +5950000.0p | +522500.0p | +1275000.0p | +5400000.0p | +5845000.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 00:00 | from_above  | broke_through | +1377500.0p | +5930000.0p | +642500.0p | +665000.0p | +730000.0p | -3800000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-09 19:00 | from_below  | reversed      | +1432500.0p | +482500.0p | -605000.0p | -642500.0p | -857500.0p | -720000.0p |
+| 2026-02-10 12:00 | from_below  | reversed      | +1410000.0p | +1080000.0p | +335000.0p | +447500.0p | -665000.0p | -1340000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 16:00 | from_below  | broke_through | +147500.0p | +3530000.0p | -67500.0p | +1832500.0p | +1740000.0p | +3115000.0p |
+
+### Level 25508.50000  [session_high]  `london_high_2025-12-17`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    12 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -122844.8p |
+|      +5        | +85775.9p |
+|      +10       | +190689.7p |
+|      +20       | +315172.4p |
+
+**By approach direction**
+
+- **From above** (support test): 19 touches · 68% reversed
+- **From below** (resistance test): 10 touches · 40% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25840.75000  [session_high]  `london_high_2025-12-24`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -14522,39 +14202,39 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25457.00000  [session_low]  `london_low_2025-11-10`
+### Level 25465.25000  [session_high]  `london_high_2026-02-11`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    17 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   41% | ████████░░░░░░░░░░░░ |
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -180689.7p |
-|      +5        | +197069.0p |
-|      +10       | +254741.4p |
-|      +20       | +427931.0p |
+|      +1        | -118448.3p |
+|      +5        | +287413.8p |
+|      +10       | +316810.3p |
+|      +20       | +603706.9p |
 
 **By approach direction**
 
-- **From above** (support test): 16 touches · 69% reversed
+- **From above** (support test): 16 touches · 75% reversed
 - **From below** (resistance test): 13 touches · 46% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
 | 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
 | 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
 | 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
 | 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
@@ -14602,110 +14282,30 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 08:00 | from_below  | reversed      | +1912500.0p | +1007500.0p | +147500.0p | -705000.0p | -845000.0p | -1835000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25455.00000  [session_low]  `london_low_2026-01-05`
+### Level 25536.00000  [session_low]  `london_low_2026-01-29`
 Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    17 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   41% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -180689.7p |
-|      +5        | +197069.0p |
-|      +10       | +254741.4p |
-|      +20       | +427931.0p |
-
-**By approach direction**
-
-- **From above** (support test): 16 touches · 69% reversed
-- **From below** (resistance test): 13 touches · 46% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25469.50000  [session_low]  `london_low_2026-01-14`
-Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   59% | ████████████░░░░░░░░ |
-| Broke through  |    12 |   41% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -141551.7p |
-|      +5        | +224137.9p |
-|      +10       | +273534.5p |
-|      +20       | +516810.3p |
-
-**By approach direction**
-
-- **From above** (support test): 17 touches · 71% reversed
-- **From below** (resistance test): 12 touches · 42% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
-| 2026-02-03 16:00 | from_above  | broke_through | +230000.0p | +2722500.0p | -1040000.0p | -700000.0p | -580000.0p | -1332500.0p |
-| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25499.00000  [session_low]  `london_low_2026-01-22`
-Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    19 |   66% | █████████████░░░░░░░ |
-| Broke through  |    10 |   34% | ███████░░░░░░░░░░░░░ |
+| Reversed       |    16 |   55% | ███████████░░░░░░░░░ |
+| Broke through  |    13 |   45% | █████████░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -102241.4p |
-|      +5        | +205172.4p |
-|      +10       | +284137.9p |
-|      +20       | +668448.3p |
+|      +1        | +97069.0p |
+|      +5        | +521206.9p |
+|      +10       | +563275.9p |
+|      +20       | +804827.6p |
 
 **By approach direction**
 
-- **From above** (support test): 19 touches · 79% reversed
-- **From below** (resistance test): 10 touches · 40% reversed
+- **From above** (support test): 22 touches · 64% reversed
+- **From below** (resistance test): 7 touches · 29% reversed
 
 **Touch log** (most recent 10)
 
@@ -14714,12 +14314,52 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
 | 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
 | 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-29 15:00 | from_above  | reversed      | +4732500.0p | +387500.0p | +1345000.0p | +4175000.0p | +2662500.0p | +2697500.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25470.25000  [session_low]  `london_low_2026-02-03`
+Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    18 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -125948.3p |
+|      +5        | -82069.0p |
+|      +10       | +125000.0p |
+|      +20       | +301896.6p |
+
+**By approach direction**
+
+- **From above** (support test): 16 touches · 75% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-02-03 21:00 | from_below  | reversed      | +6377500.0p | +930000.0p | +67500.0p | +120000.0p | +52500.0p | -4962500.0p |
+| 2026-02-04 06:00 | from_below  | reversed      | +6880000.0p | +427500.0p | +315000.0p | +27500.0p | -4360000.0p | -5097500.0p |
+| 2026-02-04 12:00 | from_above  | broke_through | +122500.0p | +6222500.0p | -477500.0p | -5315000.0p | -2895000.0p | -4075000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24535.50000  [session_low]  `london_low_2026-03-04`
@@ -14761,46 +14401,6 @@ Touches: **29**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-24 20:00 | from_below  | broke_through | +1172500.0p | +1360000.0p | +227500.0p | -685000.0p | +45000.0p | +240000.0p |
 | 2026-03-25 12:00 | from_below  | reversed      | +3410000.0p | +780000.0p | -795000.0p | -202500.0p | -1242500.0p | -2930000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
-
-### Level 25524.25000  [prev_day_high]  `pdh_2025-11-30`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    16 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    12 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -246339.3p |
-|      +5        | +198392.9p |
-|      +10       | +464375.0p |
-|      +20       | +566160.7p |
-
-**By approach direction**
-
-- **From above** (support test): 20 touches · 65% reversed
-- **From below** (resistance test): 8 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-05 08:00 | from_below  | broke_through | +162500.0p | +1960000.0p | +0.0p | +640000.0p | +1007500.0p | +1307500.0p |
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25868.00000  [prev_day_high]  `pdh_2025-12-05`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -14882,86 +14482,6 @@ Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25514.25000  [prev_day_high]  `pdh_2026-02-04`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    15 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    13 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -205446.4p |
-|      +5        | +183482.1p |
-|      +10       | +254196.4p |
-|      +20       | +329732.1p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 63% reversed
-- **From below** (resistance test): 9 touches · 33% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25447.25000  [prev_day_high]  `pdh_2026-02-10`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   61% | ████████████░░░░░░░░ |
-| Broke through  |    11 |   39% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -266964.3p |
-|      +5        | +11339.3p |
-|      +10       | +142053.6p |
-|      +20       | +267410.7p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 64% reversed
-- **From below** (resistance test): 14 touches · 57% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
-
 ### Level 24550.00000  [prev_day_high]  `pdh_2026-03-24`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -15042,6 +14562,46 @@ Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 12:00 | from_below  | reversed      | +3410000.0p | +780000.0p | -795000.0p | -202500.0p | -1242500.0p | -2930000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
+### Level 25528.75000  [prev_day_low]  `pdl_2025-12-10`
+Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   57% | ███████████░░░░░░░░░ |
+| Broke through  |    12 |   43% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -97053.6p |
+|      +5        | +378660.7p |
+|      +10       | +571517.9p |
+|      +20       | +772321.4p |
+
+**By approach direction**
+
+- **From above** (support test): 21 touches · 67% reversed
+- **From below** (resistance test): 7 touches · 29% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
 ### Level 25834.25000  [prev_day_low]  `pdl_2025-12-26`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -15081,86 +14641,6 @@ Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
-
-### Level 25527.50000  [prev_day_low]  `pdl_2026-01-06`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    16 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    12 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -125535.7p |
-|      +5        | +288392.9p |
-|      +10       | +597946.4p |
-|      +20       | +655000.0p |
-
-**By approach direction**
-
-- **From above** (support test): 21 touches · 67% reversed
-- **From below** (resistance test): 7 touches · 29% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25524.25000  [prev_week_high]  `pwh_2025_w48`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    16 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    12 |   43% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -246339.3p |
-|      +5        | +198392.9p |
-|      +10       | +464375.0p |
-|      +20       | +566160.7p |
-
-**By approach direction**
-
-- **From above** (support test): 20 touches · 65% reversed
-- **From below** (resistance test): 8 touches · 38% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-05 08:00 | from_below  | broke_through | +162500.0p | +1960000.0p | +0.0p | +640000.0p | +1007500.0p | +1307500.0p |
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25868.00000  [prev_week_high]  `pwh_2025_w49`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -15282,86 +14762,6 @@ Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25514.25000  [session_high]  `london_high_2026-02-04`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    15 |   54% | ███████████░░░░░░░░░ |
-| Broke through  |    13 |   46% | █████████░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -205446.4p |
-|      +5        | +183482.1p |
-|      +10       | +254196.4p |
-|      +20       | +329732.1p |
-
-**By approach direction**
-
-- **From above** (support test): 19 touches · 63% reversed
-- **From below** (resistance test): 9 touches · 33% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
-| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
-| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
-| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
-
-### Level 25447.25000  [session_high]  `london_high_2026-02-10`
-Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
-
-**Reaction summary**
-
-| Outcome        | Count | Rate  | Bar chart            |
-|----------------|-------|-------|----------------------|
-| Reversed       |    17 |   61% | ████████████░░░░░░░░ |
-| Broke through  |    11 |   39% | ████████░░░░░░░░░░░░ |
-| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
-
-**Average pip move from touch close** (+ = higher, − = lower)
-
-| Bars forward | Avg move |
-|:------------:|:--------:|
-|      +1        | -266964.3p |
-|      +5        | +11339.3p |
-|      +10       | +142053.6p |
-|      +20       | +267410.7p |
-
-**By approach direction**
-
-- **From above** (support test): 14 touches · 64% reversed
-- **From below** (resistance test): 14 touches · 57% reversed
-
-**Touch log** (most recent 10)
-
-| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
-|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
-| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
-| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
-| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
-| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
-| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
-| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
-| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
-| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
-
 ### Level 24539.75000  [session_high]  `london_high_2026-03-25`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -15402,44 +14802,44 @@ Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 12:00 | from_below  | reversed      | +3410000.0p | +780000.0p | -795000.0p | -202500.0p | -1242500.0p | -2930000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25528.50000  [session_low]  `london_low_2025-11-12`
+### Level 25457.00000  [session_low]  `london_low_2025-11-10`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    16 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    12 |   43% | █████████░░░░░░░░░░░ |
+| Reversed       |    17 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   39% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -177321.4p |
-|      +5        | +286250.0p |
-|      +10       | +561875.0p |
-|      +20       | +669910.7p |
+|      +1        | -157678.6p |
+|      +5        | +219821.4p |
+|      +10       | +275089.3p |
+|      +20       | +487053.6p |
 
 **By approach direction**
 
-- **From above** (support test): 21 touches · 67% reversed
-- **From below** (resistance test): 7 touches · 29% reversed
+- **From above** (support test): 15 touches · 73% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
-| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
 | 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
-| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
-| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
-| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
-| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 25834.25000  [session_low]  `london_low_2025-12-26`
@@ -15482,44 +14882,124 @@ Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
-### Level 25527.50000  [session_low]  `london_low_2026-01-06`
+### Level 25455.00000  [session_low]  `london_low_2026-01-05`
 Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
 
 | Outcome        | Count | Rate  | Bar chart            |
 |----------------|-------|-------|----------------------|
-| Reversed       |    16 |   57% | ███████████░░░░░░░░░ |
-| Broke through  |    12 |   43% | █████████░░░░░░░░░░░ |
+| Reversed       |    17 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   39% | ████████░░░░░░░░░░░░ |
 | Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
 
 **Average pip move from touch close** (+ = higher, − = lower)
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -125535.7p |
-|      +5        | +288392.9p |
-|      +10       | +597946.4p |
-|      +20       | +655000.0p |
+|      +1        | -157678.6p |
+|      +5        | +219821.4p |
+|      +10       | +275089.3p |
+|      +20       | +487053.6p |
 
 **By approach direction**
 
-- **From above** (support test): 21 touches · 67% reversed
-- **From below** (resistance test): 7 touches · 29% reversed
+- **From above** (support test): 15 touches · 73% reversed
+- **From below** (resistance test): 13 touches · 46% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-11 14:00 | from_below  | reversed      | +2470000.0p | +687500.0p | -612500.0p | +37500.0p | -42500.0p | +612500.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25469.50000  [session_low]  `london_low_2026-01-14`
+Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   61% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   39% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -117142.9p |
+|      +5        | +247857.1p |
+|      +10       | +294553.6p |
+|      +20       | +579107.1p |
+
+**By approach direction**
+
+- **From above** (support test): 16 touches · 75% reversed
+- **From below** (resistance test): 12 touches · 42% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 10:00 | from_below  | broke_through | +55000.0p | +6212500.0p | +457500.0p | +4340000.0p | +4497500.0p | +6060000.0p |
+| 2026-02-03 16:00 | from_above  | broke_through | +230000.0p | +2722500.0p | -1040000.0p | -700000.0p | -580000.0p | -1332500.0p |
+| 2026-02-04 02:00 | from_below  | reversed      | +6287500.0p | +1020000.0p | +210000.0p | +907500.0p | -65000.0p | -2960000.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25499.00000  [session_low]  `london_low_2026-01-22`
+Touches: **28**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    19 |   68% | ██████████████░░░░░░ |
+| Broke through  |     9 |   32% | ██████░░░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -76428.6p |
+|      +5        | +228214.3p |
+|      +10       | +305535.7p |
+|      +20       | +736160.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 83% reversed
+- **From below** (resistance test): 10 touches · 40% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
 | 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
 | 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
 | 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24550.00000  [session_low]  `london_low_2026-02-05`
@@ -15682,6 +15162,46 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
+### Level 25524.25000  [prev_day_high]  `pdh_2025-11-30`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -177685.2p |
+|      +5        | +246018.5p |
+|      +10       | +552314.8p |
+|      +20       | +695925.9p |
+
+**By approach direction**
+
+- **From above** (support test): 19 touches · 68% reversed
+- **From below** (resistance test): 8 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-05 08:00 | from_below  | broke_through | +162500.0p | +1960000.0p | +0.0p | +640000.0p | +1007500.0p | +1307500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
 ### Level 25879.00000  [prev_day_high]  `pdh_2025-12-28`
 Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -15722,6 +15242,86 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
+### Level 25514.25000  [prev_day_high]  `pdh_2026-02-04`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    15 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    12 |   44% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -135277.8p |
+|      +5        | +230555.6p |
+|      +10       | +334351.9p |
+|      +20       | +450740.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 67% reversed
+- **From below** (resistance test): 9 touches · 33% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25447.25000  [prev_day_high]  `pdh_2026-02-10`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   63% | █████████████░░░░░░░ |
+| Broke through  |    10 |   37% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -246296.3p |
+|      +5        | +28055.6p |
+|      +10       | +158981.5p |
+|      +20       | +322777.8p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 69% reversed
+- **From below** (resistance test): 14 touches · 57% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
+
 ### Level 24452.25000  [prev_day_high]  `pdh_2026-04-06`
 Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -15761,6 +15361,46 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-03-25 14:00 | from_below  | reversed      | +3855000.0p | +100000.0p | -1060000.0p | -1122500.0p | -1205000.0p | -3822500.0p |
 | 2026-04-06 14:00 | from_below  | reversed      | +1532500.0p | +1157500.0p | +170000.0p | +567500.0p | -1292500.0p | -955000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
+
+### Level 25527.50000  [prev_day_low]  `pdl_2026-01-06`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -52407.4p |
+|      +5        | +339351.9p |
+|      +10       | +690833.3p |
+|      +20       | +788055.6p |
+
+**By approach direction**
+
+- **From above** (support test): 20 touches · 70% reversed
+- **From below** (resistance test): 7 touches · 29% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24449.25000  [prev_day_low]  `pdl_2026-02-17`
 Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -15841,6 +15481,46 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-02 15:00 | from_below  | broke_through | +375000.0p | +1872500.0p | +530000.0p | +157500.0p | +882500.0p | +1412500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
+
+### Level 25524.25000  [prev_week_high]  `pwh_2025_w48`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -177685.2p |
+|      +5        | +246018.5p |
+|      +10       | +552314.8p |
+|      +20       | +695925.9p |
+
+**By approach direction**
+
+- **From above** (support test): 19 touches · 68% reversed
+- **From below** (resistance test): 8 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-05 08:00 | from_below  | broke_through | +162500.0p | +1960000.0p | +0.0p | +640000.0p | +1007500.0p | +1307500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24449.25000  [prev_week_low]  `pwl_2026_w08`
 Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -16042,6 +15722,86 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
 
+### Level 25514.25000  [session_high]  `london_high_2026-02-04`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    15 |   56% | ███████████░░░░░░░░░ |
+| Broke through  |    12 |   44% | █████████░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -135277.8p |
+|      +5        | +230555.6p |
+|      +10       | +334351.9p |
+|      +20       | +450740.7p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 67% reversed
+- **From below** (resistance test): 9 touches · 33% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-02-04 07:00 | from_below  | reversed      | +7195000.0p | +65000.0p | -765000.0p | -972500.0p | -6287500.0p | -5555000.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25447.25000  [session_high]  `london_high_2026-02-10`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    17 |   63% | █████████████░░░░░░░ |
+| Broke through  |    10 |   37% | ███████░░░░░░░░░░░░░ |
+| Consolidated   |     0 |   -0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -246296.3p |
+|      +5        | +28055.6p |
+|      +10       | +158981.5p |
+|      +20       | +322777.8p |
+
+**By approach direction**
+
+- **From above** (support test): 13 touches · 69% reversed
+- **From below** (resistance test): 14 touches · 57% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-21 15:00 | from_below  | reversed      | +3280000.0p | +2457500.0p | -2407500.0p | +10000.0p | +980000.0p | +2215000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 09:00 | from_below  | broke_through | +627500.0p | +5532500.0p | -475000.0p | +2952500.0p | +3925000.0p | +5382500.0p |
+| 2026-02-03 17:00 | from_above  | broke_through | +1270000.0p | +2012500.0p | -1417500.0p | +407500.0p | +392500.0p | -1930000.0p |
+| 2026-02-04 01:00 | from_below  | reversed      | +6572500.0p | +735000.0p | -285000.0p | +307500.0p | +335000.0p | -3237500.0p |
+| 2026-02-04 08:00 | from_above  | broke_through | +640000.0p | +6430000.0p | -227500.0p | -685000.0p | -5015000.0p | -4205000.0p |
+| 2026-02-10 15:00 | from_below  | reversed      | +2287500.0p | +252500.0p | -480000.0p | -1560000.0p | -527500.0p | -1275000.0p |
+| 2026-02-11 13:00 | from_below  | reversed      | +3860000.0p | +210000.0p | -1390000.0p | -1430000.0p | -1790000.0p | -945000.0p |
+| 2026-02-25 21:00 | from_below  | reversed      | +6000000.0p | -435000.0p | -1445000.0p | -1600000.0p | -1117500.0p | -4602500.0p |
+| 2026-04-13 18:00 | from_below  | broke_through | +142500.0p | +4545000.0p | +925000.0p | +1450000.0p | +1290000.0p | +4305000.0p |
+
 ### Level 24452.25000  [session_high]  `london_high_2026-04-06`
 Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
@@ -16082,7 +15842,7 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-06 14:00 | from_below  | reversed      | +1532500.0p | +1157500.0p | +170000.0p | +567500.0p | -1292500.0p | -955000.0p |
 | 2026-04-07 22:00 | from_below  | broke_through |  +5000.0p | +3430000.0p | +1367500.0p | +1885000.0p | +3012500.0p | +392500.0p |
 
-### Level 25520.50000  [session_low]  `london_low_2025-12-04`
+### Level 25528.50000  [session_low]  `london_low_2025-11-12`
 Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 **Reaction summary**
@@ -16097,28 +15857,68 @@ Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Bars forward | Avg move |
 |:------------:|:--------:|
-|      +1        | -207222.2p |
-|      +5        | +234351.9p |
-|      +10       | +488796.3p |
-|      +20       | +574259.3p |
+|      +1        | -106111.1p |
+|      +5        | +337129.6p |
+|      +10       | +653425.9p |
+|      +20       | +803518.5p |
 
 **By approach direction**
 
-- **From above** (support test): 19 touches · 68% reversed
-- **From below** (resistance test): 8 touches · 38% reversed
+- **From above** (support test): 20 touches · 70% reversed
+- **From below** (resistance test): 7 touches · 29% reversed
 
 **Touch log** (most recent 10)
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-01-05 08:00 | from_below  | broke_through | +162500.0p | +1960000.0p | +0.0p | +640000.0p | +1007500.0p | +1307500.0p |
+| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 05:00 | from_above  | reversed      | +2055000.0p | +505000.0p | +55000.0p | +1540000.0p | +717500.0p | +1345000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
+
+### Level 25527.50000  [session_low]  `london_low_2026-01-06`
+Touches: **27**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   59% | ████████████░░░░░░░░ |
+| Broke through  |    11 |   41% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -52407.4p |
+|      +5        | +339351.9p |
+|      +10       | +690833.3p |
+|      +20       | +788055.6p |
+
+**By approach direction**
+
+- **From above** (support test): 20 touches · 70% reversed
+- **From below** (resistance test): 7 touches · 29% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-06 08:00 | from_above  | reversed      | +2725000.0p | +152500.0p | +145000.0p | +442500.0p | +2277500.0p | +2112500.0p |
 | 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
 | 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
 | 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
 | 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
 | 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
 | 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
-| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-02 13:00 | from_below  | broke_through | +90000.0p | +4985000.0p | +2200000.0p | +4125000.0p | +4237500.0p | +4265000.0p |
 | 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
 | 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
@@ -16561,6 +16361,46 @@ Touches: **26**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-02-02 21:00 | from_below  | reversed      | +6277500.0p | +1545000.0p | +750000.0p | +832500.0p | +1045000.0p | -6277500.0p |
 | 2026-02-03 14:00 | from_above  | broke_through | +137500.0p | +4140000.0p | -155000.0p | -3167500.0p | -1922500.0p | -1587500.0p |
 | 2026-04-14 15:00 | from_below  | broke_through | +37500.0p | +1822500.0p | +382500.0p | +1142500.0p | +1202500.0p | +1142500.0p |
+
+### Level 25520.50000  [session_low]  `london_low_2025-12-04`
+Touches: **26**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |    16 |   62% | ████████████░░░░░░░░ |
+| Broke through  |    10 |   38% | ████████░░░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -134423.1p |
+|      +5        | +285192.3p |
+|      +10       | +581057.7p |
+|      +20       | +709326.9p |
+
+**By approach direction**
+
+- **From above** (support test): 18 touches · 72% reversed
+- **From below** (resistance test): 8 touches · 38% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-01-05 08:00 | from_below  | broke_through | +162500.0p | +1960000.0p | +0.0p | +640000.0p | +1007500.0p | +1307500.0p |
+| 2026-01-14 15:00 | from_above  | reversed      | +3637500.0p | +712500.0p | -317500.0p | +1447500.0p | +1170000.0p | +3607500.0p |
+| 2026-01-19 04:00 | from_above  | broke_through | +542500.0p | +2802500.0p | +80000.0p | -2412500.0p | -507500.0p | -1735000.0p |
+| 2026-01-21 19:00 | from_below  | reversed      | +1927500.0p | +1010000.0p | -1677500.0p | -442500.0p | -990000.0p | +307500.0p |
+| 2026-01-22 06:00 | from_above  | reversed      | +2000000.0p | +407500.0p | +487500.0p | +1352500.0p | +1297500.0p | +1560000.0p |
+| 2026-01-25 23:00 | from_above  | reversed      | +3775000.0p | +142500.0p | +230000.0p | +800000.0p | +592500.0p | +3195000.0p |
+| 2026-02-01 23:00 | from_above  | reversed      | +4167500.0p | +3525000.0p | +727500.0p | -1802500.0p | -787500.0p | +3137500.0p |
+| 2026-02-02 12:00 | from_below  | broke_through | +317500.0p | +5400000.0p | +415000.0p | +4357500.0p | +4605000.0p | +4815000.0p |
+| 2026-02-03 15:00 | from_above  | broke_through | +22500.0p | +3985000.0p | -1262500.0p | -1712500.0p | -2052500.0p | -2117500.0p |
+| 2026-04-13 19:00 | from_below  | broke_through | +42500.0p | +4002500.0p | +477500.0p | +435000.0p | +470000.0p | +3762500.0p |
 
 ### Level 24477.00000  [session_low]  `london_low_2026-03-02`
 Touches: **26**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -22301,7 +22141,7 @@ Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |      +1        | -405000.0p |
 |      +5        | -284375.0p |
 |      +10       | +388125.0p |
-|      +20       | -642500.0p |
+|      +20       | +651875.0p |
 
 **By approach direction**
 
@@ -22314,7 +22154,7 @@ Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-05-01 15:00 | from_below  | reversed      | +2777500.0p | +750000.0p | -592500.0p | -550000.0p | +17500.0p | -1310000.0p |
 | 2026-05-04 04:00 | from_below  | reversed      | +3257500.0p | +270000.0p | -32500.0p | -485000.0p | -567500.0p | -1235000.0p |
 | 2026-05-04 14:00 | from_below  | reversed      | +2690000.0p | +770000.0p | -1472500.0p | -1017500.0p | -667500.0p | +617500.0p |
-| 2026-05-05 07:00 | from_below  | broke_through | +25000.0p | +5400000.0p | +477500.0p | +915000.0p | +2770000.0p | +0.0p |
+| 2026-05-05 07:00 | from_below  | broke_through | +25000.0p | +5400000.0p | +477500.0p | +915000.0p | +2770000.0p | +4535000.0p |
 
 ### Level 26440.00000  [prev_day_low]  `pdl_2026-04-17`
 Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -22470,7 +22310,7 @@ Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |      +1        | -405000.0p |
 |      +5        | -284375.0p |
 |      +10       | +388125.0p |
-|      +20       | -642500.0p |
+|      +20       | +651875.0p |
 
 **By approach direction**
 
@@ -22483,7 +22323,7 @@ Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-05-01 15:00 | from_below  | reversed      | +2777500.0p | +750000.0p | -592500.0p | -550000.0p | +17500.0p | -1310000.0p |
 | 2026-05-04 04:00 | from_below  | reversed      | +3257500.0p | +270000.0p | -32500.0p | -485000.0p | -567500.0p | -1235000.0p |
 | 2026-05-04 14:00 | from_below  | reversed      | +2690000.0p | +770000.0p | -1472500.0p | -1017500.0p | -667500.0p | +617500.0p |
-| 2026-05-05 07:00 | from_below  | broke_through | +25000.0p | +5400000.0p | +477500.0p | +915000.0p | +2770000.0p | +0.0p |
+| 2026-05-05 07:00 | from_below  | broke_through | +25000.0p | +5400000.0p | +477500.0p | +915000.0p | +2770000.0p | +4535000.0p |
 
 ### Level 26488.00000  [session_high]  `london_high_2026-04-16`
 Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -22570,7 +22410,7 @@ Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |      +1        | -66875.0p |
 |      +5        | -91250.0p |
 |      +10       | +627500.0p |
-|      +20       | -280833.3p |
+|      +20       | +923125.0p |
 
 **By approach direction**
 
@@ -22583,7 +22423,7 @@ Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-05-01 14:00 | from_below  | reversed      | +2017500.0p | +1510000.0p | +760000.0p | +222500.0p | +975000.0p | -225000.0p |
 | 2026-05-04 04:00 | from_below  | reversed      | +3257500.0p | +270000.0p | -32500.0p | -485000.0p | -567500.0p | -1235000.0p |
 | 2026-05-04 14:00 | from_below  | reversed      | +2690000.0p | +770000.0p | -1472500.0p | -1017500.0p | -667500.0p | +617500.0p |
-| 2026-05-05 07:00 | from_below  | broke_through | +25000.0p | +5400000.0p | +477500.0p | +915000.0p | +2770000.0p | +0.0p |
+| 2026-05-05 07:00 | from_below  | broke_through | +25000.0p | +5400000.0p | +477500.0p | +915000.0p | +2770000.0p | +4535000.0p |
 
 ### Level 23238.25000  [session_low]  `london_low_2026-03-31`
 Touches: **4**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -22885,6 +22725,39 @@ Touches: **3**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | 2026-04-30 22:00 | from_below  | broke_through | +435000.0p | +3372500.0p | +145000.0p | +647500.0p | -130000.0p | +2420000.0p |
 | 2026-05-01 13:00 | from_below  | reversed      | +2605000.0p | +922500.0p | -587500.0p | -517500.0p | +220000.0p | -1672500.0p |
 | 2026-05-04 16:00 | from_above  | reversed      | +4057500.0p | +22500.0p | +860000.0p | +472500.0p | +1357500.0p | +3790000.0p |
+
+### Level 28422.00000  [prev_day_high]  `pdh_2026-05-05`
+Touches: **3**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |     1 |   33% | ███████░░░░░░░░░░░░░ |
+| Broke through  |     2 |   67% | █████████████░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +134166.7p |
+|      +5        | +325833.3p |
+|      +10       | +1412500.0p |
+|      +20       | +2640000.0p |
+
+**By approach direction**
+
+- **From above** (support test): 1 touches · 100% reversed
+- **From below** (resistance test): 2 touches · 0% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-05-05 22:00 | from_below  | broke_through | +1282500.0p | +2895000.0p | -62500.0p | -625000.0p | +1065000.0p | +2640000.0p |
+| 2026-05-06 08:00 | from_below  | broke_through | +1467500.0p | +3172500.0p | +235000.0p | -137500.0p | +1575000.0p | +0.0p |
+| 2026-05-06 14:00 | from_above  | reversed      | +2627500.0p | +250000.0p | +230000.0p | +1740000.0p | +1597500.0p | +0.0p |
 
 ### Level 23232.50000  [prev_day_low]  `pdl_2026-03-27`
 Touches: **3**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -23234,7 +23107,7 @@ Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |      +1        | +358750.0p |
 |      +5        | +318750.0p |
 |      +10       | +978750.0p |
-|      +20       | -1200000.0p |
+|      +20       | +2063750.0p |
 
 **By approach direction**
 
@@ -23245,7 +23118,7 @@ Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-05-04 05:00 | from_below  | reversed      | +3225000.0p | +157500.0p | -400000.0p | -1217500.0p | -2007500.0p | -1200000.0p |
-| 2026-05-05 12:00 | from_below  | broke_through | +25000.0p | +4485000.0p | +1117500.0p | +1855000.0p | +3965000.0p | +0.0p |
+| 2026-05-05 12:00 | from_below  | broke_through | +25000.0p | +5442500.0p | +1117500.0p | +1855000.0p | +3965000.0p | +5327500.0p |
 
 ### Level 23108.50000  [prev_day_low]  `pdl_2026-03-29`
 Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -23359,7 +23232,7 @@ Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |      +1        | -26250.0p |
 |      +5        | +553750.0p |
 |      +10       | +710000.0p |
-|      +20       | -1235000.0p |
+|      +20       | +1380000.0p |
 
 **By approach direction**
 
@@ -23370,7 +23243,7 @@ Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
 | 2026-05-04 04:00 | from_below  | reversed      | +3257500.0p | +270000.0p | -32500.0p | -485000.0p | -567500.0p | -1235000.0p |
-| 2026-05-05 09:00 | from_below  | broke_through | +367500.0p | +4852500.0p | -20000.0p | +1592500.0p | +1987500.0p | +0.0p |
+| 2026-05-05 09:00 | from_below  | broke_through | +367500.0p | +4852500.0p | -20000.0p | +1592500.0p | +1987500.0p | +3995000.0p |
 
 ### Level 28139.25000  [session_high]  `london_high_2026-05-05`
 Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
@@ -23389,7 +23262,38 @@ Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 |:------------:|:--------:|
 |      +1        | +1000000.0p |
 |      +5        | +601250.0p |
-|      +10       | +1967500.0p |
+|      +10       | +1686250.0p |
+|      +20       | +4175000.0p |
+
+**By approach direction**
+
+- **From below** (resistance test): 2 touches · 0% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-05-05 14:00 | from_below  | broke_through | +82500.0p | +5382500.0p | +310000.0p | +395000.0p | +1967500.0p | +4422500.0p |
+| 2026-05-05 20:00 | from_below  | broke_through | -357500.0p | +4270000.0p | +1690000.0p | +807500.0p | +1405000.0p | +3927500.0p |
+
+### Level 28634.25000  [session_high]  `london_high_2026-05-06`
+Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+| Broke through  |     2 |  100% | ████████████████████ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | -46250.0p |
+|      +5        | +113750.0p |
+|      +10       | +1382500.0p |
 |      +20       |    +0.0p |
 
 **By approach direction**
@@ -23400,5 +23304,37 @@ Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
 
 | Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
 |---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
-| 2026-05-05 14:00 | from_below  | broke_through | +82500.0p | +3260000.0p | +310000.0p | +395000.0p | +1967500.0p | +0.0p |
-| 2026-05-05 20:00 | from_below  | broke_through | -357500.0p | +2147500.0p | +1690000.0p | +807500.0p | +0.0p | +0.0p |
+| 2026-05-06 11:00 | from_below  | broke_through | +2022500.0p | +2617500.0p | -802500.0p | +10000.0p | +1382500.0p | +0.0p |
+| 2026-05-06 18:00 | from_below  | broke_through | +32500.0p | +1597500.0p | +710000.0p | +217500.0p | +0.0p | +0.0p |
+
+### Level 28300.00000  [session_low]  `london_low_2026-05-06`
+Touches: **2**  |  Zone: ±5.0 pips  |  Forward: 20 bars
+
+**Reaction summary**
+
+| Outcome        | Count | Rate  | Bar chart            |
+|----------------|-------|-------|----------------------|
+| Reversed       |     1 |   50% | ██████████░░░░░░░░░░ |
+| Broke through  |     1 |   50% | ██████████░░░░░░░░░░ |
+| Consolidated   |     0 |    0% | ░░░░░░░░░░░░░░░░░░░░ |
+
+**Average pip move from touch close** (+ = higher, − = lower)
+
+| Bars forward | Avg move |
+|:------------:|:--------:|
+|      +1        | +26250.0p |
+|      +5        | +697500.0p |
+|      +10       | +1547500.0p |
+|      +20       | +3117500.0p |
+
+**By approach direction**
+
+- **From above** (support test): 1 touches · 100% reversed
+- **From below** (resistance test): 1 touches · 0% reversed
+
+**Touch log** (most recent 10)
+
+| Timestamp           | Direction   | Outcome       | Favorable | Adverse  | +1p  | +5p  | +10p  | +20p  |
+|---------------------|-------------|---------------|-----------|----------|-------|-------|-------|-------|
+| 2026-05-05 22:00 | from_below  | broke_through | +1282500.0p | +2895000.0p | -62500.0p | -625000.0p | +1065000.0p | +2640000.0p |
+| 2026-05-06 06:00 | from_above  | reversed      | +4637500.0p | +282500.0p | +115000.0p | +2020000.0p | +2030000.0p | +3595000.0p |
