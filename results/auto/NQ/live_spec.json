@@ -1,5 +1,5 @@
 {
-  "strategy_name": "auto_nq_2026-05-07",
+  "strategy_name": "auto_nq_2026-05-08",
   "instrument": {
     "symbol": "NQ",
     "quote_ccy": "USD",
@@ -37,8 +37,8 @@
     "daily_sma_period": 20
   },
   "window": {
-    "start_date": "2025-11-08",
-    "end_date": "2026-05-07"
+    "start_date": "2025-11-09",
+    "end_date": "2026-05-08"
   },
   "execution_policy_name": "default_v0_1",
   "robustness": {

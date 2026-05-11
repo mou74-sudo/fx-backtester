@@ -1,8 +1,8 @@
 {
-  "bar_count": 2791,
+  "bar_count": 2808,
   "instrument": "NQ",
   "pip_size": 0.0001,
-  "price_range_high": 28944.75,
+  "price_range_high": 29386.75,
   "price_range_low": 22961.5,
   "summaries": [
     {
@@ -356654,15 +356654,15 @@
     {
       "avg_forward_pips": {
         "1": 60500.0,
-        "10": 225000.0,
-        "20": -110000.0,
-        "5": 128125.0
+        "10": 417500.0,
+        "20": 2154500.0,
+        "5": 222000.0
       },
-      "breakout_count": 3,
+      "breakout_count": 2,
       "consolidation_count": 0,
       "forward_bars": 20,
       "from_above_count": 3,
-      "from_above_reversal_count": 2,
+      "from_above_reversal_count": 3,
       "from_below_count": 2,
       "from_below_reversal_count": 0,
       "level": {
@@ -356711,6 +356711,7 @@
           "forward_pips": {
             "1": 50000.0,
             "10": -830000.0,
+            "20": 1010000.0,
             "5": 572500.0
           },
           "max_adverse_pips": 1860000.0,
@@ -356728,11 +356729,12 @@
           "forward_pips": {
             "1": -2500.0,
             "10": 785000.0,
+            "20": 4105000.0,
             "5": -822500.0
           },
           "max_adverse_pips": 1557500.0,
-          "max_favorable_pips": 855000.0,
-          "outcome": "broke_through",
+          "max_favorable_pips": 4145000.0,
+          "outcome": "reversed",
           "touch": {
             "approach": "from_above",
             "bar_index": 2780,
@@ -356743,9 +356745,12 @@
         },
         {
           "forward_pips": {
-            "1": 157500.0
+            "1": 157500.0,
+            "10": 1187500.0,
+            "20": 5877500.0,
+            "5": 597500.0
           },
-          "max_adverse_pips": 375000.0,
+          "max_adverse_pips": 6420000.0,
           "max_favorable_pips": 352500.0,
           "outcome": "broke_through",
           "touch": {
@@ -356757,7 +356762,7 @@
           }
         }
       ],
-      "reversal_count": 2,
+      "reversal_count": 3,
       "touch_count": 5,
       "zone_pips": 5.0
     },
@@ -357151,22 +357156,22 @@
     },
     {
       "avg_forward_pips": {
-        "1": 143750.0,
-        "10": -175000.0,
-        "20": -157500.0,
-        "5": -614166.7
+        "1": 255625.0,
+        "10": 836250.0,
+        "20": 225833.3,
+        "5": -313125.0
       },
-      "breakout_count": 1,
+      "breakout_count": 2,
       "consolidation_count": 0,
       "forward_bars": 20,
       "from_above_count": 0,
       "from_above_reversal_count": 0,
       "from_below_count": 4,
-      "from_below_reversal_count": 3,
+      "from_below_reversal_count": 2,
       "level": {
-        "label": "pdh_2026-05-08",
+        "label": "pdh_2026-05-06",
         "level_type": "prev_day_high",
-        "price": 28782.25
+        "price": 28800.0
       },
       "reactions": [
         {
@@ -357182,7 +357187,7 @@
           "touch": {
             "approach": "from_below",
             "bar_index": 2761,
-            "level_price": 28782.25,
+            "level_price": 28800.0,
             "timestamp": "2026-05-06T20:00:00Z",
             "touch_close": 28712.25
           }
@@ -357191,6 +357196,7 @@
           "forward_pips": {
             "1": -407500.0,
             "10": -810000.0,
+            "20": 15000.0,
             "5": -222500.0
           },
           "max_adverse_pips": 1672500.0,
@@ -357199,7 +357205,7 @@
           "touch": {
             "approach": "from_below",
             "bar_index": 2771,
-            "level_price": 28782.25,
+            "level_price": 28800.0,
             "timestamp": "2026-05-07T07:00:00Z",
             "touch_close": 28777.5
           }
@@ -357208,6 +357214,7 @@
           "forward_pips": {
             "1": 1470000.0,
             "10": -367500.0,
+            "20": 820000.0,
             "5": -1367500.0
           },
           "max_adverse_pips": 1632500.0,
@@ -357216,28 +357223,30 @@
           "touch": {
             "approach": "from_below",
             "bar_index": 2777,
-            "level_price": 28782.25,
+            "level_price": 28800.0,
             "timestamp": "2026-05-07T13:00:00Z",
             "touch_close": 28781.5
           }
         },
         {
           "forward_pips": {
-            "1": -130000.0
+            "1": 317500.0,
+            "10": 3870000.0,
+            "5": 590000.0
           },
-          "max_adverse_pips": 162500.0,
-          "max_favorable_pips": 510000.0,
-          "outcome": "reversed",
+          "max_adverse_pips": 5822500.0,
+          "max_favorable_pips": 210000.0,
+          "outcome": "broke_through",
           "touch": {
             "approach": "from_below",
-            "bar_index": 2788,
-            "level_price": 28782.25,
-            "timestamp": "2026-05-08T01:00:00Z",
-            "touch_close": 28760.5
+            "bar_index": 2792,
+            "level_price": 28800.0,
+            "timestamp": "2026-05-08T05:00:00Z",
+            "touch_close": 28804.5
           }
         }
       ],
-      "reversal_count": 3,
+      "reversal_count": 2,
       "touch_count": 4,
       "zone_pips": 5.0
     },
@@ -357632,15 +357641,15 @@
     {
       "avg_forward_pips": {
         "1": 186875.0,
-        "10": 576666.7,
-        "20": -110000.0,
-        "5": -20000.0
+        "10": 864375.0,
+        "20": 2622500.0,
+        "5": 233750.0
       },
-      "breakout_count": 3,
+      "breakout_count": 2,
       "consolidation_count": 0,
       "forward_bars": 20,
       "from_above_count": 2,
-      "from_above_reversal_count": 1,
+      "from_above_reversal_count": 2,
       "from_below_count": 2,
       "from_below_reversal_count": 0,
       "level": {
@@ -357689,11 +357698,12 @@
           "forward_pips": {
             "1": -2500.0,
             "10": 785000.0,
+            "20": 4105000.0,
             "5": -822500.0
           },
           "max_adverse_pips": 1557500.0,
-          "max_favorable_pips": 855000.0,
-          "outcome": "broke_through",
+          "max_favorable_pips": 4145000.0,
+          "outcome": "reversed",
           "touch": {
             "approach": "from_above",
             "bar_index": 2780,
@@ -357704,9 +357714,12 @@
         },
         {
           "forward_pips": {
-            "1": 652500.0
+            "1": 652500.0,
+            "10": 1727500.0,
+            "20": 6605000.0,
+            "5": 995000.0
           },
-          "max_adverse_pips": 1027500.0,
+          "max_adverse_pips": 6615000.0,
           "max_favorable_pips": -2500.0,
           "outcome": "broke_through",
           "touch": {
@@ -357718,7 +357731,7 @@
           }
         }
       ],
-      "reversal_count": 1,
+      "reversal_count": 2,
       "touch_count": 4,
       "zone_pips": 5.0
     },
@@ -358500,6 +358513,102 @@
     },
     {
       "avg_forward_pips": {
+        "1": 240000.0,
+        "10": 826250.0,
+        "20": 225833.3,
+        "5": -277500.0
+      },
+      "breakout_count": 2,
+      "consolidation_count": 0,
+      "forward_bars": 20,
+      "from_above_count": 0,
+      "from_above_reversal_count": 0,
+      "from_below_count": 4,
+      "from_below_reversal_count": 2,
+      "level": {
+        "label": "london_low_2026-05-08",
+        "level_type": "session_low",
+        "price": 28783.5
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": -357500.0,
+            "10": 652500.0,
+            "20": -157500.0,
+            "5": -252500.0
+          },
+          "max_adverse_pips": 2325000.0,
+          "max_favorable_pips": 1602500.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2761,
+            "level_price": 28783.5,
+            "timestamp": "2026-05-06T20:00:00Z",
+            "touch_close": 28712.25
+          }
+        },
+        {
+          "forward_pips": {
+            "1": -407500.0,
+            "10": -810000.0,
+            "20": 15000.0,
+            "5": -222500.0
+          },
+          "max_adverse_pips": 1672500.0,
+          "max_favorable_pips": 2365000.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2771,
+            "level_price": 28783.5,
+            "timestamp": "2026-05-07T07:00:00Z",
+            "touch_close": 28777.5
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1470000.0,
+            "10": -367500.0,
+            "20": 820000.0,
+            "5": -1367500.0
+          },
+          "max_adverse_pips": 1632500.0,
+          "max_favorable_pips": 2405000.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2777,
+            "level_price": 28783.5,
+            "timestamp": "2026-05-07T13:00:00Z",
+            "touch_close": 28781.5
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 255000.0,
+            "10": 3830000.0,
+            "5": 732500.0
+          },
+          "max_adverse_pips": 6077500.0,
+          "max_favorable_pips": -2500.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2791,
+            "level_price": 28783.5,
+            "timestamp": "2026-05-08T04:00:00Z",
+            "touch_close": 28779.0
+          }
+        }
+      ],
+      "reversal_count": 2,
+      "touch_count": 4,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
         "1": 305000.0,
         "10": 322500.0,
         "20": 697500.0,
@@ -358974,83 +359083,6 @@
     },
     {
       "avg_forward_pips": {
-        "1": 235000.0,
-        "10": -175000.0,
-        "20": -157500.0,
-        "5": -614166.7
-      },
-      "breakout_count": 1,
-      "consolidation_count": 0,
-      "forward_bars": 20,
-      "from_above_count": 0,
-      "from_above_reversal_count": 0,
-      "from_below_count": 3,
-      "from_below_reversal_count": 2,
-      "level": {
-        "label": "pdh_2026-05-06",
-        "level_type": "prev_day_high",
-        "price": 28800.0
-      },
-      "reactions": [
-        {
-          "forward_pips": {
-            "1": -357500.0,
-            "10": 652500.0,
-            "20": -157500.0,
-            "5": -252500.0
-          },
-          "max_adverse_pips": 2325000.0,
-          "max_favorable_pips": 1602500.0,
-          "outcome": "broke_through",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2761,
-            "level_price": 28800.0,
-            "timestamp": "2026-05-06T20:00:00Z",
-            "touch_close": 28712.25
-          }
-        },
-        {
-          "forward_pips": {
-            "1": -407500.0,
-            "10": -810000.0,
-            "5": -222500.0
-          },
-          "max_adverse_pips": 1672500.0,
-          "max_favorable_pips": 2365000.0,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2771,
-            "level_price": 28800.0,
-            "timestamp": "2026-05-07T07:00:00Z",
-            "touch_close": 28777.5
-          }
-        },
-        {
-          "forward_pips": {
-            "1": 1470000.0,
-            "10": -367500.0,
-            "5": -1367500.0
-          },
-          "max_adverse_pips": 1632500.0,
-          "max_favorable_pips": 2405000.0,
-          "outcome": "reversed",
-          "touch": {
-            "approach": "from_below",
-            "bar_index": 2777,
-            "level_price": 28800.0,
-            "timestamp": "2026-05-07T13:00:00Z",
-            "touch_close": 28781.5
-          }
-        }
-      ],
-      "reversal_count": 2,
-      "touch_count": 3,
-      "zone_pips": 5.0
-    },
-    {
-      "avg_forward_pips": {
         "1": 3333.3,
         "10": 1000000.0,
         "20": 2861666.7,
@@ -359368,8 +359400,8 @@
     {
       "avg_forward_pips": {
         "1": 263333.3,
-        "10": 1418750.0,
-        "20": 2173750.0,
+        "10": 1770833.3,
+        "20": 3535833.3,
         "5": 910833.3
       },
       "breakout_count": 0,
@@ -359424,10 +359456,12 @@
         {
           "forward_pips": {
             "1": 650000.0,
+            "10": 2475000.0,
+            "20": 6260000.0,
             "5": 1607500.0
           },
           "max_adverse_pips": 67500.0,
-          "max_favorable_pips": 1677500.0,
+          "max_favorable_pips": 7030000.0,
           "outcome": "reversed",
           "touch": {
             "approach": "from_above",
@@ -359761,15 +359795,15 @@
     {
       "avg_forward_pips": {
         "1": -203333.3,
-        "10": 1091250.0,
-        "20": 1712500.0,
+        "10": 1002500.0,
+        "20": 2693333.3,
         "5": 19166.7
       },
-      "breakout_count": 3,
+      "breakout_count": 2,
       "consolidation_count": 0,
       "forward_bars": 20,
       "from_above_count": 1,
-      "from_above_reversal_count": 0,
+      "from_above_reversal_count": 1,
       "from_below_count": 2,
       "from_below_reversal_count": 0,
       "level": {
@@ -359817,11 +359851,13 @@
         {
           "forward_pips": {
             "1": -517500.0,
+            "10": 825000.0,
+            "20": 4655000.0,
             "5": -170000.0
           },
           "max_adverse_pips": 1555000.0,
-          "max_favorable_pips": 857500.0,
-          "outcome": "broke_through",
+          "max_favorable_pips": 4787500.0,
+          "outcome": "reversed",
           "touch": {
             "approach": "from_above",
             "bar_index": 2781,
@@ -359831,7 +359867,7 @@
           }
         }
       ],
-      "reversal_count": 0,
+      "reversal_count": 1,
       "touch_count": 3,
       "zone_pips": 5.0
     },
@@ -360047,6 +360083,65 @@
             "level_price": 27965.75,
             "timestamp": "2026-05-05T12:00:00Z",
             "touch_close": 27973.5
+          }
+        }
+      ],
+      "reversal_count": 1,
+      "touch_count": 2,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
+        "1": 253750.0,
+        "10": -1680000.0,
+        "20": -300000.0,
+        "5": 536250.0
+      },
+      "breakout_count": 1,
+      "consolidation_count": 0,
+      "forward_bars": 20,
+      "from_above_count": 0,
+      "from_above_reversal_count": 0,
+      "from_below_count": 2,
+      "from_below_reversal_count": 1,
+      "level": {
+        "label": "pdh_2026-05-07",
+        "level_type": "prev_day_high",
+        "price": 28944.75
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": -1442500.0,
+            "10": -1680000.0,
+            "20": -300000.0,
+            "5": -2447500.0
+          },
+          "max_adverse_pips": 20000.0,
+          "max_favorable_pips": 3875000.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2778,
+            "level_price": 28944.75,
+            "timestamp": "2026-05-07T14:00:00Z",
+            "touch_close": 28928.5
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1950000.0,
+            "5": 3520000.0
+          },
+          "max_adverse_pips": 4745000.0,
+          "max_favorable_pips": 527500.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2799,
+            "level_price": 28944.75,
+            "timestamp": "2026-05-08T12:00:00Z",
+            "touch_close": 28912.25
           }
         }
       ],
@@ -360356,6 +360451,65 @@
         }
       ],
       "reversal_count": 0,
+      "touch_count": 2,
+      "zone_pips": 5.0
+    },
+    {
+      "avg_forward_pips": {
+        "1": 253750.0,
+        "10": -1680000.0,
+        "20": -300000.0,
+        "5": 536250.0
+      },
+      "breakout_count": 1,
+      "consolidation_count": 0,
+      "forward_bars": 20,
+      "from_above_count": 0,
+      "from_above_reversal_count": 0,
+      "from_below_count": 2,
+      "from_below_reversal_count": 1,
+      "level": {
+        "label": "london_high_2026-05-07",
+        "level_type": "session_high",
+        "price": 28944.75
+      },
+      "reactions": [
+        {
+          "forward_pips": {
+            "1": -1442500.0,
+            "10": -1680000.0,
+            "20": -300000.0,
+            "5": -2447500.0
+          },
+          "max_adverse_pips": 20000.0,
+          "max_favorable_pips": 3875000.0,
+          "outcome": "reversed",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2778,
+            "level_price": 28944.75,
+            "timestamp": "2026-05-07T14:00:00Z",
+            "touch_close": 28928.5
+          }
+        },
+        {
+          "forward_pips": {
+            "1": 1950000.0,
+            "5": 3520000.0
+          },
+          "max_adverse_pips": 4745000.0,
+          "max_favorable_pips": 527500.0,
+          "outcome": "broke_through",
+          "touch": {
+            "approach": "from_below",
+            "bar_index": 2799,
+            "level_price": 28944.75,
+            "timestamp": "2026-05-08T12:00:00Z",
+            "touch_close": 28912.25
+          }
+        }
+      ],
+      "reversal_count": 1,
       "touch_count": 2,
       "zone_pips": 5.0
     },
