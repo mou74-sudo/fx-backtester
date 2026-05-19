@@ -3,42 +3,42 @@
     {
       "fold_index": 1,
       "in_sample": {
-        "ending_equity": 116775.0,
-        "expectancy_pips": 559.17,
-        "max_drawdown_pct": 0.0,
-        "net_pips": 1677.5,
-        "trade_count": 3,
-        "win_rate": 1.0
+        "ending_equity": 103064.0,
+        "expectancy_pips": 76.6,
+        "max_drawdown_pct": 4.55,
+        "net_pips": 306.4,
+        "trade_count": 4,
+        "win_rate": 0.25
       },
-      "in_sample_bar_count": 393,
-      "in_sample_end": "2025-12-11T13:00:00+00:00",
-      "in_sample_start": "2025-11-16T23:00:00+00:00",
+      "in_sample_bar_count": 390,
+      "in_sample_end": "2025-12-15T16:00:00+00:00",
+      "in_sample_start": "2025-11-19T05:00:00+00:00",
       "oos_profitable": true,
       "out_of_sample": {
-        "ending_equity": 111703.0,
-        "expectancy_pips": 234.06,
-        "max_drawdown_pct": 4.19,
-        "net_pips": 1170.3,
-        "trade_count": 5,
-        "win_rate": 0.4
+        "ending_equity": 102848.0,
+        "expectancy_pips": 284.8,
+        "max_drawdown_pct": 0.0,
+        "net_pips": 284.8,
+        "trade_count": 1,
+        "win_rate": 1.0
       },
-      "out_of_sample_bar_count": 168,
-      "out_of_sample_end": "2025-12-22T20:00:00+00:00",
-      "out_of_sample_start": "2025-12-11T14:00:00+00:00"
+      "out_of_sample_bar_count": 167,
+      "out_of_sample_end": "2025-12-26T18:00:00+00:00",
+      "out_of_sample_start": "2025-12-15T17:00:00+00:00"
     },
     {
       "fold_index": 2,
       "in_sample": {
-        "ending_equity": 113568.0,
-        "expectancy_pips": 67.84,
-        "max_drawdown_pct": 7.8,
-        "net_pips": 1356.8,
-        "trade_count": 20,
-        "win_rate": 0.35
+        "ending_equity": 107448.0,
+        "expectancy_pips": 56.42,
+        "max_drawdown_pct": 8.24,
+        "net_pips": 1072.0,
+        "trade_count": 19,
+        "win_rate": 0.3158
       },
-      "in_sample_bar_count": 393,
-      "in_sample_end": "2026-01-21T06:00:00+00:00",
-      "in_sample_start": "2025-12-22T21:00:00+00:00",
+      "in_sample_bar_count": 390,
+      "in_sample_end": "2026-01-23T05:00:00+00:00",
+      "in_sample_start": "2025-12-26T19:00:00+00:00",
       "oos_profitable": true,
       "out_of_sample": {
         "ending_equity": 95475.5,
@@ -48,61 +48,61 @@
         "trade_count": 4,
         "win_rate": 0.5
       },
-      "out_of_sample_bar_count": 168,
-      "out_of_sample_end": "2026-01-30T13:00:00+00:00",
-      "out_of_sample_start": "2026-01-21T07:00:00+00:00"
+      "out_of_sample_bar_count": 167,
+      "out_of_sample_end": "2026-02-03T11:00:00+00:00",
+      "out_of_sample_start": "2026-01-23T06:00:00+00:00"
     },
     {
       "fold_index": 3,
       "in_sample": {
-        "ending_equity": 111194.0,
-        "expectancy_pips": 223.88,
-        "max_drawdown_pct": 5.14,
-        "net_pips": 1119.4,
-        "trade_count": 5,
-        "win_rate": 0.4
+        "ending_equity": 101796.0,
+        "expectancy_pips": 17.96,
+        "max_drawdown_pct": 9.7,
+        "net_pips": 179.6,
+        "trade_count": 10,
+        "win_rate": 0.3
       },
-      "in_sample_bar_count": 393,
-      "in_sample_end": "2026-02-25T14:00:00+00:00",
-      "in_sample_start": "2026-01-30T14:00:00+00:00",
-      "oos_profitable": true,
+      "in_sample_bar_count": 390,
+      "in_sample_end": "2026-02-27T09:00:00+00:00",
+      "in_sample_start": "2026-02-03T12:00:00+00:00",
+      "oos_profitable": false,
       "out_of_sample": {
-        "ending_equity": 98046.5,
-        "expectancy_pips": 31.33,
-        "max_drawdown_pct": 10.41,
-        "net_pips": 469.9,
-        "trade_count": 15,
-        "win_rate": 0.2667
+        "ending_equity": 99416.0,
+        "expectancy_pips": -5.84,
+        "max_drawdown_pct": 14.53,
+        "net_pips": -58.4,
+        "trade_count": 10,
+        "win_rate": 0.3
       },
-      "out_of_sample_bar_count": 168,
-      "out_of_sample_end": "2026-03-06T21:00:00+00:00",
-      "out_of_sample_start": "2026-02-25T15:00:00+00:00"
+      "out_of_sample_bar_count": 167,
+      "out_of_sample_end": "2026-03-10T14:00:00+00:00",
+      "out_of_sample_start": "2026-02-27T10:00:00+00:00"
     },
     {
       "fold_index": 4,
       "in_sample": {
         "ending_equity": 91557.5,
-        "expectancy_pips": -135.27,
+        "expectancy_pips": -130.12,
         "max_drawdown_pct": 8.44,
-        "net_pips": -946.9,
-        "trade_count": 7,
+        "net_pips": -1041.0,
+        "trade_count": 8,
         "win_rate": 0.0
       },
-      "in_sample_bar_count": 393,
-      "in_sample_end": "2026-03-31T23:00:00+00:00",
-      "in_sample_start": "2026-03-08T22:00:00+00:00",
+      "in_sample_bar_count": 390,
+      "in_sample_end": "2026-04-02T13:00:00+00:00",
+      "in_sample_start": "2026-03-10T15:00:00+00:00",
       "oos_profitable": true,
       "out_of_sample": {
-        "ending_equity": 110665.0,
-        "expectancy_pips": 266.62,
-        "max_drawdown_pct": 1.88,
-        "net_pips": 1066.5,
-        "trade_count": 4,
-        "win_rate": 0.5
+        "ending_equity": 117278.0,
+        "expectancy_pips": 863.9,
+        "max_drawdown_pct": 0.0,
+        "net_pips": 1727.8,
+        "trade_count": 2,
+        "win_rate": 1.0
       },
-      "out_of_sample_bar_count": 168,
-      "out_of_sample_end": "2026-04-13T00:00:00+00:00",
-      "out_of_sample_start": "2026-04-01T00:00:00+00:00"
+      "out_of_sample_bar_count": 167,
+      "out_of_sample_end": "2026-04-14T13:00:00+00:00",
+      "out_of_sample_start": "2026-04-02T14:00:00+00:00"
     },
     {
       "fold_index": 5,
@@ -114,31 +114,31 @@
         "trade_count": 6,
         "win_rate": 0.3333
       },
-      "in_sample_bar_count": 395,
-      "in_sample_end": "2026-05-06T12:00:00+00:00",
-      "in_sample_start": "2026-04-13T01:00:00+00:00",
+      "in_sample_bar_count": 390,
+      "in_sample_end": "2026-05-07T20:00:00+00:00",
+      "in_sample_start": "2026-04-14T14:00:00+00:00",
       "oos_profitable": false,
       "out_of_sample": {
-        "ending_equity": 88602.5,
-        "expectancy_pips": -227.0,
-        "max_drawdown_pct": 11.4,
-        "net_pips": -1362.0,
-        "trade_count": 6,
-        "win_rate": 0.0
+        "ending_equity": 91605.0,
+        "expectancy_pips": -84.61,
+        "max_drawdown_pct": 13.54,
+        "net_pips": -761.5,
+        "trade_count": 9,
+        "win_rate": 0.1111
       },
-      "out_of_sample_bar_count": 169,
-      "out_of_sample_end": "2026-05-15T20:00:00+00:00",
-      "out_of_sample_start": "2026-05-06T13:00:00+00:00"
+      "out_of_sample_bar_count": 167,
+      "out_of_sample_end": "2026-05-19T03:00:00+00:00",
+      "out_of_sample_start": "2026-05-07T22:00:00+00:00"
     }
   ],
   "in_sample_pct": 0.7,
   "instrument": "NQ",
   "n_folds": 5,
-  "oos_avg_win_rate": 0.3333,
-  "oos_total_net_pips": 1591.0,
-  "oos_total_trades": 34,
-  "strategy_name": "auto_nq_2026-05-15",
-  "total_bar_count": 2808,
-  "validated_folds": 4,
+  "oos_avg_win_rate": 0.5822,
+  "oos_total_net_pips": 1439.0,
+  "oos_total_trades": 26,
+  "strategy_name": "auto_nq_2026-05-18",
+  "total_bar_count": 2785,
+  "validated_folds": 3,
   "verdict": "validated"
 }
